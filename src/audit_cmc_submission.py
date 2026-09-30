@@ -65,8 +65,6 @@ def main() -> None:
         },
         "known_submission_placeholders": [
             "affiliations for Zhenyu Meng and Jia Yue",
-            "corresponding-author institutional email",
-            "funding statement",
         ],
     }
     target = OUT / "CMC_submission_status.json"

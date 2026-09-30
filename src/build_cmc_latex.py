@@ -209,14 +209,18 @@ def preamble(title: str, abstract: str, keywords: str, supplementary: bool = Fal
 \datereceived{{Day Month Year}}\dateaccepted{{Day Month Year}}
 \dateonlinefirst{{}}\datepublished{{Day Month Year}}
 \Title{{{latex_escape(title)}}}
-\Author{{Shu-Chuan Chu\textsuperscript{{1,*}}, Yayu Zhang\textsuperscript{{1}}, Zhenyu Meng\textsuperscript{{2}} and Jia Yue\textsuperscript{{3}}}}
-\AuthorNames{{Shu-Chuan Chu, Yayu Zhang, Zhenyu Meng and Jia Yue}}
-\address{{\textsuperscript{{1}}Nanjing University of Information Science and Technology, Nanjing, China
+\Author{{Shu-Chuan Chu\textsuperscript{{1,*}}, Ya-Yu Zhang\textsuperscript{{1}}, Zhenyu Meng\textsuperscript{{2}} and Jia Yue\textsuperscript{{3}}}}
+\AuthorNames{{Shu-Chuan Chu, Ya-Yu Zhang, Zhenyu Meng and Jia Yue}}
+\address{{\textsuperscript{{1}}School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China
 
 \textsuperscript{{2}}Affiliation to be confirmed for Zhenyu Meng
 
-\textsuperscript{{3}}Affiliation to be confirmed for Jia Yue}}
-\corres{{Corresponding Author: Shu-Chuan Chu. Email: to be confirmed}}
+\textsuperscript{{3}}Affiliation to be confirmed for Jia Yue
+
+Ya-Yu Zhang: 202412492223@nuist.edu.cn
+
+ORCID: Shu-Chuan Chu, \href{{https://orcid.org/0000-0003-2117-0618}}{{0000-0003-2117-0618}}; Ya-Yu Zhang, \href{{https://orcid.org/0009-0001-2272-4654}}{{0009-0001-2272-4654}}}}
+\corres{{Corresponding Author: Shu-Chuan Chu. Email: 100130@nuist.edu.cn}}
 \abstract{{{inline_markdown_to_latex(abstract)}}}
 \keyword{{{inline_markdown_to_latex(keywords)}}}
 \begin{{document}}
@@ -288,7 +292,7 @@ def main() -> None:
         "  pdflatex CMC_manuscript.tex (run at least twice)\n"
         "  pdflatex CMC_supplementary.tex (run at least twice)\n\n"
         "The supplied PDFs were compiled successfully with MiKTeX/pdfLaTeX and visually audited.\n"
-        "Before submission, confirm affiliations 2-3, the corresponding-author email, and the funding statement.\n",
+        "Before submission, confirm affiliations 2-3.\n",
         encoding="utf-8")
 
 

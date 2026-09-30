@@ -10,4 +10,4 @@ Compile from this directory with:
   pdflatex CMC_supplementary.tex (run at least twice)
 
 The supplied PDFs were compiled successfully with MiKTeX/pdfLaTeX and visually audited.
-Before submission, confirm affiliations 2-3, the corresponding-author email, and the funding statement.
+Before submission, confirm affiliations 2-3.

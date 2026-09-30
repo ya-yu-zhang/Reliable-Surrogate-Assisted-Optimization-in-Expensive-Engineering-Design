@@ -324,7 +324,7 @@ def prepare_template(title: str, supplementary: bool = False) -> Document:
     configure_paragraph(slots[3], align=WD_ALIGN_PARAGRAPH.LEFT, after=4, first=0)
     for author, marker, separator in (
         ("Shu-Chuan Chu", "1,*", ", "),
-        ("Yayu Zhang", "1", ", "),
+        ("Ya-Yu Zhang", "1", ", "),
         ("Zhenyu Meng", "2", " and "),
         ("Jia Yue", "3", ""),
     ):
@@ -336,13 +336,13 @@ def prepare_template(title: str, supplementary: bool = False) -> Document:
         if separator:
             run = slots[3].add_run(separator)
             set_run_font(run, "Minion Pro", 11, bold=True)
-    replace_slot(slots[4], "1 Nanjing University of Information Science and Technology, Nanjing, China",
+    replace_slot(slots[4], "1 School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
                  font="Minion Pro", size=9)
     replace_slot(slots[5], "2 Affiliation to be confirmed for Zhenyu Meng; 3 Affiliation to be confirmed for Jia Yue",
                  font="Minion Pro", size=9)
-    replace_slot(slots[6], "* Corresponding Author: Shu-Chuan Chu. Email: to be confirmed",
+    replace_slot(slots[6], "* Corresponding Author: Shu-Chuan Chu. Email: 100130@nuist.edu.cn",
                  font="Minion Pro", size=9, after=2)
-    replace_slot(slots[7], "Affiliations 2-3 and the corresponding-author email must be confirmed before submission.",
+    replace_slot(slots[7], "Ya-Yu Zhang: 202412492223@nuist.edu.cn; ORCID: S. Chu, 0000-0003-2117-0618; Y.-Y. Zhang, 0009-0001-2272-4654",
                  font="Minion Pro", size=8, italic=True, after=2)
     replace_slot(slots[8], "Received: Day Month Year    Accepted: Day Month Year",
                  font="Minion Pro", size=8, after=8)

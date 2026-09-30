@@ -15,14 +15,18 @@
 \datereceived{Day Month Year}\dateaccepted{Day Month Year}
 \dateonlinefirst{}\datepublished{Day Month Year}
 \Title{A Decision-Consequence Auditing Framework for Reliable Surrogate-Assisted Optimization in Expensive Engineering Design}
-\Author{Shu-Chuan Chu\textsuperscript{1,*}, Yayu Zhang\textsuperscript{1}, Zhenyu Meng\textsuperscript{2} and Jia Yue\textsuperscript{3}}
-\AuthorNames{Shu-Chuan Chu, Yayu Zhang, Zhenyu Meng and Jia Yue}
-\address{\textsuperscript{1}Nanjing University of Information Science and Technology, Nanjing, China
+\Author{Shu-Chuan Chu\textsuperscript{1,*}, Ya-Yu Zhang\textsuperscript{1}, Zhenyu Meng\textsuperscript{2} and Jia Yue\textsuperscript{3}}
+\AuthorNames{Shu-Chuan Chu, Ya-Yu Zhang, Zhenyu Meng and Jia Yue}
+\address{\textsuperscript{1}School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China
 
 \textsuperscript{2}Affiliation to be confirmed for Zhenyu Meng
 
-\textsuperscript{3}Affiliation to be confirmed for Jia Yue}
-\corres{Corresponding Author: Shu-Chuan Chu. Email: to be confirmed}
+\textsuperscript{3}Affiliation to be confirmed for Jia Yue
+
+Ya-Yu Zhang: 202412492223@nuist.edu.cn
+
+ORCID: Shu-Chuan Chu, \href{https://orcid.org/0000-0003-2117-0618}{0000-0003-2117-0618}; Ya-Yu Zhang, \href{https://orcid.org/0009-0001-2272-4654}{0009-0001-2272-4654}}
+\corres{Corresponding Author: Shu-Chuan Chu. Email: 100130@nuist.edu.cn}
 \abstract{Reliable surrogate-assisted optimization requires more than an accurate predictor: surrogate information must alter model-management decisions in ways that improve outcomes under a limited expensive-evaluation budget. A decision-consequence auditing framework is developed to evaluate this pathway systematically. The framework separates three questions: whether a monitoring signal is calibrated on the data it encounters, whether it changes candidate selection and improves immediate utility at a common optimization state, and whether the resulting closed loop improves final optimization. It combines decision-pathway analysis, prediction-before-label records, common-state comparisons, and independent closed-loop validation with a promotion-or-stop gate. A temporal residual monitor is used as a representative case study. For its candidate-independent additive correction, ranking invariance is established under identical candidate sets, deterministic tie-breaking, exact arithmetic, and synchronized stochastic operators. The audit then shows that its effective pathway is an exploration controller rather than a distinct exploitation ranking. Across all 24 noiseless BBOB functions in dimensions 10, 20, and 40, the monitored controller does not pass the prespecified optimization-benefit gate despite a failure fraction near its nominal level. Application validation on a 200-evaluation finite-element Messerschmitt-Bolkow-Blohm beam design reaches the same mechanism conclusion. Under a shared 58-point initialization, GP-PI, author-code DRSO, and TuRBO-1 reduce median compliance by 51.7\%, 74.7\%, and 75.1\%, whereas GP-EI and fixed-multiplier GP-UCB show no median improvement. The resulting contribution is a reusable reliability-assessment procedure that distinguishes predictive calibration from decision influence, decision utility, and closed-loop value before large simulation or engineering budgets are committed.}
 \keyword{expensive black-box optimization; surrogate-assisted evolutionary optimization; model management; prequential residuals; finite-element design}
 \begin{document}
@@ -356,8 +360,8 @@ The temporal residual monitor illustrates the framework rather than defining its
 The framework is intended as a predeployment screen for expensive engineering optimization. Applying its stages in order can prevent calibration statistics from being mistaken for optimization value, focus simulation resources on mechanisms with an identifiable decision path, and retain a reproducible record of why a surrogate-management component was promoted, revised, or stopped.
 
 \acknowledgement{Not applicable.}
-\funding{Funding information is pending confirmation by the corresponding author and must be completed before submission.}
-\authorcontributions{The authors confirm contribution to the paper as follows: conceptualization, Yayu Zhang and Shu-Chuan Chu; methodology, Yayu Zhang, Shu-Chuan Chu, and Zhenyu Meng; software, Yayu Zhang; validation, Yayu Zhang, Zhenyu Meng, and Jia Yue; formal analysis, Yayu Zhang and Zhenyu Meng; investigation, Yayu Zhang and Jia Yue; data curation, Yayu Zhang; visualization, Yayu Zhang and Jia Yue; writing---original draft preparation, Yayu Zhang; writing---review and editing, Shu-Chuan Chu, Zhenyu Meng, Jia Yue, and Yayu Zhang; supervision, Shu-Chuan Chu; project administration, Shu-Chuan Chu. All authors reviewed the results and approved the final version of the manuscript.}
+\funding{The authors received no specific funding for this study.}
+\authorcontributions{The authors confirm contribution to the paper as follows: conceptualization, Ya-Yu Zhang and Shu-Chuan Chu; methodology, Ya-Yu Zhang, Shu-Chuan Chu, and Zhenyu Meng; software, Ya-Yu Zhang; validation, Ya-Yu Zhang, Zhenyu Meng, and Jia Yue; formal analysis, Ya-Yu Zhang and Zhenyu Meng; investigation, Ya-Yu Zhang and Jia Yue; data curation, Ya-Yu Zhang; visualization, Ya-Yu Zhang and Jia Yue; writing---original draft preparation, Ya-Yu Zhang; writing---review and editing, Shu-Chuan Chu, Zhenyu Meng, Jia Yue, and Ya-Yu Zhang; supervision, Shu-Chuan Chu; project administration, Shu-Chuan Chu. All authors reviewed the results and approved the final version of the manuscript.}
 \availabilityofdataandmaterials{Upon acceptance, the source code, experiment configurations, random seeds, processed datasets that can be publicly released, audit records, analysis tables, and figure source data supporting the findings will be deposited in the public GitHub repository at https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design. Materials governed by third-party licenses or publisher terms will not be redistributed; their source revisions and retrieval instructions will be provided in the repository.}
 \ethicsapproval{Not applicable. This study did not involve human participants or animals.}
 \conflictsofinterest{The authors declare no conflicts of interest to report regarding the present study.}
