@@ -1,0 +1,13 @@
+{
+  "benchmark": "EngiBench Beams2D v1 finite-element compliance",
+  "dimension": 19,
+  "budget": 200,
+  "shared_initial_evaluations": 58,
+  "repeats": 10,
+  "methods": ["gp_ei_shared_init", "turbo_1_shared_init"],
+  "workers": 8,
+  "gp_ei_reserved_workers": 2,
+  "source": "results/engineering_beam_formal_v1",
+  "out": "results/engineering_beam_shared_init_v1",
+  "scientific_role": "matched-initialization external-reference sensitivity analysis"
+}

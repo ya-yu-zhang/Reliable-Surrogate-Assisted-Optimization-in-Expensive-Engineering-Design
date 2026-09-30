@@ -1,0 +1,20 @@
+{
+  "stage": "engineering_case_integrated",
+  "verified_at": "2026-09-26T21:08:45.4506016+08:00",
+  "runs": 50,
+  "canonical_finite_element_evaluations": 10000,
+  "endpoint_reevaluations": 50,
+  "source_hashes_verified": true,
+  "complete_design": true,
+  "chinese_pdf_pages": 30,
+  "english_pdf_pages": 31,
+  "visual_pages_checked": [
+    "zh:1,20-22,29-30",
+    "en:1,20-22,30-31"
+  ],
+  "visual_defects": [],
+  "pdf_sha256": {
+    "chinese": "22628b2da70e0523908bf694a0bae1b091607dd6b35be64be0b2232950393bc0",
+    "english": "9d4f8c9c1b9d59cb2e4b8995a120996832e6b3b1268d5c146efa6f9a60139efd"
+  }
+}

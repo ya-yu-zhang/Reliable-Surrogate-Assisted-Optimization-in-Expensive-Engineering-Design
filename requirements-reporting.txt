@@ -1,0 +1,3 @@
+# Presentation dependency added before exclusive-cost or application formal labels.
+# It is not imported by either optimization implementation.
+tabulate==0.9.0

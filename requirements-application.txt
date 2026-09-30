@@ -1,0 +1,14 @@
+# Base application runtime. Install exact exported authors' packages separately
+# with --no-deps; source commits and all hashes are in SOURCE.json and docs.
+numpy==2.2.6
+scipy==1.15.3
+scikit-learn==1.7.2
+pandas==3.0.2
+celer==0.7.4
+libsvmdata==0.5
+numba==0.61.2
+hyperopt==0.2.7
+setuptools==80.9.0
+cma==4.5.0
+ioh==0.3.22
+pytest==8.3.5

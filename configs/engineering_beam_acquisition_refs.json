@@ -1,0 +1,12 @@
+{
+  "benchmark": "EngiBench Beams2D v1 finite-element compliance",
+  "dimension": 19,
+  "budget": 200,
+  "shared_initial_evaluations": 58,
+  "repeats": 10,
+  "methods": ["gp_pi_shared_init", "gp_ucb_shared_init"],
+  "workers": 8,
+  "source": "results/engineering_beam_formal_v1",
+  "out": "results/engineering_beam_acquisition_refs_v1",
+  "scientific_role": "matched-initialization GP acquisition-function comparison"
+}

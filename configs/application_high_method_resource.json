@@ -1,0 +1,11 @@
+{
+  "dataset": "synt_high", "dimension": 300, "dataset_id": 4,
+  "data_seed": 90043, "rep": 0, "budget": 1000,
+  "methods": ["greedy", "fixed01", "PEM_T", "PEM_ST", "sobol", "cma_es", "gp_ei", "turbo_1"],
+  "n_splits": 5, "tol_level": 0.0001, "test_size": 0.15,
+  "capture": "checkpoints", "cost_checkpoints": [620, 750, 1000],
+  "runtime_manifest": "docs/application-formal-environment.json",
+  "freeze_manifest": "docs/frozen_application_high_method_resource_v1/sha256.json",
+  "out": "results/application_high_method_resource_v1",
+  "formal_application_result": false, "test_method_calls": 0
+}

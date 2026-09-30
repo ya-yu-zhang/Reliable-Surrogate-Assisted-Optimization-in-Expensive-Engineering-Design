@@ -1,0 +1,18 @@
+{
+  "benchmark": "EngiBench Beams2D v1 finite-element compliance",
+  "dimension": 19,
+  "budget": 200,
+  "shared_initial_evaluations": 58,
+  "repeats": 10,
+  "methods": ["drso_shared_init"],
+  "workers": 8,
+  "source": "results/engineering_beam_formal_v1",
+  "out": "results/engineering_beam_drso_shared_init_v1",
+  "author_repository": "https://github.com/hhyqhh/Relation",
+  "author_commit": "03c19d4280b38230e0852054922072f5aa6dcdf5",
+  "license": "LGPL-3.0",
+  "algorithm": "DRSO",
+  "population_size": 58,
+  "tao": 100,
+  "scientific_role": "author-code surrogate-assisted evolutionary algorithm under matched initialization"
+}

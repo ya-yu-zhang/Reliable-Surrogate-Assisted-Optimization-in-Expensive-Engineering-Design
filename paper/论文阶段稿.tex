@@ -1,0 +1,595 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\setmainfont{SimSun}
+\setsansfont{Microsoft YaHei}
+\setmonofont{Consolas}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\usepackage{graphicx}
+\usepackage{float}
+\floatplacement{figure}{H}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\setcounter{secnumdepth}{-1}
+\usepackage{longtable,booktabs,array}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{4pt}
+\linespread{1.2}
+\widowpenalty=10000
+\clubpenalty=10000
+\setkeys{Gin}{width=\linewidth,keepaspectratio}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\title{面向昂贵黑盒优化的选择后误差监测与代理模型管理}
+\author{}
+\date{2026年9月17日}
+\begin{document}
+\maketitle
+\begin{center}开发实验与机制分析\end{center}
+\hypertarget{ux6458ux8981}{%
+\section{摘要}\label{ux6458ux8981}}
+
+昂贵黑盒优化以有限的真实评价预算搜索最优解，代理模型则承担候选筛选。候选池整体误差、实际选中点误差和预测改善子集误差对应不同的评价对象，整体误差较低并不意味着实际决策可靠。本文研究基于评价前预测的选择后误差监测，以及将该反馈用于探索分配的代理辅助搜索原型。我们首先分析单侧经验上界的决策作用，指出候选无关的全局或时间分位数修正保持预测均值的候选排序，因此在所研究规则下，上界改善模式与均值贪心选点等价。随后构建共同历史误差诊断、共同状态单步决策和独立闭环优化三类实验，使用隔离的隐藏标签区分误差估计、选点效果与长期优化效用。
+
+在8个预定BBOB函数、10/20维及实例1--3上的开发实验中，我们执行1,872条闭环轨迹与432条共同历史，另取得442,368个隔离诊断标签。主原型相对开发集选出的固定10\%探索策略，函数级几何终点误差比分别为1.919和1.517，两个维度均为0胜8负；Holm校正后的p值均为0.15625。这些结果不支持将该原型作为优化改进方法。等价性审计得到两组各144/144条相同轨迹；共同历史结果表明，误差差异方向依赖历史策略，空间局部化降低部分分位数损失也未转化为闭环优势。本文据此将研究结论限定为该原型的机制与失败分析，不给出覆盖保证或一般高维优势声明。
+
+关键词：昂贵黑盒优化；代理辅助进化算法；在线预测残差；选择后误差；模型管理
+
+\hypertarget{ux5f15ux8a00}{%
+\section{1 引言}\label{ux5f15ux8a00}}
+
+在目标函数需要执行仿真、训练模型或运行物理实验的场景中，优化过程能够调用真实函数的次数往往受到限制。代理辅助优化使用已评价样本学习近似模型，并筛选下一次评价的位置。代理误差因而影响预算分配：被错误预测为优质的点可能耗费一次昂贵评价，却没有带来实际改善。
+
+我们关注确定性的单目标连续黑盒问题。目标函数在一次优化过程中保持固定，但模型、历史样本及候选分布随决策改变。因此，误差分布变化并不要求目标函数本身漂移。模型在全域或候选池中的表现，也未必代表其在经过筛选的点上的表现。尤其当算法偏好预测较优的候选时，评价对象取决于预测结果，整体误差指标与选点所需的信息之间可能出现差距。
+
+已有在线校准BO、局部在线校准BO和时间加权SAEA研究将不确定性校准用于优化{[}1--3{]}；选择条件共形推断也已直接处理筛选造成的覆盖差异{[}4{]}。本文不宣称首次引入在线、局部、时空或选择后校准，也不为经验加权分位数附加分布无关保证。研究问题是更具体的：在固定搜索框架下，实际评价点的误差反馈能否帮助分配探索预算，最终提高真实优化效果？
+
+回答这一问题需要将三种证据分开。共同历史下的误差实验可以比较校准器，但不能证明闭环优化改进；共同状态下的单步选点实验可以比较当前决策，却不能替代长期搜索；闭环实验反映总效用，但不同方法产生不同历史，不能将其误差差异全部归因于校准器。本文以这一区分构建验证流程，并审计信息可见性、评价计数与重复配置。
+
+本文的阶段性贡献包括：明确候选池、实际选中点与改善声明子集的单侧误差定义；给出候选无关上界修正的选点等价性分析；提供包含回退机制的反馈探索原型和三类隔离实验。优化改进的贡献须由闭环结果支持，不能由覆盖改善或声明错误比例下降代替。
+
+\hypertarget{ux76f8ux5173ux5de5ux4f5cux4e0eux7814ux7a76ux8fb9ux754c}{%
+\section{2
+相关工作与研究边界}\label{ux76f8ux5173ux5de5ux4f5cux4e0eux7814ux7a76ux8fb9ux754c}}
+
+Deshpande等通过在线学习调整概率模型分位数，并将其用于BO；其理论对应特定在线更新和长期校准对象{[}1{]}。本项目使用固定权重规则估计历史残差分位数，并未实现同样的在线学习校准。因此，不能直接引用其保证支持本项目上界。
+
+LOCBO使用输入相关的在线阈值校准GP预测似然，并通过去噪得到目标函数的后验；其对真实目标效用的结论依赖噪声及后验相关条件{[}2{]}。我们不进行似然去噪，不声称经验空间核继承LOCBO的理论。
+
+Temporal
+CP-SAEA已将时间加权不确定性用于SAEA，并报告优化及评价效率结果{[}3{]}。当前只核查其出版方摘要，尚未取得全文与可靠实现；本文的时间加权经验分位数T属于内部对照，不能标为该方法复现，也不作直接胜出声明。
+
+JOMI通过选择相关参考集处理选择条件覆盖，其定理要求选择规则对校准样本置换不变以及适当的条件可交换性{[}4{]}。本项目残差来自随历史更新的模型及自适应选点，没有建立上述条件。我们仅进行选择后经验监测，而非选择条件共形推断。
+
+高维搜索空间管理和其他不确定性管理也已有SADE-SS、BGP-SAEA及结合多源进化信息的相关工作{[}5--7{]}。这些工作限制了``时空加权加自适应搜索''作为创新的表述。本文现阶段的差异集中在监测对象、反馈作用及验证协议，尚不足以代替完整竞争方法对照。
+
+\begin{samepage}
+
+\hypertarget{ux95eeux9898ux4e0eux4fe1ux606fux53efux89c1ux6027}{%
+\section{3
+问题与信息可见性}\label{ux95eeux9898ux4e0eux4fe1ux606fux53efux89c1ux6027}}
+
+考虑有界确定性优化：
+
+\[
+\min_{x\in\Omega} f(x),\qquad \Omega=[l,u]^D.
+\]
+
+\end{samepage}
+
+第\(t\)次真实评价前，仅可读取历史数据\(\mathcal D_{t-1}=\{(x_i,y_i):i<t\}\)。在请求\(y_t=f(x_t)\)之前，记录预测均值\(\mu_t(x_t)\)、经验上界\(H_t(x_t)\)、标签尺度\(s_t\)、已知最优值\(b_{t-1}\)及候选池与选点状态。随后定义在线有符号残差
+
+\[
+r_t=\frac{y_t-\mu_t(x_t)}{s_t}.
+\]
+
+尺度取当前实际训练子集标签的总体标准差；为0时置1。历史残差保留当时预测及尺度，不用新模型重算。残差的上侧表示实际目标值比预测更差，故主实验采用单侧上界，目标水平0.9不能写成双侧90\%覆盖。
+
+上界失效事件定义为\(e_t=\mathbb I[y_t>H_t(x_t)]\)。当评价前满足支持充分且\(H_t(x_t)<b_{t-1}-\tau_t\)时，记改善声明\(A_t=1\)，其中\(\tau_t=10^{-6}s_t\)。声明可以发生在任何实际选点模式，并非只有名为upper的模式才能形成声明。
+
+错误声明比例定义为
+
+\[
+\mathrm{FDP}=\frac{\sum_t A_t\mathbb I[y_t\ge b_{t-1}-\tau_t]}{\sum_t A_t}.
+\]
+
+分母为0时记NA，同时报告声明数为0。该实现比例不等于有保证的FDR控制。
+
+\hypertarget{ux641cux7d22ux539fux578bux4e0eux8befux5deeux76d1ux6d4b}{%
+\section{4
+搜索原型与误差监测}\label{ux641cux7d22ux539fux578bux4e0eux8befux5deeux76d1ux6d4b}}
+
+\hypertarget{ux521dux59cbux5316ux4e0eux4ee3ux7406ux6a21ux578b}{%
+\subsection{4.1
+初始化与代理模型}\label{ux521dux59cbux5316ux4e0eux4ee3ux7406ux6a21ux578b}}
+
+输入线性缩放到\([0,1]^D\)。总初始化评价为\(n_0=2D+20\)，使用同一随机化LHS序列。前\(D+10\)点用于初始训练；其后\(D+10\)点逐点先预测再评价，形成在线残差。全部评价计入预算，训练残差不作为校准误差。
+
+使用正则化Gaussian RBF，距离与核定义为
+
+\[
+d(x,x')=\frac{\|x-x'\|_2}{\sqrt D},\qquad k(x,x')=\exp\left[-\frac{d(x,x')^2}{2\ell^2}\right].
+\]
+
+冻结\(\ell=0.25\)与\(\lambda=10^{-6}\)。所选训练标签先中心化并标准化，预测为
+
+\[
+\mu_t(x)=\bar y_t+s_t k_t(x)^\top(K_t+\lambda I)^{-1}\widetilde y_t.
+\]
+
+每轮训练最多256点：先取最多128个目标值最优点，再从其余历史以最远点采样补足。标签数量未超过上限时用全部历史；并列按原索引处理。稠密系统使用Cholesky求解，截断是成本控制措施，不是天然低复杂度的RBF性质。
+
+\hypertarget{ux5019ux9009ux751fux6210}{%
+\subsection{4.2 候选生成}\label{ux5019ux9009ux751fux6210}}
+
+每轮生成256点，128个来自固定DE/current-to-pbest/1，128个来自独立scrambled
+Sobol序列。DE取\(F=0.5\)、\(CR=0.9\)、\(p=0.2\)，不使用archive。父代最多64点，由优质与空间分散历史构成；不足时保留全部。越界使用反射，距离历史或其他候选不超过\(10^{-10}\)的点被剔除，由额外独立Sobol流补齐。每轮只真实评价1个候选。
+
+随机流分别管理初始化、候选生成与模式选择。不同方法在历史分叉后候选池也会改变，不能仅以相同整数seed声称全程候选配对。
+
+\begin{samepage}
+
+\hypertarget{ux5355ux4fa7ux7ecfux9a8cux4e0aux754c}{%
+\subsection{4.3
+单侧经验上界}\label{ux5355ux4fa7ux7ecfux9a8cux4e0aux754c}}
+
+使用最近100个在线残差，定义
+
+\[
+q_t(x)=\max\{0,Q^w_{0.9}(r_i:i<t)\},\qquad H_t(x)=\mu_t(x)+s_tq_t(x).
+\]
+
+\end{samepage}
+
+加权分位数取累计归一化权重首次达到0.9的最小残差，不插值。G使用等权；T使用半衰期25次评价的时间权重；S按候选与残差位置的Gaussian距离加权；ST为两者乘积。空间带宽为第20近邻距离，历史不足20个时不启用空间版本。
+
+有效样本量为\(n_{\mathrm{eff}}=(\sum_i w_i)^2/\sum_i w_i^2\)。ST支持不足20先回退T，S回退G，T支持不足再回退G；总残差不足20时不进行依赖上界的改善选点。记录有效样本量、加权距离、实际校准器与回退频率。该阈值是工程支持规则，不能保证历史残差代表当前候选。
+
+\begin{samepage}
+
+\hypertarget{ux53cdux9988ux63a2ux7d22ux5206ux914d}{%
+\subsection{4.4
+反馈探索分配}\label{ux53cdux9988ux63a2ux7d22ux5206ux914d}}
+
+最近30个在线预测点的上界失效率与归一化余量均值分别为\(\bar e_t\)与\(\bar v_t\)。余量为\((H_i-\mu_i)/s_i\)，用于识别过宽上界。定义
+
+\[
+a_t=\max\left\{\operatorname{clip}\left(\frac{\bar e_t-0.1}{0.2},0,1\right),\operatorname{clip}\left(\frac{\bar v_t-1}{2},0,1\right)\right\}.
+\]
+
+\end{samepage}
+
+连续未显著改善的次数为\(h_t\)，\(z_t=\min(h_t/20,1)\)，探索概率为
+
+\[
+p_t=\operatorname{clip}(0.1+0.4a_t+0.3z_t,0.1,0.8).
+\]
+
+在线监测不足20个时取\(p_t=0.5\)，关闭上界改善模式。启动阶段形成的在线误差计入监测窗口。参数为预定开发原型，未宣称最优。
+
+以概率\(p_t\)选择距历史最远的候选；否则，若监测充分、\(a_t<0.5\)且存在支持充分的\(H_t(x)<b_{t-1}-\tau_t\)候选，选择支持候选中的上界最小点；其他情况选择均值最小点。T为预定主原型，G/S/ST为内部机制比较。
+
+\hypertarget{ux4e0aux754cux58f0ux660eux4e0eux9009ux70b9ux4f5cux7528ux7684ux5206ux6790}{%
+\section{5
+上界声明与选点作用的分析}\label{ux4e0aux754cux58f0ux660eux4e0eux9009ux70b9ux4f5cux7528ux7684ux5206ux6790}}
+
+\hypertarget{ux9519ux8befux6539ux5584ux58f0ux660eux7684ux4e8bux4ef6ux5305ux542bux5173ux7cfb}{%
+\subsection{5.1
+错误改善声明的事件包含关系}\label{ux9519ux8befux6539ux5584ux58f0ux660eux7684ux4e8bux4ef6ux5305ux542bux5173ux7cfb}}
+
+若\(H_t(x_t)<b_{t-1}-\tau_t\)，而\(y_t\ge b_{t-1}-\tau_t\)，则\(y_t>H_t(x_t)\)。因此，错误改善声明属于改善声明子集上的上界失效事件。证明仅需将两条不等式连接，不要求任何分布假设。
+
+这一事件关系不能用全部评价点的失效率替代子集失效率。简单反例为：10次评价中，9次没有声明且\(H=1,y=0.5\)；唯一声明取\(H=-1,y=0.5,b=0,\tau=0.01\)。整体单侧覆盖为90\%，但唯一声明失败，FDP为100\%。这不是基准实验，而是逻辑反例。
+
+\begin{samepage}
+
+\hypertarget{ux5019ux9009ux65e0ux5173ux4feeux6b63ux7684ux9009ux70b9ux7b49ux4ef7ux6027}{%
+\subsection{5.2
+候选无关修正的选点等价性}\label{ux5019ux9009ux65e0ux5173ux4feeux6b63ux7684ux9009ux70b9ux7b49ux4ef7ux6027}}
+
+对G/T，同轮内权重不依赖候选位置，故\(q_t(x)=q_t\)且\(s_t\)固定。于是
+
+\[
+\arg\min_{x\in P_t} H_t(x)=\arg\min_{x\in P_t}\mu_t(x).
+\]
+
+\end{samepage}
+
+此时各候选有效样本量及支持状态也相同。若存在改善声明候选，则最小上界点就是均值最小点；否则原规则回到均值最小点。故在相同\(p_t\)与随机模式选择下，去除上界改善模式不会改变轨迹。T加固定管理也与相同概率的均值/探索混合选点等价。
+
+该结论针对当前的加法上界与选点规则，不能推广为``所有校准没有优化作用''。候选相关的空间余量或候选相关标准差可能改变排序，反馈概率也可能改变轨迹。我们用完整轨迹审计检验实现是否遵守这一性质；浮点舍入产生的并列需另行检查。
+
+\hypertarget{ux5b9eux9a8cux534fux8bae}{%
+\section{6 实验协议}\label{ux5b9eux9a8cux534fux8bae}}
+
+\hypertarget{ux5f00ux53d1ux96c6ux4e0eux9884ux7b97}{%
+\subsection{6.1
+开发集与预算}\label{ux5f00ux53d1ux96c6ux4e0eux9884ux7b97}}
+
+使用IOHexperimenter
+0.3.22实现的标准BBOB函数{[}8,9{]}，开发函数固定为\(f_1,f_3,f_6,f_{10},f_{15},f_{20},f_{21},f_{24}\)，维度10和20，实例1--3，每实例3重复。每配置144运行，真实评价预算\(B=10D\)。主确认实例6--10不读取，不将本阶段结果称为确认性证据。
+
+主机为AMD Ryzen 7 9700X，16逻辑线程、约31.1 GiB物理内存，Windows
+11，Python
+3.12.13。数值包和配置冻结并保留哈希。并行运行各限制数值库线程数为1；并行总耗时不当作单算法独占成本。
+
+\hypertarget{ux5b9eux9a8caux548cb}{%
+\subsection{6.2 实验A和B}\label{ux5b9eux9a8caux548cb}}
+
+共同历史由均值贪心、固定概率0.3均值/最大距离混合、候选池随机抽取三种预定策略生成，各144运行。候选池随机指每轮256候选中等概率抽取，不能解释为全域i.i.d.采样。
+
+在共同状态下比较G/T/S/ST，对整体候选池、预测均值最优10\%候选、实际选中点和池内上界声明子集计算失效率、归一化分位数损失、余量、有效样本量及回退频率。A隔离校准器，但历史来源仍会影响结果。
+
+B在相同冻结历史及候选池上，比较均值贪心、固定概率0.3探索、经验上界改善、完整反馈以及附加最大距离规则。所有策略在额外标签可见前保存决策，之后计算真实改善与池内机会损失。标签不写回源历史。B中的0.3是预定参考概率，不冒充从完整开发结果选出的最优概率。
+
+检查点为25\%、50\%、75\%、100\%预算；25\%落在初始化时移至\(n_0+1\)次评价，明确报告实际比例；去重后各运行4个状态，每状态额外评价256个解析候选。诊断使用独立函数对象，保存独立标签与决策文件，源日志哈希在诊断前后保持不变。
+
+\hypertarget{ux5b9eux9a8ccux4e0eux5185ux90e8ux6bd4ux8f83}{%
+\subsection{6.3
+实验C与内部比较}\label{ux5b9eux9a8ccux4e0eux5185ux90e8ux6bd4ux8f83}}
+
+13个预定配置为均值贪心、固定概率0.1/0.3/0.5/0.8、T加固定管理0.3、PEM-T、PEM-G、PEM-S、PEM-ST、去除上界模式、只用失效率反馈、只用停滞反馈。只用失效率版本同时去除宽度及停滞项；只用停滞版本令\(a=0\)并不采用上界选点。完整闭环独立形成轨迹。
+
+T加固定管理和去除上界模式保留为等价性审计，不解释为两个独立机制。固定探索概率通过开发集的函数与维度等权终点指标选择。统计显著性不能代替开发路线判断。
+
+\hypertarget{ux6307ux6807ux4e0eux7edfux8ba1ux5355ux4f4d}{%
+\subsection{6.4
+指标与统计单位}\label{ux6307ux6807ux4e0eux7edfux8ba1ux5355ux4f4d}}
+
+已知最优值时，\(E_B=\max(f_{\mathrm{best},B}-f^*,0)\)。尺度采用共同初始化结束时的误差\(E_{n_0}\)，下限\(10^{-12}\)，终点指标为\(\log_{10}\max(E_B/E_{n_0},10^{-12})\)。这不意味着不同函数的绝对误差可互换，原始终点与初始化尺度同时公开。
+
+每个函数/实例先取3次运行的终点对数指标中位数，再对3实例求均值；同维度内函数等权。维度分开报告。PEM-T相对对照的差值小于0表示更好，几何误差比为\(10^\Delta\)。用8函数级配对Wilcoxon检验，两个维度及全部列出的比较一起Holm修正。
+
+区间采用4,000次保留配对的分层重采样：抽取函数、在函数内抽取实例、实例内对两个方法共同抽取运行索引，重算各方法中位数再求差。区间只描述该开发设计下的探索性不确定性，不解决算法或固定概率已用开发结果选择的问题。函数实例与随机重复不视为相互独立的问题。
+
+FDP同时报告声明频率、声明数及真实改善。闭环的平均运行FDP只在非零声明运行中计算并标明口径；单步汇总另报告合并声明数得到的比例。分位数损失用归一化\(u=(y-H)/s\)，\(\rho_{.9}(u)=u(.9-\mathbb I[u<0])\)。覆盖改善若来自更宽余量而没有优化收益，不视为完成研究假设。
+
+\hypertarget{ux7ed3ux679c}{%
+\section{7 结果}\label{ux7ed3ux679c}}
+
+\hypertarget{ux5b9eux9a8cux5b8cux6210ux4e0eux6570ux636eux5ba1ux8ba1}{%
+\subsection{7.1
+实验完成与数据审计}\label{ux5b9eux9a8cux5b8cux6210ux4e0eux6570ux636eux5ba1ux8ba1}}
+
+13个闭环配置各144运行，共1,872运行，算法真实评价280,800次，无异常失败。共同历史3策略各144运行，共432运行、64,800次算法评价。诊断4状态/运行，共1,728状态及442,368次额外候选标签评价；标签独立保存且源日志哈希不变。两批合计执行2,304运行、345,600次算法评价。
+
+共同历史中的均值贪心与fixed03分别重复了闭环中的144条轨迹，用于逐轮保存候选池；这些重复不增加优化统计样本量。两批共有2,016条不同方法配置/种子轨迹，优化统计只使用闭环集合。开发和机制运行均没有调用保留确认实例。
+
+PEM-T与去除上界模式全部144条轨迹完全相同；fixed03与T加固定管理全部144条轨迹完全相同。这与第5.2节代数分析一致，不能将二者各自包装为有效选点消融。
+
+\hypertarget{ux95edux73afux7ec8ux70b9ux6548ux679c}{%
+\subsection{7.2
+闭环终点效果}\label{ux95edux73afux7ec8ux70b9ux6548ux679c}}
+
+表1给出函数等权的终点对数相对误差，越小越好。固定探索候选中10\%最好；均值贪心在两个维度的总体指标也略优于固定10\%。完整反馈及局部化版本未优于这些内部对照。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllllll@{}}
+\caption{开发集终点指标}\tabularnewline
+\toprule
+维度 & 均值贪心 & 固定10\% & PEM-T & PEM-ST & 仅失效率 & 仅停滞 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 均值贪心 & 固定10\% & PEM-T & PEM-ST & 仅失效率 & 仅停滞 \\
+\midrule
+\endhead
+10 & -1.3552 & -1.3499 & -1.0668 & -1.0866 & -1.2898 & -1.2613 \\
+20 & -1.3324 & -1.3211 & -1.1401 & -1.1097 & -1.2851 & -1.1757 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+表2为PEM-T相对固定10\%的配对函数级效果。误差比大于1表示PEM-T终点误差较大；这表示跨函数相对误差的几何汇总，不表示每一次运行都具有相同比例。两个维度分别0胜8负。重采样区间未包含0，但Holm检验未达0.05；两者口径不同，且全部为开发结果，不能选择性报告其中一种以宣称确认性显著结论。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{PEM-T相对固定10\%的开发效果}\tabularnewline
+\toprule
+维度 & 对数差值 & 95\%重采样区间 & 几何误差比 & 胜 负 & Holm p \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 对数差值 & 95\%重采样区间 & 几何误差比 & 胜 负 & Holm p \\
+\midrule
+\endhead
+10 & 0.2831 & {[}0.060, 0.484{]} & 1.919 & 0 8 & 0.15625 \\
+20 & 0.1810 & {[}0.012, 0.521{]} & 1.517 & 0 8 & 0.15625 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+表3公开每个函数汇总，避免总分掩盖异质性。原始误差的中位数及IQR另保存于补充数据。
+
+\begingroup\small
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllll@{}}
+\caption{分函数终点指标}\tabularnewline
+\toprule
+维度 & 函数 & 固定10\% & PEM-T & PEM-T 减 固定 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 函数 & 固定10\% & PEM-T & PEM-T 减 固定 \\
+\midrule
+\endhead
+10 & f1 & -1.8870 & -1.6736 & 0.2135 \\
+10 & f3 & -0.4201 & -0.3115 & 0.1085 \\
+10 & f6 & -2.4209 & -2.3516 & 0.0692 \\
+10 & f10 & -1.0658 & -0.6192 & 0.4466 \\
+10 & f15 & -0.4604 & -0.3645 & 0.0959 \\
+10 & f20 & -3.6167 & -2.7177 & 0.8990 \\
+10 & f21 & -0.6537 & -0.2393 & 0.4144 \\
+10 & f24 & -0.2747 & -0.2568 & 0.0179 \\
+20 & f1 & -1.7055 & -1.6989 & 0.0066 \\
+20 & f3 & -0.5617 & -0.4966 & 0.0651 \\
+20 & f6 & -2.9449 & -2.6855 & 0.2594 \\
+20 & f10 & -1.0327 & -0.8264 & 0.2063 \\
+20 & f15 & -0.5562 & -0.5028 & 0.0534 \\
+20 & f20 & -2.6470 & -2.2689 & 0.3781 \\
+20 & f21 & -0.8209 & -0.3614 & 0.4595 \\
+20 & f24 & -0.2998 & -0.2805 & 0.0193 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\endgroup
+
+\begin{figure}
+\centering
+\includegraphics{../results/analysis_v1/convergence.png}
+\caption{开发集收敛曲线。每轮对所有开发函数、实例与运行的归一化对数误差取中位数，聚合口径不同于表1的函数级实例汇总；曲线末端不能读成表1指标。图中没有确认实验。}
+\end{figure}
+
+\hypertarget{ux63a2ux7d22ux5206ux914dux4e0eux7a00ux758fux6539ux5584ux58f0ux660e}{%
+\subsection{7.3
+探索分配与稀疏改善声明}\label{ux63a2ux7d22ux5206ux914dux4e0eux7a00ux758fux6539ux5584ux58f0ux660e}}
+
+PEM-T的实际探索比例为10维36.6\%、20维33.4\%，均明显高于固定10\%；上界失效率约为9.9\%和9.5\%，接近目标10\%并未对应更好的最终解。单看失效率无法判断评价分配是否有效。
+
+表4联合报告探索、失效、声明与错误数。PEM-T在10维总共只有3次声明，20维没有声明。因此不能将20维没有错误写成可靠改善或FDP控制；FDP应为NA。PEM-ST在20维有32次声明、2次错误，但其终点指标仍较差，声明表现没有证明优化改进。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllllll@{}}
+\caption{闭环决策指标 失效率为平均运行率
+FDP为合并声明比例}\tabularnewline
+\toprule
+维度 & 配置 & 探索比例 & 失效率 & 声明数 & 错误数 & 合并FDP \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 配置 & 探索比例 & 失效率 & 声明数 & 错误数 & 合并FDP \\
+\midrule
+\endhead
+10 & fixed01 & 0.100 & 0.084 & 4 & 2 & 0.500 \\
+10 & PEM\_T & 0.366 & 0.099 & 3 & 1 & 0.333 \\
+10 & PEM\_ST & 0.357 & 0.106 & 7 & 4 & 0.571 \\
+10 & error\_only & 0.157 & 0.085 & 4 & 2 & 0.500 \\
+10 & stagnation\_only & 0.234 & 0.097 & 2 & 0 & 0.000 \\
+20 & fixed01 & 0.102 & 0.087 & 10 & 9 & 0.900 \\
+20 & PEM\_T & 0.334 & 0.095 & 0 & 0 & NA \\
+20 & PEM\_ST & 0.348 & 0.110 & 32 & 2 & 0.062 \\
+20 & error\_only & 0.148 & 0.086 & 8 & 4 & 0.500 \\
+20 & stagnation\_only & 0.239 & 0.095 & 1 & 1 & 1.000 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+仅失效率反馈版本比完整反馈终点更好，但仍没有达到相对固定10\%的总体优势。这提示宽度与停滞驱动的额外探索可能需要重新设计；现有消融同时移除两个反馈项，不能据此精确分配两项的独立因果贡献。
+
+\hypertarget{ux5171ux540cux5386ux53f2ux8befux5deeux8bcaux65ad}{%
+\subsection{7.4
+共同历史误差诊断}\label{ux5171ux540cux5386ux53f2ux8befux5deeux8bcaux65ad}}
+
+表5使用同历史、同模型、同候选池的T上界。fixed03历史下，实际选中点失效率高于候选池；贪心历史下则出现相反方向。因而支持``评价对象会改变误差表现''，不支持``筛选必然使覆盖恶化''这种单向陈述。每个维度/历史有288个冻结状态，实际选中组每状态1点，候选池每状态256点，前10\%组每状态26点。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllll@{}}
+\caption{T校准器在不同筛选对象上的失效率}\tabularnewline
+\toprule
+维度 & 历史策略 & 候选池失效 & 前10\%失效 & 实际选中失效 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 历史策略 & 候选池失效 & 前10\%失效 & 实际选中失效 \\
+\midrule
+\endhead
+10 & greedy & 0.107 & 0.040 & 0.087 \\
+10 & fixed03 & 0.043 & 0.029 & 0.125 \\
+10 & pool\_random & 0.077 & 0.094 & 0.052 \\
+20 & greedy & 0.169 & 0.084 & 0.094 \\
+20 & fixed03 & 0.048 & 0.042 & 0.142 \\
+20 & pool\_random & 0.094 & 0.106 & 0.104 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\begin{figure}
+\centering
+\includegraphics{../results/analysis_v1/selection_failure.png}
+\caption{共同历史下的单侧失效率。虚线为目标10\%；每组状态相关，不将每个候选标签当作独立统计问题。}
+\end{figure}
+
+表6只针对实际选中点，三种历史等权平均，显示局部化降低了部分归一化分位数损失与余量；这仍是给定共同历史下的估计表现。不能把表6的改进解释为闭环性能改进，也不能称达到名义覆盖。10维首次检查点因支持不足而回退，平均回退约25\%；20维这些检查点不回退。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{实际选中点的校准器表现}\tabularnewline
+\toprule
+维度 & 校准器 & 归一化损失 & 上界余量 & 有效样本量 & 回退比例 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 校准器 & 归一化损失 & 上界余量 & 有效样本量 & 回退比例 \\
+\midrule
+\endhead
+10 & G & 0.1355 & 1.1044 & 45.5000 & 0.0000 \\
+10 & T & 0.1284 & 1.0262 & 37.7288 & 0.2500 \\
+10 & S & 0.1241 & 0.9463 & 38.8140 & 0.2500 \\
+10 & ST & 0.1187 & 0.9175 & 32.1634 & 0.2500 \\
+20 & G & 0.1465 & 0.9365 & 74.7500 & 0.0000 \\
+20 & T & 0.1409 & 0.9114 & 52.3172 & 0.0000 \\
+20 & S & 0.1322 & 0.7874 & 60.5382 & 0.0000 \\
+20 & ST & 0.1307 & 0.7643 & 42.6863 & 0.0000 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+改善声明子集非常稀疏，表7同时列出非空状态与候选数。比例分母以声明候选数合并，不与图2的状态平均混淆。这些数据仅作机制诊断，不能估计稳定的声明成功概率。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{T上界的池内声明子集及样本支持}\tabularnewline
+\toprule
+维度 & 历史策略 & 非空状态数 & 声明候选数 & 失效数 & 合并失效 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 历史策略 & 非空状态数 & 声明候选数 & 失效数 & 合并失效 \\
+\midrule
+\endhead
+10 & fixed03 & 3/288 & 13 & 7 & 0.538 \\
+10 & greedy & 3/288 & 13 & 7 & 0.538 \\
+10 & pool\_random & 22/288 & 42 & 31 & 0.738 \\
+20 & fixed03 & 1/288 & 1 & 0 & 0.000 \\
+20 & greedy & 4/288 & 4 & 1 & 0.250 \\
+20 & pool\_random & 22/288 & 38 & 19 & 0.500 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\hypertarget{ux5171ux540cux72b6ux6001ux5355ux6b65ux51b3ux7b56}{%
+\subsection{7.5
+共同状态单步决策}\label{ux5171ux540cux72b6ux6001ux5355ux6b65ux51b3ux7b56}}
+
+表8为同一冻结候选池上所选点的归一化真实改善。T下经验上界策略与均值贪心完全等价，故不重复一列。完整反馈在全部6个维度/历史组合中，平均单步改善低于均值贪心，也低于预定fixed=.3参考规则；增加最大距离探索在这些共同状态中没有带来即时改善优势。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllll@{}}
+\caption{共同状态下归一化单步改善}\tabularnewline
+\toprule
+维度 & 历史策略 & 均值改善 & 固定30\%改善 & 完整反馈改善 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 历史策略 & 均值改善 & 固定30\%改善 & 完整反馈改善 \\
+\midrule
+\endhead
+10 & greedy & 0.0310 & 0.0257 & 0.0251 \\
+10 & fixed03 & 0.0260 & 0.0219 & 0.0213 \\
+10 & pool\_random & 0.1240 & 0.0925 & 0.0867 \\
+20 & greedy & 0.0541 & 0.0433 & 0.0381 \\
+20 & fixed03 & 0.0350 & 0.0238 & 0.0172 \\
+20 & pool\_random & 0.1326 & 0.0871 & 0.0795 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+单步结果不排除探索可能改善未来模型，但闭环结果没有提供该后续收益的支持。当前不应将``高误差导致多探索''解释为已修复模型。
+
+\hypertarget{ux5f00ux9500ux4e0eux8defux7ebfux95e8ux69db}{%
+\subsection{7.6
+开销与路线门槛}\label{ux5f00ux9500ux4e0eux8defux7ebfux95e8ux69db}}
+
+原始并行负载下，PEM-T单运行总耗时中位数约0.78秒（10维）和1.82秒（20维）；PEM-ST约0.84秒和1.97秒。候选生成是当前实现主要开销。上述为开发运行的观测耗时，未作独占成本比较；解析目标本身极快，不作为应用加速证据。
+
+原计划第十四节要求开发集显示相对选定固定探索基线的优化收益，再进入确认实验。主原型在两个维度均未满足这一必要条件。因此本阶段判定不通过优化改进路线门槛，保留全部失败结果与已冻结协议，转向机制分析；不扩大BBOB确认、CEC和应用运行去替代这一判断。
+
+\hypertarget{ux8ba8ux8bba}{%
+\section{8 讨论}\label{ux8ba8ux8bba}}
+
+本原型的失败有两类不同证据。第一，上界改善选点在T/G下存在结构性冗余，这是不依赖基准表现的代数性质，144条轨迹审计为实现提供了对应证据。第二，完整反馈增加了探索，而开发闭环和共同状态单步收益没有支持这些额外探索的价值；这是该设计和预算下的经验结果，不能推广为所有误差反馈策略都无效。
+
+实验支持监测对象需分别报告，但差异方向依赖历史。池内前10\%与实际选中点不是同一分布：fixed03既可能按均值选点，也可能按最大距离选点。将这种差异统称为``贪心筛选偏差''，会掩盖探索模式本身的作用。
+
+空间余量可以改变候选排序，并降低部分共同历史分位数损失，但闭环空间版本仍没有总体收益。有效样本量仅检查权重集中程度，不衡量代理模型是否适合候选区域；它不能单独解决历史模型尺度迁移或远离历史的误差分布变化。
+
+本阶段最明确的发现是误差估计、声明与预算分配不可混作同一个成功指标。PEM-T接近10\%的失效率，同时声明几乎不发生且优化较差，说明低失效率可能不足以形成有用的改善决策。继续研究应先提出改变候选排序或按实际评价收益估计探索价值的明确机制，使用新开发阶段验证，而非直接叠加更多权重或继续调整同一批数据上的阈值。
+
+本阶段的成本记录分开训练、候选生成、校准、选点、目标评价与日志写入。内部均值贪心与固定混合对照也计算T上界用于监测日志，该结果不参与其选点；原始耗时因此包含这部分诊断仪表开销，不能代表没有这些记录的精简对照成本。解析函数模拟评价受限而非真正昂贵计算；在未完成独占计时及实际应用前，不能把评价次数相同或减少解释为墙钟加速。正式实验还需要评估峰值内存、候选生成与训练集截断开销。
+
+本文没有给出90\%逐点成功概率、改善声明FDR控制、优化遗憾界或全局收敛保证。有效样本量门槛、历史时间权重和反馈系数均为工程原型；短预算下误差监测稀疏和尺度迁移也可能影响它们。D=10/20开发结果不能证明一般高维能力。
+
+证据边界还包括：没有开展BBOB主确认、CEC2017、LassoBench应用和完整外部基线；Temporal
+CP-SAEA、SADE-SS、BGP-SAEA部分全文/可靠代码缺口仍在。相对内部对照的结果不能改写成对已有论文的竞争结论。若继续修改反馈机制，应建立新的开发阶段及保留实例，不在当前数据上反复挑参数后重复声称确认。
+
+\hypertarget{ux7ed3ux8bba}{%
+\section{9 结论}\label{ux7ed3ux8bba}}
+
+我们实现并审计了选择后单侧误差监测与反馈探索原型，完成三类隔离实验。结果确认候选无关加法上界在当前规则下保持均值选点排序，并显示不同监测对象的误差差异依赖历史策略。主原型的反馈探索未在预定开发集上改善最终优化，因此本文不保留优化改进或高维优势声明。阶段证据可支持该原型的机制与失败分析；完整竞争方法比较、保留实例验证及应用研究仍需进一步完成，当前稿件不是投稿终稿。
+
+\hypertarget{ux53c2ux8003ux6587ux732e}{%
+\section{参考文献}\label{ux53c2ux8003ux6587ux732e}}
+
+{[}1{]} Deshpande S, Marx C, Kuleshov V. Online Calibrated and Conformal
+Prediction Improves Bayesian Optimization. AISTATS 2024, PMLR 238:
+1450--1458. \url{https://proceedings.mlr.press/v238/deshpande24a.html}.
+
+{[}2{]} Kim D, Zecchin M, Park S, Kang J, Simeone O. Robust Bayesian
+Optimization via Localized Online Conformal Prediction.
+arXiv:2411.17387v2. \url{https://arxiv.org/html/2411.17387v2}.
+
+{[}3{]} Nardone E, De Stefano C, Scotto di Freca A, Fontanella F,
+D'Alessandro T. Toward Reliable Uncertainty Quantification in
+Surrogate-Assisted Evolutionary Algorithms via Temporal Conformal
+Prediction. EvoApplications 2026: 384--401.
+DOI:10.1007/978-3-032-23604-3\_24.
+
+{[}4{]} Jin Y, Ren Z. Confidence on the Focal: Conformal Prediction with
+Selection-Conditional Coverage. arXiv:2403.03868v3.
+\url{https://arxiv.org/html/2403.03868v3}.
+
+{[}5{]} Zhou R, Ren C, Meng Z, Zhu H. Surrogate-Assisted Differential
+Evolution With Search Space Tightening for High-Dimensional Expensive
+Optimization Problems. IEEE Transactions on Systems, Man, and
+Cybernetics: Systems, 2025, 55(10): 7356--7368.
+DOI:10.1109/TSMC.2025.3582897.
+
+{[}6{]} Zou H, Zeng S, Li C, Jiao R, Zhao F. Uncertainty estimation by
+boosting with Gaussian process for expensive optimization problems.
+Applied Soft Computing, 2025, 180: 113320.
+DOI:10.1016/j.asoc.2025.113320.
+
+{[}7{]} Yu L, Guo Y, Feng L, Zhu Z, Wei Z, Hou Y. A multi-source
+surrogate-assisted evolutionary algorithm for expensive optimization: An
+optinformatics perspective. Swarm and Evolutionary Computation, 2026,
+107: 102491. DOI:10.1016/j.swevo.2026.102491.
+
+{[}8{]} COCO. BBOB test suite documentation.
+\url{https://numbbo.github.io/coco/testsuites/bbob}.
+访问日期2026-09-17。
+
+{[}9{]} IOHprofiler. IOHexperimenter author documentation and
+implementation.
+\url{https://github.com/IOHprofiler/IOHexperimenter/blob/master/ioh/README.md}.
+实验版本0.3.22，访问日期2026-09-17。
+
+\hypertarget{ux9644ux5f55-ux53efux590dux73b0ux6027ux4e0eux5b8cux6210ux72b6ux6001}{%
+\section{附录
+可复现性与完成状态}\label{ux9644ux5f55-ux53efux590dux73b0ux6027ux4e0eux5b8cux6210ux72b6ux6001}}
+
+原始评价日志、候选池、独立诊断标签、代码哈希、随机种子、失败记录及统计脚本均保存在工作区。每个运行按pre再label交替保存事件，完成摘要包含真实目标函数计数。启动预算、同初始化、错误声明事件包含关系、重复模式轨迹与短预算前缀均有审计或检查。
+
+本阶段已完成原计划分析、核心公开文献对照、基础框架、预算和信息隔离检查、预定开发集内部比较、共同历史A/B诊断、统计汇总、失败案例与正文阶段稿。未完成项包括付费全文/可靠代码核查、外部基线、BBOB确认、CEC2017、LassoBench、预算敏感性、一般高维适用范围、独占时间与峰值内存测量，以及英文投稿稿。后续首先处理机制研究的文献差异与新验证协议，而非将本次开发失败隐藏后继续声称PEM-T优化改进。
+\end{document}

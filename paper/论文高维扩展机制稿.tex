@@ -1,0 +1,1192 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\setmainfont{SimSun}
+\setsansfont{Microsoft YaHei}
+\setmonofont{Consolas}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\usepackage{graphicx}
+\usepackage{float}
+\floatplacement{figure}{H}
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\setcounter{secnumdepth}{-1}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{4pt}
+\linespread{1.2}
+\widowpenalty=10000
+\clubpenalty=10000
+\setkeys{Gin}{width=\linewidth,keepaspectratio}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\providecommand{\passthrough}[1]{#1}
+\title{代理辅助黑箱优化中选择后误差监测的决策作用}
+\author{}
+\date{2026年09月23日}
+\begin{document}
+\maketitle
+\begin{center}开发失败、独立机制、成本与应用迁移；论文工作稿\end{center}
+\hypertarget{ux6458ux8981}{%
+\section{摘要}\label{ux6458ux8981}}
+
+代理辅助黑箱优化的候选池、实际评价点和改善声明子集对应不同误差对象，低整体失效率不自动意味着有效预算分配。本文将共同历史误差诊断、共同状态单步决策和独立闭环优化分开，分析评价前预测残差的经验单侧上界及反馈探索。精确实数下，候选无关加法修正在指定规则中保持预测均值排序；数值平局与实际轨迹另作审计。原型在8个BBOB函数、10/20维开发集上未通过优化收益门槛，因而转向机制与失败分析。
+
+独立冻结验证保留全部24函数、10/20/40维、实例11--13和3重复，共3,888运行、907,200计费评价及1,990,656隔离诊断标签。PEM-T相对开发选定固定10\%探索的终点几何误差比为1.468、1.258和1.159；反馈即期改善也更低，九项预定比较统一Holm校正后均小于.002。对象失效差异方向依赖历史策略。本文公开全部函数、声明分母、支持回退及Sobol/CMA-ES背景结果，不合并开发与验证统计，不改变原失败门槛，不主张共形保证或一般高维优势。完整GP/背景参照、独占成本与三主要应用已另行报告；预定300维扩展见第11节；可靠关键SAEA复现仍待补齐。
+
+八方法另完成三个主要应用480运行，每次500评价且固定数据/划分；应用独立家族结果为synt\_simple原损失差中位数+0.0503，Holm
+p=0.0826；synt\_medium原损失差中位数+0.0393，Holm
+p=0.0192；DNA原损失差中位数+0.00271，Holm
+p=0.0592。这些重复仅代表优化随机性，独立测试与跨任务尺度分别解释。
+
+关键词：昂贵黑盒优化；代理辅助进化算法；在线预测残差；选择后误差；模型管理
+
+\hypertarget{ux5f15ux8a00}{%
+\section{1 引言}\label{ux5f15ux8a00}}
+
+在目标函数需要执行仿真、训练模型或运行物理实验的场景中，优化过程能够调用真实函数的次数往往受到限制。代理辅助优化使用已评价样本学习近似模型，并筛选下一次评价的位置。代理误差因而影响预算分配：被错误预测为优质的点可能耗费一次昂贵评价，却没有带来实际改善。
+
+我们关注确定性的单目标连续黑盒问题。目标函数在一次优化过程中保持固定，但模型、历史样本及候选分布随决策改变。因此，误差分布变化并不要求目标函数本身漂移。模型在全域或候选池中的表现，也未必代表其在经过筛选的点上的表现。尤其当算法偏好预测较优的候选时，评价对象取决于预测结果，整体误差指标与选点所需的信息之间可能出现差距。
+
+已有在线校准BO、局部在线校准BO和时间加权SAEA研究将不确定性校准用于优化{[}1--3{]}；选择条件共形推断也已直接处理筛选造成的覆盖差异{[}4{]}。本文不宣称首次引入在线、局部、时空或选择后校准，也不为经验加权分位数附加分布无关保证。研究问题是更具体的：在固定搜索框架下，实际评价点的误差反馈能否帮助分配探索预算，最终提高真实优化效果？
+
+回答这一问题需要将三种证据分开。共同历史下的误差实验可以比较校准器，但不能证明闭环优化改进；共同状态下的单步选点实验可以比较当前决策，却不能替代长期搜索；闭环实验反映总效用，但不同方法产生不同历史，不能将其误差差异全部归因于校准器。本文以这一区分构建验证流程，并审计信息可见性、评价计数与重复配置。
+
+本文的阶段性贡献包括：明确候选池、实际选中点与改善声明子集的单侧误差定义；给出候选无关上界修正的选点等价性分析；提供包含回退机制的反馈探索原型和三类隔离实验。优化改进的贡献须由闭环结果支持，不能由覆盖改善或声明错误比例下降代替。
+
+\hypertarget{ux76f8ux5173ux5de5ux4f5cux4e0eux7814ux7a76ux8fb9ux754c}{%
+\section{2
+相关工作与研究边界}\label{ux76f8ux5173ux5de5ux4f5cux4e0eux7814ux7a76ux8fb9ux754c}}
+
+Deshpande等通过在线学习调整概率模型分位数，并将其用于BO；其理论对应特定在线更新和长期校准对象{[}1{]}。本项目使用固定权重规则估计历史残差分位数，并未实现同样的在线学习校准。因此，不能直接引用其保证支持本项目上界。
+
+LOCBO使用输入相关的在线阈值校准GP预测似然，并通过去噪得到目标函数的后验；其对真实目标效用的结论依赖噪声及后验相关条件{[}2{]}。我们不进行似然去噪，不声称经验空间核继承LOCBO的理论。
+
+Temporal
+CP-SAEA已将时间加权不确定性用于SAEA，并报告优化及评价效率结果{[}3{]}。当前只核查其出版方摘要，尚未取得全文与可靠实现；本文的时间加权经验分位数T属于内部对照，不能标为该方法复现，也不作直接胜出声明。
+
+JOMI通过选择相关参考集处理选择条件覆盖，其定理要求选择规则对校准样本置换不变以及适当的条件可交换性{[}4{]}。本项目残差来自随历史更新的模型及自适应选点，没有建立上述条件。我们仅进行选择后经验监测，而非选择条件共形推断。
+
+高维搜索空间管理和其他不确定性管理也已有SADE-SS、BGP-SAEA及结合多源进化信息的相关工作{[}5--7{]}。这些工作限制了``时空加权加自适应搜索''作为创新的表述。本文现阶段的差异集中在监测对象、反馈作用及验证协议，尚不足以代替完整竞争方法对照。
+
+\par\addvspace{1.5\baselineskip}\noindent\begin{minipage}{\linewidth}
+
+\hypertarget{ux95eeux9898ux4e0eux4fe1ux606fux53efux89c1ux6027}{%
+\section{3
+问题与信息可见性}\label{ux95eeux9898ux4e0eux4fe1ux606fux53efux89c1ux6027}}
+
+考虑有界确定性优化：
+
+\[
+\min_{x\in\Omega} f(x),\qquad \Omega=[l,u]^D.
+\]
+
+\end{minipage}\par
+
+\par\noindent\begin{minipage}{\linewidth}
+
+第\(t\)次真实评价前，仅可读取历史数据\(\mathcal D_{t-1}=\{(x_i,y_i):i<t\}\)。在请求\(y_t=f(x_t)\)之前，记录预测均值\(\mu_t(x_t)\)、经验上界\(H_t(x_t)\)、标签尺度\(s_t\)、当前观测最优值\(b_{t-1}\)及候选池与选点状态。随后定义在线有符号残差
+
+\[
+r_t=\frac{y_t-\mu_t(x_t)}{s_t}.
+\]
+
+\end{minipage}\par
+
+尺度取当前实际训练子集标签的总体标准差；为0时置1。历史残差保留当时预测及尺度，不用新模型重算。残差的上侧表示实际目标值比预测更差，故主实验采用单侧上界，目标水平0.9不能写成双侧90\%覆盖。
+
+上界失效事件定义为\(e_t=\mathbb I[y_t>H_t(x_t)]\)。当评价前满足支持充分且\(H_t(x_t)<b_{t-1}-\tau_t\)时，记改善声明\(A_t=1\)，其中\(\tau_t=10^{-6}s_t\)。声明可以发生在任何实际选点模式，并非只有名为upper的模式才能形成声明。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+错误声明比例定义为
+
+\[
+\mathrm{FDP}=\frac{\sum_t A_t\mathbb I[y_t\ge b_{t-1}-\tau_t]}{\sum_t A_t}.
+\]
+
+\end{minipage}\par
+
+分母为0时记NA，同时报告声明数为0。该实现比例不等于有保证的FDR控制。
+
+\hypertarget{ux641cux7d22ux539fux578bux4e0eux8befux5deeux76d1ux6d4b}{%
+\section{4
+搜索原型与误差监测}\label{ux641cux7d22ux539fux578bux4e0eux8befux5deeux76d1ux6d4b}}
+
+\hypertarget{ux521dux59cbux5316ux4e0eux4ee3ux7406ux6a21ux578b}{%
+\subsection{4.1
+初始化与代理模型}\label{ux521dux59cbux5316ux4e0eux4ee3ux7406ux6a21ux578b}}
+
+输入线性缩放到\([0,1]^D\)。总初始化评价为\(n_0=2D+20\)，使用同一随机化LHS序列。前\(D+10\)点用于初始训练；其后\(D+10\)点逐点先预测再评价，形成在线残差。全部评价计入预算，训练残差不作为校准误差。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+使用正则化Gaussian RBF，距离与核定义为
+
+\[
+d(x,x')=\frac{\|x-x'\|_2}{\sqrt D},\qquad k(x,x')=\exp\left[-\frac{d(x,x')^2}{2\ell^2}\right].
+\]
+
+\end{minipage}\par
+
+\par\noindent\begin{minipage}{\linewidth}
+
+冻结\(\ell=0.25\)与\(\lambda=10^{-6}\)。所选训练标签先中心化并标准化，预测为
+
+\[
+\mu_t(x)=\bar y_t+s_t k_t(x)^\top(K_t+\lambda I)^{-1}\widetilde y_t.
+\]
+
+\end{minipage}\par
+
+每轮训练最多256点：先取最多128个目标值最优点，再从其余历史以最远点采样补足。标签数量未超过上限时用全部历史；并列按原索引处理。稠密系统使用Cholesky求解，截断是成本控制措施，不是天然低复杂度的RBF性质。
+
+\hypertarget{ux5019ux9009ux751fux6210}{%
+\subsection{4.2 候选生成}\label{ux5019ux9009ux751fux6210}}
+
+每轮生成256点，128个来自固定DE/current-to-pbest/1，128个来自独立scrambled
+Sobol序列。DE取\(F=0.5\)、\(CR=0.9\)、\(p=0.2\)，不使用archive。父代最多64点，由优质与空间分散历史构成；不足时保留全部。越界使用反射，距离历史或其他候选不超过\(10^{-10}\)的点被剔除，由额外独立Sobol流补齐。每轮只真实评价1个候选。
+
+随机流分别管理初始化、候选生成与模式选择。不同方法在历史分叉后候选池也会改变，不能仅以相同整数seed声称全程候选配对。
+
+\par\addvspace{1.5\baselineskip}\noindent\begin{minipage}{\linewidth}
+
+\hypertarget{ux5355ux4fa7ux7ecfux9a8cux4e0aux754c}{%
+\subsection{4.3
+单侧经验上界}\label{ux5355ux4fa7ux7ecfux9a8cux4e0aux754c}}
+
+使用最近100个在线残差，定义
+
+\[
+q_t(x)=\max\{0,Q^w_{0.9}(r_i:i<t)\},\qquad H_t(x)=\mu_t(x)+s_tq_t(x).
+\]
+
+\end{minipage}\par
+
+加权分位数取累计归一化权重首次达到0.9的最小残差，不插值。G使用等权；T使用半衰期25次评价的时间权重；S按候选与残差位置的Gaussian距离加权；ST为两者乘积。空间带宽为第20近邻距离，历史不足20个时不启用空间版本。
+
+有效样本量为\(n_{\mathrm{eff}}=(\sum_i w_i)^2/\sum_i w_i^2\)。ST支持不足20先回退T，S回退G，T支持不足再回退G；总残差不足20时不进行依赖上界的改善选点。记录有效样本量、加权距离、实际校准器与回退频率。该阈值是工程支持规则，不能保证历史残差代表当前候选。
+
+\par\addvspace{1.5\baselineskip}\noindent\begin{minipage}{\linewidth}
+
+\hypertarget{ux53cdux9988ux63a2ux7d22ux5206ux914d}{%
+\subsection{4.4
+反馈探索分配}\label{ux53cdux9988ux63a2ux7d22ux5206ux914d}}
+
+最近30个在线预测点的上界失效率与归一化余量均值分别为\(\bar e_t\)与\(\bar v_t\)。余量为\((H_i-\mu_i)/s_i\)，用于识别过宽上界。定义
+
+\[
+a_t=\max\left\{\operatorname{clip}\left(\frac{\bar e_t-0.1}{0.2},0,1\right),\operatorname{clip}\left(\frac{\bar v_t-1}{2},0,1\right)\right\}.
+\]
+
+\end{minipage}\par
+
+\par\noindent\begin{minipage}{\linewidth}
+
+连续未显著改善的次数为\(h_t\)，\(z_t=\min(h_t/20,1)\)，探索概率为
+
+\[
+p_t=\operatorname{clip}(0.1+0.4a_t+0.3z_t,0.1,0.8).
+\]
+
+\end{minipage}\par
+
+在线监测不足20个时取\(p_t=0.5\)，关闭上界改善模式。启动阶段形成的在线误差计入监测窗口。参数为预定开发原型，未宣称最优。
+
+以概率\(p_t\)选择距历史最远的候选；否则，若监测充分、\(a_t<0.5\)且存在支持充分的\(H_t(x)<b_{t-1}-\tau_t\)候选，选择支持候选中的上界最小点；其他情况选择均值最小点。T为预定主原型，G/S/ST为内部机制比较。
+
+\hypertarget{ux4e0aux754cux58f0ux660eux4e0eux9009ux70b9ux4f5cux7528ux7684ux5206ux6790}{%
+\section{5
+上界声明与选点作用的分析}\label{ux4e0aux754cux58f0ux660eux4e0eux9009ux70b9ux4f5cux7528ux7684ux5206ux6790}}
+
+\hypertarget{ux9519ux8befux6539ux5584ux58f0ux660eux7684ux4e8bux4ef6ux5305ux542bux5173ux7cfb}{%
+\subsection{5.1
+错误改善声明的事件包含关系}\label{ux9519ux8befux6539ux5584ux58f0ux660eux7684ux4e8bux4ef6ux5305ux542bux5173ux7cfb}}
+
+若\(H_t(x_t)<b_{t-1}-\tau_t\)，而\(y_t\ge b_{t-1}-\tau_t\)，则\(y_t>H_t(x_t)\)。因此，错误改善声明属于改善声明子集上的上界失效事件。证明仅需将两条不等式连接，不要求任何分布假设。
+
+这一事件关系不能用全部评价点的失效率替代子集失效率。简单反例为：10次评价中，9次没有声明且\(H=1,y=0.5\)；唯一声明取\(H=-1,y=0.5,b=0,\tau=0.01\)。整体单侧覆盖为90\%，但唯一声明失败，FDP为100\%。这不是基准实验，而是逻辑反例。
+
+\par\addvspace{1.5\baselineskip}\noindent\begin{minipage}{\linewidth}
+
+\hypertarget{ux5019ux9009ux65e0ux5173ux4feeux6b63ux7684ux9009ux70b9ux7b49ux4ef7ux6027}{%
+\subsection{5.2
+候选无关修正的选点等价性}\label{ux5019ux9009ux65e0ux5173ux4feeux6b63ux7684ux9009ux70b9ux7b49ux4ef7ux6027}}
+
+在精确实数运算下，对G/T，同轮内权重不依赖候选位置，故\(q_t(x)=q_t\)且\(s_t\)固定。于是
+
+\[
+\arg\min_{x\in P_t} H_t(x)=\arg\min_{x\in P_t}\mu_t(x).
+\]
+
+\end{minipage}\par
+
+此时各候选有效样本量及支持状态也相同。若存在改善声明候选，则最小上界点就是均值最小点；否则原规则回到均值最小点。故在相同\(p_t\)与随机模式选择下，去除上界改善模式不会改变轨迹。T加固定管理也与相同概率的均值/探索混合选点等价。
+
+该结论针对当前的加法上界与选点规则，不能推广为``所有校准没有优化作用''。候选相关的空间余量或候选相关标准差可能改变排序，反馈概率也可能改变轨迹。我们用完整轨迹审计检验实现是否遵守这一性质；浮点舍入产生的并列需另行检查。
+
+\hypertarget{ux5b9eux9a8cux534fux8bae}{%
+\section{6 实验协议}\label{ux5b9eux9a8cux534fux8bae}}
+
+\hypertarget{ux5f00ux53d1ux96c6ux4e0eux9884ux7b97}{%
+\subsection{6.1
+开发集与预算}\label{ux5f00ux53d1ux96c6ux4e0eux9884ux7b97}}
+
+使用IOHexperimenter
+0.3.22实现的标准BBOB函数{[}8,9{]}，开发函数固定为\(f_1,f_3,f_6,f_{10},f_{15},f_{20},f_{21},f_{24}\)，维度10和20，实例1--3，每实例3重复。每配置144运行，真实评价预算\(B=10D\)。主确认实例6--10不读取，不将本阶段结果称为确认性证据。
+
+主机为AMD Ryzen 7 9700X，16逻辑线程、约31.1 GiB物理内存，Windows
+11，Python
+3.12.13。数值包和配置冻结并保留哈希。并行运行各限制数值库线程数为1；并行总耗时不当作单算法独占成本。
+
+\hypertarget{ux5b9eux9a8caux548cb}{%
+\subsection{6.2 实验A和B}\label{ux5b9eux9a8caux548cb}}
+
+共同历史由均值贪心、固定概率0.3均值/最大距离混合、候选池随机抽取三种预定策略生成，各144运行。候选池随机指每轮256候选中等概率抽取，不能解释为全域i.i.d.采样。
+
+在共同状态下比较G/T/S/ST，对整体候选池、预测均值最优10\%候选、实际选中点和池内上界声明子集计算失效率、归一化分位数损失、余量、有效样本量及回退频率。A隔离校准器，但历史来源仍会影响结果。
+
+B在相同冻结历史及候选池上，比较均值贪心、固定概率0.3探索、经验上界改善、完整反馈以及附加最大距离规则。所有策略在额外标签可见前保存决策，之后计算真实改善与池内机会损失。标签不写回源历史。B中的0.3是预定参考概率，不冒充从完整开发结果选出的最优概率。
+
+检查点为25\%、50\%、75\%、100\%预算；25\%落在初始化时移至\(n_0+1\)次评价，明确报告实际比例；去重后各运行4个状态，每状态额外评价256个解析候选。诊断使用独立函数对象，保存独立标签与决策文件，源日志哈希在诊断前后保持不变。
+
+\hypertarget{ux5b9eux9a8ccux4e0eux5185ux90e8ux6bd4ux8f83}{%
+\subsection{6.3
+实验C与内部比较}\label{ux5b9eux9a8ccux4e0eux5185ux90e8ux6bd4ux8f83}}
+
+13个预定配置为均值贪心、固定概率0.1/0.3/0.5/0.8、T加固定管理0.3、PEM-T、PEM-G、PEM-S、PEM-ST、去除上界模式、只用失效率反馈、只用停滞反馈。只用失效率版本同时去除宽度及停滞项；只用停滞版本令\(a=0\)并不采用上界选点。完整闭环独立形成轨迹。
+
+T加固定管理和去除上界模式保留为等价性审计，不解释为两个独立机制。固定探索概率通过开发集的函数与维度等权终点指标选择。统计显著性不能代替开发路线判断。
+
+\hypertarget{ux6307ux6807ux4e0eux7edfux8ba1ux5355ux4f4d}{%
+\subsection{6.4
+指标与统计单位}\label{ux6307ux6807ux4e0eux7edfux8ba1ux5355ux4f4d}}
+
+已知最优值时，\(E_B=\max(f_{\mathrm{best},B}-f^*,0)\)。尺度采用共同初始化结束时的误差\(E_{n_0}\)，下限\(10^{-12}\)，终点指标为\(\log_{10}\max(E_B/E_{n_0},10^{-12})\)。这不意味着不同函数的绝对误差可互换，原始终点与初始化尺度同时公开。
+
+每个函数/实例先取3次运行的终点对数指标中位数，再对3实例求均值；同维度内函数等权。维度分开报告。PEM-T相对对照的差值小于0表示更好，几何误差比为\(10^\Delta\)。用8函数级配对Wilcoxon检验，两个维度及全部列出的比较一起Holm修正。
+
+区间采用4,000次保留配对的分层重采样：抽取函数、在函数内抽取实例、实例内对两个方法共同抽取运行索引，重算各方法中位数再求差。区间只描述该开发设计下的探索性不确定性，不解决算法或固定概率已用开发结果选择的问题。函数实例与随机重复不视为相互独立的问题。
+
+FDP同时报告声明频率、声明数及真实改善。闭环的平均运行FDP只在非零声明运行中计算并标明口径；单步汇总另报告合并声明数得到的比例。分位数损失用归一化\(u=(y-H)/s\)，\(\rho_{.9}(u)=u(.9-\mathbb I[u<0])\)。覆盖改善若来自更宽余量而没有优化收益，不视为完成研究假设。
+
+\hypertarget{ux5f00ux53d1ux9636ux6bb5ux7ed3ux679c}{%
+\section{7 开发阶段结果}\label{ux5f00ux53d1ux9636ux6bb5ux7ed3ux679c}}
+
+\hypertarget{ux5b9eux9a8cux5b8cux6210ux4e0eux6570ux636eux5ba1ux8ba1}{%
+\subsection{7.1
+实验完成与数据审计}\label{ux5b9eux9a8cux5b8cux6210ux4e0eux6570ux636eux5ba1ux8ba1}}
+
+13个闭环配置各144运行，共1,872运行，算法真实评价280,800次，无异常失败。共同历史3策略各144运行，共432运行、64,800次算法评价。诊断4状态/运行，共1,728状态及442,368次额外候选标签评价；标签独立保存且源日志哈希不变。两批合计执行2,304运行、345,600次算法评价。
+
+共同历史中的均值贪心与fixed03分别重复了闭环中的144条轨迹，用于逐轮保存候选池；这些重复不增加优化统计样本量。两批共有2,016条不同方法配置/种子轨迹，优化统计只使用闭环集合。开发和机制运行均没有调用保留确认实例。
+
+PEM-T与去除上界模式全部144条轨迹完全相同；fixed03与T加固定管理全部144条轨迹完全相同。这与第5.2节代数分析一致，不能将二者各自包装为有效选点消融。
+
+\hypertarget{ux95edux73afux7ec8ux70b9ux6548ux679c}{%
+\subsection{7.2
+闭环终点效果}\label{ux95edux73afux7ec8ux70b9ux6548ux679c}}
+
+表1给出函数等权的终点对数相对误差，越小越好。固定探索候选中10\%最好；均值贪心在两个维度的总体指标也略优于固定10\%。完整反馈及局部化版本未优于这些内部对照。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllllll@{}}
+\caption{开发集终点指标}\tabularnewline
+\toprule
+维度 & 均值贪心 & 固定10\% & PEM-T & PEM-ST & 仅失效率 & 仅停滞 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 均值贪心 & 固定10\% & PEM-T & PEM-ST & 仅失效率 & 仅停滞 \\
+\midrule
+\endhead
+10 & -1.3552 & -1.3499 & -1.0668 & -1.0866 & -1.2898 & -1.2613 \\
+20 & -1.3324 & -1.3211 & -1.1401 & -1.1097 & -1.2851 & -1.1757 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+表2为PEM-T相对固定10\%的配对函数级效果。误差比大于1表示PEM-T终点误差较大；这表示跨函数相对误差的几何汇总，不表示每一次运行都具有相同比例。两个维度分别0胜8负。重采样区间未包含0，但Holm检验未达0.05；两者口径不同，且全部为开发结果，不能选择性报告其中一种以宣称确认性显著结论。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{PEM-T相对固定10\%的开发效果}\tabularnewline
+\toprule
+维度 & 对数差值 & 95\%重采样区间 & 几何误差比 & 胜 负 & Holm p \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 对数差值 & 95\%重采样区间 & 几何误差比 & 胜 负 & Holm p \\
+\midrule
+\endhead
+10 & 0.2831 & {[}0.060, 0.484{]} & 1.919 & 0 8 & 0.15625 \\
+20 & 0.1810 & {[}0.012, 0.521{]} & 1.517 & 0 8 & 0.15625 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+表3公开每个函数汇总，避免总分掩盖异质性。原始误差的中位数及IQR另保存于补充数据。
+
+\begingroup\small
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllll@{}}
+\caption{分函数终点指标}\tabularnewline
+\toprule
+维度 & 函数 & 固定10\% & PEM-T & PEM-T 减 固定 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 函数 & 固定10\% & PEM-T & PEM-T 减 固定 \\
+\midrule
+\endhead
+10 & f1 & -1.8870 & -1.6736 & 0.2135 \\
+10 & f3 & -0.4201 & -0.3115 & 0.1085 \\
+10 & f6 & -2.4209 & -2.3516 & 0.0692 \\
+10 & f10 & -1.0658 & -0.6192 & 0.4466 \\
+10 & f15 & -0.4604 & -0.3645 & 0.0959 \\
+10 & f20 & -3.6167 & -2.7177 & 0.8990 \\
+10 & f21 & -0.6537 & -0.2393 & 0.4144 \\
+10 & f24 & -0.2747 & -0.2568 & 0.0179 \\
+20 & f1 & -1.7055 & -1.6989 & 0.0066 \\
+20 & f3 & -0.5617 & -0.4966 & 0.0651 \\
+20 & f6 & -2.9449 & -2.6855 & 0.2594 \\
+20 & f10 & -1.0327 & -0.8264 & 0.2063 \\
+20 & f15 & -0.5562 & -0.5028 & 0.0534 \\
+20 & f20 & -2.6470 & -2.2689 & 0.3781 \\
+20 & f21 & -0.8209 & -0.3614 & 0.4595 \\
+20 & f24 & -0.2998 & -0.2805 & 0.0193 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\endgroup
+
+\begin{figure}
+\centering
+\includegraphics{../results/analysis_v1/convergence.png}
+\caption{开发集收敛曲线。每轮对所有开发函数、实例与运行的归一化对数误差取中位数，聚合口径不同于表1的函数级实例汇总；曲线末端不能读成表1指标。图中没有确认实验。}
+\end{figure}
+
+\hypertarget{ux63a2ux7d22ux5206ux914dux4e0eux7a00ux758fux6539ux5584ux58f0ux660e}{%
+\subsection{7.3
+探索分配与稀疏改善声明}\label{ux63a2ux7d22ux5206ux914dux4e0eux7a00ux758fux6539ux5584ux58f0ux660e}}
+
+PEM-T的实际探索比例为10维36.6\%、20维33.4\%，均明显高于固定10\%；上界失效率约为9.9\%和9.5\%，接近目标10\%并未对应更好的最终解。单看失效率无法判断评价分配是否有效。
+
+表4联合报告探索、失效、声明与错误数。PEM-T在10维总共只有3次声明，20维没有声明。因此不能将20维没有错误写成可靠改善或FDP控制；FDP应为NA。PEM-ST在20维有32次声明、2次错误，但其终点指标仍较差，声明表现没有证明优化改进。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllllll@{}}
+\caption{闭环决策指标 失效率为平均运行率
+FDP为合并声明比例}\tabularnewline
+\toprule
+维度 & 配置 & 探索比例 & 失效率 & 声明数 & 错误数 & 合并FDP \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 配置 & 探索比例 & 失效率 & 声明数 & 错误数 & 合并FDP \\
+\midrule
+\endhead
+10 & fixed01 & 0.100 & 0.084 & 4 & 2 & 0.500 \\
+10 & PEM\_T & 0.366 & 0.099 & 3 & 1 & 0.333 \\
+10 & PEM\_ST & 0.357 & 0.106 & 7 & 4 & 0.571 \\
+10 & error\_only & 0.157 & 0.085 & 4 & 2 & 0.500 \\
+10 & stagnation\_only & 0.234 & 0.097 & 2 & 0 & 0.000 \\
+20 & fixed01 & 0.102 & 0.087 & 10 & 9 & 0.900 \\
+20 & PEM\_T & 0.334 & 0.095 & 0 & 0 & NA \\
+20 & PEM\_ST & 0.348 & 0.110 & 32 & 2 & 0.062 \\
+20 & error\_only & 0.148 & 0.086 & 8 & 4 & 0.500 \\
+20 & stagnation\_only & 0.239 & 0.095 & 1 & 1 & 1.000 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+仅失效率反馈版本比完整反馈终点更好，但仍没有达到相对固定10\%的总体优势。这提示宽度与停滞驱动的额外探索可能需要重新设计；现有消融同时移除两个反馈项，不能据此精确分配两项的独立因果贡献。
+
+\hypertarget{ux5171ux540cux5386ux53f2ux8befux5deeux8bcaux65ad}{%
+\subsection{7.4
+共同历史误差诊断}\label{ux5171ux540cux5386ux53f2ux8befux5deeux8bcaux65ad}}
+
+表5使用同历史、同模型、同候选池的T上界。fixed03历史下，实际选中点失效率高于候选池；贪心历史下则出现相反方向。因而支持``评价对象会改变误差表现''，不支持``筛选必然使覆盖恶化''这种单向陈述。每个维度/历史有288个冻结状态，实际选中组每状态1点，候选池每状态256点，前10\%组每状态26点。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllll@{}}
+\caption{T校准器在不同筛选对象上的失效率}\tabularnewline
+\toprule
+维度 & 历史策略 & 候选池失效 & 前10\%失效 & 实际选中失效 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 历史策略 & 候选池失效 & 前10\%失效 & 实际选中失效 \\
+\midrule
+\endhead
+10 & greedy & 0.107 & 0.040 & 0.087 \\
+10 & fixed03 & 0.043 & 0.029 & 0.125 \\
+10 & pool\_random & 0.077 & 0.094 & 0.052 \\
+20 & greedy & 0.169 & 0.084 & 0.094 \\
+20 & fixed03 & 0.048 & 0.042 & 0.142 \\
+20 & pool\_random & 0.094 & 0.106 & 0.104 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\begin{figure}
+\centering
+\includegraphics{../results/analysis_v1/selection_failure.png}
+\caption{共同历史下的单侧失效率。虚线为目标10\%；每组状态相关，不将每个候选标签当作独立统计问题。}
+\end{figure}
+
+表6只针对实际选中点，三种历史等权平均，显示局部化降低了部分归一化分位数损失与余量；这仍是给定共同历史下的估计表现。不能把表6的改进解释为闭环性能改进，也不能称达到名义覆盖。10维首次检查点因支持不足而回退，平均回退约25\%；20维这些检查点不回退。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{实际选中点的校准器表现}\tabularnewline
+\toprule
+维度 & 校准器 & 归一化损失 & 上界余量 & 有效样本量 & 回退比例 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 校准器 & 归一化损失 & 上界余量 & 有效样本量 & 回退比例 \\
+\midrule
+\endhead
+10 & G & 0.1355 & 1.1044 & 45.5000 & 0.0000 \\
+10 & T & 0.1284 & 1.0262 & 37.7288 & 0.2500 \\
+10 & S & 0.1241 & 0.9463 & 38.8140 & 0.2500 \\
+10 & ST & 0.1187 & 0.9175 & 32.1634 & 0.2500 \\
+20 & G & 0.1465 & 0.9365 & 74.7500 & 0.0000 \\
+20 & T & 0.1409 & 0.9114 & 52.3172 & 0.0000 \\
+20 & S & 0.1322 & 0.7874 & 60.5382 & 0.0000 \\
+20 & ST & 0.1307 & 0.7643 & 42.6863 & 0.0000 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+改善声明子集非常稀疏，表7同时列出非空状态与候选数。比例分母以声明候选数合并，不与图2的状态平均混淆。这些数据仅作机制诊断，不能估计稳定的声明成功概率。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{T上界的池内声明子集及样本支持}\tabularnewline
+\toprule
+维度 & 历史策略 & 非空状态数 & 声明候选数 & 失效数 & 合并失效 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 历史策略 & 非空状态数 & 声明候选数 & 失效数 & 合并失效 \\
+\midrule
+\endhead
+10 & fixed03 & 3/288 & 13 & 7 & 0.538 \\
+10 & greedy & 3/288 & 13 & 7 & 0.538 \\
+10 & pool\_random & 22/288 & 42 & 31 & 0.738 \\
+20 & fixed03 & 1/288 & 1 & 0 & 0.000 \\
+20 & greedy & 4/288 & 4 & 1 & 0.250 \\
+20 & pool\_random & 22/288 & 38 & 19 & 0.500 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\hypertarget{ux5171ux540cux72b6ux6001ux5355ux6b65ux51b3ux7b56}{%
+\subsection{7.5
+共同状态单步决策}\label{ux5171ux540cux72b6ux6001ux5355ux6b65ux51b3ux7b56}}
+
+表8为同一冻结候选池上所选点的归一化真实改善。T下经验上界策略与均值贪心完全等价，故不重复一列。完整反馈在全部6个维度/历史组合中，平均单步改善低于均值贪心，也低于预定fixed=.3参考规则；增加最大距离探索在这些共同状态中没有带来即时改善优势。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllll@{}}
+\caption{共同状态下归一化单步改善}\tabularnewline
+\toprule
+维度 & 历史策略 & 均值改善 & 固定30\%改善 & 完整反馈改善 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 历史策略 & 均值改善 & 固定30\%改善 & 完整反馈改善 \\
+\midrule
+\endhead
+10 & greedy & 0.0310 & 0.0257 & 0.0251 \\
+10 & fixed03 & 0.0260 & 0.0219 & 0.0213 \\
+10 & pool\_random & 0.1240 & 0.0925 & 0.0867 \\
+20 & greedy & 0.0541 & 0.0433 & 0.0381 \\
+20 & fixed03 & 0.0350 & 0.0238 & 0.0172 \\
+20 & pool\_random & 0.1326 & 0.0871 & 0.0795 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+单步结果不排除探索可能改善未来模型，但闭环结果没有提供该后续收益的支持。当前不应将``高误差导致多探索''解释为已修复模型。
+
+\hypertarget{ux5f00ux9500ux4e0eux8defux7ebfux95e8ux69db}{%
+\subsection{7.6
+开销与路线门槛}\label{ux5f00ux9500ux4e0eux8defux7ebfux95e8ux69db}}
+
+原始并行负载下，PEM-T单运行总耗时中位数约0.78秒（10维）和1.82秒（20维）；PEM-ST约0.84秒和1.97秒。候选生成是当前实现主要开销。上述为开发运行的观测耗时，未作独占成本比较；解析目标本身极快，不作为应用加速证据。
+
+原计划第十四节要求开发集显示相对选定固定探索基线的优化收益，再进入确认实验。主原型在两个维度均未满足这一必要条件。因此本阶段判定不通过优化改进路线门槛，保留全部失败结果与已冻结协议，转向机制分析；不扩大BBOB确认、CEC和应用运行去替代这一判断。
+
+\hypertarget{ux72ecux7acbux673aux5236ux9a8cux8bc1}{%
+\section{8 独立机制验证}\label{ux72ecux7acbux673aux5236ux9a8cux8bc1}}
+
+\hypertarget{ux8303ux56f4ux4e0eux6570ux636eux5ba1ux8ba1}{%
+\subsection{8.1
+范围与数据审计}\label{ux8303ux56f4ux4e0eux6570ux636eux5ba1ux8ba1}}
+
+全24个BBOB函数，10/20/40维，实例11--13，各3重复；六种内部配置共3,888运行、907,200算法评价。三种预定历史共1,944轨迹、7,776冻结状态，独立取得1,990,656额外标签。完整日志、共同初始化、评价前信息顺序和源指纹通过全量检查。原计划实例6--10未读取。本阶段不调参数、不删除函数、不并入开发集统计，也不倒置开发门槛的失败结论。
+
+\hypertarget{ux9884ux5b9aux4e3bux8981ux6bd4ux8f83}{%
+\subsection{8.2
+预定主要比较}\label{ux9884ux5b9aux4e3bux8981ux6bd4ux8f83}}
+
+估计正负需按指标解释：P1为fixed03的选中-池内失效差减greedy的对应差；闭环P2为PEM-T减固定.1的终点对数误差，负值更好；单步P2为反馈减均值的归一化真实改善，正值更好。24函数配对，9项统一Holm；分层重采样区间未作多重校正，不能替代校正检验。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llllllll@{}}
+\caption{9项预定比较完整结果}\tabularnewline
+\toprule
+维度 & 比较 & 估计 & 区间下限 & 区间上限 & 正方向函数 & 负方向函数 &
+Holm p \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 比较 & 估计 & 区间下限 & 区间上限 & 正方向函数 & 负方向函数 &
+Holm p \\
+\midrule
+\endhead
+10 & 历史差异之差 & 0.0851 & 0.0311 & 0.1234 & 20 & 4 & 0.0015 \\
+20 & 历史差异之差 & 0.1225 & 0.0696 & 0.1948 & 21 & 3 & 0.0006 \\
+40 & 历史差异之差 & 0.1449 & 0.0941 & 0.2244 & 17 & 7 & 0.0017 \\
+10 & 终点误差差 & 0.1668 & 0.0749 & 0.2391 & 22 & 2 & 5.36e-06 \\
+20 & 终点误差差 & 0.0998 & 0.0467 & 0.1905 & 19 & 5 & 0.0017 \\
+40 & 终点误差差 & 0.0639 & 0.0130 & 0.1123 & 19 & 5 & 0.0017 \\
+10 & 单步改善差 & -0.0170 & -0.0431 & -0.0067 & 1 & 18 & 0.0008 \\
+20 & 单步改善差 & -0.0158 & -0.0352 & -0.0079 & 0 & 21 & 0.0005 \\
+40 & 单步改善差 & -0.0344 & -0.0630 & -0.0100 & 1 & 20 & 0.0005 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{主原型闭环终点效果}\tabularnewline
+\toprule
+维度 & 终点对数差 & 几何误差比 & 误差较大函数 & 误差较小函数 & Holm p \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 终点对数差 & 几何误差比 & 误差较大函数 & 误差较小函数 & Holm p \\
+\midrule
+\endhead
+10 & 0.1668 & 1.4681 & 22 & 2 & 5.36e-06 \\
+20 & 0.0998 & 1.2584 & 19 & 5 & 0.0017 \\
+40 & 0.0639 & 1.1585 & 19 & 5 & 0.0017 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\begin{figure}
+\centering
+\includegraphics{../results/mechanism_validation_report_v1/endpoint_function_effects.png}
+\caption{逐函数终点差。橙色表示PEM-T误差更大，蓝色表示误差更小；每维24函数均保留。}
+\end{figure}
+
+\hypertarget{ux5386ux53f2ux4e0eux76d1ux6d4bux5bf9ux8c61}{%
+\subsection{8.3
+历史与监测对象}\label{ux5386ux53f2ux4e0eux76d1ux6d4bux5bf9ux8c61}}
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llll@{}}
+\caption{T上界的候选池与实际选中失效率}\tabularnewline
+\toprule
+维度 & 历史 & 候选池失效 & 实际选中失效 \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 历史 & 候选池失效 & 实际选中失效 \\
+\midrule
+\endhead
+10 & fixed03 & 0.0479 & 0.1215 \\
+10 & greedy & 0.1018 & 0.0903 \\
+10 & pool\_random & 0.0859 & 0.0660 \\
+20 & fixed03 & 0.0442 & 0.0833 \\
+20 & greedy & 0.1494 & 0.0660 \\
+20 & pool\_random & 0.0900 & 0.0729 \\
+40 & fixed03 & 0.0505 & 0.0799 \\
+40 & greedy & 0.1850 & 0.0694 \\
+40 & pool\_random & 0.0978 & 0.0694 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\begin{figure}
+\centering
+\includegraphics{../results/mechanism_validation_report_v1/history_object_differences.png}
+\caption{不同历史的实际选中减候选池失效率。方向由结果决定，不预设筛选必然恶化。不同历史并非同池反事实，图中差异不解释为历史策略的独立因果效应。}
+\end{figure}
+
+\hypertarget{ux6837ux672cux652fux6301ux4e0eux58f0ux660e}{%
+\subsection{8.4
+样本支持与声明}\label{ux6837ux672cux652fux6301ux4e0eux58f0ux660e}}
+
+\begin{figure}
+\centering
+\includegraphics{../results/mechanism_validation_report_v1/effective_support.png}
+\caption{时间及局部时空上界的状态平均ESS。每轨迹四个实际检查点；首个检查点分别41/100、61/200、101/400。虚线20是工程支持阈值，不是覆盖保证。}
+\end{figure}
+
+检查点支持与回退完整表另存CSV。闭环声明汇总表联合保存声明总数、错误数、探索、失效及FDP；无声明FDP为NA。稀疏池内声明表另公开非空状态数、候选数及合并失败比例，不从零错误或低失败比例推出稳定声明成功概率。
+
+\hypertarget{ux7ed3ux679cux89e3ux8bfbux4e0eux5916ux90e8ux80ccux666f}{%
+\subsection{8.5
+结果解读与外部背景}\label{ux7ed3ux679cux89e3ux8bfbux4e0eux5916ux90e8ux80ccux666f}}
+
+预定历史差异之差在三个维度均为正，并通过9项家族Holm校正；固定.3历史的实际选中-池内失效差大于贪心历史的对应差。与此同时，贪心和池内随机历史的实际选中失效低于池内整体失效，而固定.3相反。这支持方向依赖历史与决策策略的限定性命题，不支持``筛选必然导致失效增加''的泛化。不同历史不共享池，不能把差异解释为固定池上的独立因果效应。
+
+PEM-T相对开发选定固定.1的终点差在三个维度均为正，共同状态反馈减均值的即期改善差均为负，九项预定比较的校正p均小于.002。该结果独立支持当前反馈规则未带来优化收益的判断；它不证明所有反馈探索无效，即期收益也不识别完整长期因果机制。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lllllll@{}}
+\caption{独立闭环探索、失效与声明分母。FDP为合并错误数/声明数，不是运行FDP平均。}\tabularnewline
+\toprule
+维度 & 配置 & 探索频率 & 上界失效 & 声明数 & 错误数 & 合并FDP \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 配置 & 探索频率 & 上界失效 & 声明数 & 错误数 & 合并FDP \\
+\midrule
+\endhead
+10 & PEM\_ST & 0.3936 & 0.1052 & 48 & 23 & 0.4792 \\
+10 & PEM\_T & 0.3967 & 0.1008 & 31 & 20 & 0.6452 \\
+10 & fixed01 & 0.0949 & 0.0812 & 35 & 21 & 0.6000 \\
+20 & PEM\_ST & 0.3687 & 0.1078 & 158 & 36 & 0.2278 \\
+20 & PEM\_T & 0.3644 & 0.0942 & 34 & 27 & 0.7941 \\
+20 & fixed01 & 0.1018 & 0.0833 & 48 & 32 & 0.6667 \\
+40 & PEM\_ST & 0.3701 & 0.1196 & 870 & 98 & 0.1126 \\
+40 & PEM\_T & 0.3435 & 0.0964 & 155 & 30 & 0.1935 \\
+40 & fixed01 & 0.1007 & 0.0930 & 388 & 71 & 0.1830 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+10维PEM-T作出31个声明，其中20个错误，合并FDP为64.5\%；20维PEM-T作出34个声明，其中27个错误，合并FDP为79.4\%；40维PEM-T作出155个声明，其中30个错误，合并FDP为19.4\%。约10\%的总体失效率没有转化为约10\%的声明错误比例；声明子集很小，不能直接由总体比例推断逐声明可靠性，也不能把这些稀疏FDP估计看作稳定的概率保证。
+
+\begin{figure}
+\centering
+\includegraphics{../results/mechanism_validation_report_v1/convergence_curves.png}
+\caption{独立验证收敛曲线。先各实例3重复中位数，再实例和24函数平均；从共同初始化完成后展示。}
+\end{figure}
+
+原冻结实现的次要AUC/曲线先将绝对误差截在10\^{}\{-12\}再除以初始误差；主终点先除再截。近零误差时二者可不同，图中保持冻结AUC规则，不为贴合终点而改值。实际共有0个初始化后曲线条目低于-12，0个运行终点达到记录的精确最优值。该补充仅公开计算约定，不新增显著性检验。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llllll@{}}
+\caption{全24函数的描述性背景终点均值，越低越好。}\tabularnewline
+\toprule
+维度 & 固定.1 & PEM-T & PEM-ST & Sobol & CMA-ES \\
+\midrule
+\endfirsthead
+\toprule
+维度 & 固定.1 & PEM-T & PEM-ST & Sobol & CMA-ES \\
+\midrule
+\endhead
+10 & -0.8823 & -0.7156 & -0.7465 & -0.0805 & -0.4275 \\
+20 & -0.8761 & -0.7763 & -0.7877 & -0.1066 & -0.4799 \\
+40 & -0.7934 & -0.7295 & -0.7041 & -0.1029 & -0.4440 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+Sobol/CMA-ES共1,296运行、302,400次计费评价，另通过全量日志审计；保留自身初始化和搜索。背景归一化仅在分析阶段使用匹配问题/seed的内部共同初始误差，先单运行归一化再取中位数，分母不传给外部算法。它不是同历史因果对照，也不替代关键SAEA竞争方法。正式GP-EI/TuRBO全部批次与原始日志审计已完成，第9节仅使用完整结果作描述性展示。
+
+\hypertarget{ux6570ux503cux652fux6301ux4e0eux9002ux7528ux8fb9ux754c}{%
+\subsection{8.6
+数值、支持与适用边界}\label{ux6570ux503cux652fux6301ux4e0eux9002ux7528ux8fb9ux754c}}
+
+加法修正的严格排序等价是精确实数命题。浮点中将公共常数10\^{}16加到均值{[}1,0{]}会得到相等上界，从而改变首索引平局选择；这个教学反例不进入基准统计。开发轨迹一致性及新验证全部G/T决策索引审计属于各自已执行范围的实现证据。本次独立诊断记录0项G/T上界与均值索引不一致。
+
+本次实际有185328次拟合发生256训练点截断。空间校准分位数损失、余量、ESS、回退、稀疏声明及五组预定BBOB结构表均完整公开；不依据有利子组更换主方法。40维不是一般高维能力证明。共享负载耗时不作为独占加速证据，廉价解析目标也不能替代真实应用时间节省。
+
+\hypertarget{ux5b8cux6574ux53c2ux7167ux72ecux5360ux6210ux672cux4e0eux5e94ux7528ux8fc1ux79fb}{%
+\section{9
+完整参照、独占成本与应用迁移}\label{ux5b8cux6574ux53c2ux7167ux72ecux5360ux6210ux672cux4e0eux5e94ux7528ux8fc1ux79fb}}
+
+\hypertarget{ux5b8cux6574bbobux63cfux8ff0ux6027ux53c2ux7167}{%
+\subsection{9.1
+完整BBOB描述性参照}\label{ux5b8cux6574bbobux63cfux8ff0ux6027ux53c2ux7167}}
+
+冻结GP-EI及作者TuRBO-1各完成648运行/151,200次计费评价，保留全部函数、重复及原GP/候选搜索。与六内部及两基础参照合计十方法、6,480运行和1,512,000次算法评价。外部保留自身初始化与搜索；匹配内部初始误差分母仅在完成后的分析中读取，先按每运行归一化再取实例内重复中位数，24函数等权。不增加显著性家族，也不将这些参照冒充缺失的关键SAEA复现。
+
+GP-EI采用经典期望改善思路{[}10{]}及明确冻结的核与搜索，不称原作者EGO软件精确复现。TuRBO-1使用作者局部信赖域实现{[}11{]}，由外部入口严格限制付费调用。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lrrr@{}}
+\caption{全部十方法函数级对数相对终点均值，越低越好。}\tabularnewline
+\toprule
+Method & D=10 & D=20 & D=40 \\
+\midrule
+\endfirsthead
+\toprule
+Method & D=10 & D=20 & D=40 \\
+\midrule
+\endhead
+greedy & -0.9152 & -0.9014 & -0.8158 \\
+fixed01 & -0.8823 & -0.8761 & -0.7934 \\
+fixed03 & -0.7829 & -0.771 & -0.7097 \\
+pool\_random & -0.1683 & -0.2223 & -0.2623 \\
+PEM\_T & -0.7156 & -0.7763 & -0.7295 \\
+PEM\_ST & -0.7465 & -0.7877 & -0.7041 \\
+sobol & -0.0805 & -0.1066 & -0.1029 \\
+cma\_es & -0.4275 & -0.4799 & -0.444 \\
+gp\_ei & -1.3292 & -1.033 & -0.9323 \\
+turbo\_1 & -1.102 & -1.1219 & -1.0389 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\begin{figure}
+\centering
+\includegraphics{../results/all_reference_report_v1/reference_endpoints.png}
+\caption{全部BBOB外部背景终点，排除部分运行与资源预检实例。}
+\end{figure}
+
+\hypertarget{ux72ecux5360ux6210ux672c}{%
+\subsection{9.2 独占成本}\label{ux72ecux5360ux6210ux672c}}
+
+冻结成本设计为f1/实例4上三个维度、六方法、三重复的54次独立串行进程测量，共12,600次付费评价，不进入基准效果统计。测量前检查实际进程与背景CPU负载；运行耗时含日志，各方法保留自身初始化。贪心/固定策略仍执行时间监测，因此是当前系统实现成本，不是去除所有监测后的理想成本。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{D=10;
+三重复中位数，完整min/max与独立进程原值保留CSV。}\tabularnewline
+\toprule
+Method & Algorithm s & Nonobjective s & Peak GiB & Post-init prep s \\
+\midrule
+\endfirsthead
+\toprule
+Method & Algorithm s & Nonobjective s & Peak GiB & Post-init prep s \\
+\midrule
+\endhead
+PEM\_ST & 0.6547 & 0.6543 & 0.0945 & 0.0108 \\
+PEM\_T & 0.6075 & 0.6072 & 0.0947 & 0.01 \\
+fixed01 & 0.602 & 0.6016 & 0.0947 & 0.0099 \\
+gp\_ei & 27.6737 & 27.6724 & 0.2863 & 0.3456 \\
+greedy & 0.5983 & 0.5979 & 0.0945 & 0.0098 \\
+turbo\_1 & 7.4536 & 7.4522 & 0.3905 & 0.0923 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{D=20;
+三重复中位数，完整min/max与独立进程原值保留CSV。}\tabularnewline
+\toprule
+Method & Algorithm s & Nonobjective s & Peak GiB & Post-init prep s \\
+\midrule
+\endfirsthead
+\toprule
+Method & Algorithm s & Nonobjective s & Peak GiB & Post-init prep s \\
+\midrule
+\endhead
+PEM\_ST & 1.6909 & 1.6901 & 0.0946 & 0.012 \\
+PEM\_T & 1.5254 & 1.5246 & 0.0948 & 0.0108 \\
+fixed01 & 1.5252 & 1.5244 & 0.0948 & 0.0108 \\
+gp\_ei & 175.864 & 175.861 & 0.3059 & 1.0989 \\
+greedy & 1.5246 & 1.5238 & 0.0945 & 0.0108 \\
+turbo\_1 & 35.0159 & 35.013 & 0.5936 & 0.2183 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{D=40;
+三重复中位数，完整min/max与独立进程原值保留CSV。}\tabularnewline
+\toprule
+Method & Algorithm s & Nonobjective s & Peak GiB & Post-init prep s \\
+\midrule
+\endfirsthead
+\toprule
+Method & Algorithm s & Nonobjective s & Peak GiB & Post-init prep s \\
+\midrule
+\endhead
+PEM\_ST & 4.7496 & 4.7476 & 0.096 & 0.0157 \\
+PEM\_T & 4.3878 & 4.3856 & 0.0962 & 0.0145 \\
+fixed01 & 4.3787 & 4.3766 & 0.0965 & 0.0145 \\
+gp\_ei & 1308.81 & 1308.8 & 0.3073 & 4.0897 \\
+greedy & 4.3615 & 4.3594 & 0.0958 & 0.0144 \\
+turbo\_1 & 255.912 & 255.906 & 1.0791 & 0.7993 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\begin{figure}
+\centering
+\includegraphics{../results/integrated_paper_report_v1/objective_cost_scenarios.png}
+\caption{基于串行测量的假设评价成本情境，各维度所有方法预算相同。}
+\end{figure}
+
+假设单评价耗时c，时间模型为已测非目标开销加Bc，不是实测应用加速。同预算的评价成本斜率相同，不能从该图声称节省评价。
+
+\hypertarget{lassobenchux673aux5236ux8fc1ux79fb}{%
+\subsection{9.3
+LassoBench机制迁移}\label{lassobenchux673aux5236ux8fc1ux79fb}}
+
+采用LassoBench{[}12{]}应用目标，另立协议在正式seed42标签前冻结。三个原任务60/100/180维、八方法、20优化重复、500评价共480运行/240,000完整配置评价（1,200,000个CV折求解）；内部启动140/220/380次全部计费，外部保持自身初始化。作者5折全保真目标、固定数据/分割、求解器、边界与目标定义均未修改。
+
+最优未知，直接报告原验证损失。完整500标签保存后，以最低验证值选配置，并列取首次，只调用一次作者test，480次额外单拟合另列。合成测试MSPE使用固定oracle归一化，DNA为绝对测试MSE，不跨尺度平均。合成构造器预计算固定测试归一化常数，但测试表现没有进入优化反馈。
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lrrrrr@{}}
+\caption{synt\_simple;
+20优化运行离散程度与优化后测试中位数。}\tabularnewline
+\toprule
+Method & CV median & Q1 & Q3 & Test MSPE median & F-score median \\
+\midrule
+\endfirsthead
+\toprule
+Method & CV median & Q1 & Q3 & Test MSPE median & F-score median \\
+\midrule
+\endhead
+PEM\_ST & 0.7896 & 0.7656 & 0.8528 & 1.1435 & 0.6667 \\
+PEM\_T & 0.7714 & 0.7557 & 0.8654 & 1.2013 & 0.6667 \\
+cma\_es & 0.758 & 0.7176 & 0.7826 & 1.072 & 0.5455 \\
+fixed01 & 0.7534 & 0.7092 & 0.816 & 1.1441 & 0.6667 \\
+gp\_ei & 1.0118 & 0.9392 & 1.0847 & 1.1167 & 0.6 \\
+greedy & 0.7501 & 0.703 & 0.7755 & 1.1078 & 0.6 \\
+sobol & 1.2057 & 1.0326 & 1.2544 & 1.1865 & 0.4808 \\
+turbo\_1 & 0.6448 & 0.5888 & 0.7032 & 1.0643 & 0.6 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lrrrrr@{}}
+\caption{synt\_medium;
+20优化运行离散程度与优化后测试中位数。}\tabularnewline
+\toprule
+Method & CV median & Q1 & Q3 & Test MSPE median & F-score median \\
+\midrule
+\endfirsthead
+\toprule
+Method & CV median & Q1 & Q3 & Test MSPE median & F-score median \\
+\midrule
+\endhead
+PEM\_ST & 1.146 & 1.1122 & 1.1731 & 0.7697 & 0.7692 \\
+PEM\_T & 1.1519 & 1.1327 & 1.1684 & 0.7562 & 0.8013 \\
+cma\_es & 1.1888 & 1.1345 & 1.237 & 0.7927 & 0.625 \\
+fixed01 & 1.1186 & 1.0751 & 1.1418 & 0.7486 & 0.7692 \\
+gp\_ei & 1.61 & 1.5226 & 1.7486 & 0.8469 & 0.6667 \\
+greedy & 1.1103 & 1.069 & 1.1616 & 0.7703 & 0.7692 \\
+sobol & 1.8953 & 1.7099 & 2.0302 & 0.8846 & 0.625 \\
+turbo\_1 & 1.0277 & 0.9575 & 1.0632 & 0.835 & 0.625 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lrrrrl@{}}
+\caption{DNA; 20优化运行离散程度与优化后测试中位数。}\tabularnewline
+\toprule
+Method & CV median & Q1 & Q3 & Test MSPE median & F-score median \\
+\midrule
+\endfirsthead
+\toprule
+Method & CV median & Q1 & Q3 & Test MSPE median & F-score median \\
+\midrule
+\endhead
+PEM\_ST & 0.3071 & 0.3056 & 0.3092 & 0.3304 & NA \\
+PEM\_T & 0.3073 & 0.3054 & 0.3093 & 0.3277 & NA \\
+cma\_es & 0.3014 & 0.2992 & 0.3043 & 0.3285 & NA \\
+fixed01 & 0.306 & 0.3025 & 0.3079 & 0.3307 & NA \\
+gp\_ei & 0.336 & 0.3328 & 0.3384 & 0.3495 & NA \\
+greedy & 0.3057 & 0.3042 & 0.3067 & 0.327 & NA \\
+sobol & 0.3348 & 0.332 & 0.3375 & 0.3439 & NA \\
+turbo\_1 & 0.3028 & 0.3005 & 0.3052 & 0.3278 & NA \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lrrrrrrr@{}}
+\caption{预定应用家族：PEM-T减固定.1原终点验证损失，正差表示反馈更差；区间为未经多重校正的配对运行重采样。}\tabularnewline
+\toprule
+Task & Median difference & CI low & CI high & Holm p & Loss & Win &
+Tie \\
+\midrule
+\endfirsthead
+\toprule
+Task & Median difference & CI low & CI high & Holm p & Loss & Win &
+Tie \\
+\midrule
+\endhead
+synt\_simple & 0.0503 & 0.0032 & 0.0725 & 0.0826 & 14 & 6 & 0 \\
+synt\_medium & 0.0393 & 0.0221 & 0.0626 & 0.0192 & 16 & 4 & 0 \\
+DNA & 0.0027 & 0.0005279 & 0.0044 & 0.0592 & 16 & 4 & 0 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+synt\_simple: 更高, Holm p=0.0826；synt\_medium: 更高, Holm
+p=0.0192；DNA: 更高, Holm p=0.0592.
+
+三个应用比较独立进行Holm校正，不与BBOB九项机制检验混成一个家族。每任务20重复只对应同一固定数据及划分的优化随机性，不是20个独立数据集；无论方向与显著性，均保留signed-rank及配对bootstrap假设限制。
+
+\begin{figure}
+\centering
+\includegraphics{../results/application_report_v1/application_endpoints.png}
+\caption{原验证目标终点及运行IQR，不构造未知最优误差。}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{../results/application_report_v1/application_convergence.png}
+\caption{原验证目标中位数/IQR曲线，虚线为内部启动结束，外部设计不同；0比例显示首次付费标签。}
+\end{figure}
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llrrrrlr@{}}
+\caption{初始化后实际选择点监测，均为描述性；没有调用候选池隐藏目标。}\tabularnewline
+\toprule
+Task & Method & Failure & Q-loss & Claims & False & Pooled FDP &
+No-claim runs \\
+\midrule
+\endfirsthead
+\toprule
+Task & Method & Failure & Q-loss & Claims & False & Pooled FDP &
+No-claim runs \\
+\midrule
+\endhead
+DNA & PEM\_ST & 0.0704 & 0.0698 & 0 & 0 & NA & 20 \\
+DNA & PEM\_T & 0.0629 & 0.084 & 0 & 0 & NA & 20 \\
+DNA & fixed01 & 0.0346 & 0.0627 & 0 & 0 & NA & 20 \\
+DNA & greedy & 0.0079 & 0.041 & 1 & 1 & 1.0000 & 19 \\
+synt\_medium & PEM\_ST & 0.1036 & 0.0778 & 53 & 46 & 0.8679 & 1 \\
+synt\_medium & PEM\_T & 0.0887 & 0.0904 & 7 & 6 & 0.8571 & 14 \\
+synt\_medium & fixed01 & 0.0505 & 0.0452 & 27 & 23 & 0.8519 & 5 \\
+synt\_medium & greedy & 0.0134 & 0.0147 & 60 & 54 & 0.9000 & 1 \\
+synt\_simple & PEM\_ST & 0.1103 & 0.0946 & 75 & 74 & 0.9867 & 1 \\
+synt\_simple & PEM\_T & 0.0931 & 0.1104 & 7 & 6 & 0.8571 & 15 \\
+synt\_simple & fixed01 & 0.0549 & 0.0476 & 76 & 74 & 0.9737 & 1 \\
+synt\_simple & greedy & 0.0367 & 0.0137 & 220 & 218 & 0.9909 & 0 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+各方法闭环历史不同，不能从这些指标识别同池因果效应。零声明FDP记NA且公开数量。300维synt\_high因此采用独立冻结的1,000次评价协议，结果见第11节。应用结果不倒改原开发集失败门槛。
+
+\hypertarget{ux8ba8ux8bba}{%
+\section{10 讨论}\label{ux8ba8ux8bba}}
+
+本原型的失败有两类不同证据。第一，上界改善选点在T/G下存在结构性冗余，这是不依赖基准表现的代数性质，144条轨迹审计为实现提供了对应证据。第二，完整反馈增加了探索，而开发闭环和共同状态单步收益没有支持这些额外探索的价值；这是该设计和预算下的经验结果，不能推广为所有误差反馈策略都无效。
+
+实验支持监测对象需分别报告，但差异方向依赖历史。池内前10\%与实际选中点不是同一分布：fixed03既可能按均值选点，也可能按最大距离选点。将这种差异统称为``贪心筛选偏差''，会掩盖探索模式本身的作用。
+
+空间余量可以改变候选排序，并降低部分共同历史分位数损失，但闭环空间版本仍没有总体收益。有效样本量仅检查权重集中程度，不衡量代理模型是否适合候选区域；它不能单独解决历史模型尺度迁移或远离历史的误差分布变化。
+
+本阶段最明确的发现是误差估计、声明与预算分配不可混作同一个成功指标。PEM-T接近10\%的失效率，同时声明几乎不发生且优化较差，说明低失效率可能不足以形成有用的改善决策。继续研究应先提出改变候选排序或按实际评价收益估计探索价值的明确机制，使用新开发阶段验证，而非直接叠加更多权重或继续调整同一批数据上的阈值。
+
+本阶段的成本记录分开训练、候选生成、校准、选点、目标评价与日志写入。内部均值贪心与固定混合对照也计算T上界用于监测日志，该结果不参与其选点；原始耗时因此包含这部分诊断仪表开销，不能代表没有这些记录的精简对照成本。解析函数模拟评价受限而非真正昂贵计算；第9节补齐独占计时、峰值与三个主要应用，但同预算及假设评价成本仍不能解释为实测墙钟加速，模型/预算敏感性与预定扩展继续作为缺口。
+
+本文没有给出90\%逐点成功概率、改善声明FDR控制、优化遗憾界或全局收敛保证。有效样本量门槛、历史时间权重和反馈系数均为工程原型；短预算下误差监测稀疏和尺度迁移也可能影响它们。D=10/20开发结果不能证明一般高维能力。
+
+证据边界还包括：没有开展BBOB主确认、CEC2017、LassoBench应用和完整外部基线；Temporal
+CP-SAEA、SADE-SS、BGP-SAEA部分全文/可靠代码缺口仍在。相对内部对照的结果不能改写成对已有论文的竞争结论。若继续修改反馈机制，应建立新的开发阶段及保留实例，不在当前数据上反复挑参数后重复声称确认。
+
+\hypertarget{ux9884ux5b9a300ux7ef4ux6269ux5c55}{%
+\section{11 预定300维扩展}\label{ux9884ux5b9a300ux7ef4ux6269ux5c55}}
+
+预定\texttt{synt\_high}扩展采用1,000次付费评价，因为未修改的内部初始化需要620次，超过主要应用的500预算。八方法在固定seed42数据与划分上各完成20次优化（160运行、160,000次验证评价、800,000次CV折求解），每个完整运行随后恰调用一次留出测试。该合成任务具有低有效维结构且预算不同，不能据此宣称一般高维能力或跨任务优势。
+
+\hypertarget{ux7ec8ux70b9ux4e0eux6536ux655b}{%
+\subsection{11.1 终点与收敛}\label{ux7ec8ux70b9ux4e0eux6536ux655b}}
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+Method & 验证损失中位数{[}Q1,Q3{]} & 测试MSPE中位数{[}Q1,Q3{]} &
+测试F-score中位数{[}Q1,Q3{]} \\
+\midrule
+\endhead
+greedy & 1.38 {[}1.334, 1.435{]} & 1.508 {[}1.466, 1.608{]} & 0.6897
+{[}0.6522, 0.7186{]} \\
+fixed01 & 1.392 {[}1.345, 1.442{]} & 1.615 {[}1.484, 1.677{]} & 0.6977
+{[}0.6596, 0.7317{]} \\
+PEM\_T & 1.364 {[}1.338, 1.439{]} & 1.58 {[}1.503, 1.653{]} & 0.7143
+{[}0.678, 0.7548{]} \\
+PEM\_ST & 1.372 {[}1.312, 1.476{]} & 1.614 {[}1.525, 1.653{]} & 0.6977
+{[}0.6818, 0.7317{]} \\
+sobol & 18.54 {[}16.12, 22.64{]} & 13.45 {[}10.07, 19.15{]} & 0.3314
+{[}0.3055, 0.354{]} \\
+cma\_es & 1.145 {[}1.089, 1.179{]} & 1.696 {[}1.612, 1.909{]} & 0.6522
+{[}0.6, 0.6667{]} \\
+gp\_ei & 17.04 {[}14.89, 21{]} & 13.5 {[}9.747, 19.81{]} & 0.359
+{[}0.3123, 0.3709{]} \\
+turbo\_1 & 1.157 {[}1.128, 1.265{]} & 1.654 {[}1.6, 1.798{]} & 0.723
+{[}0.6977, 0.75{]} \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+\begin{figure}
+\centering
+\includegraphics{../results/application_high_report_v1/high_endpoint.png}
+\caption{高维终点}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{../results/application_high_report_v1/high_convergence.png}
+\caption{高维收敛}
+\end{figure}
+
+预定的PEM\_T减fixed01原验证损失中位差为-0.01788，配对运行重采样区间为{[}-0.06477,
+0.05017{]}，负/正/零差分别11/9/0。没有计算p值，也未把该比较加入三个主要应用的检验家族；区间条件于同一固定数据和划分。
+
+\hypertarget{ux9009ux62e9ux70b9ux53cdux9988ux4e0eux8d44ux6e90ux8fb9ux754c}{%
+\subsection{11.2
+选择点反馈与资源边界}\label{ux9009ux62e9ux70b9ux53cdux9988ux4e0eux8d44ux6e90ux8fb9ux754c}}
+
+\par\noindent\begin{minipage}{\linewidth}
+
+\begin{longtable}[]{@{}lrrrrrr@{}}
+\toprule
+Method & 失效率 & 0.9分位损失 & 探索比例 & 回退比例 & 声明数 & FDP \\
+\midrule
+\endhead
+greedy & 0.07447 & 0.01695 & 0 & 0 & 257 & 1 \\
+fixed01 & 0.07895 & 0.03878 & 0.09618 & 0 & 127 & 0.9921 \\
+PEM\_T & 0.08921 & 0.07535 & 0.3405 & 0 & 5 & 1 \\
+PEM\_ST & 0.1266 & 0.06124 & 0.3854 & 0.01184 & 119 & 0.9916 \\
+\bottomrule
+\end{longtable}
+
+\end{minipage}\par
+
+反馈汇总覆盖每个内部运行初始化后的380个选择点，仅描述各自闭环历史，不支持同池因果效应或共形错误控制。在正式标签前，八项独立满预算资源运行共完成8,000次验证评价且零次test。其混合负载计时只用于可行性；正式优化时间按观测进程成本报告，不解释为独占加速。
+
+\hypertarget{ux7ed3ux8bba}{%
+\section{12 结论}\label{ux7ed3ux8bba}}
+
+本文将共同历史误差、共同状态选点评价和独立闭环终点分开，并审计预测前信息与真实评价预算。精确实数下的候选无关加法修正在规定规则中保持均值排序，其实现边界另由数值及轨迹证据说明。开发阶段反馈原型未通过优化收益门槛；独立全24函数验证继续观察到PEM-T相对固定.1的终点误差更大、反馈即期改善更低，并支持对象差异方向依赖历史策略。10维终点几何误差比1.468，Holm
+p=5.36e-06；20维终点几何误差比1.258，Holm
+p=1.70e-03；40维终点几何误差比1.159，Holm
+p=1.70e-03。这些结果支持当前规则的机制与失败分析，不证明一般反馈或共形优化无效。完整GP/背景参照、独占成本与三个主要应用的全部预定运行均已完成；预定扩展已在第11节完成；可靠关键SAEA仍需完成，本文为可审计工作稿，未宣称投稿就绪。
+
+\hypertarget{ux53c2ux8003ux6587ux732e}{%
+\section{参考文献}\label{ux53c2ux8003ux6587ux732e}}
+
+{[}1{]} Deshpande S, Marx C, Kuleshov V. Online Calibrated and Conformal
+Prediction Improves Bayesian Optimization. AISTATS 2024, PMLR 238:
+1450--1458. \url{https://proceedings.mlr.press/v238/deshpande24a.html}.
+
+{[}2{]} Kim D, Zecchin M, Park S, Kang J, Simeone O. Robust Bayesian
+Optimization via Localized Online Conformal Prediction.
+arXiv:2411.17387v2. \url{https://arxiv.org/html/2411.17387v2}.
+
+{[}3{]} Nardone E, De Stefano C, Scotto di Freca A, Fontanella F,
+D'Alessandro T. Toward Reliable Uncertainty Quantification in
+Surrogate-Assisted Evolutionary Algorithms via Temporal Conformal
+Prediction. EvoApplications 2026: 384--401.
+DOI:10.1007/978-3-032-23604-3\_24.
+
+{[}4{]} Jin Y, Ren Z. Confidence on the Focal: Conformal Prediction with
+Selection-Conditional Coverage. arXiv:2403.03868v3.
+\url{https://arxiv.org/html/2403.03868v3}.
+
+{[}5{]} Zhou R, Ren C, Meng Z, Zhu H. Surrogate-Assisted Differential
+Evolution With Search Space Tightening for High-Dimensional Expensive
+Optimization Problems. IEEE Transactions on Systems, Man, and
+Cybernetics: Systems, 2025, 55(10): 7356--7368.
+DOI:10.1109/TSMC.2025.3582897.
+
+{[}6{]} Zou H, Zeng S, Li C, Jiao R, Zhao F. Uncertainty estimation by
+boosting with Gaussian process for expensive optimization problems.
+Applied Soft Computing, 2025, 180: 113320.
+DOI:10.1016/j.asoc.2025.113320.
+
+{[}7{]} Yu L, Guo Y, Feng L, Zhu Z, Wei Z, Hou Y. A multi-source
+surrogate-assisted evolutionary algorithm for expensive optimization: An
+optinformatics perspective. Swarm and Evolutionary Computation, 2026,
+107: 102491. DOI:10.1016/j.swevo.2026.102491.
+
+{[}8{]} COCO. BBOB test suite documentation.
+\url{https://numbbo.github.io/coco/testsuites/bbob}.
+访问日期2026-09-17。
+
+{[}9{]} IOHprofiler. IOHexperimenter author documentation and
+implementation.
+\url{https://github.com/IOHprofiler/IOHexperimenter/blob/master/ioh/README.md}.
+实验版本0.3.22，访问日期2026-09-17。
+
+{[}10{]} D. R. Jones, M. Schonlau, W. J. Welch. Efficient Global
+Optimization of Expensive Black-Box Functions. Journal of Global
+Optimization 13, 455--492, 1998.
+\url{https://doi.org/10.1023/A:1008306431147}.
+
+{[}11{]} D. Eriksson, M. Pearce, J. Gardner, R. D. Turner, M. Poloczek.
+Scalable Global Optimization via Local Bayesian Optimization. Advances
+in Neural Information Processing Systems 32, 2019.
+\url{https://proceedings.neurips.cc/paper/2019/hash/6c990b7aca7bc7058f5e98ea909e924b-Abstract.html}.
+
+{[}12{]} K. Šehić, A. Gramfort, J. Salmon, L. Nardi. LassoBench: A
+High-Dimensional Hyperparameter Optimization Benchmark Suite for Lasso.
+Proceedings of the First International Conference on Automated Machine
+Learning, PMLR 188:2/1--24, 2022.
+\url{https://proceedings.mlr.press/v188/sehic22a.html}.
+
+\hypertarget{ux9644ux5f55-ux53efux590dux73b0ux6027ux4e0eux5b8cux6210ux72b6ux6001}{%
+\section{附录
+可复现性与完成状态}\label{ux9644ux5f55-ux53efux590dux73b0ux6027ux4e0eux5b8cux6210ux72b6ux6001}}
+
+原始评价日志、候选池、独立诊断标签、代码哈希、依赖锁、种子、失败记录、函数级统计及预定比较均保留在工作区。开发阶段与新机制验证各有独立冻结协议和全量审计；新验证没有读取原保留实例6--10，诊断标签不进入任何优化器。本文的优化排序命题限于精确实数运算和指定规则，已执行索引/轨迹一致性另有证据。
+
+已完成开发与独立机制数据、两种基础参照、中英文工作稿及补充材料。GP-EI/TuRBO完整参照、独占计时与三任务应用均有完整审计，预定300维扩展已完成，关键竞争方法可靠复现仍未完成；未根据这些缺口或活批次结果宣称投稿就绪。原优化改进路线门槛失败，因此不机械扩大原CEC或应用协议去替代这一判断。
+\end{document}

@@ -1,0 +1,17 @@
+{
+  "positioning": "mechanism_and_negative_results",
+  "cec_scheduler_alive": false,
+  "cec_completed_runs": 30,
+  "cec_partial_runs": 8,
+  "chinese_pdf_pages": 28,
+  "english_pdf_pages": 29,
+  "visual_scope_pages_checked": [
+    "zh:1,27,28",
+    "en:1,28,29"
+  ],
+  "visual_defects": [],
+  "sha256": {
+    "chinese": "e5a593af5fee261c63a23e02d20ab3c5e2e1509a0feacf8b14a76d5455d5b4a6",
+    "english": "0e67d31b4fa442047adcf79ce2c9a7b88f0623ccbcec20131064606ee9f58350"
+  }
+}

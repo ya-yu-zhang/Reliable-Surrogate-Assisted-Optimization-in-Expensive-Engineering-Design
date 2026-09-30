@@ -1,0 +1,1 @@
+{"functions":[1,24],"dimensions":[10],"instances":[1],"repeats":1,"methods":["greedy","fixed03","PEM_T","PEM_ST"],"workers":4,"out":"results/smoke","capture":"all"}

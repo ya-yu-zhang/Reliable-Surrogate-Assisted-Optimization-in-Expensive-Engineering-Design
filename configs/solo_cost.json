@@ -1,0 +1,1 @@
+{"functions":[1],"dimensions":[10,20,40],"instances":[4],"repeats":3,"methods":["greedy","fixed01","PEM_T","PEM_ST","gp_ei","turbo_1"],"budget_multiplier":10,"order_seed":100942,"max_background_cpu_percent":5,"out":"results/solo_cost_v1"}

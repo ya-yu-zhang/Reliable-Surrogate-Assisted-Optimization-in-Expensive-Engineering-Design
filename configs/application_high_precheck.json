@@ -1,0 +1,13 @@
+{
+  "dataset": "synt_high",
+  "dimension": 300,
+  "data_seed": 90043,
+  "points": [-1, -0.5, 0, 0.5, 1, 0],
+  "n_splits": 5,
+  "tol_level": 0.0001,
+  "test_size": 0.15,
+  "formal_budget_feasibility": 1000,
+  "runtime_manifest": "docs/application-formal-environment.json",
+  "freeze_manifest": "docs/frozen_application_high_precheck_v1/sha256.json",
+  "out": "results/application_high_precheck_v1"
+}

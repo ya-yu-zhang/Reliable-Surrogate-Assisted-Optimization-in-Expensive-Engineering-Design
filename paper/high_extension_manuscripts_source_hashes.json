@@ -1,0 +1,19 @@
+{
+  "results/application_high_analysis_v1/audit.json": "c0f47344fdf8eca9d22d36fe80a50fdbccb34456994ab7c7e7eea0bb864365b1",
+  "results/application_high_analysis_v1/runs.csv": "24fbce44035f5c3d42c7b2a0a547b1d33affc685968def0eea4ae791b2d83d5b",
+  "results/application_high_analysis_v1/convergence.csv": "6a67462595f620d9204e829f6fe2f4a2e5ada81a7286decb18d025920654d9a2",
+  "results/application_high_analysis_v1/descriptive_paired_difference.csv": "55541dcd1838c2315c58c382f83447638fefd33ac642cbaedacae20dec880f69",
+  "results/application_high_analysis_v1/source_hashes.json": "837491bcd9551a9ffa42544e9c8cfc1997ffc2d39c373153ef9d5ae0fb324e77",
+  "results/application_high_method_resource_analysis_v1/audit.json": "7baa556f4b4f0704f5c1f9e0bb2484097b5eaea00108df6b8e3b983284ecba25",
+  "results/application_high_method_resource_analysis_v1/resource_costs.csv": "65fe802da36b5e71780591249277fac79c34c81a52c5c54f7f2f8cd351a36718",
+  "results/application_high_method_resource_analysis_v1/source_hashes.json": "a156dad496499766afcc19779ccfcacf7f33218c634274df2e225bcc10c1236e",
+  "paper/english_integrated_manuscript.md": "eef073b7c0fc6b0826059abef1fc85ec751a782da4668bb6c72e7b9698f054c2",
+  "paper/论文综合机制稿.md": "1842c1804a265887b1bef23fbdc850c40eb6db39576e123ee8e3a397a083ecb1",
+  "src/build_high_extension_revision.py": "18dcef2e655eceb27d1fbff3bc8edbb5138487d597a9cc07ccac09b9eee75ef1",
+  "results/application_high_report_v1/high_endpoint.png": "a9378d6958f64f7fa08a44c47b3c389e9d5ebc4d67eb1e4cd57b6c8f9fb29159",
+  "results/application_high_report_v1/high_endpoint.pdf": "de22c64f36b0a2dd636cd185e1f1709da1c6fbd60a866849e26c7c11dda7fa17",
+  "results/application_high_report_v1/high_convergence.png": "243ea74e60749cd46eef7b14b75e7ae9f8ae976e1191616425ea8c13bfe00edf",
+  "results/application_high_report_v1/high_convergence.pdf": "d095245fedb433fa39113c2d803a8404b3babd022b880c9664ec5af78ca1251d",
+  "paper/english_high_extension_manuscript.md": "1789983547f5aad68c904504adef11f95649254585bc2dcc18957d1bba9c9952",
+  "paper/论文高维扩展机制稿.md": "07ae2c6a14dad772fa248444630536b8ff4104d0240f3835f78b14a02f17d9e5"
+}

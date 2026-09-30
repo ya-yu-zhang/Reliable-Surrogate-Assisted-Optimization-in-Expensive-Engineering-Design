@@ -1,0 +1,2656 @@
+{
+  "10.1109/TSMC.2025.3582897": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          31
+        ]
+      ],
+      "date-time": "2026-07-31T02:39:52Z",
+      "timestamp": 1785465592915,
+      "version": "3.56.0"
+    },
+    "reference-count": 45,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "10",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://ieeexplore.ieee.org/Xplorehelp/downloads/license-information/IEEE.html"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2025-10-01T00:00:00Z",
+          "timestamp": 1759276800000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "61906042"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "61906042"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "IEEE Trans. Syst. Man Cybern, Syst."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "DOI": "10.1109/tsmc.2025.3582897",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          7,
+          14
+        ]
+      ],
+      "date-time": "2025-07-14T17:43:43Z",
+      "timestamp": 1752515023000
+    },
+    "page": "7356-7368",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": [
+      "Surrogate-Assisted Differential Evolution With Search Space Tightening for High-Dimensional Expensive Optimization Problems"
+    ],
+    "prefix": "10.1109",
+    "volume": "55",
+    "author": [
+      {
+        "given": "Rongfeng",
+        "family": "Zhou",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute of Artificial Intelligence, Fujian University of Technology, Fuzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chongle",
+        "family": "Ren",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Artificial Intelligence, Fujian University of Technology, Fuzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1466-8082",
+        "authenticated-orcid": false,
+        "given": "Zhenyu",
+        "family": "Meng",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Artificial Intelligence, Fujian University of Technology, Fuzhou, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-1922-1631",
+        "authenticated-orcid": false,
+        "given": "Haibin",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Mathematics, Nipissing University, North Bay, ON, Canada"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "263",
+    "reference": [
+      {
+        "key": "ref1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00158-019-02290-y"
+      },
+      {
+        "key": "ref2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00500-022-07362-8"
+      },
+      {
+        "key": "ref3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CEC.2018.8477766"
+      },
+      {
+        "key": "ref4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCYB.2020.2967553"
+      },
+      {
+        "key": "ref5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4249/scholarpedia.1482"
+      },
+      {
+        "key": "ref6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1015059928466"
+      },
+      {
+        "key": "ref7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1008202821328"
+      },
+      {
+        "key": "ref8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s10462-022-10328-9"
+      },
+      {
+        "key": "ref9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSMC.2022.3163129"
+      },
+      {
+        "key": "ref10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02693799008941549"
+      },
+      {
+        "key": "ref11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1017/S0962492900000015"
+      },
+      {
+        "key": "ref12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1145/1961189.1961199"
+      },
+      {
+        "key": "ref13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/2.485891"
+      },
+      {
+        "key": "ref14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CEC.2007.4424969"
+      },
+      {
+        "key": "ref15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-031-23492-7_23"
+      },
+      {
+        "key": "ref16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.swevo.2019.04.009"
+      },
+      {
+        "key": "ref17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCYB.2022.3175533"
+      },
+      {
+        "key": "ref18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSMCC.2005.855506"
+      },
+      {
+        "key": "ref19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TEVC.2009.2014613"
+      },
+      {
+        "key": "ref20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CEC.2014.6900380"
+      },
+      {
+        "key": "ref21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CEC.2015.7257133"
+      },
+      {
+        "key": "ref22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CEC.2013.6557555"
+      },
+      {
+        "key": "ref23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s42064-021-0109-x"
+      },
+      {
+        "key": "ref24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCYB.2018.2809430"
+      },
+      {
+        "key": "ref25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ins.2020.06.045"
+      },
+      {
+        "key": "ref26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.asoc.2023.110492"
+      },
+      {
+        "key": "ref27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0951-8320(03)00058-9"
+      },
+      {
+        "key": "ref28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00500-003-0328-5"
+      },
+      {
+        "key": "ref29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ins.2023.03.101"
+      },
+      {
+        "key": "ref30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ins.2022.01.052"
+      },
+      {
+        "key": "ref31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.knosys.2021.106939"
+      },
+      {
+        "key": "ref32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.knosys.2019.01.006"
+      },
+      {
+        "key": "ref33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.ins.2021.01.031"
+      },
+      {
+        "key": "ref34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TCYB.2021.3118783"
+      },
+      {
+        "key": "ref35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TSMC.2022.3219080"
+      },
+      {
+        "key": "ref36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TEVC.2022.3177605"
+      },
+      {
+        "key": "ref37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.swevo.2024.101629"
+      },
+      {
+        "key": "ref38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2024.125496"
+      },
+      {
+        "key": "ref39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00158-017-1655-y"
+      },
+      {
+        "key": "ref40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/TEVC.2022.3226837"
+      },
+      {
+        "key": "ref41",
+        "article-title": "Problem definitions and evaluation criteria for the CEC 2014 special session and competition on single objective real-parameter numerical optimization",
+        "author": "Liang",
+        "year": "2014"
+      },
+      {
+        "key": "ref42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1109/CEC.2017.7969307"
+      },
+      {
+        "key": "ref43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.isatra.2023.05.005"
+      },
+      {
+        "key": "ref44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.eswa.2023.119848"
+      },
+      {
+        "key": "ref45",
+        "first-page": "341",
+        "volume-title": "Problem Definitions and Evaluation Criteria for CEC 2011 Competition on Testing Evolutionary Algorithms on Real World Optimization Problems",
+        "author": "Das",
+        "year": "2010"
+      }
+    ],
+    "container-title": [
+      "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx8/6221021/11173422/11079237.pdf?arnumber=11079237",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          9,
+          30
+        ]
+      ],
+      "date-time": "2025-09-30T13:36:58Z",
+      "timestamp": 1759239418000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://ieeexplore.ieee.org/document/11079237/"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    },
+    "references-count": 45,
+    "journal-issue": {
+      "issue": "10"
+    },
+    "URL": "https://doi.org/10.1109/tsmc.2025.3582897",
+    "relation": {},
+    "ISSN": [
+      "2168-2216",
+      "2168-2232"
+    ],
+    "issn-type": [
+      {
+        "value": "2168-2216",
+        "type": "print"
+      },
+      {
+        "value": "2168-2232",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          10
+        ]
+      ]
+    }
+  },
+  "10.1016/j.swevo.2026.102491": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          19
+        ]
+      ],
+      "date-time": "2026-08-19T04:27:47Z",
+      "timestamp": 1787113667468,
+      "version": "build-2736575974"
+    },
+    "reference-count": 48,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2026-08-01T00:00:00Z",
+          "timestamp": 1785542400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2026-08-01T00:00:00Z",
+          "timestamp": 1785542400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2026-08-01T00:00:00Z",
+          "timestamp": 1785542400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2026-08-01T00:00:00Z",
+          "timestamp": 1785542400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2026-08-01T00:00:00Z",
+          "timestamp": 1785542400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2026-08-01T00:00:00Z",
+          "timestamp": 1785542400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2026-08-01T00:00:00Z",
+          "timestamp": 1785542400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100005047",
+        "name": "Liaoning Provincial Natural Science Foundation",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100005047",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Swarm and Evolutionary Computation"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2026,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.swevo.2026.102491",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          30
+        ]
+      ],
+      "date-time": "2026-07-30T09:24:12Z",
+      "timestamp": 1785403452000
+    },
+    "page": "102491",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "special_numbering": "C",
+    "title": [
+      "A multi-source surrogate-assisted evolutionary algorithm for expensive optimization: An optinformatics perspective"
+    ],
+    "prefix": "10.1016",
+    "volume": "107",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0009-4087-9682",
+        "authenticated-orcid": false,
+        "given": "Laiqi",
+        "family": "Yu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yinan",
+        "family": "Guo",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Liang",
+        "family": "Feng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zexuan",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ziqi",
+        "family": "Wei",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yaqing",
+        "family": "Hou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.swevo.2026.102491_b1",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/TEVC.2025.3624153",
+        "article-title": "Evolutionary heterogeneous multitasking for quality diversity optimization",
+        "author": "Hou",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b2",
+        "article-title": "Evolutionary content generation via multimodal LLM-based fitness evaluation",
+        "author": "Hou",
+        "year": "2026",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "11",
+        "key": "10.1016/j.swevo.2026.102491_b3",
+        "doi-asserted-by": "crossref",
+        "first-page": "4492",
+        "DOI": "10.1109/TSMC.2018.2853719",
+        "article-title": "Multifactorial genetic programming for symbolic regression problems",
+        "volume": "50",
+        "author": "Zhong",
+        "year": "2018",
+        "journal-title": "IEEE Trans. Syst. Man Cybern.: Syst."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.swevo.2026.102491_b4",
+        "doi-asserted-by": "crossref",
+        "first-page": "3492",
+        "DOI": "10.1109/TSMC.2025.3541002",
+        "article-title": "A group-based many-task collaborative optimization framework for evolutionary robots design",
+        "volume": "55",
+        "author": "Hou",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Syst. Man Cybern.: Syst."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.swevo.2026.102491_b5",
+        "doi-asserted-by": "crossref",
+        "first-page": "715",
+        "DOI": "10.1109/TETCI.2023.3240221",
+        "article-title": "A surrogate-assisted two-stage differential evolution for expensive constrained optimization",
+        "volume": "7",
+        "author": "Liu",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Emerg. Top. Comput. Intell."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.swevo.2026.102491_b6",
+        "doi-asserted-by": "crossref",
+        "first-page": "1114",
+        "DOI": "10.1109/TEVC.2023.3291614",
+        "article-title": "Surrogate-assisted evolutionary algorithm with model and infill criterion auto-configuration",
+        "volume": "28",
+        "author": "Xie",
+        "year": "2024",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.swevo.2026.102491_b7",
+        "doi-asserted-by": "crossref",
+        "first-page": "7356",
+        "DOI": "10.1109/TSMC.2025.3582897",
+        "article-title": "Surrogate-assisted differential evolution with search space tightening for high-dimensional expensive optimization problems",
+        "volume": "55",
+        "author": "Zhou",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Syst. Man Cybern.: Syst."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.swevo.2026.102491_b8",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1109/TEVC.2017.2783441",
+        "article-title": "Multiproblem surrogates: Transfer evolutionary multiobjective optimization of computationally expensive problems",
+        "volume": "23",
+        "author": "Min",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.swevo.2026.102491_b9",
+        "doi-asserted-by": "crossref",
+        "first-page": "442",
+        "DOI": "10.1109/TEVC.2018.2869001",
+        "article-title": "Data-driven evolutionary optimization: An overview and case studies",
+        "volume": "23",
+        "author": "Jin",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b10",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.swevo.2025.101879",
+        "article-title": "Surrogate-assisted differential evolution: A survey",
+        "volume": "94",
+        "author": "Yu",
+        "year": "2025",
+        "journal-title": "Swarm Evol. Comput."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.swevo.2026.102491_b11",
+        "doi-asserted-by": "crossref",
+        "first-page": "2758",
+        "DOI": "10.1109/TSMC.2022.3219080",
+        "article-title": "Expensive optimization via surrogate-assisted and model-free evolutionary optimization",
+        "volume": "53",
+        "author": "Li",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Syst. Man Cybern.: Syst."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b12",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.swevo.2026.102312",
+        "article-title": "Composite indicator-guided infilling sampling for expensive multi-objective optimization",
+        "volume": "101",
+        "author": "Zhen",
+        "year": "2026",
+        "journal-title": "Swarm Evol. Comput."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.swevo.2026.102491_b13",
+        "doi-asserted-by": "crossref",
+        "first-page": "939",
+        "DOI": "10.1109/TCYB.2024.3489885",
+        "article-title": "A hierarchical surrogate-assisted differential evolution with core space localization",
+        "volume": "55",
+        "author": "Yu",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b14",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.swevo.2025.102275",
+        "article-title": "A surrogate-assisted evolutionary algorithm with multi-perspective infill sampling for expensive super-many-objective optimization problems",
+        "volume": "101",
+        "author": "Liu",
+        "year": "2026",
+        "journal-title": "Swarm Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b15",
+        "doi-asserted-by": "crossref",
+        "first-page": "288",
+        "DOI": "10.1016/j.swevo.2019.04.009",
+        "article-title": "Surrogate-guided differential evolution algorithm for high dimensional expensive problems",
+        "volume": "48",
+        "author": "Cai",
+        "year": "2019",
+        "journal-title": "Swarm Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b16",
+        "doi-asserted-by": "crossref",
+        "first-page": "423",
+        "DOI": "10.1016/j.ins.2023.03.101",
+        "article-title": "Evolutionary algorithm with individual-distribution search strategy and regression-classification surrogates for expensive optimization",
+        "volume": "634",
+        "author": "Li",
+        "year": "2023",
+        "journal-title": "Inform. Sci."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.swevo.2026.102491_b17",
+        "doi-asserted-by": "crossref",
+        "first-page": "2368",
+        "DOI": "10.1109/TCYB.2021.3118783",
+        "article-title": "Two-stage data-driven evolutionary optimization for high-dimensional expensive problems",
+        "volume": "53",
+        "author": "Zhen",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.swevo.2026.102491_b18",
+        "doi-asserted-by": "crossref",
+        "first-page": "2685",
+        "DOI": "10.1109/TCYB.2022.3175533",
+        "article-title": "A surrogate-assisted differential evolution algorithm for high-dimensional expensive optimization problems",
+        "volume": "53",
+        "author": "Wang",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "issue": "10",
+        "key": "10.1016/j.swevo.2026.102491_b19",
+        "doi-asserted-by": "crossref",
+        "first-page": "6268",
+        "DOI": "10.1109/TSMC.2023.3281822",
+        "article-title": "A surrogate-assisted evolutionary framework with regions of interests-based data selection for expensive constrained optimization",
+        "volume": "53",
+        "author": "Song",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Syst. Man Cybern.: Syst."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.swevo.2026.102491_b20",
+        "doi-asserted-by": "crossref",
+        "first-page": "740",
+        "DOI": "10.1109/TEVC.2009.2039141",
+        "article-title": "Feasibility structure modeling: An effective chaperone for constrained memetic algorithms",
+        "volume": "14",
+        "author": "Handoko",
+        "year": "2010",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.swevo.2026.102491_b21",
+        "doi-asserted-by": "crossref",
+        "first-page": "203",
+        "DOI": "10.1007/s12065-016-0146-1",
+        "article-title": "Towards a new praxis in optinformatics targeting knowledge re-use in evolutionary computation: simultaneous problem learning and optimization",
+        "volume": "9",
+        "author": "Lim",
+        "year": "2016",
+        "journal-title": "Evol. Intell."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b22",
+        "volume": "vol. 25",
+        "author": "Feng",
+        "year": "2021"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.swevo.2026.102491_b23",
+        "doi-asserted-by": "crossref",
+        "first-page": "51",
+        "DOI": "10.1109/TETCI.2017.2769104",
+        "article-title": "Insights on transfer optimization: Because experience is the best teacher",
+        "volume": "2",
+        "author": "Gupta",
+        "year": "2018",
+        "journal-title": "IEEE Trans. Emerg. Top. Comput. Intell."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.swevo.2026.102491_b24",
+        "doi-asserted-by": "crossref",
+        "first-page": "262",
+        "DOI": "10.1109/TEVC.2020.3023480",
+        "article-title": "Regularized evolutionary multitask optimization: Learning to intertask transfer in aligned subspace",
+        "volume": "25",
+        "author": "Tang",
+        "year": "2020",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.swevo.2026.102491_b25",
+        "doi-asserted-by": "crossref",
+        "first-page": "719",
+        "DOI": "10.1109/TEVC.2021.3131236",
+        "article-title": "A meta-knowledge transfer-based differential evolution for multitask optimization",
+        "volume": "26",
+        "author": "Li",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.swevo.2026.102491_b26",
+        "doi-asserted-by": "crossref",
+        "first-page": "2537",
+        "DOI": "10.1109/TEVC.2024.3494039",
+        "article-title": "Evolutionary multitasking with adaptive knowledge transfer for expensive multiobjective optimization",
+        "volume": "29",
+        "author": "Wu",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.swevo.2026.102491_b27",
+        "doi-asserted-by": "crossref",
+        "first-page": "2416",
+        "DOI": "10.1109/TEVC.2024.3478732",
+        "article-title": "Surrogate-assisted search with competitive knowledge transfer for expensive optimization",
+        "volume": "29",
+        "author": "Xue",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.swevo.2026.102491_b28",
+        "doi-asserted-by": "crossref",
+        "first-page": "779",
+        "DOI": "10.1109/TEVC.2024.3370937",
+        "article-title": "A surrogate-assisted evolutionary framework for expensive multitask optimization problems",
+        "volume": "29",
+        "author": "Tan",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.swevo.2026.102491_b29",
+        "doi-asserted-by": "crossref",
+        "first-page": "1390",
+        "DOI": "10.1109/TCYB.2020.2967553",
+        "article-title": "A surrogate-assisted multiswarm optimization algorithm for high-dimensional computationally expensive problems",
+        "volume": "51",
+        "author": "Li",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b30",
+        "doi-asserted-by": "crossref",
+        "first-page": "304",
+        "DOI": "10.1016/j.ins.2020.11.056",
+        "article-title": "An efficient surrogate-assisted hybrid optimization algorithm for expensive optimization problems",
+        "volume": "561",
+        "author": "Pan",
+        "year": "2021",
+        "journal-title": "Inform. Sci."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b31",
+        "doi-asserted-by": "crossref",
+        "first-page": "326",
+        "DOI": "10.1016/j.ins.2018.04.024",
+        "article-title": "An improved differential evolution algorithm using efficient adapted surrogate model for numerical optimization",
+        "volume": "451",
+        "author": "Awad",
+        "year": "2018",
+        "journal-title": "Inform. Sci."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b32",
+        "series-title": "2022 IEEE Symposium Series on Computational Intelligence",
+        "first-page": "1675",
+        "article-title": "Surrogate-assisted differential evolution with adaptation of training data selection criterion",
+        "author": "Nishihara",
+        "year": "2022"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.swevo.2026.102491_b33",
+        "doi-asserted-by": "crossref",
+        "first-page": "815",
+        "DOI": "10.1109/TEVC.2019.2890818",
+        "article-title": "A novel evolutionary sampling assisted optimization method for high-dimensional expensive problems",
+        "volume": "23",
+        "author": "Wang",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.swevo.2026.102491_b34",
+        "doi-asserted-by": "crossref",
+        "first-page": "716",
+        "DOI": "10.1109/TEVC.2022.3177605",
+        "article-title": "Evolutionary sampling agent for expensive problems",
+        "volume": "27",
+        "author": "Zhen",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b35",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.ins.2024.120246",
+        "article-title": "A surrogate-assisted differential evolution with fitness-independent parameter adaptation for high-dimensional expensive optimization",
+        "volume": "662",
+        "author": "Yu",
+        "year": "2024",
+        "journal-title": "Inform. Sci."
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.swevo.2026.102491_b36",
+        "doi-asserted-by": "crossref",
+        "first-page": "2664",
+        "DOI": "10.1109/TCYB.2017.2710978",
+        "article-title": "Committee-based active learning for surrogate-assisted particle swarm optimization of expensive problems",
+        "volume": "47",
+        "author": "Wang",
+        "year": "2017",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b37",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.eswa.2024.125496",
+        "article-title": "Multi-region hierarchical surrogate-assisted quantum-behaved particle swarm optimization for expensive optimization problems",
+        "volume": "261",
+        "author": "Li",
+        "year": "2025",
+        "journal-title": "Expert Syst. Appl."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.swevo.2026.102491_b38",
+        "doi-asserted-by": "crossref",
+        "first-page": "5720",
+        "DOI": "10.1109/TCYB.2021.3061420",
+        "article-title": "A three-level radial basis function method for expensive optimization",
+        "volume": "52",
+        "author": "Li",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.swevo.2026.102491_b39",
+        "doi-asserted-by": "crossref",
+        "first-page": "4",
+        "DOI": "10.1109/TEVC.2010.2059031",
+        "article-title": "Differential evolution: A survey of the state-of-the-art",
+        "volume": "15",
+        "author": "Das",
+        "year": "2011",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.swevo.2026.102491_b40",
+        "doi-asserted-by": "crossref",
+        "first-page": "945",
+        "DOI": "10.1109/TEVC.2009.2014613",
+        "article-title": "JADE: adaptive differential evolution with optional external archive",
+        "volume": "13",
+        "author": "Zhang",
+        "year": "2009",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "3–4",
+        "key": "10.1016/j.swevo.2026.102491_b41",
+        "doi-asserted-by": "crossref",
+        "first-page": "249",
+        "DOI": "10.1016/j.ins.2004.06.009",
+        "article-title": "DE/EDA: A new evolutionary algorithm for global optimization",
+        "volume": "169",
+        "author": "Sun",
+        "year": "2005",
+        "journal-title": "Inform. Sci."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b42",
+        "article-title": "Two-stage surrogate-assisted bi-cooperative optimization algorithm for high-dimensional expensive problems",
+        "author": "Liu",
+        "year": "2026",
+        "journal-title": "Knowl.-Based Syst."
+      },
+      {
+        "issue": "12",
+        "key": "10.1016/j.swevo.2026.102491_b43",
+        "doi-asserted-by": "crossref",
+        "first-page": "1238",
+        "DOI": "10.1038/s42256-022-00579-0",
+        "article-title": "A critical problem in benchmarking and analysis of evolutionary computation methods",
+        "volume": "4",
+        "author": "Kudela",
+        "year": "2022",
+        "journal-title": "Nat. Mach. Intell."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b44",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.1016/j.ins.2018.04.062",
+        "article-title": "Surrogate-assisted hierarchical particle swarm optimization",
+        "volume": "454",
+        "author": "Yu",
+        "year": "2018",
+        "journal-title": "Inform. Sci."
+      },
+      {
+        "issue": "2005",
+        "key": "10.1016/j.swevo.2026.102491_b45",
+        "first-page": "2005",
+        "article-title": "Problem definitions and evaluation criteria for the CEC 2005 special session on real-parameter optimization",
+        "volume": "2005005",
+        "author": "Suganthan",
+        "year": "2005",
+        "journal-title": "KanGAL Rep."
+      },
+      {
+        "key": "10.1016/j.swevo.2026.102491_b46",
+        "series-title": "Problem Definitions and Evaluation Criteria for the CEC 2017 Special Session and Competition on Single Objective Bound Constrained Real-Parameter Numerical Optimization",
+        "author": "Awad",
+        "year": "2016"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.swevo.2026.102491_b47",
+        "doi-asserted-by": "crossref",
+        "first-page": "318",
+        "DOI": "10.23919/JSEE.2021.000027",
+        "article-title": "Data-driven evolutionary sampling optimization forexpensive problems",
+        "volume": "32",
+        "author": "Huixiang",
+        "year": "2021",
+        "journal-title": "J. Syst. Eng. Electron."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.swevo.2026.102491_b48",
+        "doi-asserted-by": "crossref",
+        "first-page": "99",
+        "DOI": "10.12691/ajme-2-4-1",
+        "article-title": "Airfoil parameterization techniques: A review",
+        "volume": "2",
+        "author": "Salunke",
+        "year": "2014",
+        "journal-title": "Am. J. Mech. Eng."
+      }
+    ],
+    "container-title": [
+      "Swarm and Evolutionary Computation"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2210650226002117?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2210650226002117?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          19
+        ]
+      ],
+      "date-time": "2026-08-19T04:17:17Z",
+      "timestamp": 1787113037000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2210650226002117"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          8
+        ]
+      ]
+    },
+    "references-count": 48,
+    "alternative-id": [
+      "S2210650226002117"
+    ],
+    "URL": "https://doi.org/10.1016/j.swevo.2026.102491",
+    "relation": {},
+    "ISSN": [
+      "2210-6502"
+    ],
+    "issn-type": [
+      {
+        "value": "2210-6502",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "A multi-source surrogate-assisted evolutionary algorithm for expensive optimization: An optinformatics perspective",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Swarm and Evolutionary Computation",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.swevo.2026.102491",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2026 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "102491"
+  },
+  "10.1016/j.asoc.2025.113320": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          15
+        ]
+      ],
+      "date-time": "2026-09-15T11:07:30Z",
+      "timestamp": 1789470450739,
+      "version": "build-2803163510"
+    },
+    "reference-count": 88,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2025-08-01T00:00:00Z",
+          "timestamp": 1754006400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2025-08-01T00:00:00Z",
+          "timestamp": 1754006400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2025-08-01T00:00:00Z",
+          "timestamp": 1754006400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-017"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2025-08-01T00:00:00Z",
+          "timestamp": 1754006400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2025-08-01T00:00:00Z",
+          "timestamp": 1754006400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-012"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2025-08-01T00:00:00Z",
+          "timestamp": 1754006400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2025,
+              8,
+              1
+            ]
+          ],
+          "date-time": "2025-08-01T00:00:00Z",
+          "timestamp": 1754006400000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-004"
+      }
+    ],
+    "funder": [
+      {
+        "name": "National Key Laboratory of Blind Signal Processing",
+        "award": [
+          "61424132024007009"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "61424132024007009"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Applied Soft Computing"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2025,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.asoc.2025.113320",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2025,
+          6,
+          2
+        ]
+      ],
+      "date-time": "2025-06-02T19:38:42Z",
+      "timestamp": 1748893122000
+    },
+    "page": "113320",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "special_numbering": "C",
+    "title": [
+      "Uncertainty estimation by boosting with Gaussian process for expensive optimization problems"
+    ],
+    "prefix": "10.1016",
+    "volume": "180",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1899-3317",
+        "authenticated-orcid": false,
+        "given": "Hanhua",
+        "family": "Zou",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-0795-9092",
+        "authenticated-orcid": false,
+        "given": "Sanyou",
+        "family": "Zeng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9222-0702",
+        "authenticated-orcid": false,
+        "given": "Changhe",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ruwang",
+        "family": "Jiao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fei",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "issue": "7553",
+        "key": "10.1016/j.asoc.2025.113320_b1",
+        "doi-asserted-by": "crossref",
+        "first-page": "476",
+        "DOI": "10.1038/nature14544",
+        "article-title": "From evolutionary computation to the evolution of things",
+        "volume": "521",
+        "author": "Eiben",
+        "year": "2015",
+        "journal-title": "Nature"
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.asoc.2025.113320_b2",
+        "doi-asserted-by": "crossref",
+        "first-page": "62",
+        "DOI": "10.1109/MCI.2009.933094",
+        "article-title": "A systems approach to evolutionary multiobjective structural optimization and beyond",
+        "volume": "4",
+        "author": "Jin",
+        "year": "2009",
+        "journal-title": "IEEE Comput. Intell. Mag."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b3",
+        "series-title": "2018 IEEE Congress on Evolutionary Computation",
+        "first-page": "1",
+        "article-title": "Hierarchical surrogate-assisted evolutionary multi-scenario airfoil shape optimization",
+        "author": "Wang",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b4",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.engappai.2024.109381",
+        "article-title": "A survey of machine learning and evolutionary computation for antenna modeling and optimization: Methods and challenges",
+        "volume": "138",
+        "author": "Zou",
+        "year": "2024",
+        "journal-title": "Eng. Appl. Artif. Intell."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.asoc.2025.113320_b5",
+        "doi-asserted-by": "crossref",
+        "first-page": "61",
+        "DOI": "10.1016/j.swevo.2011.05.001",
+        "article-title": "Surrogate-assisted evolutionary computation: Recent advances and future challenges",
+        "volume": "1",
+        "author": "Jin",
+        "year": "2011",
+        "journal-title": "Swarm Evol. Comput."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.asoc.2025.113320_b6",
+        "doi-asserted-by": "crossref",
+        "first-page": "14",
+        "DOI": "10.1109/MCI.2023.3304073",
+        "article-title": "Surrogate-assisted many-objective optimization of building energy management",
+        "volume": "18",
+        "author": "Liu",
+        "year": "2023",
+        "journal-title": "IEEE Comput. Intell. Mag."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.asoc.2025.113320_b7",
+        "doi-asserted-by": "crossref",
+        "first-page": "442",
+        "DOI": "10.1109/TEVC.2018.2869001",
+        "article-title": "Data-driven evolutionary optimization: An overview and case studies",
+        "volume": "23",
+        "author": "Jin",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b8",
+        "series-title": "2024 IEEE Congress on Evolutionary Computation",
+        "first-page": "1",
+        "article-title": "Analysis of the impact of prediction accuracy on search performance in surrogate-assisted evolutionary algorithms",
+        "author": "Hanawa",
+        "year": "2024"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.asoc.2025.113320_b9",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1007/s00500-003-0328-5",
+        "article-title": "A comprehensive survey of fitness approximation in evolutionary computation",
+        "volume": "9",
+        "author": "Jin",
+        "year": "2005",
+        "journal-title": "Soft Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b10",
+        "article-title": "Efficient large-scale expensive optimization via surrogate-assisted sub-problem selection",
+        "author": "Zhao",
+        "year": "2025",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b11",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/TEVC.2024.3440354",
+        "article-title": "A hierarchical and ensemble surrogate-assisted evolutionary algorithm with model reduction for expensive many-objective optimization",
+        "author": "Yang",
+        "year": "2024",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b12",
+        "article-title": "A surrogate-assisted constrained optimization evolutionary algorithm by searching multiple kinds of global and local regions",
+        "author": "Zeng",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b13",
+        "doi-asserted-by": "crossref",
+        "first-page": "414",
+        "DOI": "10.1016/j.ins.2021.03.002",
+        "article-title": "Surrogate models in evolutionary single-objective optimization: A new taxonomy and experimental study",
+        "volume": "562",
+        "author": "Tong",
+        "year": "2021",
+        "journal-title": "Inform. Sci."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b14",
+        "series-title": "2005 IEEE Congress on Evolutionary Computation",
+        "first-page": "2832",
+        "article-title": "A study on polynomial regression and Gaussian process global surrogate model in hierarchical surrogate-assisted evolutionary algorithm",
+        "volume": "vol. 3",
+        "author": "Zhou",
+        "year": "2005"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.asoc.2025.113320_b15",
+        "doi-asserted-by": "crossref",
+        "first-page": "421",
+        "DOI": "10.1109/TEVC.2005.859463",
+        "article-title": "Single-and multiobjective evolutionary optimization assisted by Gaussian random field metamodels",
+        "volume": "10",
+        "author": "Emmerich",
+        "year": "2006",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b16",
+        "doi-asserted-by": "crossref",
+        "first-page": "1461",
+        "DOI": "10.1007/s00500-014-1283-z",
+        "article-title": "A two-layer surrogate-assisted particle swarm optimization algorithm",
+        "volume": "19",
+        "author": "Sun",
+        "year": "2015",
+        "journal-title": "Soft Comput."
+      },
+      {
+        "issue": "7",
+        "key": "10.1016/j.asoc.2025.113320_b17",
+        "doi-asserted-by": "crossref",
+        "first-page": "5720",
+        "DOI": "10.1109/TCYB.2021.3061420",
+        "article-title": "A three-level radial basis function method for expensive optimization",
+        "volume": "52",
+        "author": "Li",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b18",
+        "article-title": "Offline data-driven optimization at scale: A cooperative coevolutionary approach",
+        "author": "Gong",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b19",
+        "series-title": "Proceedings of the International Joint Conference on Neural Networks, 2003",
+        "first-page": "1617",
+        "article-title": "Using support vector machines in optimization for black-box objective functions",
+        "volume": "vol. 2",
+        "author": "Nakayama",
+        "year": "2003"
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.asoc.2025.113320_b20",
+        "doi-asserted-by": "crossref",
+        "first-page": "377",
+        "DOI": "10.1109/TETCI.2023.3301794",
+        "article-title": "A surrogate-assisted evolutionary algorithm for seeking multiple solutions of expensive multimodal optimization problems",
+        "volume": "8",
+        "author": "Ji",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Emerg. Top. Comput. Intell."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b21",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Dudy Lim, Yew-Soon Ong, Yaochu Jin, Bernhard Sendhoff, A study on metamodeling techniques, ensembles, and multi-surrogates in evolutionary computation, in: Proceedings of the 9th Annual Conference on Genetic and Evolutionary Computation, 2007, pp. 1288–1295.",
+        "DOI": "10.1145/1276958.1277203"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b22",
+        "doi-asserted-by": "crossref",
+        "first-page": "455",
+        "DOI": "10.1023/A:1008306431147",
+        "article-title": "Efficient global optimization of expensive black-box functions",
+        "volume": "13",
+        "author": "Jones",
+        "year": "1998",
+        "journal-title": "J. Global Optim."
+      },
+      {
+        "issue": "9",
+        "key": "10.1016/j.asoc.2025.113320_b23",
+        "doi-asserted-by": "crossref",
+        "first-page": "2664",
+        "DOI": "10.1109/TCYB.2017.2710978",
+        "article-title": "Committee-based active learning for surrogate-assisted particle swarm optimization of expensive problems",
+        "volume": "47",
+        "author": "Wang",
+        "year": "2017",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b24",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.swevo.2024.101741",
+        "article-title": "Large language models as surrogate models in evolutionary algorithms: A preliminary study",
+        "volume": "91",
+        "author": "Hao",
+        "year": "2024",
+        "journal-title": "Swarm Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b25",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Konrad Krawczyk, Jarosław Arabas, Empirical Study of Surrogate Model Assisting JADE: Relation Between the Model Accuracy and the Optimization Efficiency, in: Proceedings of the Genetic and Evolutionary Computation Conference Companion, 2024, pp. 2023–2031.",
+        "DOI": "10.1145/3638530.3664119"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b26",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Frederik Rehbach, Martin Zaefferer, Boris Naujoks, Thomas Bartz-Beielstein, Expected improvement versus predicted value in surrogate-based optimization, in: Proceedings of the 2020 Genetic and Evolutionary Computation Conference, 2020, pp. 868–876.",
+        "DOI": "10.1145/3377930.3389816"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.asoc.2025.113320_b27",
+        "doi-asserted-by": "crossref",
+        "first-page": "481",
+        "DOI": "10.1109/TEVC.2002.800884",
+        "article-title": "A framework for evolutionary optimization with approximate fitness functions",
+        "volume": "6",
+        "author": "Jin",
+        "year": "2002",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "13s",
+        "key": "10.1016/j.asoc.2025.113320_b28",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1145/3582270",
+        "article-title": "Recent advances in Bayesian optimization",
+        "volume": "55",
+        "author": "Wang",
+        "year": "2023",
+        "journal-title": "ACM Comput. Surv."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b29",
+        "article-title": "Surrogate-assisted evolutionary algorithm with model and infill criterion auto-configuration",
+        "author": "Xie",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b30",
+        "series-title": "International Conference on Parallel Problem Solving from Nature",
+        "first-page": "361",
+        "article-title": "Metamodel—Assisted evolution strategies",
+        "author": "Emmerich",
+        "year": "2002"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b31",
+        "doi-asserted-by": "crossref",
+        "first-page": "345",
+        "DOI": "10.1023/A:1012771025575",
+        "article-title": "A taxonomy of global optimization methods based on response surfaces",
+        "volume": "21",
+        "author": "Jones",
+        "year": "2001",
+        "journal-title": "J. Global Optim."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.asoc.2025.113320_b32",
+        "doi-asserted-by": "crossref",
+        "first-page": "459",
+        "DOI": "10.1109/TEVC.2018.2869247",
+        "article-title": "Multiobjective infill criterion driven Gaussian process-assisted particle swarm optimization of high-dimensional expensive problems",
+        "volume": "23",
+        "author": "Tian",
+        "year": "2018",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b33",
+        "series-title": "2024 IEEE Congress on Evolutionary Computation",
+        "first-page": "1",
+        "article-title": "Model uncertainty in evolutionary optimization and bayesian optimization: A comparative analysis",
+        "author": "Hao",
+        "year": "2024"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b34",
+        "series-title": "2011 IEEE Congress of Evolutionary Computation",
+        "first-page": "2155",
+        "article-title": "On the selection of surrogate models in evolutionary optimization algorithms",
+        "author": "Díaz-Manríquez",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b35",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.eswa.2022.119075",
+        "article-title": "Decision space partition based surrogate-assisted evolutionary algorithm for expensive optimization",
+        "volume": "214",
+        "author": "Liu",
+        "year": "2023",
+        "journal-title": "Expert Syst. Appl."
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.asoc.2025.113320_b36",
+        "doi-asserted-by": "crossref",
+        "first-page": "815",
+        "DOI": "10.1109/TEVC.2019.2890818",
+        "article-title": "A novel evolutionary sampling assisted optimization method for high-dimensional expensive problems",
+        "volume": "23",
+        "author": "Wang",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.asoc.2025.113320_b37",
+        "doi-asserted-by": "crossref",
+        "first-page": "2685",
+        "DOI": "10.1109/TCYB.2022.3175533",
+        "article-title": "A surrogate-assisted differential evolution algorithm for high-dimensional expensive optimization problems",
+        "volume": "53",
+        "author": "Wang",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b38",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.asoc.2023.110733",
+        "article-title": "A multi-strategy surrogate-assisted competitive swarm optimizer for expensive optimization problems",
+        "volume": "147",
+        "author": "Pan",
+        "year": "2023",
+        "journal-title": "Appl. Soft Comput."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.asoc.2025.113320_b39",
+        "doi-asserted-by": "crossref",
+        "first-page": "716",
+        "DOI": "10.1109/TEVC.2022.3177605",
+        "article-title": "Evolutionary sampling agent for expensive problems",
+        "volume": "27",
+        "author": "Zhen",
+        "year": "2022",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b40",
+        "doi-asserted-by": "crossref",
+        "first-page": "1391",
+        "DOI": "10.1007/s40747-021-00277-1",
+        "article-title": "A bi-stage surrogate-assisted hybrid algorithm for expensive optimization problems",
+        "volume": "7",
+        "author": "Ren",
+        "year": "2021",
+        "journal-title": "Complex & Intell. Syst."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b41",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Handing Wang, Uncertainty in surrogate models, in: Proceedings of the 2016 on Genetic and Evolutionary Computation Conference Companion, 2016, pp. 1279–1279.",
+        "DOI": "10.1145/2908961.2931714"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b42",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.1007/s00500-003-0329-4",
+        "article-title": "Faster convergence by means of fitness estimation",
+        "volume": "9",
+        "author": "Branke",
+        "year": "2005",
+        "journal-title": "Soft Comput."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.asoc.2025.113320_b43",
+        "doi-asserted-by": "crossref",
+        "first-page": "199",
+        "DOI": "10.1007/s00158-006-0051-9",
+        "article-title": "Ensemble of surrogates",
+        "volume": "33",
+        "author": "Goel",
+        "year": "2007",
+        "journal-title": "Struct. Multidiscip. Optim."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.asoc.2025.113320_b44",
+        "doi-asserted-by": "crossref",
+        "first-page": "183",
+        "DOI": "10.1109/TSMCC.2004.841917",
+        "article-title": "Accelerating evolutionary algorithms with Gaussian process fitness function models",
+        "volume": "35",
+        "author": "Buche",
+        "year": "2005",
+        "journal-title": "IEEE Trans. Syst. Man, Cybern. Part C (Appl. Reviews)"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.asoc.2025.113320_b45",
+        "doi-asserted-by": "crossref",
+        "first-page": "180",
+        "DOI": "10.1109/TEVC.2013.2248012",
+        "article-title": "A Gaussian process surrogate model assisted evolutionary algorithm for medium scale expensive optimization problems",
+        "volume": "18",
+        "author": "Liu",
+        "year": "2014",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.asoc.2025.113320_b46",
+        "doi-asserted-by": "crossref",
+        "first-page": "365",
+        "DOI": "10.1109/TEVC.2019.2919762",
+        "article-title": "Efficient generalized surrogate-assisted evolutionary algorithm for high-dimensional expensive problems",
+        "volume": "24",
+        "author": "Cai",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.asoc.2025.113320_b47",
+        "doi-asserted-by": "crossref",
+        "first-page": "2440",
+        "DOI": "10.1109/TCYB.2021.3120188",
+        "article-title": "On nonstationary Gaussian process model for solving data-driven optimization problems",
+        "volume": "53",
+        "author": "Hu",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b48",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.asoc.2023.110866",
+        "article-title": "Scalable GP with hyperparameters sharing based on transfer learning for solving expensive optimization problems",
+        "volume": "148",
+        "author": "Hu",
+        "year": "2023",
+        "journal-title": "Appl. Soft Comput."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.asoc.2025.113320_b49",
+        "doi-asserted-by": "crossref",
+        "first-page": "50",
+        "DOI": "10.1109/TEVC.2005.851274",
+        "article-title": "ParEGO: A hybrid algorithm with on-line landscape approximation for expensive multiobjective optimization problems",
+        "volume": "10",
+        "author": "Knowles",
+        "year": "2006",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.asoc.2025.113320_b50",
+        "doi-asserted-by": "crossref",
+        "first-page": "456",
+        "DOI": "10.1109/TEVC.2009.2033671",
+        "article-title": "Expensive multiobjective optimization by MOEA/D with Gaussian process model",
+        "volume": "14",
+        "author": "Zhang",
+        "year": "2010",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.asoc.2025.113320_b51",
+        "doi-asserted-by": "crossref",
+        "first-page": "129",
+        "DOI": "10.1109/TEVC.2016.2622301",
+        "article-title": "A surrogate-assisted reference vector guided evolutionary algorithm for computationally expensive many-objective optimization",
+        "volume": "22",
+        "author": "Chugh",
+        "year": "2018",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "6",
+        "key": "10.1016/j.asoc.2025.113320_b52",
+        "doi-asserted-by": "crossref",
+        "first-page": "1013",
+        "DOI": "10.1109/TEVC.2021.3073648",
+        "article-title": "A kriging-assisted two-archive evolutionary algorithm for expensive many-objective optimization",
+        "volume": "25",
+        "author": "Song",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b53",
+        "series-title": "2023 IEEE Congress on Evolutionary Computation",
+        "first-page": "01",
+        "article-title": "A new infill criterion based on sorting of approximation uncertainty for expensive evolutionary many-objective optimization",
+        "author": "Liu",
+        "year": "2023"
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.asoc.2025.113320_b54",
+        "doi-asserted-by": "crossref",
+        "first-page": "1085",
+        "DOI": "10.1109/TEVC.2023.3237605",
+        "article-title": "A performance indicator-based infill criterion for expensive multi-/many-objective optimization",
+        "volume": "27",
+        "author": "Qin",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.asoc.2025.113320_b55",
+        "doi-asserted-by": "crossref",
+        "first-page": "631",
+        "DOI": "10.1109/TEVC.2021.3103936",
+        "article-title": "An ensemble surrogate-based framework for expensive multiobjective evolutionary optimization",
+        "volume": "26",
+        "author": "Lin",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.asoc.2025.113320_b56",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1145/3545611",
+        "article-title": "A survey on high-dimensional Gaussian process modeling with application to Bayesian optimization",
+        "volume": "2",
+        "author": "Binois",
+        "year": "2022",
+        "journal-title": "ACM Trans. Evol. Learn. Optim."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.asoc.2025.113320_b57",
+        "doi-asserted-by": "crossref",
+        "first-page": "329",
+        "DOI": "10.1109/TEVC.2009.2027359",
+        "article-title": "Generalizing surrogate-assisted evolutionary computation",
+        "volume": "14",
+        "author": "Lim",
+        "year": "2010",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b58",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.asoc.2020.106242",
+        "article-title": "A surrogate-assisted particle swarm optimization using ensemble learning for expensive problems with small sample datasets",
+        "volume": "91",
+        "author": "Fan",
+        "year": "2020",
+        "journal-title": "Appl. Soft Comput."
+      },
+      {
+        "issue": "1",
+        "key": "10.1016/j.asoc.2025.113320_b59",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1109/TSMC.2023.3306085",
+        "article-title": "Alleviating search bias in Bayesian evolutionary optimization with many heterogeneous objectives",
+        "volume": "54",
+        "author": "Wang",
+        "year": "2023",
+        "journal-title": "IEEE Trans. Syst. Man, Cybern.: Syst."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b60",
+        "series-title": "2019 IEEE Symposium Series on Computational Intelligence",
+        "first-page": "2074",
+        "article-title": "Bayesian approaches to surrogate-assisted evolutionary multi-objective optimization: A comparative study",
+        "author": "Qin",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b61",
+        "series-title": "The Design and Analysis of Computer Experiments",
+        "author": "Santner",
+        "year": "2003"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b62",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.asoc.2021.107268",
+        "article-title": "Neighborhood samples and surrogate assisted multi-objective evolutionary algorithm for expensive many-objective optimization problems",
+        "volume": "105",
+        "author": "Zhao",
+        "year": "2021",
+        "journal-title": "Appl. Soft Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b63",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.asoc.2020.106303",
+        "article-title": "A fast surrogate-assisted particle swarm optimization algorithm for computationally expensive problems",
+        "volume": "92",
+        "author": "Li",
+        "year": "2020",
+        "journal-title": "Appl. Soft Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b64",
+        "first-page": "1",
+        "article-title": "Multiple infill criterion-assisted hybrid evolutionary optimization for medium-dimensional computationally expensive problems",
+        "author": "Qin",
+        "year": "2022",
+        "journal-title": "Complex & Intell. Syst."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b65",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.asoc.2023.111194",
+        "article-title": "Inverse distance weighting and radial basis function based surrogate model for high-dimensional expensive multi-objective optimization",
+        "volume": "152",
+        "author": "Li",
+        "year": "2024",
+        "journal-title": "Appl. Soft Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b66",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.swevo.2020.100787",
+        "article-title": "A novel surrogate-assisted evolutionary algorithm with an uncertainty grouping based infill criterion",
+        "volume": "60",
+        "author": "Liu",
+        "year": "2021",
+        "journal-title": "Swarm Evol. Comput."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.asoc.2025.113320_b67",
+        "doi-asserted-by": "crossref",
+        "first-page": "1012",
+        "DOI": "10.1109/TCYB.2018.2794503",
+        "article-title": "Heterogeneous ensemble-based infill criterion for evolutionary multiobjective optimization of expensive problems",
+        "volume": "49",
+        "author": "Guo",
+        "year": "2019",
+        "journal-title": "IEEE Trans. Cybern."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b68",
+        "doi-asserted-by": "crossref",
+        "first-page": "291",
+        "DOI": "10.1016/j.asoc.2018.10.037",
+        "article-title": "Ensemble of surrogates assisted particle swarm optimization of medium scale expensive problems",
+        "volume": "74",
+        "author": "Li",
+        "year": "2019",
+        "journal-title": "Appl. Soft Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b69",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.knosys.2020.106520",
+        "article-title": "A surrogate-ensemble assisted expensive many-objective optimization",
+        "volume": "211",
+        "author": "Zhao",
+        "year": "2021",
+        "journal-title": "Knowl.-Based Syst."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b70",
+        "doi-asserted-by": "crossref",
+        "first-page": "174",
+        "DOI": "10.1016/j.ins.2022.01.052",
+        "article-title": "Multiple surrogates and offspring-assisted differential evolution for high-dimensional expensive problems",
+        "volume": "592",
+        "author": "Wang",
+        "year": "2022",
+        "journal-title": "Inform. Sci."
+      },
+      {
+        "issue": "4",
+        "key": "10.1016/j.asoc.2025.113320_b71",
+        "doi-asserted-by": "crossref",
+        "first-page": "2084",
+        "DOI": "10.1109/TSMC.2020.3044418",
+        "article-title": "Evolutionary optimization of high-dimensional multiobjective and many-objective expensive problems assisted by a dropout neural network",
+        "volume": "52",
+        "author": "Guo",
+        "year": "2021",
+        "journal-title": "IEEE Trans. Syst. Man, Cybern.: Syst."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b72",
+        "series-title": "Icml",
+        "article-title": "Improving regressors using boosting techniques",
+        "volume": "vol. 97",
+        "author": "Drucker",
+        "year": "1997"
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.asoc.2025.113320_b73",
+        "doi-asserted-by": "crossref",
+        "first-page": "203",
+        "DOI": "10.1109/TEVC.2018.2834881",
+        "article-title": "Offline data-driven evolutionary optimization using selective surrogate ensembles",
+        "volume": "23",
+        "author": "Wang",
+        "year": "2018",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "issue": "2",
+        "key": "10.1016/j.asoc.2025.113320_b74",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1080/00401706.1987.10488205",
+        "article-title": "Large sample properties of simulations using latin hypercube sampling",
+        "volume": "29",
+        "author": "Stein",
+        "year": "1987",
+        "journal-title": "Technometrics"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b75",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.1016/j.ins.2018.04.062",
+        "article-title": "Surrogate-assisted hierarchical particle swarm optimization",
+        "volume": "454",
+        "author": "Yu",
+        "year": "2018",
+        "journal-title": "Inform. Sci."
+      },
+      {
+        "issue": "3",
+        "key": "10.1016/j.asoc.2025.113320_b76",
+        "doi-asserted-by": "crossref",
+        "first-page": "199",
+        "DOI": "10.1023/B:STCO.0000035301.49549.88",
+        "article-title": "A tutorial on support vector regression",
+        "volume": "14",
+        "author": "Smola",
+        "year": "2004",
+        "journal-title": "Stat. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b77",
+        "article-title": "Scikit-learn: machine learning in python",
+        "volume": "12",
+        "author": "Pedregosa",
+        "year": "2011",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b78",
+        "series-title": "2013 IEEE Congress on Evolutionary Computation",
+        "first-page": "2548",
+        "article-title": "A hybrid surrogate-based approach for evolutionary multi-objective optimization",
+        "author": "Rosales-Pérez",
+        "year": "2013"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b79",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Liang Shi, Khaled Rasheed, ASAGA: An adaptive surrogate-assisted genetic algorithm, in: Proceedings of the 10th Annual Conference on Genetic and Evolutionary Computation, 2008, pp. 1049–1056.",
+        "DOI": "10.1145/1389095.1389289"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b80",
+        "doi-asserted-by": "crossref",
+        "first-page": "26",
+        "DOI": "10.1016/j.asoc.2016.04.035",
+        "article-title": "Two-level multi-surrogate assisted optimization method for high dimensional nonlinear problems",
+        "volume": "46",
+        "author": "Li",
+        "year": "2016",
+        "journal-title": "Appl. Soft Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b81",
+        "doi-asserted-by": "crossref",
+        "first-page": "341",
+        "DOI": "10.1023/A:1008202821328",
+        "article-title": "Differential evolution–a simple and efficient heuristic for global optimization over continuous spaces",
+        "volume": "11",
+        "author": "Storn",
+        "year": "1997",
+        "journal-title": "J. Global Optim."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b82",
+        "series-title": "Technical Report",
+        "article-title": "Problem definitions and evaluation criteria for computational expensive optimization",
+        "author": "Liu",
+        "year": "2013"
+      },
+      {
+        "issue": "5",
+        "key": "10.1016/j.asoc.2025.113320_b83",
+        "doi-asserted-by": "crossref",
+        "first-page": "945",
+        "DOI": "10.1109/TEVC.2009.2014613",
+        "article-title": "JADE: Adaptive differential evolution with optional external archive",
+        "volume": "13",
+        "author": "Zhang",
+        "year": "2009",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b84",
+        "series-title": "2020 IEEE Congress on Evolutionary Computation",
+        "first-page": "1",
+        "article-title": "A kriging-assisted evolutionary algorithm using feature selection for expensive sparse multi-objective optimization",
+        "author": "Tan",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b85",
+        "series-title": "Technical Report",
+        "first-page": "1",
+        "article-title": "Problem definitions and evaluation criteria for the CEC 2017 special session and competition on single objective bound constrained real-parameter numerical optimization",
+        "author": "Awad",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b86",
+        "series-title": "Technical Report",
+        "article-title": "Problem definitions and evaluation criteria for the 100-digit challenge special session and competition on single objective numerical optimization",
+        "author": "Price",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b87",
+        "series-title": "2018 IEEE Second International Conference on Data Stream Mining & Processing",
+        "first-page": "255",
+        "article-title": "Using stacking approaches for machine learning models",
+        "author": "Pavlyshenko",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/j.asoc.2025.113320_b88",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1109/TEVC.2024.3373802",
+        "article-title": "Learning to preselection: A filter-based performance predictor for multiobjective feature selection in classification",
+        "author": "Jiao",
+        "year": "2024",
+        "journal-title": "IEEE Trans. Evol. Comput."
+      }
+    ],
+    "container-title": [
+      "Applied Soft Computing"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1568494625006313?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S1568494625006313?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          8,
+          21
+        ]
+      ],
+      "date-time": "2025-08-21T21:09:55Z",
+      "timestamp": 1755810595000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S1568494625006313"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2025,
+          8
+        ]
+      ]
+    },
+    "references-count": 88,
+    "alternative-id": [
+      "S1568494625006313"
+    ],
+    "URL": "https://doi.org/10.1016/j.asoc.2025.113320",
+    "relation": {},
+    "ISSN": [
+      "1568-4946"
+    ],
+    "issn-type": [
+      {
+        "value": "1568-4946",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2025,
+          8
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Uncertainty estimation by boosting with Gaussian process for expensive optimization problems",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Applied Soft Computing",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.asoc.2025.113320",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2025 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "article-number": "113320"
+  }
+}

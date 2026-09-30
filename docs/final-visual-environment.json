@@ -1,0 +1,10 @@
+{
+  "python": "3.12.13",
+  "pillow": "12.3.0",
+  "pdftoppm": "pdftoppm version 26.07.0",
+  "pdfinfo": "pdfinfo version 26.07.0",
+  "pdftotext": "pdftotext version 24.04.0",
+  "render_dpi": 144,
+  "contact_sheet_columns": 2,
+  "contact_sheet_rows": 3
+}

@@ -1,0 +1,14 @@
+{
+  "functions": [1, 6, 10, 15, 20], "dimensions": [20, 40], "instances": [14, 15, 16],
+  "repeats": 3, "method": "PEM_T", "budget_multiplier": 10, "capture": "checkpoints",
+  "variants": {
+    "base": {"kernel_scale": 0.25, "max_train": 256},
+    "cap128": {"kernel_scale": 0.25, "max_train": 128},
+    "cap512": {"kernel_scale": 0.25, "max_train": 512},
+    "scale125": {"kernel_scale": 0.125, "max_train": 256},
+    "scale500": {"kernel_scale": 0.5, "max_train": 256}
+  },
+  "order_seed": 925042, "workers": 4, "statistical_tests": 0,
+  "freeze_manifest": "docs/frozen_model_sensitivity_v1/sha256.json",
+  "out": "results/model_sensitivity_v1"
+}

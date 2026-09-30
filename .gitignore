@@ -1,0 +1,54 @@
+.venv/
+.venv312/
+.venv-baselines/
+.venv-app/
+__pycache__/
+.pytest_cache/
+results/
+literature/downloads/
+literature/source-code/
+*.pyc
+*.log
+*.aux
+*.out
+tmp/
+
+# Local document-rendering runtimes and downloaded installers
+artifacts/
+
+# Rendered QA caches and LaTeX build intermediates
+paper/cmc_submission/qa_*/
+paper/cmc_latex_submission/*.aux
+paper/cmc_latex_submission/*.log
+paper/cmc_latex_submission/*.out
+
+# Frozen full-workspace snapshots duplicate source trees and third-party code.
+# Keep the human-readable protocols and final audit reports in docs/ instead.
+docs/frozen_*/
+
+# Internal planning, advisor comments, interruption logs, and work records are
+# not part of the public research artifact. Curated public documentation is
+# explicitly included below.
+docs/*
+!docs/REPRODUCIBILITY.md
+!docs/PUBLIC_RELEASE_AUDIT.md
+!docs/environment-lock.txt
+!docs/application-environment-lock.txt
+!docs/application-formal-environment-lock.txt
+!docs/application-formal-environment.json
+!docs/baselines-environment-lock.txt
+!docs/evidence-export-environment.json
+!docs/final-visual-environment.json
+!docs/hardware.json
+
+# Publisher templates and locally assembled submission bundles are not
+# redistributed in the public code repository.
+paper/CMC_*.zip
+paper/cmc_submission/
+paper/cmc_latex_submission/Definitions/
+
+# Local audit scratch files
+tmp_git_add_dryrun.txt
+
+# Contains the private local attachment path from the planning conversation.
+docs/原始计划书.md

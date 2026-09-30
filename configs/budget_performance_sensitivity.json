@@ -1,0 +1,8 @@
+{
+  "functions": [1, 6, 10, 15, 20], "dimensions": [20, 40], "instances": [17, 18, 19],
+  "repeats": 3, "budget_multipliers": [5, 10, 15],
+  "methods": ["greedy", "fixed01", "fixed03", "pool_random", "PEM_T", "PEM_ST", "sobol", "cma_es", "gp_ei", "turbo_1"],
+  "capture": "checkpoints", "order_seed": 926042, "workers": 4, "gp_ei_worker_limit": 1,
+  "statistical_tests": 0, "freeze_manifest": "docs/frozen_budget_performance_sensitivity_v1/sha256.json",
+  "out": "results/budget_performance_sensitivity_v1"
+}

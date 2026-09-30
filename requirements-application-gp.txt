@@ -1,0 +1,5 @@
+# Add to the base application environment; install torch==2.5.1+cpu first
+# from https://download.pytorch.org/whl/cpu (the official CPU wheel index).
+gpytorch==1.13
+linear-operator==0.6.1
+jaxtyping==0.2.19

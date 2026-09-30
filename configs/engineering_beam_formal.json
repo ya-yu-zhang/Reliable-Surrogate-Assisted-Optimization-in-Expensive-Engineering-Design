@@ -1,0 +1,14 @@
+{
+  "benchmark": "EngiBench Beams2D v1 finite-element compliance",
+  "parameterization": "19 effective logits plus one fixed anchor on a 4x5 cubic coarse field, expanded to 50x100 and shifted to exact mean density 0.35",
+  "dimension": 19,
+  "budget": 200,
+  "repeats": 10,
+  "methods": ["greedy", "fixed01", "PEM_T", "gp_ei", "turbo_1"],
+  "workers": 8,
+  "gp_ei_reserved_workers": 2,
+  "capture": "checkpoints",
+  "out": "results/engineering_beam_formal_v1",
+  "smoke_out": "results/engineering_beam_smoke_v1",
+  "scientific_role": "engineering mechanism transfer; not an optimization-superiority rescue experiment"
+}

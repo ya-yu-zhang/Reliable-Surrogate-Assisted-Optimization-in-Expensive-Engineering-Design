@@ -1,0 +1,16 @@
+{
+  "paper/english_mechanism_manuscript.md": "ad0d10924f773357938bdb3f229c04538292d344a1bf43af5a48d026cbd4dabd",
+  "paper/\u8bba\u6587\u673a\u5236\u7814\u7a76\u7a3f.md": "e7e6873d4490c85fbe816bef9a9edaa2e4d4a9b901f447e19cc0e522a72728ef",
+  "src/build_integrated_manuscripts.py": "2ed74bc87da3fa90f12412c758788fbebb74e6ffcbc11595308e539cbee56cb3",
+  "results/all_reference_report_v1/audit.json": "1829a85e42e93d19f1f901a1767175d449f4b0c80a9baa327505e23b10b45f1e",
+  "results/all_reference_report_v1/endpoint_summary.csv": "8fa3f173ef9d298747c1e3f7d57a31bd0bb81abfeea15349c9eebfddb4660104",
+  "results/solo_cost_analysis_v1/integrity_audit.json": "f38e74d23736e3a0efa924c0e0df8e2d4b790e72f85558821ea7d55baa244c8a",
+  "results/solo_cost_analysis_v1/runs.csv": "9738e57d6e42458548c02c1aecaafae17be02277271a680b189b9e55971c80a3",
+  "results/application_analysis_v1/audit.json": "0d03fd8136aa536f5b242949477a42f6e5d76571f5095db12c263175d6117ff1",
+  "results/application_report_v1/source_hashes.json": "f8051aef6a115869b6997dc02bc85517b6b963ffbe09c523df1e881c452ca48b",
+  "results/application_report_v1/endpoint_iqr_and_test_medians.csv": "331e1b571e7fc4696fa993cb5d08c22ea651269ebbb015548d38b89ba3079a99",
+  "results/application_report_v1/predefined_comparisons.csv": "3449e338127747747fd4323123e9780f960c7d458fa4e16e7ce83ddfe1ea2a08",
+  "results/application_report_v1/monitoring_and_declarations.csv": "4f166e2c9c51d7716b5e2484cf22845856ed47be96b5c556c5e41c115f303263",
+  "paper/english_integrated_manuscript.md": "eef073b7c0fc6b0826059abef1fc85ec751a782da4668bb6c72e7b9698f054c2",
+  "paper/\u8bba\u6587\u7efc\u5408\u673a\u5236\u7a3f.md": "1842c1804a265887b1bef23fbdc850c40eb6db39576e123ee8e3a397a083ecb1"
+}

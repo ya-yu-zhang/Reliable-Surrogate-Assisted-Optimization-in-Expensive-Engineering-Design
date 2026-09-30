@@ -1,0 +1,1 @@
+{"datasets":["synt_simple","synt_medium","DNA"],"dimensions":{"synt_simple":60,"synt_medium":100,"DNA":180},"data_seed":90042,"points":[-1,-0.5,0,0.5,1,0],"n_splits":5,"tol_level":0.0001,"test_size":0.15,"formal_budget_feasibility":500,"workers":1,"out":"results/application_precheck_v1"}

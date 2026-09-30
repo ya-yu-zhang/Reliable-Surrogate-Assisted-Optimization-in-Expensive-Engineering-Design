@@ -1,0 +1,1 @@
+{"functions":[1,3,6,10,15,20,21,24],"dimensions":[10,20],"instances":[1,2,3],"repeats":3,"methods":["greedy","fixed03","pool_random"],"workers":4,"out":"results/mechanism_v1","capture":"all"}

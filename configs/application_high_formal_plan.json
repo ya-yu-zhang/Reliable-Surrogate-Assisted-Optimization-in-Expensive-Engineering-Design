@@ -1,0 +1,20 @@
+{
+  "datasets": ["synt_high"],
+  "dimensions": {"synt_high": 300},
+  "dataset_ids": {"synt_high": 4},
+  "budgets": {"synt_high": 1000},
+  "methods": ["greedy", "fixed01", "PEM_T", "PEM_ST", "sobol", "cma_es", "gp_ei", "turbo_1"],
+  "data_seed": 42,
+  "repeats": 20,
+  "n_splits": 5,
+  "tol_level": 0.0001,
+  "test_size": 0.15,
+  "capture": "checkpoints",
+  "order_seed": 924042,
+  "bootstrap_seed": 924701,
+  "bootstrap_replicates": 4000,
+  "analysis": "descriptive_only_separate_from_three_primary_application_tests",
+  "runtime_manifest": "docs/application-formal-environment.json",
+  "out": "results/application_high_formal_v1",
+  "implementation_status_at_plan_freeze": "not_ready_requires_full_method_resource_checks_and_separate_source_freeze"
+}

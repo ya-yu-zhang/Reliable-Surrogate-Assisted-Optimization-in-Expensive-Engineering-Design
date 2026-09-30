@@ -1,0 +1,16 @@
+{
+  "generated": "2026-09-29",
+  "manuscript_pages": 15,
+  "supplementary_pages": 23,
+  "pdflatex_passes": 2,
+  "compile_success": true,
+  "undefined_references": 0,
+  "undefined_citations": 0,
+  "author_order": [
+    "Shu-Chuan Chu",
+    "Yayu Zhang",
+    "Zhenyu Meng",
+    "Jia Yue"
+  ],
+  "reference_count": 33
+}

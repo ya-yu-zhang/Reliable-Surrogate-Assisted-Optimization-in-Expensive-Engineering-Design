@@ -1,0 +1,1 @@
+{"functions":[1,3,6,10,15,20,21,24],"dimensions":[10,20],"instances":[1,2,3],"repeats":3,"methods":["greedy","fixed01","fixed03","fixed05","fixed08","T_fixed","PEM_T","PEM_G","PEM_S","PEM_ST","no_upper","error_only","stagnation_only"],"workers":4,"out":"results/development_v1","capture":"checkpoints"}
