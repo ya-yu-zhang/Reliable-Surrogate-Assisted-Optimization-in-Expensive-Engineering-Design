@@ -241,11 +241,14 @@ def build_main(md: str, refs: list[tuple[int, str]]) -> str:
         "authorcontributions": extract_section(md, "Author Contributions", "Availability of Data and Materials"),
         "availabilityofdataandmaterials": extract_section(md, "Availability of Data and Materials", "Ethics Approval"),
         "ethicsapproval": extract_section(md, "Ethics Approval", "Conflicts of Interest"),
-        "conflictsofinterest": extract_section(md, "Conflicts of Interest", "Supplementary Materials"),
+        "conflictsofinterest": extract_section(md, "Conflicts of Interest", "Declaration of Generative AI in Scientific Writing"),
         "supplementary": extract_section(md, "Supplementary Materials", "References"),
     }
     back = "\n".join(f"\\{name}{{{inline_markdown_to_latex(value)}}}" for name, value in declarations.items())
-    return preamble(title, abstract, keywords) + body_tex + "\n" + back + "\n" + bibliography_block(refs) + "\n\\end{document}\n"
+    ai_declaration = extract_section(md, "Declaration of Generative AI in Scientific Writing", "Supplementary Materials")
+    ai_block = ("\\par\\noindent\\textbf{Declaration of Generative AI in Scientific Writing: }"
+                + inline_markdown_to_latex(ai_declaration) + "\\par")
+    return preamble(title, abstract, keywords) + body_tex + "\n" + back + "\n" + ai_block + "\n" + bibliography_block(refs) + "\n\\end{document}\n"
 
 
 def build_supplement(md: str, refs: list[tuple[int, str]], main_md: str) -> str:
@@ -285,7 +288,7 @@ def main() -> None:
         "  pdflatex CMC_manuscript.tex (run at least twice)\n"
         "  pdflatex CMC_supplementary.tex (run at least twice)\n\n"
         "The supplied PDFs were compiled successfully with MiKTeX/pdfLaTeX and visually audited.\n"
-        "Before submission, confirm affiliations 2-3, the corresponding-author email, author contributions, funding, and the permanent repository URL.\n",
+        "Before submission, confirm affiliations 2-3, the corresponding-author email, and the funding statement.\n",
         encoding="utf-8")
 
 

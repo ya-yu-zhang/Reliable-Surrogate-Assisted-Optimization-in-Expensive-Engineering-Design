@@ -26,7 +26,8 @@
 \abstract{Reliable surrogate-assisted optimization requires more than an accurate predictor: surrogate information must alter model-management decisions in ways that improve outcomes under a limited expensive-evaluation budget. A decision-consequence auditing framework is developed to evaluate this pathway systematically. The framework separates three questions: whether a monitoring signal is calibrated on the data it encounters, whether it changes candidate selection and improves immediate utility at a common optimization state, and whether the resulting closed loop improves final optimization. It combines decision-pathway analysis, prediction-before-label records, common-state comparisons, and independent closed-loop validation with a promotion-or-stop gate. A temporal residual monitor is used as a representative case study. For its candidate-independent additive correction, ranking invariance is established under identical candidate sets, deterministic tie-breaking, exact arithmetic, and synchronized stochastic operators. The audit then shows that its effective pathway is an exploration controller rather than a distinct exploitation ranking. Across all 24 noiseless BBOB functions in dimensions 10, 20, and 40, the monitored controller does not pass the prespecified optimization-benefit gate despite a failure fraction near its nominal level. Application validation on a 200-evaluation finite-element Messerschmitt-Bolkow-Blohm beam design reaches the same mechanism conclusion. Under a shared 58-point initialization, GP-PI, author-code DRSO, and TuRBO-1 reduce median compliance by 51.7\%, 74.7\%, and 75.1\%, whereas GP-EI and fixed-multiplier GP-UCB show no median improvement. The resulting contribution is a reusable reliability-assessment procedure that distinguishes predictive calibration from decision influence, decision utility, and closed-loop value before large simulation or engineering budgets are committed.}
 \keyword{expensive black-box optimization; surrogate-assisted evolutionary optimization; model management; prequential residuals; finite-element design}
 \begin{document}
-\section{Introduction}\label{introduction}
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
 
 Many engineering optimization problems depend on simulations, model training, or experiments whose evaluations dominate the available computational or physical budget. Surrogate-assisted evolutionary algorithms and Bayesian optimization reduce this burden by fitting an inexpensive predictive model and deciding which candidate should receive the next exact evaluation \cite{ref-1,ref-2,ref-3,ref-4,ref-5}. Model management is therefore the operational core of surrogate assistance: surrogate prediction is converted into an acquisition or management decision, that decision allocates a paid evaluation, and the resulting label changes the subsequent optimization state. A reliable predictor is useful only when this chain improves the use of the available budget.
 
@@ -55,9 +56,11 @@ Algorithm 1 is the algorithmic contribution of this study: it is an executable p
 
 The claims are deliberately bounded. The empirical residual quantile is not presented as a conformal coverage theorem, false-discovery guarantee, regret bound, or universally effective high-dimensional method. The case-study findings concern a deterministic, single-objective setting, the stated surrogate and candidate process, and the tested budgets. The framework itself supplies a structured test procedure; it does not imply that candidate-dependent uncertainty, expected improvement, confidence bounds, restarts, stopping rules, or uncertainty-aware optimization in general are ineffective.
 
-\section{Related Work}\label{related-work}
+\hypertarget{related-work}{%
+\section{Related Work}\label{related-work}}
 
-\subsection{Surrogate-assisted optimization and engineering applications}\label{surrogate-assisted-optimization-and-engineering-applications}
+\hypertarget{surrogate-assisted-optimization-and-engineering-applications}{%
+\subsection{Surrogate-assisted optimization and engineering applications}\label{surrogate-assisted-optimization-and-engineering-applications}}
 
 Surrogate-assisted evolutionary computation has developed a broad range of models and management policies for expensive optimization \cite{ref-1,ref-2}. Early frameworks combined evolutionary search with approximate fitness functions or Gaussian-process surrogates \cite{ref-3,ref-16}. Later work introduced selective ensembles, local/global models, classification-assisted search, and adaptive infill rules \cite{ref-4,ref-5,ref-17,ref-18,ref-19}. Differential evolution remains a common search engine in this area; the taxonomy and empirical evidence synthesized by Pan et al.~\cite{ref-31} show that exponential-crossover behavior depends strongly on operator design and parameter control. A recent survey identifies model construction and model management as separate determinants of performance \cite{ref-2}. Controlled experiments with adjustable surrogate accuracy likewise show that prediction accuracy affects preselection, individual-based, and generation-based management differently \cite{ref-20}.
 
@@ -67,7 +70,8 @@ Uncertainty-aware SAEAs typically make uncertainty candidate dependent. BGP-SAEA
 
 Competitive SAEAs also use evolutionary populations and learned relations rather than a scalar acquisition alone. DRSO retains unevaluated promising solutions in a relation-model-assisted evolutionary loop to preserve useful population information under expensive-evaluation budgets \cite{ref-30}. Its public author implementation makes it suitable for a source-frozen engineering comparison, while its distinct population mechanism broadens the evidence beyond Gaussian-process acquisitions.
 
-\subsection{Reliability-aware surrogate model management}\label{reliability-aware-surrogate-model-management}
+\hypertarget{reliability-aware-surrogate-model-management}{%
+\subsection{Reliability-aware surrogate model management}\label{reliability-aware-surrogate-model-management}}
 
 Bayesian optimization has incorporated online calibration. Deshpande et al.~\cite{ref-12} calibrate predictive distributions and update them online. Localized online conformal Bayesian optimization constructs spatially varying thresholds and a calibrated posterior \cite{ref-13}. Selection-conditional methods such as JOMI use reference sets under explicit invariance and exchangeability conditions \cite{ref-14}. Temporal conformal prediction has also been considered in surrogate-assisted evolutionary optimization \cite{ref-15}. The cross-model residual journal examined here does not establish the assumptions required by those methods and is treated as an empirical monitor without transferred guarantees.
 
@@ -94,9 +98,11 @@ Decision-consequence audit & Calibration, decision influence, utility, and final
 
 Several studies compare Bayesian, evolutionary, and hybrid surrogate strategies under constrained budgets \cite{ref-21}, and others show that unevaluated but surrogate-predicted candidates can influence evolutionary diversity \cite{ref-22}. The present framework is complementary to these optimizers. It evaluates the sequence from a surrogate-derived signal to model-management action, common-state utility, and independent closed-loop consequence. This taxonomy identifies the gap between a reliable predictive quantity and a reliable optimization decision.
 
-\section{Decision-Consequence Auditing Framework for Surrogate-Assisted Model Management}\label{decision-consequence-auditing-framework-for-surrogate-assisted-model-management}
+\hypertarget{decision-consequence-auditing-framework-for-surrogate-assisted-model-management}{%
+\section{Decision-Consequence Auditing Framework for Surrogate-Assisted Model Management}\label{decision-consequence-auditing-framework-for-surrogate-assisted-model-management}}
 
-\subsection{Optimization system and information boundary}\label{optimization-system-and-information-boundary}
+\hypertarget{optimization-system-and-information-boundary}{%
+\subsection{Optimization system and information boundary}\label{optimization-system-and-information-boundary}}
 
 A deterministic objective f(x) is minimized over a bounded continuous domain under budget B. At evaluation t, the labeled history contains only observations acquired before t. A surrogate fitted to that history supplies predictions for a candidate set, while a monitoring signal and model-management rule determine which candidate, region, evaluation gate, restart, or stopping action is used. The audit treats the full chain from surrogate output to paid evaluation as its object of analysis.
 
@@ -113,7 +119,8 @@ The role of the framework in a surrogate-assisted optimization loop is shown in 
 
 Figure 1 locates the three audit levels along the operational chain from an expensive engineering problem to surrogate prediction, model-management choice, paid evaluation, and closed-loop outcome. Calibration assesses the signal encountered by the optimizer; decision analysis tests whether the signal changes a choice and improves common-state utility; closed-loop validation measures the final consequence after histories diverge.
 
-\subsection{Decision pathways and ranking invariance}\label{decision-pathways-and-ranking-invariance}
+\hypertarget{decision-pathways-and-ranking-invariance}{%
+\subsection{Decision pathways and ranking invariance}\label{decision-pathways-and-ranking-invariance}}
 
 A monitoring mechanism can affect optimization through candidate-specific ranking, an evaluation gate, a restart or stopping rule, a change of search region or population, or a stochastic exploration controller. The first audit step identifies at least one such path before additional expensive experiments are authorized.
 
@@ -125,7 +132,8 @@ A monitoring mechanism can affect optimization through candidate-specific rankin
 
 This result identifies a structural limitation of candidate-independent corrections; it does not invalidate uncertainty-aware surrogate management in general. Candidate-dependent posterior uncertainty, expected improvement, lower-confidence bounds, support-dependent rules, evaluation gates, restarts, and stopping policies may create decision paths that Lemma 1 does not remove.
 
-\subsection{Three audit levels and promotion gate}\label{three-audit-levels-and-promotion-gate}
+\hypertarget{three-audit-levels-and-promotion-gate}{%
+\subsection{Three audit levels and promotion gate}\label{three-audit-levels-and-promotion-gate}}
 
 Common-history calibration fits the same frozen model and candidate pool, then evaluates monitoring losses and failures without updating the search. Common-state decision analysis compares the action with and without the mechanism at the same state; when actions differ, separate diagnostic labels measure true one-step utility. Independent closed-loop experiments then allow each policy to update its own history and evaluate final optimization behavior. A mechanism advances only when evidence from the cheaper level justifies the next.
 
@@ -145,9 +153,11 @@ Common-history calibration fits the same frozen model and candidate pool, then e
 
 The framework can return a positive result. Classical GP expected improvement is a candidate-dependent positive control: both its predicted improvement and uncertainty vary across candidates, so its acquisition can change ranking and passes the structural decision-influence check. Passing that first check does not guarantee superior endpoints; it authorizes empirical utility and closed-loop evaluation.
 
-\section{Experimental Design}\label{experimental-design}
+\hypertarget{experimental-design}{%
+\section{Experimental Design}\label{experimental-design}}
 
-\subsection{Representative monitored optimizer and search framework}\label{representative-monitored-optimizer-and-search-framework}
+\hypertarget{representative-monitored-optimizer-and-search-framework}{%
+\subsection{Representative monitored optimizer and search framework}\label{representative-monitored-optimizer-and-search-framework}}
 
 A temporal residual monitor is used as the representative audited mechanism. For a selected point x\_t, the standardized signed residual is r\_t={[}y\_t-mu\_t(x\_t){]}/s\_t, where s\_t is the standard deviation of the current training labels and is replaced by one if it is zero. Historical residuals retain their prediction-time models and scales. For candidate x, the monitor forms H\_t(x)=mu\_t(x)+s\_t q\_t(x), where q\_t(x) is the nonnegative weighted 0.9 quantile of at most the latest 100 residuals. Temporal weights have a half-life of 25 evaluations; spatial variants use a Gaussian kernel and an effective-sample-size support guard of 20.
 
@@ -157,7 +167,8 @@ The internal optimizer uses a randomized Latin hypercube with 2D+20 initializati
 
 Each iteration proposes 256 candidates: 128 reflected differential-evolution proposals and 128 scrambled Sobol points. Duplicates and candidates within $10^{-10}$ of evaluated points are replaced. Purpose-specific random streams depend on seed and evaluation index rather than the total budget.
 
-\subsection{Development and independent validation}\label{development-and-independent-validation}
+\hypertarget{development-and-independent-validation}{%
+\subsection{Development and independent validation}\label{development-and-independent-validation}}
 
 Development uses eight prespecified BBOB functions, dimensions 10 and 20, instances 1-3, and three repeats. Thirteen internal configurations separate exploration, residual weighting, and feedback components. The budget is 10D. The required gate compares PEM-T with a fixed exploration control selected only within the development protocol. Failure of the gate prevents any optimization-superiority claim.
 
@@ -165,19 +176,23 @@ After the gate fails, the unchanged mechanism is frozen on all 24 noiseless BBOB
 
 The endpoint is the base-10 logarithm of final error relative to common initialization error, with numerical flooring at $10^{-12}$. Repeats are summarized within function-instance cells, instances are averaged, and functions receive equal weight. Nine prespecified validation contrasts form one Holm family. Paired hierarchical bootstrap intervals resample functions, instances, and common repeat indices. These intervals summarize suite heterogeneity and are not presented as a population theorem for all black-box tasks.
 
-\subsection{External and application evidence}\label{external-and-application-evidence}
+\hypertarget{external-and-application-evidence}{%
+\subsection{External and application evidence}\label{external-and-application-evidence}}
 
 Sobol, CMA-ES, classical GP expected improvement, and author-code TuRBO-1 provide budget-matched descriptive references \cite{ref-25}. They retain their own initialization and search mechanisms, so these comparisons are not same-history causal effects. In the finite-element application, GP expected improvement (GP-EI), probability of improvement (GP-PI), and the lower-confidence-bound form of GP-UCB are additionally run from the same initial observations as the internal methods. All three acquisitions use the same Matérn-5/2 Gaussian process, candidate pool, and local-search budget; GP-PI uses a margin equal to 0.01 times the observed response standard deviation, and GP-UCB uses a fixed confidence multiplier of 2.0. DRSO uses the authors' public relation-model-assisted evolutionary implementation at commit 03c19d4 \cite{ref-30}. The population size is set to 58 solely to accept the common initial archive; its relation models, unevaluated-population update, reproduction, training cap, and remaining defaults are unchanged. Three LassoBench tasks provide application transfer under fixed data and splits \cite{ref-24}. The BBOB implementation and reporting follow the COCO comparison framework \cite{ref-26}. Complete tables, the 300-dimensional extension, resource measurements, sensitivity studies, interruption accounting, and file-level audits appear in the Supplementary Materials.
 
-\section{Mechanism Results}\label{mechanism-results}
+\hypertarget{mechanism-results}{%
+\section{Mechanism Results}\label{mechanism-results}}
 
-\subsection{Development gate and implementation invariants}\label{development-gate-and-implementation-invariants}
+\hypertarget{development-gate-and-implementation-invariants}{%
+\subsection{Development gate and implementation invariants}\label{development-gate-and-implementation-invariants}}
 
 All 1,872 development optimization runs and 432 common-history runs complete without exceptions. PEM-T and the configuration that removes its upper-value mode have identical trajectories in all 144 matched pairs. Temporal monitoring with fixed 0.3 management likewise matches fixed 0.3 mixing in all 144 pairs. These are implementation confirmations of Lemma 1 and Corollary 1, rather than independent effective components.
 
 The development-selected control is fixed01. PEM-T is worse on all eight development functions in both dimensions. Its function-weighted log-relative endpoint difference is +0.2831 in D=10 and +0.1810 in D=20, where positive values favor fixed01. The required optimization-benefit gate is therefore unmet before the independent validation begins.
 
-\subsection{Independent endpoint and immediate decision effects}\label{independent-endpoint-and-immediate-decision-effects}
+\hypertarget{independent-endpoint-and-immediate-decision-effects}{%
+\subsection{Independent endpoint and immediate decision effects}\label{independent-endpoint-and-immediate-decision-effects}}
 
 Table 2 reports the nine prespecified validation comparisons. PEM-T increases final relative error in all three dimensions. The base-10 differences correspond to geometric error ratios of 1.468, 1.258, and 1.159 for dimensions 10, 20, and 40. The effect decreases with dimension but remains in the unfavorable direction for 60 of 72 function-level comparisons. Common-state feedback decisions also have lower true immediate improvement than mean-greedy decisions in every dimension.
 
@@ -213,7 +228,8 @@ The function-level distribution underlying the aggregate endpoint contrasts is s
 
 Figure 2 displays all 24 function-level effects separately for each dimension rather than only the suite average. Most bars lie above the zero line: 22 of 24 in dimension 10 and 19 of 24 in both dimensions 20 and 40. The few negative bars show that the result is not pointwise uniform, while the shrinking bar heights across panels agree with the smaller aggregate effect at higher dimension. The conclusion is therefore based on a broad directional pattern with disclosed exceptions, not on one dominant benchmark function.
 
-\subsection{Calibration does not identify optimization utility}\label{calibration-does-not-identify-optimization-utility}
+\hypertarget{calibration-does-not-identify-optimization-utility}{%
+\subsection{Calibration does not identify optimization utility}\label{calibration-does-not-identify-optimization-utility}}
 
 PEM-T explores 39.7\%, 36.4\%, and 34.4\% of post-initialization evaluations in dimensions 10, 20, and 40, compared with approximately 10\% for fixed01. Its observed selected-point upper-bound failure fractions are 0.1008, 0.0942, and 0.0964, close to the nominal monitoring level. Nevertheless, its endpoints and common-state decisions are worse. A near-target aggregate failure fraction therefore does not imply efficient budget allocation.
 
@@ -255,15 +271,18 @@ Full audit including closed loop & The controller does not pass the held-out opt
 
 This evidence ablation uses the same frozen results rather than rerunning a modified optimizer. It shows why a calibration-only assessment would have produced an incomplete reliability conclusion, why algebraic pathway analysis saves objective calls, and why common-state and closed-loop evidence answer distinct questions.
 
-\section{Engineering Application: Surrogate-Assisted Structural Optimization}\label{engineering-application-surrogate-assisted-structural-optimization}
+\hypertarget{engineering-application-surrogate-assisted-structural-optimization}{%
+\section{Engineering Application: Surrogate-Assisted Structural Optimization}\label{engineering-application-surrogate-assisted-structural-optimization}}
 
-\subsection{Problem and parameterization}\label{problem-and-parameterization}
+\hypertarget{problem-and-parameterization}{%
+\subsection{Problem and parameterization}\label{problem-and-parameterization}}
 
 EngiBench Beams2D v1 supplies a density-based finite-element model of the right half of a symmetric Messerschmitt-Bolkow-Blohm beam \cite{ref-23}. Surrogate-assisted evolutionary optimization has previously been developed for expensive structural design \cite{ref-18}, while recent CMC applications have connected deep surrogates to robotic mechanism design \cite{ref-28} and physics-informed Gaussian processes to finite-element-guided manufacturing optimization \cite{ref-29}. Here, the beam provides engineering application validation of the audit framework within an expensive structural optimization workflow. The domain uses 100 by 50 bilinear elements. Horizontal degrees of freedom along the left symmetry boundary are fixed, the lower-right vertical degree of freedom is supported, and a unit downward load is applied at the top-left of the modeled half-beam. The material interpolation uses minimum stiffness $10^{-9}$, unit maximum stiffness, penalization power 3, and Poisson ratio 0.3. The objective is structural compliance; lower values are better.
 
 Direct optimization of all 5,000 element densities is outside the studied surrogate's budget and initialization regime. A constrained engineering family is defined in which 19 effective logits plus one fixed anchor form a 4 by 5 coarse field. Cubic interpolation expands the field to 50 by 100 elements. A scalar logistic shift is solved by bisection so that every design has mean density 0.35. The study therefore evaluates model management within this smooth 19-dimensional design family rather than claiming general topology-optimization performance.
 
-\subsection{Application protocol and audit results}\label{application-protocol-and-audit-results}
+\hypertarget{application-protocol-and-audit-results}{%
+\subsection{Application protocol and audit results}\label{application-protocol-and-audit-results}}
 
 Before formal labels, five methods, ten repeats, and 200 evaluations per run are frozen. The first batch keeps the native 38-point initialization of GP-EI and TuRBO-1 while Greedy, fixed01, and PEM-T share a 58-point initialization. A prespecified sensitivity batch then reruns GP-EI and TuRBO-1 from exactly the same 58 points and deterministic labels as the internal methods. Two acquisition controls, GP-PI and GP-UCB, and the author-code DRSO SAEA are subsequently run from the same archive. Their subsequent searches retain their stated acquisition, trust-region, relation-model, evolutionary, and candidate-generation rules. The original 50 trajectories contain 10,000 paid finite-element evaluations. The five shared-initialization external controls add 10,000 algorithm-budget observations, reuse 2,900 initial labels, and make 7,100 additional finite-element calls. All 100 trajectories finish without failure or exact duplicate points. Independent endpoint diagnostics reproduce the original GP-EI and TuRBO-1 sensitivity endpoints within a maximum relative difference of 6.23e-12; event-level audits accept every GP-PI, GP-UCB, and DRSO trajectory.
 
@@ -314,7 +333,8 @@ Representative endpoint density fields for all eight shared-initialization metho
 
 Figure 5 shows the median-endpoint design from every method on the common density scale. Because every field satisfies the same mean-density constraint, the contrast concerns material placement rather than material quantity. TuRBO-1 and DRSO form concentrated high-density load paths and reach the lowest compliance group. GP-PI produces a stronger structural path than GP-EI or GP-UCB, whose diffuse fields remain close to their initial designs. The visual differences are consistent with the convergence pathways and endpoint ordering in Table 4.
 
-\section{Discussion and Design Guidance}\label{discussion-and-design-guidance}
+\hypertarget{discussion-and-design-guidance}{%
+\section{Discussion and Design Guidance}\label{discussion-and-design-guidance}}
 
 The deterministic and empirical findings answer different questions. Ordering redundancy follows from the stated decision rule and holds whenever the correction is common across supported candidates. The observed performance loss is specific to the tested feedback controller, surrogate, candidates, and budgets. It does not imply that candidate-dependent uncertainty, conformal Bayesian optimization, or all adaptive exploration is ineffective.
 
@@ -326,7 +346,8 @@ For engineering users, the practical implication is to evaluate the acquisition 
 
 The study has limitations. Residuals originate from changing surrogate models and scales; no exchangeability argument establishes pointwise coverage. Sparse declarations limit conditional reliability statements. The RBF surrogate truncates training data, and the candidate process is one implementation among many. The broad BBOB external-reference batches retain their native initialization, although the finite-element sensitivity analysis removes this difference. The beam study uses a smooth 19-dimensional design family, not unrestricted 5,000-variable topology optimization. Full sensitivity, 300-dimensional, application, resource, and recovery evidence is supplied separately so that these limits remain auditable without dominating the main paper.
 
-\section{Conclusion}\label{conclusion}
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
 
 A decision-consequence auditing framework has been developed for reliability assessment in surrogate-assisted optimization. It makes the path from surrogate-derived information to model-management action explicit and requires separate evidence for calibration, decision influence, common-state utility, and closed-loop optimization. The ranking-invariance criterion and prediction-before-label protocol allow structurally redundant mechanisms and information leakage to be identified before large experimental budgets are committed.
 
@@ -334,13 +355,14 @@ The temporal residual monitor illustrates the framework rather than defining its
 
 The framework is intended as a predeployment screen for expensive engineering optimization. Applying its stages in order can prevent calibration statistics from being mistaken for optimization value, focus simulation resources on mechanisms with an identifiable decision path, and retain a reproducible record of why a surrogate-management component was promoted, revised, or stopped.
 
-\acknowledgement{During manuscript preparation, the authors used OpenAI Codex to assist with code organization, reproducibility checks, manuscript structuring, and language revision. The authors reviewed and verified the experimental protocols, source code, numerical outputs, statistical summaries, citations, and scientific interpretations and accept full responsibility for the article.}
-\funding{The authors received no specific funding for this study. \textbf{Replace this statement if funding supported the work.}}
-\authorcontributions{\textbf{To be completed with the full names and verified contributions of all authors before submission.} All authors must review the results and approve the final manuscript.}
-\availabilityofdataandmaterials{The frozen protocols, source fingerprints, seeds, prediction-before-label journals, analysis tables, and figure source data are included in the project archive. \textbf{A permanent repository URL and version identifier must be inserted before submission.}}
+\acknowledgement{Not applicable.}
+\funding{Funding information is pending confirmation by the corresponding author and must be completed before submission.}
+\authorcontributions{The authors confirm contribution to the paper as follows: conceptualization, Yayu Zhang and Shu-Chuan Chu; methodology, Yayu Zhang, Shu-Chuan Chu, and Zhenyu Meng; software, Yayu Zhang; validation, Yayu Zhang, Zhenyu Meng, and Jia Yue; formal analysis, Yayu Zhang and Zhenyu Meng; investigation, Yayu Zhang and Jia Yue; data curation, Yayu Zhang; visualization, Yayu Zhang and Jia Yue; writing---original draft preparation, Yayu Zhang; writing---review and editing, Shu-Chuan Chu, Zhenyu Meng, Jia Yue, and Yayu Zhang; supervision, Shu-Chuan Chu; project administration, Shu-Chuan Chu. All authors reviewed the results and approved the final version of the manuscript.}
+\availabilityofdataandmaterials{Upon acceptance, the source code, experiment configurations, random seeds, processed datasets that can be publicly released, audit records, analysis tables, and figure source data supporting the findings will be deposited in the public GitHub repository at https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design. Materials governed by third-party licenses or publisher terms will not be redistributed; their source revisions and retrieval instructions will be provided in the repository.}
 \ethicsapproval{Not applicable. This study did not involve human participants or animals.}
 \conflictsofinterest{The authors declare no conflicts of interest to report regarding the present study.}
 \supplementary{The supplementary document contains full function-level results, LassoBench and 300-dimensional transfer evidence, model and budget sensitivity studies, exclusive resource measurements, recovery accounting, and reproducibility audits.}
+\par\noindent\textbf{Declaration of Generative AI in Scientific Writing: }During manuscript preparation, OpenAI Codex was used to assist with code organization, reproducibility checks, manuscript structuring, and language revision. All experimental protocols, source code, numerical outputs, statistical summaries, citations, and scientific interpretations were reviewed and verified by the authors, who accept full responsibility for the content of the publication.\par
 \reftitle{References}
 \begin{thebibliography}{999}
 \bibitem{ref-1}

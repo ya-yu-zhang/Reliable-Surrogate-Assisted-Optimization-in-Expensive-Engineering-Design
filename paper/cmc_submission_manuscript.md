@@ -253,19 +253,19 @@ The framework is intended as a predeployment screen for expensive engineering op
 
 ## Acknowledgement
 
-During manuscript preparation, the authors used OpenAI Codex to assist with code organization, reproducibility checks, manuscript structuring, and language revision. The authors reviewed and verified the experimental protocols, source code, numerical outputs, statistical summaries, citations, and scientific interpretations and accept full responsibility for the article.
+Not applicable.
 
 ## Funding Statement
 
-The authors received no specific funding for this study. **Replace this statement if funding supported the work.**
+Funding information is pending confirmation by the corresponding author and must be completed before submission.
 
 ## Author Contributions
 
-**To be completed with the full names and verified contributions of all authors before submission.** All authors must review the results and approve the final manuscript.
+The authors confirm contribution to the paper as follows: conceptualization, Yayu Zhang and Shu-Chuan Chu; methodology, Yayu Zhang, Shu-Chuan Chu, and Zhenyu Meng; software, Yayu Zhang; validation, Yayu Zhang, Zhenyu Meng, and Jia Yue; formal analysis, Yayu Zhang and Zhenyu Meng; investigation, Yayu Zhang and Jia Yue; data curation, Yayu Zhang; visualization, Yayu Zhang and Jia Yue; writing—original draft preparation, Yayu Zhang; writing—review and editing, Shu-Chuan Chu, Zhenyu Meng, Jia Yue, and Yayu Zhang; supervision, Shu-Chuan Chu; project administration, Shu-Chuan Chu. All authors reviewed the results and approved the final version of the manuscript.
 
 ## Availability of Data and Materials
 
-The frozen protocols, source fingerprints, seeds, prediction-before-label journals, analysis tables, and figure source data are included in the project archive. **A permanent repository URL and version identifier must be inserted before submission.**
+Upon acceptance, the source code, experiment configurations, random seeds, processed datasets that can be publicly released, audit records, analysis tables, and figure source data supporting the findings will be deposited in the public GitHub repository at https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design. Materials governed by third-party licenses or publisher terms will not be redistributed; their source revisions and retrieval instructions will be provided in the repository.
 
 ## Ethics Approval
 
@@ -274,6 +274,10 @@ Not applicable. This study did not involve human participants or animals.
 ## Conflicts of Interest
 
 The authors declare no conflicts of interest to report regarding the present study.
+
+## Declaration of Generative AI in Scientific Writing
+
+During manuscript preparation, OpenAI Codex was used to assist with code organization, reproducibility checks, manuscript structuring, and language revision. All experimental protocols, source code, numerical outputs, statistical summaries, citations, and scientific interpretations were reviewed and verified by the authors, who accept full responsibility for the content of the publication.
 
 ## Supplementary Materials
 

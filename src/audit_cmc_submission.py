@@ -53,8 +53,8 @@ def main() -> None:
     body = main_md.split("# References", 1)[0]
     cited_numbers = sorted({int(n) for group in re.findall(r"\[([\d,\-\s]+)\]", body) for n in re.findall(r"\d+", group)})
     status = {
-        "main": audit_docx(OUT / "CMC_submission_manuscript.docx", OUT / "qa_main_authors_refs_superscript_20260929"),
-        "supplement": audit_docx(OUT / "CMC_supplementary_materials.docx", OUT / "qa_supp_authors_refs_superscript_20260929"),
+        "main": audit_docx(OUT / "CMC_submission_manuscript.docx", OUT / "qa_declarations_20260930"),
+        "supplement": audit_docx(OUT / "CMC_supplementary_materials.docx", OUT / "qa_supp_declarations_20260930"),
         "manuscript_source": {
             "abstract_word_count": len(re.findall(r"\b[\w'-]+\b", abstract)),
             "reference_numbers": reference_numbers,
@@ -67,8 +67,6 @@ def main() -> None:
             "affiliations for Zhenyu Meng and Jia Yue",
             "corresponding-author institutional email",
             "funding statement",
-            "author-contribution statement",
-            "public repository URL",
         ],
     }
     target = OUT / "CMC_submission_status.json"

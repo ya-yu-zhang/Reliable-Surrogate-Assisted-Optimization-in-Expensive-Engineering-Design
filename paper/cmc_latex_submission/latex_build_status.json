@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29",
+  "generated": "2026-09-30",
   "manuscript_pages": 15,
   "supplementary_pages": 23,
   "pdflatex_passes": 2,
@@ -12,5 +12,10 @@
     "Zhenyu Meng",
     "Jia Yue"
   ],
-  "reference_count": 33
+  "reference_count": 33,
+  "required_metadata_pending": [
+    "affiliations for Zhenyu Meng and Jia Yue",
+    "corresponding-author institutional email",
+    "funding statement"
+  ]
 }
