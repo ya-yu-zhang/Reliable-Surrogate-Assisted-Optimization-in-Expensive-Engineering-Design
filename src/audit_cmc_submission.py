@@ -8,7 +8,7 @@ from pathlib import Path
 from docx import Document
 
 
-ROOT = Path(r"E:\论文3")
+ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "paper" / "cmc_submission"
 
 
