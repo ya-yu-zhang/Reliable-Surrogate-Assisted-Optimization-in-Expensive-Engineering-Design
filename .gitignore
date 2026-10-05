@@ -12,6 +12,7 @@ literature/source-code/
 *.aux
 *.out
 tmp/
+release/
 
 # Local document-rendering runtimes and downloaded installers
 artifacts/
