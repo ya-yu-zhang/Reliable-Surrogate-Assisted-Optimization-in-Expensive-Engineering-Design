@@ -183,7 +183,9 @@ Figure 3 makes the history dependence visible. Fixed 0.3 histories place the sel
 Spatial-temporal weighting lowers selected-point quantile loss in the prespecified diagnostic comparisons, yet its closed-loop endpoint remains worse than fixed01 in each dimension. This is the central empirical separation: a better residual estimate can still direct evaluations toward candidates with low optimization value.
 
 
-**Table 3. Evidence ablation across the audit stages.**
+To isolate the evidential role of each audit stage, a stage-omission ablation is constructed from the frozen records. Unlike an optimizer-component ablation, omitting an audit stage does not alter the evaluated trajectory; it removes the corresponding basis for inference. Table 3 states the strongest conclusion still supported at each stopping point and the evidence that would be lost.
+
+**Table 3. Stage-omission ablation and the resulting loss of evidence.**
 
 | Available audit evidence | Apparent conclusion for the representative monitor | Information lost if the audit stops here |
 |---|---|---|
@@ -192,7 +194,7 @@ Spatial-temporal weighting lowers selected-point quantile loss in the prespecifi
 | Ordering plus common-state utility | Feedback changes actions, but those actions have lower immediate improvement than mean-greedy choices. | Delayed effects after histories diverge remain untested. |
 | Full audit including closed loop | The controller does not pass the held-out optimization-benefit gate under the tested budgets. | No omitted audit stage is used to claim deployment value. |
 
-This evidence ablation uses the same frozen results rather than rerunning a modified optimizer. It shows why a calibration-only assessment would have produced an incomplete reliability conclusion, why algebraic pathway analysis saves objective calls, and why common-state and closed-loop evidence answer distinct questions.
+This evidence ablation uses the same frozen results rather than rerunning a modified optimizer because the ablated objects are inferential stages rather than search operators. It shows why a calibration-only assessment would have produced an incomplete reliability conclusion, why algebraic pathway analysis saves objective calls, and why common-state and closed-loop evidence answer distinct questions.
 
 ## 6 Engineering Application: Surrogate-Assisted Structural Optimization
 
@@ -255,7 +257,7 @@ The framework is intended as a predeployment screen for expensive engineering op
 
 ## Acknowledgement
 
-Not applicable.
+During the preparation of this manuscript, OpenAI Codex was used to assist with software organization, execution and recovery of predefined computational workflows, reproducibility checks, manuscript structuring, and language revision. The research questions, experimental protocols, acceptance criteria, and scientific interpretations were determined by the authors. All source code, numerical outputs, statistical summaries, citations, and AI-assisted text were reviewed and verified by the authors, who revised the manuscript and accept full responsibility for the published content.
 
 ## Funding Statement
 
@@ -267,7 +269,7 @@ The authors confirm contribution to the paper as follows: conceptualization, Ya-
 
 ## Availability of Data and Materials
 
-Upon acceptance, the source code, experiment configurations, random seeds, processed datasets that can be publicly released, audit records, analysis tables, and figure source data supporting the findings will be deposited in the public GitHub repository at https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design. Materials governed by third-party licenses or publisher terms will not be redistributed; their source revisions and retrieval instructions will be provided in the repository.
+The data and code supporting the findings of this study are available from the corresponding author upon reasonable request during peer review and will be deposited in the public GitHub repository upon acceptance.
 
 ## Ethics Approval
 
@@ -276,10 +278,6 @@ Not applicable. This study did not involve human participants or animals.
 ## Conflicts of Interest
 
 The authors declare no conflicts of interest to report regarding the present study.
-
-## Declaration of Generative AI in Scientific Writing
-
-During manuscript preparation, OpenAI Codex was used to assist with code organization, reproducibility checks, manuscript structuring, and language revision. All experimental protocols, source code, numerical outputs, statistical summaries, citations, and scientific interpretations were reviewed and verified by the authors, who accept full responsibility for the content of the publication.
 
 ## Supplementary Materials
 

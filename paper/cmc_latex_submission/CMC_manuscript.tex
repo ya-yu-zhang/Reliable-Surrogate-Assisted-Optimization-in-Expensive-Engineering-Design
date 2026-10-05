@@ -254,9 +254,11 @@ Figure 3 makes the history dependence visible. Fixed 0.3 histories place the sel
 
 Spatial-temporal weighting lowers selected-point quantile loss in the prespecified diagnostic comparisons, yet its closed-loop endpoint remains worse than fixed01 in each dimension. This is the central empirical separation: a better residual estimate can still direct evaluations toward candidates with low optimization value.
 
+To isolate the evidential role of each audit stage, a stage-omission ablation is constructed from the frozen records. Unlike an optimizer-component ablation, omitting an audit stage does not alter the evaluated trajectory; it removes the corresponding basis for inference. Table 3 states the strongest conclusion still supported at each stopping point and the evidence that would be lost.
+
 \begin{table}[H]
 \tablesize{\scriptsize}
-\caption{Evidence ablation across the audit stages.}
+\caption{Stage-omission ablation and the resulting loss of evidence.}
 \label{tab:main-3}
 \centering
 \begin{adjustbox}{max width=\textwidth}
@@ -273,7 +275,7 @@ Full audit including closed loop & The controller does not pass the held-out opt
 \end{adjustbox}
 \end{table}
 
-This evidence ablation uses the same frozen results rather than rerunning a modified optimizer. It shows why a calibration-only assessment would have produced an incomplete reliability conclusion, why algebraic pathway analysis saves objective calls, and why common-state and closed-loop evidence answer distinct questions.
+This evidence ablation uses the same frozen results rather than rerunning a modified optimizer because the ablated objects are inferential stages rather than search operators. It shows why a calibration-only assessment would have produced an incomplete reliability conclusion, why algebraic pathway analysis saves objective calls, and why common-state and closed-loop evidence answer distinct questions.
 
 \hypertarget{engineering-application-surrogate-assisted-structural-optimization}{%
 \section{Engineering Application: Surrogate-Assisted Structural Optimization}\label{engineering-application-surrogate-assisted-structural-optimization}}
@@ -359,14 +361,13 @@ The temporal residual monitor illustrates the framework rather than defining its
 
 The framework is intended as a predeployment screen for expensive engineering optimization. Applying its stages in order can prevent calibration statistics from being mistaken for optimization value, focus simulation resources on mechanisms with an identifiable decision path, and retain a reproducible record of why a surrogate-management component was promoted, revised, or stopped.
 
-\acknowledgement{Not applicable.}
+\acknowledgement{During the preparation of this manuscript, OpenAI Codex was used to assist with software organization, execution and recovery of predefined computational workflows, reproducibility checks, manuscript structuring, and language revision. The research questions, experimental protocols, acceptance criteria, and scientific interpretations were determined by the authors. All source code, numerical outputs, statistical summaries, citations, and AI-assisted text were reviewed and verified by the authors, who revised the manuscript and accept full responsibility for the published content.}
 \funding{The authors received no specific funding for this study.}
 \authorcontributions{The authors confirm contribution to the paper as follows: conceptualization, Ya-Yu Zhang and Shu-Chuan Chu; methodology, Ya-Yu Zhang, Shu-Chuan Chu, and Zhenyu Meng; software, Ya-Yu Zhang; validation, Ya-Yu Zhang, Zhenyu Meng, and Jia Yue; formal analysis, Ya-Yu Zhang and Zhenyu Meng; investigation, Ya-Yu Zhang and Jia Yue; data curation, Ya-Yu Zhang; visualization, Ya-Yu Zhang and Jia Yue; writing---original draft preparation, Ya-Yu Zhang; writing---review and editing, Shu-Chuan Chu, Zhenyu Meng, Jia Yue, and Ya-Yu Zhang; supervision, Shu-Chuan Chu; project administration, Shu-Chuan Chu. All authors reviewed the results and approved the final version of the manuscript.}
-\availabilityofdataandmaterials{Upon acceptance, the source code, experiment configurations, random seeds, processed datasets that can be publicly released, audit records, analysis tables, and figure source data supporting the findings will be deposited in the public GitHub repository at https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design. Materials governed by third-party licenses or publisher terms will not be redistributed; their source revisions and retrieval instructions will be provided in the repository.}
+\availabilityofdataandmaterials{The data and code supporting the findings of this study are available from the corresponding author upon reasonable request during peer review and will be deposited in the public GitHub repository upon acceptance.}
 \ethicsapproval{Not applicable. This study did not involve human participants or animals.}
 \conflictsofinterest{The authors declare no conflicts of interest to report regarding the present study.}
 \supplementary{The supplementary document contains full function-level results, LassoBench and 300-dimensional transfer evidence, model and budget sensitivity studies, exclusive resource measurements, recovery accounting, and reproducibility audits.}
-\par\noindent\textbf{Declaration of Generative AI in Scientific Writing: }During manuscript preparation, OpenAI Codex was used to assist with code organization, reproducibility checks, manuscript structuring, and language revision. All experimental protocols, source code, numerical outputs, statistical summaries, citations, and scientific interpretations were reviewed and verified by the authors, who accept full responsibility for the content of the publication.\par
 \reftitle{References}
 \begin{thebibliography}{999}
 \bibitem{ref-1}

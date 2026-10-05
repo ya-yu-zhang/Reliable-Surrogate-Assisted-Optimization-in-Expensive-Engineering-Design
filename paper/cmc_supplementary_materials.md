@@ -27,7 +27,7 @@ The supplement is organized by the claims made in the main article. Scientific r
 7. **Data and applications:** BBOB/COCO identifiers, fixed LassoBench datasets and splits, and the deterministic EngiBench finite-element parameterization are recorded.
 8. **Recovery:** Incomplete units, canonical-versus-physical call ledgers, rerun seeds, and exclusion rules are archived separately.
 
-Upon acceptance, the publicly releasable source code, experiment configurations, random seeds, processed datasets, audit records, analysis tables, and figure source data will be deposited in the public GitHub repository at https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design. Materials governed by third-party licenses or publisher terms will not be redistributed; their source revisions and retrieval instructions will be provided in the repository. The detailed audit trail remains in S8; this map is a navigation layer rather than a substitute for those records.
+The data and code supporting the findings of this study are available from the corresponding author upon reasonable request during peer review and will be deposited in the public GitHub repository upon acceptance. The detailed audit trail remains in S8; this map is a navigation layer rather than a substitute for those records.
 
 # S1 Development diagnostics and common-state evidence
 
@@ -535,7 +535,7 @@ This section does not reverse the failed development benefit gate. The paper is 
 
 # S8 Reproducibility inventory
 
-The archived evidence contains frozen protocols, source hashes, dependency locks, deterministic seed maps, prediction-before-label journals, candidate arrays, separate diagnostic labels, endpoint re-evaluations, raw-file hashes, analysis tables, and figure sources. Diagnostic labels never enter optimizer histories. Interrupted or repeated physical calls are disclosed separately from canonical algorithm budgets. Upon acceptance, the publicly releasable portions of this evidence will be deposited in the public GitHub repository identified in Section S0, together with a fixed release tag and version identifier.
+The archived evidence contains frozen protocols, source hashes, dependency locks, deterministic seed maps, prediction-before-label journals, candidate arrays, separate diagnostic labels, endpoint re-evaluations, raw-file hashes, analysis tables, and figure sources. Diagnostic labels never enter optimizer histories. Interrupted or repeated physical calls are disclosed separately from canonical algorithm budgets. During peer review, supporting data and code are available from the corresponding author upon reasonable request; upon acceptance, the publicly releasable portions will be deposited in the public GitHub repository identified in Section S0, together with a fixed release tag and version identifier.
 
 ## S8.1 Finite-element audit
 
