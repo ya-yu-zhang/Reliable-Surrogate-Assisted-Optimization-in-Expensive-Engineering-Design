@@ -306,6 +306,12 @@ def replace_slot(paragraph, text: str, *, font="Minion Pro", size=9, bold=False,
 
 def prepare_template(title: str, supplementary: bool = False) -> Document:
     doc = Document(str(TEMPLATE))
+    doc.core_properties.title = title
+    doc.core_properties.subject = "Supplementary materials" if supplementary else "CMC journal submission manuscript"
+    doc.core_properties.author = "Shu-Chuan Chu; Ya-Yu Zhang; Zhenyu Meng; Jia Zhao"
+    doc.core_properties.last_modified_by = "Ya-Yu Zhang"
+    doc.core_properties.comments = ""
+    doc.core_properties.keywords = "surrogate-assisted optimization; expensive engineering design"
     remove_instructional_body(doc)
     # The distributed template contains an empty section-level bidi flag. It
     # reverses newly authored table columns in LibreOffice despite LTR prose.
@@ -326,7 +332,7 @@ def prepare_template(title: str, supplementary: bool = False) -> Document:
         ("Shu-Chuan Chu", "1,*", ", "),
         ("Ya-Yu Zhang", "1", ", "),
         ("Zhenyu Meng", "2", " and "),
-        ("Jia Yue", "3", ""),
+        ("Jia Zhao", "3", ""),
     ):
         run = slots[3].add_run(author)
         set_run_font(run, "Minion Pro", 11, bold=True)
@@ -338,11 +344,11 @@ def prepare_template(title: str, supplementary: bool = False) -> Document:
             set_run_font(run, "Minion Pro", 11, bold=True)
     replace_slot(slots[4], "1 School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
                  font="Minion Pro", size=9)
-    replace_slot(slots[5], "2 Affiliation to be confirmed for Zhenyu Meng; 3 Affiliation to be confirmed for Jia Yue",
+    replace_slot(slots[5], "2 Affiliation to be confirmed for Zhenyu Meng; 3 Affiliation to be confirmed for Jia Zhao",
                  font="Minion Pro", size=9)
     replace_slot(slots[6], "* Corresponding Author: Shu-Chuan Chu. Email: 100130@nuist.edu.cn",
                  font="Minion Pro", size=9, after=2)
-    replace_slot(slots[7], "Ya-Yu Zhang: 202412492223@nuist.edu.cn; ORCID: S. Chu, 0000-0003-2117-0618; Y.-Y. Zhang, 0009-0001-2272-4654",
+    replace_slot(slots[7], "Ya-Yu Zhang: 202412492223@nuist.edu.cn; Zhenyu Meng: mzy1314@gmail.com\nORCID: S. Chu, 0000-0003-2117-0618; Y.-Y. Zhang, 0009-0001-2272-4654; Z. Meng, 0000-0002-1466-8082; J. Zhao, 0000-0002-3652-1903",
                  font="Minion Pro", size=8, italic=True, after=2)
     replace_slot(slots[8], "Received: Day Month Year    Accepted: Day Month Year",
                  font="Minion Pro", size=8, after=8)

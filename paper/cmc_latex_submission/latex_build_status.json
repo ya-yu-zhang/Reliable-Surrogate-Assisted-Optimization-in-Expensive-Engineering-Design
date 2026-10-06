@@ -1,6 +1,6 @@
 {
-  "generated": "2026-10-05",
-  "manuscript_pages": 15,
+  "generated": "2026-10-06",
+  "manuscript_pages": 16,
   "supplementary_pages": 23,
   "pdflatex_passes": 2,
   "compile_success": true,
@@ -10,10 +10,10 @@
     "Shu-Chuan Chu",
     "Ya-Yu Zhang",
     "Zhenyu Meng",
-    "Jia Yue"
+    "Jia Zhao"
   ],
   "reference_count": 33,
   "required_metadata_pending": [
-    "affiliations for Zhenyu Meng and Jia Yue"
+    "affiliations for Zhenyu Meng and Jia Zhao"
   ]
 }

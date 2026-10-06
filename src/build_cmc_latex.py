@@ -209,17 +209,19 @@ def preamble(title: str, abstract: str, keywords: str, supplementary: bool = Fal
 \datereceived{{Day Month Year}}\dateaccepted{{Day Month Year}}
 \dateonlinefirst{{}}\datepublished{{Day Month Year}}
 \Title{{{latex_escape(title)}}}
-\Author{{Shu-Chuan Chu\textsuperscript{{1,*}}, Ya-Yu Zhang\textsuperscript{{1}}, Zhenyu Meng\textsuperscript{{2}} and Jia Yue\textsuperscript{{3}}}}
-\AuthorNames{{Shu-Chuan Chu, Ya-Yu Zhang, Zhenyu Meng and Jia Yue}}
+\Author{{Shu-Chuan Chu\textsuperscript{{1,*}}, Ya-Yu Zhang\textsuperscript{{1}}, Zhenyu Meng\textsuperscript{{2}} and Jia Zhao\textsuperscript{{3}}}}
+\AuthorNames{{Shu-Chuan Chu, Ya-Yu Zhang, Zhenyu Meng and Jia Zhao}}
 \address{{\textsuperscript{{1}}School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China
 
 \textsuperscript{{2}}Affiliation to be confirmed for Zhenyu Meng
 
-\textsuperscript{{3}}Affiliation to be confirmed for Jia Yue
+\textsuperscript{{3}}Affiliation to be confirmed for Jia Zhao
 
 Ya-Yu Zhang: 202412492223@nuist.edu.cn
 
-ORCID: Shu-Chuan Chu, \href{{https://orcid.org/0000-0003-2117-0618}}{{0000-0003-2117-0618}}; Ya-Yu Zhang, \href{{https://orcid.org/0009-0001-2272-4654}}{{0009-0001-2272-4654}}}}
+Zhenyu Meng: mzy1314@gmail.com
+
+ORCID: Shu-Chuan Chu, \href{{https://orcid.org/0000-0003-2117-0618}}{{0000-0003-2117-0618}}; Ya-Yu Zhang, \href{{https://orcid.org/0009-0001-2272-4654}}{{0009-0001-2272-4654}}; Zhenyu Meng, \href{{https://orcid.org/0000-0002-1466-8082}}{{0000-0002-1466-8082}}; Jia Zhao, \href{{https://orcid.org/0000-0002-3652-1903}}{{0000-0002-3652-1903}}}}
 \corres{{Corresponding Author: Shu-Chuan Chu. Email: 100130@nuist.edu.cn}}
 \abstract{{{inline_markdown_to_latex(abstract)}}}
 \keyword{{{inline_markdown_to_latex(keywords)}}}

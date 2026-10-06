@@ -64,7 +64,7 @@ def main() -> None:
             "contiguous_reference_list": reference_numbers == list(range(1, len(reference_numbers) + 1)),
         },
         "known_submission_placeholders": [
-            "affiliations for Zhenyu Meng and Jia Yue",
+            "affiliations for Zhenyu Meng and Jia Zhao",
         ],
     }
     target = OUT / "CMC_submission_status.json"
