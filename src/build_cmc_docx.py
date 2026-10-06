@@ -348,7 +348,7 @@ def prepare_template(title: str, supplementary: bool = False) -> Document:
                  font="Minion Pro", size=9)
     replace_slot(slots[6], "* Corresponding Author: Shu-Chuan Chu. Email: 100130@nuist.edu.cn",
                  font="Minion Pro", size=9, after=2)
-    replace_slot(slots[7], "Ya-Yu Zhang: 202412492223@nuist.edu.cn; Zhenyu Meng: mzy1314@gmail.com\nORCID: S. Chu, 0000-0003-2117-0618; Y.-Y. Zhang, 0009-0001-2272-4654; Z. Meng, 0000-0002-1466-8082; J. Zhao, 0000-0002-3652-1903",
+    replace_slot(slots[7], "Ya-Yu Zhang: 202412492223@nuist.edu.cn; Zhenyu Meng: mzy1314@gmail.com\nORCID: S. Chu, 0000-0003-2117-0618; Y.-Y. Zhang, 0009-0001-2272-4654; Z. Meng, 0000-0002-1466-8082; Z. Jia, 0000-0002-3652-1903",
                  font="Minion Pro", size=8, italic=True, after=2)
     replace_slot(slots[8], "Received: Day Month Year    Accepted: Day Month Year",
                  font="Minion Pro", size=8, after=8)
