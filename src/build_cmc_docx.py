@@ -308,7 +308,7 @@ def prepare_template(title: str, supplementary: bool = False) -> Document:
     doc = Document(str(TEMPLATE))
     doc.core_properties.title = title
     doc.core_properties.subject = "Supplementary materials" if supplementary else "CMC journal submission manuscript"
-    doc.core_properties.author = "Shu-Chuan Chu; Ya-Yu Zhang; Zhenyu Meng; Jia Zhao"
+    doc.core_properties.author = "Shu-Chuan Chu; Ya-Yu Zhang; Zhenyu Meng; Zhao Jia"
     doc.core_properties.last_modified_by = "Ya-Yu Zhang"
     doc.core_properties.comments = ""
     doc.core_properties.keywords = "surrogate-assisted optimization; expensive engineering design"
@@ -332,7 +332,7 @@ def prepare_template(title: str, supplementary: bool = False) -> Document:
         ("Shu-Chuan Chu", "1,*", ", "),
         ("Ya-Yu Zhang", "1", ", "),
         ("Zhenyu Meng", "2", " and "),
-        ("Jia Zhao", "3", ""),
+        ("Zhao Jia", "3", ""),
     ):
         run = slots[3].add_run(author)
         set_run_font(run, "Minion Pro", 11, bold=True)
@@ -344,7 +344,7 @@ def prepare_template(title: str, supplementary: bool = False) -> Document:
             set_run_font(run, "Minion Pro", 11, bold=True)
     replace_slot(slots[4], "1 School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
                  font="Minion Pro", size=9)
-    replace_slot(slots[5], "2 Affiliation to be confirmed for Zhenyu Meng; 3 Affiliation to be confirmed for Jia Zhao",
+    replace_slot(slots[5], "2 Affiliation to be confirmed for Zhenyu Meng; 3 Affiliation to be confirmed for Zhao Jia",
                  font="Minion Pro", size=9)
     replace_slot(slots[6], "* Corresponding Author: Shu-Chuan Chu. Email: 100130@nuist.edu.cn",
                  font="Minion Pro", size=9, after=2)

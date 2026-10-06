@@ -2,15 +2,15 @@
 
 **ARTICLE**
 
-**Shu-Chuan Chu1,*, Ya-Yu Zhang1, Zhenyu Meng2 and Jia Zhao3**
+**Shu-Chuan Chu1,*, Ya-Yu Zhang1, Zhenyu Meng2 and Zhao Jia3**
 
 1 School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China  
 2 Affiliation to be confirmed for Zhenyu Meng  
-3 Affiliation to be confirmed for Jia Zhao  
+3 Affiliation to be confirmed for Zhao Jia  
 * Corresponding Author: Shu-Chuan Chu. Email: 100130@nuist.edu.cn  
 Ya-Yu Zhang. Email: 202412492223@nuist.edu.cn  
 Zhenyu Meng. Email: mzy1314@gmail.com  
-ORCID: Shu-Chuan Chu, 0000-0003-2117-0618; Ya-Yu Zhang, 0009-0001-2272-4654; Zhenyu Meng, 0000-0002-1466-8082; Jia Zhao, 0000-0002-3652-1903
+ORCID: Shu-Chuan Chu, 0000-0003-2117-0618; Ya-Yu Zhang, 0009-0001-2272-4654; Zhenyu Meng, 0000-0002-1466-8082; Zhao Jia, 0000-0002-3652-1903
 
 ## Abstract
 
@@ -266,7 +266,7 @@ The authors received no specific funding for this study.
 
 ## Author Contributions
 
-The authors confirm contribution to the paper as follows: conceptualization, Ya-Yu Zhang and Shu-Chuan Chu; methodology, Ya-Yu Zhang, Shu-Chuan Chu, and Zhenyu Meng; software, Ya-Yu Zhang; validation, Ya-Yu Zhang, Zhenyu Meng, and Jia Zhao; formal analysis, Ya-Yu Zhang and Zhenyu Meng; investigation, Ya-Yu Zhang and Jia Zhao; data curation, Ya-Yu Zhang; visualization, Ya-Yu Zhang and Jia Zhao; writing—original draft preparation, Ya-Yu Zhang; writing—review and editing, Shu-Chuan Chu, Zhenyu Meng, Jia Zhao, and Ya-Yu Zhang; supervision, Shu-Chuan Chu; project administration, Shu-Chuan Chu. All authors reviewed the results and approved the final version of the manuscript.
+The authors confirm contribution to the paper as follows: conceptualization, Ya-Yu Zhang and Shu-Chuan Chu; methodology, Ya-Yu Zhang, Shu-Chuan Chu, and Zhenyu Meng; software, Ya-Yu Zhang; validation, Ya-Yu Zhang, Zhenyu Meng, and Zhao Jia; formal analysis, Ya-Yu Zhang and Zhenyu Meng; investigation, Ya-Yu Zhang and Zhao Jia; data curation, Ya-Yu Zhang; visualization, Ya-Yu Zhang and Zhao Jia; writing—original draft preparation, Ya-Yu Zhang; writing—review and editing, Shu-Chuan Chu, Zhenyu Meng, Zhao Jia, and Ya-Yu Zhang; supervision, Shu-Chuan Chu; project administration, Shu-Chuan Chu. All authors reviewed the results and approved the final version of the manuscript.
 
 ## Availability of Data and Materials
 

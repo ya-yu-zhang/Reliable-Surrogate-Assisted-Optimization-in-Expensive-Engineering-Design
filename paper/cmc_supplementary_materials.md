@@ -1,6 +1,6 @@
 # Supplementary Materials for A Decision-Consequence Auditing Framework for Reliable Surrogate-Assisted Optimization in Expensive Engineering Design
 
-**Shu-Chuan Chu, Ya-Yu Zhang, Zhenyu Meng and Jia Zhao**
+**Shu-Chuan Chu, Ya-Yu Zhang, Zhenyu Meng and Zhao Jia**
 
 This document preserves secondary analyses, complete denominators, resource measurements, application transfer, high-dimensional extensions, sensitivity studies, and recovery accounting supporting the main article. The main article contains the prespecified primary BBOB contrasts and finite-element engineering results. No supplementary analysis reverses the failed development optimization-benefit gate.
 
