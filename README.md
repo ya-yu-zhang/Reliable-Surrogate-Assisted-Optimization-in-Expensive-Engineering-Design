@@ -4,6 +4,22 @@ This repository contains the manuscript sources, experiment implementation,
 configurations, analysis utilities, and tests for the decision-consequence
 auditing framework studied in the accompanying paper.
 
+## Current manuscript revision
+
+The active target is **Engineering Optimization**. The revised working sources
+are `paper/engineering_optimization_manuscript.md` and
+`paper/engineering_optimization_supplementary.md`. See
+`docs/ENGINEERING_OPTIMIZATION_REVISION.md` for completed corrections,
+evidence boundaries, and remaining work. These are revision drafts, not a
+submission-ready package. Author affiliations and additional audit validation
+remain unresolved.
+
+The `cmc_*` sources and compiled PDFs preserve the previous submission state.
+They contain the documented Figure 3/S3 direction-text error and are not the
+current working manuscript. The new sources correct that error without changing
+reported experimental values. Historical hashes and frozen experiment code
+are retained.
+
 ## Repository layout
 
 - `src/`: optimization, auditing, analysis, and manuscript-build code.
@@ -56,3 +72,4 @@ please cite the manuscript title and this repository revision.
 No open-source license has yet been assigned. Copyright remains with the
 authors. Public visibility does not grant permission to reuse third-party
 assets or redistribute publisher templates.
+

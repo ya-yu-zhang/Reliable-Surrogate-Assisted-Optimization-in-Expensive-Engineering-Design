@@ -1,0 +1,35 @@
+{
+  "format": "journal-neutral article; not the official publisher template",
+  "pdf_compiled": false,
+  "layout_verified": false,
+  "sources": {
+    "paper/engineering_optimization_manuscript.md": "708cd6ac6b21642c16590470e5b47fa2eee45795e4fdeb903214d2ffb66653f2",
+    "paper/engineering_optimization/EO_manuscript.tex": "948e0ef0abe0d4aeb6c3c15b7818eb24ad79211f7cad7d06551824b8950f4340",
+    "paper/engineering_optimization_supplementary.md": "5ca2b53a3b9c0b25d5ee25990545ba2a125b04a4e826821f2f1c56b9b3ee98fc",
+    "paper/engineering_optimization/EO_supplementary.tex": "5af0c559a317817c1fe5873d6c1786db25d3fce68156d6b73e040ff35fd6d3fb"
+  },
+  "figures": {
+    "manuscript": [
+      "../cmc_latex_submission/figures/main_figure_1.pdf",
+      "../cmc_latex_submission/figures/main_figure_2.pdf",
+      "../cmc_latex_submission/figures/main_figure_3.pdf",
+      "../cmc_latex_submission/figures/main_figure_4.pdf",
+      "../cmc_latex_submission/figures/main_figure_5.pdf"
+    ],
+    "supplementary": [
+      "../cmc_latex_submission/figures/supp_figure_1.pdf",
+      "../cmc_latex_submission/figures/supp_figure_2.pdf",
+      "../cmc_latex_submission/figures/supp_figure_3.pdf",
+      "../cmc_latex_submission/figures/supp_figure_4.pdf",
+      "../cmc_latex_submission/figures/supp_figure_5.pdf",
+      "../cmc_latex_submission/figures/supp_figure_6.pdf",
+      "../cmc_latex_submission/figures/supp_figure_7.pdf",
+      "../cmc_latex_submission/figures/supp_figure_8.pdf",
+      "../cmc_latex_submission/figures/supp_figure_9.pdf",
+      "../cmc_latex_submission/figures/supp_figure_10.pdf",
+      "../cmc_latex_submission/figures/supp_figure_11.pdf",
+      "../cmc_latex_submission/figures/supp_figure_12.pdf",
+      "../cmc_latex_submission/figures/supp_figure_13.pdf"
+    ]
+  }
+}

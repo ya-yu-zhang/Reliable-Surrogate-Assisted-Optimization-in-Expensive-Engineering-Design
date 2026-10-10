@@ -1,0 +1,49 @@
+{
+  "errors": [],
+  "source_hashes": {
+    "paper/engineering_optimization_manuscript.md": "708cd6ac6b21642c16590470e5b47fa2eee45795e4fdeb903214d2ffb66653f2",
+    "paper/engineering_optimization_supplementary.md": "5ca2b53a3b9c0b25d5ee25990545ba2a125b04a4e826821f2f1c56b9b3ee98fc"
+  },
+  "numeric_table_rows_unchanged": true,
+  "direction_checks": [
+    {
+      "dimension": 10,
+      "history": "fixed03",
+      "selected_minus_pool": 0.0736
+    },
+    {
+      "dimension": 10,
+      "history": "greedy",
+      "selected_minus_pool": -0.0115
+    },
+    {
+      "dimension": 20,
+      "history": "fixed03",
+      "selected_minus_pool": 0.0391
+    },
+    {
+      "dimension": 20,
+      "history": "greedy",
+      "selected_minus_pool": -0.0834
+    },
+    {
+      "dimension": 40,
+      "history": "fixed03",
+      "selected_minus_pool": 0.0294
+    },
+    {
+      "dimension": 40,
+      "history": "greedy",
+      "selected_minus_pool": -0.1156
+    }
+  ],
+  "reference_count": 35,
+  "submission_ready": false,
+  "unresolved": [
+    "Author affiliations 2 and 3",
+    "Full cross-mechanism audit",
+    "Additional physical engineering conditions",
+    "Measured net audit cost",
+    "Publisher formatting and rendered layout verification"
+  ]
+}
