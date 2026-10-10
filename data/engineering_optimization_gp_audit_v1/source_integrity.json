@@ -1,0 +1,246 @@
+{
+  "archive_sha256": "c59079aaf34f560ee2f3e93a55bd60e13b2fa4c53097285842580df4d3b8098b",
+  "verified": 60,
+  "files": [
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r0_b200/events.jsonl",
+      "sha256": "4a5cbd0d875f9e5db9c5011e351d141620fcb2f76dbb16d72044cffe4eb31495"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r0_b200/summary.json",
+      "sha256": "ec387e95fb1b17bb5b9d81cd38ea3d35115fa6c321c8724286ac22165dd4557b"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r1_b200/events.jsonl",
+      "sha256": "60fb9bff0491f75f78a7e0b64da10f59740d856b775a4a982e62bfa3d95a59a3"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r1_b200/summary.json",
+      "sha256": "a72b3ea66336feabb053f961b63adc00850987b2d3567ade26496f278e0e6b08"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r2_b200/events.jsonl",
+      "sha256": "93059d9882a7c3c42bd17382e1275ff7f56be195bfa646d337eab6ef91df0ed4"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r2_b200/summary.json",
+      "sha256": "3cbdc08055344d89badb673b7ebc31048b080478fa31844d3037706a470999ac"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r3_b200/events.jsonl",
+      "sha256": "a95be85f24fa6c0d8f1260c3b5f8a00528813cceb359e430e30e672285501b94"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r3_b200/summary.json",
+      "sha256": "6977da6f25d6a48e30acd4d4c474efc5e7ac9b2ec3bb7d414a8bf2cdd48698de"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r4_b200/events.jsonl",
+      "sha256": "7b93fc730436243a459b56d9753a732c60b4916a7a411dff8d11487a77a521f4"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r4_b200/summary.json",
+      "sha256": "de2ec394bc007bd46c62f68285bf386bcbff152f0651bd30ae655352627f5959"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r5_b200/events.jsonl",
+      "sha256": "0c5d6f1b3c6a0d9775a2f4e742938cf1cbd330e55068e9e9dd58def49361bcf5"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r5_b200/summary.json",
+      "sha256": "b0fcdc196a2e1c3fde540c1f5755dee62575fe62d8b4830777f4f7ae8ec8de70"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r6_b200/events.jsonl",
+      "sha256": "3191e56fe5fa9fe05ca4eff62f9a81300a0d3902d0e0dc46c4975ad23b8fc068"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r6_b200/summary.json",
+      "sha256": "e8a9ba077442e7a04f59bfbce30212d047eba477497224d0eb8b36eb15c50e14"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r7_b200/events.jsonl",
+      "sha256": "97bcad2c103209411d6508bf4086e7ddfe90d68431bf38fd677bcacf73c98f94"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r7_b200/summary.json",
+      "sha256": "2bec890b8169edaeea08ddb8d2fb2fb7d5d32a3bc96a8c97295c519d66f9e860"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r8_b200/events.jsonl",
+      "sha256": "331ab9713c2acc4829ac7f23c409758002dd6883f8b5bd65fe8f3e286e4b52ff"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r8_b200/summary.json",
+      "sha256": "649b1420c8be8dff9df87144df1ca008bfcb84961324ebcd37b3f06b07882d7e"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r9_b200/events.jsonl",
+      "sha256": "6441b94650044d6b98c5494373478452e4be74b312ee76aa032151e76b3e5bb5"
+    },
+    {
+      "path": "gp_ei_shared_init/gp_ei_shared_init_f01_d19_i1_r9_b200/summary.json",
+      "sha256": "517937d6d875939ac95b2f9ab8e49dfd5b6b5589000253bcfd7846bbd13e05d4"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r0_b200/events.jsonl",
+      "sha256": "d8684b9a4a6fb2bddd296818201903b16df2255a441c18b1bf3c63ab98df8dbc"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r0_b200/summary.json",
+      "sha256": "a3c88ec86c45afb2d157e25dd1b7a8e7c5738cc0cd7c9e062dccdc21d7c2fa9b"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r1_b200/events.jsonl",
+      "sha256": "1ca1370bfe200a407aab5d980e51fdca8814056b5b87c0366e3c705eb3fcec29"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r1_b200/summary.json",
+      "sha256": "d2e8e11d0538f3434c900fd1b8d7a248bf054938da58913fffb939f51e6b505e"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r2_b200/events.jsonl",
+      "sha256": "87e49835bc8adfe4bbc89c6e82cc6c4208f3a8e2be942b8db830a2d836b12214"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r2_b200/summary.json",
+      "sha256": "5916ebc13649e5d2310e50101086c89f737ab7ab4b1d2ede30342b2cf7f51f25"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r3_b200/events.jsonl",
+      "sha256": "f8e4e97f1d0631dfc9193197169a16ee0460e69ba405e752fca078b01c518950"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r3_b200/summary.json",
+      "sha256": "0d10d634fc211ea67fb4f900584294cfa95ff5d0977c220ec21d32a1513daabf"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r4_b200/events.jsonl",
+      "sha256": "d070347092b07872bd229b85551415274a33862de2d234bfd361ffa22b4c9939"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r4_b200/summary.json",
+      "sha256": "2ec939d63ddc1f6274d9966667fd1f6cb132165b4fa869f2e38516e5f3c66af4"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r5_b200/events.jsonl",
+      "sha256": "05aeb0ba8c9ad52554280496b30948738826ae93a32a710ab7ee5cedd5efe7d5"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r5_b200/summary.json",
+      "sha256": "fd0fe2cec2fb6fdeee94df22067b77404a151c4e509d23441597b069d3cdb919"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r6_b200/events.jsonl",
+      "sha256": "467579afef8bc5661683927d5fec368883fba1552fc21b7b3bec6fd0bc4f697f"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r6_b200/summary.json",
+      "sha256": "715a9dde61984fc56ae0ec51f39f820c6c02f28713000d7105fb86fec87f833b"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r7_b200/events.jsonl",
+      "sha256": "421ef6b75dac9a9b69594706d605032b861936bc062bdfe0f1735df14556458d"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r7_b200/summary.json",
+      "sha256": "ff665e3f6e4e64acbc65e7abf4b3f5acd86e2c03f3e55a2250a5475e362a2ee6"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r8_b200/events.jsonl",
+      "sha256": "b10c054cbc554676f4be5dc3b388ad16268d62cbd402bd972f3233fcf91eaea9"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r8_b200/summary.json",
+      "sha256": "e35f415cf8f55b9fef3a675325bfcd7db225985604cb95faa85643ce705defc4"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r9_b200/events.jsonl",
+      "sha256": "8e2be816319908ac34b3abd2f9d5e7c7586abe6602c644fea2d14c2b7fd6d085"
+    },
+    {
+      "path": "gp_pi_shared_init/gp_pi_shared_init_f01_d19_i1_r9_b200/summary.json",
+      "sha256": "fa8ae0e63ea44dea228f65772bacd3d41b183f2c3de7b4d1dafd7ee48caedc31"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r0_b200/events.jsonl",
+      "sha256": "b7a37bb239113ccc289b0ed747fbcd1871c3c571e1dc7e91319efec8bb7c88c2"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r0_b200/summary.json",
+      "sha256": "5c0bdd2b976a7c2cfd093cba6217381f52023318ec875ca867976e0f48572036"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r1_b200/events.jsonl",
+      "sha256": "65cde7e70ecb25639aa83e00a39a4a26ea9f1654dc375c703603e8a08e599248"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r1_b200/summary.json",
+      "sha256": "ccea1a54433d85b26402b0cb67588a8d2db532540ea10f22fe9f0e5161d21eca"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r2_b200/events.jsonl",
+      "sha256": "5c01266d79840d78034bfa391266b948d7a467727294ba3b6ca8b6205c070d50"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r2_b200/summary.json",
+      "sha256": "28c8a02cfa0a8a52197d687ad916b0bad73910a47f4e5e391ddaa23df040c738"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r3_b200/events.jsonl",
+      "sha256": "3a3aba54a3f558b9d7371675dba84cfdbf3bd6a286e2217082002431f2549e55"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r3_b200/summary.json",
+      "sha256": "d947feb3eaf0036d2533a5fe4fdce9a0890c7b119180f5dbe1fac4fa8a33eadf"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r4_b200/events.jsonl",
+      "sha256": "084c8307648a32b38ffc9154678d18548815cb8c4f860a783ea08d2a9bd9a646"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r4_b200/summary.json",
+      "sha256": "aea22daab497db03a8d73b9b2509650105835fb6bed1e5c8415a1e33ea693e7e"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r5_b200/events.jsonl",
+      "sha256": "87a1847b3eecab44eb8fd0fdf04ff73ef725dcfe7f9cf85b2366fc5ed76988c3"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r5_b200/summary.json",
+      "sha256": "5e4ccfe86b0eb41f306bdf5c62c5f56027bb8c06d333fefbbdf0f4d8573ab17b"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r6_b200/events.jsonl",
+      "sha256": "c451db02e29fc1bdf38fb7e2fb4669ec5bbd9671719f3aad02730e112b209f7d"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r6_b200/summary.json",
+      "sha256": "ee742384081bec2fffc841b4c48e2f4a3ce75bc374712f1ff9bc70271768467e"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r7_b200/events.jsonl",
+      "sha256": "fe2d3cbbab620aea6055eb99f61fa639dcb809c665f5fb479c8930dcd9480ef1"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r7_b200/summary.json",
+      "sha256": "3aae62544d6340160aebd2b7ed9d9087a424139835effcbe96126c4935f23429"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r8_b200/events.jsonl",
+      "sha256": "a7f4d943bad333bc6568615b49be8eb1a76843e6b039d4236163b4fe8f1f0cda"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r8_b200/summary.json",
+      "sha256": "177ecdfd530fee3635fdba71891abaa68cb8551e73f3704a2314b03645a65dea"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r9_b200/events.jsonl",
+      "sha256": "058c7a1e95c900a294a78e9e794418b379180ef2029d60654422d37eb2cf3e62"
+    },
+    {
+      "path": "gp_ucb_shared_init/gp_ucb_shared_init_f01_d19_i1_r9_b200/summary.json",
+      "sha256": "d8fd78c4800eba01320305c8f350552dfb4f5c43fe1df134e6fd5c1a83e4c64c"
+    }
+  ]
+}
