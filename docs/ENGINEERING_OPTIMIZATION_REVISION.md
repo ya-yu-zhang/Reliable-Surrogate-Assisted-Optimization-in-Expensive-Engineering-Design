@@ -40,12 +40,19 @@ python -m src.audit_engineering_optimization_revision --output paper/engineering
 
 ## Stage 2 — additional evidence
 
-Priority is a complete audit of candidate-dependent GP acquisitions, with a
-bounded alternative-label budget and separate diagnostic accounting. Restore
+The prospective protocol and bounded GP acquisition audit implementation are
+now present. Seven synthetic integrity tests cover analytic acquisitions,
+future-label isolation, prediction replay, label reuse, source corruption,
+call limits, and failed-call accounting. These tests are implementation checks,
+not new engineering results. Preflight found all 60 required raw input files
+absent; no new finite-element labels were acquired.
+
+Priority is to execute the common-state GP diagnostic, then separately assess
+delayed value and held-out closed-loop transfer. Restore
 the original raw GP journals in their documented `results/` paths. Do not
 infer missing frozen states from endpoint tables. A positive endpoint is not
 by itself an audit promotion. Detailed implementation and protocol are tracked
-in `docs/ENGINEERING_OPTIMIZATION_AUDIT_PROTOCOL.md` when available.
+in `docs/ENGINEERING_OPTIMIZATION_AUDIT_PROTOCOL.md`.
 
 ## Stage 3 — engineering transfer and submission
 

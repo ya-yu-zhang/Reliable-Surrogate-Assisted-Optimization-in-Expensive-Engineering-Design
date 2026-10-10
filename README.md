@@ -14,6 +14,13 @@ evidence boundaries, and remaining work. These are revision drafts, not a
 submission-ready package. Author affiliations and additional audit validation
 remain unresolved.
 
+The prospective GP audit is specified in
+`docs/ENGINEERING_OPTIMIZATION_AUDIT_PROTOCOL.md` and implemented in
+`src/engineering_optimization_gp_audit.py`. It freezes 120 common states and
+limits new diagnostic finite-element calls to 480. Synthetic integrity tests
+pass; formal execution requires the original raw GP journals. The current
+execution boundary is recorded in `paper/engineering_optimization/work_status.json`.
+
 The `cmc_*` sources and compiled PDFs preserve the previous submission state.
 They contain the documented Figure 3/S3 direction-text error and are not the
 current working manuscript. The new sources correct that error without changing

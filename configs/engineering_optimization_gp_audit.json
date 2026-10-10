@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "status": "prospective diagnostic protocol; no new scientific labels acquired",
+  "dimension": 19,
+  "optimizer_budget": 200,
+  "shared_initial_evaluations": 58,
+  "repeats": 10,
+  "checkpoints": [59, 101, 151, 200],
+  "controls": ["mean", "ei", "pi", "lcb"],
+  "sobol_power": 12,
+  "xi_scale": 0.01,
+  "kappa": 2.0,
+  "max_new_diagnostic_calls": 480,
+  "prediction_rtol": 1e-8,
+  "prediction_atol": 1e-8,
+  "source_roots": {
+    "gp_ei_shared_init": "results/engineering_beam_shared_init_v1",
+    "gp_pi_shared_init": "results/engineering_beam_acquisition_refs_v1",
+    "gp_ucb_shared_init": "results/engineering_beam_acquisition_refs_v1"
+  },
+  "out": "results/engineering_optimization_gp_audit_v1"
+}
