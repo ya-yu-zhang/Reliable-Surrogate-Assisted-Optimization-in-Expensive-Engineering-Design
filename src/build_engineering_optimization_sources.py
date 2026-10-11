@@ -26,6 +26,10 @@ def build() -> dict:
         figures = []
 
         def figure(match):
+            if match.group(2).startswith("engineering_optimization/figures/"):
+                path = match.group(2).removeprefix("engineering_optimization/").replace(".svg", ".png")
+                figures.append(path)
+                return f"![{match.group(1)}]({path})"
             number = len(figures) + 1
             # Reuse the already committed vector figures in the previous package.
             # The figure data have not changed; Figure 3/S3 prose is corrected.
@@ -34,6 +38,7 @@ def build() -> dict:
             return f"![{match.group(1)}]({path})"
 
         text = re.sub(r"!\[([^\]]+)\]\(([^)]+)\)", figure, text)
+        text = text.replace("∎", "$\\square$")
         result = subprocess.run([pandoc, "--from=markdown+pipe_tables+tex_math_dollars",
                                  "--to=latex", "--standalone", "--wrap=none",
                                  "--top-level-division=section", "--variable=documentclass:article",
@@ -50,3 +55,4 @@ def build() -> dict:
 
 if __name__ == "__main__":
     print(json.dumps(build(), indent=2))
+

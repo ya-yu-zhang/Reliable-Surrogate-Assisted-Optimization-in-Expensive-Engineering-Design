@@ -1,36 +1,55 @@
 {
   "baseline_commit": "4161c59f65771e889699c4596dd89b7b8496dc26",
   "stage1_commit": "bbfb70e6c2f9e351564c5227b989800e77f065a0",
-  "stage1": "source revision pushed; numerical table rows unchanged",
-  "stage2": "120-state common-state audit complete; results summary pushed",
+  "stage1": "completed: venue framing and historical direction-text correction",
+  "stage2": "completed: 60 verified source files; 120 frozen GP states; 138 new diagnostic calls",
+  "stage3": "completed: 20 retained paired transfer cases; unchanged-protocol recovery counted separately",
+  "stage4": "completed: operational contribution comparison and integrated main/supplement evidence",
+  "data_releases": {
+    "gp_source_bundle_commit": "71e074945262e1dbfc223726c7216e5415385ddc",
+    "transfer_compact_commit": "ce8e71e62dfef52c25c3754fed161dc8a3402fd7",
+    "recovery_plan_commit": "62560a245a8b804dcff3ce00aa45aae0af9f3884"
+  },
+  "costs": {
+    "immediate_diagnostic_calls": 138,
+    "solver_validation_attempts": 102,
+    "retained_transfer_calls": 18120,
+    "previous_transfer_calls_lost_journals": 18120,
+    "total_new_fe_attempts_this_revision": 36480
+  },
   "validation": {
-    "unittest_tests_passed": 7,
-    "syntax_compilation": "passed",
-    "manuscript_revision_audit": "passed",
-    "test_scope": "new audit implementation only; original frozen experiment suite was not rerun"
+    "integrity_tests_passed": 10,
+    "historical_numeric_table_rows_unchanged": true,
+    "reference_count": 38,
+    "gp_replay_states": 120,
+    "transfer_complete_cases": 20,
+    "gp_source_byte_hashes_verified": 60,
+    "transfer_endpoints_match_previous_status_record": 20,
+    "new_figure_visual_reviews": 2,
+    "original_frozen_experiment_suite_rerun": false
   },
   "validation_environment": {
+    "python": "3.12",
     "numpy": "2.2.6",
     "scipy": "1.15.3",
-    "scikit-learn": "1.7.2"
+    "scikit-learn": "1.7.2",
+    "engibench": "0.2.0",
+    "cvxopt": "1.3.2"
   },
-  "formal_preflight": {
-    "ready": true,
-    "required_files": 60,
-    "missing_files": [],
-    "states": 120,
-    "diagnostic_new_calls": 138,
-    "solver_validation_attempts": 102
-  },
-  "new_engineering_objective_calls": 240,
   "new_scientific_result_claims": true,
+  "new_inferential_families": false,
   "revised_pdf_compiled": false,
+  "rendered_pdf_layout_verified": false,
   "submission_ready": false,
   "remaining": [
-    "Complete small-file source/data release",
-    "Integrate manuscript evidence and rebuild PDFs",
-    "Execute frozen engineering transfer and total-cost workflows",
-    "Confirm affiliations 2 and 3 and final author review"
+    "Confirm author affiliations 2 and 3 and final author approval",
+    "Submission-format compilation and rendered-page verification",
+    "Final release citation and submission declarations"
   ],
-  "stage3": "Prospective transfer protocol ready; no new transfer labels acquired"
+  "claim_limits": [
+    "One deterministic beam model family with two added force conditions",
+    "No universally superior selector or performance-preserving savings claim",
+    "No new convergence or coverage guarantee",
+    "Editorial assessment determines novelty sufficiency and acceptance"
+  ]
 }

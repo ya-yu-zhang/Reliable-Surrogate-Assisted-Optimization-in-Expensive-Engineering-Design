@@ -1,8 +1,8 @@
 {
   "errors": [],
   "source_hashes": {
-    "paper/engineering_optimization_manuscript.md": "708cd6ac6b21642c16590470e5b47fa2eee45795e4fdeb903214d2ffb66653f2",
-    "paper/engineering_optimization_supplementary.md": "5ca2b53a3b9c0b25d5ee25990545ba2a125b04a4e826821f2f1c56b9b3ee98fc"
+    "paper/engineering_optimization_manuscript.md": "7d6798ff115245b44933ecf9e4a91daba9c1c7327d277805315ea72bc1385d62",
+    "paper/engineering_optimization_supplementary.md": "6f18d7358046de6d1431bec0135908a4112428c0a650d3cb3c4d917fbf8d834d"
   },
   "numeric_table_rows_unchanged": true,
   "direction_checks": [
@@ -37,13 +37,11 @@
       "selected_minus_pool": -0.1156
     }
   ],
-  "reference_count": 35,
+  "reference_count": 38,
   "submission_ready": false,
   "unresolved": [
-    "Author affiliations 2 and 3",
-    "Full cross-mechanism audit",
-    "Additional physical engineering conditions",
-    "Measured net audit cost",
-    "Publisher formatting and rendered layout verification"
+    "Author affiliations 2 and 3 and final author review",
+    "Final submission-format compilation and rendered layout verification",
+    "Journal editorial judgment of methodological novelty; acceptance not guaranteed"
   ]
 }

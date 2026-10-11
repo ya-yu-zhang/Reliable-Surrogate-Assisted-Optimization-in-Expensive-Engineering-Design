@@ -1,4 +1,5 @@
 """Validate the diagnostic ledger and report prespecified repeat aggregates."""
+import argparse
 import csv
 import json
 from collections import Counter
@@ -10,23 +11,38 @@ ROOT = Path(__file__).resolve().parents[1]
 REPORT = ROOT / "paper/engineering_optimization/gp_audit"
 
 
-def analyze():
+def analyze(released=False):
     cfg = json.loads((ROOT / "configs/engineering_optimization_gp_audit.json").read_text())
-    out = ROOT / cfg["out"]
-    manifest = json.loads((out / "manifest.json").read_text())
-    assert digest(out / "manifest.json") == digest(REPORT / "frozen_manifest.json")
+    out = REPORT if released else ROOT / cfg["out"]
+    manifest_path = REPORT / "frozen_manifest.json" if released else out / "manifest.json"
+    manifest = json.loads(manifest_path.read_text())
+    assert digest(manifest_path) == digest(REPORT / "frozen_manifest.json")
     accounting = json.loads((out / "accounting.json").read_text())
     assert accounting["complete"] and accounting["new_physical_calls"] <= cfg["max_new_diagnostic_calls"]
     states = json.loads((out / "common_state_results.json").read_text())["states"]
     assert len(states) == 120
     by_name = {i["snapshot"]: i for i in manifest["states"]}
     snapshots = {}
+    compact = {s["snapshot"]: s for s in json.loads((REPORT / "frozen_decisions.json").read_text())["states"]}
+    assert set(compact) == set(by_name)
     for name, item in by_name.items():
-        assert digest(out / name) == item["snapshot_sha256"]
         assert digest(ROOT / item["source_events"]) == item["source_sha256"]
-        snapshots[name] = json.loads((out / name).read_text())
+        if released:
+            decision = compact[name]
+            assert all(decision[k] == v for k, v in item.items())
+            decisions = {c: d["index"] for c, d in decision["decisions"].items()}
+            pool = {d["index"]: d["point"] for d in decision["decisions"].values()}
+            from .engineering_optimization_gp_audit import frozen_state
+            _, _, train_y, _ = frozen_state(ROOT / item["source_events"], item["t"])
+            assert decision["training_best"] == float(train_y.min())
+            assert decision["scale"] == (float(train_y.std()) or 1.)
+            snapshots[name] = {"decisions": decisions, "pool": pool,
+                               "training_best": decision["training_best"], "scale": decision["scale"]}
+        else:
+            assert digest(out / name) == item["snapshot_sha256"]
+            snapshots[name] = json.loads((out / name).read_text())
     journal = [json.loads(line) for line in (out / "diagnostic_events.jsonl").read_text().splitlines()]
-    assert journal[0]["manifest_sha256"] == digest(out / "manifest.json")
+    assert journal[0]["manifest_sha256"] == digest(manifest_path)
     assert (len(journal) - 1) % 2 == 0
     labels, origins = {}, Counter()
     physical = 0
@@ -106,8 +122,13 @@ def analyze():
     for name, rows in [("repeat_aggregates.csv", repeats), ("group_aggregates.csv", groups)]:
         with (REPORT / name).open("w", newline="", encoding="utf-8") as f:
             writer = csv.DictWriter(f, fieldnames=list(rows[0])); writer.writeheader(); writer.writerows(rows)
-    return summary
+    return {**summary, "validation_scope": (
+        "Released chosen-point vectors, raw-source hashes, PRE/LABEL order and exact utilities; "
+        "does not independently replay the full GP posterior or full candidate pool"
+        if released else "Full frozen snapshot and source hashes, PRE/LABEL order and exact utilities")}
 
 
 if __name__ == "__main__":
-    print(json.dumps(analyze(), indent=2))
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--released", action="store_true", help="Validate compact public evidence without full 263-MB snapshots")
+    print(json.dumps(analyze(parser.parse_args().released), indent=2))

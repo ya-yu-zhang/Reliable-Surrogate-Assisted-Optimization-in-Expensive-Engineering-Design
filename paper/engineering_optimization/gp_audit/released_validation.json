@@ -1,0 +1,157 @@
+{
+  "design": {
+    "source_histories": 3,
+    "repeats_per_history": 10,
+    "checkpoints_per_repeat": 4,
+    "states": 120,
+    "controls": [
+      "mean",
+      "ei",
+      "pi",
+      "lcb"
+    ]
+  },
+  "source_validation": {
+    "files": 60,
+    "algorithm_observations": 6000,
+    "common_initial_labels": 580,
+    "historical_postinitial_calls": 4260
+  },
+  "ledger": {
+    "unique_state_choices": 261,
+    "origins": {
+      "already_paid_source_action": 120,
+      "new_finite_element_call": 138,
+      "diagnostic_cache": 3
+    },
+    "new_physical_calls": 138,
+    "reused_source_labels": 120,
+    "reused_diagnostic_labels": 3,
+    "objective_seconds": 4.4374321859993415,
+    "complete": true,
+    "promotion": "not assessed"
+  },
+  "costs": {
+    "diagnostic_new_calls": 138,
+    "solver_validation_attempts": 102,
+    "total_new_finite_element_attempts_this_revision": 240,
+    "gp_state_preparation_seconds": 13.435883160000003,
+    "diagnostic_objective_seconds": 4.4374321859993415,
+    "solver_validation_seconds_first_pass": "not retained",
+    "solver_validation_seconds_retained_pass": 2.3277255430000423,
+    "timing_interpretation": "Observed implementation times; no exclusive process guard or workflow saving comparison"
+  },
+  "solver_max_relative_difference": 4.9289450546503404e-08,
+  "groups": [
+    {
+      "source_history": "gp_ei_shared_init",
+      "control": "mean",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.0,
+      "mean_utility": 8.996688981476055e-07,
+      "mean_delta_vs_mean": 0.0
+    },
+    {
+      "source_history": "gp_ei_shared_init",
+      "control": "ei",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.3,
+      "mean_utility": 8.996688981476055e-07,
+      "mean_delta_vs_mean": 0.0
+    },
+    {
+      "source_history": "gp_ei_shared_init",
+      "control": "pi",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.25,
+      "mean_utility": 8.996688981476055e-07,
+      "mean_delta_vs_mean": 0.0
+    },
+    {
+      "source_history": "gp_ei_shared_init",
+      "control": "lcb",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.525,
+      "mean_utility": 0.0,
+      "mean_delta_vs_mean": -8.996688981476055e-07
+    },
+    {
+      "source_history": "gp_pi_shared_init",
+      "control": "mean",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.0,
+      "mean_utility": 3.4708833247652756e-07,
+      "mean_delta_vs_mean": 0.0
+    },
+    {
+      "source_history": "gp_pi_shared_init",
+      "control": "ei",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.95,
+      "mean_utility": 0.0,
+      "mean_delta_vs_mean": -3.4708833247652756e-07
+    },
+    {
+      "source_history": "gp_pi_shared_init",
+      "control": "pi",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.075,
+      "mean_utility": 3.4708833247652756e-07,
+      "mean_delta_vs_mean": 0.0
+    },
+    {
+      "source_history": "gp_pi_shared_init",
+      "control": "lcb",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.975,
+      "mean_utility": 0.0,
+      "mean_delta_vs_mean": -3.4708833247652756e-07
+    },
+    {
+      "source_history": "gp_ucb_shared_init",
+      "control": "mean",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.0,
+      "mean_utility": 8.777575901681657e-07,
+      "mean_delta_vs_mean": 0.0
+    },
+    {
+      "source_history": "gp_ucb_shared_init",
+      "control": "ei",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.3,
+      "mean_utility": 8.872321333137033e-07,
+      "mean_delta_vs_mean": 9.474543145537451e-09
+    },
+    {
+      "source_history": "gp_ucb_shared_init",
+      "control": "pi",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.35,
+      "mean_utility": 1.178881809536711e-06,
+      "mean_delta_vs_mean": 3.0112421936854524e-07
+    },
+    {
+      "source_history": "gp_ucb_shared_init",
+      "control": "lcb",
+      "repeats": 10,
+      "states": 40,
+      "action_change_fraction": 0.75,
+      "mean_utility": 5.11893345925916e-07,
+      "mean_delta_vs_mean": -3.658642442422497e-07
+    }
+  ],
+  "interpretation": "Descriptive immediate utility; repeat-first aggregation; no new inferential tests, delayed-value claim, promotion, or net-savings claim",
+  "validation_scope": "Released chosen-point vectors, raw-source hashes, PRE/LABEL order and exact utilities; does not independently replay the full GP posterior or full candidate pool"
+}

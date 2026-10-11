@@ -1,0 +1,126 @@
+{
+  "reference": "Numerical status record preserved in this conversation; not a replacement for retained raw source journals",
+  "all_20_endpoints_match_exactly": true,
+  "rows": [
+    {
+      "case": "load0_r00",
+      "old_selected_endpoint": 1350.207425197136,
+      "old_portfolio_best_endpoint": 1350.207425197136,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load0_r01",
+      "old_selected_endpoint": 1192.1635074639821,
+      "old_portfolio_best_endpoint": 805.8321668484346,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load0_r02",
+      "old_selected_endpoint": 929.5394368884597,
+      "old_portfolio_best_endpoint": 929.5394368884597,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load0_r03",
+      "old_selected_endpoint": 1048.640143480395,
+      "old_portfolio_best_endpoint": 923.0948719661794,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load0_r04",
+      "old_selected_endpoint": 1152.8227546655748,
+      "old_portfolio_best_endpoint": 1015.6248041230563,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load0_r05",
+      "old_selected_endpoint": 1426.446489251302,
+      "old_portfolio_best_endpoint": 1195.129539565226,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load0_r06",
+      "old_selected_endpoint": 956.4896054085399,
+      "old_portfolio_best_endpoint": 915.1375371589619,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load0_r07",
+      "old_selected_endpoint": 1204.4458522977618,
+      "old_portfolio_best_endpoint": 1204.4458522977618,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load0_r08",
+      "old_selected_endpoint": 956.8874596438121,
+      "old_portfolio_best_endpoint": 956.8874596438121,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load0_r09",
+      "old_selected_endpoint": 1535.8506375900552,
+      "old_portfolio_best_endpoint": 838.9566998289814,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load1_r00",
+      "old_selected_endpoint": 430.3744689595306,
+      "old_portfolio_best_endpoint": 430.3744689595306,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load1_r01",
+      "old_selected_endpoint": 303.7452139437308,
+      "old_portfolio_best_endpoint": 303.7452139437308,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load1_r02",
+      "old_selected_endpoint": 454.8964180419621,
+      "old_portfolio_best_endpoint": 315.1371595442331,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load1_r03",
+      "old_selected_endpoint": 326.95049115194684,
+      "old_portfolio_best_endpoint": 326.95049115194684,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load1_r04",
+      "old_selected_endpoint": 481.780438588179,
+      "old_portfolio_best_endpoint": 351.95065916899006,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load1_r05",
+      "old_selected_endpoint": 335.2721921604427,
+      "old_portfolio_best_endpoint": 332.4774226081743,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load1_r06",
+      "old_selected_endpoint": 383.1914584312989,
+      "old_portfolio_best_endpoint": 325.99210368832166,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load1_r07",
+      "old_selected_endpoint": 677.302504223215,
+      "old_portfolio_best_endpoint": 174.01390170541035,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load1_r08",
+      "old_selected_endpoint": 429.67333586361957,
+      "old_portfolio_best_endpoint": 274.35041534107506,
+      "exact_recovery_agreement": true
+    },
+    {
+      "case": "load1_r09",
+      "old_selected_endpoint": 303.0815223651759,
+      "old_portfolio_best_endpoint": 211.90807958981839,
+      "exact_recovery_agreement": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+source_history,control,repeats,states,action_change_fraction,mean_utility,mean_delta_vs_mean
+gp_ei_shared_init,mean,10,40,0.0,8.996688981476055e-07,0.0
+gp_ei_shared_init,ei,10,40,0.3,8.996688981476055e-07,0.0
+gp_ei_shared_init,pi,10,40,0.25,8.996688981476055e-07,0.0
+gp_ei_shared_init,lcb,10,40,0.525,0.0,-8.996688981476055e-07
+gp_pi_shared_init,mean,10,40,0.0,3.4708833247652756e-07,0.0
+gp_pi_shared_init,ei,10,40,0.95,0.0,-3.4708833247652756e-07
+gp_pi_shared_init,pi,10,40,0.075,3.4708833247652756e-07,0.0
+gp_pi_shared_init,lcb,10,40,0.975,0.0,-3.4708833247652756e-07
+gp_ucb_shared_init,mean,10,40,0.0,8.777575901681657e-07,0.0
+gp_ucb_shared_init,ei,10,40,0.3,8.872321333137033e-07,9.474543145537451e-09
+gp_ucb_shared_init,pi,10,40,0.35,1.178881809536711e-06,3.0112421936854524e-07
+gp_ucb_shared_init,lcb,10,40,0.75,5.11893345925916e-07,-3.658642442422497e-07

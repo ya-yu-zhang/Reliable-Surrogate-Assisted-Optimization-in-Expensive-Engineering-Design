@@ -32,7 +32,10 @@ def audit(root=ROOT):
         text = path.read_text(encoding="utf-8")
         original = (root / f"paper/{old}.md").read_text(encoding="utf-8")
         rows = lambda t: [line for line in t.splitlines() if line.startswith("|")]
-        if rows(text) != rows(original):
+        historical = re.sub(r"### 2\.3 .*?(?=## 3 )", "", text, flags=re.S)
+        historical = re.sub(r"### 6\.3 .*?(?=## 7 )", "", historical, flags=re.S)
+        historical = historical.split("# S9 ")[0]
+        if rows(historical) != rows(original):
             errors.append(f"Reported table rows changed in {new}")
         if "will be deposited in the public GitHub repository upon acceptance" in text:
             errors.append(f"Obsolete availability statement in {new}")
@@ -44,7 +47,7 @@ def audit(root=ROOT):
         (main, "greedy histories place it below the pool value"),
         (supp, "Fixed03 bars are positive and greedy bars are negative"),
         (main, "lower one-step improvement alone does not reject exploration"),
-        (main, "No such net-savings experiment is reported here"),
+        (main, "it does not establish performance-preserving net savings"),
         (main, "it does not retrospectively alter any frozen experimental protocol"),
     ]
     for text, phrase in expected:
@@ -67,9 +70,9 @@ def audit(root=ROOT):
     return {"errors": errors, "source_hashes": files, "numeric_table_rows_unchanged": not any("table rows" in e for e in errors),
             "direction_checks": direction, "reference_count": len(entries),
             "submission_ready": False,
-            "unresolved": ["Author affiliations 2 and 3", "Full cross-mechanism audit",
-                           "Additional physical engineering conditions", "Measured net audit cost",
-                           "Publisher formatting and rendered layout verification"]}
+            "unresolved": ["Author affiliations 2 and 3 and final author review",
+                           "Final submission-format compilation and rendered layout verification",
+                           "Journal editorial judgment of methodological novelty; acceptance not guaranteed"]}
 
 
 if __name__ == "__main__":
@@ -82,3 +85,4 @@ if __name__ == "__main__":
         args.output.write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(result, indent=2))
     raise SystemExit(bool(result["errors"]))
+

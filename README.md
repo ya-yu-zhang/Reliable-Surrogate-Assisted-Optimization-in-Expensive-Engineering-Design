@@ -10,16 +10,47 @@ The active target is **Engineering Optimization**. The revised working sources
 are `paper/engineering_optimization_manuscript.md` and
 `paper/engineering_optimization_supplementary.md`. See
 `docs/ENGINEERING_OPTIMIZATION_REVISION.md` for completed corrections,
-evidence boundaries, and remaining work. These are revision drafts, not a
-submission-ready package. Author affiliations and additional audit validation
-remain unresolved.
+evidence boundaries, and remaining work. The contribution comparison is in
+`docs/ENGINEERING_OPTIMIZATION_CONTRIBUTION_EVIDENCE.md`. The working sources now
+integrate frozen-state GP interventions, delayed policy outcomes, two new beam
+force conditions, all-repeat endpoints and recovery-aware evaluation costs.
+Final author review, affiliations and submission-format PDF verification remain
+pending; the working sources do not guarantee journal acceptance.
 
 The prospective GP audit is specified in
 `docs/ENGINEERING_OPTIMIZATION_AUDIT_PROTOCOL.md` and implemented in
 `src/engineering_optimization_gp_audit.py`. It freezes 120 common states and
-limits new diagnostic finite-element calls to 480. Synthetic integrity tests
-pass; formal execution requires the original raw GP journals. The current
-execution boundary is recorded in `paper/engineering_optimization/work_status.json`.
+limits new diagnostic finite-element calls to 480. The completed experiment uses
+138 new diagnostic calls after permitted deterministic reuse. A separately
+frozen transfer protocol is in `docs/ENGINEERING_OPTIMIZATION_TRANSFER_PROTOCOL.md`.
+Its 20 complete retained cases cost 18,120 FE attempts; an earlier complete batch
+had to be recovered without changing the protocol and is also charged. Including
+102 solver checks, total additional revision cost is 36,480 FE attempts.
+The execution boundary is recorded in `paper/engineering_optimization/work_status.json`.
+
+The curated release contains all 60 author-supplied GP files in a byte-preserving
+text bundle and all 20 transfer journals in a lossless compact record format.
+Restore and validate these records without acquiring new FE labels:
+
+```sh
+python -m pip install -r requirements-engineering-gp-audit.txt
+python -m src.restore_engineering_gp_records
+python -m src.analyze_engineering_optimization_gp_audit --released
+python -m src.compact_engineering_transfer_records
+python -m src.analyze_engineering_optimization_transfer
+python -m src.plot_engineering_optimization_transfer
+python -m src.integrate_engineering_optimization_evidence
+python -m src.build_engineering_optimization_sources
+python -m src.audit_engineering_optimization_revision
+```
+
+The plotting command uses Matplotlib (installed through the engineering reporting
+dependencies) and regenerates both PNG and SVG figures. The PNGs are required
+by the working LaTeX sources; SVGs are committed for direct manuscript viewing.
+The compact GP check validates chosen vectors, source hashes, label order and
+immediate utilities. It does not independently replay the full candidate pools
+or posterior; the original full-snapshot check and preparation implementation
+remain available separately. Neither restoration command reruns a simulator.
 
 The `cmc_*` sources and compiled PDFs preserve the previous submission state.
 They contain the documented Figure 3/S3 direction-text error and are not the
@@ -39,7 +70,9 @@ are retained.
 
 ## Scope of the public release
 
-Raw experiment outputs are about 13.6 GB and are not committed to Git. They can
+Historical raw experiment outputs are about 13.6 GB and are not committed to Git.
+The curated revision inputs, intervention ledger and compact transfer journals
+are explicit exceptions, with per-file and segment checksums. Historical outputs can
 be regenerated from the frozen configurations and seeds. Local virtual
 environments, interrupted-run archives, machine-specific logs, publisher
 templates, and third-party author repositories are also excluded.
@@ -79,4 +112,5 @@ please cite the manuscript title and this repository revision.
 No open-source license has yet been assigned. Copyright remains with the
 authors. Public visibility does not grant permission to reuse third-party
 assets or redistribute publisher templates.
+
 

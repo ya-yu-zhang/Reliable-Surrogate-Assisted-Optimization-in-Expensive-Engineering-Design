@@ -1,0 +1,15 @@
+test_analytic_acquisitions_zero_variance_and_ties (test_engineering_optimization_gp_audit.GPAuditTests.test_analytic_acquisitions_zero_variance_and_ties) ... ok
+test_call_budget_never_exceeded (test_engineering_optimization_gp_audit.GPAuditTests.test_call_budget_never_exceeded) ... ok
+test_corrupted_input_rejected_before_any_call (test_engineering_optimization_gp_audit.GPAuditTests.test_corrupted_input_rejected_before_any_call) ... ok
+test_failed_attempt_still_counted (test_engineering_optimization_gp_audit.GPAuditTests.test_failed_attempt_still_counted) ... ok
+test_frozen_reader_never_parses_current_or_future_labels (test_engineering_optimization_gp_audit.GPAuditTests.test_frozen_reader_never_parses_current_or_future_labels) ... ok
+test_labels_deduplicated_and_precedes_call (test_engineering_optimization_gp_audit.GPAuditTests.test_labels_deduplicated_and_precedes_call) ... ok
+test_model_replay_and_future_outcome_invariance (test_engineering_optimization_gp_audit.GPAuditTests.test_model_replay_and_future_outcome_invariance) ... ok
+test_paid_budget_equations (test_engineering_optimization_transfer.TransferTests.test_paid_budget_equations) ... ok
+test_pre_before_call_and_failure_is_paid (test_engineering_optimization_transfer.TransferTests.test_pre_before_call_and_failure_is_paid) ... ok
+test_seed_namespaces_and_exact_ties (test_engineering_optimization_transfer.TransferTests.test_seed_namespaces_and_exact_ties) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.055s
+
+OK
