@@ -1,0 +1,202 @@
+{
+  "complete": true,
+  "mesh_verification_attempts": 18,
+  "analytic_test_solver_attempts": 4,
+  "total_verification_solver_attempts": 22,
+  "optimization_calls_before_verification": 0,
+  "records": [
+    {
+      "condition": "central_source",
+      "design": "uniform",
+      "mesh": 24,
+      "objective": 0.13258595285064018,
+      "relative_residual": 1.030352164850775e-14,
+      "boundary_heat_flux": 1.0000000000000024,
+      "mean_density": 0.35000000000000003,
+      "minimum_temperature": 0.0002607257986921395
+    },
+    {
+      "condition": "central_source",
+      "design": "uniform",
+      "mesh": 48,
+      "objective": 0.13206538164512335,
+      "relative_residual": 3.973554531393551e-14,
+      "boundary_heat_flux": 1.0000000000000107,
+      "mean_density": 0.35000000000000003,
+      "minimum_temperature": 6.536725965920592e-05
+    },
+    {
+      "condition": "central_source",
+      "design": "uniform",
+      "mesh": 96,
+      "objective": 0.13193659889167347,
+      "relative_residual": 1.616170461565733e-13,
+      "boundary_heat_flux": 1.0000000000000338,
+      "mean_density": 0.35000000000000003,
+      "minimum_temperature": 1.635352411130725e-05
+    },
+    {
+      "condition": "central_source",
+      "design": "ascending",
+      "mesh": 24,
+      "objective": 0.12873553741246757,
+      "relative_residual": 9.006698729615035e-15,
+      "boundary_heat_flux": 0.9999999999999998,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 7.287838899130938e-05
+    },
+    {
+      "condition": "central_source",
+      "design": "ascending",
+      "mesh": 48,
+      "objective": 0.12799548691286844,
+      "relative_residual": 3.5068796703397095e-14,
+      "boundary_heat_flux": 0.999999999999996,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 1.8275125122403392e-05
+    },
+    {
+      "condition": "central_source",
+      "design": "ascending",
+      "mesh": 96,
+      "objective": 0.12781067495983411,
+      "relative_residual": 1.4283929725161158e-13,
+      "boundary_heat_flux": 1.0000000000000027,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 4.5722703961463665e-06
+    },
+    {
+      "condition": "central_source",
+      "design": "alternating",
+      "mesh": 24,
+      "objective": 0.08108850807590756,
+      "relative_residual": 1.363555282578184e-14,
+      "boundary_heat_flux": 1.0,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 4.9195252023131015e-05
+    },
+    {
+      "condition": "central_source",
+      "design": "alternating",
+      "mesh": 48,
+      "objective": 0.08013855816141204,
+      "relative_residual": 6.01963418838185e-14,
+      "boundary_heat_flux": 0.9999999999999991,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 1.2302132739657055e-05
+    },
+    {
+      "condition": "central_source",
+      "design": "alternating",
+      "mesh": 96,
+      "objective": 0.07990136118534638,
+      "relative_residual": 2.5095770660012637e-13,
+      "boundary_heat_flux": 1.0000000000000158,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 3.075794832669103e-06
+    },
+    {
+      "condition": "offset_source",
+      "design": "uniform",
+      "mesh": 24,
+      "objective": 0.09423689707750824,
+      "relative_residual": 6.606806057927702e-15,
+      "boundary_heat_flux": 1.0000000000000004,
+      "mean_density": 0.35000000000000003,
+      "minimum_temperature": 5.6643592024279284e-05
+    },
+    {
+      "condition": "offset_source",
+      "design": "uniform",
+      "mesh": 48,
+      "objective": 0.09376818421951219,
+      "relative_residual": 2.4403623750035752e-14,
+      "boundary_heat_flux": 1.0000000000000058,
+      "mean_density": 0.35000000000000003,
+      "minimum_temperature": 1.4201812235170352e-05
+    },
+    {
+      "condition": "offset_source",
+      "design": "uniform",
+      "mesh": 96,
+      "objective": 0.09365238501168696,
+      "relative_residual": 1.0276896331073736e-13,
+      "boundary_heat_flux": 1.0000000000000195,
+      "mean_density": 0.35000000000000003,
+      "minimum_temperature": 3.553030327750953e-06
+    },
+    {
+      "condition": "offset_source",
+      "design": "ascending",
+      "mesh": 24,
+      "objective": 0.1312149103738061,
+      "relative_residual": 5.5489172664979766e-15,
+      "boundary_heat_flux": 1.0000000000000004,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 2.3413626969182837e-05
+    },
+    {
+      "condition": "offset_source",
+      "design": "ascending",
+      "mesh": 48,
+      "objective": 0.1301805475091597,
+      "relative_residual": 2.4435597853951764e-14,
+      "boundary_heat_flux": 0.9999999999999982,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 5.865049539944675e-06
+    },
+    {
+      "condition": "offset_source",
+      "design": "ascending",
+      "mesh": 96,
+      "objective": 0.12992236314579989,
+      "relative_residual": 9.39500361737957e-14,
+      "boundary_heat_flux": 0.9999999999999987,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 1.467001431755776e-06
+    },
+    {
+      "condition": "offset_source",
+      "design": "alternating",
+      "mesh": 24,
+      "objective": 0.04690165203547128,
+      "relative_residual": 4.498816294450067e-15,
+      "boundary_heat_flux": 0.9999999999999992,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 2.623942995226735e-05
+    },
+    {
+      "condition": "offset_source",
+      "design": "alternating",
+      "mesh": 48,
+      "objective": 0.04592476044114292,
+      "relative_residual": 2.422794369146174e-14,
+      "boundary_heat_flux": 0.9999999999999989,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 6.509207128132355e-06
+    },
+    {
+      "condition": "offset_source",
+      "design": "alternating",
+      "mesh": 96,
+      "objective": 0.04568105784084406,
+      "relative_residual": 9.124223577403247e-14,
+      "boundary_heat_flux": 1.0000000000000009,
+      "mean_density": 0.3499999999999999,
+      "minimum_temperature": 1.6241170412482375e-06
+    }
+  ],
+  "stop_24_vs_96_relative_drift": 0.05,
+  "python": "3.12.14",
+  "versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "source_sha256": {
+    "configs/engineering_optimization_thermal.json": "bfeb1362a1ac19b3cdb89fd8a0a9d4f94d81367636b31135928470e1b1a2d0b9",
+    "src/engineering_thermal_adapter.py": "1a910996a1fd46e0e86f7589edc2e64317e29346f99a2c2090c688c3fc7dd1e3",
+    "src/engineering_optimization_thermal.py": "e503bd4a1eaf314e4a428e721eb22a66cda86cb0ef2ca3b3b437ab957a58b07b",
+    "src/verify_engineering_thermal.py": "233a7504c463241a34cfe1741e95a9db01cdebac069e87f0e4cbec836904eb92"
+  }
+}
