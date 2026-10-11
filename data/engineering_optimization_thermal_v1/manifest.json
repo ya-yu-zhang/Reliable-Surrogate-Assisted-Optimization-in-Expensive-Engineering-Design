@@ -1,0 +1,247 @@
+{
+  "codec": "exact JSONL via Sobol regeneration; gzip+base85",
+  "parts": [
+    {
+      "path": "segments-000.b85",
+      "sha256": "1f963c8664b5437fb4fd4523b319962ab518ff31b0b006f382dafcfaceeae57a"
+    },
+    {
+      "path": "segments-001.b85",
+      "sha256": "316b31508ad7bb6d76d3f3dcd34fe7553a4360cc107259c10e7b02bfcb48f36e"
+    },
+    {
+      "path": "segments-002.b85",
+      "sha256": "3041b3c657dec5a087748239b16bbc9e92ea8c474428e77de1b83ead3aaaa713"
+    },
+    {
+      "path": "segments-003.b85",
+      "sha256": "824e25a4e99ac73770c0b315ac114464228802693228c4ff0d6c1dee615da088"
+    },
+    {
+      "path": "segments-004.b85",
+      "sha256": "bf539b54f970f5b14291cd9d992c849eaf7105cc7d4cc8228a4a6e62c9c2aa3f"
+    },
+    {
+      "path": "segments-005.b85",
+      "sha256": "bc35ccb2f55f3139ab18ea77853d4768c5ef69d153c4b7761cfb43f547e2f2a0"
+    },
+    {
+      "path": "segments-006.b85",
+      "sha256": "dc8c210d00e5d267b80ea4df8f59b6863d54ad8e42054c82f881fe21133b7576"
+    },
+    {
+      "path": "segments-007.b85",
+      "sha256": "4c319c4e229c7d7da2ea4b35e4a69584beb9009252daafa41f4ca47f7dd1df8f"
+    },
+    {
+      "path": "segments-008.b85",
+      "sha256": "74c3d748322fc106b9d101812acc1ce7af4c88c95a815f8d4590e6431928cb39"
+    },
+    {
+      "path": "segments-009.b85",
+      "sha256": "8eb54846bd0b76c5ea68bbf62776c58829650fa313f12d581e065f76d14f8a2c"
+    }
+  ],
+  "files": [
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r00/events.jsonl",
+      "sha256": "a5c63de951e8d0f4e17b3df2e0789472d0e675fbec3a53a4a17a2937243f58d1"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r00/summary.json",
+      "sha256": "44edb5bf48f634f437295a711e6ac98cd4b45eedb01df430b63a916debf1802e"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r01/events.jsonl",
+      "sha256": "ac861816eb32b3800c2ef6fcba0c69c60fcf6345bfc78e7f5491c6b279f23a07"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r01/summary.json",
+      "sha256": "a3fca67f2f7a7ddd71a9c90d8f2da69a6f7adb29e625e21e9fe84017e8169b8e"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r02/events.jsonl",
+      "sha256": "850354977951a4afff5b142b939b59a7d43ff6d2ba8e9ade11e8de00f37d6cee"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r02/summary.json",
+      "sha256": "26c386607b3e73e05b8e98e9b342bb0bba94c41eb9a376d7dbb6715f6c7720ce"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r03/events.jsonl",
+      "sha256": "03a29819d4f569cd2cffcd6b3a98f48184e954cfd9782de2506893f49c0b0ba1"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r03/summary.json",
+      "sha256": "a3a007f3972fb79abd4fec5f13aa707ac4853bd5048b16ff6dcdfa11a4aa2dd7"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r04/events.jsonl",
+      "sha256": "322c984b7dfc3c7632df146abdf67ba50f3fd9004537745fd3e7c8153e0ffe28"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r04/summary.json",
+      "sha256": "34fb9acda21a577b0d028f7707b611ff73dcb8ae3b5597097aee93e4a95e22b0"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r05/events.jsonl",
+      "sha256": "befe5e6d58ccd82eb671f8e73195efa687ab350b04a9ae7ea3cbc42b917b9c10"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r05/summary.json",
+      "sha256": "549bc31affcd0794eaee97af5cdb9abb63a441bc1bc43795210efaebd4ccb878"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r06/events.jsonl",
+      "sha256": "85668792f709ef84ae35199897cfc6da23810c177b04e7835917dcc6f91933fc"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r06/summary.json",
+      "sha256": "95541be6415dbfa656d92c7b021270172b3a54d2180d6a61efb57c477561a64f"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r07/events.jsonl",
+      "sha256": "577e199f4be21b5d5f5f092859645620017a1d65b6a806edb6c50785b6326ccd"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r07/summary.json",
+      "sha256": "a3eedc5c5d1422a9f73bccac9ff8fa66def8e89e08e9e9f23256393c68c2ed59"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r08/events.jsonl",
+      "sha256": "4ab6e544723f69f2d8718ed1ed9ab68b688b25d3cb5feae02e52b6a061dfe675"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r08/summary.json",
+      "sha256": "74c44342e481b2e1e16370364faf06586606a93507b596938b83da28994add1a"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r09/events.jsonl",
+      "sha256": "fbe403b83b4df3397725f9f8886e7dc307f2f71f4a7e0ee079acbb10ca3f39ce"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition0_r09/summary.json",
+      "sha256": "3aeea483193df78879206878f6d460735b0f1e2a26a6e1bfb43525aa5538edcd"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r00/events.jsonl",
+      "sha256": "6e7c4dbdea58bc30bc716c34491096d522fac23125f1fb11ae04bc8729d83f16"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r00/summary.json",
+      "sha256": "a96d4bf87928b72fd8b8d808698ab6ced9363021b391df2d77a67f486a5b5065"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r01/events.jsonl",
+      "sha256": "1fc7d597b75cdfa3c1effcda235b28fe0a80834f6ad442cb0649f22d2ed280fa"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r01/summary.json",
+      "sha256": "1543582a1475abde2aa14f4f4dfc4a7d930b26039e7d706afafbdf93d7141571"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r02/events.jsonl",
+      "sha256": "67bcd1c33969441d73a8bceed9ba2d8a86b7153c762c3c6d491cf10c4d8b533d"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r02/summary.json",
+      "sha256": "d955559b525f5528ff177a19cc8f33d9699a41e881a6bafbd666072ff4379d52"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r03/events.jsonl",
+      "sha256": "fb933628e24b3682cbf5b81114f59ce74ee1c7d8e59ce821d83cf030b99c189f"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r03/summary.json",
+      "sha256": "94b882c364507e3da70f99f2275ce3b1e990dfe43896c9e2f7a7949912fa0784"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r04/events.jsonl",
+      "sha256": "dab7a3235230ce743d0dfacc2b602fd8954eb56611600d8ba1839f4fb8ce7e29"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r04/summary.json",
+      "sha256": "7a219091bd71a3dbca4d219187c434fe0608b782ff3a7b7389156ea5e6aa4a0c"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r05/events.jsonl",
+      "sha256": "b8635841ed3316d806b5d4d1bdc8e29462b2d7fb008fa805a30eee2375b8c3e4"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r05/summary.json",
+      "sha256": "1af40e3d37bcfb2743a80cad3eb8187923e805c9c7e1ff85b05b7d33a304a8af"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r06/events.jsonl",
+      "sha256": "c095399d51ce68ff42d830b024e7d3e10d8ee9c742d31057f51d60586cb10123"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r06/summary.json",
+      "sha256": "142dd24d9214dd08bab0dec62bdf5f56ca3490965215f529aebf877bd528bfdf"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r07/events.jsonl",
+      "sha256": "38e993139975a6fa72de4fe64b293acf3b72675922a970e3876bf732c7be79e3"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r07/summary.json",
+      "sha256": "212f2352699d30e6515d57f2b2ac002fbd3c6cb0dcb42f9b7fc125d0c466bdfa"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r08/events.jsonl",
+      "sha256": "ae4b088e2ed99688f2837cd45f33487b293f0859f90acf4d58212ea9f15fd66a"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r08/summary.json",
+      "sha256": "9d88ac1bec31ca78bccf38aa99061f0ad226200267dc9e10a2d428881ff34d5f"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r09/events.jsonl",
+      "sha256": "e6ecb4d5cf79994147af5ca9cf500a76d030f86c8549cacb9c071cc430e3f3c2"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/condition1_r09/summary.json",
+      "sha256": "30b63800712c2e7a66e3b3d3ff25ea75c9324d6731d0fec3eedb1e50859d083b"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_v1/run_status.json",
+      "sha256": "bad9596692da19e60a9c9fd01c803265043dfd2d0973727fc9041cd6633f83b2"
+    },
+    {
+      "path": "paper/engineering_optimization/thermal_record_recovery.json",
+      "sha256": "714076b48a8fc265f623e3a18030961ea6416ccbe5f1df6d1a3e06de2b320a55"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_record_recovery/original_condition0_r04/events.jsonl",
+      "sha256": "de66bbe1c84619e0410a60e8ce649ab501c80a4b885badf259a13090b30746d2"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_record_recovery/original_condition0_r04/summary.json",
+      "sha256": "736fe12a92e9b5268fbfbc681663dd8c4e175b3c94a6ee5180a62947da2d6ebf"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_record_recovery/original_condition0_r05/events.jsonl",
+      "sha256": "b499ade56c2f8583f8dad446d385b7b9e7358dc00e36f2ee7d38bc963cc4e023"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_record_recovery/original_condition0_r05/summary.json",
+      "sha256": "e03d671a9f32d224f73fd4e58afdcb44e6e2413b607898abf6d279c73946ef0c"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_record_recovery/original_condition0_r06/events.jsonl",
+      "sha256": "6444f3b63d7dab008622348a0ab2fb7ca91d76e7959ef9989d250dd6ce737684"
+    },
+    {
+      "path": "results/engineering_optimization_thermal_record_recovery/original_condition0_r06/summary.json",
+      "sha256": "f4f1c45bec94bab9689b369d9597d25fd0bc76fd23bd53b35c6ac07e63754127"
+    }
+  ],
+  "packed_sha256": "aa24aee1b08f15192d262f086fc16ed8209de1eaba33a2551a7d9429063d3bb0",
+  "payload_sha256": "ea0915fea913353d6353848c79de32562fcc0019ba234b1c9d1c2f3bcb6dcb1f",
+  "independent_cases": 20,
+  "retained_optimization_attempts": 7200,
+  "current_verification_attempts": 22,
+  "additional_record_recovery_attempts": 1080,
+  "previous_lost_session_attempts": 7586,
+  "cumulative_thermal_attempts": 15888
+}
