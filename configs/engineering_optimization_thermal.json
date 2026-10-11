@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "master_seed": 2026101119,
+  "mesh": 24,
+  "conditions": ["central_source", "offset_source"],
+  "repeats": 10,
+  "dimension": 12,
+  "initial": 24,
+  "pilot_steps": 8,
+  "budget": 96,
+  "policies": ["mean", "ei", "lcb"],
+  "pool_power": 8,
+  "xi": 0.01,
+  "kappa": 2.0,
+  "alpha": 0.000001,
+  "length_scale": 0.4,
+  "promotion_margin": 0.02,
+  "gate_checkpoints": [4, 6, 8],
+  "case_actual_call_cap": 360,
+  "global_actual_call_cap": 7200,
+  "workers": 4,
+  "out": "results/engineering_optimization_thermal_v1"
+}
