@@ -1,0 +1,358 @@
+{
+  "complete": true,
+  "cases": 20,
+  "new_objective_calls_by_analysis": 0,
+  "groups": [
+    {
+      "forcedist": 0.25,
+      "repeats": 10,
+      "initial_compliance_median": 1608.532895103219,
+      "audited_compliance_median": 1172.4931310647785,
+      "portfolio_best_compliance_median": 943.2134482661359,
+      "audited_improvement_percent_median": 18.474966967312284,
+      "portfolio_gap_percent_median": 9.013698195899156,
+      "portfolio_gap_percent_max": 83.06673489861079,
+      "all_paid_gap_percent_median_secondary": 9.013698195899156,
+      "all_paid_compliance_median_secondary": 1109.1701099836093,
+      "pilot_tied_selection_cases": 7,
+      "exact_best_matches": 4,
+      "selected_counts": {
+        "pi": 6,
+        "ei": 2,
+        "mean": 2
+      },
+      "fe_seconds": {
+        "audited": 90.3952472399996,
+        "portfolio": 194.65053600199894
+      },
+      "gp_seconds": {
+        "audited": 57.242105181000454,
+        "portfolio": 175.963506747002
+      }
+    },
+    {
+      "forcedist": 0.75,
+      "repeats": 10,
+      "initial_compliance_median": 700.7249705855359,
+      "audited_compliance_median": 406.43239714745926,
+      "portfolio_best_compliance_median": 320.5646316162774,
+      "audited_improvement_percent_median": 46.52195663051065,
+      "portfolio_gap_percent_median": 27.21743509280474,
+      "portfolio_gap_percent_max": 289.22321583813823,
+      "all_paid_gap_percent_median_secondary": 2.1157158811993093,
+      "all_paid_compliance_median_secondary": 327.25693765277174,
+      "pilot_tied_selection_cases": 4,
+      "exact_best_matches": 3,
+      "selected_counts": {
+        "pi": 8,
+        "lcb": 1,
+        "mean": 1
+      },
+      "fe_seconds": {
+        "audited": 87.0501672189954,
+        "portfolio": 190.99854529999993
+      },
+      "gp_seconds": {
+        "audited": 53.6739233910007,
+        "portfolio": 171.38502127299853
+      }
+    }
+  ],
+  "fixed_policy_comparisons": [
+    {
+      "forcedist": 0.25,
+      "policy": "mean",
+      "fixed_calls": 200,
+      "fixed_compliance_median": 1102.3096479642709,
+      "audit_minus_fixed_ratio_percent_median": 0.0,
+      "audit_wins": 4,
+      "ties": 2,
+      "audit_losses": 4
+    },
+    {
+      "forcedist": 0.25,
+      "policy": "ei",
+      "fixed_calls": 200,
+      "fixed_compliance_median": 1233.5209682285733,
+      "audit_minus_fixed_ratio_percent_median": -1.813445343537673,
+      "audit_wins": 5,
+      "ties": 3,
+      "audit_losses": 2
+    },
+    {
+      "forcedist": 0.25,
+      "policy": "pi",
+      "fixed_calls": 200,
+      "fixed_compliance_median": 956.688532526176,
+      "audit_minus_fixed_ratio_percent_median": 0.0,
+      "audit_wins": 1,
+      "ties": 6,
+      "audit_losses": 3
+    },
+    {
+      "forcedist": 0.25,
+      "policy": "lcb",
+      "fixed_calls": 200,
+      "fixed_compliance_median": 1360.4248885280022,
+      "audit_minus_fixed_ratio_percent_median": -8.978278583699566,
+      "audit_wins": 7,
+      "ties": 1,
+      "audit_losses": 2
+    },
+    {
+      "forcedist": 0.75,
+      "policy": "mean",
+      "fixed_calls": 200,
+      "fixed_compliance_median": 326.8342659830847,
+      "audit_minus_fixed_ratio_percent_median": 0.42029463690261837,
+      "audit_wins": 3,
+      "ties": 2,
+      "audit_losses": 5
+    },
+    {
+      "forcedist": 0.75,
+      "policy": "ei",
+      "fixed_calls": 200,
+      "fixed_compliance_median": 379.4510418774296,
+      "audit_minus_fixed_ratio_percent_median": -5.682221059821568,
+      "audit_wins": 5,
+      "ties": 1,
+      "audit_losses": 4
+    },
+    {
+      "forcedist": 0.75,
+      "policy": "pi",
+      "fixed_calls": 200,
+      "fixed_compliance_median": 359.2318252958708,
+      "audit_minus_fixed_ratio_percent_median": 0.0,
+      "audit_wins": 1,
+      "ties": 8,
+      "audit_losses": 1
+    },
+    {
+      "forcedist": 0.75,
+      "policy": "lcb",
+      "fixed_calls": 200,
+      "fixed_compliance_median": 475.89649912017,
+      "audit_minus_fixed_ratio_percent_median": -6.7643094170542035,
+      "audit_wins": 5,
+      "ties": 3,
+      "audit_losses": 2
+    }
+  ],
+  "pilot_horizons": [
+    {
+      "forcedist": 0.25,
+      "policy": "mean",
+      "first_improvement_percent_median": 0.0,
+      "20_step_improvement_percent_median": 13.006115507333433,
+      "zero_first_then_positive_20": 6
+    },
+    {
+      "forcedist": 0.25,
+      "policy": "ei",
+      "first_improvement_percent_median": 0.0,
+      "20_step_improvement_percent_median": 9.705996884944163,
+      "zero_first_then_positive_20": 4
+    },
+    {
+      "forcedist": 0.25,
+      "policy": "pi",
+      "first_improvement_percent_median": 0.0,
+      "20_step_improvement_percent_median": 8.591872347638635,
+      "zero_first_then_positive_20": 5
+    },
+    {
+      "forcedist": 0.25,
+      "policy": "lcb",
+      "first_improvement_percent_median": 0.0,
+      "20_step_improvement_percent_median": 2.514020730453037,
+      "zero_first_then_positive_20": 4
+    },
+    {
+      "forcedist": 0.75,
+      "policy": "mean",
+      "first_improvement_percent_median": 0.0,
+      "20_step_improvement_percent_median": 42.3502577345471,
+      "zero_first_then_positive_20": 8
+    },
+    {
+      "forcedist": 0.75,
+      "policy": "ei",
+      "first_improvement_percent_median": 0.0,
+      "20_step_improvement_percent_median": 13.490523549886536,
+      "zero_first_then_positive_20": 5
+    },
+    {
+      "forcedist": 0.75,
+      "policy": "pi",
+      "first_improvement_percent_median": 0.0,
+      "20_step_improvement_percent_median": 46.76497415234777,
+      "zero_first_then_positive_20": 7
+    },
+    {
+      "forcedist": 0.75,
+      "policy": "lcb",
+      "first_improvement_percent_median": 0.0,
+      "20_step_improvement_percent_median": 3.6490142635227816,
+      "zero_first_then_positive_20": 4
+    }
+  ],
+  "workflow_costs": {
+    "audited_per_case": 280,
+    "portfolio_per_case": 626,
+    "fixed_policy_per_case": 200,
+    "audit_call_reduction_vs_portfolio_percent": 55.27156549520767,
+    "audit_extra_calls_vs_fixed_percent": 40
+  },
+  "recovery_accounting": {
+    "prior_transfer_attempts": 18120,
+    "retained_recovery_transfer_attempts": 18120,
+    "prior_gp_diagnostic_and_solver_attempts": 240,
+    "revision_attempts_including_recovery": 36480
+  },
+  "inference": "Descriptive, separate conditions; no new p-values, promotion threshold, equivalence or net-savings guarantee",
+  "config_sha256": "39293d4b04b233a48a7bf8afad42d8f2516eec21edb22a3a5abcae3b0057e8a5",
+  "cases_integrity": [
+    {
+      "case": "load0_r00",
+      "journal_sha256": "a7d10965852ed61abd14849278c5fa441435b45b12e32ab833f6e40c2f617273",
+      "summary_sha256": "2146d7db567c655765257e2f15fdb95e9cd6af8cac081b5497dcdc0aae0aafb1",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load0_r01",
+      "journal_sha256": "71ec8c6e6bd1b0189de534818421ab8fdb80fc4bef33cbfc7d7bb87071b48e79",
+      "summary_sha256": "1e2084e65ba6a087666d616584190f25bc7270fd52cd9cc6b313f54a13e92c29",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load0_r02",
+      "journal_sha256": "026903a1ff87f806c183209b64acd0d894239e48665d8aa124ae459545190d8e",
+      "summary_sha256": "f2edc70581049ac02635b7fd9b2f8980067060d18dd43b4f789c55af9f146de3",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load0_r03",
+      "journal_sha256": "6c3149d75d4884e9fe40ade963ec5851a7ebc1c10360973ca5d2dc600f96294b",
+      "summary_sha256": "580812de66bc26b5d25b30274f91c5dd97af64dfa826db0256ee9d5923d14c96",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load0_r04",
+      "journal_sha256": "9cbae10df11239900a07a0832291ed124634e16849076f0e2b8450ade6d0ec69",
+      "summary_sha256": "26f893ea57367a3bfc9186c4d9607c594e521a8ea220c5fde96890347c0b5de9",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load0_r05",
+      "journal_sha256": "1d64e7dccd8082b3a1771644ceaa629653242c323e37f75eee5eacf06722e095",
+      "summary_sha256": "8a3c84e775786eb9631b87bed07031e7a6712c1cd00b5b9c22dec117af002f15",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load0_r06",
+      "journal_sha256": "1197a4475cd0508f2e9ec0d892ac634185ff70cf23ccd4a7faff8ea42d399253",
+      "summary_sha256": "ed36dfc3173a2432b790d27e8cb9cf4b9e7affa8f3b21d4f49c0d055b52bfd44",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load0_r07",
+      "journal_sha256": "12d457543300b3048a9851cdfabafa9e17c8c78c59fa1f3a5aa6b4b52a7c2d19",
+      "summary_sha256": "a1203f8d3dde85a779dc057f942c55751701540cc3a8e9d4df9d1618e6cd307f",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load0_r08",
+      "journal_sha256": "f5743dbb28bc52dd732555335ae7a773664275ee62251c403cc22c286ddd6147",
+      "summary_sha256": "fbb88e440f4de9e4b061323bc53a769b201187e949cf16acce9f9f5458a6627a",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load0_r09",
+      "journal_sha256": "3a7fcc5fa8b72ca62a8927a30b70132951bd8b5a727724f56667bdd2071d3faa",
+      "summary_sha256": "8186a5bbd2899b9c2b1ef7dc099e5bfb499c74c1ddc035ea6c7883d34086a225",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load1_r00",
+      "journal_sha256": "a701531caf7031cfdd8f4ef471caf3c0e5078185948f3341a1961b2f82e95526",
+      "summary_sha256": "2621b340386c927f33aa24b58ca336a67f53f644d5f88d906b5b8b978909a86c",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load1_r01",
+      "journal_sha256": "f155c0ffd73900d64bca953effd61196fd42da21cf446621ca1c6704e39aa368",
+      "summary_sha256": "71e9dc2bce434d924eb946301c5f2d07af6083a94fea52f9defe89598787dafb",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load1_r02",
+      "journal_sha256": "a20d8e2eb4bb3a67181aea09c7dec7230478541393e06c1dd2dd9df07b78050a",
+      "summary_sha256": "d34b09fc867c041b3e76560bb3f0c9d2c0c26587d3c4c42782abbe22f0c31661",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load1_r03",
+      "journal_sha256": "0e291e4fc68df47a2fd433e4cdb8f548ca508703aeb521f41673d43c75377883",
+      "summary_sha256": "57a24270d2dd6dc9bab80207153a3b6562427f9829f9b87b94197e62a7173212",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load1_r04",
+      "journal_sha256": "9ecc4adf5a5d58a1440b9836c4875da09c4982917918a11a1272796fe9df7649",
+      "summary_sha256": "32978eba43e5a6f6bb1325f9428516ff5caa080d8522858c327ac57781ed70a2",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load1_r05",
+      "journal_sha256": "bcd9f6b8587d839596c7e3f67a880c4e8933b65e1049f743ca460d7783fccbc2",
+      "summary_sha256": "4d0d64184953afbb0436445b9986f69b94d2059856a38efffaf6ec85cd49163c",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load1_r06",
+      "journal_sha256": "c20064e810c7925887c28202727e5828be9775966ef18dfbff52b9d1edb70ab6",
+      "summary_sha256": "2ca2dfff192aab1f69fc35e2a1318d16b610785cc9b5efc30b46e202bd3a78fb",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load1_r07",
+      "journal_sha256": "bc20faefd538613b6de7fcffde9d1a1c2358f376d7c5b4d20588d5d6a0e3c35f",
+      "summary_sha256": "6eb552e0d95bbdf977dac60f59e09044656dbdf8d95de0b347a8c042feed72bf",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load1_r08",
+      "journal_sha256": "33a43eee1ca54231bbd2b6643cf907f5005c67d2267dacf6918320cd915c9b33",
+      "summary_sha256": "d35e26dfd4e684b36a02b66c8dfebf902d65d73d209662f77e48b9df70f965dc",
+      "physical_calls": 906,
+      "integrity": "passed"
+    },
+    {
+      "case": "load1_r09",
+      "journal_sha256": "6fa357c852f359c79a58a4a247fc8a331a97d1e5cb080b4aac9f550372a4cb48",
+      "summary_sha256": "8d328f646e217f025f4acbb368cf8cead42110952e30c08667f8b5a85b52eb3f",
+      "physical_calls": 906,
+      "integrity": "passed"
+    }
+  ]
+}
