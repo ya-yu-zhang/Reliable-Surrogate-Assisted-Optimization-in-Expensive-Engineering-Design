@@ -3,6 +3,7 @@ import hashlib
 import json
 from pathlib import Path, PurePosixPath
 import zipfile
+import io
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data/engineering_optimization_gp_audit_v1"
@@ -12,10 +13,19 @@ def restore(root=ROOT, data=DATA):
     archive = data / "source_records.zip"
     manifest = json.loads((data / "source_integrity.json").read_text())
     sha = lambda b: hashlib.sha256(b).hexdigest()
-    if sha(archive.read_bytes()) != manifest["archive_sha256"]:
+    if archive.exists():
+        payload = archive.read_bytes()
+    else:
+        parts = sorted((data / "source_records.zip.parts").glob("part-*.bin"))
+        if not parts:
+            raise FileNotFoundError("Source archive or archive parts are required")
+        if [p.name for p in parts] != [f"part-{i:03d}.bin" for i in range(len(parts))]:
+            raise ValueError("Source archive parts are not contiguous")
+        payload = b"".join(p.read_bytes() for p in parts)
+    if sha(payload) != manifest["archive_sha256"]:
         raise ValueError("Source archive checksum mismatch")
     pending = []
-    with zipfile.ZipFile(archive) as z:
+    with zipfile.ZipFile(io.BytesIO(payload)) as z:
         for item in manifest["files"]:
             name = PurePosixPath(item["path"])
             if name.is_absolute() or ".." in name.parts or len(name.parts) != 3:
