@@ -1,0 +1,14 @@
+{
+  "date_utc": "2026-10-11T04:38:03.619327+00:00",
+  "kind": "Deliberate evidence recovery, not a newly tuned experiment",
+  "frozen_commit": "7555d58b145a2c44b73bab5ec47d0f643a57dde1",
+  "prior_complete_transfer_attempts": 18120,
+  "prior_raw_transfer_journals_available_in_current_workspace": false,
+  "recovery_attempt_cap": 18120,
+  "earlier_gp_revision_attempts": 240,
+  "expected_complete_revision_attempts_including_recovery": 36480,
+  "config_sha256": "39293d4b04b233a48a7bf8afad42d8f2516eec21edb22a3a5abcae3b0057e8a5",
+  "code_sha256": "35e687312a458d457f72605752006be6afcc4952e12f64587e9b3a7ed12c0203",
+  "changes_to_scientific_parameters": null,
+  "verification": "Compare all 20 initial incumbents, selected endpoints and portfolio-best endpoints with the numerical record retained in this conversation; retain regenerated raw journals; count all recovery calls separately."
+}
