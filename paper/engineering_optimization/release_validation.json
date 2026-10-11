@@ -1,0 +1,36 @@
+{
+  "data_release_and_evidence_commit": "56cbc244c0ac9a7e4583acb56477a02674a55cd8",
+  "method": "Clean minimal directory of published data/configuration files and final working sources; no prior results or binary ZIP",
+  "copied_text_files": 308,
+  "checks": [
+    {
+      "module": "src.restore_engineering_gp_records",
+      "passed": true
+    },
+    {
+      "module": "src.analyze_engineering_optimization_gp_audit",
+      "passed": true
+    },
+    {
+      "module": "src.compact_engineering_transfer_records",
+      "passed": true
+    },
+    {
+      "module": "src.analyze_engineering_optimization_transfer",
+      "passed": true
+    }
+  ],
+  "gp_summary_exact_match": true,
+  "transfer_summary_exact_match": true,
+  "manuscript_regeneration_idempotent": true,
+  "verified_original_gp_files": 60,
+  "verified_restored_transfer_journals": 20,
+  "new_fe_calls": 0,
+  "scope": "Chosen GP decisions and utilities; complete retained transfer histories. Full GP posterior/candidate-pool replay is outside the compact check.",
+  "validated_source_sha256": {
+    "paper/engineering_optimization_manuscript.md": "c1aaf7fe60e28439ba197776dc6851dbdfec9c218075fea2d586a391b77eb6c7",
+    "paper/engineering_optimization_supplementary.md": "2bcbfb2a84b41b7555087887f9c785458b6b3a9d80fcd10041e09a714341de7a",
+    "src/analyze_engineering_optimization_gp_audit.py": "f1091e8e8470ce98e9ef1fcf74ad3fb125e698c85b7d52eeee832ff8aad6b8a1",
+    "src/integrate_engineering_optimization_evidence.py": "4ea5063a11d10c7a8c67a71b09255f754fe9671eab2108c53b49654c7146aca3"
+  }
+}

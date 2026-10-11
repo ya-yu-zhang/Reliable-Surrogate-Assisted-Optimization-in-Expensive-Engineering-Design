@@ -12,7 +12,7 @@ def table(headers, rows):
 
 
 def readable_prose(text):
-    words="Section|Table|Figure|dimension|volume|fraction|force|all|every|in|under|at|max|after|before|a|each|four|Their|The|Its|their|contains|include|uses|requires|require|versus|scale|retains|total|is|to|with|by|than|paid|has|giving|and|only|plus|over|across|than|from|of|positive|further|per|within|NumPy|SciPy|EngiBench|kappa"
+    words="Section|Table|Figure|dimension|volume|fraction|force|all|every|in|under|at|max|after|before|a|each|four|Their|The|Its|their|contains|contain|include|uses|requires|require|versus|scale|retains|total|is|to|with|by|than|on|or|budget|Python|paid|has|giving|and|only|plus|over|across|than|from|of|positive|further|per|within|NumPy|SciPy|EngiBench|kappa"
     def clean(line):
         if line.startswith("|"):
             return line
@@ -182,6 +182,7 @@ There are no added p-values, confidence guarantees, retrospective deployment tol
 """
     support=re.sub(r"\n+# S9 .*","",support,flags=re.S).rstrip()+s9+s10+"\n"
     support=support.replace("During peer review, supporting data and code are available from the corresponding author upon reasonable request; upon acceptance, the publicly releasable portions will be deposited in the public GitHub repository identified in Section S0, together with a fixed release tag and version identifier.","The repository contains sources and curated revision evidence. The byte-preserving GP source bundle, frozen intervention records and lossless compact transfer release support the added results. Larger historical archives remain available from the corresponding author upon reasonable request. Frozen source revisions, data-release commits and file checksums identify the evidence.")
+    support=re.sub(r"^6\. \*\*Additional mechanism and engineering evidence:\*\*[^\n]*\n", "", support, flags=re.M)
     support=support.replace("5. **Information order and accounting:** S7.3-S8.3 and Table S25 preserve finite-element replay, source hashes, recovery ledgers, and matched-initialization evidence.","5. **Information order and accounting:** S7.3-S8.3 and Table S25 preserve finite-element replay, source hashes, recovery ledgers, and matched-initialization evidence.\n6. **Additional mechanism and engineering evidence:** S9-S10, Tables S26-S32 and Figure S14 contain the frozen GP intervention, delayed policy outcomes, force-position transfer, fixed-policy comparisons and full revision cost boundary.")
     supp.write_text(readable_prose(support))
     return {"new_main_sections":["6.3","6.4"],"new_supplement_sections":["S9","S10"],"new_objective_calls":0}

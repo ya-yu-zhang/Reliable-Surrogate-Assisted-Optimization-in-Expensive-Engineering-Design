@@ -17,6 +17,8 @@ def analyze(released=False):
     manifest_path = REPORT / "frozen_manifest.json" if released else out / "manifest.json"
     manifest = json.loads(manifest_path.read_text())
     assert digest(manifest_path) == digest(REPORT / "frozen_manifest.json")
+    assert digest(ROOT / "configs/engineering_optimization_gp_audit.json") == manifest["config_sha256"]
+    assert digest(ROOT / "src/engineering_optimization_gp_audit.py") == manifest["code_sha256"]
     accounting = json.loads((out / "accounting.json").read_text())
     assert accounting["complete"] and accounting["new_physical_calls"] <= cfg["max_new_diagnostic_calls"]
     states = json.loads((out / "common_state_results.json").read_text())["states"]
@@ -27,6 +29,7 @@ def analyze(released=False):
     assert set(compact) == set(by_name)
     for name, item in by_name.items():
         assert digest(ROOT / item["source_events"]) == item["source_sha256"]
+        assert digest((ROOT / item["source_events"]).parent / "summary.json") == item["summary_sha256"]
         if released:
             decision = compact[name]
             assert all(decision[k] == v for k, v in item.items())
@@ -44,7 +47,7 @@ def analyze(released=False):
     journal = [json.loads(line) for line in (out / "diagnostic_events.jsonl").read_text().splitlines()]
     assert journal[0]["manifest_sha256"] == digest(manifest_path)
     assert (len(journal) - 1) % 2 == 0
-    labels, origins = {}, Counter()
+    labels, origins, response_cache = {}, Counter(), {}
     physical = 0
     for pre, label in zip(journal[1::2], journal[2::2]):
         assert pre["event"] == "diagnostic_pre" and label["event"] == "diagnostic_label"
@@ -55,6 +58,11 @@ def analyze(released=False):
         assert pre["index"] in snap["decisions"].values()
         assert pre["point"] == snap["pool"][pre["index"]]
         assert np.isfinite(label["y"]) and label["y"] > 0
+        point_key = np.asarray(pre["point"], dtype="<f8").tobytes()
+        if label["origin"] == "diagnostic_cache":
+            assert point_key in response_cache and response_cache[point_key] == label["y"]
+        else:
+            assert point_key not in response_cache
         if label["origin"] == "new_finite_element_call":
             physical += 1
         elif label["origin"] == "already_paid_source_action":
@@ -63,6 +71,7 @@ def analyze(released=False):
         else:
             assert label["origin"] == "diagnostic_cache"
         origins[label["origin"]] += 1
+        response_cache[point_key] = label["y"]
         labels[key] = label["y"]
     assert physical == accounting["new_physical_calls"]
     assert origins["already_paid_source_action"] == accounting["reused_source_labels"]

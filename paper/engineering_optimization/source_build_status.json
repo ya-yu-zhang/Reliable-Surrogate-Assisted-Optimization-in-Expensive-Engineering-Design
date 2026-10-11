@@ -3,10 +3,10 @@
   "pdf_compiled": false,
   "layout_verified": false,
   "sources": {
-    "paper/engineering_optimization_manuscript.md": "7d6798ff115245b44933ecf9e4a91daba9c1c7327d277805315ea72bc1385d62",
-    "paper/engineering_optimization/EO_manuscript.tex": "4574ccdd9ea737300ce0679b2151bac093fde320ec7774218bc675d57e4e1f7a",
-    "paper/engineering_optimization_supplementary.md": "6f18d7358046de6d1431bec0135908a4112428c0a650d3cb3c4d917fbf8d834d",
-    "paper/engineering_optimization/EO_supplementary.tex": "f14c724ddc8cb31a115ca68675069f858ef3a9ff6b5a43fc61f02a743fd8e2a0"
+    "paper/engineering_optimization_manuscript.md": "c1aaf7fe60e28439ba197776dc6851dbdfec9c218075fea2d586a391b77eb6c7",
+    "paper/engineering_optimization/EO_manuscript.tex": "ee5ca500be2b398d3646997c91ef59ea0de321e060f92cb0e90f194220aecfc5",
+    "paper/engineering_optimization_supplementary.md": "2bcbfb2a84b41b7555087887f9c785458b6b3a9d80fcd10041e09a714341de7a",
+    "paper/engineering_optimization/EO_supplementary.tex": "dc80fc61eb5278551907c6fdee07fb843d3e23b2f1a36d9a8ed5d659ecb9c9ae"
   },
   "figures": {
     "manuscript": [

@@ -99,7 +99,13 @@ fixed-policy comparisons, pilot horizons, retained timings and recovery cost.
 Original numerical table rows and statistical families remain unchanged.
 The implementation has ten passing integrity tests; the manuscript audit checks
 historical values, six direction statements, references and claim boundaries.
-Both scientific figures were visually inspected. The source builder regenerates
+Both scientific figures were visually inspected. A clean minimal directory restores all
+60 source files and 20 retained transfer journals, reproduces both aggregate
+summaries exactly, and regenerates the manuscript evidence without changes or
+new FE calls; see `paper/engineering_optimization/release_validation.json`.
+The compact GP check also verifies exact cache reuse and frozen code/config
+byte hashes. Public code/config final line endings now match the frozen
+manifest; no executable statements or settings changed. The source builder regenerates
 working LaTeX, but no current submission-format PDF compilation or page-layout
 verification is claimed.
 

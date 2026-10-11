@@ -26,7 +26,13 @@
     "gp_source_byte_hashes_verified": 60,
     "transfer_endpoints_match_previous_status_record": 20,
     "new_figure_visual_reviews": 2,
-    "original_frozen_experiment_suite_rerun": false
+    "original_frozen_experiment_suite_rerun": false,
+    "clean_directory_release_validation": "passed",
+    "clean_directory_gp_summary_exact_match": true,
+    "clean_directory_transfer_summary_exact_match": true,
+    "manuscript_regeneration_idempotent": true,
+    "gp_diagnostic_cache_reuse_checks": "passed",
+    "frozen_code_and_config_byte_hashes": "matched; final LF restored in public files"
   },
   "validation_environment": {
     "python": "3.12",
