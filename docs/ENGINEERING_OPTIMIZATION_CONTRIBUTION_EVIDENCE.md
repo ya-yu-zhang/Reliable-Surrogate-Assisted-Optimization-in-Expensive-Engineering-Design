@@ -69,7 +69,10 @@ The revised argument is materially stronger because it has an executable
 intervention, a query-allocation rule, delayed-policy evidence and a complete
 ledger rather than only a failed-feedback case. Innovation sufficiency and
 acceptance remain editorial judgments. All new comparisons are descriptive;
-there are no added p-values or post hoc acceptance tolerances. The framework
+there are no added p-values or post hoc optimization-promotion thresholds.
+The numerical solver-replay tolerance was revised after the initial check;
+its original 42 attempts, revised tolerance and 60 retained checks are disclosed
+separately from the unchanged GP prediction-replay tolerance. The framework
 has not been validated across distinct physical model families or against a
 competitive warm-start selector. Author affiliations, final author approval
 and final submission-format PDF verification remain separate pending tasks.
