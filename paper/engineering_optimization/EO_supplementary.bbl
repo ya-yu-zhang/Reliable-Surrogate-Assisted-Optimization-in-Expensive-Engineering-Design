@@ -1,0 +1,22 @@
+\begin{thebibliography}{3}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\normalfont{#1}}
+\providecommand{\urlprefix}{}
+
+\bibitem[Eriksson et~al.(2019)]{ref25}
+Eriksson, D., M.~Pearce, J.~Gardner, R.~D. Turner, and M.~Poloczek. 2019.
+  ``{Scalable global optimization via local Bayesian optimization}.'' In
+  \emph{Adv. Neural Inf. Process. Syst.}, Vol.~32.
+
+\bibitem[Jones, Schonlau, and Welch(1998)]{ref03}
+Jones, D.~R., M.~Schonlau, and W.~J. Welch. 1998. ``{Efficient global
+  optimization of expensive black-box functions}.'' \emph{J. Glob. Optim.} 13:
+  455--492. https://doi.org/{10.1023/A:1008306431147}.
+
+\bibitem[Sehic et~al.(2022)]{ref24}
+Sehic, K., A.~Gramfort, J.~Salmon, and L.~Nardi. 2022. ``{LassoBench: A
+  high-dimensional hyperparameter optimization benchmark suite for Lasso}.'' In
+  \emph{Proc. 1st Int. Conf. Automated Machine Learning}, Vol. 188, 2/1--2/24.
+
+\end{thebibliography}

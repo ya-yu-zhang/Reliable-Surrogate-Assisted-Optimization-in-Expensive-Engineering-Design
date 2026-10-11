@@ -81,7 +81,7 @@ Failure fractions for the selected candidate, full pool, and predicted top 10% a
 
 ![State-averaged one-sided failure fractions under frozen common histories. The dashed target is .1. Pool labels are correlated and are not treated as independent problems.](../results/analysis_v1/selection_failure.png)
 
-Figure S2 compares three monitored objects at identical frozen states: the actually selected candidate, the entire candidate pool, and the top 10% by predicted value. Under fixed03 histories, the selected-candidate bar is highest; under greedy histories, the pool and top-10% bars become higher. The dashed 0.1 line is crossed in different directions across histories, which supports reporting the monitored object and its generating policy together.
+Figure S2 compares three monitored objects at identical frozen states: the actually selected candidate, the entire candidate pool, and the top 10% by predicted value. Under fixed 03 histories, the selected-candidate bar is highest; under greedy histories, the pool and top-10% bars become higher. The dashed 0.1 line is crossed in different directions across histories, which supports reporting the monitored object and its generating policy together.
 
 Table S3 compares calibrators on the actually selected points, with the three histories equally weighted. Spatial localization lowers some diagnostic losses and margins; this is a common-history estimation result, not a closed-loop optimization gain or a coverage guarantee. Approximately one quarter of the dimension-10 checkpoint states fall back because of support, whereas these dimension-20 checkpoints do not.
 
@@ -397,7 +397,7 @@ The associated paid-budget convergence histories are shown in Figure S10.
 
 Figure S10 reveals distinct routes to the lower endpoint cluster. TuRBO-1 improves early and continuously; the internal methods change sharply only after their long initialization consumes about 62% of the budget. CMA-ES improves later, while Sobol and GP-EI remain on the upper plateau. This timing difference is why the 1,000-evaluation protocol is reported separately from the primary 500-evaluation application study.
 
-The prespecified descriptive PEM_T-minus-fixed01 median raw-loss difference was -0.01788, with paired-run bootstrap interval [-0.06477, 0.05017] and 11/9/0 negative/positive/zero differences. No p-value was computed and this contrast was not added to the three-test primary application family. The interval conditions on one fixed data set and split.
+The prespecified descriptive PEM_T-minus-fixed 01 median raw-loss difference was -0.01788, with paired-run bootstrap interval [-0.06477, 0.05017] and 11/9/0 negative/positive/zero differences. No p-value was computed and this contrast was not added to the three-test primary application family. The interval conditions on one fixed data set and split.
 
 ## S5.2 Selected-point feedback and resource boundary
 
@@ -475,7 +475,7 @@ Feedback metrics follow each variant's distinct closed-loop history. The limited
 
 ## S7.1 Design and aggregation
 
-Five prespecified BBOB structure representatives (f1, f6, f10, f15, and f20), dimensions 20/40, instances 17–19, and three repeats were run independently at total budgets 5D, 10D, and 15D. Six internal configurations and four external references completed all 2,700 runs and 810,000 paid evaluations, with no diagnostic labels. Each endpoint uses the matching fixed01 common-initialization error as a post-run denominator. The repeat median is first taken within each function-instance cell; the three instances within each function and the five function scores are then averaged with equal weight. No hypothesis test, confidence interval, or parameter selection was added.
+Five prespecified BBOB structure representatives (f1, f6, f10, f15, and f20), dimensions 20/40, instances 17–19, and three repeats were run independently at total budgets 5D, 10D, and 15D. Six internal configurations and four external references completed all 2,700 runs and 810,000 paid evaluations, with no diagnostic labels. Each endpoint uses the matching fixed 01 common-initialization error as a post-run denominator. The repeat median is first taken within each function-instance cell; the three instances within each function and the five function scores are then averaged with equal weight. No hypothesis test, confidence interval, or parameter selection was added.
 
 ## S7.2 Endpoints and convergence
 
@@ -544,7 +544,7 @@ The EngiBench beam batch contains 50 complete runs, 10,000 canonical finite-elem
 
 ## S8.2 Matched-initialization external-reference, acquisition, and SAEA sensitivity
 
-The supplemental beam experiment gives GP-EI and TuRBO-1 exactly the same 58-point initial finite-element archive used by Greedy, fixed01, and PEM-T in each repeat. It contains 20 complete trajectories and 4,000 algorithm-budget observations: 1,160 previously paid deterministic initial labels and 2,840 additional finite-element calls. The event-level audit finds zero failures, zero exact duplicate points, complete prediction-before-label order, and exact agreement with all ten source-archive hashes. Forty additional physical calls belong only to two independent endpoint-diagnostic rounds and never enter an optimizer history. The accepted diagnostic table has maximum absolute difference 1.50e-8 and maximum relative difference 6.23e-12.
+The supplemental beam experiment gives GP-EI and TuRBO-1 exactly the same 58-point initial finite-element archive used by Greedy, fixed 01, and PEM-T in each repeat. It contains 20 complete trajectories and 4,000 algorithm-budget observations: 1,160 previously paid deterministic initial labels and 2,840 additional finite-element calls. The event-level audit finds zero failures, zero exact duplicate points, complete prediction-before-label order, and exact agreement with all ten source-archive hashes. Forty additional physical calls belong only to two independent endpoint-diagnostic rounds and never enter an optimizer history. The accepted diagnostic table has maximum absolute difference 1.50e-8 and maximum relative difference 6.23e-12.
 
 | Method | Shared-init median | Native-init median | Median shared-minus-native | Holm p | Median shared-minus-PEM-T | Wins/ties/losses vs PEM-T | Holm p |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -554,6 +554,8 @@ The supplemental beam experiment gives GP-EI and TuRBO-1 exactly the same 58-poi
 The initial launch stopped after a missing fixed-seed argument prevented two GP-EI workers from entering GP search; those logs contain only reused initial labels and zero subsequent objective calls. Six already-running TuRBO-1 units completed through an unaffected branch. The complete launch state was archived, the one-argument wiring error was corrected, and the remaining units resumed. The terminal audit accepts six original and fourteen corrected code hashes after verifying that the change lies outside the completed TuRBO branch. No failed or interrupted GP label enters the 20 canonical trajectories.
 
 Two further Gaussian-process acquisition controls use the same ten 58-point archives, 200-evaluation budget, Matérn-5/2 model, 4,096-point Sobol candidate pool, and eight local optimization starts. GP-PI uses an improvement margin equal to 0.01 times the current response standard deviation. GP-UCB is implemented for minimization by selecting the lowest value of mean minus 2.0 standard deviations. These 20 trajectories contain 4,000 algorithm-budget observations, including 1,160 reused labels and 2,840 new finite-element calls. The audit verifies sequential prediction-before-label records, bounds, finite outputs, exact source-archive hashes, complete budgets, and zero exact duplicate points.
+
+**Table S25a. Additional shared-initialization acquisition and relation-model controls.**
 
 | Method | Shared-init median | Q1 | Q3 | Median improvement after initialization | Median difference vs PEM-T | Wins/ties/losses vs PEM-T | Holm p |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -596,7 +598,7 @@ Thirty source histories contain 6,000 budgeted algorithm observations and 580 di
 
 The training scale ranges from 733152 to 9.12154e+08. This can make normalized gains small even when raw compliance changes. The metric is retained as frozen; no post hoc replacement or new p-value is used. These comparisons neither test delayed exploration nor authorize promotion.
 
-The 480 control-state choices reduce to 261 distinct within-state actions. Source-action reuse accounts for120 responses; exact diagnostic reuse across states accounts for3;138 are new FE calls. New diagnostic FE time is 4.437432s and GP state preparation time13.435883s. The initial solver compatibility check made42 calls before detecting a 4.929e-8 relative discrepancy at a large-compliance point. That discrepancy was numerical, not a failed FE response. The complete retained60-call check uses the disclosed1e-6 relative tolerance and passes every comparison. The original prediction replay tolerance remains1e-8. The first42 outputs and timings were not retained but their attempts are included. The retained solver check takes2.327726s. Total additional attempts for this GP revision are240. These observed times do not establish exclusive wall-time savings.
+The 480 control-state choices reduce to 261 distinct within-state actions. Source-action reuse accounts for 120 responses; exact diagnostic reuse across states accounts for 3;138 are new FE calls. New diagnostic FE time is 4.437432s and GP state preparation time13.435883s. The initial solver compatibility check made42 calls before detecting a 4.929e-8 relative discrepancy at a large-compliance point. That discrepancy was numerical, not a failed FE response. The complete retained60-call check uses the disclosed1e-6 relative tolerance and passes every comparison. The original prediction replay tolerance remains1e-8. The first42 outputs and timings were not retained but their attempts are included. The retained solver check takes 2.327726s. Total additional attempts for this GP revision are 240. These observed times do not establish exclusive wall-time savings.
 
 # S10 Independent load-position transfer, horizon effects and paid workflows
 
@@ -619,7 +621,7 @@ The transfer constant bounds are[0.05,20] and length-scale bounds[0.005,2], with
 
 ## S10.1 Paid selection and independent validation
 
-Each audited workflow pays58 initial labels,4x20 pilot labels and 142 selected-policy validation labels:280. Each complete portfolio independently pays58 initial labels and 4x142 continuation labels:626. A fixed single policy needs200. The pilot winner is the lowest final pilot compliance, with exact ties broken in PI, mean, EI, LCB order. Selection is persisted after 138 calls and before any canonical validation label. Canonical histories start again from the initial58 labels and never include pilot responses. Validation candidates use a different namespace; no warm-starting selector is claimed. The selected canonical trajectory and its separately paid portfolio counterpart agree exactly in every repeat. All duplicate designs across workflows are physically evaluated and counted, rather than credited as free labels.
+Each audited workflow pays 58 initial labels,4x20 pilot labels and 142 selected-policy validation labels:280. Each complete portfolio independently pays 58 initial labels and 4x142 continuation labels:626. A fixed single policy needs200. The pilot winner is the lowest final pilot compliance, with exact ties broken in PI, mean, EI, LCB order. Selection is persisted after 138 calls and before any canonical validation label. Canonical histories start again from the initial58 labels and never include pilot responses. Validation candidates use a different namespace; no warm-starting selector is claimed. The selected canonical trajectory and its separately paid portfolio counterpart agree exactly in every repeat. All duplicate designs across workflows are physically evaluated and counted, rather than credited as free labels.
 
 **Table S28. All twenty paired endpoints. The selected-policy column is the prespecified independent canonical endpoint. All-paid best is a secondary descriptive endpoint including every pilot design; it does not replace the validation criterion. Gap is 100x(selected/portfolio-best-1).**
 
@@ -646,7 +648,7 @@ Each audited workflow pays58 initial labels,4x20 pilot labels and 142 selected-p
 | 0.75 | 8 | PI | 583.133 | 429.673 | 274.350 | 56.615 | 285.959 |
 | 0.75 | 9 | PI | 720.317 | 303.082 | 211.908 | 43.025 | 253.360 |
 
-The primary median paired gaps are9.013698% and 27.217435%. Exact portfolio-best matches are4/10 and 3/10. The selected counts are PI6, EI2, mean2 at force 0.25, and PI8, LCB1, mean1 at force 0.75. Exact pilot-end ties occur in 7 and 4 repeats; counts should not be interpreted independently of the tie rule. The secondary all-paid gaps have medians9.013698% and 2.115716%. The discrepancy between primary and secondary endpoints is disclosed because the practical availability of a pilot design differs from evidence that the chosen policy transfers well.
+The primary median paired gaps are 9.013698% and 27.217435%. Exact portfolio-best matches are 4/10 and 3/10. The selected counts are PI6, EI2, mean2 at force 0.25, and PI8, LCB1, mean1 at force 0.75. Exact pilot-end ties occur in 7 and 4 repeats; counts should not be interpreted independently of the tie rule. The secondary all-paid gaps have medians9.013698% and 2.115716%. The discrepancy between primary and secondary endpoints is disclosed because the practical availability of a pilot design differs from evidence that the chosen policy transfers well.
 
 **Table S29. Each200-call fixed policy compared with the280-call selected workflow. Median effects are paired100x(selected/fixed-1); negative favors selection. Wins/ties/losses are descriptive, not tests of superiority or equivalence.**
 

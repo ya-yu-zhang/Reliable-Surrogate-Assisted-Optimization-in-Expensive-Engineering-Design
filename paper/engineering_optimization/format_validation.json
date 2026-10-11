@@ -1,0 +1,18 @@
+{
+  "based_on_commit": "de6ec38010638e7340fb6394706fc006b65e9605",
+  "pdf_pages": {
+    "manuscript": 23,
+    "supplementary": 27
+  },
+  "all_rendered_pages_reviewed": true,
+  "evidence_regeneration_preserves_prose_and_tables": true,
+  "pdf_text_release_restored_and_sha256_verified": true,
+  "new_finite_element_calls": 0,
+  "numeric_table_rows_unchanged": true,
+  "existing_integrity_tests_passed": 10,
+  "ai_detector_score": null,
+  "submission_ready": false,
+  "abstract_word_count": 141,
+  "approximate_manuscript_whitespace_word_count": 9926,
+  "word_count_note": "Includes Markdown front matter, table separators and reference text; not a verified journal-specific word-count convention."
+}

@@ -1,0 +1,25 @@
+{
+  "documents": {
+    "manuscript": {
+      "sha256": "006679bc699504d617830f66b54d94348600496f8fad10cb23071f8d269641ed",
+      "pages": 23,
+      "overfull_warnings": [
+        "Overfull \\vbox (2.08887pt too high) has occurred while \\output is active []"
+      ],
+      "unresolved_citations_or_references": false
+    },
+    "supplementary": {
+      "sha256": "1d96cd779822964928073dbc4bc3b3b96ad513219285985944aaca385d6b29e0",
+      "pages": 27,
+      "overfull_warnings": [],
+      "unresolved_citations_or_references": false
+    }
+  },
+  "pdf_compiled": true,
+  "layout_verified": true,
+  "source_hashes": {
+    "EO_manuscript.tex": "172130f379835db304185e83a824d4aebcd47c0a96ef6c4389894180c9a1b7d4",
+    "EO_supplementary.tex": "c5548aa248fbfb5910f0f7c7b179f3be2f523d57b2996e5aee3f4f9d5e11f3ac",
+    "EO_references.bib": "efad9f03f4c2d22031661670fff2e4e43d4f2b9c357d367be2a77ced9e0ba89d"
+  }
+}

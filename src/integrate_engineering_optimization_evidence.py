@@ -12,7 +12,7 @@ def table(headers, rows):
 
 
 def readable_prose(text):
-    words="Section|Table|Figure|dimension|volume|fraction|force|all|every|in|under|at|max|after|before|a|each|four|Their|The|Its|their|contains|contain|include|uses|requires|require|versus|scale|retains|total|is|to|with|by|than|on|or|budget|Python|paid|has|giving|and|only|plus|over|across|than|from|of|positive|further|per|within|NumPy|SciPy|EngiBench|kappa"
+    words="Section|Table|Figure|dimension|volume|fraction|force|all|every|in|under|at|max|after|before|a|each|four|Their|The|Its|their|contains|contain|include|uses|requires|require|versus|scale|retains|total|is|to|with|by|than|on|or|budget|Python|paid|has|giving|and|only|plus|over|across|than|from|of|positive|further|per|within|NumPy|SciPy|EngiBench|kappa|are|makes|fixed|but|pays|for|gap|counts|parameters|takes"
     def clean(line):
         if line.startswith("|"):
             return line
@@ -21,13 +21,29 @@ def readable_prose(text):
     return "\n".join(clean(line) for line in text.split("\n"))
 
 
-def integrate():
+def refresh_tables(existing, generated, start, end=None):
+    """Refresh numeric blocks without overwriting an author's revised prose."""
+    old_region=existing.split(start,1)[1]
+    new_region=generated.split(start,1)[1]
+    if end:
+        old_region=old_region.split(end,1)[0]
+        new_region=new_region.split(end,1)[0]
+    pattern=r"(?m)^\|[^\n]*(?:\n\|[^\n]*)*"
+    values=iter(re.findall(pattern,new_region))
+    if len(re.findall(pattern,old_region)) != len(re.findall(pattern,new_region)):
+        raise ValueError('Generated table count changed; review the evidence before updating.')
+    revised=re.sub(pattern,lambda m:next(values),old_region)
+    return existing.replace(start+old_region,start+revised,1)
+
+
+def integrate(refresh_prose=False):
     gp=json.loads((PAPER/"engineering_optimization/gp_audit/summary.json").read_text())
     transfer=json.loads((PAPER/"engineering_optimization/transfer_validation/summary.json").read_text())
     cases=json.loads((PAPER/"engineering_optimization/transfer_validation/case_summaries.json").read_text())["cases"]
     frozen=json.loads((PAPER/"engineering_optimization/gp_audit/frozen_decisions.json").read_text())["states"]
     main=PAPER/"engineering_optimization_manuscript.md";supp=PAPER/"engineering_optimization_supplementary.md"
     text=main.read_text();support=supp.read_text()
+    review_main=text;review_supp=support
     names={"gp_ei_shared_init":"EI history","gp_pi_shared_init":"PI history","gp_ucb_shared_init":"UCB history"}
     gp_rows=[[names[r["source_history"]],r["control"].upper(),f"{100*r['action_change_fraction']:.1f}",
               f"{1e6*r['mean_utility']:.6f}",f"{1e6*r['mean_delta_vs_mean']:+.6f}"] for r in gp["groups"]]
@@ -75,8 +91,6 @@ The retained transfer ledger contains18,120 physical attempts and20,000 full-tra
     text=re.sub(r"### 6\.3 .*?(?=## 7 )","",text,flags=re.S)
     text=text.replace("## 7 Discussion and Design Guidance",section+"## 7 Discussion and Design Guidance")
     # Preserve the exact older numerical table rows by excluding new blocks.
-    abstract="""Surrogate-assisted engineering optimization requires credible decisions as well as predictive accuracy. An executable decision-consequence audit separates structural influence, frozen-state acquisition interventions, finite-horizon policy outcomes and complete evaluation cost. Exact context-point equivalence shares diagnostic responses across policies; a deterministic-oracle argument specifies the worst-case query requirement for exact immediate-utility reporting. Prediction-before-label records and separated diagnostic labels preserve the information boundary. A temporal residual monitor provides the worked case: its aggregate failure rate is near the nominal level, yet its candidate-independent correction is ranking redundant and its feedback fails the prespecified optimization-benefit gate on BBOB and a volume-preserving finite-element beam family. A further120-state GP intervention requires138 new finite-element calls after permitted reuse and finds history-dependent immediate acquisition effects. Twenty fresh beam cases at two force positions show positive20-step policy improvement despite zero first-step median gain. A pilot-selected policy requires280 calls versus626 for a full four-policy portfolio, but has paired median final-compliance gaps of9.014% and27.217%; fixed policies require200 calls. These findings establish a reproducible method for testing signal-to-action claims and expose the endpoint and cost choices underlying apparent value. They do not establish a universally superior selector, cross-domain engineering transfer or performance-preserving savings."""
-    text=re.sub(r"(## Abstract\n\n).*?(?=\n\n\*\*Keywords:)",lambda m:m.group(1)+abstract,text,flags=re.S)
     old="The engineering controls demonstrate successful and unsuccessful searches, but they do not yet constitute full independent validation of the audit as a transferable tool. Model and training-cap sensitivity within the prototype also do not replace validation across surrogate families. The beam application has one loading and support configuration; its extension to different physical conditions and the measurement of audit overhead remain necessary before broader engineering or savings claims."
     new="The added GP intervention tests the audit on actionable acquisition rules, while the two force-position conditions test finite-horizon policy and selection outcomes within the same beam family. The strongest reusable result is the evidence procedure: identify exact decision classes, pay only for undetermined immediate responses, preserve a label-free intervention boundary, and then disclose both closed-loop endpoints and total cost. The transfer selector illustrates a failure boundary rather than a new competitive optimizer. Its pilot ties, endpoint losses and extra cost relative to fixed policies delimit engineering deployment. Validation on distinct physical model families and competitive warm-start selectors remains outside the evidence."
     assert old in text or new in text
@@ -98,7 +112,7 @@ The retained transfer ledger contains18,120 physical attempts and20,000 full-tra
     text=text.replace("No such net-savings experiment is reported here.","Section 6.4 reports a complete paid-workflow comparison with endpoint losses; it does not establish performance-preserving net savings.")
     text=text.replace("These outcomes show that the audit can distinguish actionable Bayesian, evolutionary-surrogate, and trust-region management from mechanisms whose plausible uncertainty signal does not translate into valuable evaluations.","These outcomes provide optimizer context; the new frozen-state intervention supplies mechanism-level evidence for the GP acquisition rules. A full decision-level audit of DRSO and TuRBO-1 is not claimed.")
     text=text.replace("**Shu-Chuan Chu1,*, Ya-Yu Zhang1, Zhenyu Meng2 and Jia Zhao3**", "**Shu-Chuan Chu**$^{1,*}$, **Ya-Yu Zhang**$^1$, **Zhenyu Meng**$^2$ and **Jia Zhao**$^3$")
-    main.write_text(readable_prose(text))
+    main.write_text(readable_prose(text) if refresh_prose else refresh_tables(review_main,text,"### 6.3 ","## 7 "))
     s9="""\n\n# S9 Frozen GP intervention and immediate diagnostic accounting
 
 This additional study is separately frozen, descriptive, and not part of the original Holm families. Input hashes and120 decisions were committed at f1c9bbdebc35071bd935d0b11c92857f5e07201e before new intervention labels. The initially transmitted binary ZIP was incomplete, despite an intact local author-supplied archive. Local scientific input hashes and frozen choices did not change. The public input release now uses a byte-preserving text bundle at commit 71e074945262e1dbfc223726c7216e5415385ddc, replacing the incomplete repository binary. Its restoration checks every original file hash, all segment hashes and the decoded payload hash before writing any file. It preserves all60 original file bytes, including line endings; it does not claim to reconstruct the original ZIP container bytes. The original supplied archive remains identified by SHA256 c59079aaf34f560ee2f3e93a55bd60e13b2fa4c53097285842580df4d3b8098b. Public distribution integrity and scientific execution integrity are separate checks.
@@ -184,8 +198,13 @@ There are no added p-values, confidence guarantees, retrospective deployment tol
     support=support.replace("During peer review, supporting data and code are available from the corresponding author upon reasonable request; upon acceptance, the publicly releasable portions will be deposited in the public GitHub repository identified in Section S0, together with a fixed release tag and version identifier.","The repository contains sources and curated revision evidence. The byte-preserving GP source bundle, frozen intervention records and lossless compact transfer release support the added results. Larger historical archives remain available from the corresponding author upon reasonable request. Frozen source revisions, data-release commits and file checksums identify the evidence.")
     support=re.sub(r"^6\. \*\*Additional mechanism and engineering evidence:\*\*[^\n]*\n", "", support, flags=re.M)
     support=support.replace("5. **Information order and accounting:** S7.3-S8.3 and Table S25 preserve finite-element replay, source hashes, recovery ledgers, and matched-initialization evidence.","5. **Information order and accounting:** S7.3-S8.3 and Table S25 preserve finite-element replay, source hashes, recovery ledgers, and matched-initialization evidence.\n6. **Additional mechanism and engineering evidence:** S9-S10, Tables S26-S32 and Figure S14 contain the frozen GP intervention, delayed policy outcomes, force-position transfer, fixed-policy comparisons and full revision cost boundary.")
-    supp.write_text(readable_prose(support))
+    supp.write_text(readable_prose(support) if refresh_prose else refresh_tables(review_supp,support,"# S9 "))
     return {"new_main_sections":["6.3","6.4"],"new_supplement_sections":["S9","S10"],"new_objective_calls":0}
 
 
-if __name__=="__main__":print(json.dumps(integrate()))
+if __name__=="__main__":
+    import argparse
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--refresh-prose',action='store_true',
+                        help='Explicitly replace the generated working prose; default updates tables only.')
+    print(json.dumps(integrate(parser.parse_args().refresh_prose)))

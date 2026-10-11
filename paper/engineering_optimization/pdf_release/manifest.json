@@ -1,0 +1,97 @@
+{
+  "format": "lossless LZMA-compressed base85 segments",
+  "based_on_commit": "de6ec38010638e7340fb6394706fc006b65e9605",
+  "documents": [
+    {
+      "name": "EO_manuscript.pdf",
+      "bytes": 790854,
+      "sha256": "006679bc699504d617830f66b54d94348600496f8fad10cb23071f8d269641ed",
+      "segments": [
+        {
+          "path": "manuscript_00.b85",
+          "sha256": "548a370b71b148988c39969032421cff55b52e9f3d857a475af0d3af5803ebfe"
+        },
+        {
+          "path": "manuscript_01.b85",
+          "sha256": "e1e2432498aa6c5071a9717c3891b6107e3b7835528e0a489eb0d5c37409cf4e"
+        },
+        {
+          "path": "manuscript_02.b85",
+          "sha256": "c5ff6f7e03a41b6f02c0ac024a2368b46467103771fdec8c58e792e9fd1449ac"
+        },
+        {
+          "path": "manuscript_03.b85",
+          "sha256": "9aa41fa326045e0978fac835ba823627b1495b232d422a6be902d337c6647b4c"
+        },
+        {
+          "path": "manuscript_04.b85",
+          "sha256": "82ee5ef37305eb285cfaf4b15813fb1d5228048a768be79e13fab95b1bd69263"
+        },
+        {
+          "path": "manuscript_05.b85",
+          "sha256": "0e78d3b659e753346f83b6d2d39b4e5324e91228d05899cce52a86c4babde8f3"
+        },
+        {
+          "path": "manuscript_06.b85",
+          "sha256": "6f57ae8436134f03e7f038ac69fbf28dffa31e4664b1eb473a4ec92b90354ce5"
+        },
+        {
+          "path": "manuscript_07.b85",
+          "sha256": "21f860d811aea11f6a815396938cfa784a7bdfae08ef5f9c535135602e0bbc33"
+        },
+        {
+          "path": "manuscript_08.b85",
+          "sha256": "b69ee995b12f564bbbd4f0895ec0a8376d6fe189f9957dd62d3f82d4ff83ba03"
+        },
+        {
+          "path": "manuscript_09.b85",
+          "sha256": "9b73f0ca21d334b6517eb72917ac11c6703a48fe00433ab03d6d28a6c8878731"
+        }
+      ]
+    },
+    {
+      "name": "EO_supplementary.pdf",
+      "bytes": 754713,
+      "sha256": "1d96cd779822964928073dbc4bc3b3b96ad513219285985944aaca385d6b29e0",
+      "segments": [
+        {
+          "path": "supplementary_00.b85",
+          "sha256": "445b0c9ac476854eebc83540b789f4f57148ede82728b876f762d1283bb31ca4"
+        },
+        {
+          "path": "supplementary_01.b85",
+          "sha256": "56efdf5dc1dea357e16996e9f40138dc7ff320b64b176ada5fcacbfa86b5488a"
+        },
+        {
+          "path": "supplementary_02.b85",
+          "sha256": "c8c46d13f3936d45e449b29c889624ca73d04d01bb4a4e4139a741f6d8ff38e1"
+        },
+        {
+          "path": "supplementary_03.b85",
+          "sha256": "605fd8387d3eef8e70313d193e714a966feec6f2c9adb17a9df09eb848926f9e"
+        },
+        {
+          "path": "supplementary_04.b85",
+          "sha256": "5d2647ed703deab77f0bb569d46077ccf0fabdfe512d8273628b7a2bfc0fff73"
+        },
+        {
+          "path": "supplementary_05.b85",
+          "sha256": "58cc70de976f82332caf155341d4e7a486464524ce97b9b1dd0967a0f831fbef"
+        },
+        {
+          "path": "supplementary_06.b85",
+          "sha256": "866fea76d9d26b0ae2ca615fdf5049240febfc7ea045b8802b63310b9ba21cb5"
+        },
+        {
+          "path": "supplementary_07.b85",
+          "sha256": "04ec64d1828debc88fa1f0e8e563df679b2804a1a928dfc38ba0e38a6d246fa7"
+        },
+        {
+          "path": "supplementary_08.b85",
+          "sha256": "2969a77e8b3002f71596c1536d2cdd4eb49a484250ccd985373ad96e0715c941"
+        }
+      ]
+    }
+  ],
+  "submission_ready": false
+}

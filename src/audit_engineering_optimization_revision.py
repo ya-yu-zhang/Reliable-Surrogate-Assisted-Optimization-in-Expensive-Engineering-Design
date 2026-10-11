@@ -67,12 +67,30 @@ def audit(root=ROOT):
             direction.append({"dimension": int(d), "history": history, "selected_minus_pool": round(delta, 4)})
     if len(direction) != 6:
         errors.append("Expected six history-direction checks")
+    format_complete=False
+    status_path=root / "paper/engineering_optimization/pdf_build_status.json"
+    if status_path.exists():
+        status=json.loads(status_path.read_text())
+        format_complete=bool(status.get("pdf_compiled") and status.get("layout_verified"))
+        for name,digest in status.get("source_hashes",{}).items():
+            current=root / "paper/engineering_optimization" / name
+            if not current.exists() or hashlib.sha256(current.read_bytes()).hexdigest()!=digest:
+                format_complete=False
+        for stem,record in status.get("documents",{}).items():
+            current=root / "paper/engineering_optimization" / f"EO_{stem}.pdf"
+            if not current.exists() or hashlib.sha256(current.read_bytes()).hexdigest()!=record.get("sha256"):
+                format_complete=False
+    remaining=["Author affiliations 2 and 3 and substantive author review/approval",
+               "Accurate AI disclosure and publisher-policy review",
+               "Current journal-specific author instructions and portal requirements",
+               "Journal editorial judgment of methodological novelty; acceptance not guaranteed"]
+    if not format_complete:
+        remaining.insert(1,"Final submission-format compilation and rendered layout verification")
     return {"errors": errors, "source_hashes": files, "numeric_table_rows_unchanged": not any("table rows" in e for e in errors),
             "direction_checks": direction, "reference_count": len(entries),
             "submission_ready": False,
-            "unresolved": ["Author affiliations 2 and 3 and final author review",
-                           "Final submission-format compilation and rendered layout verification",
-                           "Journal editorial judgment of methodological novelty; acceptance not guaranteed"]}
+            "format_compiled_and_rendered": format_complete, "unresolved": remaining}
+
 
 
 if __name__ == "__main__":

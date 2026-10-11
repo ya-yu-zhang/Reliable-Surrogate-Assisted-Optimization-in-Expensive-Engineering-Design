@@ -1,8 +1,8 @@
 {
   "errors": [],
   "source_hashes": {
-    "paper/engineering_optimization_manuscript.md": "c1aaf7fe60e28439ba197776dc6851dbdfec9c218075fea2d586a391b77eb6c7",
-    "paper/engineering_optimization_supplementary.md": "2bcbfb2a84b41b7555087887f9c785458b6b3a9d80fcd10041e09a714341de7a"
+    "paper/engineering_optimization_manuscript.md": "f6f20a98049bd5fa6e02e9aece7a1181d83fe4fc3f89dd22293064beca8f7239",
+    "paper/engineering_optimization_supplementary.md": "cdbaa9df721305a265f7d81703b073c201cf951bae92c77709861444ca8ced8f"
   },
   "numeric_table_rows_unchanged": true,
   "direction_checks": [
@@ -39,9 +39,11 @@
   ],
   "reference_count": 38,
   "submission_ready": false,
+  "format_compiled_and_rendered": true,
   "unresolved": [
-    "Author affiliations 2 and 3 and final author review",
-    "Final submission-format compilation and rendered layout verification",
+    "Author affiliations 2 and 3 and substantive author review/approval",
+    "Accurate AI disclosure and publisher-policy review",
+    "Current journal-specific author instructions and portal requirements",
     "Journal editorial judgment of methodological novelty; acceptance not guaranteed"
   ]
 }

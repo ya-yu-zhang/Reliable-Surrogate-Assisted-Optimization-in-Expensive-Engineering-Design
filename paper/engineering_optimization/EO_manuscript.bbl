@@ -1,0 +1,218 @@
+\begin{thebibliography}{38}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\normalfont{#1}}
+\providecommand{\urlprefix}{}
+
+\bibitem[Booker et~al.(1999)]{ref38}
+Booker, A.~J., J.~E. Dennis, Jr., P.~D. Frank, D.~B. Serafini, V.~Torczon, and
+  M.~W. Trosset. 1999. ``{A rigorous framework for optimization of expensive
+  functions by surrogates}.'' \emph{Structural Optimization} 17: 1--13.
+  https://doi.org/{10.1007/BF01197708}.
+
+\bibitem[Deshpande, Marx, and Kuleshov(2024)]{ref12}
+Deshpande, S., C.~Marx, and V.~Kuleshov. 2024. ``{Online calibrated and
+  conformal prediction improves Bayesian optimization}.'' In \emph{Proc.
+  AISTATS}, Vol. 238, 1450--1458.
+
+\bibitem[Eriksson et~al.(2019)]{ref25}
+Eriksson, D., M.~Pearce, J.~Gardner, R.~D. Turner, and M.~Poloczek. 2019.
+  ``{Scalable global optimization via local Bayesian optimization}.'' In
+  \emph{Adv. Neural Inf. Process. Syst.}, Vol.~32.
+
+\bibitem[Felten et~al.(2025)]{ref23}
+Felten, F., G.~Apaza, G.~Bräunlich, C.~Diniz, X.~Dong, A.~Drake, M.~Habibi,
+  et~al. 2025. ``{EngiBench: A framework for data-driven engineering design
+  research}.'' In \emph{Advances in Neural Information Processing Systems},
+  \urlprefix\url{https://openreview.net/forum?id=YowD33Q89V}.
+
+\bibitem[Gobert et~al.(2024)]{ref21}
+Gobert, M., G.~Briffoteaux, J.~Gmys, N.~Melab, and D.~Tuyttens. 2024.
+  ``{Observations in applying Bayesian versus evolutionary approaches and their
+  hybrids in parallel time-constrained optimization}.'' \emph{Eng. Appl. Artif.
+  Intell.} 137: 109075. https://doi.org/{10.1016/j.engappai.2024.109075}.
+
+\bibitem[Hanawa, Harada, and Miura(2025)]{ref20}
+Hanawa, Y., T.~Harada, and Y.~Miura. 2025. ``{Impact of surrogate model
+  accuracy on performance and model management strategy in surrogate-assisted
+  evolutionary algorithms}.'' \emph{Array} 27: 100461.
+  https://doi.org/{10.1016/j.array.2025.100461}.
+
+\bibitem[Hansen et~al.(2021)]{ref26}
+Hansen, N., A.~Auger, R.~Ros, O.~Mersmann, T.~Tušar, and D.~Brockhoff. 2021.
+  ``{COCO: A platform for comparing continuous optimizers in a black-box
+  setting}.'' \emph{Optim. Methods Softw.} 36 (1): 114--144.
+  https://doi.org/{10.1080/10556788.2020.1808977}.
+
+\bibitem[Hao, Zhang, and Zhou(2025)]{ref22}
+Hao, H., X.~Zhang, and A.~Zhou. 2025. ``{Un-evaluated solutions may be valuable
+  in expensive optimization}.'' \emph{Swarm Evol. Comput.} 94: 101905.
+  https://doi.org/{10.1016/j.swevo.2025.101905}.
+
+\bibitem[Hao, Zhang, and Zhou(2024)]{ref30}
+Hao, H., X.~Q. Zhang, and A.~M. Zhou. 2024. ``{Enhancing SAEAs with unevaluated
+  solutions: A case study of relation model for expensive optimization}.''
+  \emph{Sci. China Inf. Sci.} 67 (2): 120103.
+  https://doi.org/{10.1007/s11432-023-3909-x}.
+
+\bibitem[Ibrayev et~al.(2024)]{ref28}
+Ibrayev, S., B.~Omarov, A.~Ibrayeva, and Z.~Momynkulov. 2024.
+  ``{DeepSurNet-NSGA II: Deep surrogate model-assisted multi-objective
+  evolutionary algorithm for enhancing leg linkage in walking robots}.''
+  \emph{Comput. Mater. Contin.} 81 (1): 229--249.
+  https://doi.org/{10.32604/cmc.2024.053075}.
+
+\bibitem[Jin(2011)]{ref01}
+Jin, Y. 2011. ``{Surrogate-assisted evolutionary computation: Recent advances
+  and future challenges}.'' \emph{Swarm Evol. Comput.} 1 (2): 61--70.
+  https://doi.org/{10.1016/j.swevo.2011.05.001}.
+
+\bibitem[Jin and Ren(2024)]{ref14}
+Jin, Y., and Z.~Ren. 2024. ``{Confidence on the focal: Conformal prediction
+  with selection-conditional coverage}.'' arXiv:2403.03868v3.
+  \urlprefix\url{https://arxiv.org/abs/2403.03868v3}.
+
+\bibitem[Jin et~al.(2019)]{ref04}
+Jin, Y., H.~Wang, T.~Chugh, D.~Guo, and K.~Miettinen. 2019. ``{Data-driven
+  evolutionary optimization: An overview and case studies}.'' \emph{IEEE Trans.
+  Evol. Comput.} 23 (3): 442--458.
+
+\bibitem[Jones, Schonlau, and Welch(1998)]{ref03}
+Jones, D.~R., M.~Schonlau, and W.~J. Welch. 1998. ``{Efficient global
+  optimization of expensive black-box functions}.'' \emph{J. Glob. Optim.} 13:
+  455--492. https://doi.org/{10.1023/A:1008306431147}.
+
+\bibitem[Kim et~al.(2025)]{ref13}
+Kim, D., M.~Zecchin, S.~Park, J.~Kang, and O.~Simeone. 2025. ``{Robust Bayesian
+  optimization via localized online conformal prediction}.''
+  arXiv:2411.17387v2.  \urlprefix\url{https://arxiv.org/abs/2411.17387v2}.
+
+\bibitem[Kostovska et~al.(2022)]{ref37}
+Kostovska, A., A.~Jankovic, D.~Vermetten, J.~de~Nobel, H.~Wang, T.~Eftimov, and
+  C.~Doerr. 2022. ``{Per-run algorithm selection with warm-starting using
+  trajectory-based features}.'' In \emph{Parallel Problem Solving from Nature -
+  PPSN XVII}, Vol. 13398, 46--60.
+
+\bibitem[Kus et~al.(2024)]{ref36}
+Kus, E., O.~Akgun, N.~Dang, and I.~Miguel. 2024. ``{Frugal algorithm
+  selection}.'' In \emph{Proc. CP 2024}, Vol. 307, 38:1--38:16.
+
+\bibitem[Li, Zhan, and Zhang(2021)]{ref05}
+Li, J.-Y., Z.-H. Zhan, and J.~Zhang. 2021. ``{Evolutionary computation for
+  expensive optimization: A survey}.'' \emph{Int. J. Autom. Comput.} 18: 1--21.
+
+\bibitem[Liang et~al.(2025)]{ref02}
+Liang, J., Y.~Lou, M.~Yu, Y.~Bi, and K.~Yu. 2025. ``{A survey of
+  surrogate-assisted evolutionary algorithms for expensive optimization}.''
+  \emph{J. Membr. Comput.} 7: 108--127.
+  https://doi.org/{10.1007/s41965-024-00165-w}.
+
+\bibitem[Liu et~al.(2025)]{ref08}
+Liu, H., Z.~Ren, C.~He, and W.~Du. 2025. ``{A surrogate-assisted differential
+  evolution algorithm with a dual-space-driven selection strategy for expensive
+  optimization problems}.'' \emph{Complex Intell. Syst.} 11: 230.
+  https://doi.org/{10.1007/s40747-025-01812-0}.
+
+\bibitem[Liu et~al.(2021)]{ref11}
+Liu, Q., X.~Wu, Q.~Lin, J.~Ji, and K.-C. Wong. 2021. ``{A novel
+  surrogate-assisted evolutionary algorithm with an uncertainty grouping based
+  infill criterion}.'' \emph{Swarm Evol. Comput.} 60: 100787.
+
+\bibitem[Liu, Bao, and Leng(2025)]{ref27}
+Liu, X., Y.~Bao, and F.~Leng. 2025. ``{Neural architecture search via
+  hierarchical evaluation of surrogate models}.'' \emph{Comput. Mater. Contin.}
+  84 (2): 3503--3517. https://doi.org/{10.32604/cmc.2025.064544}.
+
+\bibitem[Ma et~al.(2025)]{ref07}
+Ma, X., Y.~Li, Y.~Zhuang, Y.~Li, J.~Fan, L.~Wang, Y.~Qi, and J.~Xiong. 2025.
+  ``{A surrogate-assisted evolutionary algorithm with Gaussian process
+  regression and diversity search for large-scale expensive optimization}.''
+  \emph{Appl. Soft Comput.} 182: 113440.
+  https://doi.org/{10.1016/j.asoc.2025.113440}.
+
+\bibitem[Nardone et~al.(2026)]{ref15}
+Nardone, E., C.~De Stefano, A.~Scotto di~Freca, F.~Fontanella, and
+  T.~D'Alessandro. 2026. ``{Toward reliable uncertainty quantification in
+  surrogate-assisted evolutionary algorithms via temporal conformal
+  prediction}.'' In \emph{Applications of Evolutionary Computation}, Vol.
+  16524, 384--401.
+
+\bibitem[Ong, Nair, and Keane(2003)]{ref16}
+Ong, Y.~S., P.~B. Nair, and A.~J. Keane. 2003. ``{Evolutionary optimization of
+  computationally expensive problems via surrogate modeling}.'' \emph{AIAA J.}
+  41 (4): 687--696.
+
+\bibitem[Pan et~al.(2026{\natexlab{a}})]{ref31}
+Pan, J.-S., J.~Chen, J.~Li, and Z.~Meng. 2026{\natexlab{a}}. ``{Differential
+  evolution with exponential crossover: A survey}.'' \emph{Comput. Sci. Rev.}
+  62: 100990. https://doi.org/{10.1016/j.cosrev.2026.100990}.
+
+\bibitem[Pan et~al.(2026{\natexlab{b}})]{ref32}
+Pan, J.-S., Y.~Peng, J.~Li, J.~Zhao, L.~Kong, and S.-C. Chu.
+  2026{\natexlab{b}}. ``{Multilayer perceptron grouping and sparse Gaussian
+  process-based surrogate-assisted evolutionary algorithm for expensive
+  multiobjective optimization}.'' \emph{IEEE Trans. Cybern.} 56 (4):
+  2148--2161. https://doi.org/{10.1109/TCYB.2025.3634364}.
+
+\bibitem[Sehic et~al.(2022)]{ref24}
+Sehic, K., A.~Gramfort, J.~Salmon, and L.~Nardi. 2022. ``{LassoBench: A
+  high-dimensional hyperparameter optimization benchmark suite for Lasso}.'' In
+  \emph{Proc. 1st Int. Conf. Automated Machine Learning}, Vol. 188, 2/1--2/24.
+
+\bibitem[Sun et~al.(2017)]{ref19}
+Sun, C., Y.~Jin, R.~Cheng, J.~Ding, and J.~Zeng. 2017. ``{Surrogate-assisted
+  cooperative swarm optimization of high-dimensional expensive problems}.''
+  \emph{IEEE Trans. Evol. Comput.} 21 (4): 644--660.
+
+\bibitem[Suprayitno and Yu(2019)]{ref35}
+Suprayitno, and J.-C. Yu. 2019. ``{Evolutionary reliable regional Kriging
+  surrogate for expensive optimization}.'' \emph{Engineering Optimization} 51
+  (2): 247--264. https://doi.org/{10.1080/0305215X.2018.1446084}.
+
+\bibitem[Wang, Jin, and Doherty(2017)]{ref17}
+Wang, H., Y.~Jin, and J.~Doherty. 2017. ``{Committee-based active learning for
+  surrogate-assisted particle swarm optimization of expensive problems}.''
+  \emph{IEEE Trans. Cybern.} 47 (9): 2664--2677.
+
+\bibitem[Wang et~al.(2026)]{ref33}
+Wang, R.-Y., J.-S. Pan, S.-C. Chu, V.~Snášel, J.~Zhao, and H.-M. Yang. 2026.
+  ``{A bimodal surrogate-assisted PSO algorithm with wide coverage and dynamic
+  space refinement for expensive multi-UAV path planning}.'' \emph{Expert Syst.
+  Appl.} 331: 133075. https://doi.org/{10.1016/j.eswa.2026.133075}.
+
+\bibitem[Wang et~al.(2025)]{ref29}
+Wang, Z., L.~Duan, L.~Kuang, H.~Zhou, and J.~Duan. 2025. ``{Physics-informed
+  Gaussian process regression with Bayesian optimization for laser welding
+  quality control in coaxial laser diodes}.'' \emph{Comput. Mater. Contin.} 84
+  (2): 2587--2604. https://doi.org/{10.32604/cmc.2025.065648}.
+
+\bibitem[Yu et~al.(2026)]{ref10}
+Yu, L., Y.~Guo, L.~Feng, Z.~Zhu, Z.~Wei, and Y.~Hou. 2026. ``{A multi-source
+  surrogate-assisted evolutionary algorithm for expensive optimization: An
+  optinformatics perspective}.'' \emph{Swarm Evol. Comput.} 107: 102491.
+  https://doi.org/{10.1016/j.swevo.2026.102491}.
+
+\bibitem[Yu, Li, and Liang(2020)]{ref18}
+Yu, M., X.~Li, and J.~Liang. 2020. ``{A dynamic surrogate-assisted evolutionary
+  algorithm framework for expensive structural optimization}.'' \emph{Struct.
+  Multidiscip. Optim.} 61 (2): 711--729.
+
+\bibitem[Zatarain~Salazar et~al.(2025)]{ref34}
+Zatarain~Salazar, J., D.~Hadka, P.~Reed, H.~Seada, and K.~Deb. 2025.
+  ``{Diagnostic benchmarking of many-objective evolutionary algorithms for
+  real-world problems}.'' \emph{Engineering Optimization} 57 (1): 287--308.
+  https://doi.org/{10.1080/0305215X.2024.2381818}.
+
+\bibitem[Zhou et~al.(2025)]{ref09}
+Zhou, R., C.~Ren, Z.~Meng, and H.~Zhu. 2025. ``{Surrogate-assisted differential
+  evolution with search space tightening for high-dimensional expensive
+  optimization problems}.'' \emph{IEEE Trans. Syst. Man Cybern. Syst.} 55 (10):
+  7356--7368. https://doi.org/{10.1109/TSMC.2025.3582897}.
+
+\bibitem[Zou et~al.(2025)]{ref06}
+Zou, H., S.~Zeng, C.~Li, R.~Jiao, and F.~Zhao. 2025. ``{Uncertainty estimation
+  by boosting with Gaussian process for expensive optimization problems}.''
+  \emph{Appl. Soft Comput.} 180: 113320.
+  https://doi.org/{10.1016/j.asoc.2025.113320}.
+
+\end{thebibliography}

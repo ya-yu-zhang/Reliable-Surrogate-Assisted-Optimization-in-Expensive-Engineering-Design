@@ -1,0 +1,14 @@
+{
+  "source_url": "https://files.taylorandfrancis.com/InteractCADLaTeX.zip",
+  "archive_sha256": "5aeb0952b0021ad98653fe8ca6a1ea8edf35fbd639af5ee5443e6662dff90e25",
+  "files": {
+    "interact.cls": "f84355389329ecef75c6d0c826cd128fb0884012c33721b098d039a1910953bd",
+    "tfcad.bst": "30ebc3a77316090922ff3f391b6292c48e24ba1a45e665df660edd5b9f047d73"
+  },
+  "sample_version": "v1.04 May 2023",
+  "class_version": "v1.03 2016/10/17",
+  "reference_style": "Chicago author-date (official Interact-CAD bundle)",
+  "journal_specific_instructions_fully_verified": false,
+  "verification_limit": "Official journal instructions endpoint returned HTTP 403.",
+  "redistribution": "Publisher assets installed locally; no public repository license is asserted."
+}

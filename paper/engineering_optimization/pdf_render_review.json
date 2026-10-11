@@ -1,0 +1,271 @@
+{
+  "render_engine": "PyMuPDF 1.5x (108 dpi)",
+  "documents": {
+    "manuscript": [
+      {
+        "page": 1,
+        "render_sha256": "38b60125271657803659d830f071c50305850ecd3e8d8b98bb6a6ba0d8626c7b",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 2,
+        "render_sha256": "0beb2e4c06e9fa4f39acee7c623136fdf89cc87fb57ef7176b4019099f73acac",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 3,
+        "render_sha256": "84ec6df1a40b9e780cb8698c002bccb576cdb9ec1898f51c00b794027adc14d2",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 4,
+        "render_sha256": "afea424325b0358f637eaf2be99bccecde7a1b27a9b99a3eab2067d2afb23481",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 5,
+        "render_sha256": "380f2eaecfa461b1292a487e7540dc66a29f34c5169292cf493b001ead9bd0ed",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 6,
+        "render_sha256": "9b5f669241f785460d763cf1f7b6cfbce902e113487243efe202104cde8b7d31",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 7,
+        "render_sha256": "d82b2aa68089b81cd7d00d3cff49a3bb08f9f0ecd57a3f7a804a05aa5dbdbcc4",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 8,
+        "render_sha256": "d7ac3a7722401738a91cdf6c240fdd98566d590efcaa2283789311a852972fcf",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 9,
+        "render_sha256": "d5da3a991f2a976871ce8d5c3af1a0a8e2dce13d2c9b53af1031035ffddcabb7",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 10,
+        "render_sha256": "b112e5d472d173ea7df44e2b68bf23c6ed26695b0032dc7d4ba4ff9f0d6b53b1",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 11,
+        "render_sha256": "c113e620f324cc9baaac3619f5f88607f0bdebef58655a88a7f7087d6ca29baa",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 12,
+        "render_sha256": "d368cc7582377e897872adebe0c2ef114195bc9c51b9db018e0303c05003ad2b",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 13,
+        "render_sha256": "4c49e25c0ca84b1f76130343285229249cd2d6dc56b8c28c39ea6f545111fd69",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 14,
+        "render_sha256": "ec10839deee4ecadbdf2abb87e435556d6acd63e330e8bd8b220bae55e95cc68",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 15,
+        "render_sha256": "d0eeccf1e61b2d59c0201ba8624a2f40b14349a834a2973fbceeee49c8fefea1",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 16,
+        "render_sha256": "0d5ea8a715e9310f1510038bbf5c42f2593f92c76af43dbfc57b6560f636fe00",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 17,
+        "render_sha256": "fc4b62be927d70502b376477d521af5fcc97e93b70a546df53f695aebc06c4bf",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 18,
+        "render_sha256": "dac3956d41ca77ed4c4d88406312792e29888e237e3fe8a63733d45e97ee7fa2",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 19,
+        "render_sha256": "0cd93667a8358a31e2a569c86425d7878bef78dadfa28b5f26f5396cc2d35443",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 20,
+        "render_sha256": "b0b66a8af0ab8ae9fda9d99cff2918b8935cf7d7bafd2ab5aa85567db4581375",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 21,
+        "render_sha256": "2a6b298bd51bd284ce70394ec3a5e047c58b585846df10ce892bca6c761d0b4b",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 22,
+        "render_sha256": "72741485e219a1d49384a17d248de0047f4d919a2013a32c91bd8be5d1b5f0ee",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 23,
+        "render_sha256": "396fcd686cb08e70e7c2c7dd53ee9772c462f830dcb68c2006c43da3f3d274da",
+        "identical_to_previously_reviewed_page": false
+      }
+    ],
+    "supplementary": [
+      {
+        "page": 1,
+        "render_sha256": "00e3cf8afc6a5bfaf64efe17f911004645bc8d1a495bdf5b1c1096d7ba88f0e4",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 2,
+        "render_sha256": "3d68f2daff5b54771cf31325adc128ae05a89ad486111274b4f386221b91721b",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 3,
+        "render_sha256": "b9b4adf11eb19507a72ed660408d28d82224d8471d4b405e51b86ef8557f2934",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 4,
+        "render_sha256": "b859aaf70172b53e0210482bb1944a8928703688cb40fc1dbc08ee59e14fd083",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 5,
+        "render_sha256": "ab363e5cb31e26071bf3b1d431f704739ec5e70b8acd030bfe4e3feaaaa02d5f",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 6,
+        "render_sha256": "ca73cfe5a40a79d22b1015f5d82bda48697f8e9ea2356e653117fdabd0235a8f",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 7,
+        "render_sha256": "b05ef2f90eb89b01bad4bf2af86da76e48b0650181d7506d710c0b0a5dae2372",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 8,
+        "render_sha256": "a6ea6542d9e937065e9edb20f8fd5e5355f8a1732865bcd83ba7a0172f4f78cc",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 9,
+        "render_sha256": "643851f1101260a6f68bf29edadb7258bb3630d0de797177fcb223dc5f79e93c",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 10,
+        "render_sha256": "4e36fb96075f22afb829b95d1bb5694037e3c7d380f8b39ea740ae86ffb5a567",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 11,
+        "render_sha256": "3449fa8876c470eb3baad7baac4f968b9c14add40f9146c4a34bf8b4e96c7bcd",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 12,
+        "render_sha256": "6f85e4b78ad771a1c41c1951b482f8648d7fa08d7fdad46468a94152eedac515",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 13,
+        "render_sha256": "09744d9c495896e120be0c6e11aecba51e9027a4de7e776353ace02856d9ac10",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 14,
+        "render_sha256": "ce293ed804b0a4fa48553649102cd70b2be29857c390d78091206aa5829d7386",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 15,
+        "render_sha256": "c4a46e065d8ff41d643e0dcb0f06ab1400a72346b1845cd922466ce7ed106717",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 16,
+        "render_sha256": "629ef81f2e1d9856f9dfbde8c1ca0f3b29296a87e99dabcccbaebcfc84698683",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 17,
+        "render_sha256": "4d6caff94766e242eade7a7ec75bc0384d84b30d87d21f3db898c882d19f0bbc",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 18,
+        "render_sha256": "c2c0e63c05f6add1e3af8276ad24d97bbbf8ff7a4158696c2abde4378ab2983f",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 19,
+        "render_sha256": "d97446d47f7aceb4bbc509be42f232343821e55d30e85797bb8a087cae574afc",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 20,
+        "render_sha256": "480b08729918bfd7c9a6a8967d40ffda2412382d2d18aab875844dfaef068158",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 21,
+        "render_sha256": "dae54caba58afb336006753034d23f8a92c1f00dfe2b3b671b6a51b1b17c9d02",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 22,
+        "render_sha256": "d0359cedf8167e34caa4fe8d4f78758bf75e0f709b6428de0e7ba656dff8672a",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 23,
+        "render_sha256": "8a6561c3854f066dec5dcb667dd848f1f554d7db8332d40cf34d157b8ee27858",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 24,
+        "render_sha256": "1921b051b649a7e9d30580373f87a4df68cb1226e453ac0525df5c57df661a33",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 25,
+        "render_sha256": "1d24877e107763f14a297777d5a0c6f6565b47d54939563dcec2940745dcb162",
+        "identical_to_previously_reviewed_page": true
+      },
+      {
+        "page": 26,
+        "render_sha256": "7e46411b5c26ed103e9a98a8d00de5d813f665bbb6b4cb4323682c87c79c0c3d",
+        "identical_to_previously_reviewed_page": false
+      },
+      {
+        "page": 27,
+        "render_sha256": "1a5eecfcbab4de55757ca4cb695b37999d4218366512a93607b960ac9962df63",
+        "identical_to_previously_reviewed_page": false
+      }
+    ]
+  },
+  "all_final_pages_reviewed": true,
+  "review_method": "All pages rendered; complete initial contact sheets inspected, then every changed final page inspected; other final pages match previously inspected pixels.",
+  "issues_resolved": [
+    "Supplementary longtable page overflow",
+    "Unescaped abstract percent signs",
+    "Unresolved supplementary citations",
+    "Uncaptioned additional controls and shifted supplementary table numbers",
+    "Main bibliography spilling onto an otherwise empty final page"
+  ],
+  "nonblocking_warning": "Interact title block reports a 2.089pt vertical warning on the main title page; full-size rendering shows no clipping or overlap.",
+  "affiliation_placeholders_remain": true,
+  "ai_policy_author_review_pending": true
+}

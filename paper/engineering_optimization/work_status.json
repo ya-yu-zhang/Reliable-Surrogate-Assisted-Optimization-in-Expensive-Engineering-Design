@@ -32,7 +32,13 @@
     "clean_directory_transfer_summary_exact_match": true,
     "manuscript_regeneration_idempotent": true,
     "gp_diagnostic_cache_reuse_checks": "passed",
-    "frozen_code_and_config_byte_hashes": "matched; final LF restored in public files"
+    "frozen_code_and_config_byte_hashes": "matched; final LF restored in public files",
+    "pdf_pages": {
+      "manuscript": 23,
+      "supplementary": 27
+    },
+    "all_rendered_pages_reviewed": 50,
+    "formatting_step_new_fe_calls": 0
   },
   "validation_environment": {
     "python": "3.12",
@@ -44,18 +50,27 @@
   },
   "new_scientific_result_claims": true,
   "new_inferential_families": false,
-  "revised_pdf_compiled": false,
-  "rendered_pdf_layout_verified": false,
+  "revised_pdf_compiled": true,
+  "rendered_pdf_layout_verified": true,
   "submission_ready": false,
   "remaining": [
-    "Confirm author affiliations 2 and 3 and final author approval",
-    "Submission-format compilation and rendered-page verification",
-    "Final release citation and submission declarations"
+    "Confirm affiliations 2 and 3 and obtain all authors final approval",
+    "Substantively review and rewrite AI-assisted added scientific argument, complete accurate disclosure and resolve publisher-policy uncertainty",
+    "Verify current journal-specific template/length/portal requirements (instructions page access was blocked)",
+    "Complete final release citation and data-availability declarations"
   ],
   "claim_limits": [
     "One deterministic beam model family with two added force conditions",
     "No universally superior selector or performance-preserving savings claim",
     "No new convergence or coverage guarantee",
     "Editorial assessment determines novelty sufficiency and acceptance"
-  ]
+  ],
+  "stage5": "completed: official publisher Interact-CAD source formatting, copyediting, PDF compilation and all-page visual review",
+  "ai_detector": {
+    "run": false,
+    "score": null,
+    "below_10_percent_guaranteed": false
+  },
+  "official_template_authenticity_verified": true,
+  "journal_specific_requirements_fully_verified": false
 }

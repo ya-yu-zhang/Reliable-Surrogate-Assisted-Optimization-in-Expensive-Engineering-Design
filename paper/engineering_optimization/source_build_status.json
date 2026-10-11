@@ -1,37 +1,50 @@
 {
-  "format": "journal-neutral article; not the official publisher template",
-  "pdf_compiled": false,
-  "layout_verified": false,
+  "format": "Official Taylor & Francis Interact-CAD class and bibliography style",
+  "journal_specific_instructions_fully_verified": false,
+  "pdf_compiled": true,
+  "layout_verified": true,
   "sources": {
-    "paper/engineering_optimization_manuscript.md": "c1aaf7fe60e28439ba197776dc6851dbdfec9c218075fea2d586a391b77eb6c7",
-    "paper/engineering_optimization/EO_manuscript.tex": "ee5ca500be2b398d3646997c91ef59ea0de321e060f92cb0e90f194220aecfc5",
-    "paper/engineering_optimization_supplementary.md": "2bcbfb2a84b41b7555087887f9c785458b6b3a9d80fcd10041e09a714341de7a",
-    "paper/engineering_optimization/EO_supplementary.tex": "dc80fc61eb5278551907c6fdee07fb843d3e23b2f1a36d9a8ed5d659ecb9c9ae"
+    "paper/engineering_optimization_manuscript.md": "f6f20a98049bd5fa6e02e9aece7a1181d83fe4fc3f89dd22293064beca8f7239",
+    "paper/engineering_optimization/EO_manuscript.tex": "172130f379835db304185e83a824d4aebcd47c0a96ef6c4389894180c9a1b7d4",
+    "paper/engineering_optimization_supplementary.md": "cdbaa9df721305a265f7d81703b073c201cf951bae92c77709861444ca8ced8f",
+    "paper/engineering_optimization/EO_supplementary.tex": "c5548aa248fbfb5910f0f7c7b179f3be2f523d57b2996e5aee3f4f9d5e11f3ac"
   },
   "figures": {
     "manuscript": [
-      "../cmc_latex_submission/figures/main_figure_1.pdf",
-      "../cmc_latex_submission/figures/main_figure_2.pdf",
-      "../cmc_latex_submission/figures/main_figure_3.pdf",
-      "../cmc_latex_submission/figures/main_figure_4.pdf",
-      "../cmc_latex_submission/figures/main_figure_5.pdf",
+      "figures/main_figure_1.pdf",
+      "figures/main_figure_2.pdf",
+      "figures/main_figure_3.pdf",
+      "figures/main_figure_4.pdf",
+      "figures/main_figure_5.pdf",
       "figures/transfer_cost_performance.png"
     ],
     "supplementary": [
-      "../cmc_latex_submission/figures/supp_figure_1.pdf",
-      "../cmc_latex_submission/figures/supp_figure_2.pdf",
-      "../cmc_latex_submission/figures/supp_figure_3.pdf",
-      "../cmc_latex_submission/figures/supp_figure_4.pdf",
-      "../cmc_latex_submission/figures/supp_figure_5.pdf",
-      "../cmc_latex_submission/figures/supp_figure_6.pdf",
-      "../cmc_latex_submission/figures/supp_figure_7.pdf",
-      "../cmc_latex_submission/figures/supp_figure_8.pdf",
-      "../cmc_latex_submission/figures/supp_figure_9.pdf",
-      "../cmc_latex_submission/figures/supp_figure_10.pdf",
-      "../cmc_latex_submission/figures/supp_figure_11.pdf",
-      "../cmc_latex_submission/figures/supp_figure_12.pdf",
-      "../cmc_latex_submission/figures/supp_figure_13.pdf",
+      "figures/supp_figure_1.pdf",
+      "figures/supp_figure_2.pdf",
+      "figures/supp_figure_3.pdf",
+      "figures/supp_figure_4.pdf",
+      "figures/supp_figure_5.pdf",
+      "figures/supp_figure_6.pdf",
+      "figures/supp_figure_7.pdf",
+      "figures/supp_figure_8.pdf",
+      "figures/supp_figure_9.pdf",
+      "figures/supp_figure_10.pdf",
+      "figures/supp_figure_11.pdf",
+      "figures/supp_figure_12.pdf",
+      "figures/supp_figure_13.pdf",
       "figures/transfer_pilot_horizons.png"
     ]
-  }
+  },
+  "document_counts": {
+    "manuscript": {
+      "tables": 7,
+      "figures": 6
+    },
+    "supplementary": {
+      "tables": 33,
+      "figures": 14
+    }
+  },
+  "abstract_word_count": 141,
+  "rendered_pages": 50
 }
