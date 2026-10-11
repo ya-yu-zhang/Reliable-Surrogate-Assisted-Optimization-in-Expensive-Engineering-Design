@@ -1,0 +1,13 @@
+{
+  "restored_files": 48,
+  "all_file_hashes_verified": true,
+  "clean_reanalysis_outputs_byte_identical": [
+    "thermal_analysis.json",
+    "thermal_case_results.csv",
+    "THERMAL_EVIDENCE.md",
+    "thermal_retained_summaries.json"
+  ],
+  "new_solver_calls": 0,
+  "integrity_tests_passed": 14,
+  "GP_past_only_replays": 320
+}

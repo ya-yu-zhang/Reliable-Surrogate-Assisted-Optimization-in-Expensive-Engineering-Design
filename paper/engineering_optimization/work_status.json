@@ -15,10 +15,16 @@
     "solver_validation_attempts": 102,
     "retained_transfer_calls": 18120,
     "previous_transfer_calls_lost_journals": 18120,
-    "total_new_fe_attempts_this_revision": 36480
+    "total_new_fe_attempts_this_revision": 36480,
+    "thermal_retained_replay_optimization_attempts": 7200,
+    "thermal_current_verification_attempts": 22,
+    "thermal_additional_record_recovery_attempts": 1080,
+    "thermal_previous_lost_session_attempts": 7586,
+    "total_thermal_attempts": 15888,
+    "total_new_physics_solver_attempts_this_revision": 52368
   },
   "validation": {
-    "integrity_tests_passed": 10,
+    "integrity_tests_passed": 14,
     "historical_numeric_table_rows_unchanged": true,
     "reference_count": 38,
     "gp_replay_states": 120,
@@ -38,7 +44,13 @@
       "supplementary": 27
     },
     "all_rendered_pages_reviewed": 50,
-    "formatting_step_new_fe_calls": 0
+    "formatting_step_new_fe_calls": 0,
+    "thermal_independent_cases": 20,
+    "thermal_prediction_before_label_pairs": 7200,
+    "thermal_past_only_GP_replays": 320,
+    "thermal_workflow_endpoint_checks": 100,
+    "thermal_lossless_restored_files": 48,
+    "thermal_clean_reanalysis_byte_identical": true
   },
   "validation_environment": {
     "python": "3.12",
@@ -54,6 +66,7 @@
   "rendered_pdf_layout_verified": true,
   "submission_ready": false,
   "remaining": [
+    "Authors independently assess novelty and integrate the thermal evidence; the tested gate did not demonstrate superiority",
     "Confirm affiliations 2 and 3 and obtain all authors final approval",
     "Substantively review and rewrite AI-assisted added scientific argument, complete accurate disclosure and resolve publisher-policy uncertainty",
     "Verify current journal-specific template/length/portal requirements (instructions page access was blocked)",
@@ -63,7 +76,8 @@
     "One deterministic beam model family with two added force conditions",
     "No universally superior selector or performance-preserving savings claim",
     "No new convergence or coverage guarantee",
-    "Editorial assessment determines novelty sufficiency and acceptance"
+    "Editorial assessment determines novelty sufficiency and acceptance",
+    "Small authored thermal model extends physical breadth, not industrial expense or superior algorithm selection"
   ],
   "stage5": "completed: official publisher Interact-CAD source formatting, copyediting, PDF compilation and all-page visual review",
   "ai_detector": {
@@ -72,5 +86,7 @@
     "below_10_percent_guaranteed": false
   },
   "official_template_authenticity_verified": true,
-  "journal_specific_requirements_fully_verified": false
+  "journal_specific_requirements_fully_verified": false,
+  "stage6": "completed thermal equal-budget numerical verification and reachable raw-data release; author scientific integration remains pending",
+  "thermal_method_benefit_demonstrated": false
 }
