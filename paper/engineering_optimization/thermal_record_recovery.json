@@ -1,0 +1,35 @@
+{
+  "records": [
+    {
+      "case": "condition0_r04",
+      "additional_attempts": 360,
+      "all_scientific_summary_fields_exact_match": true,
+      "old_expected_journal_sha256": "ecd817b3ba8ffea02849f0192f52fbf5bed1d27bae5b8a14384d89efb2d36a6a",
+      "truncated_sha256": "de66bbe1c84619e0410a60e8ce649ab501c80a4b885badf259a13090b30746d2",
+      "replacement_journal_sha256": "322c984b7dfc3c7632df146abdf67ba50f3fd9004537745fd3e7c8153e0ffe28"
+    },
+    {
+      "case": "condition0_r05",
+      "additional_attempts": 360,
+      "all_scientific_summary_fields_exact_match": true,
+      "old_expected_journal_sha256": "3dab63cd139bc4f8442951190778c0f7ac7744edb8465a0d47c571879d4a8e3d",
+      "truncated_sha256": "b499ade56c2f8583f8dad446d385b7b9e7358dc00e36f2ee7d38bc963cc4e023",
+      "replacement_journal_sha256": "befe5e6d58ccd82eb671f8e73195efa687ab350b04a9ae7ea3cbc42b917b9c10"
+    },
+    {
+      "case": "condition0_r06",
+      "additional_attempts": 360,
+      "all_scientific_summary_fields_exact_match": true,
+      "old_expected_journal_sha256": "4d8f3220b08436704732d803989588dee0ffff4277dacceb97003d9909f9875b",
+      "truncated_sha256": "6444f3b63d7dab008622348a0ab2fb7ca91d76e7959ef9989d250dd6ce737684",
+      "replacement_journal_sha256": "85668792f709ef84ae35199897cfc6da23810c177b04e7835917dcc6f91933fc"
+    }
+  ],
+  "additional_record_recovery_attempts": 1080,
+  "prior_lost_session_attempts": 7586,
+  "retained_replay_optimization_attempts": 7200,
+  "current_verification_attempts": 22,
+  "cumulative_thermal_attempts": 15888,
+  "independent_cases": 20,
+  "old_timing_bytes_recovered": false
+}
