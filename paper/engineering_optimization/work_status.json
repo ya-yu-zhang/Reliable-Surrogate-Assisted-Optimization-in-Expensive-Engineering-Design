@@ -15,13 +15,16 @@
     "solver_validation_attempts": 102,
     "retained_transfer_calls": 18120,
     "previous_transfer_calls_lost_journals": 18120,
-    "total_new_fe_attempts_this_revision": 36480,
+    "total_new_fe_attempts_this_revision": 36762,
     "thermal_retained_replay_optimization_attempts": 7200,
     "thermal_current_verification_attempts": 22,
     "thermal_additional_record_recovery_attempts": 1080,
     "thermal_previous_lost_session_attempts": 7586,
     "total_thermal_attempts": 15888,
-    "total_new_physics_solver_attempts_this_revision": 52368
+    "total_new_physics_solver_attempts_this_revision": 52650,
+    "common_continuation_first_execution_fe_attempts": 273,
+    "common_continuation_ledger_recovery_fe_attempts": 9,
+    "common_continuation_total_new_fe_attempts": 282
   },
   "validation": {
     "integrity_tests_passed": 14,
@@ -50,7 +53,18 @@
     "thermal_past_only_GP_replays": 320,
     "thermal_workflow_endpoint_checks": 100,
     "thermal_lossless_restored_files": 48,
-    "thermal_clean_reanalysis_byte_identical": true
+    "thermal_clean_reanalysis_byte_identical": true,
+    "common_continuation_states": 30,
+    "common_continuation_seed_blocks": 10,
+    "common_continuation_distinct_actions": 76,
+    "common_continuation_pre_label_pairs": 456,
+    "common_continuation_past_only_GP_replays": 456,
+    "common_continuation_rule_checks": 380,
+    "common_continuation_science_summaries_reproduced": 30,
+    "common_continuation_clean_restoration_files": 96,
+    "common_continuation_clean_analysis_byte_identical": true,
+    "factual_revision_main_pages": 23,
+    "supplementary_render_identical_pages": 27
   },
   "validation_environment": {
     "python": "3.12",
@@ -66,6 +80,7 @@
   "rendered_pdf_layout_verified": true,
   "submission_ready": false,
   "remaining": [
+    "Authors independently assess and integrate common-continuation results; median superiority is not established",
     "Authors independently assess novelty and integrate the thermal evidence; the tested gate did not demonstrate superiority",
     "Confirm affiliations 2 and 3 and obtain all authors final approval",
     "Substantively review and rewrite AI-assisted added scientific argument, complete accurate disclosure and resolve publisher-policy uncertainty",
@@ -77,7 +92,8 @@
     "No universally superior selector or performance-preserving savings claim",
     "No new convergence or coverage guarantee",
     "Editorial assessment determines novelty sufficiency and acceptance",
-    "Small authored thermal model extends physical breadth, not industrial expense or superior algorithm selection"
+    "Small authored thermal model extends physical breadth, not industrial expense or superior algorithm selection",
+    "Conditional first-action contrasts under one declared continuation; nested states are not independent new cases"
   ],
   "stage5": "completed: official publisher Interact-CAD source formatting, copyediting, PDF compilation and all-page visual review",
   "ai_detector": {
@@ -88,5 +104,7 @@
   "official_template_authenticity_verified": true,
   "journal_specific_requirements_fully_verified": false,
   "stage6": "completed thermal equal-budget numerical verification and reachable raw-data release; author scientific integration remains pending",
-  "thermal_method_benefit_demonstrated": false
+  "thermal_method_benefit_demonstrated": false,
+  "stage7": "completed frozen first-action/common-continuation evidence; factual prior-work correction; author interpretation/integration pending",
+  "common_continuation_protocol_commit": "6b0b514ba0753350d15b29faaa2a50344c4fc467"
 }

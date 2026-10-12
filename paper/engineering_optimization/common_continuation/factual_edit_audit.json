@@ -1,0 +1,8 @@
+{
+  "baseline_commit": "eeaf0458f6f9ee09726d55397b69ae0f16e8816f",
+  "baseline_manuscript_blob_sha": "454c90b3e3e0294871ce82ba6068472e8c4b562a",
+  "exact_two_factual_replacements_verified": true,
+  "new_argument_sections_added": false,
+  "historical_numeric_table_rows_changed": false,
+  "current_manuscript_sha256": "9e06f7306ac294ebdca4889e4cfcbfd7639c8504028b403c2bf225f189ea40c9"
+}

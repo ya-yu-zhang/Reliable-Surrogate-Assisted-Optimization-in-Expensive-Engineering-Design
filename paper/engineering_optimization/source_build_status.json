@@ -4,8 +4,8 @@
   "pdf_compiled": true,
   "layout_verified": true,
   "sources": {
-    "paper/engineering_optimization_manuscript.md": "f6f20a98049bd5fa6e02e9aece7a1181d83fe4fc3f89dd22293064beca8f7239",
-    "paper/engineering_optimization/EO_manuscript.tex": "172130f379835db304185e83a824d4aebcd47c0a96ef6c4389894180c9a1b7d4",
+    "paper/engineering_optimization_manuscript.md": "9e06f7306ac294ebdca4889e4cfcbfd7639c8504028b403c2bf225f189ea40c9",
+    "paper/engineering_optimization/EO_manuscript.tex": "a66afdb5e03af91edb4740ac178f4aff81bfde8f251667764442aecf4bc4a933",
     "paper/engineering_optimization_supplementary.md": "cdbaa9df721305a265f7d81703b073c201cf951bae92c77709861444ca8ced8f",
     "paper/engineering_optimization/EO_supplementary.tex": "c5548aa248fbfb5910f0f7c7b179f3be2f523d57b2996e5aee3f4f9d5e11f3ac"
   },
@@ -45,6 +45,5 @@
       "figures": 14
     }
   },
-  "abstract_word_count": 141,
-  "rendered_pages": 50
+  "abstract_word_count": 141
 }

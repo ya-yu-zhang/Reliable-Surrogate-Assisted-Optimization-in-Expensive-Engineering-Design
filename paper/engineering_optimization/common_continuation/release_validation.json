@@ -1,0 +1,14 @@
+{
+  "clean_restored_files": 96,
+  "all_file_hashes_verified": true,
+  "reanalysis_outputs_byte_identical": [
+    "analysis.json",
+    "engineering_endpoints.csv",
+    "diagnostic_classifications.csv",
+    "EVIDENCE.md"
+  ],
+  "new_physics_solver_calls": 0,
+  "tests_passed_this_stage": 14,
+  "GP_past_only_replays": 456,
+  "common_rule_checks": 380
+}

@@ -1,7 +1,7 @@
 {
   "documents": {
     "manuscript": {
-      "sha256": "006679bc699504d617830f66b54d94348600496f8fad10cb23071f8d269641ed",
+      "sha256": "88cc7da728a1ccdbdbc462c4b9a7b05dd51f7498aaa7bd88945c968aca37930b",
       "pages": 23,
       "overfull_warnings": [
         "Overfull \\vbox (2.08887pt too high) has occurred while \\output is active []"
@@ -12,14 +12,36 @@
       "sha256": "1d96cd779822964928073dbc4bc3b3b96ad513219285985944aaca385d6b29e0",
       "pages": 27,
       "overfull_warnings": [],
-      "unresolved_citations_or_references": false
+      "unresolved_citations_or_references": false,
+      "unchanged_previously_reviewed_pdf_reused": true
     }
   },
   "pdf_compiled": true,
   "layout_verified": true,
   "source_hashes": {
-    "EO_manuscript.tex": "172130f379835db304185e83a824d4aebcd47c0a96ef6c4389894180c9a1b7d4",
+    "EO_manuscript.tex": "a66afdb5e03af91edb4740ac178f4aff81bfde8f251667764442aecf4bc4a933",
     "EO_supplementary.tex": "c5548aa248fbfb5910f0f7c7b179f3be2f523d57b2996e5aee3f4f9d5e11f3ac",
     "EO_references.bib": "efad9f03f4c2d22031661670fff2e4e43d4f2b9c357d367be2a77ced9e0ba89d"
+  },
+  "visual_review": {
+    "renderer": "PDFium",
+    "main_pages_reviewed": 23,
+    "changed_main_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "supplementary_pages_render_identical_to_previously_reviewed": 27,
+    "blocking_layout_defects": false,
+    "title_box_warning_preexisting": true
   }
 }

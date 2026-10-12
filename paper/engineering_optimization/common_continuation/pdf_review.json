@@ -1,0 +1,21 @@
+{
+  "renderer": "PDFium",
+  "main_pages_reviewed": 23,
+  "changed_main_pages": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "supplementary_pages_render_identical_to_previously_reviewed": 27,
+  "blocking_layout_defects": false,
+  "title_box_warning_preexisting": true
+}

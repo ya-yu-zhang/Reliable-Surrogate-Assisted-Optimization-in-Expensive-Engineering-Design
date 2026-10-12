@@ -1,0 +1,243 @@
+{
+  "complete": true,
+  "checks": {
+    "frozen_state_boundaries": 30,
+    "past_only_gp_prediction_replays": 456,
+    "pre_label_pairs": 456,
+    "common_rule_seed_pool_action_checks": 380,
+    "control_endpoint_curve_checks": 150,
+    "neutral_control_exact_equivalence": 30
+  },
+  "states": 30,
+  "seed_blocks": 10,
+  "distinct_first_actions": 76,
+  "four_real_control_choices": 120,
+  "choices_including_constructed_neutral": 150,
+  "state_control_contrasts": 90,
+  "contrasts_are_not_independent_samples": true,
+  "classification_changes_h0_h5": 8,
+  "immediate_ties_later_non_ties": 7,
+  "comparisons": [
+    {
+      "method": "gp_ei_shared_init",
+      "control": "ei",
+      "horizon": 0,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 10,
+      "worse": 0
+    },
+    {
+      "method": "gp_ei_shared_init",
+      "control": "ei",
+      "horizon": 5,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 1,
+      "tie": 9,
+      "worse": 0
+    },
+    {
+      "method": "gp_ei_shared_init",
+      "control": "pi",
+      "horizon": 0,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 10,
+      "worse": 0
+    },
+    {
+      "method": "gp_ei_shared_init",
+      "control": "pi",
+      "horizon": 5,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 1,
+      "tie": 8,
+      "worse": 1
+    },
+    {
+      "method": "gp_ei_shared_init",
+      "control": "lcb",
+      "horizon": 0,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 10,
+      "worse": 0
+    },
+    {
+      "method": "gp_ei_shared_init",
+      "control": "lcb",
+      "horizon": 5,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 1,
+      "tie": 9,
+      "worse": 0
+    },
+    {
+      "method": "gp_pi_shared_init",
+      "control": "ei",
+      "horizon": 0,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 10,
+      "worse": 0
+    },
+    {
+      "method": "gp_pi_shared_init",
+      "control": "ei",
+      "horizon": 5,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 10,
+      "worse": 0
+    },
+    {
+      "method": "gp_pi_shared_init",
+      "control": "pi",
+      "horizon": 0,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 10,
+      "worse": 0
+    },
+    {
+      "method": "gp_pi_shared_init",
+      "control": "pi",
+      "horizon": 5,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 10,
+      "worse": 0
+    },
+    {
+      "method": "gp_pi_shared_init",
+      "control": "lcb",
+      "horizon": 0,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 10,
+      "worse": 0
+    },
+    {
+      "method": "gp_pi_shared_init",
+      "control": "lcb",
+      "horizon": 5,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 10,
+      "worse": 0
+    },
+    {
+      "method": "gp_ucb_shared_init",
+      "control": "ei",
+      "horizon": 0,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 1,
+      "tie": 7,
+      "worse": 2
+    },
+    {
+      "method": "gp_ucb_shared_init",
+      "control": "ei",
+      "horizon": 5,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 7,
+      "worse": 3
+    },
+    {
+      "method": "gp_ucb_shared_init",
+      "control": "pi",
+      "horizon": 0,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 9,
+      "worse": 1
+    },
+    {
+      "method": "gp_ucb_shared_init",
+      "control": "pi",
+      "horizon": 5,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 8,
+      "worse": 2
+    },
+    {
+      "method": "gp_ucb_shared_init",
+      "control": "lcb",
+      "horizon": 0,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 0,
+      "tie": 8,
+      "worse": 2
+    },
+    {
+      "method": "gp_ucb_shared_init",
+      "control": "lcb",
+      "horizon": 5,
+      "states": 10,
+      "median_paired_advantage_percent": 0.0,
+      "better": 1,
+      "tie": 6,
+      "worse": 3
+    }
+  ],
+  "tolerance_sensitivity": [
+    {
+      "relative_tolerance": 1e-06,
+      "classification_changes": 8,
+      "immediate_ties_later_non_ties": 7
+    },
+    {
+      "relative_tolerance": 1e-05,
+      "classification_changes": 8,
+      "immediate_ties_later_non_ties": 7
+    },
+    {
+      "relative_tolerance": 0.0001,
+      "classification_changes": 8,
+      "immediate_ties_later_non_ties": 7
+    }
+  ],
+  "recovery": {
+    "original_attempts": 273,
+    "recovery_attempts": 9,
+    "total_new_fe_attempts": 282,
+    "science_summaries_exactly_reproduced": 30,
+    "complete_original_pairs_reused": 439,
+    "extra_independent_samples": 0,
+    "original_expected_journal_sha256": "90dbec159d46adf1b66c0d8a7c1f3a411dd163ec8a3a95221fd4913a8583537a",
+    "damaged_journal_sha256": "b67596f027ef8729e9fdcca41604a4e0faec2098734f7fbfc27ffabb04299b1b",
+    "retained_journal_sha256": "4650412e0dc21ba136179046b94310202a503b32ff5b5785bd53a2bc6a483573",
+    "original_timing_bytes_recovered": false,
+    "wrapper_sha256": "558390693efa04354ef6888da9e86acbcb2f15c4e9015378d97bda7fb09151e4"
+  },
+  "new_fe_attempts_total": 282,
+  "logical_branch_response_requests": 456,
+  "retained_replay_new_attempts": 9,
+  "prior_paid_first_responses": 76,
+  "continuation_response_requests": 380,
+  "first_execution_new_attempts": 273,
+  "within_and_across_state_exact_reuses_in_first_execution": 107,
+  "future_diagnostics_used_for_training": false,
+  "confirmatory_pvalues_added": false,
+  "superior_optimizer_claim_supported": false,
+  "diagnostic_accuracy_against_published_algorithms_claimed": false
+}
