@@ -1,6 +1,10 @@
 # Evidence integration and author-review plan
 
-Baseline main/supplement source: release062c1b6,23/27 compiled pages.
+Baseline main/supplement source: release 062c1b6, 23/27 compiled pages.
+Factual integration completed: main 25 pages, supplement 29 pages. One measured
+record table in the main and eight supporting tables disclose continuation,
+budget, thermal, GP-setting, selected-grid and cumulative-cost evidence. The
+existing scientific argument remains subject to independent author review.
 Scope of automated editing: factual correction of existing text, measured-data
 tables, references to reproducible records, compilation and layout checks.
 No newly drafted scientific argument sections or unverified author declarations.

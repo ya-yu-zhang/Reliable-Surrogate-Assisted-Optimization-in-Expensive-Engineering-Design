@@ -3,7 +3,9 @@
 Read EVIDENCE.md, analysis.json, seed_block_results.csv and cost_accounting.json.
 Keep unfavorable primary results and sensitivity comparisons. AUTHOR_REVIEW.md
 lists integration boundaries; this is a technical evidence package, not a newly
-drafted manuscript section. Main/supplement PDFs remain the preceding versions.
+drafted manuscript section. The later factual integration adds these measured records to the main and
+supplement; the release-validation JSON below remains a historical record of
+the earlier budget-only publication. Scientific author review remains pending.
 
 ## Restore and verify without new simulations
 

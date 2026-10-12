@@ -1,0 +1,15 @@
+case,group,state,control,original_h5_class,fixed_h5_all_contexts_stable,fixed_h5_class_changes,retained_pool_h5_class_changes,distinct_fixed_h5_endpoint_designs,native_fine_h5_class,transferred_fine_h5_class
+S01,changed,gp_ei_shared_init_r1_t101,ei,better,True,0,0,True,better,better
+S02,changed,gp_ei_shared_init_r1_t101,pi,better,True,0,0,True,better,better
+S03,changed,gp_ei_shared_init_r4_t101,pi,worse,True,0,0,True,worse,worse
+S04,changed,gp_ucb_shared_init_r7_t101,ei,worse,True,0,0,True,worse,worse
+S05,changed,gp_ucb_shared_init_r7_t101,pi,worse,True,0,0,True,worse,worse
+S06,changed,gp_ucb_shared_init_r7_t101,lcb,worse,True,0,0,True,worse,worse
+S07,changed,gp_ucb_shared_init_r8_t101,lcb,better,True,0,0,True,better,better
+S08,independent_proxy_mismatch,beam_holdout_r18_pi,ei,worse,True,0,0,True,worse,worse
+S09,unchanged_different_action,gp_ei_shared_init_r0_t101,ei,tie,True,0,0,False,tie,tie
+S10,unchanged_different_action,gp_ei_shared_init_r5_t101,lcb,tie,True,0,0,False,tie,tie
+S11,unchanged_different_action,gp_ei_shared_init_r6_t101,ei,tie,True,0,0,False,tie,tie
+S12,unchanged_different_action,gp_ei_shared_init_r6_t101,lcb,tie,True,0,0,False,tie,tie
+S13,structural_alias,gp_ei_shared_init_r0_t101,pi,tie,True,0,0,False,tie,tie
+S14,structural_alias,gp_ei_shared_init_r2_t101,ei,tie,True,0,0,False,tie,tie

@@ -1,0 +1,160 @@
+{
+  "public_repository": "ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design",
+  "purpose": "lossless selected numerical input and journal release",
+  "decoded_files": 25,
+  "synthetic_labels": 0,
+  "files": [
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_pi_summary.json",
+      "bytes": 111901,
+      "sha256": "037113a17119e5afa8675196dee39328853e633aa921dbe65f2e3e9340027e3e",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/events.jsonl",
+      "bytes": 399266,
+      "sha256": "4650412e0dc21ba136179046b94310202a503b32ff5b5785bd53a2bc6a483573",
+      "parsed_records": 974
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r0_t101.json",
+      "bytes": 49948,
+      "sha256": "00ce55634ebefd568d9ac2e5c888127e42d6fa7bf2a4e4b42f71d5cbf757956e",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r1_t101.json",
+      "bytes": 49417,
+      "sha256": "5237e4472eec28d4fda8cfedb159cfda1f3d884711555135970a929c5ed41ee4",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r2_t101.json",
+      "bytes": 49235,
+      "sha256": "76e17a4a7c79fe3e77ed935f5168ba049949c8b5648b9d690042534facdfe91f",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r4_t101.json",
+      "bytes": 49352,
+      "sha256": "149971a28fce67da668944d3f11a252ca1b7381aa89cf118b60857a49994d648",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r5_t101.json",
+      "bytes": 52805,
+      "sha256": "d82885ee749ac02f2005ad70d4e026a72ce24515568d945d67afff71d8011155",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r6_t101.json",
+      "bytes": 47932,
+      "sha256": "592bd8439d0bcf6f1b3739b911ba086f01c71291c4bb3ec0d7e39eb5fcbf59f0",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/plans/gp_ucb_shared_init_r7_t101.json",
+      "bytes": 45597,
+      "sha256": "6921a5232748a7dc6d6eff8e5ecbe8f5ce28e683f257a1683e502d0e7149031c",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/plans/gp_ucb_shared_init_r8_t101.json",
+      "bytes": 45326,
+      "sha256": "a00e3f7bb7cfd489f8b8f854be6dafbd8b1562bfa5ff2cabe9fb7bd029a9f1e5",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r0_t101.json",
+      "bytes": 2252,
+      "sha256": "e40be114812e5dbcbe8d937d7b5e3ed3cea520aadfa52c80d68eb10e5b151409",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r1_t101.json",
+      "bytes": 2544,
+      "sha256": "c0fef0e95a849be348f182478c5f15324f4ea596615029724b812b41c1221868",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r2_t101.json",
+      "bytes": 1946,
+      "sha256": "63113878b5da7b901153a2df3fed62abe69bf860bc51696eaffbad4f2e8303d5",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r4_t101.json",
+      "bytes": 2263,
+      "sha256": "3c136b49d4b359b671485970367e50f8caf1a6c0156788a1a1b64adda7b73e75",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r5_t101.json",
+      "bytes": 2264,
+      "sha256": "8afd7691e843ed2324c1acd07ef7a0ce5f8c171720a5ef673585bc01677c92af",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r6_t101.json",
+      "bytes": 2896,
+      "sha256": "f431a87d9389f37d09011cdb572d6ac0b449d40b42e1fbf6a22c5a34b0e3c3f8",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/summaries/gp_ucb_shared_init_r7_t101.json",
+      "bytes": 2890,
+      "sha256": "5820f29559e009ac1ab3cabdeb6b085954a1c2d39b772f22a3b681579f267024",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_common_continuation_v1/summaries/gp_ucb_shared_init_r8_t101.json",
+      "bytes": 2225,
+      "sha256": "a76015749aafc378409eb138eba6e0f98fab6ac11234a1cf7fff9eb435595412",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_paired_mesh_recovery_v1/events.jsonl",
+      "bytes": 566891,
+      "sha256": "5c526b95919b6db0cd145bd78dc906f93457e10ac6bf8b0b99de7d45ec88c222",
+      "parsed_records": 1249
+    },
+    {
+      "path": "results/engineering_optimization_paired_mesh_recovery_v1/recovery_plan.json",
+      "bytes": 1445,
+      "sha256": "a16fc81124b1a97ecd2ef18750d676fff4cd707b2a1608459b698e608dfb8e10",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_paired_mesh_recovery_v1/responses.json",
+      "bytes": 341628,
+      "sha256": "d8076558c9abf1ba6cd279320ed7fa2618bbe38617f12a2e0b0ad563d393e9e2",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_paired_mesh_recovery_v1/run_status.json",
+      "bytes": 389,
+      "sha256": "beeb6072b9ea737617686064a64caf8e934f20cc8d4e45145644f4b3b305e65d",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_paired_mesh_v1/events.jsonl",
+      "bytes": 2975,
+      "sha256": "1ceb9f5dc157f0fe29fe7d80d80228309bdae650dff231892d76d88cc6f9a8e7",
+      "parsed_records": 7
+    },
+    {
+      "path": "results/engineering_optimization_paired_mesh_v1/plan.json",
+      "bytes": 100971,
+      "sha256": "bf3f47127a98343c176f2e9167235e13c76980673bd199defb062f4d8f6c6727",
+      "parsed_records": 1
+    },
+    {
+      "path": "results/engineering_optimization_paired_mesh_v1/run_status.json",
+      "bytes": 275,
+      "sha256": "63882a0fc1859f6332eab7014fef312399971f154920a3f905542821b42d2145",
+      "parsed_records": 1
+    }
+  ],
+  "credential_pattern_matches": 0,
+  "interpretation": "Only numerical designs, responses, solver checks, timings, hashes and public provenance; source records are exact selected snapshots from already released experiment records."
+}

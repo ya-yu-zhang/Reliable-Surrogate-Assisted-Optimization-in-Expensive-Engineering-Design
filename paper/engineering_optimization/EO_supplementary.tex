@@ -1,3 +1,4 @@
+% Factual evidence integration v1; scientific author review pending.
 % Built from the evidence-preserving draft using the official publisher class.
 % Author review draft: unresolved affiliations and AI-use review remain.
 \documentclass[suppldata]{interact}
@@ -2113,7 +2114,7 @@ Figure S14 plots condition-specific median incumbent improvement over the pilot 
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
   >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
-\caption{Complete additional FE-attempt boundary for this revision. Historical experiments before the revision are not included.}\tabularnewline
+\caption{Additional FE-attempt boundary of the earlier GP/transfer stages. Later released checks are accounted for separately in Table~\ref{tab:extension_cost}; historical experiments before this revision are not included.}\tabularnewline
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Component
@@ -2195,6 +2196,8 @@ Portfolio GP/selection
 The analyzer validates complete PRE/LABEL pairing,906 physical calls per case,280/626 workflow counts,20 pilot steps and 142 canonical steps per policy, selection before validation, correct seed namespaces, identical initial history hashes, exclusion of pilot labels from every canonical history, exact selected/portfolio trajectory replay, and every endpoint and component-time sum. It makes zero new FE calls. The compact release regenerates deterministic Sobol points and reconstructs each retained source JSONL byte for byte, checked against its SHA256; no objective call is needed to restore or analyze the records. Original full journals remain the source of timing and information-boundary checks.
 
 There are no added p-values, confidence guarantees, retrospective deployment tolerances, claims of cross-domain transfer, or demonstrated production wall-time savings. The two loads strengthen within-family applicability. They do not establish optimizer superiority, a competitive selection advance over warm-starting, or validation of unrestricted5000-variable topology optimization.
+
+\input{integrated_evidence/supp_records.tex}
 
 \Needspace{14\baselineskip}
 \bibliographystyle{tfcad}\bibliography{EO_references}

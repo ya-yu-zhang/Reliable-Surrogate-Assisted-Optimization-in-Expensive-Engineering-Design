@@ -1,0 +1,30 @@
+{
+  "initial_protocol_commit": "72a519e1bbf7e02bee451076f075a96f307ab7f5",
+  "recovery_protocol_commit": "8a278d6ca50ac8746ed02198912f0f5028253e83",
+  "clean_restored_files": 25,
+  "all_archive_hashes_verified": true,
+  "clean_reanalysis_byte_identical": {
+    "analysis.json": {
+      "matched": true,
+      "sha256": "463f8c35e38253e2af8658073b5ea95843d8ce623bf8e554675e64080b50c024"
+    },
+    "paired_contrasts.csv": {
+      "matched": true,
+      "sha256": "bc155a143b27a0eaa871234a702d7d01dd448c2825653eb93631675dca5b7218"
+    },
+    "case_summary.csv": {
+      "matched": true,
+      "sha256": "8f8a64c419fb048b4b0a8fee36510f2b3a5c89e59265d31be6dd37f3a311c2a6"
+    }
+  },
+  "ordered_pre_label_pairs": 624,
+  "density_and_context_replays": 624,
+  "exact_cache_reuses": 107,
+  "original_gate_passed": false,
+  "tolerance_changed": false,
+  "original_missing_response_value_restored": false,
+  "missing_response_remeasured": 1,
+  "physics_calls_for_verification": 0,
+  "local_integrity_tests_passed": 24,
+  "test_scope": "five locally available relevant modules; not a claim about every historical remote test module"
+}
