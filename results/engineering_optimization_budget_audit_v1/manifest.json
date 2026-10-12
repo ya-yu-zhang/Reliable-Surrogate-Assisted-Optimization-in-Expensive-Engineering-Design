@@ -1,0 +1,86 @@
+{
+  "version": 1,
+  "config": {
+    "version": 1,
+    "master_seed": 2026101207,
+    "seed_blocks": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "source_controls": [
+      "ei",
+      "pi",
+      "lcb"
+    ],
+    "first_controls": [
+      "mean",
+      "ei",
+      "pi",
+      "lcb"
+    ],
+    "continuations": [
+      "mean",
+      "ei"
+    ],
+    "warm_start": 50,
+    "training_count": 100,
+    "pool_power": 10,
+    "horizon": 5,
+    "stages": [
+      0,
+      1,
+      3,
+      5
+    ],
+    "audit_budget": 18,
+    "budget_sensitivity": [
+      12,
+      18,
+      24
+    ],
+    "relative_margin": 0.001,
+    "margin_sensitivity": [
+      0.0001,
+      0.001,
+      0.01
+    ],
+    "alpha": 1e-06,
+    "xi_scale": 0.05,
+    "kappa": 2.0,
+    "kernel_fit_maxiter": 30,
+    "calibration_points": 8,
+    "calibration_max_nrmse": 0.25,
+    "calibration_min_coverage": 0.8,
+    "max_physics_attempts": 4000,
+    "mesh_check_points": 6,
+    "out": "results/engineering_optimization_budget_audit_v1"
+  },
+  "frozen_files": {
+    "src/engineering_optimization_budget_audit.py": "82ec687a56057d2417127af8df6f35a31c98f08b9545461f5b4b61cb486c2c9e",
+    "src/budgeted_decision_audit.py": "71b177eb983166f34b383187c9de577c884bb471fa442e865ebf20d7485aacd5",
+    "src/analyze_budget_audit.py": "3a5897613f8b08bc796080ad92ceb44c697de1396e289c745c420ad0c68c77a2",
+    "configs/engineering_optimization_budget_audit.json": "6f4164c897a9ee34095a7aad7de8c566176dfe9951a0789fe75fb65b5ffc417f",
+    "paper/engineering_optimization/BUDGET_AUDIT_PROTOCOL.md": "cfc6e56a25a1acb4a9377e3189cebc6f839eaefee89169c60b3a7b26f5a5aa21",
+    "src/engineering_optimization_common_continuation.py": "3cec230d83f5daa54ce00161cf964692f1f31d4855e14d42a7fcad876363091a",
+    "src/engineering_optimization_gp_audit.py": "1ac090243d9dd268932a239cb0a52ade70f9f5d084b6d9c5ba8246e6139e9810",
+    "src/engineering_beam_adapter.py": "0e73585b3fe6a1350e6c203bdc0526c4c654806f2b9237e2c7766ca0940450a5"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "engibench": "0.2.0",
+    "cvxopt": "1.3.2"
+  },
+  "historical_labels_used": false,
+  "holdout_labels_acquired": false,
+  "validation_mode": "preregistered sequential replay of independently collected oracle trajectories"
+}

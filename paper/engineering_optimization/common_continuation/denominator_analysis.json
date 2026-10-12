@@ -1,0 +1,30 @@
+{
+  "original_named_contrasts": 90,
+  "structural_alias_contrasts": 34,
+  "different_action_named_contrasts": 56,
+  "distinct_nonbaseline_action_contrasts": 46,
+  "named_classification_changes": 8,
+  "distinct_action_classification_changes": 7,
+  "named_delayed_non_ties": 7,
+  "distinct_action_delayed_non_ties": 6,
+  "changed_states": [
+    "gp_ei_shared_init_r1_t101",
+    "gp_ei_shared_init_r4_t101",
+    "gp_ucb_shared_init_r7_t101",
+    "gp_ucb_shared_init_r8_t101"
+  ],
+  "changed_seed_blocks": [
+    1,
+    4,
+    7,
+    8
+  ],
+  "distinct_action_h5_counts": {
+    "tie": 34,
+    "better": 3,
+    "worse": 9
+  },
+  "independent_replication_unit": "ten shared seed blocks; not named or action contrasts",
+  "original_primary_denominator_changed": false,
+  "new_physics_attempts": 0
+}
