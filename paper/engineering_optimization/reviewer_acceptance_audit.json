@@ -1,0 +1,198 @@
+{
+  "audit_date": "2026-10-12",
+  "timezone": "Asia/Shanghai",
+  "reviewed_commit": "813b93b02a5771ac2833a0d2ab652f647603ab0a",
+  "review_type": "Codex-assisted simulated pre-submission peer review; not a journal appointment or editorial decision",
+  "overall_verdict": "not_passed_major_revision",
+  "submission_ready": false,
+  "input_files": [
+    {
+      "path": "configs/engineering_optimization_budget_audit.json",
+      "bytes": 774,
+      "sha256": "6f4164c897a9ee34095a7aad7de8c566176dfe9951a0789fe75fb65b5ffc417f",
+      "git_blob_sha": "a9db879dc9a50a227d4f79b7d47e0fd1b27c3a50"
+    },
+    {
+      "path": "paper/engineering_optimization/EO_manuscript.tex",
+      "bytes": 80830,
+      "sha256": "d5158169b65c008c7bb69d33c777574371cfcc435bb618994ab7a0788e7f7d99",
+      "git_blob_sha": "6507259f64a80955180f58b23c923761e2707caf"
+    },
+    {
+      "path": "paper/engineering_optimization/EO_supplementary.tex",
+      "bytes": 118772,
+      "sha256": "af09b49da736e88ee22c07cdf8914d8d690a1bb99c66a496cefb4b676cf59ccd",
+      "git_blob_sha": "c7663448d5f645474fa097b3da4535c2d45d24a1"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/analysis.json",
+      "bytes": 65061,
+      "sha256": "7a3ee271accf045faa625fa30b1738fc5c99f5f1eebe59b23fca877af9aa44f5",
+      "git_blob_sha": "df748e1a6cda18776769d52e950d34dbcd7d023f"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/classifications.csv",
+      "bytes": 132588,
+      "sha256": "bed8cdf82943252d984fe5352359a0307d9baffb561179ccb588ec0b98e56047",
+      "git_blob_sha": "d6765a13e34d0c7e1777604e637bd2f4d6ec3ed0"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/denominator_analysis.json",
+      "bytes": 791,
+      "sha256": "adfa4e611b2c80bc2d20f9f4e7e08f14df458cfdad3b6fcb6e662681f2ec2f2d",
+      "git_blob_sha": "e0bf2156fadc1d68d4ac5dd96d7fb575d1e1b195"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/main_records.tex",
+      "bytes": 1701,
+      "sha256": "ec8e4f617a579f9e756ffce77e7bcf74fc44a97bc067b24bae8645928c3db0f8",
+      "git_blob_sha": "a01c89e814db370e6ae51abd99b0e6ec9e628543"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/release_validation.json",
+      "bytes": 1099,
+      "sha256": "3e9b36fefa09a3448c459861be9cc1e7a94715547f4e7e314f9e5001297ccdd6",
+      "git_blob_sha": "a26dece119b488c00adf4288b71a25550d574711"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/supp_records.tex",
+      "bytes": 11882,
+      "sha256": "fe5d7e3a8a038a3e34ddc7e081890b952c04dfd96e3ecfcca13cbaedfbaea0e7",
+      "git_blob_sha": "0bf25302a2dfa9c272ab92e3512d2ec549a7ffa9"
+    },
+    {
+      "path": "paper/engineering_optimization/paired_mesh/analysis.json",
+      "bytes": 7745,
+      "sha256": "463f8c35e38253e2af8658073b5ea95843d8ce623bf8e554675e64080b50c024",
+      "git_blob_sha": "cedd1cb160f256423359ab49c4fa6ee9d979dfbd"
+    },
+    {
+      "path": "paper/engineering_optimization/paired_mesh/paired_contrasts.csv",
+      "bytes": 114210,
+      "sha256": "bc155a143b27a0eaa871234a702d7d01dd448c2825653eb93631675dca5b7218",
+      "git_blob_sha": "b7f74583bca8b170228dd0cdc214c61a000f4465"
+    },
+    {
+      "path": "src/analyze_budget_audit.py",
+      "bytes": 16103,
+      "sha256": "3a5897613f8b08bc796080ad92ceb44c697de1396e289c745c420ad0c68c77a2",
+      "git_blob_sha": "35d4b91c9cc677f6d3bf9792083298f0a3ddfc9d"
+    },
+    {
+      "path": "src/budgeted_decision_audit.py",
+      "bytes": 5659,
+      "sha256": "71b177eb983166f34b383187c9de577c884bb471fa442e865ebf20d7485aacd5",
+      "git_blob_sha": "aec6f278357e1819ebd9620983cd04d7fbb75167"
+    },
+    {
+      "path": "src/engineering_optimization_budget_audit.py",
+      "bytes": 14423,
+      "sha256": "82ec687a56057d2417127af8df6f35a31c98f08b9545461f5b4b61cb486c2c9e",
+      "git_blob_sha": "046289af27b90960750e98eb3b6ad2792fa9adc2"
+    }
+  ],
+  "new_physics_attempts": 0,
+  "all_historical_experiments_rerun": false,
+  "current_pdf_compilation_or_render_repeated": false,
+  "relevant_local_tests_rerun": 24,
+  "test_scope": "five locally available relevant unittest modules; no full remote-suite claim",
+  "independent_primary_ground_truth": {
+    "margin": 0.001,
+    "horizon_followup": 5,
+    "budget_per_state": 18,
+    "seed_blocks": 10,
+    "dependent_source_states": 30,
+    "unique_nonbaseline_contrasts_per_continuation": 25,
+    "counts": {
+      "mean": {
+        "better": 0,
+        "tie": 24,
+        "worse": 1
+      },
+      "ei": {
+        "better": 0,
+        "tie": 23,
+        "worse": 2
+      }
+    },
+    "positive_class_present": false,
+    "interpretation": "Absence of false rejection or missed positives does not validate independent positive-case diagnostic ability"
+  },
+  "budget_request_comparison": {
+    "immediate_total_requests": 42,
+    "completed_target_total_requests": 252,
+    "unit": "conservative response requests across 30 states, not paid solver attempts",
+    "adaptive_primary_advantage_demonstrated": false,
+    "budget12_fixed_depth_classified": 17,
+    "budget12_adaptive_classified": 9,
+    "budget12_denominator": 25
+  },
+  "selected_grid_checks": {
+    "different_endpoint_pairs": 8,
+    "same_endpoint_ties": 6,
+    "minimum_absolute_normalized_paired_advantage_percent_across_different_pairs": 7.070632913274398,
+    "normalization": "context-specific initial incumbent compliance",
+    "independent_extra_optimization_samples": 0,
+    "original_strict_source_gate_passed": false,
+    "physical_mesh_convergence_certified": false
+  },
+  "paid_revision_physics_attempts": 55305,
+  "findings": [
+    {
+      "id": "R1",
+      "category": "optimization novelty",
+      "status": "open",
+      "severity": "blocking",
+      "acceptance": "An author-verified executable technical increment against closest prior workflows, with corresponding evidence; neither basic invariants nor bookkeeping alone suffice."
+    },
+    {
+      "id": "R2",
+      "category": "formal method/information contract",
+      "status": "open",
+      "severity": "blocking",
+      "acceptance": "Full conditional-horizon method and state/context/trajectory equivalence contract connected to manuscript algorithm and implementation."
+    },
+    {
+      "id": "R3",
+      "category": "independent diagnostic efficacy",
+      "status": "open",
+      "severity": "blocking_for_general_efficacy_claim",
+      "acceptance": "Disclose zero-positive holdout composition; independently support positive-case/general efficacy claims or explicitly narrow them. No outcome-selected seeds."
+    },
+    {
+      "id": "R4",
+      "category": "budget/fair comparator/value of information",
+      "status": "open",
+      "severity": "major",
+      "acceptance": "Cover cost, coverage, abstention and decision loss under the same target; retain unfavorable fixed-depth/adaptive comparisons and constructed-baseline limits."
+    },
+    {
+      "id": "R5",
+      "category": "engineering numerical applicability",
+      "status": "open",
+      "severity": "major_conditional_on_claim_scope",
+      "acceptance": "Report eight differing pairs and paired-effect ranges; bound claims to fixed discrete problem unless physical accuracy is independently justified."
+    },
+    {
+      "id": "R6",
+      "category": "statistics and scientific integration",
+      "status": "open",
+      "severity": "major",
+      "acceptance": "Use complete seed blocks, preserve named/deduplicated denominators, disclose GP changes and distinguish descriptive evidence from original confirmatory families."
+    },
+    {
+      "id": "R7",
+      "category": "artifact delivery and author approval",
+      "status": "open",
+      "severity": "submission_blocking",
+      "acceptance": "Consistent accessible final sources/data/PDFs and complete author approval, affiliations and truthful assistance declarations."
+    }
+  ],
+  "official_sources": [
+    "https://www.tandfonline.com/journals/geno20/about-this-journal",
+    "https://doi.org/10.1080/0305215X.2025.2450132",
+    "https://doi.org/10.1080/0305215X.2024.2381818",
+    "https://authorservices.taylorandfrancis.com/editorial-policies/using-ai-in-your-research-and-manuscript-preparations/"
+  ],
+  "sources_access_note": "Some direct publisher opens returned403; official indexed text and earlier retrieved official text in this conversation used; journal portal requirements not fully checked."
+}
