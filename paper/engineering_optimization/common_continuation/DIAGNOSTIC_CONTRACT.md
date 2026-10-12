@@ -27,3 +27,21 @@ first-action intervention, exact response equivalence and conditional continuati
 record; authors must assess whether this specific difference constitutes enough
 technical contribution for Engineering Optimization. No absence-of-prior-art,
 blind diagnosis accuracy or universal strategy-selection superiority is certified.
+
+## Additional output contract and denominator accounting
+
+The original90 named contrasts remain the original result. Supplementary exact
+action accounting identifies34 baseline aliases,56 different-action named
+contrasts and46 distinct nonbaseline actions within states. The8 named
+classification changes become7 distinct-action changes;7 delayed non-ties become6.
+All changes occur in4 states within4 seed blocks. These are alternative reporting
+denominators, not additional independent discoveries. See denominator_analysis.json
+and distinct_action_contrasts.csv; equivalence uses the frozen action index/point,
+never the observed utility or its sign.
+
+Operational outputs distinguish exact structural equivalence, measured target
+horizon, proxy prediction, and insufficient evidence. Budget-limited partial
+trajectories abstain. A rule's false promotion/rejection is defined only after a
+common target horizon, margin and deployment interpretation are fixed. A horizon
+classification change alone is not a diagnostic error. The independent budget
+audit protocol and all unfavorable comparisons are published separately.

@@ -1,0 +1,11 @@
+{
+  "status": "post-validation operational recommendation; not a new confirmatory experiment",
+  "validated_protocol_commit": "460657e8c6507fcf41d67a1b8ce9463cfa7622bf",
+  "recommended_completion_mode": "fixed_depth",
+  "adaptive_mode_promoted": false,
+  "reason": "At budget12, fixed-depth classifies17/25 distinct contrasts versus9/25 for adaptive, with zero observed completed-horizon classification errors for both. At budget18 their results and conservative request counts coincide.",
+  "scope": "conditional finite-horizon auditing of the tested discrete beam model; not an optimizer or universal algorithm-selection recommendation",
+  "zero_population_error_claimed": false,
+  "net_deployment_savings_demonstrated": false,
+  "engineering_margin_certified": false
+}

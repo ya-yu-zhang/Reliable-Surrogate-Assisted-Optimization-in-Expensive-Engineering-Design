@@ -15,19 +15,21 @@
     "solver_validation_attempts": 102,
     "retained_transfer_calls": 18120,
     "previous_transfer_calls_lost_journals": 18120,
-    "total_new_fe_attempts_this_revision": 36762,
+    "total_new_fe_attempts_this_revision": 38896,
     "thermal_retained_replay_optimization_attempts": 7200,
     "thermal_current_verification_attempts": 22,
     "thermal_additional_record_recovery_attempts": 1080,
     "thermal_previous_lost_session_attempts": 7586,
     "total_thermal_attempts": 15888,
-    "total_new_physics_solver_attempts_this_revision": 52650,
+    "total_new_physics_solver_attempts_this_revision": 54784,
     "common_continuation_first_execution_fe_attempts": 273,
     "common_continuation_ledger_recovery_fe_attempts": 9,
-    "common_continuation_total_new_fe_attempts": 282
+    "common_continuation_total_new_fe_attempts": 282,
+    "budget_audit_new_physics_attempts": 2134,
+    "budget_audit_failures_or_recoveries": 0
   },
   "validation": {
-    "integrity_tests_passed": 14,
+    "integrity_tests_passed": 20,
     "historical_numeric_table_rows_unchanged": true,
     "reference_count": 38,
     "gp_replay_states": 120,
@@ -64,7 +66,16 @@
     "common_continuation_clean_restoration_files": 96,
     "common_continuation_clean_analysis_byte_identical": true,
     "factual_revision_main_pages": 23,
-    "supplementary_render_identical_pages": 27
+    "supplementary_render_identical_pages": 27,
+    "budget_audit_seed_blocks": 10,
+    "budget_audit_source_states": 30,
+    "budget_audit_ordered_pre_label_pairs": 2912,
+    "budget_audit_source_action_replays": 1500,
+    "budget_audit_diagnostic_prediction_replays": 900,
+    "budget_audit_continuation_action_replays": 550,
+    "budget_audit_endpoint_curve_checks": 110,
+    "budget_audit_lossless_restored_files": 82,
+    "budget_audit_clean_reanalysis_byte_identical": true
   },
   "validation_environment": {
     "python": "3.12",
@@ -80,6 +91,7 @@
   "rendered_pdf_layout_verified": true,
   "submission_ready": false,
   "remaining": [
+    "Authors independently integrate budget-audit evidence; adaptive allocation did not improve primary results and had lower coverage than fixed-depth at budget12",
     "Authors independently assess and integrate common-continuation results; median superiority is not established",
     "Authors independently assess novelty and integrate the thermal evidence; the tested gate did not demonstrate superiority",
     "Confirm affiliations 2 and 3 and obtain all authors final approval",
@@ -93,7 +105,10 @@
     "No new convergence or coverage guarantee",
     "Editorial assessment determines novelty sufficiency and acceptance",
     "Small authored thermal model extends physical breadth, not industrial expense or superior algorithm selection",
-    "Conditional first-action contrasts under one declared continuation; nested states are not independent new cases"
+    "Conditional first-action contrasts under one declared continuation; nested states are not independent new cases",
+    "Budget audit uses ten new seed blocks with dependent source states; offline replay is not live deployment",
+    "0.1% numerical decision margin has no certified physical accuracy support; observed two-resolution differences reach24.63%",
+    "No adaptive budget-allocation advantage or deployment savings demonstrated"
   ],
   "stage5": "completed: official publisher Interact-CAD source formatting, copyediting, PDF compilation and all-page visual review",
   "ai_detector": {
@@ -106,5 +121,8 @@
   "stage6": "completed thermal equal-budget numerical verification and reachable raw-data release; author scientific integration remains pending",
   "thermal_method_benefit_demonstrated": false,
   "stage7": "completed frozen first-action/common-continuation evidence; factual prior-work correction; author interpretation/integration pending",
-  "common_continuation_protocol_commit": "6b0b514ba0753350d15b29faaa2a50344c4fc467"
+  "common_continuation_protocol_commit": "6b0b514ba0753350d15b29faaa2a50344c4fc467",
+  "stage8": "completed: frozen budget-audit module, ten independent seed blocks, two continuations, complete unfavorable results and full cost disclosure; author integration pending",
+  "budget_audit_protocol_commit": "460657e8c6507fcf41d67a1b8ce9463cfa7622bf",
+  "budget_audit_adaptive_advantage_demonstrated": false
 }

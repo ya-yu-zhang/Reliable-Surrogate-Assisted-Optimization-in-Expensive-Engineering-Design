@@ -1,0 +1,50 @@
+{
+  "total_new_physics_attempts": 2134,
+  "paid_by_phase": {
+    "warm": 500,
+    "source": 1047,
+    "calibration": 240,
+    "oracle": 335,
+    "numerical_repeat": 6,
+    "mesh_sensitivity": 6
+  },
+  "requests_by_phase": {
+    "warm": 500,
+    "source": 1500,
+    "calibration": 240,
+    "oracle": 660,
+    "numerical_repeat": 6,
+    "mesh_sensitivity": 6
+  },
+  "response_origins": {
+    "new_physics_attempt": 2134,
+    "exact_paid_response_cache": 778
+  },
+  "retained_fe_seconds_by_phase": {
+    "warm": 14.343250396002986,
+    "source": 26.150381708011082,
+    "calibration": 6.0730426059963065,
+    "oracle": 8.392925502997059,
+    "numerical_repeat": 0.1653959239993128,
+    "mesh_sensitivity": 2.9748201980000886
+  },
+  "continuation_gp_seconds": 3.528666676994362,
+  "total_revision_physics_attempts_before_this_stage": 52650,
+  "total_revision_physics_attempts_including_this_stage": 54784,
+  "failed_or_recovery_attempts": 0,
+  "new_independent_seed_blocks": 10,
+  "states": 30,
+  "different_training_histories": 23,
+  "action_class_count_distribution": {
+    "1": 13,
+    "3": 8,
+    "2": 9
+  },
+  "states_with_nonbaseline_actions": 17,
+  "distinct_first_action_classes": 55,
+  "distinct_nonbaseline_action_contrasts_per_continuation": 25,
+  "no_deployment_net_savings_claim": true,
+  "source_and_calibration_gp_runtime_original": "not separately recorded; no complete original end-to-end runtime claim",
+  "warm_kernel_optimization_runtime_original": "not separately recorded",
+  "full_physical_attempt_accounting": true
+}

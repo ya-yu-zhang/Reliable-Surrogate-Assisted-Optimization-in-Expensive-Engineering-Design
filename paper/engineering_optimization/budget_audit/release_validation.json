@@ -1,0 +1,20 @@
+{
+  "clean_restored_raw_files": 82,
+  "raw_hashes_verified": true,
+  "clean_reanalysis_byte_identical": {
+    "analysis.json": true,
+    "primary_traces.json": true,
+    "mesh_checks.json": true,
+    "classifications.csv": true,
+    "sensitivity.csv": true,
+    "seed_block_results.csv": true,
+    "selections.csv": true
+  },
+  "tests_passed": 20,
+  "physics_calls_for_verification": 0,
+  "frozen_code_and_config_unchanged": true,
+  "main_and_supplement_pdfs_changed": false,
+  "verification_mode": "all source predictions and shared continuation decisions replayed twice in separate directories; no solver replay",
+  "clean_restored_files_total": 83,
+  "derived_trace_files": 1
+}

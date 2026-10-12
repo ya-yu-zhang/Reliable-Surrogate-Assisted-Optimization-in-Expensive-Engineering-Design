@@ -102,6 +102,20 @@ Representative experiment entry points are:
 The complete workflow, environment separation, output accounting, and
 large-result handling are described in `docs/REPRODUCIBILITY.md`.
 
+## Independent budget-audit validation
+
+The frozen protocol, code and configuration were published at commit
+`460657e8c6507fcf41d67a1b8ce9463cfa7622bf` before collecting new labels. Ten new
+seed blocks provide30 dependent source states and two common continuation rules.
+The full2134 new physics attempts, unfavorable allocation comparisons, uncertainty
+and numerical limitations are retained. Primary adaptive allocation did not improve
+over fixed allocation; at budget12 it classified fewer contrasts than fixed depth.
+
+See `paper/engineering_optimization/budget_audit/README.md` for restoration and
+verification, and `EVIDENCE.md` in the same directory for measured results.
+This is an author-review evidence extension. It does not certify novelty, optimizer
+superiority, physical accuracy of the illustrative margin, or submission readiness.
+
 ## Citation
 
 The final bibliographic record will be added after publication. Until then,

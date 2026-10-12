@@ -1,0 +1,439 @@
+{
+  "reviewed_archive_files": 83,
+  "file_kinds": {
+    "generated_numerical_frozen_state": 30,
+    "generated_finite_element_response_and_gp_state": 30,
+    "configuration_hash_version_and_cost_metadata": 12,
+    "solver_prediction_response_journal": 10,
+    "derived_prefix_audit_trace": 1
+  },
+  "all_files_generated_in_this_session": true,
+  "historical_user_materials_included": false,
+  "numerical_problem": "public EngiBench0.2.0 Beams2D, random Sobol19-variable design, default public benchmark context",
+  "data_source": "installed finite-element solver and Gaussian-process computations; no private measured engineering dataset",
+  "new_physics_attempts": 2134,
+  "every_prediction_point_checked_in_unit_cube": true,
+  "all_archive_file_bytes_match_generated_sources": true,
+  "credential_private_key_email_scan": "no matches",
+  "long_string_content_allowlist_passed": true,
+  "metadata_types": "public repository commit/file hashes, package versions, seeds, counts and numerical library warnings",
+  "approved_destination": "user explicitly selected ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design and authorized staged project updates/pushes",
+  "untrusted_text_executed": false,
+  "files": [
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_10/beam_holdout_r10_ei_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "002549e5d1376b6bf322670c3718a023b95255659661c0db94fffbc0af072c5a"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_10/beam_holdout_r10_ei_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "3ae846c9559926edbb45204c6644527724241eb82a50f89d95c3023db521ba77"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_10/beam_holdout_r10_lcb_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "0533bce987cb43790b9cd3c10f7dcbdd1fbd3c1109a4cee901d9e8a4d952f643"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_10/beam_holdout_r10_lcb_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "5bdd42cd6b1465249f0e7409c0eb51443e78535255f32a7bf2b9205523f6c24d"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_10/beam_holdout_r10_pi_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "6db3059da75cfdd800b6668f45bb185db4709c12b3bf6b2a0692f2ffcc600df1"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_10/beam_holdout_r10_pi_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "f12ec53e8ca1131675f3b0e1ba68b2fa4d2e2dc4ec5ecec8ec5f74837ac72a09"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_10/complete.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "1a5b5ea210cfa0301f6efa62f1c9191e665eedbbe42792c8fc36253c969c6112"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_10/events.jsonl",
+      "kind": "solver_prediction_response_journal",
+      "sha256": "8faa1e0ab3a2185eeb9cd601290f6f6a59fd3f1760e1f2141377f002f19a7705"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_11/beam_holdout_r11_ei_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "412afd882864eb13eb151254155f47f7b3f150f2b530ac702ace10c64b8a551b"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_11/beam_holdout_r11_ei_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "803a89ec8fd82bb9cfd3d8379a41284214accdbabff0e9bde87d9ed239338a18"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_11/beam_holdout_r11_lcb_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "9e9d96dbaae2a2f39eec4c4139798b7039a6466ca47285a74dae28d1fdd076d1"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_11/beam_holdout_r11_lcb_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "6a1a2d450bbdd432c4ae345685b865518bd28772fcf2f23bbd60c67f562cd684"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_11/beam_holdout_r11_pi_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "d5b11fa3395c0587a6fd2a26a1ddeeb9d070b729d7bbb25ec9ce56a53705a5b7"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_11/beam_holdout_r11_pi_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "bcc59d62eb3054dd2cf04cb759ef8d55e0d55eaa3a3d85cff5a956f1ae90735c"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_11/complete.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "8b2d448e0b00c94e92d91b452fc6dc8d3ed45faf329ecf4204612eed930fb64b"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_11/events.jsonl",
+      "kind": "solver_prediction_response_journal",
+      "sha256": "7890b48f1e896ee4636d5d74dce393f606281d6449af649efdb9b1db94d85afc"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_12/beam_holdout_r12_ei_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "bd44b7c03a7f3688ecc10253dbdd1f7b605f243daeaedae259ae401b62eb6bde"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_12/beam_holdout_r12_ei_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "027cbcc8c21e576fc0c072db0c4986e2a0a244e2b8f4578a7aa4f03932a85e16"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_12/beam_holdout_r12_lcb_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "f072a8b04de14ff1736d1ce297d8459a5ac9871658f80bff74b204047ad1f710"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_12/beam_holdout_r12_lcb_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "9e32aa8b64355ffbfe72e06828f99495ef9863d61c8ac6d27e31358ec1699f0a"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_12/beam_holdout_r12_pi_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "1625ac16dc6e1b9b5717c777a6c0c01a3687a314ace67c11a03da9cedd2f1128"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_12/beam_holdout_r12_pi_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "6231451ada3359a6cd0df5110ded29f049ef5f95b10ebc44d23439a70b3500a4"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_12/complete.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "a63442aed6a6b4b41dbc619cbe6f5a587189a413b382a22d5306f1a4dfee9867"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_12/events.jsonl",
+      "kind": "solver_prediction_response_journal",
+      "sha256": "416a503d981b7ba9b56b90cdcf1dfd5e695e7ea53eac0a97b540694d6e549c90"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_13/beam_holdout_r13_ei_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "f5dc70c91bb87e557835eb8be5205b3e96cbb7d4c9dcb7ea1feeff95949c4d69"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_13/beam_holdout_r13_ei_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "99951d29c42c3ef24f9202129ab74545a4b12f638852ecbf397890ff6db245f0"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_13/beam_holdout_r13_lcb_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "84b12a9d0e09d263c3b7c01dc0c3f551e3804b017a8b29fd3ba6c959bc1761d2"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_13/beam_holdout_r13_lcb_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "6dd0fd42b5406be144eec0519fb828c13ecf4275d929dba79c4e35e68f72b328"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_13/beam_holdout_r13_pi_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "ace3fba91a56461263b0ce5457a3e4cad1333e91bdb97cf7f539013d56e310da"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_13/beam_holdout_r13_pi_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "aa68a0bf380dab066a35784199323c16340cd411ec47e47b9005d1b756dd0f6e"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_13/complete.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "b8271108013e6e3ab5809114948f210ba97eb22761f37c7a6b15467cb84b5623"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_13/events.jsonl",
+      "kind": "solver_prediction_response_journal",
+      "sha256": "8efe76c3356346684c9d9972c445d43ca24237712bef64f9562808fa500a7445"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_14/beam_holdout_r14_ei_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "a970671420f729de93ebdb73d6dd2aad0a253376716879ceed49559fb97bdf82"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_14/beam_holdout_r14_ei_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "c02903f09421a2d38066318c98ad14bd4ddee8d4ef59b0b8d57992c1008d9f88"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_14/beam_holdout_r14_lcb_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "01be0f025b0b6c18c8410f1b85c77514ef6276285a12643e7178a4fa2ecd7f69"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_14/beam_holdout_r14_lcb_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "a6abce34019b7b7a0b274f5526e1da03478f206b74c169f44d85fbae74d73791"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_14/beam_holdout_r14_pi_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "17473e031709b9fb10e243d8177974e8f07a3b601d3b2d91ad0c10a1bf2ad8b6"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_14/beam_holdout_r14_pi_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "7dec7dcc7cc4e729f00129d64926afcd1d2b9d1f2c44a3f986e07997ca2e315a"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_14/complete.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "56a8cb2fcf624f79affac0a604928d1267dbf26ff7571b2269b19616f97bd6cb"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_14/events.jsonl",
+      "kind": "solver_prediction_response_journal",
+      "sha256": "a504b5dc82b075eee727235700adf26531c01231bcfa24815319a0cab62e2969"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_15/beam_holdout_r15_ei_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "d5593990eb62726c089f311a36c76e408ada0c6a30647d04ebc780f4ed46254a"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_15/beam_holdout_r15_ei_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "6068c4ad81ef49d4b589e512d7e34a3d42265176246912a37b9b55a90222b41f"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_15/beam_holdout_r15_lcb_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "1c4c63bd22aed724a5f670db3700fca9e6f80dfaa12bf429b2ab00f9eee3f2b0"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_15/beam_holdout_r15_lcb_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "cc840272737137491ddac46b365d9d732f1db222cbd5672deb42a58524c7ed53"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_15/beam_holdout_r15_pi_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "2f5b99ca571070b4f773d54d4a413425c03ee0b17b2be8ea1f1a73db0952afae"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_15/beam_holdout_r15_pi_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "c7e88dcfe74d7216ae3ce862d0973805f465c686f5201e8f9050f5e664a547d4"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_15/complete.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "fc8dc84c8463956308461b9030d5eae493737758bdb52e8dff3b619cad0af1dc"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_15/events.jsonl",
+      "kind": "solver_prediction_response_journal",
+      "sha256": "94c208c53cb12790fb95c4ae776bc177b6239d7c12fc576f27601762a0712614"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_16/beam_holdout_r16_ei_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "da5166c0afd38d1132000696dd53259c25e166a598473ec86a985eeeaee3cc57"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_16/beam_holdout_r16_ei_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "bb993c2bc3b27fb66f57f91fed42023a63a64ec3881d7752d90fd49f8d5fe062"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_16/beam_holdout_r16_lcb_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "2ceaee0fb9faa57550223c272505892b14130102ed1553ef21161bbca765dd57"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_16/beam_holdout_r16_lcb_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "199d68fcb6aee646561340d3c1467b8675f4341be7ac3af78b3e859eeb998763"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_16/beam_holdout_r16_pi_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "2cbfd9e9d4bd2ca26542fda9f9ed96a4c6bf758d97fdc953a3c70fccd06492f7"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_16/beam_holdout_r16_pi_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "ebf462ada20537abe6754fdd0ea570057f70eaf885ee701875794413f450ba27"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_16/complete.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "4b2fa33121ce7ae5450c800faed7a2d7ac3d2e267ec51a5f065c24c8051a41df"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_16/events.jsonl",
+      "kind": "solver_prediction_response_journal",
+      "sha256": "e2874311330f70d960ab30e39f2ba866035e56ef02b2a09a25062bd263af2918"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_17/beam_holdout_r17_ei_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "5ec7f861672c4bc7cf9cd9201055944c624edf9c46c4f974d91cf44ad50dc59a"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_17/beam_holdout_r17_ei_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "d48d410713523d03f8fb6b2fc3087a3e1c82dd674bb6fa2b857451ef94168908"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_17/beam_holdout_r17_lcb_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "e924c353176c6cc53229b2af33c96118bf4701178297b4990aa5b80d1f0345a2"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_17/beam_holdout_r17_lcb_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "390eff630dd2c15fd1e3ff00d701ce8fa2efccc5a271b74afa84ad3f68045782"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_17/beam_holdout_r17_pi_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "24f8f6e566980695011f1f129fa68c76dbef0e32ddc959edbb86532952fcde27"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_17/beam_holdout_r17_pi_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "7171f01c9b85b0aa6aeb72f4b2a867cc8cf52a1c832f0f42717fd1a8a12f5cce"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_17/complete.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "ea7c17f421b43dc6af7bc79e957ee219f762046b28da087261f69d9d2938f239"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_17/events.jsonl",
+      "kind": "solver_prediction_response_journal",
+      "sha256": "10a984dbf5f73990c7b062936798b82fd32d81020a378a39bf0e6782e6bcb316"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_ei_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "22f9127158dc0b53de637eac6da1ad0240e6f6becde35d3fbeb07075ddc8e651"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_ei_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "82ca08362e7e3793d915395702fec8539d19140751c2d61a2fdea0616977fb2c"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_lcb_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "7e50b48d99f865138d090aad7393b1fbcbf93aaccd7dec290794e65248481a5a"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_lcb_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "1a1b7455689e5df12f6bdebc0f31db5ccd3bc935234d401f787cf10cda0c15ef"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_pi_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "4a2ed7dfbaa8e69f166733227ecdb905134b5a4e688fbbe0914b8d803468a454"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_pi_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "037113a17119e5afa8675196dee39328853e633aa921dbe65f2e3e9340027e3e"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_18/complete.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "b54fdddc601502b7e7a5584ce138184e8851fdecd9ad9ce07879bfb99af9f38e"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_18/events.jsonl",
+      "kind": "solver_prediction_response_journal",
+      "sha256": "20b0756fb5924f91b46f1e3a457991e73772ffe61098d86cd5cab8cdde831d09"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_19/beam_holdout_r19_ei_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "52043af973ab3b80b9dde525f663433bda824e2fb44f6bb23655000f24ebfbc3"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_19/beam_holdout_r19_ei_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "1b838b9992937ffc68cfc0d70af4b20d9508a6e65e362d1fb050ab58c61ffcc4"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_19/beam_holdout_r19_lcb_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "5c1666529c8239127a3e6682fd34f6424fa665c0cbfe19151dafb403b886a742"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_19/beam_holdout_r19_lcb_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "cf276065f4987fb462723fc166f3a75abac9ec5ac3d64209897be5f996b20b6e"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_19/beam_holdout_r19_pi_plan.json",
+      "kind": "generated_numerical_frozen_state",
+      "sha256": "137ccb1b7c5c63c6bd687ff8de8a146d69b1c871265f1ae8d4d5048ab78dbaf4"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_19/beam_holdout_r19_pi_summary.json",
+      "kind": "generated_finite_element_response_and_gp_state",
+      "sha256": "6b4ee20304790c21d2949cb1a90f15f0900623b6b33c7f839e12839b87bf2027"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_19/complete.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "f4fd9330692be7f1a8862eea152d642279ef23518ac644e927827c9849063082"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/block_19/events.jsonl",
+      "kind": "solver_prediction_response_journal",
+      "sha256": "098f589c64903b2586ee55871226315ba600c69a830bfa985089d90af00e90d0"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/manifest.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "7fa52e403789b93371299c1a19e046c4c15fe0784738853e03e83435c56c40ab"
+    },
+    {
+      "path": "results/engineering_optimization_budget_audit_v1/run_status.json",
+      "kind": "configuration_hash_version_and_cost_metadata",
+      "sha256": "929d5643926a1f7b879ff9dfd7dbc267f2d513786d4f70b04769b124f8b4e121"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/primary_traces.json",
+      "kind": "derived_prefix_audit_trace",
+      "sha256": "a40da90b1bacc36e396e5c40410317dbcf26d9840cce1d9ae2579ba1745fc693"
+    }
+  ]
+}
