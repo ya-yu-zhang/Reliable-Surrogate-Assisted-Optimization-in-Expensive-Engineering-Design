@@ -1,47 +1,24 @@
 {
   "documents": {
     "manuscript": {
-      "sha256": "88cc7da728a1ccdbdbc462c4b9a7b05dd51f7498aaa7bd88945c968aca37930b",
-      "pages": 23,
-      "overfull_warnings": [
-        "Overfull \\vbox (2.08887pt too high) has occurred while \\output is active []"
-      ],
+      "sha256": "26544715fd3ba3ef830df1663609b32e932f6a8761cbeed1b052ee8b4137b13a",
+      "pages": 26,
+      "overfull_warnings": [],
       "unresolved_citations_or_references": false
     },
     "supplementary": {
-      "sha256": "1d96cd779822964928073dbc4bc3b3b96ad513219285985944aaca385d6b29e0",
-      "pages": 27,
+      "sha256": "256df50efe824aaff11140bc82291a9076cad9b6f364918285e09129dc9fe8e1",
+      "pages": 31,
       "overfull_warnings": [],
-      "unresolved_citations_or_references": false,
-      "unchanged_previously_reviewed_pdf_reused": true
+      "unresolved_citations_or_references": false
     }
   },
   "pdf_compiled": true,
   "layout_verified": true,
   "source_hashes": {
-    "EO_manuscript.tex": "a66afdb5e03af91edb4740ac178f4aff81bfde8f251667764442aecf4bc4a933",
-    "EO_supplementary.tex": "c5548aa248fbfb5910f0f7c7b179f3be2f523d57b2996e5aee3f4f9d5e11f3ac",
+    "EO_manuscript.tex": "416671d36a37d00ef2d0a0b4cbb6654d1f6d0ca599b059b61573802e11cae2db",
+    "EO_supplementary.tex": "71b8a09dc13c9e814799bbed74331d2d5eb2e07eb5f97df364a465f0bf885496",
     "EO_references.bib": "efad9f03f4c2d22031661670fff2e4e43d4f2b9c357d367be2a77ced9e0ba89d"
   },
-  "visual_review": {
-    "renderer": "PDFium",
-    "main_pages_reviewed": 23,
-    "changed_main_pages": [
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16
-    ],
-    "supplementary_pages_render_identical_to_previously_reviewed": 27,
-    "blocking_layout_defects": false,
-    "title_box_warning_preexisting": true
-  }
+  "review_revision": "post-review factual revision; independent author approval pending"
 }

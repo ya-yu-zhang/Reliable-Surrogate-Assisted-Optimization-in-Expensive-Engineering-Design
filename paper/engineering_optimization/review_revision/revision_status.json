@@ -1,0 +1,46 @@
+{
+  "baseline_commit": "cfc2b94fa26a9cfdc6b1bcd2996d64da4e620222",
+  "factual_revision_completed": true,
+  "simulated_acceptance_passed": false,
+  "submission_ready": false,
+  "issues": [
+    {
+      "id": "R1",
+      "status": "open_author_novelty_assessment",
+      "implemented": "operational object and capacity/evidence checklist",
+      "remaining": "author closest-work and scientific increment judgment"
+    },
+    {
+      "id": "R2",
+      "status": "factual_mapping_implemented_author_review_pending",
+      "implemented": "existing steps/target/alias/request definitions and code-to-method table"
+    },
+    {
+      "id": "R3",
+      "status": "claims_narrowed_positive_efficacy_unvalidated",
+      "implemented": "no-positive truth composition in abstract/main/conclusion; no universal false-rejection claim"
+    },
+    {
+      "id": "R4",
+      "status": "descriptive_capacity_order_cost_analysis_complete",
+      "implemented": "all36 original cells match, exhaustive alternative orders and statewise new-point counts",
+      "remaining": "no adaptive or deployment advantage established"
+    },
+    {
+      "id": "R5",
+      "status": "selected_fixed_design_ranges_reported",
+      "remaining": "physical convergence and engineering margin not certified"
+    },
+    {
+      "id": "R6",
+      "status": "seed_and_denominator_disclosure_implemented",
+      "implemented": "all10 blocks retained, six have nonbaseline comparisons; original families unexpanded",
+      "remaining": "author final scientific integration"
+    },
+    {
+      "id": "R7",
+      "status": "open_author_and_publication_approval",
+      "remaining": "affiliations/author statements/approval/policy and exact blocked public raw/PDF disclosure"
+    }
+  ]
+}

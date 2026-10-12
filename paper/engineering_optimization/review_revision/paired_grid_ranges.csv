@@ -1,0 +1,15 @@
+case,state,control,group,contexts,different_endpoints,original_class,all_classes_stable,min_relative_advantage_percent,max_relative_advantage_percent,decision_margin_percent
+S01,gp_ei_shared_init_r1_t101,ei,changed,6,True,better,True,53.6937030419822,54.43242079723678,9.999999999999999e-05
+S02,gp_ei_shared_init_r1_t101,pi,changed,6,True,better,True,12.444999521139867,13.599427759241983,9.999999999999999e-05
+S03,gp_ei_shared_init_r4_t101,pi,changed,6,True,worse,True,-8.539684228114803,-7.070632913274398,9.999999999999999e-05
+S04,gp_ucb_shared_init_r7_t101,ei,changed,6,True,worse,True,-13.61156734770877,-11.846452754315047,9.999999999999999e-05
+S05,gp_ucb_shared_init_r7_t101,pi,changed,6,True,worse,True,-15.624829113738665,-14.449711274688903,9.999999999999999e-05
+S06,gp_ucb_shared_init_r7_t101,lcb,changed,6,True,worse,True,-26.518907118229016,-25.825331707312753,9.999999999999999e-05
+S07,gp_ucb_shared_init_r8_t101,lcb,changed,6,True,better,True,20.904038909437254,23.827475466980065,9.999999999999999e-05
+S08,beam_holdout_r18_pi,ei,independent_proxy_mismatch,6,True,worse,True,-10.588210266144655,-8.329961551308122,0.1
+S09,gp_ei_shared_init_r0_t101,ei,unchanged_different_action,6,False,tie,True,0.0,0.0,9.999999999999999e-05
+S10,gp_ei_shared_init_r5_t101,lcb,unchanged_different_action,6,False,tie,True,0.0,0.0,9.999999999999999e-05
+S11,gp_ei_shared_init_r6_t101,ei,unchanged_different_action,6,False,tie,True,0.0,0.0,9.999999999999999e-05
+S12,gp_ei_shared_init_r6_t101,lcb,unchanged_different_action,6,False,tie,True,0.0,0.0,9.999999999999999e-05
+S13,gp_ei_shared_init_r0_t101,pi,structural_alias,6,False,tie,True,0.0,0.0,9.999999999999999e-05
+S14,gp_ei_shared_init_r2_t101,ei,structural_alias,6,False,tie,True,0.0,0.0,9.999999999999999e-05

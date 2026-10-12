@@ -1,0 +1,872 @@
+{
+  "type": "derived author-review snapshot of repository-backed items, not submission-ready",
+  "review_baseline": "cfc2b94fa26a9cfdc6b1bcd2996d64da4e620222",
+  "zip_name": "EO_post_review_revision.zip",
+  "zip_bytes": 4219325,
+  "zip_sha256": "c0839c901679276b50e9200f7a1b1a37a1d5667f605b2d133becce2166957703",
+  "all_member_hashes_and_crc_verified": true,
+  "public_binary_archive_upload_not_attempted": true,
+  "submission_ready": false,
+  "members": [
+    {
+      "path": "configs/engineering_optimization_audit_recommendation.json",
+      "bytes": 772,
+      "sha256": "1f3f620d6bbba7f7d4b7572a6f279c32fb7e7ebf942ad335e9eb3f28075edb22"
+    },
+    {
+      "path": "configs/engineering_optimization_budget_audit.json",
+      "bytes": 774,
+      "sha256": "6f4164c897a9ee34095a7aad7de8c566176dfe9951a0789fe75fb65b5ffc417f"
+    },
+    {
+      "path": "configs/engineering_optimization_common_continuation.json",
+      "bytes": 584,
+      "sha256": "57e53d420276f13c0b83f4794a98c4a650e69d1432d59605b574c44cc0f94b73"
+    },
+    {
+      "path": "configs/engineering_optimization_gp_audit.json",
+      "bytes": 723,
+      "sha256": "1ac1023c8125d911dd060cc7c977eccfaeef60cf75b7f73c65f293fd6418bc0e"
+    },
+    {
+      "path": "configs/engineering_optimization_paired_mesh.json",
+      "bytes": 615,
+      "sha256": "998a63f50dd57d35abef358d629bce5304b072df789ea719dffbf0fa3653d277"
+    },
+    {
+      "path": "configs/engineering_optimization_thermal.json",
+      "bytes": 532,
+      "sha256": "bfeb1362a1ac19b3cdb89fd8a0a9d4f94d81367636b31135928470e1b1a2d0b9"
+    },
+    {
+      "path": "configs/engineering_optimization_transfer.json",
+      "bytes": 610,
+      "sha256": "39293d4b04b233a48a7bf8afad42d8f2516eec21edb22a3a5abcae3b0057e8a5"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/manifest.json",
+      "bytes": 21497,
+      "sha256": "1a4723e59f8f1d1a7c10e90ef591dcdc544e354d5e166fcad60d2357d514b01d"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-000.b85",
+      "bytes": 96000,
+      "sha256": "654fb7136cd0553a2e3d443bd18232fa363f1d5183b0d1370d30e37de435045f"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-001.b85",
+      "bytes": 96000,
+      "sha256": "79d2a056a1efb38e5d62f8b0c2b2ac5c392c57f31d0cb8ca370698925674b066"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-002.b85",
+      "bytes": 96000,
+      "sha256": "34b689c480ef116f7fab7a77e5219b3ea843f1e2102d0119d7a2519ec80f590b"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-003.b85",
+      "bytes": 96000,
+      "sha256": "be687b27ae6fe535a8766363cf74d61d387fca8e23f415e9ac3017e715d41715"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-004.b85",
+      "bytes": 96000,
+      "sha256": "c19a15966bb4ffd49b36458f5f42e14f46b52626eba7e1e1f559ae6e55523f96"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-005.b85",
+      "bytes": 96000,
+      "sha256": "5adb03daa492b8a92c18e2b3f2dc762425c1f81e2f1cd4b672cd6fd117d4e1b8"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-006.b85",
+      "bytes": 96000,
+      "sha256": "4454c0d9f67460fa98cdd523566f480793db1cd569e5a9fb905eba145ec4e098"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-007.b85",
+      "bytes": 96000,
+      "sha256": "58e79f1e84db4ca03ce840b9561201cdfddd47d34268086904de595a1954e329"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-008.b85",
+      "bytes": 96000,
+      "sha256": "9d89e83ebf14504be37aa4bb1d08ebf8d55cc70400aff29cabd700d3c6f5d4f8"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-009.b85",
+      "bytes": 96000,
+      "sha256": "c3c9d7abd85fc55cd7d115b89ce4875bc42bebceaaf5373cd5cd6b570ce2fae4"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-010.b85",
+      "bytes": 96000,
+      "sha256": "569be1c4b5df3e20ab549d23cf75d851305efcb0dcd18199e2fc18b71258cb19"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-011.b85",
+      "bytes": 96000,
+      "sha256": "b05f3985c7784c011190ac4e61265bda3da09e044d499cb971bcf68c809f5ba2"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-012.b85",
+      "bytes": 96000,
+      "sha256": "c697d0df2e990beca2487abd69dafec69a249d4e447db368618b1959b9645dba"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-013.b85",
+      "bytes": 96000,
+      "sha256": "436a8fd85ef18e33c5ca1b26ade4da4b82f5c5d8d00043570e39e7239e905b7f"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-014.b85",
+      "bytes": 96000,
+      "sha256": "e8925e59df7a81f4e337362f8d149d54003af21507d90a6b2d3ac78dadf8366c"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-015.b85",
+      "bytes": 96000,
+      "sha256": "f304655e31a0f212cc03e515701d5039ae54858c5c41651cb0d32a6feeb258de"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-016.b85",
+      "bytes": 96000,
+      "sha256": "9528c27776868c34fe7e145a3d38bf86920c860b207d81e7b1cbc3e21e898aad"
+    },
+    {
+      "path": "data/engineering_optimization_budget_audit_v1/segments-017.b85",
+      "bytes": 60920,
+      "sha256": "8846e6ec111684e07621cfb84a7bb75a390f8a394cb6d008f2265e1905437774"
+    },
+    {
+      "path": "data/engineering_optimization_paired_mesh_v1/manifest.json",
+      "bytes": 7158,
+      "sha256": "543698e51e78ed9397e9ad22a2d212683e864530134e2e9d4abf6f343b1dded8"
+    },
+    {
+      "path": "data/engineering_optimization_paired_mesh_v1/segments-000.b85",
+      "bytes": 96000,
+      "sha256": "1884d36b6b06511bca31ce286466baa42194bc16128e42be44b584d2e3ced6da"
+    },
+    {
+      "path": "data/engineering_optimization_paired_mesh_v1/segments-001.b85",
+      "bytes": 96000,
+      "sha256": "c0c402738cca3fff1a12641db8ccb53244f6336abb91589385669727759ac867"
+    },
+    {
+      "path": "data/engineering_optimization_paired_mesh_v1/segments-002.b85",
+      "bytes": 96000,
+      "sha256": "6b7aa73d364a131635c9075387a9d32e2ea5898599895ff2ca6b307e8fd4c5c4"
+    },
+    {
+      "path": "data/engineering_optimization_paired_mesh_v1/segments-003.b85",
+      "bytes": 96000,
+      "sha256": "512c16126c8c0b9d972a4598afbad26c893bd24bc40403741477caad378f9f48"
+    },
+    {
+      "path": "data/engineering_optimization_paired_mesh_v1/segments-004.b85",
+      "bytes": 96000,
+      "sha256": "838f88fc83d07ae8b5c9f0c0f158ff6e031b9356030df8a9ec08dce3e0aeece1"
+    },
+    {
+      "path": "data/engineering_optimization_paired_mesh_v1/segments-005.b85",
+      "bytes": 63695,
+      "sha256": "5700ceace075473c1a43b78340ddc8f3ea8613658dcf3a1f98a0cf1d8dae6c89"
+    },
+    {
+      "path": "paper/engineering_optimization/BUDGET_AUDIT_PROTOCOL.md",
+      "bytes": 7990,
+      "sha256": "cfc6e56a25a1acb4a9377e3189cebc6f839eaefee89169c60b3a7b26f5a5aa21"
+    },
+    {
+      "path": "paper/engineering_optimization/COMMON_CONTINUATION_CACHE_RECOVERY.md",
+      "bytes": 973,
+      "sha256": "5516f7525964e837b0583f03b86d68b416dc9cbf126f35338ce517352d3d2939"
+    },
+    {
+      "path": "paper/engineering_optimization/COMMON_CONTINUATION_PROTOCOL.md",
+      "bytes": 4686,
+      "sha256": "fcc132d9d7105d9c0968b3ed32183c47a10e2e6db02cbc13e55b8897c7f5c768"
+    },
+    {
+      "path": "paper/engineering_optimization/COMMON_CONTINUATION_RECOVERY_PLAN.md",
+      "bytes": 956,
+      "sha256": "baf92eaa7d8d5ca071bb34dbde0dcc66d0a2a3be24b174d1a2e22aa4a10e4d2e"
+    },
+    {
+      "path": "paper/engineering_optimization/CONTRIBUTION_EVIDENCE_MATRIX.md",
+      "bytes": 7142,
+      "sha256": "6e94e650405e56ac500335eb8cceeff2739e640a4927af7ee47cd02931c61c24"
+    },
+    {
+      "path": "paper/engineering_optimization/EO_manuscript.pdf",
+      "bytes": 803417,
+      "sha256": "26544715fd3ba3ef830df1663609b32e932f6a8761cbeed1b052ee8b4137b13a"
+    },
+    {
+      "path": "paper/engineering_optimization/EO_manuscript.tex",
+      "bytes": 84195,
+      "sha256": "416671d36a37d00ef2d0a0b4cbb6654d1f6d0ca599b059b61573802e11cae2db"
+    },
+    {
+      "path": "paper/engineering_optimization/EO_references.bib",
+      "bytes": 12345,
+      "sha256": "efad9f03f4c2d22031661670fff2e4e43d4f2b9c357d367be2a77ced9e0ba89d"
+    },
+    {
+      "path": "paper/engineering_optimization/EO_supplementary.pdf",
+      "bytes": 766083,
+      "sha256": "256df50efe824aaff11140bc82291a9076cad9b6f364918285e09129dc9fe8e1"
+    },
+    {
+      "path": "paper/engineering_optimization/EO_supplementary.tex",
+      "bytes": 118909,
+      "sha256": "71b8a09dc13c9e814799bbed74331d2d5eb2e07eb5f97df364a465f0bf885496"
+    },
+    {
+      "path": "paper/engineering_optimization/FORMAT_REVIEW.md",
+      "bytes": 8244,
+      "sha256": "cbabb8eeac4b33cccc9b12133b4d2833ea2719ff97d683bdfd47f61cdbefcafe"
+    },
+    {
+      "path": "paper/engineering_optimization/MANUSCRIPT_INTEGRATION_PLAN.md",
+      "bytes": 4412,
+      "sha256": "8f6ca3aee445d6393e3488a3098ad90b3c1f6d1dfd7a5d9f6fe2fba3c8b1ce88"
+    },
+    {
+      "path": "paper/engineering_optimization/PAIRED_MESH_PROTOCOL.md",
+      "bytes": 4777,
+      "sha256": "d4441e8bdae001a77c09a00d7eac6f706cdf07ca117b71a6cb5139ca4e705b4e"
+    },
+    {
+      "path": "paper/engineering_optimization/PAIRED_MESH_RECOVERY_PLAN.md",
+      "bytes": 2272,
+      "sha256": "94fb25fdd619d90ad1d9ffa666f4b34de6f489da7131850434d2abd403ac6d6f"
+    },
+    {
+      "path": "paper/engineering_optimization/README.md",
+      "bytes": 4734,
+      "sha256": "ef0d059f10b670a362c1d685e572ade6656811d740d63614ac615c134d524485"
+    },
+    {
+      "path": "paper/engineering_optimization/REVIEWER_ACCEPTANCE_AUDIT.md",
+      "bytes": 13849,
+      "sha256": "ec187fb2f3885ee1269f2551f7e63325a45d016f701b499775edab2fc78d96ca"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/ALLOCATION_PRIOR_ART.md",
+      "bytes": 1356,
+      "sha256": "ac61c900322c0f493cd1a818c3b1514793540099b3dfb89469c78cd8109d7133"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/AUTHOR_REVIEW.md",
+      "bytes": 2951,
+      "sha256": "03bdebf0c82fe9827fa1841a41143b545c68109ee377534fc3c50ff5c3d6b726"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/EVIDENCE.md",
+      "bytes": 4215,
+      "sha256": "6d4c730415621386f76f7d5c2736fb12ad9dbc1dac681ec26757005a124bc276"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/README.md",
+      "bytes": 2650,
+      "sha256": "1298ea5c03f1cccc169f181f00c409d8f3b74ce35cefd83f04c10f89c4ee5aab"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/analysis.json",
+      "bytes": 65061,
+      "sha256": "7a3ee271accf045faa625fa30b1738fc5c99f5f1eebe59b23fca877af9aa44f5"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/classifications.csv",
+      "bytes": 132588,
+      "sha256": "bed8cdf82943252d984fe5352359a0307d9baffb561179ccb588ec0b98e56047"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/cost_accounting.json",
+      "bytes": 1537,
+      "sha256": "b680f729905f445f3725f95132e082a633ecb2ca9411fbc0b07f42ead616b128"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/mesh_checks.json",
+      "bytes": 4575,
+      "sha256": "e511a43397922b5ddd4d69ad25a9aa250efd950b2f6bbef14a8f7f90272822d3"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/release_provenance_audit.json",
+      "bytes": 22367,
+      "sha256": "fc249e13978f0303f0a91d1dc2d974fb0d929c2891d71f2a0bebf6cbe4d17897"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/release_validation.json",
+      "bytes": 681,
+      "sha256": "1b41e222b11a10671ee4cee4bb5cae945a15bce7ae39686fe6ba823388520ede"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/seed_block_results.csv",
+      "bytes": 5504,
+      "sha256": "cb7f7fb8386dbe122908a33477b2d6cb5ac2bcbcb55484571d9b7e69fba72da1"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/selections.csv",
+      "bytes": 37190,
+      "sha256": "11c888369ebd117d603f9bd5a3bf8bfdb73de40d4a0dfc2dd8dca587fa87d3f6"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/sensitivity.csv",
+      "bytes": 7295,
+      "sha256": "4dbd2113052f8ffd1f539efae36d732611c9957808be8f918ce657595b7dc156"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/ASSISTANCE_RECORD.md",
+      "bytes": 1169,
+      "sha256": "345a72e9278fa8ea61c32a82b4575e5d157e6f254b70dd0dabc95a02eab36b24"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/AUTHOR_INTEGRATION.md",
+      "bytes": 4333,
+      "sha256": "5cd57f5f63373e4a52f287d4937678e7003c0ef19ad664f1e8f865e47f8b5ff8"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/DIAGNOSTIC_CONTRACT.md",
+      "bytes": 3259,
+      "sha256": "b4a8c1448dbe0a562f7d018939e58ec56ad5281b427c634f6e96830fb90c476d"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/EVIDENCE.md",
+      "bytes": 2879,
+      "sha256": "1d77ed7af7029b92be4d26fa21d02d7008be8b7b9d7e279db2d8bf5998fed02c"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/analysis.json",
+      "bytes": 6019,
+      "sha256": "09c052f1f49534fe8ea5a621e4b75d66f051c480b99d4d8d5741d61621518daa"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/denominator_analysis.json",
+      "bytes": 791,
+      "sha256": "adfa4e611b2c80bc2d20f9f4e7e08f14df458cfdad3b6fcb6e662681f2ec2f2d"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/diagnostic_classifications.csv",
+      "bytes": 6943,
+      "sha256": "383cf78ee2bfca2df985796f1729dd4b38aa42744394c1a40c1f5b61c38c80a8"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/distinct_action_contrasts.csv",
+      "bytes": 3899,
+      "sha256": "bff7d2f130d45079edf1b2ca35b0a4c8ac0d96aba6ed9988e8a7c275c9193d96"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/engineering_endpoints.csv",
+      "bytes": 71441,
+      "sha256": "430e7eb4f586bd54a39d0e25883690ababc0e170c6b95ba5051bfff0f39b0df4"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/factual_edit_audit.json",
+      "bytes": 386,
+      "sha256": "4a3ec7d04c04f39606e745b7f2d6e10c41231c95bb925fcdea6386443e928f74"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/pdf_review.json",
+      "bytes": 323,
+      "sha256": "7f5bfa35097e8e7c01fe9a213bcd5e473ec75e352b1bf9537c51e94e9b45909e"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/release_validation.json",
+      "bytes": 422,
+      "sha256": "a47ca1f79a8a55cc20523a2f1adbd7c12c90b73e0915a9064e3f22b27eaaed0f"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/main_figure_1.pdf",
+      "bytes": 22479,
+      "sha256": "5c344332f71ecd49b36e7d7e36a21995bf9131a1ba7d83ce6bb925195bbc8fe1"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/main_figure_2.pdf",
+      "bytes": 16971,
+      "sha256": "b6e4905565e90971e7caa8ce800100cb2f9f6838d8e09a69aa11fe9d9baa7d4e"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/main_figure_3.pdf",
+      "bytes": 13409,
+      "sha256": "06b888b7d5671c72856b98d55d9c8ee2b68e60914dd187af4c19818bf6a4b81d"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/main_figure_4.pdf",
+      "bytes": 28593,
+      "sha256": "64ec5995f67124e2bda544705640e0ca482cc47a706c9ced1dc7016ced2205d2"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/main_figure_5.pdf",
+      "bytes": 201333,
+      "sha256": "f34b4885f4053ecf352f0fc01780e02739a45687cc102ff804847616b82ca2d8"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_1.pdf",
+      "bytes": 16370,
+      "sha256": "218602c53898a91d0bc90f79d1167dc18ae318ee5c3ae48bacd4012e6e60cc82"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_10.pdf",
+      "bytes": 19701,
+      "sha256": "d095245fedb433fa39113c2d803a8404b3babd022b880c9664ec5af78ca1251d"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_11.pdf",
+      "bytes": 15312,
+      "sha256": "28137e253ad927b99d4a3dcdb6ca965a6e3c33870578f190519525efafe1c667"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_12.pdf",
+      "bytes": 24165,
+      "sha256": "002467fcda2f97c7a8f4633a07ffd5f8fd280fd9b0062f42350534a0e06e84ef"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_13.pdf",
+      "bytes": 53008,
+      "sha256": "6731d0ff015be264405b23ece017c19ce5a409d9c447b646e863090fcb83041d"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_2.pdf",
+      "bytes": 16166,
+      "sha256": "bab78cac86a65cf7715802529780a8d2e2983609093eb4c1bc237cb64682b97f"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_3.pdf",
+      "bytes": 13409,
+      "sha256": "06b888b7d5671c72856b98d55d9c8ee2b68e60914dd187af4c19818bf6a4b81d"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_4.pdf",
+      "bytes": 16312,
+      "sha256": "d8678f2e960d4dce3322b99c49ed2f5084245b57d19c99b7b3b525b9d5529bf1"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_5.pdf",
+      "bytes": 19157,
+      "sha256": "ba0b26a0fc1ccdb5e51413277b653b3df7e0dca2ec9c96eb5ac7f9b1cd0fe862"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_6.pdf",
+      "bytes": 30504,
+      "sha256": "c6739a48630c5606ebcdfa1e81ae5c6a54b7939b48f4b7ed99bba729e6d75b7b"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_7.pdf",
+      "bytes": 25288,
+      "sha256": "0c8392216fb5da9dba6d7f9c0d8c36c4b681f9c11cbcd43619dfb648d6f1c670"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_8.pdf",
+      "bytes": 51814,
+      "sha256": "d49387960a4c645aac25c09f9fdf4120e45e6390e9c64425c5160442a572e7a0"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/supp_figure_9.pdf",
+      "bytes": 15405,
+      "sha256": "de22c64f36b0a2dd636cd185e1f1709da1c6fbd60a866849e26c7c11dda7fa17"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/transfer_cost_performance.png",
+      "bytes": 141435,
+      "sha256": "bc009d3ea7e74892c7e0bef55ed7079b89a168cf6d3905d70866a933dee56d6b"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/transfer_cost_performance.svg",
+      "bytes": 63882,
+      "sha256": "ed476f4a3ef5b97643b7726a295757088307bb525c7e5be919bf6cddfe6a7b3d"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/transfer_pilot_horizons.png",
+      "bytes": 144442,
+      "sha256": "886dbf396243ac261975fbe7fc140edf25faf3f9ae5b5fb4cd561e06af509f8e"
+    },
+    {
+      "path": "paper/engineering_optimization/figures/transfer_pilot_horizons.svg",
+      "bytes": 58181,
+      "sha256": "839492ae79e1b350e37cbe241500dac0830cd8aab962556fa5c255fabe720c9e"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/factual_edit_audit.json",
+      "bytes": 6326,
+      "sha256": "70483c225c1fdc6fbc4159b12c1dd6ec6983cb820163239aa226e62b1b213f49"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/main_records.tex",
+      "bytes": 1701,
+      "sha256": "ec8e4f617a579f9e756ffce77e7bcf74fc44a97bc067b24bae8645928c3db0f8"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/release_validation.json",
+      "bytes": 1099,
+      "sha256": "3e9b36fefa09a3448c459861be9cc1e7a94715547f4e7e314f9e5001297ccdd6"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/review_main_results.tex",
+      "bytes": 1918,
+      "sha256": "184f36812e20f0949e0710582f434533b77d9d1c204bd21cf45343b8bdbb3aeb"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/review_method_records.tex",
+      "bytes": 1989,
+      "sha256": "800a331ce4cf8dea8555f06a922a959673b461f12c78fec6c17ffeff89c6b699"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/review_supp_records.tex",
+      "bytes": 9760,
+      "sha256": "7a4d25c80cfb3e0b73a46558db216221a9cb2a1e7d38007c10e0cd6518d781c1"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/supp_records.tex",
+      "bytes": 11882,
+      "sha256": "fe5d7e3a8a038a3e34ddc7e081890b952c04dfd96e3ecfcca13cbaedfbaea0e7"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/table_inputs.json",
+      "bytes": 1592,
+      "sha256": "8f115c62219587777428b537b33d2748e082e0f8bf020e066dfcf7766e492fd0"
+    },
+    {
+      "path": "paper/engineering_optimization/interact.cls",
+      "bytes": 25062,
+      "sha256": "f84355389329ecef75c6d0c826cd128fb0884012c33721b098d039a1910953bd"
+    },
+    {
+      "path": "paper/engineering_optimization/paired_mesh/analysis.json",
+      "bytes": 7745,
+      "sha256": "463f8c35e38253e2af8658073b5ea95843d8ce623bf8e554675e64080b50c024"
+    },
+    {
+      "path": "paper/engineering_optimization/paired_mesh/case_summary.csv",
+      "bytes": 1324,
+      "sha256": "8f8a64c419fb048b4b0a8fee36510f2b3a5c89e59265d31be6dd37f3a311c2a6"
+    },
+    {
+      "path": "paper/engineering_optimization/paired_mesh/paired_contrasts.csv",
+      "bytes": 114210,
+      "sha256": "bc155a143b27a0eaa871234a702d7d01dd448c2825653eb93631675dca5b7218"
+    },
+    {
+      "path": "paper/engineering_optimization/pdf_build_status.json",
+      "bytes": 897,
+      "sha256": "750d84b06b8308d552eaea0771df825753537be16fd2f7a001ffd318c824edc3"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/IMPLEMENTATION_CONTRACT.md",
+      "bytes": 4375,
+      "sha256": "50a66d50bb8238640b97c58ccdef60527ba1867f14835d1c5b42b16a399644e8"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/README.md",
+      "bytes": 3153,
+      "sha256": "b0112fc4a25eea6a634680ee3c5d5cf63adf0bbda78c3c57433c90a48550c786"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/RESPONSE_TO_REVIEW.md",
+      "bytes": 4527,
+      "sha256": "23c21ba639c3ec820c655704a1eb6c803ec14bd75273cc527ee665adb287eb45"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/TECHNICAL_INCREMENT_CHECKLIST.md",
+      "bytes": 2456,
+      "sha256": "6947d91e6e91e35141867bb8eb91e169f24179fc52b09d766b4549c7206ed05d"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/analysis.json",
+      "bytes": 37972,
+      "sha256": "97267265f5de1df342debb0febac9fd39baaa5de9888e3f9d50e73474d57b409"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/budget_comparison.csv",
+      "bytes": 3338,
+      "sha256": "b926a63449556651e335655bafd6a3d5e54968d14ca1e2bfa24a0c6706f7d0bd"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/completion_capacity.csv",
+      "bytes": 27954,
+      "sha256": "ae82adaf0bdb39e6fa82c7df462644c40dcb844da77717edba42350a41f08cbc"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/factual_edit_audit.json",
+      "bytes": 7414,
+      "sha256": "09f09ae7936f618243037f271a010e4037b1e40f20020b8b7aa4078992b9a01f"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/integrity_tests.txt",
+      "bytes": 127,
+      "sha256": "02fd0e4173861fae0001fa2521c970e50a1f68514e2e47b01d91184a187ca8a6"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/order_sensitivity.csv",
+      "bytes": 36043,
+      "sha256": "706e356cae725cc118bf96b2d3ecee2f5f5d38b52a407ad4838d33ca04b6d8ff"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/paired_grid_ranges.csv",
+      "bytes": 1757,
+      "sha256": "03c70f4e8d9166c0e9301d382ed9cab04ce3e47613c068d61f0dbd59335a03ec"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/pdf_render_review.json",
+      "bytes": 11141,
+      "sha256": "3fb954313636b61c9d3c0542227c520374d73ba8c348e945d1db7312b25238fb"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/release_validation.json",
+      "bytes": 3475,
+      "sha256": "aa4a0db2e5bcb3f76456209e13ed89fcd942e2d683863d575ee2ecc21cc5d285"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/revision_status.json",
+      "bytes": 1742,
+      "sha256": "d8e133b1aeb13717c30b0a039c5e80fa4f1db9b663211d21b1f5d987ce1a19a5"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/seed_block_results.csv",
+      "bytes": 8152,
+      "sha256": "dcbe5ff8caf2c50d405978a729e1872d476eaa0a97019956d145f315f3bb817d"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/table_inputs.json",
+      "bytes": 989,
+      "sha256": "d83e32bd58131fd754ee05dfb2a16a4f4e095f3a99593bf1173135976e59f285"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/truth_composition.csv",
+      "bytes": 2519,
+      "sha256": "3f6e580b77764dc3da4ce9f56c8539622097f061cd3a13dbdd38bc6046500e05"
+    },
+    {
+      "path": "paper/engineering_optimization/reviewer_acceptance_audit.json",
+      "bytes": 8440,
+      "sha256": "b3ed27a363bae104a0fd0702a38b18627de967de57493863fec59a5819906f4d"
+    },
+    {
+      "path": "paper/engineering_optimization/tfcad.bst",
+      "bytes": 35584,
+      "sha256": "30ebc3a77316090922ff3f391b6292c48e24ba1a45e665df660edd5b9f047d73"
+    },
+    {
+      "path": "paper/engineering_optimization/work_status.json",
+      "bytes": 11472,
+      "sha256": "a300e6f29c463df9bb3cd1a17a45ff7ed416f8c84b66a5946ed04b5b8dac79ad"
+    },
+    {
+      "path": "requirements-application-gp.txt",
+      "bytes": 207,
+      "sha256": "5c6f73912e5a35d422bcdeeec52de0c1c579010f98ef0f920488d779f83da14a"
+    },
+    {
+      "path": "requirements-application.txt",
+      "bytes": 334,
+      "sha256": "2bad17d9544d91d9a3b1db6eb934d6a2bc48648aa2b20601efe91449d6180b62"
+    },
+    {
+      "path": "requirements-budget-audit.txt",
+      "bytes": 78,
+      "sha256": "76c7b73177c0f46df364ebe9b3017cedf03ca71fe7d53e3ee4d644cce79d31b3"
+    },
+    {
+      "path": "requirements-engineering-gp-audit.txt",
+      "bytes": 167,
+      "sha256": "4b39307304806ffa985431c67bc94b3871d1d8c599057f4789a17534529e2454"
+    },
+    {
+      "path": "src/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "src/analyze_budget_audit.py",
+      "bytes": 16103,
+      "sha256": "3a5897613f8b08bc796080ad92ceb44c697de1396e289c745c420ad0c68c77a2"
+    },
+    {
+      "path": "src/analyze_common_continuation.py",
+      "bytes": 12478,
+      "sha256": "f967cee983c71b1a6565a777c6ae17753b51c00c7d680476699ed5d5f257cb79"
+    },
+    {
+      "path": "src/analyze_engineering_optimization_gp_audit.py",
+      "bytes": 9356,
+      "sha256": "f1091e8e8470ce98e9ef1fcf74ad3fb125e698c85b7d52eeee832ff8aad6b8a1"
+    },
+    {
+      "path": "src/analyze_engineering_optimization_transfer.py",
+      "bytes": 10605,
+      "sha256": "7cc1955e1450542145b993b1f88daaba5a90eae51ab39952a9b0e646b40e1087"
+    },
+    {
+      "path": "src/analyze_paired_mesh_records.py",
+      "bytes": 8109,
+      "sha256": "3847a78013015d8a2c93cbeed274eb3cda023924b5bf4dba02ac81470d1a9c45"
+    },
+    {
+      "path": "src/analyze_review_revision.py",
+      "bytes": 16119,
+      "sha256": "15a3539285a51c2d5ea1ca4cecae43fd282651957521b3c78747360eb7ceed4e"
+    },
+    {
+      "path": "src/audit_engineering_optimization_revision.py",
+      "bytes": 5568,
+      "sha256": "420b25dc9b33b58112206f3af037fad383c3b963c2872deae0c5b7ac0c9c86e7"
+    },
+    {
+      "path": "src/budgeted_decision_audit.py",
+      "bytes": 5659,
+      "sha256": "71b177eb983166f34b383187c9de577c884bb471fa442e865ebf20d7485aacd5"
+    },
+    {
+      "path": "src/build_engineering_optimization_sources.py",
+      "bytes": 12400,
+      "sha256": "a8d018654261902d8fef5bcde9bcb396dd3f1baf2700ced8c930ae277c1fef58"
+    },
+    {
+      "path": "src/compact_budget_audit_records.py",
+      "bytes": 3442,
+      "sha256": "bbcfc322560484435412831a4b7a9630ae6ff5416f0f7f805317fda95ff7ef8a"
+    },
+    {
+      "path": "src/compact_common_continuation_records.py",
+      "bytes": 2861,
+      "sha256": "f1465c59a00474eab4cc42ca689aee4169da8a3aba8c51dfebba39c87beb1123"
+    },
+    {
+      "path": "src/compact_engineering_gp_sources.py",
+      "bytes": 4072,
+      "sha256": "d329ca88be537582bebb482da2b4f37ddaed9490b4bbf14a2424bae3d5cb6ae3"
+    },
+    {
+      "path": "src/compact_engineering_transfer_records.py",
+      "bytes": 4784,
+      "sha256": "dd26c51f3f986ea3ef2ff7bf2d5aa6fc6ebcfb864272379f27447118acd1df91"
+    },
+    {
+      "path": "src/compact_paired_mesh_records.py",
+      "bytes": 3563,
+      "sha256": "c8c5afb782703992a44f6b0ccb338bd86ba6c1f7df61c6ca00b0ca52e8c20dcb"
+    },
+    {
+      "path": "src/compile_engineering_optimization.py",
+      "bytes": 3567,
+      "sha256": "ef1a49ca798db99239597e4960df9a01b89053014b201afc64698f2358cdc01c"
+    },
+    {
+      "path": "src/decompose_common_contrasts.py",
+      "bytes": 3145,
+      "sha256": "a18b370f2e42b9dedec95f3a6b88b7d1dabd488ae89d9c8beead8dd29bf8dacc"
+    },
+    {
+      "path": "src/engineering_beam_adapter.py",
+      "bytes": 2143,
+      "sha256": "0e73585b3fe6a1350e6c203bdc0526c4c654806f2b9237e2c7766ca0940450a5"
+    },
+    {
+      "path": "src/engineering_optimization_budget_audit.py",
+      "bytes": 14423,
+      "sha256": "82ec687a56057d2417127af8df6f35a31c98f08b9545461f5b4b61cb486c2c9e"
+    },
+    {
+      "path": "src/engineering_optimization_common_continuation.py",
+      "bytes": 11937,
+      "sha256": "3cec230d83f5daa54ce00161cf964692f1f31d4855e14d42a7fcad876363091a"
+    },
+    {
+      "path": "src/engineering_optimization_gp_audit.py",
+      "bytes": 16749,
+      "sha256": "1ac090243d9dd268932a239cb0a52ade70f9f5d084b6d9c5ba8246e6139e9810"
+    },
+    {
+      "path": "src/engineering_optimization_paired_mesh.py",
+      "bytes": 15905,
+      "sha256": "7b0bc28f3c7511d19e384018a0992af252982c7e6ffbd39f8eb62c8211df1765"
+    },
+    {
+      "path": "src/engineering_optimization_transfer.py",
+      "bytes": 11454,
+      "sha256": "35e687312a458d457f72605752006be6afcc4952e12f64587e9b3a7ed12c0203"
+    },
+    {
+      "path": "src/fetch_engineering_optimization_template.py",
+      "bytes": 1879,
+      "sha256": "891275a4c94719d2602eae03dc3d7e11f07b5a9cc5672bc6645f6a96a4a93888"
+    },
+    {
+      "path": "src/integrate_engineering_evidence.py",
+      "bytes": 20039,
+      "sha256": "614611063dfc44ad41c3bc3b9d333f7d9f100109dc0150a23d8d8c343ca5f4a0"
+    },
+    {
+      "path": "src/integrate_engineering_optimization_evidence.py",
+      "bytes": 31970,
+      "sha256": "d5dc2693e84767e8bd5377a0a50c37d156ebcd5d4a803ba81cfde2d41b3074ba"
+    },
+    {
+      "path": "src/integrate_review_revision.py",
+      "bytes": 19079,
+      "sha256": "a98d6499c60165ec6d89143e44096defacc99d88701e7afe038fc2a22e3f58af"
+    },
+    {
+      "path": "src/package_engineering_optimization_review.py",
+      "bytes": 2938,
+      "sha256": "36111776a14a8a4f55ea6dce3f60b1e66d5364beb3ac8e2ec77424de63a0bebd"
+    },
+    {
+      "path": "src/plot_engineering_optimization_transfer.py",
+      "bytes": 2771,
+      "sha256": "cd2a27ab43ddd4ba3c107b273e9ddd42dad13cf79b753a4eac46aaea1a25969f"
+    },
+    {
+      "path": "src/recover_common_continuation_ledger.py",
+      "bytes": 3061,
+      "sha256": "558390693efa04354ef6888da9e86acbcb2f15c4e9015378d97bda7fb09151e4"
+    },
+    {
+      "path": "src/recover_paired_mesh_records.py",
+      "bytes": 6561,
+      "sha256": "f7db707cfe52a67c0cf8b505f05137d2208347ab07eab5d3aa4cf81cf4098573"
+    },
+    {
+      "path": "src/restore_engineering_gp_records.py",
+      "bytes": 2494,
+      "sha256": "7cd5d7e2ce48b15fb26f7cf97245153998b6ddaa282923b81848b668623b074c"
+    },
+    {
+      "path": "src/restore_engineering_optimization_pdfs.py",
+      "bytes": 1777,
+      "sha256": "1321ef9077cd6432e9636407d705e730bc12f35939875091ea0ea83cfdddb2e2"
+    },
+    {
+      "path": "tests/test_budgeted_decision_audit.py",
+      "bytes": 2365,
+      "sha256": "df7d8b56ade80994c1bcfa5c110105740b65fa570fb01e9647e581b8cf1fb30b"
+    },
+    {
+      "path": "tests/test_engineering_optimization_common_continuation.py",
+      "bytes": 1760,
+      "sha256": "bfbbd1934038002e0164e486799ed973d738500e17acc10c473a8ec549e04e6d"
+    },
+    {
+      "path": "tests/test_engineering_optimization_gp_audit.py",
+      "bytes": 8421,
+      "sha256": "24fa4040eb5d52f0dabd9ed1fa695c2833288b65b9cfb19706643015af78e312"
+    },
+    {
+      "path": "tests/test_engineering_optimization_transfer.py",
+      "bytes": 2174,
+      "sha256": "d28259539ad0618a73a50a59fd584ab52cdd92faf46b52557b0a28df5034bd38"
+    },
+    {
+      "path": "tests/test_paired_mesh.py",
+      "bytes": 1660,
+      "sha256": "95ed6a4bea23a3af3ee8407d93bd18a7b909b2a9ba3c392dd3fa6c6cf80c45d3"
+    },
+    {
+      "path": "tests/test_review_revision.py",
+      "bytes": 2632,
+      "sha256": "24d9a85f4e0efe130b39baf225ece8fd677d58e01f225af1a338daeceaffe3f3"
+    }
+  ]
+}

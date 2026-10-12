@@ -1,12 +1,13 @@
 # Engineering Optimization author-review materials
 
-Current status: factual evidence integration and selected paired-grid numerical
-checks are complete. This is an author-review draft, not a submission-approved
+Current status: post-review factual implementation/claim revision and zero-solver
+class/capacity/order/grid-range analysis are complete. The simulated review at
+cfc2b94 and review_revision/RESPONSE_TO_REVIEW.md identify the remaining gates. This is an author-review draft, not a submission-approved
 manuscript. See work_status.json, CONTRIBUTION_EVIDENCE_MATRIX.md and
 MANUSCRIPT_INTEGRATION_PLAN.md for the remaining scientific and author decisions.
 
-The existing main/supplement draft now includes one main measured-record table
-and eight supporting tables for archived common continuation, independent budget
+The existing main/supplement draft now includes the preceding measured-record tables plus a code-to-method table, primary
+truth/cost table and four supporting review tables for archived common continuation, independent budget
 validation, small thermal verification, differing GP settings, selected mesh
 checks and the cumulative 55,305 paid physics-attempt ledger. Historical inline
 numeric table rows and the 38-entry bibliography are preserved. Existing
@@ -19,7 +20,7 @@ in the disclosure and still needs substantive independent author assessment.
 
 The updated source and analysis results are published separately from their
 compressed artifacts. The full local review package contains the complete
-25-page main/29-page supplement and selected grid records. Publication of the
+26-page main/31-page supplement and selected grid records. Publication of the
 paired-grid raw archive is incomplete: segments-003.b85 and segments-004.b85
 were rejected by automatic approval review despite complete decoding and
 provenance checks. No broken partial archive is published. The first new PDF segment was also rejected by automatic approval review;
@@ -43,7 +44,7 @@ To compile from LaTeX, work in paper/engineering_optimization and run pdfLaTeX,
 BibTeX and two more pdfLaTeX passes for each EO_manuscript/EO_supplementary source.
 Use the supplied publisher interact.cls, tfcad.bst, EO_references.bib, figures/
 and integrated_evidence/ inputs. Compilation with the installed TeX Live engine
-produced no undefined references or overfull-box warnings; all 54 rendered pages
+produced no undefined references or overfull-box warnings; all 57 rendered pages
 were checked. See integrated_evidence/release_validation.json and
 integrated_evidence/pdf_render_review.json.
 
@@ -72,3 +73,7 @@ an adaptive-allocation advantage and net deployment savings are not established.
 
 submission_ready remains false. Neither a journal acceptance guarantee nor an
 AI-detector score is supplied.
+
+Latest post-review reproducibility instructions and author gates are in
+review_revision/README.md, IMPLEMENTATION_CONTRACT.md and RESPONSE_TO_REVIEW.md.
+The new sensitivity is retrospective and does not certify novelty or efficacy.

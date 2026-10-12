@@ -1,0 +1,23 @@
+{
+  "source_hashes": {
+    "paper/engineering_optimization/review_revision/analysis.json": "97267265f5de1df342debb0febac9fd39baaa5de9888e3f9d50e73474d57b409",
+    "paper/engineering_optimization/review_revision/truth_composition.csv": "3f6e580b77764dc3da4ce9f56c8539622097f061cd3a13dbdd38bc6046500e05",
+    "paper/engineering_optimization/review_revision/seed_block_results.csv": "dcbe5ff8caf2c50d405978a729e1872d476eaa0a97019956d145f315f3bb817d",
+    "paper/engineering_optimization/review_revision/order_sensitivity.csv": "706e356cae725cc118bf96b2d3ecee2f5f5d38b52a407ad4838d33ca04b6d8ff",
+    "paper/engineering_optimization/review_revision/paired_grid_ranges.csv": "03c70f4e8d9166c0e9301d382ed9cab04ce3e47613c068d61f0dbd59335a03ec"
+  },
+  "primary_truth_counts": {
+    "mean": {
+      "better": 0,
+      "tie": 24,
+      "worse": 1
+    },
+    "ei": {
+      "better": 0,
+      "tie": 23,
+      "worse": 2
+    }
+  },
+  "new_primary_experiments": false,
+  "author_review_pending": true
+}

@@ -1,0 +1,80 @@
+{
+  "baseline_commit": "cfc2b94fa26a9cfdc6b1bcd2996d64da4e620222",
+  "complete_budget_archive_files_restored": 83,
+  "all_archive_hashes_verified": true,
+  "new_physics_attempts": 0,
+  "original_code_protocol_and_labels_modified": false,
+  "original_fixed_depth_adaptive_sensitivity_cells_matched": 36,
+  "clean_outputs_byte_identical": {
+    "paper/engineering_optimization/review_revision/analysis.json": {
+      "matched": true,
+      "sha256": "97267265f5de1df342debb0febac9fd39baaa5de9888e3f9d50e73474d57b409"
+    },
+    "paper/engineering_optimization/review_revision/budget_comparison.csv": {
+      "matched": true,
+      "sha256": "b926a63449556651e335655bafd6a3d5e54968d14ca1e2bfa24a0c6706f7d0bd"
+    },
+    "paper/engineering_optimization/review_revision/completion_capacity.csv": {
+      "matched": true,
+      "sha256": "ae82adaf0bdb39e6fa82c7df462644c40dcb844da77717edba42350a41f08cbc"
+    },
+    "paper/engineering_optimization/review_revision/order_sensitivity.csv": {
+      "matched": true,
+      "sha256": "706e356cae725cc118bf96b2d3ecee2f5f5d38b52a407ad4838d33ca04b6d8ff"
+    },
+    "paper/engineering_optimization/review_revision/paired_grid_ranges.csv": {
+      "matched": true,
+      "sha256": "03c70f4e8d9166c0e9301d382ed9cab04ce3e47613c068d61f0dbd59335a03ec"
+    },
+    "paper/engineering_optimization/review_revision/seed_block_results.csv": {
+      "matched": true,
+      "sha256": "dcbe5ff8caf2c50d405978a729e1872d476eaa0a97019956d145f315f3bb817d"
+    },
+    "paper/engineering_optimization/review_revision/truth_composition.csv": {
+      "matched": true,
+      "sha256": "3f6e580b77764dc3da4ce9f56c8539622097f061cd3a13dbdd38bc6046500e05"
+    },
+    "paper/engineering_optimization/review_revision/table_inputs.json": {
+      "matched": true,
+      "sha256": "d83e32bd58131fd754ee05dfb2a16a4f4e095f3a99593bf1173135976e59f285"
+    },
+    "paper/engineering_optimization/EO_manuscript.tex": {
+      "matched": true,
+      "sha256": "416671d36a37d00ef2d0a0b4cbb6654d1f6d0ca599b059b61573802e11cae2db"
+    },
+    "paper/engineering_optimization/EO_supplementary.tex": {
+      "matched": true,
+      "sha256": "71b8a09dc13c9e814799bbed74331d2d5eb2e07eb5f97df364a465f0bf885496"
+    },
+    "paper/engineering_optimization/integrated_evidence/review_method_records.tex": {
+      "matched": true,
+      "sha256": "800a331ce4cf8dea8555f06a922a959673b461f12c78fec6c17ffeff89c6b699"
+    },
+    "paper/engineering_optimization/integrated_evidence/review_main_results.tex": {
+      "matched": true,
+      "sha256": "184f36812e20f0949e0710582f434533b77d9d1c204bd21cf45343b8bdbb3aeb"
+    },
+    "paper/engineering_optimization/integrated_evidence/review_supp_records.tex": {
+      "matched": true,
+      "sha256": "7a4d25c80cfb3e0b73a46558db216221a9cb2a1e7d38007c10e0cd6518d781c1"
+    }
+  },
+  "local_integrity_tests_passed": 28,
+  "test_scope": "six relevant locally available unittest modules",
+  "historical_inline_numeric_rows_unchanged": true,
+  "bibliography_entries": 38,
+  "abstract_words_whitespace": 187,
+  "new_scientific_argument_sections_drafted": false,
+  "submission_ready": false,
+  "novelty_sufficiency_certified": false,
+  "positive_case_efficacy_certified": false,
+  "author_review_pending": true,
+  "pdf_pages": {
+    "manuscript": 26,
+    "supplementary": 31
+  },
+  "latex_undefined_or_overfull_warnings": false,
+  "all_rendered_pages_reviewed": 57,
+  "public_current_pdfs_complete": false,
+  "previous_publication_blockers_not_retried": true
+}

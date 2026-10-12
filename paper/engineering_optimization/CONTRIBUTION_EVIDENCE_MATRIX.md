@@ -45,3 +45,20 @@ intervention/diagnostic comparator and assess each claimed technical increment.
    allocator or change thresholds to make results positive.
 5. Confirm the eventual article argument, disclosures and all author approvals.
    No author decision is presumed by this record.
+
+## Post-review evidence update (baseline cfc2b94)
+
+The independent primary contrasts contain no better target: mean0/24/1 and
+EI0/23/2 (better/tie/worse). Ten complete blocks are retained, six contain
+nonbaseline contrasts. The declared request capacity explains budget18 slack
+and budget12 fixed-depth17 versus adaptive9. Reversing alternatives preserves
+coverage but changes the measured classes in eight states per continuation;
+statewise new-point counts also differ. The capacity is elementary contract
+bookkeeping, not principal mathematical novelty or a physical-solve lower bound.
+
+The existing source methods/results were factually clarified and13 derived
+analysis/table/source files reproduced identically from the original public
+budget archive. Twenty-eight relevant local tests pass. The stronger candidate
+evidence supports a conditional/fixed-discrete diagnostic object, while author
+novelty assessment, independent positive-case efficacy and deployment value
+remain unresolved. See review_revision/TECHNICAL_INCREMENT_CHECKLIST.md.

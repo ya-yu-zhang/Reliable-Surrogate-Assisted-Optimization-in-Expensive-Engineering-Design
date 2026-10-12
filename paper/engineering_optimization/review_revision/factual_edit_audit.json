@@ -1,0 +1,59 @@
+{
+  "files": {
+    "EO_manuscript.tex": {
+      "baseline_commit": "cfc2b94fa26a9cfdc6b1bcd2996d64da4e620222",
+      "before_sha256": "d5158169b65c008c7bb69d33c777574371cfcc435bb618994ab7a0788e7f7d99",
+      "after_sha256": "416671d36a37d00ef2d0a0b4cbb6654d1f6d0ca599b059b61573802e11cae2db",
+      "historical_numeric_rows_unchanged": true,
+      "changes": [
+        {
+          "before": "Independent budget validation on ten new seed blocks finds no adaptive-allocation advantage.",
+          "after": "Independent budget validation on ten new seed blocks finds no adaptive-allocation advantage and no better h5 outcomes at its primary margin."
+        },
+        {
+          "before": "Freeze the surrogate, candidate generator, monitoring signal, management or acquisition rule, expensive objective, budget, and deterministic replay information. Output: protocol and information boundary.",
+          "after": "Freeze the surrogate, candidate generator, monitoring signal, management or acquisition rule, expensive objective context, optimizer budget, audit-request budget, target horizon and margin, and deterministic replay information. In the independent conditional implementation, h0 is the first action and H=5 denotes five further common-rule actions. Output: protocol and information boundary."
+        },
+        {
+          "before": "For exploration, region, restart, or stopping mechanisms, prespecify a delayed-value assessment where needed. Gate: an identifiable decision consequence and sufficient evidence to justify the next diagnostic expenditure; lower one-step improvement alone does not reject exploration.",
+          "after": "For exploration, region, restart, or stopping mechanisms, prespecify a delayed-value assessment where needed. The implemented point-action intervention uses the same frozen training history, fitted kernel and first candidate pool, then the same declared continuation and candidate-seed stream with each branch updating its own history. For positive initial incumbent $m_{\\mathrm{init}}$, the recorded conditional target is $d_j(H)=[m_0(H)-m_j(H)]/m_{\\mathrm{init}}$, where $m_0$ is the baseline-branch incumbent. The primary implementation uses $H=5$ and margin $\\tau=0.001$. Gate: an identifiable decision consequence and sufficient evidence to justify the next diagnostic expenditure; lower one-step improvement alone does not reject exploration."
+        },
+        {
+          "before": "Output: stage-wise audit record.\n\nThe framework can return a positive result.",
+          "after": "Output: stage-wise audit record. The independent replay reports an exact branch alias, a measured target-horizon outcome, an h0 proxy, or an abstention because the target remains incomplete. For nonalias branches, better/tie/worse certification requires both baseline and alternative to reach h5; an immediate tie does not certify a later tie. Table~\\ref{tab:review_contract} maps this implementation to its recorded inputs and outputs.\n\n\\input{integrated_evidence/review_method_records.tex}\n\nThe framework can return a positive result."
+        },
+        {
+          "before": "A comparison of optimizer endpoints at equal budgets does not establish that the audit itself saves evaluations.",
+          "after": "A comparison of optimizer endpoints at equal budgets does not establish that the audit itself saves evaluations. In the independent replay, each branch-step request is charged, including a cache read; a completed branch needs $H+1=6$ requests. Its primary budget 18 is per state. For $K$ exact branch classes, full-baseline/full-alternative reporting can complete at most $\\min(K-1,\\max(0,\\lfloor B/(H+1)\\rfloor-1))$ nonbaseline comparisons under this request contract. This elementary capacity does not bound additional physical solves or audits with a justified early certificate."
+        },
+        {
+          "before": "Equivalent first actions do not make later policies equivalent, and labels must not be reused across changed physical conditions or noisy objectives without an additional justification.",
+          "after": "Equivalent first actions do not make later policies equivalent, and labels must not be reused across changed physical conditions or noisy objectives without an additional justification. Whole conditional branches share a record only when the frozen history, fitted kernel, first action, objective context, continuation and deterministic seed stream also coincide; across other states, exact point/context equality permits response reuse only. The reported implementations evaluate point-acquisition rules; conditional restart, region and stopping interventions are not independently validated here."
+        },
+        {
+          "before": "All new comparisons are descriptive and separate from the original prespecified inferential families.\n\n\\input{integrated_evidence/main_records.tex}",
+          "after": "All new comparisons are descriptive and separate from the original prespecified inferential families. The independent conditional record in Table~\\ref{tab:review_primary} has 25 distinct nonbaseline-action contrasts per continuation: mean continuation gives 0 better, 24 tie and 1 worse; EI gives 0 better, 23 tie and 2 worse at its primary margin. These 30 source states share ten retained seed blocks, six of which contain nonbaseline-action contrasts. The immediate rule uses 42 requests and the completed-target rules 252 across those states; the immediate rule has 0/1 classification errors for mean/EI and zero reported state-selection loss for both. Completed-target zero errors follow from measuring the target. At budget 12, fixed depth completes 17/25 and adaptive 9/25 with 204 requests each; reversing alternative order preserves coverage but changes the evaluated class set in eight states and can leave one worse EI contrast unmeasured. Supplementary tables retain all existing budgets/margins, complete seed-block counts and the selected paired-grid ranges.\n\n\\input{integrated_evidence/main_records.tex}\n\\input{integrated_evidence/review_main_results.tex}"
+        },
+        {
+          "before": "The independently collected budget record shows no adaptive-allocation advantage, and the two thermal gate/simple disagreements end in a tie and a loss.",
+          "after": "The independently collected budget record shows no adaptive-allocation advantage and contains no better primary h5 outcomes, so it does not validate positive-case diagnosis or avoidance of false rejection. Its completed-target zero errors do not establish predictive reliability or deployment value. The two thermal gate/simple disagreements end in a tie and a loss."
+        }
+      ]
+    },
+    "EO_supplementary.tex": {
+      "baseline_commit": "cfc2b94fa26a9cfdc6b1bcd2996d64da4e620222",
+      "before_sha256": "af09b49da736e88ee22c07cdf8914d8d690a1bb99c66a496cefb4b676cf59ccd",
+      "after_sha256": "71b8a09dc13c9e814799bbed74331d2d5eb2e07eb5f97df364a465f0bf885496",
+      "historical_numeric_rows_unchanged": true,
+      "changes": [
+        {
+          "before": "\\input{integrated_evidence/supp_records.tex}",
+          "after": "\\input{integrated_evidence/supp_records.tex}\n\\input{integrated_evidence/review_supp_records.tex}"
+        }
+      ]
+    }
+  },
+  "new_article_argument_sections": false,
+  "abstract_words_whitespace": 187,
+  "author_scientific_review_pending": true
+}

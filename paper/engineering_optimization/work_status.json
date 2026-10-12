@@ -32,7 +32,7 @@
     "paired_mesh_total_attempts": 521
   },
   "validation": {
-    "integrity_tests_passed": 24,
+    "integrity_tests_passed": 28,
     "historical_numeric_table_rows_unchanged": true,
     "reference_count": 38,
     "gp_replay_states": 120,
@@ -48,10 +48,10 @@
     "gp_diagnostic_cache_reuse_checks": "passed",
     "frozen_code_and_config_byte_hashes": "matched; final LF restored in public files",
     "pdf_pages": {
-      "manuscript": 25,
-      "supplementary": 29
+      "manuscript": 26,
+      "supplementary": 31
     },
-    "all_rendered_pages_reviewed": 54,
+    "all_rendered_pages_reviewed": 57,
     "formatting_step_new_fe_calls": 0,
     "thermal_independent_cases": 20,
     "thermal_prediction_before_label_pairs": 7200,
@@ -68,7 +68,7 @@
     "common_continuation_science_summaries_reproduced": 30,
     "common_continuation_clean_restoration_files": 96,
     "common_continuation_clean_analysis_byte_identical": true,
-    "factual_revision_main_pages": 25,
+    "factual_revision_main_pages": 26,
     "supplementary_render_identical_pages": null,
     "budget_audit_seed_blocks": 10,
     "budget_audit_source_states": 30,
@@ -79,7 +79,7 @@
     "budget_audit_endpoint_curve_checks": 110,
     "budget_audit_lossless_restored_files": 82,
     "budget_audit_clean_reanalysis_byte_identical": true,
-    "integrity_test_scope": "five relevant locally available modules",
+    "integrity_test_scope": "six relevant locally available unittest modules",
     "supplementary_render_identical_pages_note": "Superseded by new measured supporting tables; current supplement is 29 pages",
     "paired_mesh_clean_restored_files": 25,
     "paired_mesh_clean_reanalysis_byte_identical": true,
@@ -111,12 +111,11 @@
   "rendered_pdf_layout_verified": true,
   "submission_ready": false,
   "remaining": [
-    "Authors independently assess closest prior art, novelty and scientific argument; measured budget/common/thermal/grid records are now factually integrated, but adaptive superiority and universal benefit were not demonstrated",
-    "Confirm affiliations b and c, contribution assignments, funding/conflict statements and obtain every author's final approval",
-    "Review actual historical AI-writing assistance and publisher-policy compliance; no AI-detector score or policy-compliance guarantee is supplied",
-    "Verify current journal-specific length/template/portal requirements; earlier instructions-page access was blocked",
-    "Complete final release citation and data-availability declarations, including the separately held historical large original archive",
-    "Complete raw-archive publication after explicit approval of the two rejected unchanged segments; complete updated PDF public release after explicit approval of the compiled PDF archive"
+    "Authors independently assess R1 novelty against closest executable prior workflows and finalize the scientific argument; implementation mapping and measured R2--R6 evidence have been factually revised",
+    "Independent positive-case/general efficacy and deployment value remain unvalidated; retain the narrowed conditional/fixed-discrete claims or separately freeze a new validation design",
+    "Confirm affiliations b/c, all contribution/funding/conflict statements, truthful historical AI-use disclosure and every author final approval",
+    "Verify current journal-specific portal/length requirements and final data/release citation",
+    "Complete previously blocked raw archive and current compiled PDF public release only after explicit approval of their exact disclosure"
   ],
   "claim_limits": [
     "One deterministic beam model family with two added force conditions",
@@ -151,7 +150,7 @@
   "paired_mesh_protocol_commit": "72a519e1bbf7e02bee451076f075a96f307ab7f5",
   "paired_mesh_recovery_protocol_commit": "8a278d6ca50ac8746ed02198912f0f5028253e83",
   "publication": {
-    "updated_latex_sources_and_analysis": "published and verified at 06a933374846d4642fe859f61b3eb88a7f815a89",
+    "updated_latex_sources_and_analysis": "post-review source/analysis update prepared against cfc2b94; prior published source remains reachable in history",
     "complete_local_review_package": true,
     "paired_mesh_raw_archive_public_complete": false,
     "raw_archive_blocked_paths": [
@@ -160,14 +159,53 @@
     ],
     "raw_archive_block_reason": "Automatic approval review rejected the same opaque compressed payloads after full decoding/provenance verification; explicit approval is required before another attempt",
     "current_compiled_pdf_pages": {
-      "manuscript": 25,
-      "supplementary": 29
+      "manuscript": 26,
+      "supplementary": 31
     },
     "updated_pdf_public_release_complete": false,
-    "pdf_upload_status": "Automatic approval review rejected EO_manuscript_integrated_v1_00.b85; no new PDF segment is publicly committed; previous complete public PDF manifest retained",
+    "pdf_upload_status": "New post-review26/31-page PDFs available locally; preceding opaque PDF archive upload was rejected by automatic review. No new binary/encoded upload retried without explicit approval; prior complete public PDF manifest retained.",
     "no_partial_broken_archive_published": true,
     "source_analysis_verified_files": 26,
     "pdf_first_blocked_path": "paper/engineering_optimization/pdf_release/EO_manuscript_integrated_v1_00.b85",
     "pdf_block_reason": "The review action cannot directly confirm contents of this opaque high-entropy PDF segment and requires explicit approval of the exact public disclosure"
+  },
+  "stage11": "completed post-review factual implementation mapping and descriptive class/capacity/order/grid-range replay; primary v1 unchanged; author novelty and final argument remain pending",
+  "post_review_revision": {
+    "review_baseline_commit": "cfc2b94fa26a9cfdc6b1bcd2996d64da4e620222",
+    "new_physics_attempts": 0,
+    "raw_record_archive_restored_files": 83,
+    "byte_identical_derived_outputs": 13,
+    "original_sensitivity_cells_reproduced": 36,
+    "complete_seed_blocks": 10,
+    "blocks_with_nonbaseline_contrasts": [
+      11,
+      12,
+      14,
+      15,
+      17,
+      18
+    ],
+    "primary_truth_counts": {
+      "mean": {
+        "better": 0,
+        "tie": 24,
+        "worse": 1
+      },
+      "ei": {
+        "better": 0,
+        "tie": 23,
+        "worse": 2
+      }
+    },
+    "class_topology": {
+      "1": 13,
+      "2": 9,
+      "3": 8
+    },
+    "new_confirmatory_comparisons": false,
+    "primary_code_labels_and_protocols_unchanged": true,
+    "positive_diagnostic_efficacy_demonstrated": false,
+    "novelty_sufficiency_confirmed": false,
+    "reviewer_acceptance_passed": false
   }
 }

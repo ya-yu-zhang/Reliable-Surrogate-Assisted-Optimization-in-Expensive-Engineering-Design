@@ -1,0 +1,360 @@
+{
+  "EO_manuscript": {
+    "pages": 26,
+    "pdf_sha256": "26544715fd3ba3ef830df1663609b32e932f6a8761cbeed1b052ee8b4137b13a",
+    "page_records": [
+      {
+        "page": 1,
+        "words": 290,
+        "review_content": false,
+        "render_sha256": "33811687b074672559748f956d71a544b12e6728c55cd0c6082ea349138e8268"
+      },
+      {
+        "page": 2,
+        "words": 516,
+        "review_content": false,
+        "render_sha256": "09f547ce222d4525d9993362b4e65e1e86881a38e7b912ae5a58549306e4b3c9"
+      },
+      {
+        "page": 3,
+        "words": 459,
+        "review_content": false,
+        "render_sha256": "ebbf11e3ba4aad2398c2fa50dd7a7e5721dce8b04fff037493343f8368422f0a"
+      },
+      {
+        "page": 4,
+        "words": 332,
+        "review_content": false,
+        "render_sha256": "0e1f6ac1d34884dbab7b4f188352dbf47a68c6529a1ad5c9e7080c037637f8a7"
+      },
+      {
+        "page": 5,
+        "words": 334,
+        "review_content": false,
+        "render_sha256": "cbbd82b25d9224430e7c82e1321a1ade63ef2b13024803018134202451cd780f"
+      },
+      {
+        "page": 6,
+        "words": 363,
+        "review_content": false,
+        "render_sha256": "93e6a8c39b7770b0a192935135500a95210af1574bb8c5a1ebfa0fc37e867267"
+      },
+      {
+        "page": 7,
+        "words": 372,
+        "review_content": false,
+        "render_sha256": "032d34ec831d8546b1bd8df6bcc69a79b0f827999cb58cf597b8ae5ac0d62329"
+      },
+      {
+        "page": 8,
+        "words": 413,
+        "review_content": true,
+        "render_sha256": "690d5a4881756cce0aa8fdb59f2d99fbbcc3dedf987bc4cdceba8d6c02a7147d"
+      },
+      {
+        "page": 9,
+        "words": 324,
+        "review_content": true,
+        "render_sha256": "82af762f51ca70d341095295a8409460976aa59646a6ebfe9a61aa76c30bdda6"
+      },
+      {
+        "page": 10,
+        "words": 509,
+        "review_content": false,
+        "render_sha256": "be9c577c08859f6eb9d877381e546f0ac831d0fec3958834553bb24671f84f10"
+      },
+      {
+        "page": 11,
+        "words": 450,
+        "review_content": false,
+        "render_sha256": "fdb4dda9f268cc97e3e1fcd8f585d0d6ce781213385edeb3c12270837d205dcc"
+      },
+      {
+        "page": 12,
+        "words": 347,
+        "review_content": false,
+        "render_sha256": "5e895b6cb35b6f5d1e10907189b46fdefe780104229167700116e13d71463fad"
+      },
+      {
+        "page": 13,
+        "words": 270,
+        "review_content": false,
+        "render_sha256": "dbd798ea577451445e593c20b8e7cdf7b54b6ae4e3b9225830132f675028791b"
+      },
+      {
+        "page": 14,
+        "words": 325,
+        "review_content": false,
+        "render_sha256": "384a878b56b113e6ba34ecdb79356b198186a6e666715ee0efbb0a5b5d0a7e9f"
+      },
+      {
+        "page": 15,
+        "words": 357,
+        "review_content": false,
+        "render_sha256": "104580ff07546d346b45ae2a9c0a320715785743cd428267cfef792e0c19f84a"
+      },
+      {
+        "page": 16,
+        "words": 380,
+        "review_content": false,
+        "render_sha256": "99eac8306a58026c0d5b4fac0e82955f7d68322848fcbe1aaa4a8e35294ef12e"
+      },
+      {
+        "page": 17,
+        "words": 83,
+        "review_content": false,
+        "render_sha256": "bc118d8dfeda3eeb57949b25e456f61ce0b077126391ebc87410f29e4548b1c5"
+      },
+      {
+        "page": 18,
+        "words": 419,
+        "review_content": false,
+        "render_sha256": "3390640a6acd45737ea23b8a1ac0599861cc6dff5f0f7a98982e3fded3901747"
+      },
+      {
+        "page": 19,
+        "words": 459,
+        "review_content": false,
+        "render_sha256": "5cd2ec6f5cf4b7891e5a497a85fba888e35b43491d1c5c58869d7fb84fb101a5"
+      },
+      {
+        "page": 20,
+        "words": 423,
+        "review_content": false,
+        "render_sha256": "12369b243a43fd994a3e282e8cec7e3c108942c7e22aae89b91cb9371064c1d1"
+      },
+      {
+        "page": 21,
+        "words": 294,
+        "review_content": true,
+        "render_sha256": "ad3d03597d3672b2bc64e52b2cd92f71be37b0ec5d42d9053facb45d12584986"
+      },
+      {
+        "page": 22,
+        "words": 486,
+        "review_content": false,
+        "render_sha256": "09be5789b7e29de8140c354663ab38a1938e397c5effae1f5bc5a5e9c9f7dcf3"
+      },
+      {
+        "page": 23,
+        "words": 407,
+        "review_content": false,
+        "render_sha256": "948d50680bb30af6421be0ff9fbaa4d7d6162503e971e94a1cd381df6509554f"
+      },
+      {
+        "page": 24,
+        "words": 339,
+        "review_content": false,
+        "render_sha256": "3efab308d3efd29dde4edf4089875f2814f7021828f0c572331f1719811af082"
+      },
+      {
+        "page": 25,
+        "words": 504,
+        "review_content": false,
+        "render_sha256": "16355bbcdfee5a746a252507a43a3ad752de2a7f4b185bc77e2fda1dc6eee89d"
+      },
+      {
+        "page": 26,
+        "words": 309,
+        "review_content": false,
+        "render_sha256": "4aa984c3dbeb8ccd1e733d02777b6e89eab5a67bd45548b8aaf6f6f5f38340c2"
+      }
+    ],
+    "all_characters_within_media_box": true
+  },
+  "EO_supplementary": {
+    "pages": 31,
+    "pdf_sha256": "256df50efe824aaff11140bc82291a9076cad9b6f364918285e09129dc9fe8e1",
+    "page_records": [
+      {
+        "page": 1,
+        "words": 264,
+        "review_content": false,
+        "render_sha256": "876458831faef2cdfd7935e97c7a55872f48ce50dadedf51646b06c224d80bd7"
+      },
+      {
+        "page": 2,
+        "words": 346,
+        "review_content": false,
+        "render_sha256": "a0db316adc53d4b88455a29923db6a741de741311668a590b2d8eb1991525b47"
+      },
+      {
+        "page": 3,
+        "words": 332,
+        "review_content": false,
+        "render_sha256": "e8a87c4bb3b8540d038c3ed993b6aab66df793137e88f0bf02df986c8b3987f4"
+      },
+      {
+        "page": 4,
+        "words": 343,
+        "review_content": false,
+        "render_sha256": "2d443cca9de34c2c83e5bbf1a62e67fd6efefe3cd114091c27a0ff02d7caf42b"
+      },
+      {
+        "page": 5,
+        "words": 226,
+        "review_content": false,
+        "render_sha256": "4332f70c5bb7c427441840b356a75aa77631fdb469c300c6e9b8b5ebfe119443"
+      },
+      {
+        "page": 6,
+        "words": 279,
+        "review_content": false,
+        "render_sha256": "b2d28e5e85281e692b79bb718556b37984e47aa0081182e2ff39f4e18ea09b9a"
+      },
+      {
+        "page": 7,
+        "words": 378,
+        "review_content": false,
+        "render_sha256": "20a25f9eb157307fde840436c2b70aba53af3e48d1773b215748c777e699ff72"
+      },
+      {
+        "page": 8,
+        "words": 241,
+        "review_content": false,
+        "render_sha256": "9e10f954d1466489d8ba1e074ec1aecc4e189b9c97fa44d9cd46ff99f6fcc7b1"
+      },
+      {
+        "page": 9,
+        "words": 264,
+        "review_content": false,
+        "render_sha256": "61a211b2ad3dafc3b5a46fca323b3343969e925273f09075108f1c4898ec3776"
+      },
+      {
+        "page": 10,
+        "words": 301,
+        "review_content": false,
+        "render_sha256": "ccf38633243ea67bb76d6376e284e21981f1dcd19954984ec03ed89bb9f0b20d"
+      },
+      {
+        "page": 11,
+        "words": 306,
+        "review_content": false,
+        "render_sha256": "0d8584bdb36beec3bf579740994a76de736798aea4f9d0b6a5e1657dd9ff4a34"
+      },
+      {
+        "page": 12,
+        "words": 284,
+        "review_content": false,
+        "render_sha256": "6e2c2869e9083c435af84e50ac3f9df553f3ab508c8b22bf60a21d9b57a2aabe"
+      },
+      {
+        "page": 13,
+        "words": 173,
+        "review_content": false,
+        "render_sha256": "1089bb8ad9bb50709ff1271a91b437f09cd7a5971b11b6b5624913cdfc84ad18"
+      },
+      {
+        "page": 14,
+        "words": 237,
+        "review_content": false,
+        "render_sha256": "90e6023c8462eabc0fa873007331b8a2885cc40bbe64b6a2fb149418e15d5289"
+      },
+      {
+        "page": 15,
+        "words": 231,
+        "review_content": false,
+        "render_sha256": "5e10685b75f0b444cfc227dbe9f8d8cb132771aa09bc27c16f0cf18c9a46766f"
+      },
+      {
+        "page": 16,
+        "words": 233,
+        "review_content": false,
+        "render_sha256": "fb01bbeebe64f67bb549312c53c71100fd11290cfca4b53f426610d7e380c057"
+      },
+      {
+        "page": 17,
+        "words": 295,
+        "review_content": false,
+        "render_sha256": "6fe50544adfe85fb1d5d0b74de7fc3410aab6ab3128cc81a96f8f64ebe69b6cc"
+      },
+      {
+        "page": 18,
+        "words": 256,
+        "review_content": false,
+        "render_sha256": "4911d44aeba0f5212f6aaf7a746a60d148223dd9f92a73460955c18d384e78b8"
+      },
+      {
+        "page": 19,
+        "words": 397,
+        "review_content": false,
+        "render_sha256": "ffb877b961c9ab5ae944a2d27210828b9d81a9beece03855185374164aeabc8f"
+      },
+      {
+        "page": 20,
+        "words": 363,
+        "review_content": false,
+        "render_sha256": "a783a5fd39e0cce42499b818bac81db5c1150feeefa7955f4155916613e874e1"
+      },
+      {
+        "page": 21,
+        "words": 393,
+        "review_content": false,
+        "render_sha256": "a895bade7e95be17d85a8f147a4e76f3b3745a6282c8b1136976d6dbf34c278f"
+      },
+      {
+        "page": 22,
+        "words": 395,
+        "review_content": false,
+        "render_sha256": "318533bd29316b0469c9bba58eecc73546e4f0f9d16756a048a190720e08ed2d"
+      },
+      {
+        "page": 23,
+        "words": 333,
+        "review_content": false,
+        "render_sha256": "9093f81b19790f628bab6fd1d1f5f5f8f9f3e3db9b85dabcb977166b9cd7ed3a"
+      },
+      {
+        "page": 24,
+        "words": 388,
+        "review_content": false,
+        "render_sha256": "b6b6dedfaab1d36178d973517908e0e87fb9c9cc2574c7b08fe0a0606fc33469"
+      },
+      {
+        "page": 25,
+        "words": 150,
+        "review_content": false,
+        "render_sha256": "70dc47364df790ce01c2b9e2b870b009f07f4b9decd9ea8e3a8bb80640b8f497"
+      },
+      {
+        "page": 26,
+        "words": 286,
+        "review_content": false,
+        "render_sha256": "c1e8b62769dd9e0575828768fbf76df73c66e4489c506125137d2f9500b27f19"
+      },
+      {
+        "page": 27,
+        "words": 163,
+        "review_content": false,
+        "render_sha256": "ceac87821e3a096416682576e942c75b1878febb485e176f8053e709da323520"
+      },
+      {
+        "page": 28,
+        "words": 194,
+        "review_content": false,
+        "render_sha256": "6357ade713250e006aed4329ca4bd40b801e3b3a8c6108ce40d9cb2618fe4ac6"
+      },
+      {
+        "page": 29,
+        "words": 136,
+        "review_content": false,
+        "render_sha256": "dc2f60dacc47c8b575643d769b40cda56abe89b5b128d9bf0f402c335f83c8f3"
+      },
+      {
+        "page": 30,
+        "words": 462,
+        "review_content": false,
+        "render_sha256": "50883190bbbb4f77a2bcfa873b87ee8f3fb544d3bb07337d17ed6dcdb1cc2db9"
+      },
+      {
+        "page": 31,
+        "words": 168,
+        "review_content": false,
+        "render_sha256": "a16006ac90f3e4cc521e5b15149f0b2c54e7e86c703323f340a298e3f43fc90b"
+      }
+    ],
+    "all_characters_within_media_box": true
+  },
+  "visual_review": "All 57 pages checked in contact sheets; method, primary results and new supplementary tables checked individually. Method table kept together; all54 sensitivity rows fit together; no clipping/header overlap.",
+  "scientific_review_pending": true
+}
