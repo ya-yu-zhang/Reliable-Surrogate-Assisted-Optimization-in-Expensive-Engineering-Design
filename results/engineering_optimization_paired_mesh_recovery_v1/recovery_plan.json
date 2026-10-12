@@ -1,0 +1,47 @@
+{
+  "original_plan_sha256": "bf3f47127a98343c176f2e9167235e13c76980673bd199defb062f4d8f6c6727",
+  "original_journal_sha256": "1ceb9f5dc157f0fe29fe7d80d80228309bdae650dff231892d76d88cc6f9a8e7",
+  "original_attempts": 4,
+  "completed_original_labels": 3,
+  "missing_original_labels": 1,
+  "config": {
+    "version": 1,
+    "source_release_commit": "062c1b62a773f80cc4383d51a4d6655e9cc3f083",
+    "meshes": [
+      [
+        100,
+        50
+      ],
+      [
+        150,
+        75
+      ],
+      [
+        200,
+        100
+      ]
+    ],
+    "mappings": [
+      "native_parameter_resampling",
+      "conservative_base_field_transfer"
+    ],
+    "unchanged_different_action_controls": 4,
+    "structural_alias_controls": 2,
+    "source_prediction_tolerance": 1e-08,
+    "relative_volume_tolerance": 1e-12,
+    "equilibrium_residual_flag": 1e-06,
+    "max_new_physics_attempts": 1000,
+    "source_relative_margins": {
+      "common_continuation": 1e-06,
+      "budget_audit": 0.001
+    },
+    "out": "results/engineering_optimization_paired_mesh_v1"
+  },
+  "points_and_cases_unchanged": true,
+  "source_agreement_tolerance_unchanged": true,
+  "frozen_recovery_files": {
+    "src/recover_paired_mesh_records.py": "f7db707cfe52a67c0cf8b505f05137d2208347ab07eab5d3aa4cf81cf4098573",
+    "paper/engineering_optimization/PAIRED_MESH_RECOVERY_PLAN.md": "94fb25fdd619d90ad1d9ffa666f4b34de6f489da7131850434d2abd403ac6d6f"
+  },
+  "new_physics_attempts": 0
+}

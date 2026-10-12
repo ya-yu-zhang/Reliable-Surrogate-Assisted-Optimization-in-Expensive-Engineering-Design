@@ -1,0 +1,9 @@
+{
+  "complete": false,
+  "stopped": true,
+  "reason": "source_response_agreement_assertion",
+  "new_physics_attempts": 4,
+  "completed_response_pairs": 3,
+  "missing_paid_responses": 1,
+  "journal_sha256": "1ceb9f5dc157f0fe29fe7d80d80228309bdae650dff231892d76d88cc6f9a8e7"
+}
