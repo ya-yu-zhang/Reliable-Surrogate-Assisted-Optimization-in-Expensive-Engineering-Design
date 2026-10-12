@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "source_release_commit": "062c1b62a773f80cc4383d51a4d6655e9cc3f083",
+  "meshes": [[100, 50], [150, 75], [200, 100]],
+  "mappings": ["native_parameter_resampling", "conservative_base_field_transfer"],
+  "unchanged_different_action_controls": 4,
+  "structural_alias_controls": 2,
+  "source_prediction_tolerance": 0.00000001,
+  "relative_volume_tolerance": 0.000000000001,
+  "equilibrium_residual_flag": 0.000001,
+  "max_new_physics_attempts": 1000,
+  "source_relative_margins": {"common_continuation": 0.000001, "budget_audit": 0.001},
+  "out": "results/engineering_optimization_paired_mesh_v1"
+}

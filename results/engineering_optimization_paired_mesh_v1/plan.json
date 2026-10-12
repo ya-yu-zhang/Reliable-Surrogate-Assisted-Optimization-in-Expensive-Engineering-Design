@@ -1,0 +1,3191 @@
+{
+  "config": {
+    "version": 1,
+    "source_release_commit": "062c1b62a773f80cc4383d51a4d6655e9cc3f083",
+    "meshes": [
+      [
+        100,
+        50
+      ],
+      [
+        150,
+        75
+      ],
+      [
+        200,
+        100
+      ]
+    ],
+    "mappings": [
+      "native_parameter_resampling",
+      "conservative_base_field_transfer"
+    ],
+    "unchanged_different_action_controls": 4,
+    "structural_alias_controls": 2,
+    "source_prediction_tolerance": 1e-08,
+    "relative_volume_tolerance": 1e-12,
+    "equilibrium_residual_flag": 1e-06,
+    "max_new_physics_attempts": 1000,
+    "source_relative_margins": {
+      "common_continuation": 1e-06,
+      "budget_audit": 0.001
+    },
+    "out": "results/engineering_optimization_paired_mesh_v1"
+  },
+  "cases": [
+    {
+      "case": "S01",
+      "group": "changed",
+      "source": "common_continuation",
+      "state": "gp_ei_shared_init_r1_t101",
+      "control": "ei",
+      "continuation": "mean",
+      "initial_point": "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c",
+      "branches": {
+        "mean": [
+          "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c",
+          "cd56d32ea1695e9142ec67197dafa430f1b4d8ae126c9e0447aba013bf1bf72a",
+          "0587d913a5c9551ffafd5063f840215b6670c99f1b8ad98cbff7238833604a61",
+          "9f0078a7af5e753d4c248aaca67097803fcb74a100f1bf2f20e9c1f6a701f583",
+          "32b7d0c5f2cbc293d89f8b62fcfc144b2b43d20f0a9204be02fd84653e6ea596",
+          "194068e780e1762e04d1c18e25ce63684754cba2df94efe2e08684df7b996d85",
+          "78e408a9ef0493fff8f2a234b0a8016d11e32f682aa7d437f16608e24adcf0f7"
+        ],
+        "ei": [
+          "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c",
+          "0d0301c5adb01f847804d2448c490b5b6d7786e4f25574799cf8f7bb7d5ac377",
+          "0587d913a5c9551ffafd5063f840215b6670c99f1b8ad98cbff7238833604a61",
+          "d9cd6df50c2b676a7cd2d0b785764738f1190c4dea6121b5c599a5bf14a734b6",
+          "bedb38e3a3b7e6c21f0de17b5ae54ee1b99c50611703219e1792eee1765f4069",
+          "194068e780e1762e04d1c18e25ce63684754cba2df94efe2e08684df7b996d85",
+          "78e408a9ef0493fff8f2a234b0a8016d11e32f682aa7d437f16608e24adcf0f7"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c",
+          "5": "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c"
+        },
+        "ei": {
+          "0": "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c",
+          "5": "d9cd6df50c2b676a7cd2d0b785764738f1190c4dea6121b5c599a5bf14a734b6"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": 0.5389191018957802
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S02",
+      "group": "changed",
+      "source": "common_continuation",
+      "state": "gp_ei_shared_init_r1_t101",
+      "control": "pi",
+      "continuation": "mean",
+      "initial_point": "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c",
+      "branches": {
+        "mean": [
+          "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c",
+          "cd56d32ea1695e9142ec67197dafa430f1b4d8ae126c9e0447aba013bf1bf72a",
+          "0587d913a5c9551ffafd5063f840215b6670c99f1b8ad98cbff7238833604a61",
+          "9f0078a7af5e753d4c248aaca67097803fcb74a100f1bf2f20e9c1f6a701f583",
+          "32b7d0c5f2cbc293d89f8b62fcfc144b2b43d20f0a9204be02fd84653e6ea596",
+          "194068e780e1762e04d1c18e25ce63684754cba2df94efe2e08684df7b996d85",
+          "78e408a9ef0493fff8f2a234b0a8016d11e32f682aa7d437f16608e24adcf0f7"
+        ],
+        "pi": [
+          "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c",
+          "7e3b5a935c94ed42c7825d54db4f98883182e4da6fd44eea7de3f546b9bbf49e",
+          "93d77932dcce22dff6f88399bd992e6607233a1159e0ef5baa051ccd83c7599f",
+          "b240c6350008ff32ed84ec20e59722842e6155945b4107628eadb3eef79ac099",
+          "bedb38e3a3b7e6c21f0de17b5ae54ee1b99c50611703219e1792eee1765f4069",
+          "194068e780e1762e04d1c18e25ce63684754cba2df94efe2e08684df7b996d85",
+          "471c4e9a5988920ef083659372cbf515c16aaf00833d34164ff06d4475b91d1e"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c",
+          "5": "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c"
+        },
+        "pi": {
+          "0": "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c",
+          "5": "93d77932dcce22dff6f88399bd992e6607233a1159e0ef5baa051ccd83c7599f"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": 0.1344124900985999
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S03",
+      "group": "changed",
+      "source": "common_continuation",
+      "state": "gp_ei_shared_init_r4_t101",
+      "control": "pi",
+      "continuation": "mean",
+      "initial_point": "892457b3c9b1e056c3a4e41a271a8ea57e6372688b0e16ee3097321dc17f7147",
+      "branches": {
+        "mean": [
+          "892457b3c9b1e056c3a4e41a271a8ea57e6372688b0e16ee3097321dc17f7147",
+          "7b36300b6431e8683a8d3013c3ae8a5c1d54c7961fcda17c085f15c309e80535",
+          "54aafc2606a47bbea51c7c63ed7a70a28d7a6eb05b31042ad55ca5910fe6bad2",
+          "22bca2762a3c10bedc7ce934dddd6ac78c9247bd7610d4c0ae5eb9158c1abf7c",
+          "e629007034930074f242563ba42553b2c77ca915c54a0ddb92142d6ad2f219d0",
+          "181d566b85fd134276e2da1b6ddefbe965243ee34d4ef88fd16e6ec35cf9b3f2",
+          "117ba10234b11aafb5b53837ff2533ade365e79100d9d42c2a2a784b755ee872"
+        ],
+        "pi": [
+          "892457b3c9b1e056c3a4e41a271a8ea57e6372688b0e16ee3097321dc17f7147",
+          "f490224c3af7dac1f902e858765e9f7d5299b7461e222666e456eeb955b3f3d1",
+          "38f0ae6aa2aa7e79baa720f081063d6933db5b9dcec2376779340c200fb5d761",
+          "2ebf7cb33afa9f40941a81ae49b36e09a8eae948df1fa4be8b8ac48f59cca56b",
+          "680aa104d7f18f21ce589ec52511c20ababae1a954dfbd78e0ed393e61789c7c",
+          "181d566b85fd134276e2da1b6ddefbe965243ee34d4ef88fd16e6ec35cf9b3f2",
+          "117ba10234b11aafb5b53837ff2533ade365e79100d9d42c2a2a784b755ee872"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "892457b3c9b1e056c3a4e41a271a8ea57e6372688b0e16ee3097321dc17f7147",
+          "5": "54aafc2606a47bbea51c7c63ed7a70a28d7a6eb05b31042ad55ca5910fe6bad2"
+        },
+        "pi": {
+          "0": "892457b3c9b1e056c3a4e41a271a8ea57e6372688b0e16ee3097321dc17f7147",
+          "5": "892457b3c9b1e056c3a4e41a271a8ea57e6372688b0e16ee3097321dc17f7147"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": -0.08539684230246126
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S04",
+      "group": "changed",
+      "source": "common_continuation",
+      "state": "gp_ucb_shared_init_r7_t101",
+      "control": "ei",
+      "continuation": "mean",
+      "initial_point": "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+      "branches": {
+        "mean": [
+          "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "dc1a02b0c04e07097cd07b2f34db3f22a764be5844713fd1b03267e8086c858b",
+          "456b13374b8e9c0fc9417507ae861af433ec5c467a7a82362a62a41de4ee4828",
+          "4e9dd895e43ef60e8790ec5fca8b78f3e285d760cc536ad7e56b1e9a98b657c1",
+          "e1ff5d7498c7f3ec9b4b4daeb1860cb329f6b04cf846ee6eb8555d471cd2d615",
+          "b5c8a279817184ce0949b26b0c40d16fd3a5e074a25d1c178ffb3b6dd38d70d8",
+          "597e37f3e1498141ddbdc50d2007dbe703fe7323679252c6bf24116bc94da928"
+        ],
+        "ei": [
+          "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "1b996cd75118dd664283eee5daca5369b4174f3a73e1f08f936d0f5b39b7a770",
+          "456b13374b8e9c0fc9417507ae861af433ec5c467a7a82362a62a41de4ee4828",
+          "4e9dd895e43ef60e8790ec5fca8b78f3e285d760cc536ad7e56b1e9a98b657c1",
+          "24c5b8c99aca668a505702976d67416a45c580f56a54b2c637fcff35454d5cd5",
+          "70b8fbff3f4cbe34b85c1a114dc88ae7ead7915a7893f97de96e6c17d42f0a4b",
+          "3cf6baeef63f493aeff741872a2d500d1dcb0c8fa0bbb95c3b65d69f880543f2"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "5": "b5c8a279817184ce0949b26b0c40d16fd3a5e074a25d1c178ffb3b6dd38d70d8"
+        },
+        "ei": {
+          "0": "1b996cd75118dd664283eee5daca5369b4174f3a73e1f08f936d0f5b39b7a770",
+          "5": "1b996cd75118dd664283eee5daca5369b4174f3a73e1f08f936d0f5b39b7a770"
+        }
+      },
+      "old_effects": {
+        "0": 0.31569398283958544,
+        "5": -0.11846452754382479
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S05",
+      "group": "changed",
+      "source": "common_continuation",
+      "state": "gp_ucb_shared_init_r7_t101",
+      "control": "pi",
+      "continuation": "mean",
+      "initial_point": "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+      "branches": {
+        "mean": [
+          "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "dc1a02b0c04e07097cd07b2f34db3f22a764be5844713fd1b03267e8086c858b",
+          "456b13374b8e9c0fc9417507ae861af433ec5c467a7a82362a62a41de4ee4828",
+          "4e9dd895e43ef60e8790ec5fca8b78f3e285d760cc536ad7e56b1e9a98b657c1",
+          "e1ff5d7498c7f3ec9b4b4daeb1860cb329f6b04cf846ee6eb8555d471cd2d615",
+          "b5c8a279817184ce0949b26b0c40d16fd3a5e074a25d1c178ffb3b6dd38d70d8",
+          "597e37f3e1498141ddbdc50d2007dbe703fe7323679252c6bf24116bc94da928"
+        ],
+        "pi": [
+          "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "b5195d10eba1cda922253aa127e802953f8b41d63308fcc808a81866f9ea1d14",
+          "456b13374b8e9c0fc9417507ae861af433ec5c467a7a82362a62a41de4ee4828",
+          "65884fa341f757b865b0719ff3a63db62bba3006a3c8987a33fae6432315ae78",
+          "e1ff5d7498c7f3ec9b4b4daeb1860cb329f6b04cf846ee6eb8555d471cd2d615",
+          "70b8fbff3f4cbe34b85c1a114dc88ae7ead7915a7893f97de96e6c17d42f0a4b",
+          "b818c04feb38816c10ec903b0f8e4eba64e4d125a1746cefb49482999119f20a"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "5": "b5c8a279817184ce0949b26b0c40d16fd3a5e074a25d1c178ffb3b6dd38d70d8"
+        },
+        "pi": {
+          "0": "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "5": "65884fa341f757b865b0719ff3a63db62bba3006a3c8987a33fae6432315ae78"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": -0.15002378317884063
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S06",
+      "group": "changed",
+      "source": "common_continuation",
+      "state": "gp_ucb_shared_init_r7_t101",
+      "control": "lcb",
+      "continuation": "mean",
+      "initial_point": "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+      "branches": {
+        "mean": [
+          "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "dc1a02b0c04e07097cd07b2f34db3f22a764be5844713fd1b03267e8086c858b",
+          "456b13374b8e9c0fc9417507ae861af433ec5c467a7a82362a62a41de4ee4828",
+          "4e9dd895e43ef60e8790ec5fca8b78f3e285d760cc536ad7e56b1e9a98b657c1",
+          "e1ff5d7498c7f3ec9b4b4daeb1860cb329f6b04cf846ee6eb8555d471cd2d615",
+          "b5c8a279817184ce0949b26b0c40d16fd3a5e074a25d1c178ffb3b6dd38d70d8",
+          "597e37f3e1498141ddbdc50d2007dbe703fe7323679252c6bf24116bc94da928"
+        ],
+        "lcb": [
+          "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "0c6241e8b0aab8a83ffa0ec9bc7629bbb4bf0843dd5e9d5b2a0ec45b9f67f3f5",
+          "e19359f907e0abd2dd7791516ea49c1a1d2842dfef9d9ba61e7ed7687bd33f51",
+          "064855806fd58e117917d118e2eeef3341e212267e368db048167fa13b102c0a",
+          "24c5b8c99aca668a505702976d67416a45c580f56a54b2c637fcff35454d5cd5",
+          "4c0453c34b46a54c10a42284ec8c75e5aabd73cee55c45bf55ed47ce490e7bef",
+          "679434eb2fc83dff1a0635cf88ef56374e450430db97a3b0369e297883c853ed"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "5": "b5c8a279817184ce0949b26b0c40d16fd3a5e074a25d1c178ffb3b6dd38d70d8"
+        },
+        "lcb": {
+          "0": "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46",
+          "5": "e19359f907e0abd2dd7791516ea49c1a1d2842dfef9d9ba61e7ed7687bd33f51"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": -0.2582533170745976
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S07",
+      "group": "changed",
+      "source": "common_continuation",
+      "state": "gp_ucb_shared_init_r8_t101",
+      "control": "lcb",
+      "continuation": "mean",
+      "initial_point": "e7c546b88f44eaf0f6dcbae16af6bd0ac143c46e6183e614ce763e221d38adb4",
+      "branches": {
+        "mean": [
+          "e7c546b88f44eaf0f6dcbae16af6bd0ac143c46e6183e614ce763e221d38adb4",
+          "84a870d0c4da7ea1805ac08989fd68519acc39107f741b5b5cedd07949695f5f",
+          "d07cdd559a2001d40c6cef21b629cd2935072a99c19dbe9a2c42db942cc1b477",
+          "69053d60fe35cf11896f73f6138691552bfd8307eaccb106466874bffee99fe9",
+          "2b4b00c539919a767b4e41effb2ef689b2cce49c21d616d22817d9b5c95c636e",
+          "af4681e83b1a8015a47b0ba5f4076805c9d7f80f652733f059ba7c302859cb50",
+          "9b162b0a6bffdc641d4db859de24dd47a1af5026604d003aadcabd55f8eb3922"
+        ],
+        "lcb": [
+          "e7c546b88f44eaf0f6dcbae16af6bd0ac143c46e6183e614ce763e221d38adb4",
+          "8fb27e6fabe3a693da4c49883b8d21c5ea1d1664d45284d3704cb6e1d38012f5",
+          "d07cdd559a2001d40c6cef21b629cd2935072a99c19dbe9a2c42db942cc1b477",
+          "69053d60fe35cf11896f73f6138691552bfd8307eaccb106466874bffee99fe9",
+          "2b4b00c539919a767b4e41effb2ef689b2cce49c21d616d22817d9b5c95c636e",
+          "af4681e83b1a8015a47b0ba5f4076805c9d7f80f652733f059ba7c302859cb50",
+          "817d78e310d09f452e0942cf30183d7e8538fa5d7ce0d04bdcfd1d89d428a090"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "e7c546b88f44eaf0f6dcbae16af6bd0ac143c46e6183e614ce763e221d38adb4",
+          "5": "e7c546b88f44eaf0f6dcbae16af6bd0ac143c46e6183e614ce763e221d38adb4"
+        },
+        "lcb": {
+          "0": "e7c546b88f44eaf0f6dcbae16af6bd0ac143c46e6183e614ce763e221d38adb4",
+          "5": "817d78e310d09f452e0942cf30183d7e8538fa5d7ce0d04bdcfd1d89d428a090"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": 0.23248263093011853
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S08",
+      "group": "independent_proxy_mismatch",
+      "source": "budget_audit",
+      "state": "beam_holdout_r18_pi",
+      "control": "ei",
+      "continuation": "ei",
+      "initial_point": "7235cb97d9b79c39ac7d3eb952222ff38762fcbdb1113d63fbc3a30642acd091",
+      "branches": {
+        "mean": [
+          "7235cb97d9b79c39ac7d3eb952222ff38762fcbdb1113d63fbc3a30642acd091",
+          "51fa42a194d0176691f3938c9e3c564d48e511eb90817cf73ab054579b6424bf",
+          "9c24e59c2c72bee21fb76ef102466f2392568f4a99e46d2174a055a539e0b537",
+          "9154e908f831e1a1107ee55e72c8d0c98f52a2eedc692a46d4c9db7f5f69a404",
+          "83c5cdb7d870be97cbafdf1f8f1762da242cec65c17df5af8f58ef8cf9e7903c",
+          "4130924f9b423516645f3fe55e7176819946bd52b82c15ccf559de2865f08511",
+          "f8ec155d1e099afaeabbedf2e1367c248718c86c4b1aec7a0af685819d46ad78"
+        ],
+        "ei": [
+          "7235cb97d9b79c39ac7d3eb952222ff38762fcbdb1113d63fbc3a30642acd091",
+          "3f6c49a07333e6f9c33008382b52e72fbae940e21b6ac70b321b1721083380a2",
+          "abfab21c589c0a2a3c87b56bc5b7a364cd332f5295c7923b90c8be7830fa4b1c",
+          "cc976f0e94f719d677f35a5b800477e25acf400d249c0b3a08d3d5b5b175fdc0",
+          "d831affdc232a01f2038eb26b56cfa77e13f1104a69045e96b92ab7080349af9",
+          "dbe4b53a9ce91744438cc1db463c3dfe1b8390db1128efcad329aed5f98b1b35",
+          "07420b76d57df8a2e736cc9dd0e6893d4ccc84327e88700818280e04d79337b5"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "7235cb97d9b79c39ac7d3eb952222ff38762fcbdb1113d63fbc3a30642acd091",
+          "5": "9154e908f831e1a1107ee55e72c8d0c98f52a2eedc692a46d4c9db7f5f69a404"
+        },
+        "ei": {
+          "0": "7235cb97d9b79c39ac7d3eb952222ff38762fcbdb1113d63fbc3a30642acd091",
+          "5": "7235cb97d9b79c39ac7d3eb952222ff38762fcbdb1113d63fbc3a30642acd091"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": -0.08947961816319831
+      },
+      "relative_margin": 0.001
+    },
+    {
+      "case": "S09",
+      "group": "unchanged_different_action",
+      "source": "common_continuation",
+      "state": "gp_ei_shared_init_r0_t101",
+      "control": "ei",
+      "continuation": "mean",
+      "initial_point": "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29",
+      "branches": {
+        "mean": [
+          "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29",
+          "7c271bd8c29df1235e209eea2044f63eeb7a9d7a5a23253b08d972ad9f188bdd",
+          "7ba562a839455025b797eed7f1d05396f354589ab7ac0ff0402a143a8fc8d8a2",
+          "d6bb46c0efb07df72c0c9a691e8e1eff7622621bb636b72753fd307c70d0cc71",
+          "d831a2fbb88b2c9bf0a67bcd53e03908d47715eb18d8b79963a8ad497660d6c9",
+          "ccd00540e4c5b5d440f3d8e7cb58b1ed3a0bd0a69bf2ca1cbb3b5d2a40abaf19",
+          "0dbc0923642d6fff18fea151069c2bfc4d4ac29dec27f7ed2275af2bfa0f237f"
+        ],
+        "ei": [
+          "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29",
+          "99edd6dccb52633830c9b2d1d7c046566ad038441578f80ff94cc9b9458e5606",
+          "7ba562a839455025b797eed7f1d05396f354589ab7ac0ff0402a143a8fc8d8a2",
+          "d6bb46c0efb07df72c0c9a691e8e1eff7622621bb636b72753fd307c70d0cc71",
+          "d831a2fbb88b2c9bf0a67bcd53e03908d47715eb18d8b79963a8ad497660d6c9",
+          "9c52e7943c87fd37accb7ecac02f53f8587d5d5b7eeea3c39dd248aceed2df7a",
+          "e0a1b5cb6d38f5104bc41505ac70a40d71cc95dc879eaa2c03897a5ddbe1d146"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29",
+          "5": "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29"
+        },
+        "ei": {
+          "0": "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29",
+          "5": "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": 0.0
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S10",
+      "group": "unchanged_different_action",
+      "source": "common_continuation",
+      "state": "gp_ei_shared_init_r5_t101",
+      "control": "lcb",
+      "continuation": "mean",
+      "initial_point": "a117a0a79ed8f32cfd0ee92dd356d0443164fced9ab4789380a162da8c5ef0f7",
+      "branches": {
+        "mean": [
+          "a117a0a79ed8f32cfd0ee92dd356d0443164fced9ab4789380a162da8c5ef0f7",
+          "477027d8eda1a0b12f081f75fc390fe30475f373ae559aac383c480ff358ebec",
+          "f214b114f3818a383a456ab46b2011122ccc255e62c1872ec2d47be4a5ce1e8a",
+          "45a78ff6ff2d32c556e8ba2c7e99f518407ae7919dd06bddca66263527b7a62d",
+          "0c7ca3a6678fd1a6d6748d1d9c005ec0ed5c62ab5d15e88f75b425f136ac6fa8",
+          "df95f1fd21229d0b9446ed4f00660137cfe9adafaca826f2c961f6d4279c316e",
+          "d16fad9da55673740b84da9aff3c9bc60538f9d86dd2f88062ca1f89c6e872cc"
+        ],
+        "lcb": [
+          "a117a0a79ed8f32cfd0ee92dd356d0443164fced9ab4789380a162da8c5ef0f7",
+          "4a00551195377f8bde1c6db0d96045af4b5d2431906c652e3d2da1372e0c05a2",
+          "60cb5289495d0b5304990ad6c969765ea18280cf114bdc202e8991e3f9b23636",
+          "45a78ff6ff2d32c556e8ba2c7e99f518407ae7919dd06bddca66263527b7a62d",
+          "628a5f4274a4d09bb5f35b6575fc77540e0bf6b15419a7a131bff09552ea9c8c",
+          "a42dd42a5652c0b2835f3869623ac968fedd4eced929f012f4ecf45a27ea3c70",
+          "d16fad9da55673740b84da9aff3c9bc60538f9d86dd2f88062ca1f89c6e872cc"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "a117a0a79ed8f32cfd0ee92dd356d0443164fced9ab4789380a162da8c5ef0f7",
+          "5": "a117a0a79ed8f32cfd0ee92dd356d0443164fced9ab4789380a162da8c5ef0f7"
+        },
+        "lcb": {
+          "0": "a117a0a79ed8f32cfd0ee92dd356d0443164fced9ab4789380a162da8c5ef0f7",
+          "5": "a117a0a79ed8f32cfd0ee92dd356d0443164fced9ab4789380a162da8c5ef0f7"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": 0.0
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S11",
+      "group": "unchanged_different_action",
+      "source": "common_continuation",
+      "state": "gp_ei_shared_init_r6_t101",
+      "control": "ei",
+      "continuation": "mean",
+      "initial_point": "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1",
+      "branches": {
+        "mean": [
+          "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1",
+          "1707a7cce05d5d89a4eb6da0d0f12483b2550911c9fb5e5d44d8770e202bbe49",
+          "0e136eca9e41dbe421aea51d95c58665941f0265dbe86642e4ee4f1737b49180",
+          "2dcf7946a80be7f33c2f50a542050afff5860ed444c2dc5f42b08128a66c6ef1",
+          "8a6f93dc6c0eb0a486795096f635b148503ef36c1bd8bb948d8b244641fd53db",
+          "ddc24024663671fbb6b36933a65041492a859c2b87bb0d4a279313c91d57eafd",
+          "43c449efdaa06bc93fd731863f03a4bb4f6929a89e5cb9f9ea84a8bc6e96ab30"
+        ],
+        "ei": [
+          "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1",
+          "74a050fc23a67e4ea5ad3c8fc5c14112bb0f59bea01e3c92407e6766d06b6d8f",
+          "0e136eca9e41dbe421aea51d95c58665941f0265dbe86642e4ee4f1737b49180",
+          "2dcf7946a80be7f33c2f50a542050afff5860ed444c2dc5f42b08128a66c6ef1",
+          "8a6f93dc6c0eb0a486795096f635b148503ef36c1bd8bb948d8b244641fd53db",
+          "ddc24024663671fbb6b36933a65041492a859c2b87bb0d4a279313c91d57eafd",
+          "43c449efdaa06bc93fd731863f03a4bb4f6929a89e5cb9f9ea84a8bc6e96ab30"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1",
+          "5": "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1"
+        },
+        "ei": {
+          "0": "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1",
+          "5": "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": 0.0
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S12",
+      "group": "unchanged_different_action",
+      "source": "common_continuation",
+      "state": "gp_ei_shared_init_r6_t101",
+      "control": "lcb",
+      "continuation": "mean",
+      "initial_point": "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1",
+      "branches": {
+        "mean": [
+          "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1",
+          "1707a7cce05d5d89a4eb6da0d0f12483b2550911c9fb5e5d44d8770e202bbe49",
+          "0e136eca9e41dbe421aea51d95c58665941f0265dbe86642e4ee4f1737b49180",
+          "2dcf7946a80be7f33c2f50a542050afff5860ed444c2dc5f42b08128a66c6ef1",
+          "8a6f93dc6c0eb0a486795096f635b148503ef36c1bd8bb948d8b244641fd53db",
+          "ddc24024663671fbb6b36933a65041492a859c2b87bb0d4a279313c91d57eafd",
+          "43c449efdaa06bc93fd731863f03a4bb4f6929a89e5cb9f9ea84a8bc6e96ab30"
+        ],
+        "lcb": [
+          "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1",
+          "cc54257c872bd235f2509d980a9ef5b4fa2d62d35cb3ecf496483ca84d1e7086",
+          "0e136eca9e41dbe421aea51d95c58665941f0265dbe86642e4ee4f1737b49180",
+          "a580b4d8c63b2ccb35bf37f0ae1a7bb09d0a051a1dfc998bfb8de6b0f072bd36",
+          "8a6f93dc6c0eb0a486795096f635b148503ef36c1bd8bb948d8b244641fd53db",
+          "ddc24024663671fbb6b36933a65041492a859c2b87bb0d4a279313c91d57eafd",
+          "43c449efdaa06bc93fd731863f03a4bb4f6929a89e5cb9f9ea84a8bc6e96ab30"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1",
+          "5": "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1"
+        },
+        "lcb": {
+          "0": "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1",
+          "5": "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": 0.0
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S13",
+      "group": "structural_alias",
+      "source": "common_continuation",
+      "state": "gp_ei_shared_init_r0_t101",
+      "control": "pi",
+      "continuation": "mean",
+      "initial_point": "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29",
+      "branches": {
+        "mean": [
+          "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29",
+          "7c271bd8c29df1235e209eea2044f63eeb7a9d7a5a23253b08d972ad9f188bdd",
+          "7ba562a839455025b797eed7f1d05396f354589ab7ac0ff0402a143a8fc8d8a2",
+          "d6bb46c0efb07df72c0c9a691e8e1eff7622621bb636b72753fd307c70d0cc71",
+          "d831a2fbb88b2c9bf0a67bcd53e03908d47715eb18d8b79963a8ad497660d6c9",
+          "ccd00540e4c5b5d440f3d8e7cb58b1ed3a0bd0a69bf2ca1cbb3b5d2a40abaf19",
+          "0dbc0923642d6fff18fea151069c2bfc4d4ac29dec27f7ed2275af2bfa0f237f"
+        ],
+        "pi": [
+          "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29",
+          "7c271bd8c29df1235e209eea2044f63eeb7a9d7a5a23253b08d972ad9f188bdd",
+          "7ba562a839455025b797eed7f1d05396f354589ab7ac0ff0402a143a8fc8d8a2",
+          "d6bb46c0efb07df72c0c9a691e8e1eff7622621bb636b72753fd307c70d0cc71",
+          "d831a2fbb88b2c9bf0a67bcd53e03908d47715eb18d8b79963a8ad497660d6c9",
+          "ccd00540e4c5b5d440f3d8e7cb58b1ed3a0bd0a69bf2ca1cbb3b5d2a40abaf19",
+          "0dbc0923642d6fff18fea151069c2bfc4d4ac29dec27f7ed2275af2bfa0f237f"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29",
+          "5": "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29"
+        },
+        "pi": {
+          "0": "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29",
+          "5": "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": 0.0
+      },
+      "relative_margin": 1e-06
+    },
+    {
+      "case": "S14",
+      "group": "structural_alias",
+      "source": "common_continuation",
+      "state": "gp_ei_shared_init_r2_t101",
+      "control": "ei",
+      "continuation": "mean",
+      "initial_point": "d9d5442c1f64e94ba008fe1377bae0ae981a403fff473237f282f5c759b5b6cb",
+      "branches": {
+        "mean": [
+          "d9d5442c1f64e94ba008fe1377bae0ae981a403fff473237f282f5c759b5b6cb",
+          "bc6e1120c1ff3a8aa7439fbe3c137c1bd8115df6f33e81f394b8fb48cc873cf5",
+          "cf988afcf17127f87c2636e737eb9c3c8bba04c5aa704c8dca3460e445a9ec56",
+          "a58898d01a2ed50ce8de48e334a0de11582148b351bc122a3e70d9f944ae2a07",
+          "9d9f7327bea50d3d17b031979733ed4032c6644b42a6641c925053d0431096c4",
+          "b369870a7e557ce11df8c544e22197598deab0c7f8fc57e1ad130dc286d5c290",
+          "76eab7b2c9030c5c47a83e8b546f710ac7da50615548a3c4415cf729662e6869"
+        ],
+        "ei": [
+          "d9d5442c1f64e94ba008fe1377bae0ae981a403fff473237f282f5c759b5b6cb",
+          "bc6e1120c1ff3a8aa7439fbe3c137c1bd8115df6f33e81f394b8fb48cc873cf5",
+          "cf988afcf17127f87c2636e737eb9c3c8bba04c5aa704c8dca3460e445a9ec56",
+          "a58898d01a2ed50ce8de48e334a0de11582148b351bc122a3e70d9f944ae2a07",
+          "9d9f7327bea50d3d17b031979733ed4032c6644b42a6641c925053d0431096c4",
+          "b369870a7e557ce11df8c544e22197598deab0c7f8fc57e1ad130dc286d5c290",
+          "76eab7b2c9030c5c47a83e8b546f710ac7da50615548a3c4415cf729662e6869"
+        ]
+      },
+      "fixed_endpoints": {
+        "mean": {
+          "0": "d9d5442c1f64e94ba008fe1377bae0ae981a403fff473237f282f5c759b5b6cb",
+          "5": "d9d5442c1f64e94ba008fe1377bae0ae981a403fff473237f282f5c759b5b6cb"
+        },
+        "ei": {
+          "0": "d9d5442c1f64e94ba008fe1377bae0ae981a403fff473237f282f5c759b5b6cb",
+          "5": "d9d5442c1f64e94ba008fe1377bae0ae981a403fff473237f282f5c759b5b6cb"
+        }
+      },
+      "old_effects": {
+        "0": 0.0,
+        "5": 0.0
+      },
+      "relative_margin": 1e-06
+    }
+  ],
+  "points": {
+    "53c7c0016499a1e4c8e2bc9b8e636ed529bf28461ee6a45a0684329a888f262c": {
+      "x": [
+        0.47116088541972145,
+        0.32334599152739824,
+        0.9936631270936548,
+        0.9239217928936266,
+        0.48470078214462586,
+        0.7770989246945551,
+        0.8192138804477009,
+        0.4523383844440406,
+        0.43631942709099714,
+        0.6916267851492597,
+        0.3539198871233469,
+        0.0,
+        0.40394956087105066,
+        0.3788780596445063,
+        0.5583198275702548,
+        0.3093522154173481,
+        0.11246122565134288,
+        0.5761192829357349,
+        0.32355152476194554
+      ],
+      "old_y": 3008.832185520961
+    },
+    "cd56d32ea1695e9142ec67197dafa430f1b4d8ae126c9e0447aba013bf1bf72a": {
+      "x": [
+        0.5342230200767517,
+        0.6494920663535595,
+        0.8119082860648632,
+        0.736508147791028,
+        0.1912353467196226,
+        0.4616269813850522,
+        0.6379565382376313,
+        0.704535604454577,
+        0.3903582952916622,
+        0.08390905614942312,
+        0.5747853135690093,
+        0.24824092909693718,
+        0.39528983272612095,
+        0.35214674659073353,
+        0.5620897216722369,
+        0.5258260266855359,
+        0.301421987824142,
+        0.37912837974727154,
+        0.7744364226236939
+      ],
+      "old_y": 4699.3918982574005
+    },
+    "0587d913a5c9551ffafd5063f840215b6670c99f1b8ad98cbff7238833604a61": {
+      "x": [
+        0.2253041947260499,
+        0.5613832417875528,
+        0.05811442341655493,
+        0.061654980294406414,
+        0.327169643715024,
+        0.6878504632040858,
+        0.3289716523140669,
+        0.7655760999768972,
+        0.7341643562540412,
+        0.6146554499864578,
+        0.6608086572960019,
+        0.35571465361863375,
+        0.5762503584846854,
+        0.24772170279175043,
+        0.4260437022894621,
+        0.47247885912656784,
+        0.5256219860166311,
+        0.34452199283987284,
+        0.5309982541948557
+      ],
+      "old_y": 14079.829268607198
+    },
+    "9f0078a7af5e753d4c248aaca67097803fcb74a100f1bf2f20e9c1f6a701f583": {
+      "x": [
+        0.5174538912251592,
+        0.23096852656453848,
+        0.08871108386665583,
+        0.15907970536500216,
+        0.6928092781454325,
+        0.2927314629778266,
+        0.8205227144062519,
+        0.29093799367547035,
+        0.7443208657205105,
+        0.48688850831240416,
+        0.07649105694144964,
+        0.8946967767551541,
+        0.29076848831027746,
+        0.577214346267283,
+        0.10023632925003767,
+        0.2602200321853161,
+        0.21534523647278547,
+        0.5440671928226948,
+        0.7106681792065501
+      ],
+      "old_y": 19745.527367918425
+    },
+    "32b7d0c5f2cbc293d89f8b62fcfc144b2b43d20f0a9204be02fd84653e6ea596": {
+      "x": [
+        0.7480572601780295,
+        0.5180469937622547,
+        0.4654413275420666,
+        0.5421327603980899,
+        0.34679082222282887,
+        0.7600225871428847,
+        0.8211257793009281,
+        0.8471451522782445,
+        0.5049573425203562,
+        0.8038712944835424,
+        0.22242979612201452,
+        0.24088220577687025,
+        0.4239214947447181,
+        0.22702520340681076,
+        0.17192543670535088,
+        0.675940215587616,
+        0.49942193925380707,
+        0.40824590250849724,
+        0.43442859034985304
+      ],
+      "old_y": 25868.71513659317
+    },
+    "194068e780e1762e04d1c18e25ce63684754cba2df94efe2e08684df7b996d85": {
+      "x": [
+        0.7212916556745768,
+        0.993070469237864,
+        0.2884206576272845,
+        0.8271268997341394,
+        0.7317559197545052,
+        0.8237674664705992,
+        0.9703434454277158,
+        0.3355608684942126,
+        0.35337671265006065,
+        0.674023449420929,
+        0.6404906371608377,
+        0.35600950103253126,
+        0.4362114714458585,
+        0.33332758862525225,
+        0.9482992626726627,
+        0.26818028278648853,
+        0.18111176416277885,
+        0.6846943255513906,
+        0.4333849912509322
+      ],
+      "old_y": 22154.984162633
+    },
+    "78e408a9ef0493fff8f2a234b0a8016d11e32f682aa7d437f16608e24adcf0f7": {
+      "x": [
+        0.5822895914316177,
+        0.38696605060249567,
+        0.3511661607772112,
+        0.24421650357544422,
+        0.10498348716646433,
+        0.641374702565372,
+        0.6156614227220416,
+        0.031484292820096016,
+        0.46744279470294714,
+        0.4737549927085638,
+        0.5681165140122175,
+        0.21487125661224127,
+        0.21322670113295317,
+        0.8405781704932451,
+        0.43417599704116583,
+        0.12076328787952662,
+        0.7476045256480575,
+        0.6767276683822274,
+        0.2548123048618436
+      ],
+      "old_y": 9758.026991234476
+    },
+    "0d0301c5adb01f847804d2448c490b5b6d7786e4f25574799cf8f7bb7d5ac377": {
+      "x": [
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.16798827245898282,
+        0.0
+      ],
+      "old_y": 943698.5097777691
+    },
+    "d9cd6df50c2b676a7cd2d0b785764738f1190c4dea6121b5c599a5bf14a734b6": {
+      "x": [
+        0.6514530200511217,
+        0.649501602165401,
+        0.3619222156703472,
+        0.10013196337968111,
+        0.15646227728575468,
+        0.37078485544770956,
+        0.12261508405208588,
+        0.5314314290881157,
+        0.4014378534629941,
+        0.2048942670226097,
+        0.13400749396532774,
+        0.6586914854124188,
+        0.3208143450319767,
+        0.3379222033545375,
+        0.5520734395831823,
+        0.8793894331902266,
+        0.6931719742715359,
+        0.6608109753578901,
+        0.9401139440014958
+      ],
+      "old_y": 1387.3150463448874
+    },
+    "bedb38e3a3b7e6c21f0de17b5ae54ee1b99c50611703219e1792eee1765f4069": {
+      "x": [
+        0.28719391487538815,
+        0.7436698442324996,
+        0.6433114847168326,
+        0.5813288995996118,
+        0.6673178290948272,
+        0.5027781398966908,
+        0.8413435062393546,
+        0.38497389666736126,
+        0.2418823502957821,
+        0.5741174276918173,
+        0.3529625926166773,
+        0.020186759531497955,
+        0.6549936477094889,
+        0.3256756141781807,
+        0.7113882200792432,
+        0.06674155872315168,
+        0.32429526280611753,
+        0.20215459261089563,
+        0.49141414277255535
+      ],
+      "old_y": 7161.8381931986
+    },
+    "7e3b5a935c94ed42c7825d54db4f98883182e4da6fd44eea7de3f546b9bbf49e": {
+      "x": [
+        0.47290340065956116,
+        0.653612770140171,
+        0.2844720594584942,
+        0.5644914386793971,
+        0.5450919698923826,
+        0.6387850930914283,
+        0.6296263467520475,
+        0.27207734901458025,
+        0.7077357461676002,
+        0.6180291920900345,
+        0.7066162647679448,
+        0.5570525443181396,
+        0.46028773952275515,
+        0.6037867339327931,
+        0.3657114366069436,
+        0.4685297319665551,
+        0.15902692638337612,
+        0.5890150032937527,
+        0.30594315845519304
+      ],
+      "old_y": 8617.99622541796
+    },
+    "93d77932dcce22dff6f88399bd992e6607233a1159e0ef5baa051ccd83c7599f": {
+      "x": [
+        0.7640112843364477,
+        0.47517627850174904,
+        0.6459708577021956,
+        0.5742127262055874,
+        0.06597561575472355,
+        0.32027838472276926,
+        0.4043798968195915,
+        0.7941729119047523,
+        0.6696717506274581,
+        0.5848399288952351,
+        0.37534569296985865,
+        0.5971633223816752,
+        0.4148999350145459,
+        0.1339594079181552,
+        0.8914147606119514,
+        0.9929805025458336,
+        0.2811143286526203,
+        0.46771293599158525,
+        0.8154604267328978
+      ],
+      "old_y": 2604.407559176276
+    },
+    "b240c6350008ff32ed84ec20e59722842e6155945b4107628eadb3eef79ac099": {
+      "x": [
+        0.2729069795459509,
+        0.5836827773600817,
+        0.7733455961570144,
+        0.10665576066821814,
+        0.47855141945183277,
+        0.8451865278184414,
+        0.4397242348641157,
+        0.9906918210908771,
+        0.712140154093504,
+        0.5861491905525327,
+        0.40241527277976274,
+        0.21949690766632557,
+        0.5227976450696588,
+        0.37013041507452726,
+        0.055832305923104286,
+        0.08136045467108488,
+        0.1577254692092538,
+        0.194508065469563,
+        0.6284511359408498
+      ],
+      "old_y": 20590.463744587752
+    },
+    "471c4e9a5988920ef083659372cbf515c16aaf00833d34164ff06d4475b91d1e": {
+      "x": [
+        0.8488682396709919,
+        0.7658443786203861,
+        0.5697024473920465,
+        0.02355344034731388,
+        0.9372117929160595,
+        0.6154763577505946,
+        0.6983273327350616,
+        0.040032483637332916,
+        0.025972104631364346,
+        0.14241827186197042,
+        0.015133915469050407,
+        0.7668411796912551,
+        0.39552612137049437,
+        0.7594566084444523,
+        0.25615083053708076,
+        0.4575635325163603,
+        0.9844534210860729,
+        0.6646208986639977,
+        0.9002492735162377
+      ],
+      "old_y": 5151.889294978568
+    },
+    "892457b3c9b1e056c3a4e41a271a8ea57e6372688b0e16ee3097321dc17f7147": {
+      "x": [
+        0.5607687407714889,
+        0.14696090275740625,
+        0.03537152857619497,
+        0.553840993003002,
+        0.40694546951314575,
+        0.6972577962063409,
+        0.7107861231147662,
+        0.14636076986253624,
+        0.03730554415436781,
+        0.9092475406403647,
+        0.4715030052450269,
+        0.0710451961799204,
+        0.8525471865277591,
+        0.39895454754219417,
+        0.3758031159995301,
+        0.5535253346860695,
+        0.6231468018702649,
+        0.3908358158571671,
+        0.4209283804446997
+      ],
+      "old_y": 2329.7169244066754
+    },
+    "7b36300b6431e8683a8d3013c3ae8a5c1d54c7961fcda17c085f15c309e80535": {
+      "x": [
+        1.0,
+        0.966699494780436,
+        1.0,
+        0.0,
+        0.1439729176783755,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0493096667356593,
+        1.0,
+        0.8943748068963887,
+        0.12944774240336804,
+        0.6470190692587431,
+        0.22255749532784844,
+        0.03324756185443405,
+        0.0,
+        0.9708871184634461,
+        0.0
+      ],
+      "old_y": 141648.23027848796
+    },
+    "54aafc2606a47bbea51c7c63ed7a70a28d7a6eb05b31042ad55ca5910fe6bad2": {
+      "x": [
+        0.6681445529684424,
+        0.43559438921511173,
+        0.5860045896843076,
+        0.950204816646874,
+        0.0986925670877099,
+        0.5788075160235167,
+        0.645790939219296,
+        0.2623923448845744,
+        0.21441011037677526,
+        0.8410935811698437,
+        0.545387520454824,
+        0.5509049845859408,
+        0.04983027745038271,
+        0.474051745608449,
+        0.5922970976680517,
+        0.6115953475236893,
+        0.565058371052146,
+        0.6541111245751381,
+        0.28232965897768736
+      ],
+      "old_y": 2130.7664556037435
+    },
+    "22bca2762a3c10bedc7ce934dddd6ac78c9247bd7610d4c0ae5eb9158c1abf7c": {
+      "x": [
+        0.9219017559662461,
+        0.6103778630495071,
+        0.31077591236680746,
+        0.7928076209500432,
+        0.5920742461457849,
+        0.42838999163359404,
+        0.5730581553652883,
+        0.4499967498704791,
+        0.980023249052465,
+        0.8571946760639548,
+        0.6784293949604034,
+        0.17555296327918768,
+        0.4468733621761203,
+        0.23748478572815657,
+        0.6978458072990179,
+        0.42502180114388466,
+        0.4102336261421442,
+        0.8232952784746885,
+        0.7766526117920876
+      ],
+      "old_y": 12271.768862562607
+    },
+    "e629007034930074f242563ba42553b2c77ca915c54a0ddb92142d6ad2f219d0": {
+      "x": [
+        0.9775261515751481,
+        0.8366892337799072,
+        0.019190453924238682,
+        0.169019915163517,
+        0.6553288763388991,
+        0.44941744208335876,
+        0.3382305884733796,
+        0.5158325070515275,
+        0.34925690945237875,
+        0.8445154614746571,
+        0.5607531713321805,
+        0.8082046676427126,
+        0.6023190263658762,
+        0.8553619543090463,
+        0.8711993722245097,
+        0.18091468140482903,
+        0.7522482024505734,
+        0.7100211381912231,
+        0.640532243065536
+      ],
+      "old_y": 8987.907426934264
+    },
+    "181d566b85fd134276e2da1b6ddefbe965243ee34d4ef88fd16e6ec35cf9b3f2": {
+      "x": [
+        0.7540878597646952,
+        0.8647482236847281,
+        0.3823418617248535,
+        0.17030740343034267,
+        0.015859177336096764,
+        0.22435290832072496,
+        0.49047228693962097,
+        0.9321227055042982,
+        0.7899919077754021,
+        0.6796771390363574,
+        0.2856332892552018,
+        0.28847577795386314,
+        0.20288765244185925,
+        0.6282037999480963,
+        0.31533437594771385,
+        0.23736956156790257,
+        0.740239379927516,
+        0.18262595590204,
+        0.14570929761976004
+      ],
+      "old_y": 10864.677287905424
+    },
+    "117ba10234b11aafb5b53837ff2533ade365e79100d9d42c2a2a784b755ee872": {
+      "x": [
+        0.9690674329176545,
+        0.374323102645576,
+        0.8133382303640246,
+        0.16167188994586468,
+        0.35732893366366625,
+        0.5467872312292457,
+        0.5271026659756899,
+        0.5944732250645757,
+        0.5732080535963178,
+        0.4115004166960716,
+        0.919233781285584,
+        0.5166656319051981,
+        0.5729330936446786,
+        0.4849152769893408,
+        0.23717303201556206,
+        0.6742229396477342,
+        0.5394149497151375,
+        0.5589881278574467,
+        0.5815497245639563
+      ],
+      "old_y": 3348.7121175887014
+    },
+    "f490224c3af7dac1f902e858765e9f7d5299b7461e222666e456eeb955b3f3d1": {
+      "x": [
+        0.5082081276923418,
+        0.5594674041494727,
+        0.4294190723448992,
+        0.4723759777843952,
+        0.36892977450042963,
+        0.7999105378985405,
+        0.47679625917226076,
+        0.4876156151294708,
+        0.5110676344484091,
+        0.8537412108853459,
+        0.7788754990324378,
+        0.43690904695540667,
+        0.49491920974105597,
+        0.3783800331875682,
+        0.752120241522789,
+        0.3429374163970351,
+        0.27690196968615055,
+        0.6010653264820576,
+        0.7167765963822603
+      ],
+      "old_y": 2770.4562409406167
+    },
+    "38f0ae6aa2aa7e79baa720f081063d6933db5b9dcec2376779340c200fb5d761": {
+      "x": [
+        0.3701237104833126,
+        0.5161690516397357,
+        0.9521323898807168,
+        0.15550635941326618,
+        0.3375862706452608,
+        0.524510195478797,
+        0.9962940206751227,
+        0.4021644610911608,
+        0.4673618068918586,
+        0.6309413192793727,
+        0.13697560224682093,
+        0.5382608436048031,
+        0.38113158755004406,
+        0.3745653312653303,
+        0.4059615423902869,
+        0.39555447455495596,
+        0.5040443371981382,
+        0.15505425538867712,
+        0.910206894390285
+      ],
+      "old_y": 6596.792942845704
+    },
+    "2ebf7cb33afa9f40941a81ae49b36e09a8eae948df1fa4be8b8ac48f59cca56b": {
+      "x": [
+        0.9782814579084516,
+        0.8062929315492511,
+        0.7592073017731309,
+        0.07088559679687023,
+        0.49093377962708473,
+        0.7854712894186378,
+        0.715784864500165,
+        0.014487707987427711,
+        0.3210586905479431,
+        0.5095244562253356,
+        0.23943857848644257,
+        0.7951080873608589,
+        0.4600525889545679,
+        0.9374390942975879,
+        0.7766001205891371,
+        0.6565939476713538,
+        0.6227865591645241,
+        0.7692715087905526,
+        0.48467709962278605
+      ],
+      "old_y": 6380.763823083633
+    },
+    "680aa104d7f18f21ce589ec52511c20ababae1a954dfbd78e0ed393e61789c7c": {
+      "x": [
+        0.9280821355059743,
+        0.5203352021053433,
+        0.3100772872567177,
+        0.8495251685380936,
+        0.1529380241408944,
+        0.4204368870705366,
+        0.9781853407621384,
+        0.5108343167230487,
+        0.7891644779592752,
+        0.3367602014914155,
+        0.5836821487173438,
+        0.023673552088439465,
+        0.4353726804256439,
+        0.5043131718412042,
+        0.3035438973456621,
+        0.2861718386411667,
+        0.07891915086656809,
+        0.7778369477018714,
+        0.02783811278641224
+      ],
+      "old_y": 10035.057516031693
+    },
+    "daea9fdb8e5eaf1c3b05cc885b23f6194ec578ef3621720f42b73fe91df9da46": {
+      "x": [
+        0.9579429648290694,
+        0.5616691866854346,
+        0.728408366445936,
+        0.3534944058327185,
+        0.9317929200284464,
+        0.6580898088104932,
+        0.5510277577322502,
+        0.6987316570766908,
+        0.6166437441250993,
+        0.7816338814210606,
+        0.5960350880211315,
+        0.8478155101583854,
+        0.08815513008353183,
+        0.12139806633696941,
+        0.7799265302940092,
+        0.7003444196528134,
+        0.0056128565720893545,
+        0.005705189032476397,
+        0.44095758893960035
+      ],
+      "old_y": 3064.7286535533594
+    },
+    "dc1a02b0c04e07097cd07b2f34db3f22a764be5844713fd1b03267e8086c858b": {
+      "x": [
+        0.9286507135257125,
+        0.5986753841862082,
+        0.3123583570122719,
+        0.778048437088728,
+        0.8301533171907067,
+        0.7130595184862614,
+        0.2879312252625823,
+        0.8069590758532286,
+        0.27647621743381023,
+        0.7182123865932226,
+        0.6806761883199215,
+        0.10833567380905151,
+        0.9724531657993793,
+        0.44293133076280355,
+        0.5269276052713394,
+        0.44828244484961033,
+        0.35057456139475107,
+        0.19118402618914843,
+        0.13754137326031923
+      ],
+      "old_y": 10832.866100355996
+    },
+    "456b13374b8e9c0fc9417507ae861af433ec5c467a7a82362a62a41de4ee4828": {
+      "x": [
+        0.7865769751369953,
+        0.4942359356209636,
+        0.5589026631787419,
+        0.5074178585782647,
+        0.6486048437654972,
+        0.7481835065409541,
+        0.0664136502891779,
+        0.6071030022576451,
+        0.10158990416675806,
+        0.2597639877349138,
+        0.4687986159697175,
+        0.3609863789752126,
+        0.12330128438770771,
+        0.2865947624668479,
+        0.7184116011485457,
+        0.5876949969679117,
+        0.3979571284726262,
+        0.6691970704123378,
+        0.7896076049655676
+      ],
+      "old_y": 4477.534938066016
+    },
+    "4e9dd895e43ef60e8790ec5fca8b78f3e285d760cc536ad7e56b1e9a98b657c1": {
+      "x": [
+        0.9353628847748041,
+        0.5244907746091485,
+        0.4629722023382783,
+        0.7823606496676803,
+        0.6209589745849371,
+        0.39615513756871223,
+        0.5478052264079452,
+        0.37501468788832426,
+        0.23357867635786533,
+        0.479979389347136,
+        0.005027753300964832,
+        0.0785621078684926,
+        0.28763447888195515,
+        0.9729223623871803,
+        0.33379395864903927,
+        0.5611689370125532,
+        0.37977023143321276,
+        0.500390094704926,
+        0.630316668190062
+      ],
+      "old_y": 3413.6883180982622
+    },
+    "e1ff5d7498c7f3ec9b4b4daeb1860cb329f6b04cf846ee6eb8555d471cd2d615": {
+      "x": [
+        0.6284946659579873,
+        0.6602415312081575,
+        0.7627392709255219,
+        0.5039731916040182,
+        0.31454404164105654,
+        0.9340102076530457,
+        0.09731865115463734,
+        0.4370837165042758,
+        0.8458630787208676,
+        0.40096063259989023,
+        0.17225372046232224,
+        0.3515260051935911,
+        0.983940583653748,
+        0.965472275391221,
+        0.6023098565638065,
+        0.07007219828665257,
+        0.3794035417959094,
+        0.6173864044249058,
+        0.5962319718673825
+      ],
+      "old_y": 187951.26303055524
+    },
+    "b5c8a279817184ce0949b26b0c40d16fd3a5e074a25d1c178ffb3b6dd38d70d8": {
+      "x": [
+        0.8236282179132104,
+        0.5962008163332939,
+        0.30197541788220406,
+        0.6243859473615885,
+        0.4537634430453181,
+        0.22694083768874407,
+        0.5081161987036467,
+        0.2258574990555644,
+        0.3032445842400193,
+        0.2688188785687089,
+        0.532047264277935,
+        0.10779567994177341,
+        0.5709869023412466,
+        0.47357276175171137,
+        0.5085530783981085,
+        0.49460381362587214,
+        0.7975101890042424,
+        0.8495394801720977,
+        0.45537206064909697
+      ],
+      "old_y": 1734.1506265972785
+    },
+    "597e37f3e1498141ddbdc50d2007dbe703fe7323679252c6bf24116bc94da928": {
+      "x": [
+        0.1838736915960908,
+        0.3490954739972949,
+        0.4456949522718787,
+        0.8064084388315678,
+        0.8224545819684863,
+        0.7592882597818971,
+        0.4518888480961323,
+        0.7040732568129897,
+        0.7047950513660908,
+        0.4679207820445299,
+        0.25101737305521965,
+        0.4204660579562187,
+        0.6665414599701762,
+        0.9628687091171741,
+        0.29599513579159975,
+        0.8337562289088964,
+        0.498451279476285,
+        0.05331243295222521,
+        0.6655595833435655
+      ],
+      "old_y": 432220.2001123008
+    },
+    "1b996cd75118dd664283eee5daca5369b4174f3a73e1f08f936d0f5b39b7a770": {
+      "x": [
+        0.5244116755202413,
+        0.6500307433307171,
+        0.2784270253032446,
+        0.7932351492345333,
+        0.41627482138574123,
+        0.8255407400429249,
+        0.08183201961219311,
+        0.9612434543669224,
+        0.15449572633951902,
+        0.576820420101285,
+        0.09774620924144983,
+        0.19157871790230274,
+        0.81483284663409,
+        0.37353768665343523,
+        0.7192004462704062,
+        0.6621991423889995,
+        0.47859372291713953,
+        0.26430391520261765,
+        0.10294296219944954
+      ],
+      "old_y": 2097.2122585904995
+    },
+    "24c5b8c99aca668a505702976d67416a45c580f56a54b2c637fcff35454d5cd5": {
+      "x": [
+        0.6495465617626905,
+        0.7918181400746107,
+        0.8821272058412433,
+        0.2125656334683299,
+        0.6137667689472437,
+        0.17659445479512215,
+        0.14357487298548222,
+        0.2003057049587369,
+        0.43886451981961727,
+        0.839530086144805,
+        0.07654385827481747,
+        0.12883458752185106,
+        0.22138075064867735,
+        0.8460468742996454,
+        0.8366954438388348,
+        0.412423562258482,
+        0.5719820400699973,
+        0.7347699236124754,
+        0.5398964341729879
+      ],
+      "old_y": 8239.505083126658
+    },
+    "70b8fbff3f4cbe34b85c1a114dc88ae7ead7915a7893f97de96e6c17d42f0a4b": {
+      "x": [
+        0.9667193507775664,
+        0.1364814592525363,
+        0.38493623305112123,
+        0.44848253205418587,
+        0.8101259730756283,
+        0.30986562743782997,
+        0.6063381303101778,
+        0.836507641710341,
+        0.2830749098211527,
+        0.4032781580463052,
+        0.4490708140656352,
+        0.6179807921871543,
+        0.8740675989538431,
+        0.3862879006192088,
+        0.44049906358122826,
+        0.1372607732191682,
+        0.3217482091858983,
+        0.5048141982406378,
+        0.20095478929579258
+      ],
+      "old_y": 6899.44888678002
+    },
+    "3cf6baeef63f493aeff741872a2d500d1dcb0c8fa0bbb95c3b65d69f880543f2": {
+      "x": [
+        0.8854675199836493,
+        0.7679332662373781,
+        0.7690617563202977,
+        0.2451308434829116,
+        0.4230631636455655,
+        0.7740275729447603,
+        0.4457407733425498,
+        0.8827532986178994,
+        0.6030158223584294,
+        0.38231965340673923,
+        0.8111895164474845,
+        0.5883042328059673,
+        0.8311208924278617,
+        0.6529431790113449,
+        0.0822958443313837,
+        0.28674022294580936,
+        0.5671452600508928,
+        0.6970957545563579,
+        0.23440040461719036
+      ],
+      "old_y": 188680.52597800636
+    },
+    "b5195d10eba1cda922253aa127e802953f8b41d63308fcc808a81866f9ea1d14": {
+      "x": [
+        0.44466928858309984,
+        0.6077392632141709,
+        0.4345324747264385,
+        0.757850581780076,
+        0.3572054961696267,
+        0.6680610030889511,
+        0.4398630177602172,
+        0.342764456756413,
+        0.47143150214105844,
+        0.7361310236155987,
+        0.7781453337520361,
+        0.48589608259499073,
+        0.7393919797614217,
+        0.773900032043457,
+        0.32432038988918066,
+        0.8762309458106756,
+        0.5186904855072498,
+        0.40385512355715036,
+        0.6422488754615188
+      ],
+      "old_y": 5646.446749874487
+    },
+    "65884fa341f757b865b0719ff3a63db62bba3006a3c8987a33fae6432315ae78": {
+      "x": [
+        0.8289679139852524,
+        0.47861095890402794,
+        0.30982111021876335,
+        0.6944754226133227,
+        0.8407961064949632,
+        0.45089252293109894,
+        0.04660671856254339,
+        0.7926775338128209,
+        0.03167359810322523,
+        0.49013272766023874,
+        0.22878055833280087,
+        0.11088142357766628,
+        0.595517766661942,
+        0.4387619970366359,
+        0.8195002796128392,
+        0.3538255803287029,
+        0.7199887819588184,
+        0.3137505454942584,
+        0.366030415520072
+      ],
+      "old_y": 2193.932813619948
+    },
+    "b818c04feb38816c10ec903b0f8e4eba64e4d125a1746cefb49482999119f20a": {
+      "x": [
+        0.6792800994589925,
+        0.36046359688043594,
+        0.7891752338036895,
+        0.2770137619227171,
+        0.7293462222442031,
+        0.7544726505875587,
+        0.4149494105949998,
+        0.2825186438858509,
+        0.36701060738414526,
+        0.5127207646146417,
+        0.439277958124876,
+        0.05918109230697155,
+        0.8885736959055066,
+        0.8507116362452507,
+        0.46853593084961176,
+        0.2454877207055688,
+        0.7853570729494095,
+        0.3726240349933505,
+        0.6368134459480643
+      ],
+      "old_y": 10228.010225994709
+    },
+    "0c6241e8b0aab8a83ffa0ec9bc7629bbb4bf0843dd5e9d5b2a0ec45b9f67f3f5": {
+      "x": [
+        1.0,
+        0.0,
+        0.45691732905622734,
+        0.7518115358609052,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.5886729531127122,
+        0.0,
+        1.0
+      ],
+      "old_y": 60220706.07686931
+    },
+    "e19359f907e0abd2dd7791516ea49c1a1d2842dfef9d9ba61e7ed7687bd33f51": {
+      "x": [
+        0.45981981977820396,
+        0.6300134174525738,
+        0.3345108097419143,
+        0.8221256844699383,
+        0.6130747301504016,
+        0.7732191495597363,
+        0.41182447224855423,
+        0.29057786893099546,
+        0.25854773353785276,
+        0.9226901568472385,
+        0.05105144437402487,
+        0.4803079040721059,
+        0.23112045787274837,
+        0.45462244655936956,
+        0.6304866569116712,
+        0.7694157427176833,
+        0.5039071831852198,
+        0.7952364701777697,
+        0.6333050252869725
+      ],
+      "old_y": 2525.6269673109987
+    },
+    "064855806fd58e117917d118e2eeef3341e212267e368db048167fa13b102c0a": {
+      "x": [
+        0.7166903242468834,
+        0.6284679565578699,
+        0.5316488966345787,
+        0.28203815780580044,
+        0.29054244980216026,
+        0.7820608448237181,
+        0.10995457414537668,
+        0.7098847553133965,
+        0.31937474105507135,
+        0.5130668673664331,
+        0.7589366538450122,
+        0.8837854275479913,
+        0.5288300132378936,
+        0.2654256420210004,
+        0.5398561349138618,
+        0.3497634679079056,
+        0.38683615904301405,
+        0.5739677473902702,
+        0.2364185182377696
+      ],
+      "old_y": 4769.296994167284
+    },
+    "4c0453c34b46a54c10a42284ec8c75e5aabd73cee55c45bf55ed47ce490e7bef": {
+      "x": [
+        0.7084172796458006,
+        0.7406552135944366,
+        0.3840321786701679,
+        0.747365259565413,
+        0.4803807074204087,
+        0.34858331363648176,
+        0.8261702973395586,
+        0.36676830518990755,
+        0.5650739222764969,
+        0.4213004419580102,
+        0.6287734573706985,
+        0.2921411534771323,
+        0.6704583950340748,
+        0.6120243230834603,
+        0.18341668602079153,
+        0.44474863540381193,
+        0.34025467559695244,
+        0.8133724583312869,
+        0.09941594675183296
+      ],
+      "old_y": 23036.9043971435
+    },
+    "679434eb2fc83dff1a0635cf88ef56374e450430db97a3b0369e297883c853ed": {
+      "x": [
+        0.6335348654538393,
+        0.06143955886363983,
+        0.3097494710236788,
+        0.47833906672894955,
+        9.793508797883987e-05,
+        0.5260571455582976,
+        0.40469127893447876,
+        0.3571967501193285,
+        0.5723534598946571,
+        0.4131610803306103,
+        0.797807551920414,
+        0.832607633434236,
+        0.6871913364157081,
+        0.37239883095026016,
+        0.3514586938545108,
+        0.7752137677744031,
+        0.83764064963907,
+        0.9885046081617475,
+        0.9759310903027654
+      ],
+      "old_y": 2670.9015480432286
+    },
+    "e7c546b88f44eaf0f6dcbae16af6bd0ac143c46e6183e614ce763e221d38adb4": {
+      "x": [
+        0.6268747746730974,
+        0.7511260441742554,
+        0.7625108869761893,
+        0.6762328969923848,
+        0.9223579039098417,
+        0.7166897812930175,
+        0.0879314656556033,
+        0.3847397119954131,
+        0.14105139892115812,
+        0.2862007681709135,
+        0.5801877263980227,
+        0.04380698199375028,
+        0.6036577667474432,
+        0.30340607953284626,
+        0.20766217873877196,
+        0.5716198096102691,
+        0.8105982886247876,
+        0.9274474094172391,
+        0.9920283249728764
+      ],
+      "old_y": 2877.576342916249
+    },
+    "84a870d0c4da7ea1805ac08989fd68519acc39107f741b5b5cedd07949695f5f": {
+      "x": [
+        0.6298409290611744,
+        0.5207336591556668,
+        0.5032976260408759,
+        0.620035876519978,
+        0.8901725178584456,
+        0.29647064954042435,
+        0.14053441677242517,
+        0.7353150891140103,
+        0.5340473335236311,
+        0.28723067697137594,
+        0.07750539761036634,
+        0.1463602976873517,
+        0.1311351591721177,
+        0.44581704307347536,
+        0.4526405641809106,
+        0.8166808122768998,
+        0.2144797071814537,
+        0.5309213437139988,
+        0.5553303463384509
+      ],
+      "old_y": 10032.76317485672
+    },
+    "d07cdd559a2001d40c6cef21b629cd2935072a99c19dbe9a2c42db942cc1b477": {
+      "x": [
+        0.6017916547134519,
+        0.5034414790570736,
+        0.6278449818491936,
+        0.0004442725330591202,
+        0.053870528005063534,
+        0.7518314784392715,
+        0.5752072641626,
+        0.5762237748131156,
+        0.06273657362908125,
+        0.5145297348499298,
+        0.40117177087813616,
+        0.53416648786515,
+        0.3383935522288084,
+        0.6371169593185186,
+        0.8130328943952918,
+        0.5747757386416197,
+        0.341247440315783,
+        0.9045463502407074,
+        0.506634040735662
+      ],
+      "old_y": 3696.224645929999
+    },
+    "69053d60fe35cf11896f73f6138691552bfd8307eaccb106466874bffee99fe9": {
+      "x": [
+        0.5033179447054863,
+        0.7631449056789279,
+        0.7250427436083555,
+        0.7311146976426244,
+        0.5393115319311619,
+        0.41896675806492567,
+        0.33867560513317585,
+        0.3966036010533571,
+        0.48103089071810246,
+        0.31863693334162235,
+        0.7470226837322116,
+        0.20232726633548737,
+        0.14675203431397676,
+        0.5389581425115466,
+        0.6697662686929107,
+        0.6586100002750754,
+        0.8258375795558095,
+        0.34058739338070154,
+        0.7527788011357188
+      ],
+      "old_y": 4893.845229539187
+    },
+    "2b4b00c539919a767b4e41effb2ef689b2cce49c21d616d22817d9b5c95c636e": {
+      "x": [
+        0.45250456780195236,
+        0.4665569122880697,
+        0.16820088401436806,
+        0.2561093643307686,
+        0.44503801967948675,
+        0.5239873183891177,
+        0.3063614061102271,
+        0.3793146200478077,
+        0.786734969355166,
+        0.4234937587752938,
+        0.021689177490770817,
+        0.621057316660881,
+        0.4231937751173973,
+        0.28918081894516945,
+        0.8138688718900084,
+        0.21983784716576338,
+        0.6698526525869966,
+        0.41237977892160416,
+        0.367190720513463
+      ],
+      "old_y": 9861.141740502095
+    },
+    "af4681e83b1a8015a47b0ba5f4076805c9d7f80f652733f059ba7c302859cb50": {
+      "x": [
+        0.5340501945465803,
+        0.4561637444421649,
+        0.4244948476552963,
+        0.10869508981704712,
+        0.8183777611702681,
+        0.045787513256073,
+        0.5051568187773228,
+        0.7032358665019274,
+        0.2512282319366932,
+        0.32229660637676716,
+        0.42672090511769056,
+        0.4278360875323415,
+        0.43655999191105366,
+        0.3692620266228914,
+        0.9463702728971839,
+        0.247062586247921,
+        0.9152735406532884,
+        0.45337597467005253,
+        0.8515872275456786
+      ],
+      "old_y": 3677.8129776449277
+    },
+    "9b162b0a6bffdc641d4db859de24dd47a1af5026604d003aadcabd55f8eb3922": {
+      "x": [
+        0.39656093064695597,
+        0.6289695547893643,
+        0.32857819087803364,
+        0.19292342383414507,
+        0.9114266755059361,
+        0.5421771248802543,
+        0.7242776192724705,
+        0.5306481933221221,
+        0.784760719165206,
+        0.5847356403246522,
+        0.8471123808994889,
+        0.915276600047946,
+        0.34656632598489523,
+        0.3331242296844721,
+        0.858681139536202,
+        0.46221255883574486,
+        0.18955925479531288,
+        0.07952911872416735,
+        0.3867778070271015
+      ],
+      "old_y": 13664.413704042725
+    },
+    "8fb27e6fabe3a693da4c49883b8d21c5ea1d1664d45284d3704cb6e1d38012f5": {
+      "x": [
+        0.9493591946449987,
+        0.7897421959383565,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.7928582417693266,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "old_y": 445098.97598349745
+    },
+    "817d78e310d09f452e0942cf30183d7e8538fa5d7ce0d04bdcfd1d89d428a090": {
+      "x": [
+        0.6641908595338464,
+        0.5387463932856917,
+        0.604541102424264,
+        0.11351723037660122,
+        0.14033531956374645,
+        0.3843947174027562,
+        0.3512441962957382,
+        0.7541634105145931,
+        0.10472266748547554,
+        0.5268865898251534,
+        0.1942676454782486,
+        0.5768983252346516,
+        0.231474831700325,
+        0.44121478125452995,
+        0.3740371596068144,
+        0.45709705632179976,
+        0.6960162743926048,
+        0.8606018060818315,
+        0.3296475037932396
+      ],
+      "old_y": 2208.5898240128104
+    },
+    "7235cb97d9b79c39ac7d3eb952222ff38762fcbdb1113d63fbc3a30642acd091": {
+      "x": [
+        0.5733279874548316,
+        0.8457802385091782,
+        0.813949927687645,
+        0.4959926698356867,
+        0.720962917432189,
+        0.6513633551076055,
+        0.5286344261839986,
+        0.3389393137767911,
+        0.21544855367392302,
+        0.8840581690892577,
+        0.47604994382709265,
+        0.5108342105522752,
+        0.2369241565465927,
+        0.3746624616906047,
+        0.35966005083173513,
+        0.7344585554674268,
+        0.7016780786216259,
+        0.5849128635600209,
+        0.5019611986353993
+      ],
+      "old_y": 2503.6137195982046
+    },
+    "51fa42a194d0176691f3938c9e3c564d48e511eb90817cf73ab054579b6424bf": {
+      "x": [
+        0.6511400444433093,
+        0.6121890302747488,
+        0.9135817978531122,
+        0.759923710487783,
+        0.8122394364327192,
+        0.14214585814625025,
+        0.48069772496819496,
+        0.7381211090832949,
+        0.3490602280944586,
+        0.38079114258289337,
+        0.4904310740530491,
+        0.38139471411705017,
+        0.34793838765472174,
+        0.5462619103491306,
+        0.2675152951851487,
+        0.23205927480012178,
+        0.542103542946279,
+        0.28716286923736334,
+        0.8449703538790345
+      ],
+      "old_y": 5108.331070757938
+    },
+    "9c24e59c2c72bee21fb76ef102466f2392568f4a99e46d2174a055a539e0b537": {
+      "x": [
+        0.8830183492973447,
+        0.6395148131996393,
+        0.4292227327823639,
+        0.1472431542351842,
+        0.6506571564823389,
+        0.09974427614361048,
+        0.12301272433251143,
+        0.03389848303049803,
+        0.3336528930813074,
+        0.7623168854042888,
+        0.6114988131448627,
+        0.397383532486856,
+        0.8936317749321461,
+        0.1385696968063712,
+        0.6036195857450366,
+        0.5811584768816829,
+        0.3366669472306967,
+        0.6373171806335449,
+        0.021302535198628902
+      ],
+      "old_y": 10948.680063220165
+    },
+    "9154e908f831e1a1107ee55e72c8d0c98f52a2eedc692a46d4c9db7f5f69a404": {
+      "x": [
+        0.9190322859212756,
+        0.5669452510774136,
+        0.13278218638151884,
+        0.5874418690800667,
+        0.5772636076435447,
+        0.0797114297747612,
+        0.3938442403450608,
+        0.39842968713492155,
+        0.5633518127724528,
+        0.07743258494883776,
+        0.2012222222983837,
+        0.09871011041104794,
+        0.10270472522825003,
+        0.7689069928601384,
+        0.020672034472227097,
+        0.35130149591714144,
+        0.40925492998212576,
+        0.5534105664119124,
+        0.8946475889533758
+      ],
+      "old_y": 2279.5913199404126
+    },
+    "83c5cdb7d870be97cbafdf1f8f1762da242cec65c17df5af8f58ef8cf9e7903c": {
+      "x": [
+        0.9108506161719561,
+        0.912468739785254,
+        0.05057403165847063,
+        0.6834865994751453,
+        0.40316241327673197,
+        0.6644883155822754,
+        0.9833879331126809,
+        0.5833133980631828,
+        0.7978742169216275,
+        0.31375656370073557,
+        0.12891765777021646,
+        0.2340406021103263,
+        0.3086834903806448,
+        0.830232435837388,
+        0.6368683539330959,
+        0.9929615762084723,
+        0.7481886446475983,
+        0.8107685409486294,
+        0.6053939322009683
+      ],
+      "old_y": 3157.4409980221644
+    },
+    "4130924f9b423516645f3fe55e7176819946bd52b82c15ccf559de2865f08511": {
+      "x": [
+        0.8301767986267805,
+        0.8990458957850933,
+        0.18713258765637875,
+        0.3248510751873255,
+        0.8719840124249458,
+        0.4999212520197034,
+        0.08118357416242361,
+        0.2661218782886863,
+        0.699453866109252,
+        0.44780345167964697,
+        0.5408706720918417,
+        0.5706673571839929,
+        0.19257897697389126,
+        0.6046601394191384,
+        0.41479513701051474,
+        0.7460162555798888,
+        0.41862419061362743,
+        0.9980682404711843,
+        0.08183103986084461
+      ],
+      "old_y": 6529.003272333604
+    },
+    "f8ec155d1e099afaeabbedf2e1367c248718c86c4b1aec7a0af685819d46ad78": {
+      "x": [
+        0.9751890571787953,
+        0.7864824710413814,
+        0.438892281614244,
+        0.20202389918267727,
+        0.556204198859632,
+        0.8543512746691704,
+        0.2622021846473217,
+        0.07040729001164436,
+        0.8948179204016924,
+        0.8328359983861446,
+        0.18068856839090586,
+        0.9864062080159783,
+        0.43764565140008926,
+        0.14806444477289915,
+        0.8324534520506859,
+        0.13729938864707947,
+        0.7281350689008832,
+        0.4454442709684372,
+        0.29856622591614723
+      ],
+      "old_y": 45967.40838640461
+    },
+    "3f6c49a07333e6f9c33008382b52e72fbae940e21b6ac70b321b1721083380a2": {
+      "x": [
+        0.9073209278285503,
+        0.8826031442731619,
+        0.32140622567385435,
+        0.8483607936650515,
+        0.8699622061103582,
+        0.5545484442263842,
+        0.057688022032380104,
+        0.5429048053920269,
+        0.09581765159964561,
+        0.15746971778571606,
+        0.43062011152505875,
+        0.8031299617141485,
+        0.6016470529139042,
+        0.6903819693252444,
+        0.053164293989539146,
+        0.4682936128228903,
+        0.43625384476035833,
+        0.6196302687749267,
+        0.16847094893455505
+      ],
+      "old_y": 7570.62882040157
+    },
+    "abfab21c589c0a2a3c87b56bc5b7a364cd332f5295c7923b90c8be7830fa4b1c": {
+      "x": [
+        0.8763375654816628,
+        0.14580723829567432,
+        0.3096795501187444,
+        0.9846796132624149,
+        0.3217122470960021,
+        0.482459107413888,
+        0.33076998963952065,
+        0.31947969924658537,
+        0.41292552556842566,
+        0.311876623891294,
+        0.015648076310753822,
+        0.1195255583152175,
+        0.06425379123538733,
+        0.21955969650298357,
+        0.5597728611901402,
+        0.7883371282368898,
+        0.25594041123986244,
+        0.7225612504407763,
+        0.7778963781893253
+      ],
+      "old_y": 5915.434164916986
+    },
+    "cc976f0e94f719d677f35a5b800477e25acf400d249c0b3a08d3d5b5b175fdc0": {
+      "x": [
+        0.974647824652493,
+        0.05331785976886749,
+        0.6353632612153888,
+        0.498454581014812,
+        0.16562123596668243,
+        0.28087561391294,
+        0.30271616112440825,
+        0.33741251192986965,
+        0.4056790890172124,
+        0.8520105127245188,
+        0.8645611759275198,
+        0.6709970338270068,
+        0.09426246955990791,
+        0.6771902497857809,
+        0.7801567576825619,
+        0.19734764751046896,
+        0.8099243137985468,
+        0.3959580082446337,
+        0.6093239551410079
+      ],
+      "old_y": 19257.12973229955
+    },
+    "d831affdc232a01f2038eb26b56cfa77e13f1104a69045e96b92ab7080349af9": {
+      "x": [
+        0.9015456372871995,
+        0.9495223453268409,
+        0.9189963927492499,
+        0.18376956321299076,
+        0.6579082319512963,
+        0.8607064252719283,
+        0.9031954240053892,
+        0.025420176796615124,
+        0.39745563361793756,
+        0.862997985444963,
+        0.8304970590397716,
+        0.4114298662170768,
+        0.7288149669766426,
+        0.7779685342684388,
+        0.45999021641910076,
+        0.014597518369555473,
+        0.4988647745922208,
+        0.630070710554719,
+        0.8225834490731359
+      ],
+      "old_y": 78147.8534363336
+    },
+    "dbe4b53a9ce91744438cc1db463c3dfe1b8390db1128efcad329aed5f98b1b35": {
+      "x": [
+        0.8534817788749933,
+        0.5189979569986463,
+        0.0977645106613636,
+        0.10073614679276943,
+        0.6616173693910241,
+        0.35705331712961197,
+        0.5920547237619758,
+        0.5552615197375417,
+        0.7554294094443321,
+        0.535482537932694,
+        0.7304423060268164,
+        0.9880855996161699,
+        0.7889173487201333,
+        0.16596833523362875,
+        0.29180056508630514,
+        0.9987356085330248,
+        0.15281232073903084,
+        0.9754390884190798,
+        0.1829119324684143
+      ],
+      "old_y": 51875.87397268222
+    },
+    "07420b76d57df8a2e736cc9dd0e6893d4ccc84327e88700818280e04d79337b5": {
+      "x": [
+        0.8141784267500043,
+        0.05572877451777458,
+        0.38670923095196486,
+        0.7609013617038727,
+        0.9733288483694196,
+        0.05181893985718489,
+        0.49058639630675316,
+        0.3618536666035652,
+        0.05152117647230625,
+        0.3359282836318016,
+        0.7692310381680727,
+        0.5487499022856355,
+        0.4747803881764412,
+        0.9079454159364104,
+        0.6209427351132035,
+        0.07157312985509634,
+        0.30651571601629257,
+        0.8629272319376469,
+        0.08032490499317646
+      ],
+      "old_y": 6419.760131106467
+    },
+    "7bdd37adc24a4a43ae0cdf0480e4e3482978aab1b4c95fbddc69ece2f2cf9a29": {
+      "x": [
+        0.9034408185911215,
+        0.2079183601641519,
+        0.686392788772407,
+        0.9022041780697888,
+        0.27931702900699595,
+        0.6999644471347469,
+        0.6314890906561402,
+        0.06706830511460828,
+        0.17855743296377433,
+        0.09756044673122703,
+        0.16497245902144492,
+        0.21918470243342453,
+        0.9305457972181944,
+        0.33929415080624237,
+        0.20575414354165142,
+        0.5820902227201307,
+        0.5232056803887791,
+        0.40313307015604505,
+        0.5142970748153052
+      ],
+      "old_y": 2872.9477894342735
+    },
+    "7c271bd8c29df1235e209eea2044f63eeb7a9d7a5a23253b08d972ad9f188bdd": {
+      "x": [
+        0.9021122213453054,
+        0.7626560283824801,
+        0.4757569758221507,
+        0.7674269983544946,
+        0.42951116245239973,
+        0.44817453157156706,
+        0.6157512124627829,
+        0.5156914768740535,
+        0.42804574221372604,
+        0.6283868802711368,
+        0.6816186802461743,
+        0.20396107342094183,
+        0.6942228162661195,
+        0.7204348165541887,
+        0.2795618027448654,
+        0.6193099301308393,
+        0.32475403789430857,
+        0.33558879140764475,
+        0.6718519255518913
+      ],
+      "old_y": 5374.284669953091
+    },
+    "7ba562a839455025b797eed7f1d05396f354589ab7ac0ff0402a143a8fc8d8a2": {
+      "x": [
+        0.6817631600424647,
+        0.48276335559785366,
+        0.44234416633844376,
+        0.6339192185550928,
+        0.0704132542014122,
+        0.5014470918104053,
+        0.7564585469663143,
+        0.14405552949756384,
+        0.4691324383020401,
+        0.4764631660655141,
+        0.679898239672184,
+        0.629190580919385,
+        0.6826381077989936,
+        0.3834044598042965,
+        0.03805012535303831,
+        0.8221636833623052,
+        0.8916355473920703,
+        0.3191523514688015,
+        0.5153048960492015
+      ],
+      "old_y": 12862.286286197288
+    },
+    "d6bb46c0efb07df72c0c9a691e8e1eff7622621bb636b72753fd307c70d0cc71": {
+      "x": [
+        0.44402312114834785,
+        0.9962257277220488,
+        0.7554523069411516,
+        0.5664040353149176,
+        0.596490160562098,
+        0.43960739579051733,
+        0.43347081169486046,
+        0.28242027666419744,
+        0.7146855918690562,
+        0.6224628956988454,
+        0.6993849258869886,
+        0.2860258314758539,
+        0.054055651649832726,
+        0.3368519591167569,
+        0.06341782584786415,
+        0.7237216243520379,
+        0.02757216338068247,
+        0.6962443720549345,
+        0.7827078932896256
+      ],
+      "old_y": 11090.79877293207
+    },
+    "d831a2fbb88b2c9bf0a67bcd53e03908d47715eb18d8b79963a8ad497660d6c9": {
+      "x": [
+        0.6675384258851409,
+        0.012042497284710407,
+        0.5629741540178657,
+        0.3014065958559513,
+        0.27837425097823143,
+        0.652376196347177,
+        0.2825652817264199,
+        0.31339278165251017,
+        0.6305564232170582,
+        0.8473940584808588,
+        0.950036414898932,
+        0.364584730938077,
+        0.25761401280760765,
+        0.5210001831874251,
+        0.9208376752212644,
+        0.7871908685192466,
+        0.7644268237054348,
+        0.8294750638306141,
+        0.1433749282732606
+      ],
+      "old_y": 11578.768063313284
+    },
+    "ccd00540e4c5b5d440f3d8e7cb58b1ed3a0bd0a69bf2ca1cbb3b5d2a40abaf19": {
+      "x": [
+        0.1949263159185648,
+        0.5348441274836659,
+        0.42418763041496277,
+        0.3137005865573883,
+        0.1145458072423935,
+        0.5696793040260673,
+        0.9665042944252491,
+        0.38508049584925175,
+        0.9358169566839933,
+        0.47842564433813095,
+        0.4516654210165143,
+        0.20845133066177368,
+        0.8090390656143427,
+        0.1196555644273758,
+        0.5821829214692116,
+        0.04442713689059019,
+        0.028288145549595356,
+        0.3785651670768857,
+        0.017643561586737633
+      ],
+      "old_y": 63066.34950497983
+    },
+    "0dbc0923642d6fff18fea151069c2bfc4d4ac29dec27f7ed2275af2bfa0f237f": {
+      "x": [
+        0.231005041860044,
+        0.026534484699368477,
+        0.33979585114866495,
+        0.3469900833442807,
+        0.7359035862609744,
+        0.6516767209395766,
+        0.833269034512341,
+        0.2694573327898979,
+        0.6073134215548635,
+        0.46086898911744356,
+        0.5921855932101607,
+        0.6165740853175521,
+        0.9862676681950688,
+        0.5176001628860831,
+        0.15546436607837677,
+        0.7929356191307306,
+        0.014428448863327503,
+        0.8546520136296749,
+        0.08274588920176029
+      ],
+      "old_y": 161161.98766129918
+    },
+    "99edd6dccb52633830c9b2d1d7c046566ad038441578f80ff94cc9b9458e5606": {
+      "x": [
+        0.0,
+        0.0,
+        0.8312428471507738,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        0.36542399748255283,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.14990998540627853,
+        0.6293310085760562,
+        0.2770857379292103,
+        0.0,
+        0.9825111067529696,
+        0.0
+      ],
+      "old_y": 6704123.28646889
+    },
+    "9c52e7943c87fd37accb7ecac02f53f8587d5d5b7eeea3c39dd248aceed2df7a": {
+      "x": [
+        0.6199510227888823,
+        0.5994598250836134,
+        0.5554431583732367,
+        0.5385805303230882,
+        0.5091402810066938,
+        0.6224784730002284,
+        0.45190449710935354,
+        0.512929679825902,
+        0.5888936324045062,
+        0.7694128192961216,
+        0.0014426857233047485,
+        0.6000801455229521,
+        0.45499336533248425,
+        0.5426300195977092,
+        0.27471086010336876,
+        0.6169342705979943,
+        0.010706821456551552,
+        0.5578058818355203,
+        0.42710623051971197
+      ],
+      "old_y": 4192.757164692661
+    },
+    "e0a1b5cb6d38f5104bc41505ac70a40d71cc95dc879eaa2c03897a5ddbe1d146": {
+      "x": [
+        0.3357922751456499,
+        0.3703588778153062,
+        0.3603935530409217,
+        0.29577030148357153,
+        0.8847674690186977,
+        0.9865191616117954,
+        0.4883748544380069,
+        0.32495167944580317,
+        0.01571088470518589,
+        0.3560894299298525,
+        0.9213529797270894,
+        0.17308139335364103,
+        0.5298625882714987,
+        0.6450838809832931,
+        0.3498641764745116,
+        0.568874916061759,
+        0.42136572301387787,
+        0.6140924282371998,
+        0.7444410212337971
+      ],
+      "old_y": 4070.659613775814
+    },
+    "a117a0a79ed8f32cfd0ee92dd356d0443164fced9ab4789380a162da8c5ef0f7": {
+      "x": [
+        0.8137537029845132,
+        0.8080285993411082,
+        0.6647850299953056,
+        0.45564416560814314,
+        0.35916248252408045,
+        0.15580073734760955,
+        0.07898474849777647,
+        0.3169025673561841,
+        0.4501519003502831,
+        0.19226967265657746,
+        0.18670167529121942,
+        0.16610436120696895,
+        0.22590696611180255,
+        0.5565959890956684,
+        0.509020251978601,
+        0.8340899269030374,
+        0.3184672909611384,
+        0.9317181406488753,
+        0.488619394019817
+      ],
+      "old_y": 1618.4871381674466
+    },
+    "477027d8eda1a0b12f081f75fc390fe30475f373ae559aac383c480ff358ebec": {
+      "x": [
+        0.47512206584178995,
+        0.28297514239712995,
+        0.0,
+        0.7530524021012966,
+        0.34940366868139633,
+        0.6218652000162891,
+        0.5916363943138397,
+        0.8659138110455705,
+        0.577472359405382,
+        0.5543421912952686,
+        0.0,
+        0.44213797466980786,
+        0.3099908966139982,
+        0.14409513218673142,
+        0.49133359893542305,
+        0.41195119963520177,
+        0.5474961472948466,
+        0.0,
+        0.38431298413903003
+      ],
+      "old_y": 2698.104214862681
+    },
+    "f214b114f3818a383a456ab46b2011122ccc255e62c1872ec2d47be4a5ce1e8a": {
+      "x": [
+        0.9662982923910022,
+        0.8856996549293399,
+        0.6789916763082147,
+        0.5635443553328514,
+        0.4790931772440672,
+        0.46567328181117773,
+        0.5111104752868414,
+        0.35155080258846283,
+        0.11464531719684601,
+        0.34379864670336246,
+        0.7792633166536689,
+        0.8846452627331018,
+        0.043996647000312805,
+        0.09289030265063047,
+        0.16459263395518064,
+        0.4360039737075567,
+        0.48546128813177347,
+        0.8689602604135871,
+        0.7658348297700286
+      ],
+      "old_y": 10349.334848775263
+    },
+    "45a78ff6ff2d32c556e8ba2c7e99f518407ae7919dd06bddca66263527b7a62d": {
+      "x": [
+        0.3745827404782176,
+        0.3937633465975523,
+        0.5496903164312243,
+        0.8035683492198586,
+        0.8683811323717237,
+        0.015425077639520168,
+        0.6368945064023137,
+        0.333701403811574,
+        0.40438735019415617,
+        0.6162441037595272,
+        0.84473573602736,
+        0.7970823012292385,
+        0.12246930133551359,
+        0.18041130993515253,
+        0.9718507891520858,
+        0.7468790831044316,
+        0.1841139094904065,
+        0.0979828704148531,
+        0.3099772725254297
+      ],
+      "old_y": 21852.869042685183
+    },
+    "0c7ca3a6678fd1a6d6748d1d9c005ec0ed5c62ab5d15e88f75b425f136ac6fa8": {
+      "x": [
+        0.5944004310294986,
+        0.6047575222328305,
+        0.10603241063654423,
+        0.8406519293785095,
+        0.6531643690541387,
+        0.5773096913471818,
+        0.7065883688628674,
+        0.6364271072670817,
+        0.024684421718120575,
+        0.602599055506289,
+        0.848136518150568,
+        0.8933323640376329,
+        0.0872509591281414,
+        0.4784040367230773,
+        0.16186957340687513,
+        0.6426512021571398,
+        0.2911213357001543,
+        0.6273750551044941,
+        0.521343014203012
+      ],
+      "old_y": 22796.474544020824
+    },
+    "df95f1fd21229d0b9446ed4f00660137cfe9adafaca826f2c961f6d4279c316e": {
+      "x": [
+        0.44099913630634546,
+        0.6689091669395566,
+        0.22157545015215874,
+        0.2468908242881298,
+        0.346809440292418,
+        0.5777321727946401,
+        0.6908263796940446,
+        0.47275808081030846,
+        0.6688129063695669,
+        0.0996586736291647,
+        0.2621704610064626,
+        0.43948752991855145,
+        0.4529694179072976,
+        0.5177798662334681,
+        0.816509154625237,
+        0.492473223246634,
+        0.890728565864265,
+        0.32759539131075144,
+        0.7942248098552227
+      ],
+      "old_y": 2954.9037409956327
+    },
+    "d16fad9da55673740b84da9aff3c9bc60538f9d86dd2f88062ca1f89c6e872cc": {
+      "x": [
+        0.9321275074034929,
+        0.5604673288762569,
+        0.08874908648431301,
+        0.7601659074425697,
+        0.8337288536131382,
+        0.10702578350901604,
+        0.8020698921754956,
+        0.2773853503167629,
+        0.2262497842311859,
+        0.12405419442802668,
+        0.460446385666728,
+        0.4688682574778795,
+        0.046381897293031216,
+        0.3870300343260169,
+        0.4224208388477564,
+        0.1832325253635645,
+        0.10954661201685667,
+        0.6989545430988073,
+        0.27884927671402693
+      ],
+      "old_y": 8838.40814808457
+    },
+    "4a00551195377f8bde1c6db0d96045af4b5d2431906c652e3d2da1372e0c05a2": {
+      "x": [
+        0.9620488360524178,
+        0.6768234269693494,
+        0.3394306246191263,
+        0.284237221814692,
+        0.03823732025921345,
+        0.020236809737980366,
+        0.7365143951028585,
+        0.16260256431996822,
+        0.06724164355546236,
+        0.01061753649264574,
+        0.2364692222326994,
+        0.9653677549213171,
+        0.6721112439408898,
+        0.2858810592442751,
+        0.271197865717113,
+        0.013418163172900677,
+        0.02726446371525526,
+        0.46830006688833237,
+        0.27062405459582806
+      ],
+      "old_y": 7194.5906022368345
+    },
+    "60cb5289495d0b5304990ad6c969765ea18280cf114bdc202e8991e3f9b23636": {
+      "x": [
+        0.5734817553311586,
+        0.3216226091608405,
+        0.2607229957357049,
+        0.43964492809027433,
+        0.5089811123907566,
+        0.5866128299385309,
+        0.02884265873581171,
+        0.4901001350954175,
+        0.16830769274383783,
+        0.5371326999738812,
+        0.23159510735422373,
+        0.5589255467057228,
+        0.46797655522823334,
+        0.5856553474441171,
+        0.8109388593584299,
+        0.18172551784664392,
+        0.22614344954490662,
+        0.037451066076755524,
+        0.03792507108300924
+      ],
+      "old_y": 6907.956811852154
+    },
+    "628a5f4274a4d09bb5f35b6575fc77540e0bf6b15419a7a131bff09552ea9c8c": {
+      "x": [
+        0.7378538446500897,
+        0.19740606658160686,
+        0.07782359328120947,
+        0.9386255852878094,
+        0.6899446351453662,
+        0.6504453737288713,
+        0.7610014779493213,
+        0.9931021770462394,
+        0.396363141015172,
+        0.11193701438605785,
+        0.7926325779408216,
+        0.5119843864813447,
+        0.16877438500523567,
+        0.14310554321855307,
+        0.7355384835973382,
+        0.31061749160289764,
+        0.5681384867057204,
+        0.16138732433319092,
+        0.005410246551036835
+      ],
+      "old_y": 58636.21188051149
+    },
+    "a42dd42a5652c0b2835f3869623ac968fedd4eced929f012f4ecf45a27ea3c70": {
+      "x": [
+        0.9550239974632859,
+        0.8896162426099181,
+        0.3997273910790682,
+        0.5032865973189473,
+        0.23590372502803802,
+        0.40279348008334637,
+        0.7667234390974045,
+        0.11358962394297123,
+        0.7799628237262368,
+        0.08867386542260647,
+        0.08485591597855091,
+        0.13768718857318163,
+        0.39159335754811764,
+        0.11197955906391144,
+        0.9476916994899511,
+        0.6139118587598205,
+        0.641177193261683,
+        0.9142913473770022,
+        0.6531909434124827
+      ],
+      "old_y": 3227.1961940608503
+    },
+    "8be0018ebee541f700cc05ffa6b98260d5d661db303333d06cd998fac48c7cf1": {
+      "x": [
+        0.6101755098247624,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.7780887116323139,
+        0.0,
+        0.0,
+        0.04129187581557347,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.48637523824795925,
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "old_y": 2405.8973408422116
+    },
+    "1707a7cce05d5d89a4eb6da0d0f12483b2550911c9fb5e5d44d8770e202bbe49": {
+      "x": [
+        0.890454058535397,
+        0.9877939177677035,
+        0.16415677405893803,
+        0.05579399690032005,
+        0.5895590968430042,
+        0.7041227594017982,
+        0.8636057022958994,
+        0.21322905458509922,
+        0.262739977799356,
+        0.5313491439446807,
+        0.8747105337679386,
+        0.34906875621527433,
+        0.7132990574464202,
+        0.9174337005242705,
+        0.9834586186334491,
+        0.2459347564727068,
+        0.9784973990172148,
+        0.9645538544282317,
+        0.9400519840419292
+      ],
+      "old_y": 32248.90082658451
+    },
+    "0e136eca9e41dbe421aea51d95c58665941f0265dbe86642e4ee4f1737b49180": {
+      "x": [
+        0.8922363491728902,
+        0.9315199488773942,
+        0.5743057355284691,
+        0.17785362619906664,
+        0.35362642258405685,
+        0.07682565320283175,
+        0.6034325687214732,
+        0.39294889383018017,
+        0.2014140971004963,
+        0.8326588831841946,
+        0.22578429989516735,
+        0.7229198953136802,
+        0.9222797704860568,
+        0.7780396649613976,
+        0.36654756404459476,
+        0.10340078454464674,
+        0.8329019350931048,
+        0.028813946060836315,
+        0.45276420935988426
+      ],
+      "old_y": 13511.79643040631
+    },
+    "2dcf7946a80be7f33c2f50a542050afff5860ed444c2dc5f42b08128a66c6ef1": {
+      "x": [
+        0.9908766010776162,
+        0.7428578082472086,
+        0.21261479798704386,
+        0.5484457286074758,
+        0.5529649509117007,
+        0.6879424089565873,
+        0.5254044141620398,
+        0.28120697289705276,
+        0.48906407319009304,
+        0.7739057950675488,
+        0.45377408992499113,
+        0.7068560356274247,
+        0.6166408890858293,
+        0.6832070844247937,
+        0.9490157663822174,
+        0.15937796980142593,
+        0.9071945222094655,
+        0.5017713289707899,
+        0.9778576521202922
+      ],
+      "old_y": 9991.76401560449
+    },
+    "8a6f93dc6c0eb0a486795096f635b148503ef36c1bd8bb948d8b244641fd53db": {
+      "x": [
+        0.07660538516938686,
+        0.04705014545470476,
+        0.351694505661726,
+        0.29494384676218033,
+        0.11601849924772978,
+        0.18384926579892635,
+        0.18054212536662817,
+        0.09099694807082415,
+        0.8520143963396549,
+        0.3026213366538286,
+        0.34065700229257345,
+        0.7006878051906824,
+        0.13161561638116837,
+        0.48320136312395334,
+        0.39919792395085096,
+        0.8338445303961635,
+        0.6837691813707352,
+        0.4449453195556998,
+        0.07825258933007717
+      ],
+      "old_y": 120733.8308001712
+    },
+    "ddc24024663671fbb6b36933a65041492a859c2b87bb0d4a279313c91d57eafd": {
+      "x": [
+        0.14766782987862825,
+        0.2701972993090749,
+        0.651294743642211,
+        0.6167427841573954,
+        0.035713075660169125,
+        0.454855521209538,
+        0.7455863431096077,
+        0.15050934068858624,
+        0.7186369188129902,
+        0.0248783091083169,
+        0.38025621976703405,
+        0.5402974709868431,
+        0.642855136655271,
+        0.6340055568143725,
+        0.35469451639801264,
+        0.7329226369038224,
+        0.09126149211078882,
+        0.6025392627343535,
+        0.6325337821617723
+      ],
+      "old_y": 200884.67155920953
+    },
+    "43c449efdaa06bc93fd731863f03a4bb4f6929a89e5cb9f9ea84a8bc6e96ab30": {
+      "x": [
+        0.5776179637759924,
+        0.9107643738389015,
+        0.06182647775858641,
+        0.570099133066833,
+        0.7373775439336896,
+        0.4438991490751505,
+        0.44296469260007143,
+        0.8969150483608246,
+        0.4978589126840234,
+        0.7472945190966129,
+        0.5885848440229893,
+        0.346372390165925,
+        0.22582552023231983,
+        0.09799246396869421,
+        0.1493390053510666,
+        0.571082953363657,
+        0.49883619509637356,
+        0.3219352224841714,
+        0.3536235289648175
+      ],
+      "old_y": 24895.02230880497
+    },
+    "74a050fc23a67e4ea5ad3c8fc5c14112bb0f59bea01e3c92407e6766d06b6d8f": {
+      "x": [
+        0.9042391704369449,
+        1.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.9551899849488437,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        1.0,
+        0.3645877581519586,
+        1.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "old_y": 102033.13237374701
+    },
+    "cc54257c872bd235f2509d980a9ef5b4fa2d62d35cb3ecf496483ca84d1e7086": {
+      "x": [
+        0.9987275078892708,
+        0.22114997543394566,
+        0.7703467775136232,
+        0.07713425625115633,
+        0.09847957268357277,
+        0.6791719570755959,
+        0.03407119773328304,
+        0.7825583387166262,
+        0.7825465248897672,
+        0.6228001117706299,
+        0.8523216713219881,
+        0.07402180042117834,
+        0.11402914486825466,
+        0.30946623627096415,
+        0.6217158269137144,
+        0.5000280467793345,
+        0.0492938868701458,
+        0.887434171512723,
+        0.2841623919084668
+      ],
+      "old_y": 322202.85074612556
+    },
+    "a580b4d8c63b2ccb35bf37f0ae1a7bb09d0a051a1dfc998bfb8de6b0f072bd36": {
+      "x": [
+        0.8821884710341692,
+        0.44435391668230295,
+        0.6491450667381287,
+        0.09992289450019598,
+        0.5577980354428291,
+        0.22857641894370317,
+        0.589419829659164,
+        0.9397580409422517,
+        0.057940579019486904,
+        0.953073151409626,
+        0.7280641328543425,
+        0.6364484019577503,
+        0.8841051589697599,
+        0.35276656597852707,
+        0.7659327844157815,
+        0.10736586805433035,
+        0.41104977764189243,
+        0.979988687671721,
+        0.5009235860779881
+      ],
+      "old_y": 16389.744142359905
+    },
+    "d9d5442c1f64e94ba008fe1377bae0ae981a403fff473237f282f5c759b5b6cb": {
+      "x": [
+        0.7266029314336115,
+        0.9319217993605309,
+        0.5765663892752502,
+        0.7114391561128599,
+        0.4184358499495205,
+        0.5976536538773004,
+        0.02073928738936348,
+        0.796232698138306,
+        0.0024269051026469296,
+        0.05038735317908584,
+        0.44409617534302726,
+        0.02077313941773096,
+        0.8605438132457512,
+        0.5849757891927229,
+        0.7855435027995175,
+        0.5029196425459188,
+        0.730283726386743,
+        0.12911451540358604,
+        0.6941620854434928
+      ],
+      "old_y": 2202.6465328910544
+    },
+    "bc6e1120c1ff3a8aa7439fbe3c137c1bd8115df6f33e81f394b8fb48cc873cf5": {
+      "x": [
+        0.7721979286571256,
+        0.1456630021419422,
+        0.20820942391326702,
+        1.0,
+        0.7837285111373724,
+        1.0,
+        0.0,
+        0.0,
+        0.8501321981749059,
+        0.0,
+        0.9123622764192243,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "old_y": 544847.7712183367
+    },
+    "cf988afcf17127f87c2636e737eb9c3c8bba04c5aa704c8dca3460e445a9ec56": {
+      "x": [
+        0.49437834322452545,
+        0.9555658679455519,
+        0.445475185289979,
+        0.1690622828900814,
+        0.6306082578375936,
+        0.48442558757960796,
+        0.6947741052135825,
+        0.21854357235133648,
+        0.4369816407561302,
+        0.6256025955080986,
+        0.8193788314238191,
+        0.19241284765303135,
+        0.86773831397295,
+        0.677531361579895,
+        0.30438550654798746,
+        0.5622320920228958,
+        0.9733874769881368,
+        0.4240041160956025,
+        0.7941032210364938
+      ],
+      "old_y": 6540.513028841959
+    },
+    "a58898d01a2ed50ce8de48e334a0de11582148b351bc122a3e70d9f944ae2a07": {
+      "x": [
+        0.3046803595498204,
+        0.40572939440608025,
+        0.3406934477388859,
+        0.7325904686003923,
+        0.29102042596787214,
+        0.39507518615573645,
+        0.20474884379655123,
+        0.7790730632841587,
+        0.5662050498649478,
+        0.23754791263490915,
+        0.3093632999807596,
+        0.04336365777999163,
+        0.3567092139273882,
+        0.38941084779798985,
+        0.9056577617302537,
+        0.19645743444561958,
+        0.8414573054760695,
+        0.7152549428865314,
+        0.4249558839946985
+      ],
+      "old_y": 13249.008230009376
+    },
+    "9d9f7327bea50d3d17b031979733ed4032c6644b42a6641c925053d0431096c4": {
+      "x": [
+        0.22404323518276215,
+        0.8239096654579043,
+        0.24636440351605415,
+        0.5231725750491023,
+        0.6359466211870313,
+        0.9662446146830916,
+        0.6451138090342283,
+        0.473816953599453,
+        0.504582772962749,
+        0.9543259888887405,
+        0.8703889176249504,
+        0.23291171249002218,
+        0.7862249603495002,
+        0.9027224285528064,
+        0.04262560233473778,
+        0.39295847713947296,
+        0.49556173756718636,
+        0.27746132388710976,
+        0.42263412196189165
+      ],
+      "old_y": 188162.80418615267
+    },
+    "b369870a7e557ce11df8c544e22197598deab0c7f8fc57e1ad130dc286d5c290": {
+      "x": [
+        0.1517831962555647,
+        0.6564451912418008,
+        0.30509713292121887,
+        0.23549098055809736,
+        0.8336659148335457,
+        0.5343539668247104,
+        0.9885167516767979,
+        0.6194588728249073,
+        0.5591224320232868,
+        0.0660611055791378,
+        0.5566220954060555,
+        0.4645244162529707,
+        0.30876756366342306,
+        0.8027153667062521,
+        0.8038517609238625,
+        0.5686572035774589,
+        0.5593177806586027,
+        0.5274653406813741,
+        0.5711205014958978
+      ],
+      "old_y": 747444.9547168585
+    },
+    "76eab7b2c9030c5c47a83e8b546f710ac7da50615548a3c4415cf729662e6869": {
+      "x": [
+        0.7726146541535854,
+        0.6677851434797049,
+        0.5183984665200114,
+        0.10844479966908693,
+        0.6887294733896852,
+        0.4504979522898793,
+        0.7503322213888168,
+        0.09373998455703259,
+        0.5293362084776163,
+        0.6281337775290012,
+        0.8341693487018347,
+        0.3001110181212425,
+        0.742748636752367,
+        0.5594648709520698,
+        0.04143116436898708,
+        0.6687245173379779,
+        0.4968549143522978,
+        0.40815398283302784,
+        0.6874816594645381
+      ],
+      "old_y": 9471.186984171549
+    }
+  },
+  "source_files_sha256": {
+    "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r1_t101.json": "5237e4472eec28d4fda8cfedb159cfda1f3d884711555135970a929c5ed41ee4",
+    "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r1_t101.json": "c0fef0e95a849be348f182478c5f15324f4ea596615029724b812b41c1221868",
+    "results/engineering_optimization_common_continuation_v1/events.jsonl": "4650412e0dc21ba136179046b94310202a503b32ff5b5785bd53a2bc6a483573",
+    "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r4_t101.json": "149971a28fce67da668944d3f11a252ca1b7381aa89cf118b60857a49994d648",
+    "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r4_t101.json": "3c136b49d4b359b671485970367e50f8caf1a6c0156788a1a1b64adda7b73e75",
+    "results/engineering_optimization_common_continuation_v1/plans/gp_ucb_shared_init_r7_t101.json": "6921a5232748a7dc6d6eff8e5ecbe8f5ce28e683f257a1683e502d0e7149031c",
+    "results/engineering_optimization_common_continuation_v1/summaries/gp_ucb_shared_init_r7_t101.json": "5820f29559e009ac1ab3cabdeb6b085954a1c2d39b772f22a3b681579f267024",
+    "results/engineering_optimization_common_continuation_v1/plans/gp_ucb_shared_init_r8_t101.json": "a00e3f7bb7cfd489f8b8f854be6dafbd8b1562bfa5ff2cabe9fb7bd029a9f1e5",
+    "results/engineering_optimization_common_continuation_v1/summaries/gp_ucb_shared_init_r8_t101.json": "a76015749aafc378409eb138eba6e0f98fab6ac11234a1cf7fff9eb435595412",
+    "results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_pi_summary.json": "037113a17119e5afa8675196dee39328853e633aa921dbe65f2e3e9340027e3e",
+    "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r0_t101.json": "00ce55634ebefd568d9ac2e5c888127e42d6fa7bf2a4e4b42f71d5cbf757956e",
+    "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r0_t101.json": "e40be114812e5dbcbe8d937d7b5e3ed3cea520aadfa52c80d68eb10e5b151409",
+    "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r5_t101.json": "d82885ee749ac02f2005ad70d4e026a72ce24515568d945d67afff71d8011155",
+    "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r5_t101.json": "8afd7691e843ed2324c1acd07ef7a0ce5f8c171720a5ef673585bc01677c92af",
+    "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r6_t101.json": "592bd8439d0bcf6f1b3739b911ba086f01c71291c4bb3ec0d7e39eb5fcbf59f0",
+    "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r6_t101.json": "f431a87d9389f37d09011cdb572d6ac0b449d40b42e1fbf6a22c5a34b0e3c3f8",
+    "results/engineering_optimization_common_continuation_v1/plans/gp_ei_shared_init_r2_t101.json": "76e17a4a7c79fe3e77ed935f5168ba049949c8b5648b9d690042534facdfe91f",
+    "results/engineering_optimization_common_continuation_v1/summaries/gp_ei_shared_init_r2_t101.json": "63113878b5da7b901153a2df3fed62abe69bf860bc51696eaffbad4f2e8303d5"
+  },
+  "frozen_files": {
+    "src/engineering_optimization_paired_mesh.py": "7b0bc28f3c7511d19e384018a0992af252982c7e6ffbd39f8eb62c8211df1765",
+    "src/engineering_beam_adapter.py": "0e73585b3fe6a1350e6c203bdc0526c4c654806f2b9237e2c7766ca0940450a5",
+    "src/engineering_optimization_common_continuation.py": "3cec230d83f5daa54ce00161cf964692f1f31d4855e14d42a7fcad876363091a",
+    "configs/engineering_optimization_paired_mesh.json": "998a63f50dd57d35abef358d629bce5304b072df789ea719dffbf0fa3653d277",
+    "paper/engineering_optimization/PAIRED_MESH_PROTOCOL.md": "d4441e8bdae001a77c09a00d7eac6f706cdf07ca117b71a6cb5139ca4e705b4e"
+  },
+  "installed_engine_hashes": {
+    "backend.py": "b2269e9bfb066e99997d0772227472f69e31605e557a7e0e68c28d4995e4a388",
+    "v0.py": "d2aa59a637b1a6d94b61b86eceab63e85bc9da0fb3e94016de1ef8cd22f7a22f"
+  },
+  "versions": {
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "scikit-learn": "1.7.2",
+    "engibench": "0.2.0",
+    "cvxopt": "1.3.2"
+  },
+  "new_physics_attempts": 0,
+  "future_mesh_labels_read": false
+}
