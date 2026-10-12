@@ -1,51 +1,47 @@
 {
   "format": "lossless LZMA-compressed base85 segments",
-  "based_on_commit": "de6ec38010638e7340fb6394706fc006b65e9605",
+  "based_on_commit": "eeaf0458f6f9ee09726d55397b69ae0f16e8816f",
   "documents": [
     {
       "name": "EO_manuscript.pdf",
-      "bytes": 790854,
-      "sha256": "006679bc699504d617830f66b54d94348600496f8fad10cb23071f8d269641ed",
+      "bytes": 791138,
+      "sha256": "88cc7da728a1ccdbdbc462c4b9a7b05dd51f7498aaa7bd88945c968aca37930b",
       "segments": [
         {
-          "path": "manuscript_00.b85",
-          "sha256": "548a370b71b148988c39969032421cff55b52e9f3d857a475af0d3af5803ebfe"
+          "path": "main_factual_v2_00.b85",
+          "sha256": "b842e50774eb2a1e4d31aad59a166f5ba8e7e48aff9cdbba371cdf4433fc4909"
         },
         {
-          "path": "manuscript_01.b85",
-          "sha256": "e1e2432498aa6c5071a9717c3891b6107e3b7835528e0a489eb0d5c37409cf4e"
+          "path": "main_factual_v2_01.b85",
+          "sha256": "cae6990a51260d15c171bd508e920149e789d72147d991cf8341bb77a69ae0a4"
         },
         {
-          "path": "manuscript_02.b85",
-          "sha256": "c5ff6f7e03a41b6f02c0ac024a2368b46467103771fdec8c58e792e9fd1449ac"
+          "path": "main_factual_v2_02.b85",
+          "sha256": "546c794ac456c0108da84b01881010cc6682cc27a6595804dc4f01b04c318bfd"
         },
         {
-          "path": "manuscript_03.b85",
-          "sha256": "9aa41fa326045e0978fac835ba823627b1495b232d422a6be902d337c6647b4c"
+          "path": "main_factual_v2_03.b85",
+          "sha256": "042cfff0838d2b065c9343f9b53f2b2e7dff4ae25d06b8bdf472b98b2900ece2"
         },
         {
-          "path": "manuscript_04.b85",
-          "sha256": "82ee5ef37305eb285cfaf4b15813fb1d5228048a768be79e13fab95b1bd69263"
+          "path": "main_factual_v2_04.b85",
+          "sha256": "420ff851aac712e191996570e46730302d9e57e939f622ebd4f20f25cf7c4684"
         },
         {
-          "path": "manuscript_05.b85",
-          "sha256": "0e78d3b659e753346f83b6d2d39b4e5324e91228d05899cce52a86c4babde8f3"
+          "path": "main_factual_v2_05.b85",
+          "sha256": "a899d456d6b0dbc83a0ff19d18ba575932b2b9591c2795f37c872082bd25c0d2"
         },
         {
-          "path": "manuscript_06.b85",
-          "sha256": "6f57ae8436134f03e7f038ac69fbf28dffa31e4664b1eb473a4ec92b90354ce5"
+          "path": "main_factual_v2_06.b85",
+          "sha256": "547763243fad3916e0bb04dae73ade2824c2a1854e529d7ee77a37f417d95170"
         },
         {
-          "path": "manuscript_07.b85",
-          "sha256": "21f860d811aea11f6a815396938cfa784a7bdfae08ef5f9c535135602e0bbc33"
+          "path": "main_factual_v2_07.b85",
+          "sha256": "7174e846d91e8f06ca5d771bb31c61a5b808592a9f34c3b182ad598684f5ecea"
         },
         {
-          "path": "manuscript_08.b85",
-          "sha256": "b69ee995b12f564bbbd4f0895ec0a8376d6fe189f9957dd62d3f82d4ff83ba03"
-        },
-        {
-          "path": "manuscript_09.b85",
-          "sha256": "9b73f0ca21d334b6517eb72917ac11c6703a48fe00433ab03d6d28a6c8878731"
+          "path": "main_factual_v2_08.b85",
+          "sha256": "9d337878619b589a64f4f53d327060785a143794df1b9445fa087cb09385fdf7"
         }
       ]
     },
@@ -93,5 +89,6 @@
       ]
     }
   ],
-  "submission_ready": false
+  "submission_ready": false,
+  "revision_scope": "Two factual related-work corrections; no new manuscript scientific argument sections"
 }
