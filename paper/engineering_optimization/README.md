@@ -22,9 +22,10 @@ compressed artifacts. The full local review package contains the complete
 25-page main/29-page supplement and selected grid records. Publication of the
 paired-grid raw archive is incomplete: segments-003.b85 and segments-004.b85
 were rejected by automatic approval review despite complete decoding and
-provenance checks. No broken partial archive is published. The new PDF upload
-was interrupted; until all new parts are verified, the public pdf_release
-manifest remains the earlier 23/27-page release. See work_status.json.
+provenance checks. No broken partial archive is published. The first new PDF segment was also rejected by automatic approval review;
+no new PDF segments are committed. Until this specific public disclosure is
+approved and all parts verified, the public pdf_release manifest remains the
+earlier 23/27-page release. See work_status.json.
 
 ## Review the compiled documents
 

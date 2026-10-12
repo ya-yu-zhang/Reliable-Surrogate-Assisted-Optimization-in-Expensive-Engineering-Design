@@ -116,7 +116,7 @@
     "Review actual historical AI-writing assistance and publisher-policy compliance; no AI-detector score or policy-compliance guarantee is supplied",
     "Verify current journal-specific length/template/portal requirements; earlier instructions-page access was blocked",
     "Complete final release citation and data-availability declarations, including the separately held historical large original archive",
-    "Complete raw-archive publication after explicit approval of the two rejected unchanged segments; finish updated PDF public release separately"
+    "Complete raw-archive publication after explicit approval of the two rejected unchanged segments; complete updated PDF public release after explicit approval of the compiled PDF archive"
   ],
   "claim_limits": [
     "One deterministic beam model family with two added force conditions",
@@ -151,7 +151,7 @@
   "paired_mesh_protocol_commit": "72a519e1bbf7e02bee451076f075a96f307ab7f5",
   "paired_mesh_recovery_protocol_commit": "8a278d6ca50ac8746ed02198912f0f5028253e83",
   "publication": {
-    "updated_latex_sources_and_analysis": "ready for repository commit",
+    "updated_latex_sources_and_analysis": "published and verified at 06a933374846d4642fe859f61b3eb88a7f815a89",
     "complete_local_review_package": true,
     "paired_mesh_raw_archive_public_complete": false,
     "raw_archive_blocked_paths": [
@@ -164,7 +164,10 @@
       "supplementary": 29
     },
     "updated_pdf_public_release_complete": false,
-    "pdf_upload_status": "Interrupted; previous public manifest is retained until all new PDF segments are verified",
-    "no_partial_broken_archive_published": true
+    "pdf_upload_status": "Automatic approval review rejected EO_manuscript_integrated_v1_00.b85; no new PDF segment is publicly committed; previous complete public PDF manifest retained",
+    "no_partial_broken_archive_published": true,
+    "source_analysis_verified_files": 26,
+    "pdf_first_blocked_path": "paper/engineering_optimization/pdf_release/EO_manuscript_integrated_v1_00.b85",
+    "pdf_block_reason": "The review action cannot directly confirm contents of this opaque high-entropy PDF segment and requires explicit approval of the exact public disclosure"
   }
 }

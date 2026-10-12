@@ -23,5 +23,8 @@
   "lossless_pdf_restoration_byte_identical": true,
   "publication_complete": false,
   "public_raw_archive_incomplete": true,
-  "new_pdf_upload_interrupted": true
+  "new_pdf_upload_interrupted": false,
+  "new_pdf_public_upload_blocked": true,
+  "source_analysis_remote_hashes_verified": 26,
+  "source_analysis_public_commit": "06a933374846d4642fe859f61b3eb88a7f815a89"
 }
