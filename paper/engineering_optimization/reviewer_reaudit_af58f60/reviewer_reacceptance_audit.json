@@ -1,0 +1,427 @@
+{
+  "audit_type": "simulated pre-submission second review, not journal peer review or editorial decision",
+  "audit_date": "2026-10-12",
+  "reviewed_commit": "af58f60da45ff80cd8b6d1615168ff450f67273a",
+  "reviewed_tree": "756a3e4eade398ad5df51d31058b07fc91c26521",
+  "previous_review_commit": "cfc2b94fa26a9cfdc6b1bcd2996d64da4e620222",
+  "verdict": "not_passed_major_revision_reaudit",
+  "submission_ready": false,
+  "scope": "direction_matched_with_innovation_and_engineering_applicability_requirement",
+  "novelty_sufficiency_certified": false,
+  "issues": [
+    {
+      "id": "R1",
+      "status": "open_scientific_blocker",
+      "assessment": "Core increment over closest executable diagnostics/matched-state ablation not established",
+      "new_experiments": "conditional on retained efficacy/resource claims; more same-family cases alone insufficient"
+    },
+    {
+      "id": "R2",
+      "status": "major_definitions_addressed_operational_details_pending",
+      "assessment": "Target/horizon/reuse/abstention mapped; allocator schedule/priority, independent xi and calibration thresholds, final selection rule need manuscript or explicitly linked algorithm specification",
+      "new_experiments": false
+    },
+    {
+      "id": "R3",
+      "status": "disclosure_and_narrowing_addressed_general_efficacy_unvalidated",
+      "assessment": "Independent primary targets have no better cases; measured zero errors are not prediction; positive efficacy is not required for a bounded diagnostic contribution",
+      "new_experiments": "required only for broad positive-case efficacy/false-rejection-avoidance claims"
+    },
+    {
+      "id": "R4",
+      "status": "descriptive_explanation_addressed_advantage_unestablished",
+      "assessment": "B18 nonbinding; B12 capacity/order/cost disclosed; constructed calibration baseline not strongest simple comparator",
+      "new_experiments": "conditional on allocation/deployment advantage claims"
+    },
+    {
+      "id": "R5",
+      "status": "conditionally_addressed_for_selected_fixed_designs",
+      "assessment": "Eight differing endpoints plus six same-endpoint ties; no physical convergence or engineering margin certification",
+      "new_experiments": "needed only if physical accuracy/certified engineering margin claims retained"
+    },
+    {
+      "id": "R6",
+      "status": "denominators_dependence_addressed_author_narrative_pending",
+      "assessment": "Ten complete blocks including four zero-contrast blocks retained; three evidence questions need a clearer manuscript organization",
+      "new_experiments": false
+    },
+    {
+      "id": "R7",
+      "status": "open_submission_blocker",
+      "assessment": "Author affiliation/approval/statements/AI history and policy evaluation plus matching final PDF/minimal evidence access pending",
+      "new_experiments": false
+    }
+  ],
+  "current_verification": {
+    "remote_blob_matches": 54,
+    "analysis_source_sha256_matches": 92,
+    "byte_identical_recomputed_outputs": {
+      "paper/engineering_optimization/review_revision/paired_grid_ranges.csv": "03c70f4e8d9166c0e9301d382ed9cab04ce3e47613c068d61f0dbd59335a03ec",
+      "paper/engineering_optimization/review_revision/analysis.json": "97267265f5de1df342debb0febac9fd39baaa5de9888e3f9d50e73474d57b409",
+      "paper/engineering_optimization/review_revision/order_sensitivity.csv": "706e356cae725cc118bf96b2d3ecee2f5f5d38b52a407ad4838d33ca04b6d8ff",
+      "paper/engineering_optimization/review_revision/budget_comparison.csv": "b926a63449556651e335655bafd6a3d5e54968d14ca1e2bfa24a0c6706f7d0bd",
+      "paper/engineering_optimization/review_revision/truth_composition.csv": "3f6e580b77764dc3da4ce9f56c8539622097f061cd3a13dbdd38bc6046500e05",
+      "paper/engineering_optimization/review_revision/completion_capacity.csv": "ae82adaf0bdb39e6fa82c7df462644c40dcb844da77717edba42350a41f08cbc",
+      "paper/engineering_optimization/review_revision/seed_block_results.csv": "dcbe5ff8caf2c50d405978a729e1872d476eaa0a97019956d145f315f3bb817d"
+    },
+    "recomputed_original_fixed_adaptive_cells": 36,
+    "relevant_tests_passed": 28,
+    "test_modules": 6,
+    "full_historical_suite_rerun": false,
+    "new_physics_attempts": 0,
+    "full_original_gp_numeric_audit_rerun": false,
+    "current_pdf_recompiled": false,
+    "current_pdf_visual_rereviewed": false,
+    "previous_verified_build_pages": {
+      "main": 26,
+      "supplement": 31
+    },
+    "build_record_source_hashes_match": true,
+    "cached_pdf_hashes_match_current_build_record": false,
+    "public_pdf_manifest_matches_current_sources": false,
+    "prior_rejected_payloads_retried": false,
+    "initial_test_dependency_failure_resolved": "24 tests plus 4 mesh tests, then all28 together passed using available dependency paths; no research code modified"
+  },
+  "primary_truth_counts": {
+    "mean": {
+      "better": 0,
+      "tie": 24,
+      "worse": 1
+    },
+    "ei": {
+      "better": 0,
+      "tie": 23,
+      "worse": 2
+    }
+  },
+  "class_count_distribution": {
+    "1": 13,
+    "2": 9,
+    "3": 8
+  },
+  "informative_blocks": [
+    11,
+    12,
+    14,
+    15,
+    17,
+    18
+  ],
+  "cost_interpretation": {
+    "primary_immediate_requests": 42,
+    "primary_complete_requests": 252,
+    "immediate_selection_loss_mean_and_ei": 0,
+    "complete_selection_loss_mean_and_ei": 0,
+    "budget12_fixed_completed": 17,
+    "budget12_adaptive_completed": 9,
+    "budget12_requests_each": 204,
+    "calibration_requests": 240,
+    "calibration_probe_requests_assigned_to_all_alias_states": 104,
+    "all_alias_states": 13,
+    "calibration_is_constructed_baseline": true,
+    "class_aware_skip_variant_not_preregistered_or_claimed_independent": true,
+    "request_counts_are_not_physics_costs": true
+  },
+  "grid_scope": {
+    "selected_contrasts": 14,
+    "different_endpoints": 8,
+    "same_endpoints": 6,
+    "contexts": 6,
+    "extra_independent_optimizer_samples": 0,
+    "physical_convergence_certified": false,
+    "engineering_margin_certified": false
+  },
+  "report_sha256": "39766ad0ff0f4e82b5e402193e28a2b94c245d9fe241b30e00d4e8b3db7cbd51",
+  "tests_sha256": "a00879a893dd4e7364f535f58ef26377ff6d956f25bb21ece7ae4a344d1a35c9",
+  "official_sources": [
+    {
+      "url": "https://www.tandfonline.com/journals/geno20",
+      "access": "official search-index text; direct about page403"
+    },
+    {
+      "url": "https://doi.org/10.1080/0305215X.2025.2450132",
+      "access": "official search-index text"
+    },
+    {
+      "url": "https://doi.org/10.1080/0305215X.2024.2381818",
+      "access": "official abs entry search-index full text"
+    },
+    {
+      "url": "https://authorservices.taylorandfrancis.com/editorial-policies/using-ai-in-your-research-and-manuscript-preparations/",
+      "access": "official page read"
+    }
+  ],
+  "journal_specific_portal_or_length_requirements_fully_verified": false,
+  "input_files": [
+    {
+      "path": "paper/engineering_optimization/EO_manuscript.tex",
+      "git_blob_sha": "88b7d17b030219fddd67d3f1077550368266a2dd",
+      "sha256": "416671d36a37d00ef2d0a0b4cbb6654d1f6d0ca599b059b61573802e11cae2db"
+    },
+    {
+      "path": "paper/engineering_optimization/EO_supplementary.tex",
+      "git_blob_sha": "f2f9da04c1f4e917ef1ba5ae3cc9f30a97726224",
+      "sha256": "71b8a09dc13c9e814799bbed74331d2d5eb2e07eb5f97df364a465f0bf885496"
+    },
+    {
+      "path": "paper/engineering_optimization/REVIEWER_ACCEPTANCE_AUDIT.md",
+      "git_blob_sha": "3c23c0093cd106319a5650f088d2fa67ee8922eb",
+      "sha256": "ec187fb2f3885ee1269f2551f7e63325a45d016f701b499775edab2fc78d96ca"
+    },
+    {
+      "path": "paper/engineering_optimization/reviewer_acceptance_audit.json",
+      "git_blob_sha": "f6460c2ff118308356ef0931b76a555268a528ae",
+      "sha256": "b3ed27a363bae104a0fd0702a38b18627de967de57493863fec59a5819906f4d"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/IMPLEMENTATION_CONTRACT.md",
+      "git_blob_sha": "7e0a05d142d96f3519ce01531968538d52f54969",
+      "sha256": "50a66d50bb8238640b97c58ccdef60527ba1867f14835d1c5b42b16a399644e8"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/README.md",
+      "git_blob_sha": "48f3dd309a5c9011b53ccfcd662145eb0d2261e9",
+      "sha256": "b0112fc4a25eea6a634680ee3c5d5cf63adf0bbda78c3c57433c90a48550c786"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/RESPONSE_TO_REVIEW.md",
+      "git_blob_sha": "3ab2240a69de45775396f533f7b8ea924b25a63e",
+      "sha256": "23c21ba639c3ec820c655704a1eb6c803ec14bd75273cc527ee665adb287eb45"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/TECHNICAL_INCREMENT_CHECKLIST.md",
+      "git_blob_sha": "ddbb84154a43303baddaaf20f7033d26cbb42381",
+      "sha256": "6947d91e6e91e35141867bb8eb91e169f24179fc52b09d766b4549c7206ed05d"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/analysis.json",
+      "git_blob_sha": "6070a292452dabaf84cad1c53f884519dc67d28c",
+      "sha256": "97267265f5de1df342debb0febac9fd39baaa5de9888e3f9d50e73474d57b409"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/budget_comparison.csv",
+      "git_blob_sha": "4c251be2b3a420cc100658e54861b21778459090",
+      "sha256": "b926a63449556651e335655bafd6a3d5e54968d14ca1e2bfa24a0c6706f7d0bd"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/completion_capacity.csv",
+      "git_blob_sha": "61de1eefc4a9845e7f7db5861130ff6776e7bc28",
+      "sha256": "ae82adaf0bdb39e6fa82c7df462644c40dcb844da77717edba42350a41f08cbc"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/factual_edit_audit.json",
+      "git_blob_sha": "5e2bc6094820c2d2ac82985d69609a4c3c3512d6",
+      "sha256": "09f09ae7936f618243037f271a010e4037b1e40f20020b8b7aa4078992b9a01f"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/integrity_tests.txt",
+      "git_blob_sha": "3788b05a40543a96102014f3005736ae3f64b3e9",
+      "sha256": "02fd0e4173861fae0001fa2521c970e50a1f68514e2e47b01d91184a187ca8a6"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/order_sensitivity.csv",
+      "git_blob_sha": "e167eb307173cdd4c7448c2660de6994d32eaf47",
+      "sha256": "706e356cae725cc118bf96b2d3ecee2f5f5d38b52a407ad4838d33ca04b6d8ff"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/package_manifest.json",
+      "git_blob_sha": "2e81655b1eb95c77c1297a066c69be6dcbf6fe49",
+      "sha256": "2f463150b3114a2a856b1a4d2fba56bf075857c7742c8602ad37f08390477999"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/paired_grid_ranges.csv",
+      "git_blob_sha": "46d1e1f6d07e99186ce9b0e9a267a1c4dcaa7788",
+      "sha256": "03c70f4e8d9166c0e9301d382ed9cab04ce3e47613c068d61f0dbd59335a03ec"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/pdf_render_review.json",
+      "git_blob_sha": "a39b1c05c91a74bcfae161278d978486f6518a81",
+      "sha256": "3fb954313636b61c9d3c0542227c520374d73ba8c348e945d1db7312b25238fb"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/release_validation.json",
+      "git_blob_sha": "265fb70ff47784309c4d929b13a93a47810f1e20",
+      "sha256": "aa4a0db2e5bcb3f76456209e13ed89fcd942e2d683863d575ee2ecc21cc5d285"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/revision_status.json",
+      "git_blob_sha": "6345ab1f2f56d672576d27ed28ff5eb625713504",
+      "sha256": "d8e133b1aeb13717c30b0a039c5e80fa4f1db9b663211d21b1f5d987ce1a19a5"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/seed_block_results.csv",
+      "git_blob_sha": "f21f555b7d1538d1b62f72660dd37a6eae70be92",
+      "sha256": "dcbe5ff8caf2c50d405978a729e1872d476eaa0a97019956d145f315f3bb817d"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/table_inputs.json",
+      "git_blob_sha": "7491a2fb25f71586194d38a7cf45ae4ff439e8bc",
+      "sha256": "d83e32bd58131fd754ee05dfb2a16a4f4e095f3a99593bf1173135976e59f285"
+    },
+    {
+      "path": "paper/engineering_optimization/review_revision/truth_composition.csv",
+      "git_blob_sha": "4e43a989a1059aafc294901bff1b387ebafab549",
+      "sha256": "3f6e580b77764dc3da4ce9f56c8539622097f061cd3a13dbdd38bc6046500e05"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/review_method_records.tex",
+      "git_blob_sha": "d74108120877edb14c6069e5cee46ec870142200",
+      "sha256": "800a331ce4cf8dea8555f06a922a959673b461f12c78fec6c17ffeff89c6b699"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/review_main_results.tex",
+      "git_blob_sha": "46f83c828bc55de4c6b4413aee4bf4845f5a234b",
+      "sha256": "184f36812e20f0949e0710582f434533b77d9d1c204bd21cf45343b8bdbb3aeb"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/review_supp_records.tex",
+      "git_blob_sha": "c5c475ab8aac834ecd745ebd3330f8187931aa85",
+      "sha256": "7a4d25c80cfb3e0b73a46558db216221a9cb2a1e7d38007c10e0cd6518d781c1"
+    },
+    {
+      "path": "src/analyze_review_revision.py",
+      "git_blob_sha": "f9336780a65d2cb9ca25445891a811c94e4a71e6",
+      "sha256": "15a3539285a51c2d5ea1ca4cecae43fd282651957521b3c78747360eb7ceed4e"
+    },
+    {
+      "path": "src/integrate_review_revision.py",
+      "git_blob_sha": "36fa700a29226f7502a0ef78eedb700c4b3b42e9",
+      "sha256": "a98d6499c60165ec6d89143e44096defacc99d88701e7afe038fc2a22e3f58af"
+    },
+    {
+      "path": "tests/test_review_revision.py",
+      "git_blob_sha": "58096e2fccc4d0e7db07cf6f1e3245cb4e1b97c7",
+      "sha256": "24d9a85f4e0efe130b39baf225ece8fd677d58e01f225af1a338daeceaffe3f3"
+    },
+    {
+      "path": "paper/engineering_optimization/work_status.json",
+      "git_blob_sha": "69320cce191b88b0058eab6cad0f52642f1ac362",
+      "sha256": "a300e6f29c463df9bb3cd1a17a45ff7ed416f8c84b66a5946ed04b5b8dac79ad"
+    },
+    {
+      "path": "paper/engineering_optimization/pdf_build_status.json",
+      "git_blob_sha": "bb1d490a61c9c33160d4c87fe52de735c6154385",
+      "sha256": "750d84b06b8308d552eaea0771df825753537be16fd2f7a001ffd318c824edc3"
+    },
+    {
+      "path": "src/budgeted_decision_audit.py",
+      "git_blob_sha": "aec6f278357e1819ebd9620983cd04d7fbb75167",
+      "sha256": "71b177eb983166f34b383187c9de577c884bb471fa442e865ebf20d7485aacd5"
+    },
+    {
+      "path": "src/engineering_optimization_budget_audit.py",
+      "git_blob_sha": "046289af27b90960750e98eb3b6ad2792fa9adc2",
+      "sha256": "82ec687a56057d2417127af8df6f35a31c98f08b9545461f5b4b61cb486c2c9e"
+    },
+    {
+      "path": "src/analyze_budget_audit.py",
+      "git_blob_sha": "35d4b91c9cc677f6d3bf9792083298f0a3ddfc9d",
+      "sha256": "3a5897613f8b08bc796080ad92ceb44c697de1396e289c745c420ad0c68c77a2"
+    },
+    {
+      "path": "src/engineering_optimization_common_continuation.py",
+      "git_blob_sha": "ddf0fbbe508927643e9f7b0b527df9e14cdd3690",
+      "sha256": "3cec230d83f5daa54ce00161cf964692f1f31d4855e14d42a7fcad876363091a"
+    },
+    {
+      "path": "src/engineering_optimization_transfer.py",
+      "git_blob_sha": "17fdb00aa1b81cb63d1fde6b52ac8e70d1a4c2e6",
+      "sha256": "35e687312a458d457f72605752006be6afcc4952e12f64587e9b3a7ed12c0203"
+    },
+    {
+      "path": "src/engineering_optimization_gp_audit.py",
+      "git_blob_sha": "e5a952b6f9bf41afd026c1747b2d70bc4ec5aa5e",
+      "sha256": "1ac090243d9dd268932a239cb0a52ade70f9f5d084b6d9c5ba8246e6139e9810"
+    },
+    {
+      "path": "src/engineering_optimization_paired_mesh.py",
+      "git_blob_sha": "151f517b2b1e6d2ace4d714a6269964a82cf2134",
+      "sha256": "7b0bc28f3c7511d19e384018a0992af252982c7e6ffbd39f8eb62c8211df1765"
+    },
+    {
+      "path": "configs/engineering_optimization_budget_audit.json",
+      "git_blob_sha": "a9db879dc9a50a227d4f79b7d47e0fd1b27c3a50",
+      "sha256": "6f4164c897a9ee34095a7aad7de8c566176dfe9951a0789fe75fb65b5ffc417f"
+    },
+    {
+      "path": "tests/test_engineering_optimization_gp_audit.py",
+      "git_blob_sha": "f1f2247824af6efa14058328dd0c1f178a7bffce",
+      "sha256": "714cc4c1426c544fd6e721ea0227610aabcb398bceec7e4649e2dd9f5eb0a53c"
+    },
+    {
+      "path": "tests/test_engineering_optimization_transfer.py",
+      "git_blob_sha": "9c71c3b5309ce29f351de97dc4a0ccca9f4b1b38",
+      "sha256": "d28259539ad0618a73a50a59fd584ab52cdd92faf46b52557b0a28df5034bd38"
+    },
+    {
+      "path": "tests/test_engineering_optimization_common_continuation.py",
+      "git_blob_sha": "e82e606c0c4d024d0e7818accce15001075ad08e",
+      "sha256": "bfbbd1934038002e0164e486799ed973d738500e17acc10c473a8ec549e04e6d"
+    },
+    {
+      "path": "tests/test_budgeted_decision_audit.py",
+      "git_blob_sha": "005f27b54397e5a3393e5362d5238ec7294ccca9",
+      "sha256": "df7d8b56ade80994c1bcfa5c110105740b65fa570fb01e9647e581b8cf1fb30b"
+    },
+    {
+      "path": "tests/test_paired_mesh.py",
+      "git_blob_sha": "e7a5012786efeefd0f2fb40f1e37d40f6dc4135c",
+      "sha256": "95ed6a4bea23a3af3ee8407d93bd18a7b909b2a9ba3c392dd3fa6c6cf80c45d3"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/analysis.json",
+      "git_blob_sha": "df748e1a6cda18776769d52e950d34dbcd7d023f",
+      "sha256": "7a3ee271accf045faa625fa30b1738fc5c99f5f1eebe59b23fca877af9aa44f5"
+    },
+    {
+      "path": "paper/engineering_optimization/budget_audit/classifications.csv",
+      "git_blob_sha": "d6765a13e34d0c7e1777604e637bd2f4d6ec3ed0",
+      "sha256": "bed8cdf82943252d984fe5352359a0307d9baffb561179ccb588ec0b98e56047"
+    },
+    {
+      "path": "paper/engineering_optimization/common_continuation/denominator_analysis.json",
+      "git_blob_sha": "e0bf2156fadc1d68d4ac5dd96d7fb575d1e1b195",
+      "sha256": "adfa4e611b2c80bc2d20f9f4e7e08f14df458cfdad3b6fcb6e662681f2ec2f2d"
+    },
+    {
+      "path": "paper/engineering_optimization/paired_mesh/analysis.json",
+      "git_blob_sha": "cedd1cb160f256423359ab49c4fa6ee9d979dfbd",
+      "sha256": "463f8c35e38253e2af8658073b5ea95843d8ce623bf8e554675e64080b50c024"
+    },
+    {
+      "path": "paper/engineering_optimization/paired_mesh/paired_contrasts.csv",
+      "git_blob_sha": "b7f74583bca8b170228dd0cdc214c61a000f4465",
+      "sha256": "bc155a143b27a0eaa871234a702d7d01dd448c2825653eb93631675dca5b7218"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/main_records.tex",
+      "git_blob_sha": "a01c89e814db370e6ae51abd99b0e6ec9e628543",
+      "sha256": "ec8e4f617a579f9e756ffce77e7bcf74fc44a97bc067b24bae8645928c3db0f8"
+    },
+    {
+      "path": "paper/engineering_optimization/integrated_evidence/supp_records.tex",
+      "git_blob_sha": "0bf25302a2dfa9c272ab92e3512d2ec549a7ffa9",
+      "sha256": "fe5d7e3a8a038a3e34ddc7e081890b952c04dfd96e3ecfcca13cbaedfbaea0e7"
+    },
+    {
+      "path": "paper/engineering_optimization/EO_references.bib",
+      "git_blob_sha": "fee142073bab529bb64ed828f8ccaf5d192a19a1",
+      "sha256": "efad9f03f4c2d22031661670fff2e4e43d4f2b9c357d367be2a77ced9e0ba89d"
+    },
+    {
+      "path": "paper/engineering_optimization/pdf_release/manifest.json",
+      "git_blob_sha": "d0643ceb443caa851035a7ce3a88e90e7a53bfba",
+      "sha256": "e5fda9acf1592108d7d70e7d84247f63963ca9f0214d97ce8d91e0426f850b0c"
+    },
+    {
+      "path": "src/engineering_beam_adapter.py",
+      "git_blob_sha": "0c7f409d3d0fa1cba18c0f35e6537ad749426dc2",
+      "sha256": "0e73585b3fe6a1350e6c203bdc0526c4c654806f2b9237e2c7766ca0940450a5"
+    },
+    {
+      "path": "src/integrate_engineering_evidence.py",
+      "git_blob_sha": "7b3f1247a7bafa473b2fbc2efbe94796d7db6d98",
+      "sha256": "614611063dfc44ad41c3bc3b9d333f7d9f100109dc0150a23d8d8c343ca5f4a0"
+    }
+  ]
+}
