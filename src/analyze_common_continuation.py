@@ -112,7 +112,7 @@ def main():
     save('analysis.json',report)
     for name,data in [('engineering_endpoints.csv',rows),('diagnostic_classifications.csv',class_rows)]:
         with (dest/name).open('w',newline='') as f:
-            w=csv.DictWriter(f,fieldnames=list(data[0]));w.writeheader();w.writerows(data)
+            w=csv.DictWriter(f,fieldnames=list(data[0]),lineterminator='\n');w.writeheader();w.writerows(data)
     lines=['# Common-continuation measured evidence','','Author-review data record, not a drafted manuscript argument or novelty certification.','',
            'Thirty frozen states nested within ten seed blocks and three source optimizers. First actions alone vary; all branches then use the same posterior-mean continuation and external candidate seed rule. Horizons count additional steps after the first action. Positive advantages favor the named control over mean.','',
            '| Source history | First action | h0 better/tie/worse | h5 better/tie/worse | Median h5 advantage (%) |','|---|---|---|---|---:|']

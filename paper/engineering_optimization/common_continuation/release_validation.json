@@ -10,5 +10,6 @@
   "new_physics_solver_calls": 0,
   "tests_passed_this_stage": 14,
   "GP_past_only_replays": 456,
-  "common_rule_checks": 380
+  "common_rule_checks": 380,
+  "csv_line_endings": "LF; explicit cross-platform generator setting"
 }
