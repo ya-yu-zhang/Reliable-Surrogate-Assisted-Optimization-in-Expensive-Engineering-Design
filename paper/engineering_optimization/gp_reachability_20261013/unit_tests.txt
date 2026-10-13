@@ -1,0 +1,16 @@
+test_category_boundaries_and_abstention (tests.test_gp_action_reachability.ReachabilityTests.test_category_boundaries_and_abstention) ... ok
+test_interior_action_missed_by_endpoint_reader (tests.test_gp_action_reachability.ReachabilityTests.test_interior_action_missed_by_endpoint_reader) ... ok
+test_joint_bound_accounts_for_pending_response (tests.test_gp_action_reachability.ReachabilityTests.test_joint_bound_accounts_for_pending_response) ... ok
+test_kernel_linear_system_encloses_exact_rational_coefficients (tests.test_gp_action_reachability.ReachabilityTests.test_kernel_linear_system_encloses_exact_rational_coefficients) ... ok
+test_native_normalized_gp_predictions_across_unknown_labels (tests.test_gp_action_reachability.ReachabilityTests.test_native_normalized_gp_predictions_across_unknown_labels) ... ok
+test_parallel_and_identical_actions_retain_ties (tests.test_gp_action_reachability.ReachabilityTests.test_parallel_and_identical_actions_retain_ties) ... ok
+test_random_sets_include_every_exact_binary_action (tests.test_gp_action_reachability.ReachabilityTests.test_random_sets_include_every_exact_binary_action) ... ok
+test_response_lower_removes_only_proven_infeasible_actions (tests.test_gp_action_reachability.ReachabilityTests.test_response_lower_removes_only_proven_infeasible_actions) ... ok
+test_single_boundary_action_is_retained (tests.test_gp_action_reachability.ReachabilityTests.test_single_boundary_action_is_retained) ... ok
+test_singular_inverse_is_not_silently_used (tests.test_gp_action_reachability.ReachabilityTests.test_singular_inverse_is_not_silently_used) ... ok
+test_uncertainty_prevents_nominal_domination (tests.test_gp_action_reachability.ReachabilityTests.test_uncertainty_prevents_nominal_domination) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.348s
+
+OK
