@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "status": "development_feasibility_screen_on_already_observed_states",
+  "model": "fixed_discrete_beam_100x50_unit_top_left_load",
+  "horizon": 5,
+  "samples_per_future_pool": 8,
+  "candidate_inclusion": "first eight points after removing only initial-history exact points; full seed groups retained; alias-only states skip candidate bounds",
+  "reference_trials": ["all_solid", "initial_incumbent_of_first_previous_holdout_state_by_block_source_order"],
+  "max_new_physics_attempts": 2,
+  "max_candidate_bound_evaluations": 1800,
+  "recoveries_or_replacement_references_allowed": false,
+  "source_repeat_relative_tolerance": 0.00000001,
+  "reference_residual_flag": 0.00001,
+  "reduced_space_condition_limit": 1000000000000.0,
+  "original_dataset_margins": {"archived_common_mean": 0.000001, "previous_holdout": 0.001},
+  "sampled_minimum_role": "upper bound on the lower envelope obtainable from the declared full-pool-superset operator; falsification only, never a terminal lower bound",
+  "certify_early_category_or_selection_from_samples": false,
+  "new_independent_validation": false,
+  "out": "results/engineering_optimization_physical_bound_screen_v1",
+  "report": "paper/engineering_optimization/physical_bound_screen_20261013"
+}
