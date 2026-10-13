@@ -1,0 +1,55 @@
+{
+  "baseline_commit": "a8a04d797c23a6c205fbf48f83c127a8903bfae4",
+  "revision_date": "2026-10-13",
+  "technical_work_completed": true,
+  "submission_ready": false,
+  "all_author_approval_task": {
+    "required": false,
+    "status": "excluded_by_user_instruction",
+    "approval_obtained_or_certified": false
+  },
+  "affiliations_b_c": "retained_unfilled_by_user_choice",
+  "core_object": "conditional first-action finite-horizon audit record",
+  "claims_retained": "bounded deterministic single-objective conditional evidence and information/cost boundaries",
+  "broad_positive_efficacy_or_resource_advantage_claimed": false,
+  "new_independent_physics_experiments_required_for_retained_claims": false,
+  "new_physics_attempts": 0,
+  "novelty_sufficiency_certified": false,
+  "new_method_superiority_over_strong_fixed_depth_baseline": false,
+  "R1_technical_comparison_completed": true,
+  "R2_algorithm_specification_completed": true,
+  "R3_unfavorable_results_preserved": true,
+  "R4_strong_simple_and_calibration_cost_sensitivity_completed": true,
+  "R5_fixed_design_boundaries_preserved": true,
+  "R6_existing_result_paragraph_reorganized": true,
+  "AI_history_audit_completed": true,
+  "complete_earlier_model_prompt_history_verified": false,
+  "historical_AI_policy_compliance_certified": false,
+  "all_current_journal_specific_instructions_verified": false,
+  "relevant_tests_passed": 31,
+  "core_package_stdlib_tests_passed": 13,
+  "derived_analysis_outputs_clean_reproduced": 10,
+  "generated_inputs_and_sources_clean_unchanged": true,
+  "generator_idempotence_checked_outputs": 9,
+  "pdf_pages": {
+    "main": 27,
+    "supplement": 32
+  },
+  "all_pdf_pages_visually_checked": 59,
+  "pdf_overfull_or_undefined_warnings": false,
+  "minimal_package_scope": "independent conditional records, existing paired CSV, current sources/PDFs; not all historical experiments",
+  "previous_rejected_public_payloads_retried": false,
+  "remaining_scientific_or_information_limits": [
+    "Optimization novelty beyond closest executable same-target diagnostic/ablation baseline is not established",
+    "Affiliations b/c intentionally remain missing; author contribution/funding/conflict facts are not independently certified",
+    "Earlier draft-assistance history retained; full model/prompt records and publisher policy applicability are not certified",
+    "Official journal-specific portal/length details returned403; no requirement fabricated",
+    "Full historical raw archives and previously blocked public grid/PDF disclosure not part of this local minimum package"
+  ],
+  "public_text_transfer_exception": {
+    "path": "paper/engineering_optimization/submission_revision_20261013/AI_USE_HISTORY_AUDIT.md",
+    "status": "included_in_local_package_but_github_write_did_not_complete",
+    "retry_attempted": false,
+    "specific_error": "not surfaced in batch exception serialization; no rejection reason inferred"
+  }
+}

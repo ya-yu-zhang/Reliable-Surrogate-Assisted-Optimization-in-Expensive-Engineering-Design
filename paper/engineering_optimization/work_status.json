@@ -111,11 +111,11 @@
   "rendered_pdf_layout_verified": true,
   "submission_ready": false,
   "remaining": [
-    "Authors independently assess R1 novelty against closest executable prior workflows and finalize the scientific argument; implementation mapping and measured R2--R6 evidence have been factually revised",
-    "Independent positive-case/general efficacy and deployment value remain unvalidated; retain the narrowed conditional/fixed-discrete claims or separately freeze a new validation design",
-    "Confirm affiliations b/c, all contribution/funding/conflict statements, truthful historical AI-use disclosure and every author final approval",
-    "Verify current journal-specific portal/length requirements and final data/release citation",
-    "Complete previously blocked raw archive and current compiled PDF public release only after explicit approval of their exact disclosure"
+    "Novelty increment over closest executable same-target diagnostics remains unestablished; see submission_revision_20261013/CORE_OBJECT_AND_CLOSEST_WORK.md",
+    "Affiliations b/c intentionally remain unfilled at user choice; author contribution/funding/conflict facts are not independently certified",
+    "Historical initial manuscript-section drafting assistance remains disclosed; complete early model/prompt history and publisher policy applicability not certified",
+    "Official journal-specific portal/length details could not be fully read (403)",
+    "Local27/32-page PDFs and scoped minimum package delivered; previous exact-public-disclosure blockers and full historical archive access remain outside this completed local delivery"
   ],
   "claim_limits": [
     "One deterministic beam model family with two added force conditions",
@@ -163,7 +163,7 @@
       "supplementary": 31
     },
     "updated_pdf_public_release_complete": false,
-    "pdf_upload_status": "New post-review26/31-page PDFs available locally; preceding opaque PDF archive upload was rejected by automatic review. No new binary/encoded upload retried without explicit approval; prior complete public PDF manifest retained.",
+    "pdf_upload_status": "Current27/32-page PDFs locally compiled/visually checked and included in minimum evidence package. No binary or encoded public upload retried; prior published PDF manifest remains historical.",
     "no_partial_broken_archive_published": true,
     "source_analysis_verified_files": 26,
     "pdf_first_blocked_path": "paper/engineering_optimization/pdf_release/EO_manuscript_integrated_v1_00.b85",
@@ -207,5 +207,18 @@
     "positive_diagnostic_efficacy_demonstrated": false,
     "novelty_sufficiency_confirmed": false,
     "reviewer_acceptance_passed": false
+  },
+  "author_approval_task": {
+    "required": false,
+    "status": "excluded_by_user",
+    "instruction_date": "2026-10-13",
+    "approval_obtained_or_certified": false
+  },
+  "stage12": "completed technical revision: core/closest-work comparison, same-target retrospective readers, code-to-method specification, intact conditional-paragraph relocation, truthful AI-history audit, all-author approval task excluded,27/32-page PDFs and local minimum evidence package verified",
+  "public_text_transfer_exception": {
+    "path": "paper/engineering_optimization/submission_revision_20261013/AI_USE_HISTORY_AUDIT.md",
+    "status": "included_in_local_package_but_github_write_did_not_complete",
+    "retry_attempted": false,
+    "specific_error": "not surfaced in batch exception serialization; no rejection reason inferred"
   }
 }

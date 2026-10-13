@@ -1,3 +1,4 @@
+% Operational specification revision 20261013; frozen experiments unchanged.
 % Review response factual integration; independent author scientific review pending.
 % Factual evidence integration v1; scientific author review pending.
 % Built from the evidence-preserving draft using the official publisher class.
@@ -38,7 +39,7 @@ Surrogate-assisted engineering optimization requires reliable evaluation decisio
 \begin{keywords}
 expensive engineering optimization; surrogate model management; decision auditing; evaluation allocation; finite-element design
 \end{keywords}
-\noindent{\small\textit{Author review draft. Affiliations b and c and final author approval are pending.}}
+\noindent{\small\textit{Working manuscript. Affiliations b and c remain to be supplied.}}
 
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
@@ -179,6 +180,7 @@ Reliable regional Kriging \citep{ref35} & Variance-guided reliable regions and s
 Surrogate management \citep{ref38} & Managing approximation models with convergence analysis & An evidence audit without inheriting an optimizer's convergence guarantee \\
 Adjustable-accuracy management study \citep{ref20} & Search response to controlled pseudo-surrogate accuracy & Fixed learned posterior, identical candidate pool, and acquisition-only intervention \\
 Diagnostic benchmarking \citep{ref34} & Effectiveness, efficiency, reliability, parameter controllability, and runtime dynamics across real applications & Mechanism-level decision effects connected to separate closed-loop outcomes \\
+Two-step lookahead \citep{ref39} & Model-based expected future improvement for choosing evaluations & Recorded first actions followed by actual responses under a declared common continuation \\
 Frugal selection \citep{ref36} and trajectory warm-starting \citep{ref37} & Selection data cost and reuse of search information & Independent pilot-to-validation transfer, exact paid ledger, and explicit endpoint/cost boundaries \\
 \end{longtable}
 
@@ -241,6 +243,7 @@ Common-history calibration fits the same frozen model and candidate pool, then e
 \textbf{Step 6 --- Decide.} Promote, revise, stop, or retain an inconclusive decision using prespecified outcome tolerances and cost limits. Report the first unsupported claim and the evidence needed to resolve it. Promotion requires closed-loop evidence for the intended engineering use. Output: stage-wise audit record. The independent replay reports an exact branch alias, a measured target-horizon outcome, an h0 proxy, or an abstention because the target remains incomplete. For nonalias branches, better/tie/worse certification requires both baseline and alternative to reach h5; an immediate tie does not certify a later tie. Table~\ref{tab:review_contract} maps this implementation to its recorded inputs and outputs.
 
 \input{integrated_evidence/review_method_records.tex}
+\input{integrated_evidence/submission_algorithm.tex}
 
 The framework can return a positive result. Classical GP expected improvement is a candidate-dependent positive control: both its predicted improvement and uncertainty vary across candidates, so its acquisition can change ranking and passes the structural decision-influence check. Passing that first check does not guarantee superior endpoints; it authorizes empirical utility and closed-loop evaluation.
 
@@ -657,9 +660,13 @@ Figure 6 reports median initial-incumbent improvement and interquartile ranges t
 
 For practical design use, an engineer could retain a better design found in a pilot. A secondary analysis therefore also reports the best among every design paid for by the audited workflow. Its paired median portfolio gaps are 9.014\% and 2.116\%, respectively, compared with 9.014\% and 27.217\% for the prespecified selected-policy endpoint. Both endpoints are disclosed in S10; the secondary result does not replace the selected-policy test or create a retrospectively chosen promotion threshold. The difference shows why an audit must define the performance object as carefully as its cost boundary.
 
-The retained transfer ledger contains 18,120 physical attempts and 20,000 full-trajectory algorithm observations across 100 budget 200 continuations, with shared initial observations counted inside each trajectory but paid only once per workflow. Loss of access to the previous complete local transfer journals required an explicit unchanged-protocol recovery; the earlier18,120 attempts are also counted. Together with the 138 immediate diagnostics and 102 solver checks, the earlier GP/transfer stages account for 36,480 new FE attempts. The cumulative ledger including later released checks is 55,305 paid physics attempts; its stage-wise boundary is reported in the supplement. Recovery responses enter each retained history once. Observed GP and FE component times from the retained execution are reported in S10 and are not exclusive resource measurements or demonstrated production wall-time savings. All new comparisons are descriptive and separate from the original prespecified inferential families. The independent conditional record in Table~\ref{tab:review_primary} has 25 distinct nonbaseline-action contrasts per continuation: mean continuation gives 0 better, 24 tie and 1 worse; EI gives 0 better, 23 tie and 2 worse at its primary margin. These 30 source states share ten retained seed blocks, six of which contain nonbaseline-action contrasts. The immediate rule uses 42 requests and the completed-target rules 252 across those states; the immediate rule has 0/1 classification errors for mean/EI and zero reported state-selection loss for both. Completed-target zero errors follow from measuring the target. At budget 12, fixed depth completes 17/25 and adaptive 9/25 with 204 requests each; reversing alternative order preserves coverage but changes the evaluated class set in eight states and can leave one worse EI contrast unmeasured. Supplementary tables retain all existing budgets/margins, complete seed-block counts and the selected paired-grid ranges.
+The retained transfer ledger contains 18,120 physical attempts and 20,000 full-trajectory algorithm observations across 100 budget 200 continuations, with shared initial observations counted inside each trajectory but paid only once per workflow. Loss of access to the previous complete local transfer journals required an explicit unchanged-protocol recovery; the earlier18,120 attempts are also counted. Together with the 138 immediate diagnostics and 102 solver checks, the earlier GP/transfer stages account for 36,480 new FE attempts. The cumulative ledger including later released checks is 55,305 paid physics attempts; its stage-wise boundary is reported in the supplement. Recovery responses enter each retained history once. Observed GP and FE component times from the retained execution are reported in S10 and are not exclusive resource measurements or demonstrated production wall-time savings. All new comparisons are descriptive and separate from the original prespecified inferential families.
 
 \input{integrated_evidence/main_records.tex}
+\subsection{Conditional first-action records and budgeted replay}\label{conditional-first-action-records}
+
+The independent conditional record in Table~\ref{tab:review_primary} has 25 distinct nonbaseline-action contrasts per continuation: mean continuation gives 0 better, 24 tie and 1 worse; EI gives 0 better, 23 tie and 2 worse at its primary margin. These 30 source states share ten retained seed blocks, six of which contain nonbaseline-action contrasts. The immediate rule uses 42 requests and the completed-target rules 252 across those states; the immediate rule has 0/1 classification errors for mean/EI and zero reported state-selection loss for both. Completed-target zero errors follow from measuring the target. At budget 12, fixed depth completes 17/25 and adaptive 9/25 with 204 requests each; reversing alternative order preserves coverage but changes the evaluated class set in eight states and can leave one worse EI contrast unmeasured. Supplementary tables retain all existing budgets/margins, complete seed-block counts and the selected paired-grid ranges.
+
 \input{integrated_evidence/review_main_results.tex}
 
 \hypertarget{discussion-and-design-guidance}{%
@@ -688,7 +695,7 @@ The framework is intended to support predeployment assessment in expensive engin
 
 \section*{Acknowledgements}
 
-OpenAI Codex assisted with software organization, computational workflow execution and recovery, reproducibility checks, preparation of working drafts of added sections, and language revision. Codex based on GPT-6 was used for the present formatting and copyediting step. Earlier session versions and the extent of assistance must be confirmed by the authors. The revised draft, including the added scientific argument and its interpretations, awaits substantive author review and rewriting where required by the publisher's AI policy. For the present evidence integration, Codex-assisted Python code assembled measured-data tables and performed numerical and reproducibility checks. This statement records the working draft's status and must be completed by the authors before submission; it does not certify author approval or policy compliance.
+OpenAI Codex assisted with software organization, computational workflow execution and recovery, reproducibility checks, preparation of working drafts of added sections, and language revision. Codex based on GPT-6 was used for the present formatting and copyediting step. Earlier session versions and the extent of assistance must be confirmed by the authors. The revised draft, including the added scientific argument and its interpretations, awaits substantive author review and rewriting where required by the publisher's AI policy. For the present evidence integration, Codex-assisted Python code assembled measured-data tables and performed numerical and reproducibility checks. This statement records the working draft's status and must be completed by the authors before submission; it does not certify publisher-policy compliance.
 
 \section*{Funding Statement}
 
@@ -696,7 +703,7 @@ The authors received no specific funding for this study.
 
 \section*{Author Contributions}
 
-The following contribution assignment is proposed for author confirmation: conceptualization, Ya-Yu Zhang and Shu-Chuan Chu; methodology, Ya-Yu Zhang, Shu-Chuan Chu, and Zhenyu Meng; software, Ya-Yu Zhang; validation, Ya-Yu Zhang, Zhenyu Meng, and Jia Zhao; formal analysis, Ya-Yu Zhang and Zhenyu Meng; investigation, Ya-Yu Zhang and Jia Zhao; data curation, Ya-Yu Zhang; visualization, Ya-Yu Zhang and Jia Zhao; writing---original draft preparation, Ya-Yu Zhang; writing---review and editing, Shu-Chuan Chu, Zhenyu Meng, Jia Zhao, and Ya-Yu Zhang; supervision, Shu-Chuan Chu; project administration, Shu-Chuan Chu. Final approval of the revised manuscript by all authors is pending.
+The following contribution assignment is proposed for author confirmation: conceptualization, Ya-Yu Zhang and Shu-Chuan Chu; methodology, Ya-Yu Zhang, Shu-Chuan Chu, and Zhenyu Meng; software, Ya-Yu Zhang; validation, Ya-Yu Zhang, Zhenyu Meng, and Jia Zhao; formal analysis, Ya-Yu Zhang and Zhenyu Meng; investigation, Ya-Yu Zhang and Jia Zhao; data curation, Ya-Yu Zhang; visualization, Ya-Yu Zhang and Jia Zhao; writing---original draft preparation, Ya-Yu Zhang; writing---review and editing, Shu-Chuan Chu, Zhenyu Meng, Jia Zhao, and Ya-Yu Zhang; supervision, Shu-Chuan Chu; project administration, Shu-Chuan Chu.
 
 \section*{Availability of Data and Materials}
 

@@ -1,0 +1,24 @@
+{
+  "baseline_commit": "a8a04d797c23a6c205fbf48f83c127a8903bfae4",
+  "changes": {
+    "EO_manuscript.tex": {
+      "before_sha256": "416671d36a37d00ef2d0a0b4cbb6654d1f6d0ca599b059b61573802e11cae2db",
+      "after_sha256": "72d35c8b7402eb942403f606b59ce3f5740e07769472bf785647ccb192fe9b52"
+    },
+    "EO_supplementary.tex": {
+      "before_sha256": "71b8a09dc13c9e814799bbed74331d2d5eb2e07eb5f97df364a465f0bf885496",
+      "after_sha256": "fd2564d0ce77982d1fb800620c2111775377b507221b8721721d7206f004e0a5"
+    },
+    "EO_references.bib": {
+      "before_sha256": "efad9f03f4c2d22031661670fff2e4e43d4f2b9c357d367be2a77ced9e0ba89d",
+      "after_sha256": "7ab7a260a8ead152e466efe249e71bc63ca0c35f46e0a8e173daaf997718d607"
+    }
+  },
+  "existing_inline_numeric_results_unchanged": true,
+  "prior_38_bibliography_records_preserved": true,
+  "existing_conditional_result_paragraph_relocated_intact": true,
+  "new_article_argument_sections_drafted": false,
+  "all_author_approval_task": "excluded by explicit user instruction 2026-10-13",
+  "all_author_approval_certified": false,
+  "historical_ai_draft_assistance_disclosure_preserved": true
+}

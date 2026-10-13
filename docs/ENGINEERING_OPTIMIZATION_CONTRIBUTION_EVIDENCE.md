@@ -74,5 +74,6 @@ The numerical solver-replay tolerance was revised after the initial check;
 its original 42 attempts, revised tolerance and 60 retained checks are disclosed
 separately from the unchanged GP prediction-replay tolerance. The framework
 has not been validated across distinct physical model families or against a
-competitive warm-start selector. Author affiliations, final author approval
-and final submission-format PDF verification remain separate pending tasks.
+competitive warm-start selector. Author affiliations and historical AI-policy applicability remain unresolved; all-author approval is excluded from the project task list at the user's instruction. Current PDF validation is recorded in the 2026-10-13 release.
+
+Current operational comparison: `paper/engineering_optimization/submission_revision_20261013/CORE_OBJECT_AND_CLOSEST_WORK.md`. Its strongest simple same-target fixed-depth comparator matches the audit; novelty sufficiency is not certified.

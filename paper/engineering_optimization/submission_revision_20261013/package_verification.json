@@ -1,0 +1,73 @@
+{
+  "archive_sha256": "684c3e6706ef4bae897be15141ab71b3388d64b3982011dd0457e10ac6a39b56",
+  "clean_package_files_verified": 204,
+  "archive_members": 205,
+  "analysis_outputs_reproduced": 10,
+  "new_tex_inputs_and_current_sources_unchanged": true,
+  "stdlib_core_tests_passed": 13,
+  "new_physics_attempts": 0,
+  "commands": [
+    {
+      "command": [
+        "python",
+        "verify_package.py"
+      ],
+      "stdout": "Verified 204 package files; scope: minimum conditional-audit replay and current working manuscript; not all historical experiments\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "src.analyze_review_revision"
+      ],
+      "stdout": "{\"states\": 30, \"class_distribution\": {\"1\": 13, \"2\": 9, \"3\": 8}, \"truth_counts\": {\"mean\": {\"better\": 0, \"tie\": 24, \"worse\": 1}, \"ei\": {\"better\": 0, \"tie\": 23, \"worse\": 2}}, \"output_files\": 7, \"new_physics_attempts\": 0}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "src.analyze_operational_comparison"
+      ],
+      "stdout": "{\"states\": 30, \"comparators\": 32, \"new_physics_attempts\": 0, \"full_target_requests\": [720, 330, 252], \"calibration_requests\": [240, 136]}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "src.integrate_submission_revision"
+      ],
+      "stdout": "{\"generated_tex_inputs\": 2, \"new_physics_attempts\": 0, \"all_author_approval_task_required\": false}\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "verify_package.py"
+      ],
+      "stdout": "Verified 204 package files; scope: minimum conditional-audit replay and current working manuscript; not all historical experiments\n",
+      "stderr": "",
+      "returncode": 0
+    },
+    {
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "tests.test_budgeted_decision_audit",
+        "tests.test_review_revision",
+        "tests.test_operational_comparison",
+        "-v"
+      ],
+      "stdout": "",
+      "stderr": "test_distinct_actions_with_equal_utility_are_not_merged (tests.test_budgeted_decision_audit.BudgetAuditTests.test_distinct_actions_with_equal_utility_are_not_merged) ... ok\ntest_exact_equivalence_shares_branch_and_classification (tests.test_budgeted_decision_audit.BudgetAuditTests.test_exact_equivalence_shares_branch_and_classification) ... ok\ntest_four_distinct_actions_charge_screening_and_abstentions (tests.test_budgeted_decision_audit.BudgetAuditTests.test_four_distinct_actions_charge_screening_and_abstentions) ... ok\ntest_immediate_tie_cannot_be_certified_as_future_tie (tests.test_budgeted_decision_audit.BudgetAuditTests.test_immediate_tie_cannot_be_certified_as_future_tie) ... ok\ntest_immediate_winner_can_be_delayed_loser (tests.test_budgeted_decision_audit.BudgetAuditTests.test_immediate_winner_can_be_delayed_loser) ... ok\ntest_unqueried_future_cannot_change_trace_or_outputs (tests.test_budgeted_decision_audit.BudgetAuditTests.test_unqueried_future_cannot_change_trace_or_outputs) ... ok\ntest_capacity_requires_shared_baseline_and_complete_alternative (tests.test_review_revision.ReviewRevisionTests.test_capacity_requires_shared_baseline_and_complete_alternative) ... ok\ntest_orders_agree_when_budget_completes_every_class (tests.test_review_revision.ReviewRevisionTests.test_orders_agree_when_budget_completes_every_class) ... ok\ntest_partial_first_action_does_not_certify_target (tests.test_review_revision.ReviewRevisionTests.test_partial_first_action_does_not_certify_target) ... ok\ntest_same_coverage_can_have_different_missed_opportunity (tests.test_review_revision.ReviewRevisionTests.test_same_coverage_can_have_different_missed_opportunity) ... ok\ntest_alias_only_needs_no_target_requests_but_naive_reader_charges_24 (tests.test_operational_comparison.OperationalComparisonTests.test_alias_only_needs_no_target_requests_but_naive_reader_charges_24) ... ok\ntest_calibration_alias_skip_changes_cost_only (tests.test_operational_comparison.OperationalComparisonTests.test_calibration_alias_skip_changes_cost_only) ... ok\ntest_later_positive_survives_full_target_but_partial_abstains (tests.test_operational_comparison.OperationalComparisonTests.test_later_positive_survives_full_target_but_partial_abstains) ... ok\n\n----------------------------------------------------------------------\nRan 13 tests in 0.001s\n\nOK\n",
+      "returncode": 0
+    }
+  ]
+}

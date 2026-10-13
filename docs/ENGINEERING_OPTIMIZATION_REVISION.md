@@ -117,7 +117,7 @@ claim of performance-preserving net savings. See
 
 ## Remaining submission work
 
-- Confirm affiliations 2 and 3 and obtain final approval of the revised text.
+- Affiliations b/c remain to be supplied at the user's 2026-10-13 choice; all-author approval is excluded from the project task list, without a claim that approval occurred.
 - Apply the publisher's currently permitted submission format, compile both
   documents and inspect all rendered pages.
 - Finalize the release citation and submission declarations.
@@ -132,3 +132,7 @@ been added to make the findings appear stronger.
 - https://doi.org/10.1080/0305215X.2024.2381818
 - https://doi.org/10.1080/0305215X.2018.1446084
 - https://doi.org/10.1080/0305215X.2025.2450132
+
+## 2026-10-13 active revision
+
+The current TeX sources, frozen algorithm specification, operational comparisons, AI-use history audit and delivery records are in `paper/engineering_optimization/submission_revision_20261013/`. Historical analysis above is retained; use `work_status.json` for current task status. No new physics was acquired and no all-author approval task is required.

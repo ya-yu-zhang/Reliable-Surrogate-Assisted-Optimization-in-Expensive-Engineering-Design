@@ -1,14 +1,14 @@
 {
   "documents": {
     "manuscript": {
-      "sha256": "26544715fd3ba3ef830df1663609b32e932f6a8761cbeed1b052ee8b4137b13a",
-      "pages": 26,
+      "sha256": "a9630b4d5c0ecb40ccf96daca68ced353dfed542a5e689480b15f10690373337",
+      "pages": 27,
       "overfull_warnings": [],
       "unresolved_citations_or_references": false
     },
     "supplementary": {
-      "sha256": "256df50efe824aaff11140bc82291a9076cad9b6f364918285e09129dc9fe8e1",
-      "pages": 31,
+      "sha256": "25143c2b7105fa24ecb154d448a08a818396661dd50cac84743d1b9123904ab5",
+      "pages": 32,
       "overfull_warnings": [],
       "unresolved_citations_or_references": false
     }
@@ -16,9 +16,10 @@
   "pdf_compiled": true,
   "layout_verified": true,
   "source_hashes": {
-    "EO_manuscript.tex": "416671d36a37d00ef2d0a0b4cbb6654d1f6d0ca599b059b61573802e11cae2db",
-    "EO_supplementary.tex": "71b8a09dc13c9e814799bbed74331d2d5eb2e07eb5f97df364a465f0bf885496",
-    "EO_references.bib": "efad9f03f4c2d22031661670fff2e4e43d4f2b9c357d367be2a77ced9e0ba89d"
+    "EO_manuscript.tex": "72d35c8b7402eb942403f606b59ce3f5740e07769472bf785647ccb192fe9b52",
+    "EO_supplementary.tex": "fd2564d0ce77982d1fb800620c2111775377b507221b8721721d7206f004e0a5",
+    "EO_references.bib": "7ab7a260a8ead152e466efe249e71bc63ca0c35f46e0a8e173daaf997718d607"
   },
-  "review_revision": "post-review factual revision; independent author approval pending"
+  "all_author_approval_task_required": false,
+  "review_revision": "2026-10-13 operational specification and factual organization; remaining scientific/policy limits recorded separately"
 }

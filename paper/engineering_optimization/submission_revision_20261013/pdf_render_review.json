@@ -1,0 +1,46 @@
+{
+  "documents": {
+    "manuscript": {
+      "sha256": "a9630b4d5c0ecb40ccf96daca68ced353dfed542a5e689480b15f10690373337",
+      "pages": 27,
+      "overfull_warnings": [],
+      "unresolved_citations_or_references": false
+    },
+    "supplementary": {
+      "sha256": "25143c2b7105fa24ecb154d448a08a818396661dd50cac84743d1b9123904ab5",
+      "pages": 32,
+      "overfull_warnings": [],
+      "unresolved_citations_or_references": false
+    }
+  },
+  "source_hashes": {
+    "EO_manuscript.tex": "72d35c8b7402eb942403f606b59ce3f5740e07769472bf785647ccb192fe9b52",
+    "EO_supplementary.tex": "fd2564d0ce77982d1fb800620c2111775377b507221b8721721d7206f004e0a5",
+    "EO_references.bib": "7ab7a260a8ead152e466efe249e71bc63ca0c35f46e0a8e173daaf997718d607"
+  },
+  "rendering": "PyMuPDF, all pages; Poppler entrypoint returned127",
+  "contact_sheets_reviewed": 6,
+  "all_final_pages_reviewed": 59,
+  "detailed_pages_reviewed": {
+    "main": [
+      6,
+      9,
+      10,
+      21,
+      27
+    ],
+    "supplement": [
+      1,
+      31,
+      32
+    ]
+  },
+  "post_metadata_correction_changed_pages": [
+    1
+  ],
+  "other31_supplement_page_images_byte_identical": true,
+  "clipped_or_overlapping_content_observed": false,
+  "overfull_or_undefined_warnings": false,
+  "affiliations_b_c_unfilled_by_user_choice": true,
+  "all_author_approval_pending_banner_removed_from_both_pdfs": true
+}

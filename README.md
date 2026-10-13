@@ -6,16 +6,30 @@ auditing framework studied in the accompanying paper.
 
 ## Current manuscript revision
 
-The active target is **Engineering Optimization**. The revised working sources
-are `paper/engineering_optimization_manuscript.md` and
-`paper/engineering_optimization_supplementary.md`. See
-`docs/ENGINEERING_OPTIMIZATION_REVISION.md` for completed corrections,
-evidence boundaries, and remaining work. The contribution comparison is in
-`docs/ENGINEERING_OPTIMIZATION_CONTRIBUTION_EVIDENCE.md`. The working sources now
-integrate frozen-state GP interventions, delayed policy outcomes, two new beam
-force conditions, all-repeat endpoints and recovery-aware evaluation costs.
-Final author review, affiliations and submission-format PDF verification remain
-pending; the working sources do not guarantee journal acceptance.
+The active target is **Engineering Optimization**. Current manuscript sources are
+`paper/engineering_optimization/EO_manuscript.tex` and `EO_supplementary.tex` in
+that directory, with publisher-template provenance recorded alongside them.
+The 2026-10-13 revision supplies the frozen conditional-audit algorithm,
+same-target operational comparisons, intact adverse results, and a separate
+conditional-results subsection. See `submission_revision_20261013/` within that
+paper directory for the core-object comparison, AI-use history audit, response
+record and delivery manifest. `work_status.json` records the active boundaries.
+
+The all-author approval task is excluded by the user's explicit instruction;
+this is not a claim that approval occurred. Affiliations b/c remain unfilled at
+the user's choice. Novelty sufficiency and historical AI-policy applicability
+are not certified, and `submission_ready` remains false. No new physics was
+acquired for this revision. Its active reproduction entry points are:
+
+```sh
+python -m src.compact_budget_audit_records --target .
+python -m src.analyze_review_revision
+python -m src.analyze_operational_comparison
+python -m src.integrate_submission_revision
+```
+
+Earlier Markdown and build scripts record prior stages. The active TeX sources
+and versioned delivery manifest identify the current manuscript.
 
 The prospective GP audit is specified in
 `docs/ENGINEERING_OPTIMIZATION_AUDIT_PROTOCOL.md` and implemented in
@@ -39,9 +53,6 @@ python -m src.analyze_engineering_optimization_gp_audit --released
 python -m src.compact_engineering_transfer_records
 python -m src.analyze_engineering_optimization_transfer
 python -m src.plot_engineering_optimization_transfer
-python -m src.integrate_engineering_optimization_evidence
-python -m src.build_engineering_optimization_sources
-python -m src.audit_engineering_optimization_revision
 ```
 
 The plotting command uses Matplotlib (installed through the engineering reporting
