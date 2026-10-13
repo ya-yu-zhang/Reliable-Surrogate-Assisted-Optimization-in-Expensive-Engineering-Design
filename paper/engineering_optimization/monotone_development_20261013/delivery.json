@@ -1,0 +1,9 @@
+{
+  "path": "paper/engineering_optimization/EO_monotone_development_20261013.zip",
+  "sha256": "24cc5bcec2c9c8e13439c8a2bd18a32d7999855e8fe91288e3002edf006e8fae",
+  "bytes": 3093530,
+  "members": 210,
+  "scope": "exact restored development inputs, code/tests, reports and six reproducible outputs; no current or historical manuscript PDFs",
+  "public_binary_upload_attempted": false,
+  "source_baseline_commit": "c2ce41a0e956621c81f2e3078f31da27edc990dd"
+}

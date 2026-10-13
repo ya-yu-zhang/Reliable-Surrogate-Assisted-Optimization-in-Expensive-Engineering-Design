@@ -32,9 +32,9 @@
     "paired_mesh_total_attempts": 521
   },
   "validation": {
-    "integrity_tests_passed": 28,
+    "integrity_tests_passed": 46,
     "historical_numeric_table_rows_unchanged": true,
-    "reference_count": 38,
+    "reference_count": 39,
     "gp_replay_states": 120,
     "transfer_complete_cases": 20,
     "gp_source_byte_hashes_verified": 60,
@@ -48,8 +48,8 @@
     "gp_diagnostic_cache_reuse_checks": "passed",
     "frozen_code_and_config_byte_hashes": "matched; final LF restored in public files",
     "pdf_pages": {
-      "manuscript": 26,
-      "supplementary": 31
+      "manuscript": 27,
+      "supplementary": 32
     },
     "all_rendered_pages_reviewed": 57,
     "formatting_step_new_fe_calls": 0,
@@ -79,7 +79,7 @@
     "budget_audit_endpoint_curve_checks": 110,
     "budget_audit_lossless_restored_files": 82,
     "budget_audit_clean_reanalysis_byte_identical": true,
-    "integrity_test_scope": "six relevant locally available unittest modules",
+    "integrity_test_scope": "nine relevant locally available unittest modules; fifteen new monotone certificate/development tests",
     "supplementary_render_identical_pages_note": "Superseded by new measured supporting tables; current supplement is 29 pages",
     "paired_mesh_clean_restored_files": 25,
     "paired_mesh_clean_reanalysis_byte_identical": true,
@@ -111,7 +111,7 @@
   "rendered_pdf_layout_verified": true,
   "submission_ready": false,
   "remaining": [
-    "Novelty increment over closest executable same-target diagnostics remains unestablished; see submission_revision_20261013/CORE_OBJECT_AND_CLOSEST_WORK.md",
+    "Novelty increment remains unestablished; monotone-only candidate fails the complete-cost/coverage development screen against certificate-aware simple schedules; see monotone_development_20261013/DEVELOPMENT_REPORT.md",
     "Affiliations b/c intentionally remain unfilled at user choice; author contribution/funding/conflict facts are not independently certified",
     "Historical initial manuscript-section drafting assistance remains disclosed; complete early model/prompt history and publisher policy applicability not certified",
     "Official journal-specific portal/length details could not be fully read (403)",
@@ -128,7 +128,8 @@
     "No adaptive budget-allocation advantage or deployment savings demonstrated",
     "Selected fixed-design h5 classes persist across three grids/two mappings, including eight differing endpoint pairs and six identical-endpoint ties; no independent optimization samples added",
     "One original coarse source-agreement flag remains; original strict protocol gate failed",
-    "Absolute selected-design objective differences reach 26.5739% native /32.0590% conservative transfer; these are not established solver errors or physical error bounds for the 0.1% decision margin"
+    "Absolute selected-design objective differences reach 26.5739% native /32.0590% conservative transfer; these are not established solver errors or physical error bounds for the 0.1% decision margin",
+    "Monotone development certificates concern recorded discrete-horizon categories under a valid supplied lower bound; category certification alone need not certify branch selection or physical accuracy"
   ],
   "stage5": "completed: official publisher Interact-CAD source formatting, copyediting, PDF compilation and all-page visual review",
   "ai_detector": {
@@ -159,8 +160,8 @@
     ],
     "raw_archive_block_reason": "Automatic approval review rejected the same opaque compressed payloads after full decoding/provenance verification; explicit approval is required before another attempt",
     "current_compiled_pdf_pages": {
-      "manuscript": 26,
-      "supplementary": 31
+      "manuscript": 27,
+      "supplementary": 32
     },
     "updated_pdf_public_release_complete": false,
     "pdf_upload_status": "Current27/32-page PDFs locally compiled/visually checked and included in minimum evidence package. No binary or encoded public upload retried; prior published PDF manifest remains historical.",
@@ -220,5 +221,34 @@
     "status": "included_in_local_package_but_github_write_did_not_complete",
     "retry_attempted": false,
     "specific_error": "not surfaced in batch exception serialization; no rejection reason inferred"
+  },
+  "stage13": "completed P0/P1 development: monotone terminal-category and separate selection certificates, strong simple schedules, all observed seed-group replay; candidate fails full-cost/coverage screen; no new independent physics experiment started",
+  "monotone_development": {
+    "baseline_commit": "c2ce41a0e956621c81f2e3078f31da27edc990dd",
+    "report": "paper/engineering_optimization/monotone_development_20261013/DEVELOPMENT_REPORT.md",
+    "stored_states": 60,
+    "state_continuation_contexts": 90,
+    "data_status": "previously observed development data for new rule",
+    "seed_groups_per_dataset": 10,
+    "new_physics_attempts": 0,
+    "new_gp_fits": 0,
+    "source_hashes_verified": 194,
+    "new_relevant_tests": 15,
+    "all_relevant_tests": 46,
+    "candidate_passes_development_screen": false,
+    "new_independent_experiment_started": false,
+    "increment_over_strong_simple_comparator_demonstrated": false,
+    "full_cost_advantage_demonstrated": false,
+    "physical_error_or_engineering_margin_certified": false,
+    "analysis_outputs_expected": 6,
+    "manuscript_and_pdfs_changed": false,
+    "next_operation_specification": "paper/engineering_optimization/monotone_development_20261013/NEXT_OPERATION_REQUIREMENTS.md",
+    "gp_fit_count_scope": "development replay/new experiment acquisition; legacy unit tests use synthetic GP fixtures",
+    "isolated_byte_identical_outputs": 6,
+    "isolated_standard_library_tests": 15,
+    "local_package": "paper/engineering_optimization/EO_monotone_development_20261013.zip",
+    "local_package_sha256": "24cc5bcec2c9c8e13439c8a2bd18a32d7999855e8fe91288e3002edf006e8fae",
+    "local_package_members": 210,
+    "zero_bound_selection_capacity_checked": true
   }
 }

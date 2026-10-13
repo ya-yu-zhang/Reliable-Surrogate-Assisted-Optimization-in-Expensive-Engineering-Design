@@ -31,6 +31,16 @@ python -m src.integrate_submission_revision
 Earlier Markdown and build scripts record prior stages. The active TeX sources
 and versioned delivery manifest identify the current manuscript.
 
+The subsequent P0/P1 development release is
+`paper/engineering_optimization/monotone_development_20261013/`. It implements
+prefix-only monotone terminal-category bounds and a separate selection
+certificate. The h0-directed candidate did not improve on certificate-aware
+simple orders; selected-branch completion erased its previous-holdout request
+savings. No new independent experiment was started. Reproduce this development
+screen with `python -m src.analyze_monotone_development` after restoring the
+existing budget and common-continuation records. The candidate is not added to
+the manuscript as an established optimization contribution.
+
 The prospective GP audit is specified in
 `docs/ENGINEERING_OPTIMIZATION_AUDIT_PROTOCOL.md` and implemented in
 `src/engineering_optimization_gp_audit.py`. It freezes 120 common states and

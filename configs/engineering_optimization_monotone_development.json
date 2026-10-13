@@ -1,0 +1,24 @@
+{
+  "version": 0,
+  "status": "development_only_on_previously_observed_data",
+  "horizon": 5,
+  "known_objective_lower_bound": 0.0,
+  "budgets": [12, 18, 24],
+  "targets": ["categories", "categories_and_selection"],
+  "primary_target": "categories_and_selection",
+  "methods": ["v1_fixed_depth", "baseline_depth", "alternative_depth", "fixed_breadth", "h0_largest_upper"],
+  "candidate": "h0_largest_upper",
+  "strong_simple_methods": ["baseline_depth", "alternative_depth", "fixed_breadth"],
+  "dataset_margins": {"archived_common_mean": 0.000001, "previous_holdout": 0.001},
+  "preserve_original_margins_and_all_seed_groups": true,
+  "development_screen": {
+    "classification_errors": 0,
+    "minimum_relative_request_gain_after_selected_completion": 0.05,
+    "require_coverage_not_below_best_simple": true,
+    "require_selection_loss_not_above_best_simple": true,
+    "require_gain_in_both_previous_holdout_continuations": true,
+    "screen_is_not_a_journal_requirement_or_preregistration": true
+  },
+  "future_independent_validation": "Only after a meaningful increment over certificate-aware simple schedules passes this development screen; freeze a separate protocol before any new labels.",
+  "out": "paper/engineering_optimization/monotone_development_20261013"
+}

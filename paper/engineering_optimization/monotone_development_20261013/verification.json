@@ -1,0 +1,37 @@
+{
+  "isolated_standard_library_tests_passed": 15,
+  "full_relevant_tests_passed": 46,
+  "full_test_scope": "nine locally available unittest modules; integrity_tests.txt",
+  "source_hashes_verified": 194,
+  "byte_identical_outputs": {
+    "analysis.json": {
+      "sha256": "12d2351fadab82f47ad63dbb5d7f5651167bb16734bc1eb32086a60381314777",
+      "bytes": 154767
+    },
+    "summary.csv": {
+      "sha256": "27d02501e0f9ed45842827fd5acb9e8a7f80888d9f734257d9ecd8510e8ccd67",
+      "bytes": 13349
+    },
+    "state_results.csv": {
+      "sha256": "b680ff73e17dbb3c43bce0c4061680ea3266b3946b3cf57bfc90c4aef253beb6",
+      "bytes": 419877
+    },
+    "seed_group_results.csv": {
+      "sha256": "5d38bbffc60c8d55aa6e4a97cbee5f982e1f4ad7dd7833878c00e7585ace39f9",
+      "bytes": 111685
+    },
+    "posthoc_order_envelope.csv": {
+      "sha256": "463f59d68160e0c7c59b7d74b4c67d3796751d0d5bc541a40ddcf76187c280eb",
+      "bytes": 41212
+    },
+    "certificate_records.jsonl": {
+      "sha256": "3a3ccf6c2732d8b0911c169deffad40b7cdd352b204ad61f2d8e0614e0c0f6c2",
+      "bytes": 19598
+    }
+  },
+  "new_physics_attempts": 0,
+  "new_gp_fits": 0,
+  "gp_fit_count_scope": "Development replay and new experiment acquisition; legacy full-suite synthetic GP fixtures are outside this count.",
+  "submission_ready": false,
+  "independent_experiment_started": false
+}
