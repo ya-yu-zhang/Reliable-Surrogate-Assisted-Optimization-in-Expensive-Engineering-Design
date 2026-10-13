@@ -41,6 +41,15 @@ screen with `python -m src.analyze_monotone_development` after restoring the
 existing budget and common-continuation records. The candidate is not added to
 the manuscript as an established optimization contribution.
 
+The next reviewer-driven development screen is
+`paper/engineering_optimization/physical_bound_screen_20261013/`. Its protocol
+was published before two reference-displacement solves. Classical scalar and
+two-dimensional trial bounds were screened on1720 candidates across all old
+seed groups; all43 nontrivial states failed root-tie sharpness for the declared
+full-pool operator. No independent optimizer experiment was started. Reanalyze
+with `python -m src.physical_bound_screen --analyze`; the original manuscript,
+statistics and adverse findings remain intact.
+
 The prospective GP audit is specified in
 `docs/ENGINEERING_OPTIMIZATION_AUDIT_PROTOCOL.md` and implemented in
 `src/engineering_optimization_gp_audit.py`. It freezes 120 common states and

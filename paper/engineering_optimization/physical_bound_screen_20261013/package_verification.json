@@ -1,0 +1,14 @@
+{
+  "exact_source_hashes_checked": 203,
+  "isolated_toy_pool_tests_passed": 9,
+  "full_relevant_tests_passed": 55,
+  "isolated_byte_identical_analysis_outputs": {
+    "analysis.json": "6450cb3953b1b9b520b139a68c01f39569f6bd44c45c3c05411547924122cdb6",
+    "summary.csv": "0d99f201cb8e63e20c28e6e672b854b68f6dbb758f2704466d86f307850fd427",
+    "state_sharpness.csv": "8bbd8dc1fc32caf151d914b7b707f3b4f62cfa40d44225fa073cbe0d6a4c294e"
+  },
+  "package_verification_new_physics_attempts": 0,
+  "package_verification_bound_design_queries": 0,
+  "package_verification_analysis_and_test_seconds": 2.939396820998809,
+  "scope": "separate from original1720-bound screen and1720-bound numerical replay"
+}

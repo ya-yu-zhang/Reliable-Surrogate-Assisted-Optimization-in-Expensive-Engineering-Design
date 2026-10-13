@@ -1,0 +1,17 @@
+{
+  "stored_reference_vector_and_gram_replay": true,
+  "candidate_designs_recomputed": 1720,
+  "all_four_bound_columns_bit_identical": true,
+  "byte_identical_analysis_outputs": {
+    "analysis.json": "6450cb3953b1b9b520b139a68c01f39569f6bd44c45c3c05411547924122cdb6",
+    "summary.csv": "0d99f201cb8e63e20c28e6e672b854b68f6dbb758f2704466d86f307850fd427",
+    "state_sharpness.csv": "8bbd8dc1fc32caf151d914b7b707f3b4f62cfa40d44225fa073cbe0d6a4c294e"
+  },
+  "verification_bound_work_seconds": 6.324985091001508,
+  "verification_reduced_system_attempts": 1720,
+  "verification_new_physics_attempts": 0,
+  "original_physical_attempts": 2,
+  "original_run_status_unchanged": true,
+  "full_relevant_tests_passed": 55,
+  "complete_pde_or_oracle_output_certification": false
+}

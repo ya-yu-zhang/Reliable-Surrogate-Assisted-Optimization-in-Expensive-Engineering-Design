@@ -6,7 +6,7 @@
     "paper/engineering_optimization/thermal_analysis.json": "6569e3638a8e5935340370ac32bd54f9365353d5691b1566381969cd78c13c6e",
     "paper/engineering_optimization/paired_mesh/analysis.json": "463f8c35e38253e2af8658073b5ea95843d8ce623bf8e554675e64080b50c024"
   },
-  "cumulative_physics_attempts": 55305,
+  "cumulative_physics_attempts": 55307,
   "main_rows": [
     [
       "Archived common continuation",
@@ -35,5 +35,7 @@
   ],
   "original_numeric_rows_retained": true,
   "new_argument_sections_drafted": false,
-  "author_confirmation": "pending"
+  "author_confirmation": "pending",
+  "reported_optimizer_audit_physics_attempts": 55305,
+  "auxiliary_physical_bound_reference_attempts": 2
 }

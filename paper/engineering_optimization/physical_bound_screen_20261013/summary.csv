@@ -1,0 +1,13 @@
+dataset,continuation,method,seed_groups,dependent_states,nontrivial_states,states_disqualified_for_root_tie_sharpness,unique_tie_contrasts,tie_contrasts_disqualified,minimum_upper_cap_percent_of_required,median_upper_cap_percent_of_required,maximum_upper_cap_percent_of_required,early_ties_certified
+archived_common_mean,mean,all_solid_trial_lower,10,30,26,26,34,34,5.835954309253399,8.33837449864831,21.5147201150151,0
+archived_common_mean,mean,span_two_lower,10,30,26,26,34,34,5.853597314037773,8.725692423183439,23.822231938119135,0
+archived_common_mean,mean,training_trial_lower,10,30,26,26,34,34,0.5104808764603963,0.8667686115302551,1.9759201364344314,0
+archived_common_mean,mean,two_trial_max_lower,10,30,26,26,34,34,5.835954309253399,8.33837449864831,21.5147201150151,0
+previous_holdout,ei,all_solid_trial_lower,10,30,17,17,23,23,7.381223439175458,11.984871523637958,25.331069914887305,0
+previous_holdout,ei,span_two_lower,10,30,17,17,23,23,7.919098484454921,12.753808877951359,28.72748613605518,0
+previous_holdout,ei,training_trial_lower,10,30,17,17,23,23,0.6078429380360904,1.1323161988349264,2.4903324041021238,0
+previous_holdout,ei,two_trial_max_lower,10,30,17,17,23,23,7.381223439175458,11.984871523637958,25.331069914887305,0
+previous_holdout,mean,all_solid_trial_lower,10,30,17,17,24,24,7.381223439175458,13.437654295288601,25.331069914887305,0
+previous_holdout,mean,span_two_lower,10,30,17,17,24,24,7.919098484454921,14.120238729121306,28.72748613605518,0
+previous_holdout,mean,training_trial_lower,10,30,17,17,24,24,0.6078429380360904,1.3124138307800821,2.4903324041021238,0
+previous_holdout,mean,two_trial_max_lower,10,30,17,17,24,24,7.381223439175458,13.437654295288601,25.331069914887305,0

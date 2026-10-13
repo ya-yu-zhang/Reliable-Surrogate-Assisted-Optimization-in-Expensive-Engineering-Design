@@ -15,8 +15,10 @@
 相关发表对照：本刊Zatarain Salazar等的诊断框架包括软件、指标和四类真实应用，
 因此“诊断”定位有发表先例，但技术比较不能把前人概括为只看终点。
 Yano2015已有严格能量界与离线／在线分解研究；引入物理界本身也不能视为新理论。
-本轮出版社scope页面返回403，未把无法读取的细则、内部成本门槛或研究建议
-写成期刊硬性要求。比较依据当前可读取的作者机构记录／摘要及原项目引用。
+本轮最初的about-this-journal入口返回403，随后取得官方主页与journalInformation
+的当前收录内容。其方向涵盖优化创新、工程应用与决策支持／逻辑推理等方法。
+因此scope有匹配基础；内部成本门槛和本计划不是期刊硬性实验要求。
+具体发表对照依据作者机构记录／摘要及原项目引用。
 
 | 优先级 | 本轮执行 | 通过条件／失败后处理 |
 |---|---|---|
@@ -29,6 +31,9 @@ Yano2015已有严格能量界与离线／在线分解研究；引入物理界本
 全作者批准按用户要求不在项目工作清单内；两处待补单位保持原选择。
 仓库当前为私有且连接有推送权限；可复现包供用户交付，未来审稿访问方式
 仍应明确，不能默认公开GitHub链接即可让外部审稿人读取。
+正文和补充材料此前把仓库称为public；本轮修正这一事实说明并重编译PDF，
+同时校正GP结果章节范围6.3--6.5。显式可见性参数的幂等修复脚本用于避免
+旧稿件生成入口再次写回过时的public说明。
 
 执行规格见 `PROTOCOL.md`；本轮不以“再增加实验数量”替代信息可行性判断。
 若所有廉价、合法、可用的候选操作都未建立优势，应保留受限诊断定位，并
@@ -39,3 +44,4 @@ Yano2015已有严格能量界与离线／在线分解研究；引入物理界本
 - [目标期刊已发表诊断框架的TU Delft记录](https://research.tudelft.nl/en/publications/diagnostic-benchmarking-of-many-objective-evolutionary-algorithms/)（DOI10.1080/0305215X.2024.2381818）。
 - [Yano2015原出版社摘要](https://www.sciencedirect.com/science/article/abs/pii/S0045782515000043)。
 - [本次读取失败的官方scope入口](https://www.tandfonline.com/journals/geno20/about-this-journal#aims-and-scope)。
+- [随后取得的官方journalInformation内容](https://www.tandfonline.com/action/journalInformation?journalCode=geno20)。

@@ -1,0 +1,28 @@
+{
+  "documents": {
+    "manuscript": {
+      "sha256": "553c1a52ed7be7975be678135bc6ebf9e8e2f81c927b8befe6c86c53ad1bbb00",
+      "pages": 27,
+      "overfull_warnings": [],
+      "unresolved_citations_or_references": false
+    },
+    "supplementary": {
+      "sha256": "899e261def5ecb128e73b8abd2d5077fab6ff18f7a69d6b4f563b0ce658246e5",
+      "pages": 32,
+      "overfull_warnings": [],
+      "unresolved_citations_or_references": false
+    }
+  },
+  "all_final_pages_rendered": 59,
+  "initial_changed_pages_visually_reviewed": 36,
+  "subsequent_cost_note_changed_pages_visually_reviewed": 5,
+  "pixel_identical_page_comparison_used": true,
+  "overfull_or_unresolved": false,
+  "scientific_source_changes": false,
+  "factual_source_changes": [
+    "private repository/reviewer-access status",
+    "existing section range6.3--6.5",
+    "auxiliary2-reference cost and total55307"
+  ],
+  "layout_verified": true
+}
