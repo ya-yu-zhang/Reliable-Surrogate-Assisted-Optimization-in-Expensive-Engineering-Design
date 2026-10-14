@@ -1,0 +1,22 @@
+test_category_boundaries_and_abstention (test_gp_action_reachability.ReachabilityTests.test_category_boundaries_and_abstention) ... ok
+test_interior_action_missed_by_endpoint_reader (test_gp_action_reachability.ReachabilityTests.test_interior_action_missed_by_endpoint_reader) ... ok
+test_joint_bound_accounts_for_pending_response (test_gp_action_reachability.ReachabilityTests.test_joint_bound_accounts_for_pending_response) ... ok
+test_kernel_linear_system_encloses_exact_rational_coefficients (test_gp_action_reachability.ReachabilityTests.test_kernel_linear_system_encloses_exact_rational_coefficients) ... ok
+test_native_normalized_gp_predictions_across_unknown_labels (test_gp_action_reachability.ReachabilityTests.test_native_normalized_gp_predictions_across_unknown_labels) ... ok
+test_parallel_and_identical_actions_retain_ties (test_gp_action_reachability.ReachabilityTests.test_parallel_and_identical_actions_retain_ties) ... ok
+test_random_sets_include_every_exact_binary_action (test_gp_action_reachability.ReachabilityTests.test_random_sets_include_every_exact_binary_action) ... ok
+test_response_lower_removes_only_proven_infeasible_actions (test_gp_action_reachability.ReachabilityTests.test_response_lower_removes_only_proven_infeasible_actions) ... ok
+test_single_boundary_action_is_retained (test_gp_action_reachability.ReachabilityTests.test_single_boundary_action_is_retained) ... ok
+test_singular_inverse_is_not_silently_used (test_gp_action_reachability.ReachabilityTests.test_singular_inverse_is_not_silently_used) ... ok
+test_uncertainty_prevents_nominal_domination (test_gp_action_reachability.ReachabilityTests.test_uncertainty_prevents_nominal_domination) ... ok
+test_both_joint_readers_receive_identical_pending_bound (test_gp_reachability_execution.ExecutionTests.test_both_joint_readers_receive_identical_pending_bound) ... ok
+test_grading_never_exposes_truth_before_construction_completes (test_gp_reachability_execution.ExecutionTests.test_grading_never_exposes_truth_before_construction_completes) ... ok
+test_invalid_rational_witness_is_rejected (test_gp_reachability_execution.ExecutionTests.test_invalid_rational_witness_is_rejected) ... ok
+test_inverse_failure_retains_full_pool_in_both_ranges (test_gp_reachability_execution.ExecutionTests.test_inverse_failure_retains_full_pool_in_both_ranges) ... ok
+test_response_bearing_source_is_rejected (test_gp_reachability_execution.ExecutionTests.test_response_bearing_source_is_rejected) ... ok
+test_serialized_proofs_cover_every_excluded_action (test_gp_reachability_execution.ExecutionTests.test_serialized_proofs_cover_every_excluded_action) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.094s
+
+OK

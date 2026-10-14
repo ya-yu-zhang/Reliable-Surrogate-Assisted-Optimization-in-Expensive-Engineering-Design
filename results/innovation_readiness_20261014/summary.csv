@@ -1,0 +1,4 @@
+dataset,continuation,metadata_states,all_seed_groups,nonalias_states,alias_states,distinct_branch_curves,curves_violating_diminishing_returns,states_with_a_diminishing_returns_violation,nonalias_states_with_zero_lower_loss_only_barrier,all_selection_plus_execution_request_requirement,minimum_terminal_over_initial,one_open_competitor_frontiers_checked,better_distinct_branches,states_with_better_branch
+archived_common,mean,30,10,26,4,76,9,6,26,456,0.46108089810421987,852,3,2
+previous_holdout,mean,30,10,17,13,55,10,5,17,330,0.7345846712398023,396,0,0
+previous_holdout,ei,30,10,17,13,55,3,2,17,330,0.7575684952249127,396,0,0

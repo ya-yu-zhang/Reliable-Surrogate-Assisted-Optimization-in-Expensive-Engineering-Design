@@ -1,0 +1,27 @@
+\Needspace{12\baselineskip}
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{.17\linewidth}>{\raggedright\arraybackslash}p{\dimexpr.83\linewidth-2\tabcolsep\relax}@{}}
+\caption{Frozen v1 conditional audit: executable operation specification. This table describes the existing code, including the unsuccessful adaptive heuristic; it does not propose a new optimizer. OpenAI Codex (GPT-6) assisted the code-to-method transcription.}\label{tab:conditional_algorithm}\tabularnewline
+\toprule
+Operation & Exact implementation \\
+\midrule
+\endfirsthead
+\toprule
+Operation & Exact implementation \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+State / target & Freeze the 100-label history, fitted ARD kernel, first candidate pool, context and first actions. Baseline is the mean first action. Each branch updates its own history under the same mean or EI continuation and candidate-seed stream. $h0$ is the intervention; $H=5$ is five further actions. The primary target is $d_j=[m_0(5)-m_j(5)]/m_{\mathrm{init}}$, margin $\tau=0.001$. \\
+Alias / access & Group exactly identical first actions only within the same state and declared continuation. If $K=1$, output structural tie for all names with zero requests. Otherwise \texttt{observe(branch,step)} may reveal only the next prefix response. Each request costs one, including an exact cache read. \\
+Fixed depth & Complete the baseline to step 5; then complete alternatives in original class order while budget remains. Original class insertion follows mean, EI, PI, LCB. Incomplete comparisons abstain. Full mode uses $6K$ requests as its allowance. \\
+Breadth / proxy & Breadth loops over steps 0--5 and advances baseline then alternatives at each step. Immediate mode reads h0 for each class; its labels are proxies for the h5 target, not certificates. \\
+Adaptive reads & Read h0 and h1 for all classes, baseline first; then complete the baseline. Rank alternatives by descending $p_j=|m_0(1)-m_j(1)|/m_{\mathrm{init}}+\sigma_j^{\mathrm{root}}/m_{\mathrm{init}}$. Equal priorities use original class order. Advance each alternative to stages 3 and 5 before moving to the next. This priority is an observed-effect/uncertainty heuristic, not a confidence bound. \\
+Measured outputs & A nonalias better/tie/worse certificate requires both baseline and alternative to reach h5. Use better if $d_j>\tau$, worse if $d_j<-\tau$, otherwise tie. Budget-incomplete output is abstain; an immediate tie never certifies a later tie. \\
+Acquisitions & Independent budget collection uses 1024 candidates, normalized targets, $\alpha=10^{-6}$ and $\kappa=2$. EI/PI use an improvement margin $0.05$ times training-label standard deviation. ARD parameters are fitted once at the shared 50-label warm state (max 30 iterations), then fixed. These settings differ from the archived intervention and transfer studies. \\
+Calibration proxy & Eight frozen-root probes give NRMSE (scaled by training-label standard deviation) and empirical coverage of $\mu\pm1.6448536269514722\sigma$. The constructed gate requires NRMSE $\leq0.25$ and coverage $\geq0.8$. If eligible, classify the root-EI difference divided by $m_{\mathrm{init}}$ using the same margin; otherwise abstain. It predicts h5 utility without a horizon guarantee. The original comparator charges eight probes in all 30 states. \\
+State selection & Start with mean and effect threshold $\tau$. Visit EI, PI, LCB; replace the selected control only for label better and a strictly larger recorded effect. Thus exact ties retain the earlier control. Select only from the disclosed outputs, not oracle h5 truth. \\
+Loss / averaging & State-selection loss is $100[m_{\mathrm{selected}}(5)-\min_j m_j(5)]/m_{\mathrm{init}}$. Average over all 30 states, including alias-only states. Complete truth is used only after the reader finishes, to evaluate the decision; it cannot change the observation trace. Ten shared seed blocks, not these dependent states or contrasts, are the independent units. \\
+\end{longtable}
+\endgroup
+

@@ -1,0 +1,75 @@
+{
+  "files": {
+    "EO_manuscript.tex": {
+      "baseline_commit": "062c1b62a773f80cc4383d51a4d6655e9cc3f083",
+      "before_sha256": "a66afdb5e03af91edb4740ac178f4aff81bfde8f251667764442aecf4bc4a933",
+      "after_sha256": "d5158169b65c008c7bb69d33c777574371cfcc435bb618994ab7a0788e7f7d99",
+      "historical_numeric_rows_unchanged": true,
+      "changes": [
+        {
+          "before": "independent optimization and complete cost accounting.",
+          "after": "independent optimization and physical-call cost accounting."
+        },
+        {
+          "before": "without establishing universal selector superiority or performance-preserving savings.\n\\end{abstract}",
+          "after": "without establishing universal selector superiority or performance-preserving savings. An archived common-continuation record has seven distinct immediate-to-later classification changes across four states. Independent budget validation on ten new seed blocks finds no adaptive-allocation advantage. Selected fixed-design classifications remain stable across three grids and two density mappings.\n\\end{abstract}"
+        },
+        {
+          "before": "The new evidence remains separate from the original statistical families.",
+          "after": "The new evidence remains separate from the original statistical families. Table~\\ref{tab:released_records} also reports the archived common-continuation extension, ten new budget-validation seed blocks, twenty small thermal cases and selected paired-grid checks; these reporting units are not pooled as independent samples."
+        },
+        {
+          "before": "Together with the138 immediate diagnostics and 102 solver checks, this revision has 36,480 new FE attempts.",
+          "after": "Together with the 138 immediate diagnostics and 102 solver checks, the earlier GP/transfer stages account for 36,480 new FE attempts. The cumulative ledger including later released checks is 55,305 paid physics attempts; its stage-wise boundary is reported in the supplement."
+        },
+        {
+          "before": "\\hypertarget{discussion-and-design-guidance}{%",
+          "after": "\\input{integrated_evidence/main_records.tex}\n\n\\hypertarget{discussion-and-design-guidance}{%"
+        },
+        {
+          "before": "Validation on distinct physical model families and competitive warm-start selectors remains outside the evidence.",
+          "after": "The added thermal record uses a small authored heat-conduction model; industrial cross-domain validation and competitive warm-start selectors remain outside the evidence."
+        },
+        {
+          "before": "The beam study uses a smooth 19-dimensional design family, not unrestricted 5,000-variable topology optimization.",
+          "after": "The beam study uses a smooth 19-dimensional design family, not unrestricted 5,000-variable topology optimization. The independent budget record is offline sequential replay; its primary 18-request budget completes all distinct action classes, and source/calibration GP times were not separately recorded. Three-grid checks reevaluate recorded designs without refitting fine-grid GPs or refining every training point. Absolute compliance remains mesh/mapping-sensitive and the strict original coarse-response check flags one high-compliance point; neither mesh convergence nor physical accuracy of the illustrative 0.1\\% margin is certified."
+        },
+        {
+          "before": "The contribution is a reproducible audit of these distinctions and its query-allocation and cost records, not a guarantee of optimization superiority or net savings.",
+          "after": "The contribution is a reproducible audit of these distinctions and its query-allocation and cost records, not a guarantee of optimization superiority or net savings. The independently collected budget record shows no adaptive-allocation advantage, and the two thermal gate/simple disagreements end in a tie and a loss."
+        },
+        {
+          "before": "The authors confirm contribution to the paper as follows:",
+          "after": "The following contribution assignment is proposed for author confirmation:"
+        },
+        {
+          "before": "This statement records the working draft's status and must be completed by the authors before submission; it does not certify author approval or policy compliance.",
+          "after": "For the present evidence integration, Codex-assisted Python code assembled measured-data tables and performed numerical and reproducibility checks. This statement records the working draft's status and must be completed by the authors before submission; it does not certify author approval or policy compliance."
+        },
+        {
+          "before": "The curated GP intervention ledger and the lossless compact transfer record release support the new results.",
+          "after": "The curated GP intervention, transfer, thermal, common-continuation, independent budget and paired-grid records support the additional results. Their lossless release manifests, source hashes and analysis scripts identify the exact records; selected grid checks are numerical reevaluation rather than new optimizer runs."
+        }
+      ]
+    },
+    "EO_supplementary.tex": {
+      "baseline_commit": "062c1b62a773f80cc4383d51a4d6655e9cc3f083",
+      "before_sha256": "c5548aa248fbfb5910f0f7c7b179f3be2f523d57b2996e5aee3f4f9d5e11f3ac",
+      "after_sha256": "af09b49da736e88ee22c07cdf8914d8d690a1bb99c66a496cefb4b676cf59ccd",
+      "historical_numeric_rows_unchanged": true,
+      "changes": [
+        {
+          "before": "Complete additional FE-attempt boundary for this revision. Historical experiments before the revision are not included.",
+          "after": "Additional FE-attempt boundary of the earlier GP/transfer stages. Later released checks are accounted for separately in Table~\\ref{tab:extension_cost}; historical experiments before this revision are not included."
+        },
+        {
+          "before": "\\Needspace{14\\baselineskip}\n\\bibliographystyle{tfcad}",
+          "after": "\\input{integrated_evidence/supp_records.tex}\n\n\\Needspace{14\\baselineskip}\n\\bibliographystyle{tfcad}"
+        }
+      ]
+    }
+  },
+  "abstract_words_whitespace": 178,
+  "new_scientific_argument_sections": false,
+  "author_review_pending": true
+}

@@ -1,0 +1,662 @@
+[
+  {
+    "dataset": "archived_common",
+    "continuation": "mean",
+    "state": "gp_ei_shared_init_r1_t101",
+    "block": 1,
+    "branch": "4096",
+    "names": "ei/lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.5389191018957802,
+    "terminal_incumbent_over_initial": 0.46108089810421987,
+    "initial": 3008.832185520961,
+    "incumbent_h0_to_h5": [
+      3008.832185520961,
+      3008.832185520961,
+      1387.3150463448874,
+      1387.3150463448874,
+      1387.3150463448874,
+      1387.3150463448874
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.5389191018957802,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "c0fef0e95a849be348f182478c5f15324f4ea596615029724b812b41c1221868"
+  },
+  {
+    "dataset": "archived_common",
+    "continuation": "mean",
+    "state": "gp_ei_shared_init_r1_t101",
+    "block": 1,
+    "branch": "1937",
+    "names": "pi",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.1344124900985999,
+    "terminal_incumbent_over_initial": 0.8655875099014001,
+    "initial": 3008.832185520961,
+    "incumbent_h0_to_h5": [
+      3008.832185520961,
+      2604.407559176276,
+      2604.407559176276,
+      2604.407559176276,
+      2604.407559176276,
+      2604.407559176276
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.1344124900985999,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "c0fef0e95a849be348f182478c5f15324f4ea596615029724b812b41c1221868"
+  },
+  {
+    "dataset": "archived_common",
+    "continuation": "mean",
+    "state": "gp_ei_shared_init_r4_t101",
+    "block": 4,
+    "branch": "4096",
+    "names": "mean/ei/lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.08539684230246126,
+    "terminal_incumbent_over_initial": 0.9146031576975387,
+    "initial": 2329.7169244066754,
+    "incumbent_h0_to_h5": [
+      2329.7169244066754,
+      2130.7664556037435,
+      2130.7664556037435,
+      2130.7664556037435,
+      2130.7664556037435,
+      2130.7664556037435
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.08539684230246126,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "3c136b49d4b359b671485970367e50f8caf1a6c0156788a1a1b64adda7b73e75"
+  },
+  {
+    "dataset": "archived_common",
+    "continuation": "mean",
+    "state": "gp_ei_shared_init_r8_t101",
+    "block": 8,
+    "branch": "3095",
+    "names": "mean/ei/pi/lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.002420515842328073,
+    "terminal_incumbent_over_initial": 0.997579484157672,
+    "initial": 2877.576342916249,
+    "incumbent_h0_to_h5": [
+      2877.576342916249,
+      2870.6111237907116,
+      2870.6111237907116,
+      2870.6111237907116,
+      2870.6111237907116,
+      2870.6111237907116
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.002420515842328073,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "4dd911ae017c5dde363dc131854a35089e25e1fb0f599254eba56596277ec25a"
+  },
+  {
+    "dataset": "archived_common",
+    "continuation": "mean",
+    "state": "gp_ucb_shared_init_r0_t101",
+    "block": 0,
+    "branch": "836",
+    "names": "ei",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.0629040044192218,
+    "terminal_incumbent_over_initial": 0.9370959955807782,
+    "initial": 2872.9477894342735,
+    "incumbent_h0_to_h5": [
+      2872.9477894342735,
+      2872.9477894342735,
+      2872.9477894342735,
+      2692.2278689915065,
+      2692.2278689915065,
+      2692.2278689915065
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0629040044192218,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "894b08e0455ac15ee1d9caa4787403cf0c44a798583f74efa24c067c196e7142"
+  },
+  {
+    "dataset": "archived_common",
+    "continuation": "mean",
+    "state": "gp_ucb_shared_init_r7_t101",
+    "block": 7,
+    "branch": "3803",
+    "names": "mean",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.4341585103834102,
+    "terminal_incumbent_over_initial": 0.5658414896165898,
+    "initial": 3064.7286535533594,
+    "incumbent_h0_to_h5": [
+      3064.7286535533594,
+      3064.7286535533594,
+      3064.7286535533594,
+      3064.7286535533594,
+      1734.1506265972785,
+      1734.1506265972785
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.4341585103834102,
+      0.0
+    ],
+    "source_sha256": "5820f29559e009ac1ab3cabdeb6b085954a1c2d39b772f22a3b681579f267024"
+  },
+  {
+    "dataset": "archived_common",
+    "continuation": "mean",
+    "state": "gp_ucb_shared_init_r7_t101",
+    "block": 7,
+    "branch": "1821",
+    "names": "pi",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.28413472720456956,
+    "terminal_incumbent_over_initial": 0.7158652727954304,
+    "initial": 3064.7286535533594,
+    "incumbent_h0_to_h5": [
+      3064.7286535533594,
+      3064.7286535533594,
+      2193.932813619948,
+      2193.932813619948,
+      2193.932813619948,
+      2193.932813619948
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.28413472720456956,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "5820f29559e009ac1ab3cabdeb6b085954a1c2d39b772f22a3b681579f267024"
+  },
+  {
+    "dataset": "archived_common",
+    "continuation": "mean",
+    "state": "gp_ucb_shared_init_r7_t101",
+    "block": 7,
+    "branch": "4096",
+    "names": "lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.17590519330881263,
+    "terminal_incumbent_over_initial": 0.8240948066911874,
+    "initial": 3064.7286535533594,
+    "incumbent_h0_to_h5": [
+      3064.7286535533594,
+      2525.6269673109987,
+      2525.6269673109987,
+      2525.6269673109987,
+      2525.6269673109987,
+      2525.6269673109987
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.17590519330881263,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "5820f29559e009ac1ab3cabdeb6b085954a1c2d39b772f22a3b681579f267024"
+  },
+  {
+    "dataset": "archived_common",
+    "continuation": "mean",
+    "state": "gp_ucb_shared_init_r8_t101",
+    "block": 8,
+    "branch": "3888",
+    "names": "lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.23248263093011853,
+    "terminal_incumbent_over_initial": 0.7675173690698814,
+    "initial": 2877.576342916249,
+    "incumbent_h0_to_h5": [
+      2877.576342916249,
+      2877.576342916249,
+      2877.576342916249,
+      2877.576342916249,
+      2877.576342916249,
+      2208.5898240128104
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.23248263093011853
+    ],
+    "source_sha256": "a76015749aafc378409eb138eba6e0f98fab6ac11234a1cf7fff9eb435595412"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "mean",
+    "state": "beam_holdout_r11_ei",
+    "block": 11,
+    "branch": "b0",
+    "names": "mean/pi",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.2654153287601977,
+    "terminal_incumbent_over_initial": 0.7345846712398023,
+    "initial": 1936.9825042567288,
+    "incumbent_h0_to_h5": [
+      1936.9825042567288,
+      1936.9825042567288,
+      1936.9825042567288,
+      1936.9825042567288,
+      1936.9825042567288,
+      1422.8776560866781
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2654153287601977
+    ],
+    "source_sha256": "803a89ec8fd82bb9cfd3d8379a41284214accdbabff0e9bde87d9ed239338a18"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "mean",
+    "state": "beam_holdout_r11_ei",
+    "block": 11,
+    "branch": "b1",
+    "names": "ei/lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.2654153287601977,
+    "terminal_incumbent_over_initial": 0.7345846712398023,
+    "initial": 1936.9825042567288,
+    "incumbent_h0_to_h5": [
+      1936.9825042567288,
+      1936.9825042567288,
+      1936.9825042567288,
+      1936.9825042567288,
+      1936.9825042567288,
+      1422.8776560866781
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2654153287601977
+    ],
+    "source_sha256": "803a89ec8fd82bb9cfd3d8379a41284214accdbabff0e9bde87d9ed239338a18"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "mean",
+    "state": "beam_holdout_r11_pi",
+    "block": 11,
+    "branch": "b0",
+    "names": "mean/pi",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.1344816977014418,
+    "terminal_incumbent_over_initial": 0.8655183022985582,
+    "initial": 1672.8339255774827,
+    "incumbent_h0_to_h5": [
+      1672.8339255774827,
+      1672.8339255774827,
+      1447.8683792932554,
+      1447.8683792932554,
+      1447.8683792932554,
+      1447.8683792932554
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.1344816977014418,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "bcc59d62eb3054dd2cf04cb759ef8d55e0d55eaa3a3d85cff5a956f1ae90735c"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "mean",
+    "state": "beam_holdout_r11_pi",
+    "block": 11,
+    "branch": "b1",
+    "names": "ei/lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.1344816977014418,
+    "terminal_incumbent_over_initial": 0.8655183022985582,
+    "initial": 1672.8339255774827,
+    "incumbent_h0_to_h5": [
+      1672.8339255774827,
+      1672.8339255774827,
+      1447.8683792932554,
+      1447.8683792932554,
+      1447.8683792932554,
+      1447.8683792932554
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.1344816977014418,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "bcc59d62eb3054dd2cf04cb759ef8d55e0d55eaa3a3d85cff5a956f1ae90735c"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "mean",
+    "state": "beam_holdout_r12_pi",
+    "block": 12,
+    "branch": "b0",
+    "names": "mean/pi",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.16109977982211074,
+    "terminal_incumbent_over_initial": 0.8389002201778892,
+    "initial": 1629.3290616578674,
+    "incumbent_h0_to_h5": [
+      1629.3290616578674,
+      1629.3290616578674,
+      1629.3290616578674,
+      1629.3290616578674,
+      1366.8445085670187,
+      1366.8445085670187
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.16109977982211074,
+      0.0
+    ],
+    "source_sha256": "6231451ada3359a6cd0df5110ded29f049ef5f95b10ebc44d23439a70b3500a4"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "mean",
+    "state": "beam_holdout_r12_pi",
+    "block": 12,
+    "branch": "b1",
+    "names": "ei/lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.16109977982211074,
+    "terminal_incumbent_over_initial": 0.8389002201778892,
+    "initial": 1629.3290616578674,
+    "incumbent_h0_to_h5": [
+      1629.3290616578674,
+      1629.3290616578674,
+      1629.3290616578674,
+      1629.3290616578674,
+      1366.8445085670187,
+      1366.8445085670187
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.16109977982211074,
+      0.0
+    ],
+    "source_sha256": "6231451ada3359a6cd0df5110ded29f049ef5f95b10ebc44d23439a70b3500a4"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "mean",
+    "state": "beam_holdout_r18_pi",
+    "block": 18,
+    "branch": "b0",
+    "names": "mean/pi",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.009259211718013296,
+    "terminal_incumbent_over_initial": 0.9907407882819868,
+    "initial": 2503.6137195982046,
+    "incumbent_h0_to_h5": [
+      2503.6137195982046,
+      2480.432230108322,
+      2480.432230108322,
+      2480.432230108322,
+      2480.432230108322,
+      2480.432230108322
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.009259211718013296,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "037113a17119e5afa8675196dee39328853e633aa921dbe65f2e3e9340027e3e"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "mean",
+    "state": "beam_holdout_r18_pi",
+    "block": 18,
+    "branch": "b1",
+    "names": "ei",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.009259211718013296,
+    "terminal_incumbent_over_initial": 0.9907407882819868,
+    "initial": 2503.6137195982046,
+    "incumbent_h0_to_h5": [
+      2503.6137195982046,
+      2480.432230108322,
+      2480.432230108322,
+      2480.432230108322,
+      2480.432230108322,
+      2480.432230108322
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.009259211718013296,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "037113a17119e5afa8675196dee39328853e633aa921dbe65f2e3e9340027e3e"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "mean",
+    "state": "beam_holdout_r18_pi",
+    "block": 18,
+    "branch": "b2",
+    "names": "lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.009259211718013296,
+    "terminal_incumbent_over_initial": 0.9907407882819868,
+    "initial": 2503.6137195982046,
+    "incumbent_h0_to_h5": [
+      2503.6137195982046,
+      2480.432230108322,
+      2480.432230108322,
+      2480.432230108322,
+      2480.432230108322,
+      2480.432230108322
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.009259211718013296,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "037113a17119e5afa8675196dee39328853e633aa921dbe65f2e3e9340027e3e"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "ei",
+    "state": "beam_holdout_r18_pi",
+    "block": 18,
+    "branch": "b0",
+    "names": "mean/pi",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.08947961816319831,
+    "terminal_incumbent_over_initial": 0.9105203818368017,
+    "initial": 2503.6137195982046,
+    "incumbent_h0_to_h5": [
+      2503.6137195982046,
+      2503.6137195982046,
+      2279.5913199404126,
+      2279.5913199404126,
+      2279.5913199404126,
+      2279.5913199404126
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.08947961816319831,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "037113a17119e5afa8675196dee39328853e633aa921dbe65f2e3e9340027e3e"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "ei",
+    "state": "beam_holdout_r18_pi",
+    "block": 18,
+    "branch": "b2",
+    "names": "lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.08947961816319831,
+    "terminal_incumbent_over_initial": 0.9105203818368017,
+    "initial": 2503.6137195982046,
+    "incumbent_h0_to_h5": [
+      2503.6137195982046,
+      2503.6137195982046,
+      2279.5913199404126,
+      2279.5913199404126,
+      2279.5913199404126,
+      2279.5913199404126
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.08947961816319831,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "source_sha256": "037113a17119e5afa8675196dee39328853e633aa921dbe65f2e3e9340027e3e"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "mean",
+    "state": "beam_holdout_r19_lcb",
+    "block": 19,
+    "branch": "b0",
+    "names": "mean/ei/pi/lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.14647582438762327,
+    "terminal_incumbent_over_initial": 0.8535241756123767,
+    "initial": 1517.9360553566148,
+    "incumbent_h0_to_h5": [
+      1517.9360553566148,
+      1517.9360553566148,
+      1517.9360553566148,
+      1517.9360553566148,
+      1295.5951202805577,
+      1295.5951202805577
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.14647582438762327,
+      0.0
+    ],
+    "source_sha256": "cf276065f4987fb462723fc166f3a75abac9ec5ac3d64209897be5f996b20b6e"
+  },
+  {
+    "dataset": "previous_holdout",
+    "continuation": "ei",
+    "state": "beam_holdout_r19_lcb",
+    "block": 19,
+    "branch": "b0",
+    "names": "mean/ei/pi/lcb",
+    "diminishing_returns_violated": true,
+    "violation_count": 1,
+    "largest_upward_increment_jump_fraction": 0.14647582438762327,
+    "terminal_incumbent_over_initial": 0.8535241756123767,
+    "initial": 1517.9360553566148,
+    "incumbent_h0_to_h5": [
+      1517.9360553566148,
+      1517.9360553566148,
+      1517.9360553566148,
+      1517.9360553566148,
+      1295.5951202805577,
+      1295.5951202805577
+    ],
+    "gain_increment_fractions": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.14647582438762327,
+      0.0
+    ],
+    "source_sha256": "cf276065f4987fb462723fc166f3a75abac9ec5ac3d64209897be5f996b20b6e"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "journal": "Engineering Optimization",
+  "journal_homepage": "https://www.tandfonline.com/journals/geno20",
+  "article_type_suggested": "Research article; confirm actual portal dropdown",
+  "peer_review": "single blind, official journal search record checked on 14 October 2026",
+  "title": "Certified Action Sets and Decision Limits in Surrogate-Assisted Engineering Optimization",
+  "abstract_tex": "A useful surrogate must support a credible evaluation decision, not only accurate predictions. We develop a conditional audit that distinguishes action changes, finite-horizon consequences and information costs. For a fixed-kernel Gaussian process with one unknown nonnegative response, enclosed affine posterior means define a response-domain outer set of possible next actions. An exact rational envelope computes the complete relaxed-band set in $O(M\\log M)$ arithmetic operations, retains isolated ties and supplies at most two rival indices per exclusion. On 114 archived engineering branches, both declared response domains retain 2--7 of 1024 actions and include every stored next action. All 232,564 original exclusion proofs and binary coefficient systems are reverified. The envelope produces identical action sets with 3.19-fold faster set construction, or 2.62-fold including separate certificate replay, relative to the frozen pairwise implementation. These are computational-stage improvements. The engineering bounds remain too weak to certify any of 71 nonbaseline H1 contrasts; H5 adaptive allocation also gives no independent diagnostic advantage. Full deployment savings and physical accuracy of the decision margin remain unestablished. The study contributes an executable, proof-producing action-set operator and an engineering evaluation separating computational efficiency from decision sufficiency.",
+  "abstract_plaintext": "A useful surrogate must support a credible evaluation decision, not only accurate predictions. We develop a conditional audit that distinguishes action changes, finite-horizon consequences and information costs. For a fixed-kernel Gaussian process with one unknown nonnegative response, enclosed affine posterior means define a response-domain outer set of possible next actions. An exact rational envelope computes the complete relaxed-band set in O(M log M) arithmetic operations, retains isolated ties and supplies at most two rival indices per exclusion. On 114 archived engineering branches, both declared response domains retain 2-7 of 1024 actions and include every stored next action. All 232,564 original exclusion proofs and binary coefficient systems are reverified. The envelope produces identical action sets with 3.19-fold faster set construction, or 2.62-fold including separate certificate replay, relative to the frozen pairwise implementation. These are computational-stage improvements. The engineering bounds remain too weak to certify any of 71 nonbaseline H1 contrasts; H5 adaptive allocation also gives no independent diagnostic advantage. Full deployment savings and physical accuracy of the decision margin remain unestablished. The study contributes an executable, proof-producing action-set operator and an engineering evaluation separating computational efficiency from decision sufficiency.",
+  "abstract_whitespace_word_count": 188,
+  "keywords": [
+    "expensive engineering optimization",
+    "Gaussian processes",
+    "numerical certificates",
+    "affine envelopes",
+    "decision auditing"
+  ],
+  "authors": [
+    {
+      "name": "Shu-Chuan Chu",
+      "affiliation": "School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
+      "corresponding": true,
+      "email": "100130@nuist.edu.cn",
+      "ORCID": null
+    },
+    {
+      "name": "Ya-Yu Zhang",
+      "affiliation": "School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
+      "corresponding": false,
+      "email": null,
+      "ORCID": null
+    },
+    {
+      "name": "Zhenyu Meng",
+      "affiliation": null,
+      "corresponding": false,
+      "email": null,
+      "ORCID": null
+    },
+    {
+      "name": "Jia Zhao",
+      "affiliation": null,
+      "corresponding": false,
+      "email": null,
+      "ORCID": null
+    }
+  ],
+  "funding": "No specific funding, inherited manuscript statement; factual confirmation required before submission",
+  "conflict_of_interest": "No conflicts, inherited manuscript statement; factual confirmation required before submission",
+  "originality_and_exclusive_submission_statement": null,
+  "reviewer_suggestions": [],
+  "public_data_link": null,
+  "license": null,
+  "actual_submission": false,
+  "manuscript_id": null,
+  "ready_for_final_submit": false
+}

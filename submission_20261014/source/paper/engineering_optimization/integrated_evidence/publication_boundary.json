@@ -1,0 +1,10 @@
+{
+  "source_commit": "06a933374846d4642fe859f61b3eb88a7f815a89",
+  "files_verified": 26,
+  "all_git_blob_hashes_match": true,
+  "complete_raw_archive_public": false,
+  "current_compiled_pdfs_public": false,
+  "publication_blockers": "Automatic approval review rejected two exact unchanged numerical archive segments and the first compiled-PDF segment. No alternate encoding or indirect upload is attempted.",
+  "local_archive_and_pdf_restoration_checks": "passed",
+  "submission_ready": false
+}

@@ -1,0 +1,664 @@
+{
+  "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "branch": "research/contribution-closure-20261014-c5d11c",
+  "scope": "Current manuscript text, code and derived-table checkpoint. Audited manuscript/figure PDFs are listed separately below. Full raw GP and historical data are not mirrored; this remains a private research increment.",
+  "new_physical_evaluations": 0,
+  "final_submit_ready": false,
+  "files": [
+    {
+      "path": "gp_attachment/paper/engineering_optimization/gp_reachability_20261013/EXECUTION_DECISION.json",
+      "bytes": 2017,
+      "sha256": "567e73f41f3732bf8f1faec5513aa4b4396a73c471b7fbe62461ee844ac79302"
+    },
+    {
+      "path": "gp_attachment/paper/engineering_optimization/gp_reachability_20261013/RESULT_AND_REVIEW_DECISION.md",
+      "bytes": 9136,
+      "sha256": "a020f4b06c806a334137a4f34bad7433076e833ac3b3123726e33231eb49e607"
+    },
+    {
+      "path": "gp_attachment/paper/engineering_optimization/gp_reachability_20261013/analysis.json",
+      "bytes": 5849,
+      "sha256": "9455c5a56f58d843d388e742cabdd6ee08444332c6f2974f46ee32c704f7ba45"
+    },
+    {
+      "path": "gp_attachment/paper/engineering_optimization/gp_reachability_20261013/branch_results.csv",
+      "bytes": 66853,
+      "sha256": "e0086f5384794454efc4c49f52448735dce6a0d22691c9951c64bfb502e3b9b0"
+    },
+    {
+      "path": "gp_attachment/paper/engineering_optimization/gp_reachability_20261013/diagnosis.json",
+      "bytes": 1952,
+      "sha256": "b432c466d8ca0a1849a652ceb8ccc1b63db0176e2c19edc563ce525c49079912"
+    },
+    {
+      "path": "gp_attachment/paper/engineering_optimization/gp_reachability_20261013/execution_unit_tests.txt",
+      "bytes": 2734,
+      "sha256": "04ce2bc52647b1f6debac7eafde2dc194c54e0373987635fd98b6c6732d607c6"
+    },
+    {
+      "path": "gp_attachment/paper/engineering_optimization/gp_reachability_20261013/review_decision.json",
+      "bytes": 4058,
+      "sha256": "279b86c396adac042fef429422cf32cf4adfc7e5527ec9efbfcc1b4141b676f9"
+    },
+    {
+      "path": "gp_attachment/paper/engineering_optimization/gp_reachability_20261013/state_selection.csv",
+      "bytes": 9438,
+      "sha256": "a45d1a566d7a4c48133e18474116d3c09672e221c6fdc82a7cb7fe9a8d0d5ab9"
+    },
+    {
+      "path": "gp_attachment/paper/engineering_optimization/gp_reachability_20261013/unit_tests.txt",
+      "bytes": 1856,
+      "sha256": "b719b6a7ae28d1eb82f0749cb13644f7667918cf7e8993ef9072188583c4ddf0"
+    },
+    {
+      "path": "gp_attachment/src/analyze_gp_reachability.py",
+      "bytes": 31119,
+      "sha256": "3b057468795f63101546aeb5f45fc731afe8074ba8bf691b7ecc7ae4e1a79cb9"
+    },
+    {
+      "path": "gp_attachment/src/verify_gp_reachability_delivery.py",
+      "bytes": 4749,
+      "sha256": "1edcea89f704f019d78d69cdc0be8db9934c68710ea863e25bf12f5ee4b20427"
+    },
+    {
+      "path": "results/gp_envelope_acceleration_20261014/H1_recheck.csv",
+      "bytes": 23065,
+      "sha256": "d35a3311c880ed3e3c3c41a7b07ad48da3a436ed0a918a3405ddda2a45a2e368"
+    },
+    {
+      "path": "results/gp_envelope_acceleration_20261014/H1_recheck.json",
+      "bytes": 252,
+      "sha256": "64be1caeb044d6215cca5ff3d17c6a7610d1d946d2d309d95b471c82030bbbdd"
+    },
+    {
+      "path": "results/gp_envelope_acceleration_20261014/analysis.json",
+      "bytes": 2467,
+      "sha256": "fc615673aea4606bfc43e92cd237b3605ff637ef62f89b77c8d932a04dfea00d"
+    },
+    {
+      "path": "results/gp_envelope_acceleration_20261014/paired_timing.csv",
+      "bytes": 32790,
+      "sha256": "de73ab2df77309a178a03ad88a3ee1e3d4ef511162fbb3c67d55870c023bd911"
+    },
+    {
+      "path": "results/h1_bound_bottlenecks_20261014/action_thresholds.csv",
+      "bytes": 138245,
+      "sha256": "d9c6fe9f475b3487224dea7f9aac920bbacc93836b9c4c6eb4510af6dbcc2689"
+    },
+    {
+      "path": "results/h1_bound_bottlenecks_20261014/analysis.json",
+      "bytes": 21320,
+      "sha256": "8a0c21b6e24f0fcf0447dadf430fb8deb3334e1ee67e2ca2926fcd642da3a8a9"
+    },
+    {
+      "path": "results/h1_bound_bottlenecks_20261014/branch_thresholds.csv",
+      "bytes": 30460,
+      "sha256": "59b671823b8a7887d7b5308af8d9c838211b4ed808bd190a8ccfd37f5acf4888"
+    },
+    {
+      "path": "results/innovation_readiness_20261014/curve_shape_results.csv",
+      "bytes": 14549,
+      "sha256": "7014fb8df6694b28b6ca8a25ec8514b213472c98f130d631fd9f1aaa70e0ffda"
+    },
+    {
+      "path": "results/innovation_readiness_20261014/development_cost_reconciliation.csv",
+      "bytes": 1028,
+      "sha256": "677ac82f5ab4b46149cdc8bd1bf3c0981e7227fac52727e00e4e199c29a24a49"
+    },
+    {
+      "path": "results/innovation_readiness_20261014/innovation_feasibility.json",
+      "bytes": 32965,
+      "sha256": "2b13427a6c99e296aa9287e60c0ebdb03f2f2b7e2e8a710bb684f483989910e4"
+    },
+    {
+      "path": "results/innovation_readiness_20261014/shape_counterexamples.json",
+      "bytes": 17550,
+      "sha256": "ec597da5fa6c98a51018d6625dd347be3b0c900beb48b35f9ce50d83253330af"
+    },
+    {
+      "path": "results/innovation_readiness_20261014/state_results.csv",
+      "bytes": 8282,
+      "sha256": "487ee7d0b0590941a4ac9395e3c43d83750a7584a9d3f63b95a3b5ec7ae551a2"
+    },
+    {
+      "path": "results/innovation_readiness_20261014/summary.csv",
+      "bytes": 627,
+      "sha256": "78bc6284b483fe6a562581059c39ca57cc0cfcf0d47c831b6e45f2ea13985b87"
+    },
+    {
+      "path": "src/analyze_operational_comparison.py",
+      "bytes": 10013,
+      "sha256": "cca876f86b76c105cdb58b57ebdd516252d98166543b4460222d9469c5f0fad4"
+    },
+    {
+      "path": "src/audit_innovation_feasibility.py",
+      "bytes": 12005,
+      "sha256": "eda97823ce1246a4a03668d057447dc164ab1f4e0baf7622d7c22a0373e048b1"
+    },
+    {
+      "path": "src/budgeted_decision_audit.py",
+      "bytes": 5659,
+      "sha256": "71b177eb983166f34b383187c9de577c884bb471fa442e865ebf20d7485aacd5"
+    },
+    {
+      "path": "src/build_pre_submission_review.py",
+      "bytes": 19047,
+      "sha256": "862a2255e1b72fa9b9d991e82ae58a5e0f59fe9ba7e3c4342af52a143242dec2"
+    },
+    {
+      "path": "src/build_project_closure.py",
+      "bytes": 25955,
+      "sha256": "1735a21d14e1fd333a84338b08a3d0ba6be42d0297937a78cad8cf14016923ee"
+    },
+    {
+      "path": "src/build_submission_documents.py",
+      "bytes": 9224,
+      "sha256": "e8a61a0e462960cf3e8683e49f1f5f0a9cf53fa850cd05ba05b14cebf066dc37"
+    },
+    {
+      "path": "src/certified_affine_envelope.py",
+      "bytes": 6618,
+      "sha256": "539c16017478e90630581065d43a464e151756aa976a57f61b7ec69a959fbb28"
+    },
+    {
+      "path": "src/check_gp_envelope_downstream.py",
+      "bytes": 3504,
+      "sha256": "93a845b9017befbe4d8726c119b6b65aa559466c277d42d804a606a7c3c4a930"
+    },
+    {
+      "path": "src/diagnose_h1_bound_bottlenecks.py",
+      "bytes": 7397,
+      "sha256": "05178db45e6af41ead9b2434680ed42bda39e0b29f04bad3d2fedc493cf6689b"
+    },
+    {
+      "path": "src/finalize_contribution_20261014.py",
+      "bytes": 10841,
+      "sha256": "66fa87bdba98c36ba2fd22b2e66e46bf1b117a823cdec31b433ae35ab29369d4"
+    },
+    {
+      "path": "src/gp_action_reachability.py",
+      "bytes": 8420,
+      "sha256": "decd4780df7b3e080ce23f92b9987a2ca0cfbd2a81963d929d5ae4f90a01f0ae"
+    },
+    {
+      "path": "src/package_pre_submission_review.py",
+      "bytes": 6886,
+      "sha256": "2b5b327bd521e26012b64fa8bbdc9abf8e7692e0e2aec78d57d26c03e89e9596"
+    },
+    {
+      "path": "src/package_project_closure.py",
+      "bytes": 7632,
+      "sha256": "f8796242d5961d96267d56487f6e79b6b2a0caa4102103af64077f213193cd07"
+    },
+    {
+      "path": "src/package_submission_20261014.py",
+      "bytes": 4885,
+      "sha256": "a32bab8a56d451d7e432cfb47b93693dad9188cf96ef7594e7b2518f85db4b3e"
+    },
+    {
+      "path": "src/prepare_gp_attachment.py",
+      "bytes": 1488,
+      "sha256": "6f4a65ac053799ca13286f1fd2e604163713f8e403bd1185eb9ed89d665b77c3"
+    },
+    {
+      "path": "src/prepare_submission_20261014.py",
+      "bytes": 17191,
+      "sha256": "ed9f3fbe10c6ce514d4fa53c486565e05d6738fc2353e30927cfe458fc65bced"
+    },
+    {
+      "path": "src/rebuild_gp_completion_figure.py",
+      "bytes": 2187,
+      "sha256": "02dae5fe918d7c0fe18bfa4748fb57d93606ca386746549f223eec1e3ab4871f"
+    },
+    {
+      "path": "src/reduced_compliance_bounds.py",
+      "bytes": 5859,
+      "sha256": "3d1a2e61c6dc08f426ee70c6f432185255bf15c80fea5f8347befe42baa1bc88"
+    },
+    {
+      "path": "src/restore_contribution_checkpoint.py",
+      "bytes": 1535,
+      "sha256": "c493c5f50aa2610a77e16ab62e2a757838c991b4aaa2d1cccf408d9e37d09d26"
+    },
+    {
+      "path": "src/verify_and_benchmark_gp_envelope.py",
+      "bytes": 15565,
+      "sha256": "0df7a27577a1e6105eefe03956435360bb3a270514fa44d76e72ec2274fd39a9"
+    },
+    {
+      "path": "src/verify_pre_submission_release.py",
+      "bytes": 5093,
+      "sha256": "1b36a557a171c4948cf705a39f3016a34a7f150fb76625c9bf1ca2b50442b1cb"
+    },
+    {
+      "path": "src/verify_project_closure.py",
+      "bytes": 5236,
+      "sha256": "e80cbda35f1ca3571a70bb34ed3daebf004d55c760dfac19d44a66b584aa5c80"
+    },
+    {
+      "path": "submission_20261014/ABSTRACT_AND_KEYWORDS.txt",
+      "bytes": 1637,
+      "sha256": "b0bfabe134c106c28fc038c547018b555ca14248915162738e27cb24e88dfa5a"
+    },
+    {
+      "path": "submission_20261014/CHECKPOINT_README.md",
+      "bytes": 1816,
+      "sha256": "22966e717ce9137b84a020d3d7de63641341553c5d9509d2b10f56047b035c88"
+    },
+    {
+      "path": "submission_20261014/CONTRIBUTION_DECISION_20261014.md",
+      "bytes": 4639,
+      "sha256": "2fd357446d6d9262f2aeb199c21e7c451ec6c7dfd8ffdb49f15e8f42de7ee2bc"
+    },
+    {
+      "path": "submission_20261014/CONTRIBUTION_FINAL_CHECKS.json",
+      "bytes": 1019,
+      "sha256": "513a78733f8a1b90e051ff239f850ea90eec3c73a1ae0af848abb09a32bbe15a"
+    },
+    {
+      "path": "submission_20261014/CONTRIBUTION_PDF_CHECK.json",
+      "bytes": 826,
+      "sha256": "242acc5901b69188e5f680c88b1fecf749bcedd305ffe650c995f284ea9bd03a"
+    },
+    {
+      "path": "submission_20261014/PORTAL_FIELDS.json",
+      "bytes": 4775,
+      "sha256": "0b7d3261069a15d9f914d8bd0af405411605a0773f7196d848c77c64211b6de1"
+    },
+    {
+      "path": "submission_20261014/REVIEW_REPRODUCTION.md",
+      "bytes": 3415,
+      "sha256": "a3e85e5581af84179fdc2977ea316cb82776b2cb2ae07f0a2d8e0cb702e85593"
+    },
+    {
+      "path": "submission_20261014/SOURCE_VERIFICATION.json",
+      "bytes": 14513,
+      "sha256": "77402857b2fa877f6a0693e8e52dbf12b38d8fae48eaff9f08506f0fe86b6748"
+    },
+    {
+      "path": "submission_20261014/VENUE_AND_SUBMISSION_STATE.json",
+      "bytes": 1724,
+      "sha256": "45b9c52a07a495be4315c34ae0248bbec88751c5d6daf361fd535fc45dbfba28"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+      "bytes": 97942,
+      "sha256": "9284d4bb48538d1d2cf31d02ebb26d328a5d14157016134861fb453169b4de0c"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/EO_references.bib",
+      "bytes": 12997,
+      "sha256": "4ecd5ae22b7dc574325c6f73b1872287db7933ca4732ecdf965545a46a00ea3a"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/EO_supplementary.tex",
+      "bytes": 119593,
+      "sha256": "5066af11c47198a1be980491bd425d205f630e72663f5a7c3c5a11a5adea8250"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/budget_audit/analysis.json",
+      "bytes": 65061,
+      "sha256": "7a3ee271accf045faa625fa30b1738fc5c99f5f1eebe59b23fca877af9aa44f5"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/budget_audit/classifications.csv",
+      "bytes": 132588,
+      "sha256": "bed8cdf82943252d984fe5352359a0307d9baffb561179ccb588ec0b98e56047"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/budget_audit/selections.csv",
+      "bytes": 37190,
+      "sha256": "11c888369ebd117d603f9bd5a3bf8bfdb73de40d4a0dfc2dd8dca587fa87d3f6"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/common_continuation/analysis.json",
+      "bytes": 6019,
+      "sha256": "09c052f1f49534fe8ea5a621e4b75d66f051c480b99d4d8d5741d61621518daa"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/common_continuation/distinct_action_contrasts.csv",
+      "bytes": 3899,
+      "sha256": "bff7d2f130d45079edf1b2ca35b0a4c8ac0d96aba6ed9988e8a7c275c9193d96"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/common_continuation/engineering_endpoints.csv",
+      "bytes": 71441,
+      "sha256": "430e7eb4f586bd54a39d0e25883690ababc0e170c6b95ba5051bfff0f39b0df4"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/gp_reachability_20261013/PROTOCOL.md",
+      "bytes": 3453,
+      "sha256": "b4f4b6cc20f0c40edef3a3b47cf165e37eb997285a0ad717e91a987780f7c6ce"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/gp_reachability_20261013/unit_tests.txt",
+      "bytes": 1856,
+      "sha256": "b719b6a7ae28d1eb82f0749cb13644f7667918cf7e8993ef9072188583c4ddf0"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/factual_edit_audit.json",
+      "bytes": 6326,
+      "sha256": "70483c225c1fdc6fbc4159b12c1dd6ec6983cb820163239aa226e62b1b213f49"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/gp_envelope_completion.tex",
+      "bytes": 5469,
+      "sha256": "2a58aa65b242f66346f10f1a48bad0bf3ca7f7153f28af00fd195bb97989a552"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/h1_bound_bottleneck_closure.tex",
+      "bytes": 2220,
+      "sha256": "fc5d7ee917874fe48334fd608dd5b14dfc3647f6678abeb93d379aa48ed13bfa"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/integrity_tests.txt",
+      "bytes": 123,
+      "sha256": "9b1ace0189f65faf09dd311eaf7ef6f512a2d5a3acf548443e92673592374e7d"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/main_records.tex",
+      "bytes": 1701,
+      "sha256": "ec8e4f617a579f9e756ffce77e7bcf74fc44a97bc067b24bae8645928c3db0f8"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/pdf_payload_review.json",
+      "bytes": 4868,
+      "sha256": "dbc0a20d41adbd2ec8518fd4ef91f1580ad9162b77417d5d63fd83f09a999c78"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/pdf_render_review.json",
+      "bytes": 7871,
+      "sha256": "83177688fb8a22461517ddd0a457660fe4e24dabbc04c1f65fd7b3b6f56f52d3"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/pre_submission_checked_records.tex",
+      "bytes": 5875,
+      "sha256": "ab174631af7b13ddbf41d402c8407004834bac0d1fc61912a5c2140336ea1a1e"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/publication_boundary.json",
+      "bytes": 495,
+      "sha256": "556563e1ed5508c03f66cb0bdae5c789bdf630dd452297e52b8e693910d9d1aa"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/release_validation.json",
+      "bytes": 1099,
+      "sha256": "3e9b36fefa09a3448c459861be9cc1e7a94715547f4e7e314f9e5001297ccdd6"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/review_main_results.tex",
+      "bytes": 1918,
+      "sha256": "184f36812e20f0949e0710582f434533b77d9d1c204bd21cf45343b8bdbb3aeb"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/review_method_records.tex",
+      "bytes": 1989,
+      "sha256": "800a331ce4cf8dea8555f06a922a959673b461f12c78fec6c17ffeff89c6b699"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/review_package_manifest.json",
+      "bytes": 98398,
+      "sha256": "efba80a27ad34b690acaf1f4480c6c4818962609a533b14d40631b7352554924"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/review_supp_records.tex",
+      "bytes": 9760,
+      "sha256": "7a4d25c80cfb3e0b73a46558db216221a9cb2a1e7d38007c10e0cd6518d781c1"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/submission_algorithm.tex",
+      "bytes": 4091,
+      "sha256": "f7afe3f60c63bf3705381b0fb09b87b2197a1a094b54b4dbc602bbf9917cbb08"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/submission_archival_status.tex",
+      "bytes": 2981,
+      "sha256": "ed3dbf1bb49e21577038f35e27105227d22cabe107a33ee16c4217d1483b84b3"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/submission_comparison.tex",
+      "bytes": 2268,
+      "sha256": "8e4bbd754e00984f0f17bbaa3a62895fc79a3a40b291d20085d5091bfed710e3"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/supp_records.tex",
+      "bytes": 11986,
+      "sha256": "12d5a19d23d72a6e93af44876c5248d815920c9759222ffefe8b051056b3553e"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/table_inputs.json",
+      "bytes": 1698,
+      "sha256": "01b8b441156e1e22a835551b9a45de591632d32f827db43ef0011db74e546e6f"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/monotone_development_20261013/DEVELOPMENT_REPORT.md",
+      "bytes": 6106,
+      "sha256": "356c56c672d49af11031b72836942b0fd443d657f34b657f2e20c59dfe213bb8"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/monotone_development_20261013/METHOD_SPEC.md",
+      "bytes": 7244,
+      "sha256": "c1c8d6e93f2e19698faf563def72f92e094a668cebf2f850d9353d48be1db0cd"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/monotone_development_20261013/analysis.json",
+      "bytes": 154767,
+      "sha256": "12d2351fadab82f47ad63dbb5d7f5651167bb16734bc1eb32086a60381314777"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/monotone_development_20261013/summary.csv",
+      "bytes": 13349,
+      "sha256": "27d02501e0f9ed45842827fd5acb9e8a7f80888d9f734257d9ecd8510e8ccd67"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/physical_bound_screen_20261013/NEXT_RESEARCH_GATE.md",
+      "bytes": 4520,
+      "sha256": "a10d1b29e9b9d67294143ae604854edaffdff7a21e31231c69655c37696d9f66"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/physical_bound_screen_20261013/PROTOCOL.md",
+      "bytes": 6528,
+      "sha256": "d94bdaf090eeee05f25c94955642ec4842e78424dc6f048d57507cbc80ebbe1e"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/physical_bound_screen_20261013/RESULT_AND_REVIEW_DECISION.md",
+      "bytes": 4886,
+      "sha256": "647772d69afceddd0849c155da5393ddda8f7ede0175a07c420774961d989328"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/physical_bound_screen_20261013/analysis.json",
+      "bytes": 41251,
+      "sha256": "6450cb3953b1b9b520b139a68c01f39569f6bd44c45c3c05411547924122cdb6"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/submission_revision_20261013/CORE_OBJECT_AND_CLOSEST_WORK.md",
+      "bytes": 7229,
+      "sha256": "27231656d692604961c0085ea80e0ca0068cefe35cff8fd4599aeb15232aa404"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/submission_revision_20261013/RESPONSE_AND_SCOPE.md",
+      "bytes": 2134,
+      "sha256": "9c442af399293e8446ecd1c999164ed15c84fb2bdd77407c5223268f7c8efa96"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/template_provenance.json",
+      "bytes": 751,
+      "sha256": "9db106aea90c98dc3d9d8f7e962fb166646331e74ea965067914e8bd0ba0e35f"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/work_status.json",
+      "bytes": 23917,
+      "sha256": "06cf5ae2aa61cbe5bb512340de0e7202dbd97b50437182c7872c0c7355867222"
+    },
+    {
+      "path": "tests/test_budgeted_decision_audit.py",
+      "bytes": 2365,
+      "sha256": "df7d8b56ade80994c1bcfa5c110105740b65fa570fb01e9647e581b8cf1fb30b"
+    },
+    {
+      "path": "tests/test_certified_affine_envelope.py",
+      "bytes": 3634,
+      "sha256": "2366f0ce86c7837d23107904dd6a0e60dc8792658c798520fc82206a22c100ca"
+    },
+    {
+      "path": "tests/test_gp_action_reachability.py",
+      "bytes": 5426,
+      "sha256": "5f9bf6725d28ec44644e321b35d37e0bf4eb9f55270d88836e2a05a7e2e84c2b"
+    },
+    {
+      "path": "tests/test_h1_bound_bottlenecks.py",
+      "bytes": 1097,
+      "sha256": "4145ab882f2f3be50ef2d33aa67882da61596a1f8bfcf7d213fbd0c6bb4bee89"
+    },
+    {
+      "path": "tests/test_interval_feasibility.py",
+      "bytes": 1168,
+      "sha256": "49fc98a1c7414507f05add6686555d2d5a73b810728f0b8e6e6002e0dfd5cd91"
+    },
+    {
+      "path": "tests/test_operational_comparison.py",
+      "bytes": 2112,
+      "sha256": "e9c8820760e61f28e94cc508a74a518a3c4b977028e6bb47cfc39eee01f759e6"
+    }
+  ],
+  "audited_pdf_assets": [
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/main_figure_2.pdf",
+      "bytes": 16971,
+      "sha256": "b6e4905565e90971e7caa8ce800100cb2f9f6838d8e09a69aa11fe9d9baa7d4e",
+      "git_blob_sha": "899cf788c540cdd8030039e52bf9768b2645cd3b"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/main_figure_1.pdf",
+      "bytes": 22479,
+      "sha256": "5c344332f71ecd49b36e7d7e36a21995bf9131a1ba7d83ce6bb925195bbc8fe1",
+      "git_blob_sha": "932c144b94473780fa6e18838b6090abf86c63a0"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_7.pdf",
+      "bytes": 25288,
+      "sha256": "0c8392216fb5da9dba6d7f9c0d8c36c4b681f9c11cbcd43619dfb648d6f1c670",
+      "git_blob_sha": "d7044588f956ff413b7b0bc8b8406862046b4480"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/transfer_pilot_horizons.pdf",
+      "bytes": 41242,
+      "sha256": "3bc65a5bbbd6aab1d79f62e5b52899e6929a0f7a37bc97c3f11e4d2baea61b33",
+      "git_blob_sha": "447cf3ddc5678f85135adfb38ce214909eaf964a"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_13.pdf",
+      "bytes": 53008,
+      "sha256": "6731d0ff015be264405b23ece017c19ce5a409d9c447b646e863090fcb83041d",
+      "git_blob_sha": "d2b88875fcd4679562151596b6d53efd8331a616"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_4.pdf",
+      "bytes": 16312,
+      "sha256": "d8678f2e960d4dce3322b99c49ed2f5084245b57d19c99b7b3b525b9d5529bf1",
+      "git_blob_sha": "02ab837890c90294da26d8170215c4febf35642a"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_6.pdf",
+      "bytes": 30504,
+      "sha256": "c6739a48630c5606ebcdfa1e81ae5c6a54b7939b48f4b7ed99bba729e6d75b7b",
+      "git_blob_sha": "16e7e5c448811a2a71910285cd5580748d071fdc"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/transfer_cost_performance.pdf",
+      "bytes": 58058,
+      "sha256": "76b52343baa89689664811a0aa53f8a5a3952281db8937743638a4dac6f94015",
+      "git_blob_sha": "33aeb7f5febbb2f46ae030b18e3adcaa60e4d58d"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_5.pdf",
+      "bytes": 19157,
+      "sha256": "ba0b26a0fc1ccdb5e51413277b653b3df7e0dca2ec9c96eb5ac7f9b1cd0fe862",
+      "git_blob_sha": "a7dcc482ce825c34b7d179cb6ecd10605b399a97"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/main_figure_5.pdf",
+      "bytes": 201333,
+      "sha256": "f34b4885f4053ecf352f0fc01780e02739a45687cc102ff804847616b82ca2d8",
+      "git_blob_sha": "79f8f3bba932ab56b8329ac82b899b9ca3559eb0"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_12.pdf",
+      "bytes": 24165,
+      "sha256": "002467fcda2f97c7a8f4633a07ffd5f8fd280fd9b0062f42350534a0e06e84ef",
+      "git_blob_sha": "863eb7cc5f2041b4192f5ed6abb4f07222e74c92"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_9.pdf",
+      "bytes": 15405,
+      "sha256": "de22c64f36b0a2dd636cd185e1f1709da1c6fbd60a866849e26c7c11dda7fa17",
+      "git_blob_sha": "b4033b15baeb6eec7dbff741b199f4dea7d37efe"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_2.pdf",
+      "bytes": 16166,
+      "sha256": "bab78cac86a65cf7715802529780a8d2e2983609093eb4c1bc237cb64682b97f",
+      "git_blob_sha": "84f83346a38f64c3e14fb58ab27edd0f5a738e06"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/main_figure_4.pdf",
+      "bytes": 28593,
+      "sha256": "64ec5995f67124e2bda544705640e0ca482cc47a706c9ced1dc7016ced2205d2",
+      "git_blob_sha": "bf378e2a9ce52aa92ca4fad3664dd47f17969447"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/main_figure_3.pdf",
+      "bytes": 13409,
+      "sha256": "06b888b7d5671c72856b98d55d9c8ee2b68e60914dd187af4c19818bf6a4b81d",
+      "git_blob_sha": "9e931038fd1bccae8d4c71791a8a00ceb9de2224"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_1.pdf",
+      "bytes": 16370,
+      "sha256": "218602c53898a91d0bc90f79d1167dc18ae318ee5c3ae48bacd4012e6e60cc82",
+      "git_blob_sha": "c43170dd26f18f4a68f1ec144316a609f5898df2"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/gp_certified_envelope_comparison.pdf",
+      "bytes": 18385,
+      "sha256": "e67869e384502b767823c46ab10cc1109fc69ed1830a20aa322f99db22c0ed7e",
+      "git_blob_sha": "476fc29c4600ded5094b15ca1ccc9677d0831e74"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_8.pdf",
+      "bytes": 51814,
+      "sha256": "d49387960a4c645aac25c09f9fdf4120e45e6390e9c64425c5160442a572e7a0",
+      "git_blob_sha": "c959b5baa08ead06bbc7845fdc4f14ab8d875c38"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_11.pdf",
+      "bytes": 15312,
+      "sha256": "28137e253ad927b99d4a3dcdb6ca965a6e3c33870578f190519525efafe1c667",
+      "git_blob_sha": "5351c17dd3713162a8d3c002d7bb38fca97aed9b"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_3.pdf",
+      "bytes": 13409,
+      "sha256": "06b888b7d5671c72856b98d55d9c8ee2b68e60914dd187af4c19818bf6a4b81d",
+      "git_blob_sha": "9e931038fd1bccae8d4c71791a8a00ceb9de2224"
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_10.pdf",
+      "bytes": 19701,
+      "sha256": "d095245fedb433fa39113c2d803a8404b3babd022b880c9664ec5af78ca1251d",
+      "git_blob_sha": "11a45af213b75f1241c4887769af8daa88fe81b4"
+    },
+    {
+      "path": "submission_20261014/pdf/Manuscript_20261014.pdf",
+      "bytes": 924652,
+      "sha256": "8fbbfa447c2a8de8db1741287e43e48d62eb949f4c29a384b4e65a5b03797e4b",
+      "git_blob_sha": "c3053c9500488a80df65d90b0a7f64cd3e1790ec"
+    },
+    {
+      "path": "submission_20261014/pdf/Supplement_20261014.pdf",
+      "bytes": 766173,
+      "sha256": "69c77e30b9d35d3cd3d4ee6e80b766348f2e53702332ca64fb376795fcdb0d48",
+      "git_blob_sha": "ce0f2b0a00172920f48f7660afb12f08624825db"
+    }
+  ]
+}

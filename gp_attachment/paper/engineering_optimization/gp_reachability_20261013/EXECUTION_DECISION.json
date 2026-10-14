@@ -1,0 +1,20 @@
+{
+  "baseline_commit": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "witness_diagnosis_complete": true,
+  "witness_diagnosis_decision": "Both stored trial lower bounds are weak at their fixed witnesses. The two true responses do not disqualify the full-pool superset. Proceed with the prospectively specified zero-new-physics GP development comparison as a complementary information test; do not infer that reachability alone repairs the bounds.",
+  "witness_attempts_used": 2,
+  "witness_attempts_remaining": 0,
+  "new_optimization_samples_allowed": false,
+  "constructor_uses": "Initial response-free plans only: observed X/y, fixed theta/alpha, first-action x, source-specific step1 Sobol pool; all114 action sets across43 nontrivial contexts durably constructed before grading loads trajectories.",
+  "range_modes": [
+    "[0,infinity)",
+    "[two-trial pending-point lower,infinity)"
+  ],
+  "identical_point_information": "Both readers use the same pending-point bound and the same archived two-trial-space evaluator on the whole eligible pool; nonnegative-set joint bounds also clamp the pending response to its available point lower.",
+  "H1_target": "First action and one posterior-mean continuation; paid baseline endpoint completed at the same H1 horizon. This does not certify H5.",
+  "bound_library": "Full eligible1024-point source pool plus pending points; within-state exact cache sharing across first actions;45000 unique-design cap unchanged.",
+  "cost_reporting": "Realized full-pool library and GP/proof overhead are recorded. Subset query counts are counterfactual. Paid baseline response acquisition and selected completion are reported separately.",
+  "independent_study_gate": "Validated downstream judgment increment AND complete-cost benefit AND an H5 reachable-history extension are required. Set shrinkage alone is insufficient.",
+  "runtime_policy": "Record existing runtime differences; require frozen physical-engine hashes and Sobol-pool hashes to match.",
+  "unit_tests_passed": 17
+}

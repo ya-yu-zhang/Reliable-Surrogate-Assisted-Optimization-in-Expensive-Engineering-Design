@@ -1,0 +1,14 @@
+dataset,continuation,budget,reader,classified,contrasts,audit,chosen_nonalias_completion,alias_execution,total_all_states,certified_nonalias_selection,nonalias_states
+archived_common_mean,mean,18,v1_fixed_depth,41,46,402,0,24,426,21,26
+archived_common_mean,mean,18,h0_largest_upper,36,46,402,0,24,426,21,26
+archived_common_mean,mean,18,alternative_depth,31,46,393,39,24,456,25,26
+previous_holdout,mean,18,v1_fixed_depth,25,25,252,0,78,330,17,17
+previous_holdout,mean,18,h0_largest_upper,25,25,247,5,78,330,17,17
+previous_holdout,mean,18,alternative_depth,25,25,247,5,78,330,17,17
+previous_holdout,mean,12,v1_fixed_depth,17,25,204,0,78,282,9,17
+previous_holdout,mean,12,h0_largest_upper,9,25,199,5,78,282,9,17
+previous_holdout,ei,18,v1_fixed_depth,25,25,252,0,78,330,17,17
+previous_holdout,ei,18,h0_largest_upper,25,25,247,5,78,330,17,17
+previous_holdout,ei,18,alternative_depth,25,25,247,5,78,330,17,17
+previous_holdout,ei,12,v1_fixed_depth,17,25,204,0,78,282,9,17
+previous_holdout,ei,12,h0_largest_upper,9,25,199,5,78,282,9,17

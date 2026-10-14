@@ -1,0 +1,106 @@
+{
+  "purpose": "User-authorized public paper-project review-PDF update",
+  "generated_from": [
+    "EO_manuscript.tex",
+    "EO_supplementary.tex",
+    "integrated_evidence/main_records.tex",
+    "integrated_evidence/supp_records.tex"
+  ],
+  "formatting_engine": "pdfLaTeX from existing public publisher-template sources, with generated measured tables",
+  "documents": [
+    {
+      "name": "EO_manuscript.pdf",
+      "bytes": 795637,
+      "sha256": "99f43cb6cb1c8b25f56861516d1999a74aab58efd47cba76368630f5f693bdab",
+      "pages": 25,
+      "title_from_document": "RESEARCH ARTICLE\nA Decision-Consequence Auditing Framework for Reliable\nSurrogate-Assisted Optimization in Expensive Engineering\nDesign\nShu-Chuan Chua,*, Ya-Yu Zhanga, Zhenyu Mengb and Jia Zhaoc\naSchool of Computer Science, Nanjing University of Information Science and Technology,\nNanjing 210044, Jiangsu, China;bAffiliation to be confirmed;cAffiliation to be confirmed\nAR TICLE HISTOR Y\nCompiled Oc",
+      "embedded_files": 0,
+      "encrypted": false,
+      "all_rendered_pages_checked": true,
+      "source_sha256": "d5158169b65c008c7bb69d33c777574371cfcc435bb618994ab7a0788e7f7d99",
+      "exact_archive_parts": [
+        {
+          "path": "EO_manuscript_integrated_v1_00.b85",
+          "sha256": "18fdd52cf2b4b1fe62d14d372c881afa12c720215d14e23322722066d8d0c8b8"
+        },
+        {
+          "path": "EO_manuscript_integrated_v1_01.b85",
+          "sha256": "8a43f2a1d98c260e03f5d4cba273aa89426e55f44eee6ab5356a9816d3320988"
+        },
+        {
+          "path": "EO_manuscript_integrated_v1_02.b85",
+          "sha256": "856430635217139589f6ce16112f61d1f36cae3c5642c3b8901a62888541119a"
+        },
+        {
+          "path": "EO_manuscript_integrated_v1_03.b85",
+          "sha256": "e036b32dfae923ac2d4efb911f14954850313c95b0b687ed3cc40cbc62701e53"
+        },
+        {
+          "path": "EO_manuscript_integrated_v1_04.b85",
+          "sha256": "2f90c0b3b011c6d3d4bde58ad963a76451b9c2ab562ee8857f72a5d8d4850c70"
+        },
+        {
+          "path": "EO_manuscript_integrated_v1_05.b85",
+          "sha256": "067ca1155e34fb7e52c90768d26d6f3959a1007bc6de5b108bf24ea85e322d64"
+        },
+        {
+          "path": "EO_manuscript_integrated_v1_06.b85",
+          "sha256": "c9033f70215b8f1ce50a6629d42c31f2f7e49ed3a050143c6d43c89ffa31ebef"
+        },
+        {
+          "path": "EO_manuscript_integrated_v1_07.b85",
+          "sha256": "eb792d4014a5e5c15b1a8038f14c58458193a0e422c53d88f8987ea6ac22454e"
+        },
+        {
+          "path": "EO_manuscript_integrated_v1_08.b85",
+          "sha256": "ba80f2186b4b55bbb99e2257b7ed533f2afbbc0c7ef354726b6e98255e957019"
+        }
+      ]
+    },
+    {
+      "name": "EO_supplementary.pdf",
+      "bytes": 761619,
+      "sha256": "089d9a89bfc9f492991b813b52163f70d277b33d7a8709b49637ceb775d9625c",
+      "pages": 29,
+      "title_from_document": "SUPPLEMENTARY MATERIAL\nSupplementary material: A Decision-Consequence Auditing\nFramework for Reliable Surrogate-Assisted Optimization in\nExpensive Engineering Design\nShu-Chuan Chua,*, Ya-Yu Zhanga, Zhenyu Mengb and Jia Zhaoc\naSchool of Computer Science, Nanjing University of Information Science and Technology,\nNanjing 210044, Jiangsu, China;bAffiliation to be confirmed;cAffiliation to be confirmed",
+      "embedded_files": 0,
+      "encrypted": false,
+      "all_rendered_pages_checked": true,
+      "source_sha256": "af09b49da736e88ee22c07cdf8914d8d690a1bb99c66a496cefb4b676cf59ccd",
+      "exact_archive_parts": [
+        {
+          "path": "EO_supplementary_integrated_v1_00.b85",
+          "sha256": "50dd35018660e40afbd046c992cb8c83ca4590384684caf71df19a51bd4d4725"
+        },
+        {
+          "path": "EO_supplementary_integrated_v1_01.b85",
+          "sha256": "d66b24d65b6e4df3f173a863f6645a08930a0a43b749d3844b1ba7c14d2ae7da"
+        },
+        {
+          "path": "EO_supplementary_integrated_v1_02.b85",
+          "sha256": "7caf2f471e97319c32228a106985dfb34d4848e5d62f21cf6e58220390b6283d"
+        },
+        {
+          "path": "EO_supplementary_integrated_v1_03.b85",
+          "sha256": "90d12affc20c149624dcc6051e05d9af39513df7e61c484a16c3aa12eff7fed6"
+        },
+        {
+          "path": "EO_supplementary_integrated_v1_04.b85",
+          "sha256": "ac718184dcad975fd4b95fac19f9673777ff1a1157933dc9bfedaac95ad9866f"
+        },
+        {
+          "path": "EO_supplementary_integrated_v1_05.b85",
+          "sha256": "a10a29a7366a617ca3a60ab0895e23f3c5589d9fd888931cf723477fca7c81a7"
+        },
+        {
+          "path": "EO_supplementary_integrated_v1_06.b85",
+          "sha256": "a3bab65db451b85d10962f3dc1341e8c8a515e8064a9c89637639a4573ea7ebd"
+        },
+        {
+          "path": "EO_supplementary_integrated_v1_07.b85",
+          "sha256": "1079bd49a91db0ee8fd7a99bf1da12d70cbb5e38af0397f4dfad7093b014d7dc"
+        }
+      ]
+    }
+  ]
+}

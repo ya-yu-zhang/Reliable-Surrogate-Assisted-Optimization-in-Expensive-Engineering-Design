@@ -1,0 +1,44 @@
+{
+  "baseline_commit": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "complete": true,
+  "max_attempts": 2,
+  "attempts_used": 2,
+  "attempts_remaining": 0,
+  "failures": 0,
+  "retries": 0,
+  "replacements": 0,
+  "new_independent_samples": 0,
+  "new_optimization_samples": 0,
+  "results": [
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r0_t101",
+      "frozen_selection_response_read": false,
+      "current_true_response_read": true,
+      "y": 14324.74354085319,
+      "stored_trial_lower": 232.52851491122834,
+      "required_root_tie_lower": 2872.944916486484,
+      "trial_lower_fraction_of_response": 0.01623264767345209,
+      "equilibrium_relative_residual": 1.067763590089568e-10,
+      "relative_energy_work_gap": 1.2953468138994764e-11,
+      "point_bound_loose": true,
+      "exact_response_disqualifies_superset": false
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r11_ei",
+      "frozen_selection_response_read": false,
+      "current_true_response_read": true,
+      "y": 9639.924763860803,
+      "stored_trial_lower": 200.59537471764204,
+      "required_root_tie_lower": 1420.9406735824214,
+      "trial_lower_fraction_of_response": 0.020808811233636985,
+      "equilibrium_relative_residual": 5.558362340749006e-11,
+      "relative_energy_work_gap": 2.3449484895805387e-11,
+      "point_bound_loose": true,
+      "exact_response_disqualifies_superset": false
+    }
+  ],
+  "decision": "Point bounds are weak at both fixed witnesses. Neither true response disqualifies the full-pool superset. Execute the specified GP development comparison with zero additional physical calls; results provide no new H1 judgments or H5 certificate.",
+  "raw_runner_field_note": "witness_true_response_read=false is inherited published-selection metadata. The complete status, true_response journal events, and current_true_response_read=true here describe the executed diagnosis."
+}

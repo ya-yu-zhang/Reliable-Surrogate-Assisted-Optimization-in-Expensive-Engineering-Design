@@ -1,0 +1,30 @@
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.09}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.4}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.12}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.08}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.21}}@{}}
+\caption{Retrospective operational comparators answering the same conditional h5 question at margin 0.001. Named and exact-class full-horizon readers are transparent baselines, not published-algorithm replications. The strongest simple class-aware fixed-depth comparator is the frozen v1 method itself. Alias-skipping calibration is post hoc and leaves all labels unchanged; original results are retained. Requests include cache reads and are not new physical attempts. No predictive or deployment advantage is inferred. Data table assembled using OpenAI Codex (GPT-6)-assisted Python.}\label{tab:operational_comparison}\tabularnewline
+\toprule
+Followup & Reader / rule & Classified & Errors & Requests & Selection loss (\%) \\
+\midrule
+\endfirsthead
+\toprule
+Followup & Reader / rule & Classified & Errors & Requests & Selection loss (\%) \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+MEAN & named full horizon & 25/25 & 0 & 720 & 0.0000 \\
+MEAN & exact class full horizon & 25/25 & 0 & 330 & 0.0000 \\
+MEAN & fixed depth v1 B18 & 25/25 & 0 & 252 & 0.0000 \\
+MEAN & immediate v1 B18 & 25/25 & 0 & 42 & 0.0000 \\
+MEAN & adaptive v1 B18 & 25/25 & 0 & 252 & 0.0000 \\
+MEAN & calibration original & 6/25 & 6 & 240 & 0.0000 \\
+MEAN & calibration skip alias posthoc & 6/25 & 6 & 136 & 0.0000 \\
+EI & named full horizon & 25/25 & 0 & 720 & 0.0000 \\
+EI & exact class full horizon & 25/25 & 0 & 330 & 0.0000 \\
+EI & fixed depth v1 B18 & 25/25 & 0 & 252 & 0.0000 \\
+EI & immediate v1 B18 & 25/25 & 1 & 42 & 0.0000 \\
+EI & adaptive v1 B18 & 25/25 & 0 & 252 & 0.0000 \\
+EI & calibration original & 6/25 & 6 & 240 & 0.2983 \\
+EI & calibration skip alias posthoc & 6/25 & 6 & 136 & 0.2983 \\
+\end{longtable}
+\endgroup
+

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "target": "Engineering Optimization",
+  "single_blind_review_confirmed": true,
+  "private_repository_confirmed": true,
+  "sole_current_scientific_baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "main_sha_confirmed_again_20261014": true,
+  "affiliations_b_c": "User selected continue leaving pending on 14 October 2026",
+  "journal_specific_author_instructions_full_page": "Fetch blocked (403/disabled); word/page/attachment limits not certified",
+  "publisher_ai_policy": "Current official page prohibits generated first manuscript/section drafts and AI creation or conclusion of article arguments. Known project assistance includes argument drafting; compliance unresolved, not reclassified as copyediting-only.",
+  "source_urls": {
+    "journal_scope_and_review": "https://www.tandfonline.com/journals/geno20",
+    "author_instructions": "https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=geno20",
+    "publisher_ai_policy": "https://authorservices.taylorandfrancis.com/editorial-policies/using-ai-in-your-research-and-manuscript-preparations/",
+    "cover_letter_guidance": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/writing-a-journal-article-cover-letter/",
+    "submission_checklist": "https://authorservices.taylorandfrancis.com/publishing-your-research/making-your-submission/article-submission-checklist/"
+  },
+  "new_physical_evaluations": 0,
+  "remaining_witness_attempts": 0,
+  "manuscript_id": null,
+  "portal_submission": false,
+  "manuscript_uploaded_to_journal": false,
+  "final_submit_ready": false,
+  "acceptance_or_novelty_sufficiency_guaranteed": false
+}

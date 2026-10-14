@@ -1,0 +1,24 @@
+\Needspace{24\baselineskip}
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.16}}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.47}}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.37}}@{}}
+\caption{Implementation contract of the independent conditional audit. Values and information boundaries are taken from the frozen collection/replay code. This is a factual specification, not a new convergence result.}\label{tab:review_contract}\tabularnewline
+\toprule
+Object & Recorded implementation & Evidence boundary \\
+\midrule
+\endfirsthead
+\toprule
+Object & Recorded implementation & Evidence boundary \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Frozen state & Own 100-label history, fitted kernel, root candidate pool and first-action map & No alternative or probe response enters the frozen root fit \\
+Continuation & Same declared mean or EI rule and candidate-seed stream; each branch updates its own history & The first action is the intervention; this target differs from whole-policy runs \\
+Horizon & h0: first action; h5: five further common-rule actions & Six prefix requests per completed branch in this implementation \\
+Target / margin & Baseline-minus-alternative final incumbent divided by initial incumbent; primary margin 0.001 & Better/tie/worse refers to the declared conditional h5 target \\
+Branch reuse & Same history, fitted kernel, action, continuation, context and seed stream & A same-point response may be shared more broadly; an equal utility does not merge branches \\
+Budget & Every branch-step request counts, including cache reads; primary B=18 & Not the number of additional physical attempts \\
+Evidence output & Exact alias; measured h5 outcome; h0 proxy; budget-incomplete abstention & No partial trajectory certificate or general prediction guarantee \\
+\end{longtable}
+\endgroup
+

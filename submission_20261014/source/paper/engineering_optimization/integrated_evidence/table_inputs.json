@@ -1,0 +1,41 @@
+{
+  "source_hashes": {
+    "paper/engineering_optimization/common_continuation/analysis.json": "09c052f1f49534fe8ea5a621e4b75d66f051c480b99d4d8d5741d61621518daa",
+    "paper/engineering_optimization/common_continuation/denominator_analysis.json": "adfa4e611b2c80bc2d20f9f4e7e08f14df458cfdad3b6fcb6e662681f2ec2f2d",
+    "paper/engineering_optimization/budget_audit/analysis.json": "7a3ee271accf045faa625fa30b1738fc5c99f5f1eebe59b23fca877af9aa44f5",
+    "paper/engineering_optimization/thermal_analysis.json": "6569e3638a8e5935340370ac32bd54f9365353d5691b1566381969cd78c13c6e",
+    "paper/engineering_optimization/paired_mesh/analysis.json": "463f8c35e38253e2af8658073b5ea95843d8ce623bf8e554675e64080b50c024"
+  },
+  "cumulative_physics_attempts": 55307,
+  "main_rows": [
+    [
+      "Archived common continuation",
+      "30 states within10 shared seeds",
+      "90 named /46 distinct contrasts;7 distinct changes in4 states",
+      282
+    ],
+    [
+      "Independent budget audit",
+      "10 new seed blocks;30 dependent states",
+      "Budget18: no allocation advantage; budget12: depth17/25, adaptive9/25",
+      2134
+    ],
+    [
+      "Small thermal verification",
+      "20 cases;2 source positions",
+      "2 gate/simple disagreements:1 tie and1 loss",
+      15888
+    ],
+    [
+      "Selected paired-grid check",
+      "14 contrasts;9 existing states;104 designs",
+      "Fixed h5 class stable in14/14, including8/8 differing endpoint pairs",
+      521
+    ]
+  ],
+  "original_numeric_rows_retained": true,
+  "new_argument_sections_drafted": false,
+  "author_confirmation": "pending",
+  "reported_optimizer_audit_physics_attempts": 55305,
+  "auxiliary_physical_bound_reference_attempts": 2
+}

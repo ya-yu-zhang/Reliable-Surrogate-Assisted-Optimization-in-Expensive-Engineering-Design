@@ -1,0 +1,200 @@
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.19}}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.39}}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.17}}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}@{}}
+\caption{Settings of separate evidence releases. These implementations differ and are not pooled as exact replications. All new GP records use alpha 1e-6 and normalized targets.}\label{tab:extension_settings}\tabularnewline
+\toprule
+Record & GP fitting & Candidate pool & Target \\
+\midrule
+\endfirsthead
+\toprule
+Record & GP fitting & Candidate pool & Target \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Original GP audit & Logged ARD Matérn-5/2; snapshot does not reoptimize & 4096 plus source action & 120 states; immediate alternatives \\
+Common continuation & Same source ARD theta; fixed during branch updates & First: original pool; followup 1024 & 30 archived states; h0/1/3/5; mean continuation \\
+Beam transfer & Isotropic Matérn-5/2; bounded L-BFGS-B, max 100 iterations per fit & 1024 & 20 fresh cases; full-policy pilots/continuations \\
+Independent budget & ARD theta fitted once at shared 50-label warm state, max 30 iterations; then fixed & 1024; 8 calibration probes & 10 new seeds; 100-label states; mean/EI followup 5 \\
+Thermal verification & Isotropic Matérn-5/2; fixed length 0.4; no hyperparameter fitting & 256 & 12 variables; 24 initial labels; 96 calls/workflow \\
+\end{longtable}
+\endgroup
+
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.77}}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.23}}@{}}
+\caption{Archived common-continuation denominators. Original 90-contrast reporting is retained; action equivalence supplies a supplementary denominator, not extra independent samples.}\label{tab:extension_denominators}\tabularnewline
+\toprule
+Reporting object & Count \\
+\midrule
+\endfirsthead
+\toprule
+Reporting object & Count \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Original named contrasts & 90 \\
+Baseline-action aliases & 34 \\
+Different-action named contrasts & 56 \\
+Distinct nonbaseline-action contrasts & 46 \\
+Named h0/h5 changes & 8 \\
+Distinct-action changes & 7 \\
+Distinct delayed non-ties & 6 \\
+States containing changes & 4 \\
+\end{longtable}
+\endgroup
+
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.21}}>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.14}}>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.21}}>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.21}}>{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.23}}@{}}
+\caption{Archived first-action contrasts with common posterior-mean continuation. Better/tie/worse counts use the original named-control denominator; each row has 10 dependent-source states and margin 1e-6. Positive advantage favours the named control.}\label{tab:extension_common}\tabularnewline
+\toprule
+Source history & Control & h0 B/T/W & h5 B/T/W & Median h5 (\%) \\
+\midrule
+\endfirsthead
+\toprule
+Source history & Control & h0 B/T/W & h5 B/T/W & Median h5 (\%) \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+EI & EI & 0/10/0 & 1/9/0 & 0.000 \\
+EI & PI & 0/10/0 & 1/8/1 & 0.000 \\
+EI & LCB & 0/10/0 & 1/9/0 & 0.000 \\
+PI & EI & 0/10/0 & 0/10/0 & 0.000 \\
+PI & PI & 0/10/0 & 0/10/0 & 0.000 \\
+PI & LCB & 0/10/0 & 0/10/0 & 0.000 \\
+UCB & EI & 1/7/2 & 0/7/3 & 0.000 \\
+UCB & PI & 0/9/1 & 0/8/2 & 0.000 \\
+UCB & LCB & 0/8/2 & 1/6/3 & 0.000 \\
+\end{longtable}
+\endgroup
+
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.12}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.2}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.13}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.13}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.22}}@{}}
+\caption{Independent budget replay: horizon 5, margin 0.001,25 distinct nonbaseline-action contrasts per continuation. Requests are conservatively charged response lookups across 30 states. Calibration is a constructed root-EI proxy gate, not a published diagnostic algorithm. Completed-horizon zero errors come from measuring the target; they are not predictive guarantees.}\label{tab:extension_budget}\tabularnewline
+\toprule
+Followup & Budget & Rule & Classified & Errors & Requests & Selection regret (\%) \\
+\midrule
+\endfirsthead
+\toprule
+Followup & Budget & Rule & Classified & Errors & Requests & Selection regret (\%) \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+MEAN & 12 & fixed depth & 17/25 & 0 & 204 & 0.0000 \\
+MEAN & 12 & adaptive & 9/25 & 0 & 204 & 0.0000 \\
+MEAN & 18 & calibration & 6/25 & 6 & 240 & 0.0000 \\
+MEAN & 18 & immediate & 25/25 & 0 & 42 & 0.0000 \\
+MEAN & 18 & fixed depth & 25/25 & 0 & 252 & 0.0000 \\
+MEAN & 18 & adaptive & 25/25 & 0 & 252 & 0.0000 \\
+EI & 12 & fixed depth & 17/25 & 0 & 204 & 0.0000 \\
+EI & 12 & adaptive & 9/25 & 0 & 204 & 0.0000 \\
+EI & 18 & calibration & 6/25 & 6 & 240 & 0.2983 \\
+EI & 18 & immediate & 25/25 & 1 & 42 & 0.0000 \\
+EI & 18 & fixed depth & 25/25 & 0 & 252 & 0.0000 \\
+EI & 18 & adaptive & 25/25 & 0 & 252 & 0.0000 \\
+\end{longtable}
+\endgroup
+
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.24}}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.27}}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}>{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.24}}@{}}
+\caption{Small thermal model: audit gate versus simple selector and fixed policies at 96 calls per workflow. Paired difference is 100(audit/comparator-1); negative favours audit. This authored 24x24 finite-volume verification is not an industrial expense benchmark.}\label{tab:extension_thermal}\tabularnewline
+\toprule
+Source & Comparator & Median difference (\%) & Win/tie/loss \\
+\midrule
+\endfirsthead
+\toprule
+Source & Comparator & Median difference (\%) & Win/tie/loss \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+central source & simple selector & 0.000 & 0/9/1 \\
+central source & fixed mean & 3.961 & 1/3/6 \\
+central source & fixed ei & 4.961 & 2/2/6 \\
+central source & fixed lcb & 4.961 & 2/2/6 \\
+offset source & simple selector & 0.000 & 0/10/0 \\
+offset source & fixed mean & 0.202 & 4/1/5 \\
+offset source & fixed ei & 2.350 & 2/2/6 \\
+offset source & fixed lcb & 2.350 & 1/3/6 \\
+\end{longtable}
+\endgroup
+
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.09}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.27}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.16}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.16}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.18}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.14}}@{}}
+\caption{Selected fixed endpoint-design checks. All 14 h5 classes persist in six mesh/mapping contexts; 8 pairs have different endpoint designs and 6 are same-design ties. Selection was frozen from known contrasts and is not a new independent optimization sample. Fine means 200x100.}\label{tab:extension_mesh}\tabularnewline
+\toprule
+Case & Selection group & Original class & Native fine & Transferred fine & Endpoints \\
+\midrule
+\endfirsthead
+\toprule
+Case & Selection group & Original class & Native fine & Transferred fine & Endpoints \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+S01 & changed & better & better & better & different \\
+S02 & changed & better & better & better & different \\
+S03 & changed & worse & worse & worse & different \\
+S04 & changed & worse & worse & worse & different \\
+S05 & changed & worse & worse & worse & different \\
+S06 & changed & worse & worse & worse & different \\
+S07 & changed & better & better & better & different \\
+S08 & independent proxy mismatch & worse & worse & worse & different \\
+S09 & unchanged different action & tie & tie & tie & same \\
+S10 & unchanged different action & tie & tie & tie & same \\
+S11 & unchanged different action & tie & tie & tie & same \\
+S12 & unchanged different action & tie & tie & tie & same \\
+S13 & structural alias & tie & tie & tie & same \\
+S14 & structural alias & tie & tie & tie & same \\
+\end{longtable}
+\endgroup
+
+\Needspace{16\baselineskip}
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.56}}>{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.44}}@{}}
+\caption{Numerical flags and absolute objective variation for 104 selected design points. Recovery records retain the original failed gate. Objective differences are not known solver errors; fixed-design ranking stability does not imply physical convergence.}\label{tab:extension_numerical_flags}\tabularnewline
+\toprule
+Check & Measured record \\
+\midrule
+\endfirsthead
+\toprule
+Check & Measured record \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Original strict source-response gate & Failed on fourth paid attempt; threshold 1e-8 unchanged \\
+Coarse source agreement flags & 1/104 unique points \\
+Flagged coarse relative discrepancy & 6.7982718e-08 \\
+Maximum equilibrium relative residual & 6.1852705e-07 \\
+Maximum energy/work relative gap & 3.5447877e-07 \\
+Maximum native 200x100 objective difference & 26.5739\% \\
+Maximum transferred 200x100 objective difference & 32.0590\% \\
+Fine-grid optimization / convergence certification & Neither performed nor established \\
+\end{longtable}
+\endgroup
+
+\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.37}}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.16}}>{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.47}}@{}}
+\caption{Updated cumulative paid physics-attempt ledger. FE and thermal solves are both counted; recovery adds cost, not independent samples. Source/calibration GP times in the budget release were not separately recorded, so this is not an end-to-end speedup measurement.}\label{tab:extension_cost}\tabularnewline
+\toprule
+Stage & Paid attempts & Boundary \\
+\midrule
+\endfirsthead
+\toprule
+Stage & Paid attempts & Boundary \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+Earlier GP/transfer stages & 36480 & Includes both 18120-call transfer executions \\
+Archived common continuation & 282 & 273 original attempts plus 9 record recovery attempts \\
+Thermal verification & 15888 & 7200 retained +22 checks +1080 recovery +7586 earlier unavailable \\
+Independent budget verification & 2134 & All initialization/source/probe/oracle/mesh calls \\
+Selected paired-grid verification & 521 & 4 stopped-run attempts +517 recovery-execution attempts \\
+Auxiliary physical-bound development & 2 & Reference solves only; no new optimizer samples \\
+Full revision cumulative paid attempts & 55307 & Includes auxiliary development; earlier historical experiments excluded \\
+\end{longtable}
+\endgroup
+

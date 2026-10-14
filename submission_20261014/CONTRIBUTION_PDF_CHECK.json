@@ -1,0 +1,29 @@
+{
+  "pdfs": [
+    {
+      "file": "output/pdf/contribution_closure_20261014/Manuscript_20261014.pdf",
+      "pages": 31,
+      "sha256": "8fbbfa447c2a8de8db1741287e43e48d62eb949f4c29a384b4e65a5b03797e4b",
+      "bytes": 924652,
+      "new_section_pages": [
+        22
+      ],
+      "text_outside_page": []
+    },
+    {
+      "file": "output/pdf/contribution_closure_20261014/Supplement_20261014.pdf",
+      "pages": 37,
+      "sha256": "69c77e30b9d35d3cd3d4ee6e80b766348f2e53702332ca64fb376795fcdb0d48",
+      "bytes": 766173,
+      "new_section_pages": [
+        36
+      ],
+      "text_outside_page": []
+    }
+  ],
+  "new_physical_evaluations": 0,
+  "final_submit_ready": false,
+  "visual_review_pending": false,
+  "all_68_current_pages_rendered_and_visually_reviewed": true,
+  "new_sections_individually_reviewed": true
+}

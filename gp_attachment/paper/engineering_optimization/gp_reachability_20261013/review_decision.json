@@ -1,0 +1,94 @@
+{
+  "baseline_commit": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "witness_phase": {
+    "baseline_commit": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+    "complete": true,
+    "max_attempts": 2,
+    "attempts_used": 2,
+    "attempts_remaining": 0,
+    "failures": 0,
+    "retries": 0,
+    "replacements": 0,
+    "new_independent_samples": 0,
+    "new_optimization_samples": 0,
+    "results": [
+      {
+        "dataset": "archived_common_mean",
+        "state": "gp_ei_shared_init_r0_t101",
+        "frozen_selection_response_read": false,
+        "current_true_response_read": true,
+        "y": 14324.74354085319,
+        "stored_trial_lower": 232.52851491122834,
+        "required_root_tie_lower": 2872.944916486484,
+        "trial_lower_fraction_of_response": 0.01623264767345209,
+        "equilibrium_relative_residual": 1.067763590089568e-10,
+        "relative_energy_work_gap": 1.2953468138994764e-11,
+        "point_bound_loose": true,
+        "exact_response_disqualifies_superset": false
+      },
+      {
+        "dataset": "previous_holdout",
+        "state": "beam_holdout_r11_ei",
+        "frozen_selection_response_read": false,
+        "current_true_response_read": true,
+        "y": 9639.924763860803,
+        "stored_trial_lower": 200.59537471764204,
+        "required_root_tie_lower": 1420.9406735824214,
+        "trial_lower_fraction_of_response": 0.020808811233636985,
+        "equilibrium_relative_residual": 5.558362340749006e-11,
+        "relative_energy_work_gap": 2.3449484895805387e-11,
+        "point_bound_loose": true,
+        "exact_response_disqualifies_superset": false
+      }
+    ],
+    "decision": "Point bounds are weak at both fixed witnesses. Neither true response disqualifies the full-pool superset. Execute the specified GP development comparison with zero additional physical calls; results provide no new H1 judgments or H5 certificate.",
+    "raw_runner_field_note": "witness_true_response_read=false is inherited published-selection metadata. The complete status, true_response journal events, and current_true_response_read=true here describe the executed diagnosis."
+  },
+  "retained_groups": {
+    "archived_common_mean": {
+      "all_seed_groups_retained": 10,
+      "all_metadata_states_retained": 30,
+      "alias_only_states": 4,
+      "active_nontrivial_seed_groups": 10
+    },
+    "previous_holdout": {
+      "all_seed_groups_retained": 10,
+      "all_metadata_states_retained": 30,
+      "alias_only_states": 13,
+      "active_nontrivial_seed_groups": 6
+    }
+  },
+  "GP_phase": {
+    "stored_response_validation": true,
+    "downstream_judgment_increment": false,
+    "complete_cost_benefit": false,
+    "H5_reachable_history_extension": false,
+    "passed": false
+  },
+  "costs": {
+    "project_before": 55307,
+    "new_witness_attempts": 2,
+    "GP_phase_new_physics_attempts": 0,
+    "project_after": 55309,
+    "realized_unique_state_design_bound_queries": 44146,
+    "max_unique_bound_designs": 45000,
+    "large_physics_solves_this_protocol": 2,
+    "reduced_2x2_system_attempts": 44146,
+    "fixed_kernel_systems_constructed": 114,
+    "outer_action_sets_constructed": 228,
+    "rational_exclusion_checks_in_outer_construction": 232564,
+    "rational_proof_checks_in_construction_recheck": 232564,
+    "rational_proof_checks_after_serialization": 232564,
+    "total_rational_infeasibility_calls_in_development_phase": 697692,
+    "fixed_kernel_native_replay_models": 228,
+    "historical_first_and_next_response_records_validated": 228,
+    "realized_deployment_savings": false
+  },
+  "decision": "STOP: no new independent optimizer experiment; downstream judgment increment false, complete cost benefit false, H5 reachable-history extension false.",
+  "github_publication": {
+    "new_content_published": false,
+    "automatic_review_rejected": true,
+    "reason": "The request authorized analysis against the repository, but did not explicitly authorize publishing the generated research payload.",
+    "empty_branch_points_to_baseline": "research/gp-reachability-20261013-c5d11c"
+  }
+}

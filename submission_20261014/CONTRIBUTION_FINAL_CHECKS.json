@@ -1,0 +1,29 @@
+{
+  "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "selected_baseline_files_verified": 122,
+  "historical_numeric_rows_retained": {
+    "main": 32,
+    "supplement": 251
+  },
+  "current_bib_entries": 40,
+  "new_exclusions_rationally_rechecked": 232564,
+  "science_unit_tests_recorded": 31,
+  "scientific_code_unchanged_in_document_overlay": true,
+  "current_pdf_pages": {
+    "Manuscript_20261014.pdf": 31,
+    "Supplement_20261014.pdf": 37
+  },
+  "new_physical_evaluations": 0,
+  "witness_attempts_remaining": 0,
+  "previous_downloaded_closure_zip_unchanged": true,
+  "paired_grid_complete_raw_reconstruction": false,
+  "metadata_and_policy_applicability_pending": true,
+  "actual_submission": false,
+  "manuscript_id": null,
+  "final_submit_ready": false,
+  "new_H1_threshold_diagnosis_complete": true,
+  "additional_synthetic_tests_passed": 4,
+  "engineering_efficacy_gate_certified": false,
+  "novelty_sufficiency_certified": false,
+  "all_68_current_main_and_supplement_pages_visually_reviewed": true
+}
