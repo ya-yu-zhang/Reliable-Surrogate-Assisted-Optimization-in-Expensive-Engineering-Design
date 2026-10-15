@@ -30,6 +30,7 @@ The private repository's URL is provenance, not reviewer access. The archive pre
 
 ```sh
 python3 -m src.prepare_submission_20261014
+python3 -m src.focus_paper_contribution_20261015
 ```
 
 The official publisher class and bibliography style are excluded. Obtain the official bundle `https://files.taylorandfrancis.com/InteractCADLaTeX.zip` identified in REPRODUCE_PROJECT_CLOSURE.md and place interact.cls and tfcad.bst beside the active TeX. A working TeX Live can compile:
@@ -70,3 +71,23 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m src.benchm
 This reconstructs fixed binary kernels without hyperparameter fitting, new bound queries, physical evaluations or independent optimization samples. The preserved 15 October record replaces unpreserved earlier timing claims. The router returns only its specified scalar Boolean certificate predicate. H1/H5/independent gates remain unchanged.
 
 Per the user's new instruction the private branch saves source text and derived results. PDFs/ZIPs are kept locally by the user and supplied again when needed. No PDF/ZIP upload is part of this increment.
+
+## Frozen nominal-band diagnosis and closest-method review (15 October 2026)
+
+The current scientific positioning is a specialized certified numerical implementation and verification study. The source-level review records the classical affine-envelope correspondence and the elementary threshold guard; no new geometric principle or optimization-policy improvement is claimed. See paper/engineering_optimization/contribution_closure_20261015/RESULT_AND_CONTRIBUTION.md and CLOSEST_METHOD_REVIEW.md.
+
+The nominal diagnostic reads the already available coefficient records and verified band intervals. It creates no GP/kernel system, bound query, physics, fit or independent sample and does not rerun the existing timing/proof comparison. Its selection rule and two branch identities were fixed before diagnostic outputs. All 228 index sets agree, no additional action is retained by bands, and all 908 shared intervals widen. The second selected branch is a baseline branch, not an independent policy win. Exact example endpoints and input hashes accompany the results.
+
+Optional zero-solver diagnostic, using the existing input layout:
+
+```sh
+python3 -m src.diagnose_nominal_band_contract
+```
+
+That entry point rewrites the diagnostic outputs. Preserve the recorded results before optional reproduction. To rebuild only the current manuscript text from saved results:
+
+```sh
+python3 -m src.focus_paper_contribution_20261015
+```
+
+The earlier ZIP provides frozen inputs; it does not contain the 15 October source/result updates. Combine it with the current private branch. The current source verification covers the latest TeX and references in draft mode, with no PDF export or visual-layout certification. No claim of final submission readiness follows from that check.

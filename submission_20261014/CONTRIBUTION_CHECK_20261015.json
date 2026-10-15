@@ -19,6 +19,18 @@
   "optimization_policy_performance_improvement_demonstrated": false,
   "complete_physical_deployment_savings_demonstrated": false,
   "journal_novelty_sufficiency_certified": false,
+  "closest_method_source_review_completed": true,
+  "shared_envelope_core_is_classical": true,
+  "new_asymptotic_complexity_result_claimed": false,
+  "scalar_guard_is_elementary_use_rule": true,
+  "positioning": "Specialized certified numerical implementation and verification study",
+  "nominal_band_cases": 228,
+  "additional_band_actions_observed": 0,
+  "shared_nominal_band_intervals_widened": 908,
+  "predetermined_engineering_cases": 2,
+  "positive_engineering_action_rescue_demonstrated": false,
+  "Engineering_Optimization_originality_threshold_demonstrated": false,
+  "target_fit_reviewer_inference": "Substantial originality/desk-review risk as a new optimization method; no journal decision inferred",
   "PDF_or_ZIP_uploaded": false,
   "PDF_or_ZIP_created_this_step": false,
   "author_facts_and_venue_conditions_still_pending": true,
@@ -29,5 +41,40 @@
   "latex_unresolved_references_or_overfull_boxes": {
     "main": [],
     "supplement": []
-  }
+  },
+  "draft_mode_checks": {
+    "mode": "pdflatex -draftmode plus BibTeX; no PDF output or visual QA",
+    "documents": {
+      "main": {
+        "source": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+        "source_sha256": "5b65b2b2272c80f94e2128cabf97bd003ced4a95ceb236d168382c5268c5a076",
+        "command_return_codes": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "unresolved_or_overfull_log_lines": [],
+        "bibtex_warning_or_error_lines": [],
+        "PDF_generated": false
+      },
+      "supplement": {
+        "source": "submission_20261014/source/paper/engineering_optimization/EO_supplementary.tex",
+        "source_sha256": "97ef8976097122bfc01be902b7a9ad3a2e164809e2f257012f8eea796a2b20bb",
+        "command_return_codes": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "unresolved_or_overfull_log_lines": [],
+        "bibtex_warning_or_error_lines": [],
+        "PDF_generated": false
+      }
+    }
+  },
+  "current_bounded_plan_completed": true,
+  "current_bounded_plan_new_GP_reconstructions": 0,
+  "existing_strong_comparison_or_full_proof_replay_rerun_this_plan": false,
+  "current_bounded_plan_new_physical_evaluations": 0
 }

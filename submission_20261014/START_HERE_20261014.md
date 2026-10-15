@@ -1,3 +1,5 @@
+**最近方法/工程诊断已完成（2026-10-15）：**当前稿定位为认证数值实现与验证研究。经典包络核心已明确归因；228 个案例的 band 与 nominal 索引全部相同，未观察到额外动作挽救。不能据计算加速宣称已达到新优化方法的原创性门槛。最终解释见 `paper/engineering_optimization/contribution_closure_20261015/RESULT_AND_CONTRIBUTION.md`，逐案例与预定例子见 `results/nominal_band_diagnostic_20261015/`。旧输入包需与当前分支更新配合；本轮不生成或上传 PDF/ZIP。
+
 # 10月14日投稿准备包
 
 **2026-10-15 当前版本：**方法与正文已更新，优先阅读
