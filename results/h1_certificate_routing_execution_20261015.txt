@@ -1,0 +1,19 @@
+{
+  "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "all_case_count": 228,
+  "nonbaseline_case_count": 142,
+  "domain_cover_and_saturation_identity_exact_in_all_cases": true,
+  "scalar_predicate_equal_in_all_cases": true,
+  "nonbaseline_scalar_requests_early_rejected": 142,
+  "all_scalar_requests_early_rejected": 228,
+  "nonbaseline_action_set_callback_calls": 0,
+  "new_H1_positive_judgments": 0,
+  "H5_or_independent_gate_changed": false,
+  "new_physical_evaluations": 0,
+  "new_bound_queries": 0,
+  "new_GP_hyperparameter_fits": 0,
+  "new_independent_optimization_samples": 0,
+  "remaining_witness_attempts": 0,
+  "scope": "Scalar no-better certificate predicate only; cannot replace requested full sets or infer actual inferiority, tie, better or optimizer-performance benefit.",
+  "cost_interpretation": "Executed routing calls no action-set callback in rejected cases. Historical bound/physics cost is not refunded; no complete deployment or physical savings measured."
+}

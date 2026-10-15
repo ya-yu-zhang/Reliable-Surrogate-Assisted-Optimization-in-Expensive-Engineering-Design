@@ -1,0 +1,9 @@
+test_closed_threshold_equality_requires_next_bound (tests.test_h1_certificate_routing.CertificateRoutingTests.test_closed_threshold_equality_requires_next_bound) ... ok
+test_failed_pending_cap_never_calls_reader (tests.test_h1_certificate_routing.CertificateRoutingTests.test_failed_pending_cap_never_calls_reader) ... ok
+test_next_bound_still_blocks_certificate (tests.test_h1_certificate_routing.CertificateRoutingTests.test_next_bound_still_blocks_certificate) ... ok
+test_stronger_response_domain_changes_cap (tests.test_h1_certificate_routing.CertificateRoutingTests.test_stronger_response_domain_changes_cap) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.000s
+
+OK

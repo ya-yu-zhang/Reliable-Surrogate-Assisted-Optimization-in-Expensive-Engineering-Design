@@ -1,0 +1,44 @@
+{
+  "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "complete": true,
+  "cases": 228,
+  "contexts": 43,
+  "branches": 114,
+  "all_exact_sets_and_intervals_equal": true,
+  "exclusions_per_method_per_pass": 232564,
+  "all_exclusions_checked_in_every_repetition": true,
+  "timing_repetitions": 3,
+  "coefficient_seconds_sum": 2.414335966010185,
+  "timings": {
+    "fraction_envelope": {
+      "construct": 5.5528321420051725,
+      "check": 2.5662514380182984,
+      "workflow": 10.533419546033656
+    },
+    "filtered_pairwise": {
+      "construct": 3.3661319620041468,
+      "check": 2.6404139959986423,
+      "workflow": 8.420881924012974
+    },
+    "integer_envelope": {
+      "construct": 1.2436847089975345,
+      "check": 2.5542929850062137,
+      "workflow": 6.212313660013933
+    }
+  },
+  "filtered_pairwise_over_integer_construction": 2.706579841057465,
+  "filtered_pairwise_over_integer_workflow": 1.3555146093499226,
+  "integer_workflow_faster_cases": 228,
+  "coefficient_bits_range": [
+    84,
+    103
+  ],
+  "cost_scope": "Coefficient reconstruction, filtering and independent proof checking; excludes I/O, grading, physics and historical bound acquisition.",
+  "new_physical_evaluations": 0,
+  "new_bound_queries": 0,
+  "new_GP_hyperparameter_fits": 0,
+  "new_independent_optimization_samples": 0,
+  "remaining_witness_attempts": 0,
+  "H1_H5_or_independent_study_gate_changed": false,
+  "complete_physical_deployment_savings_demonstrated": false
+}
