@@ -437,5 +437,31 @@
     "independent_optimization_gate_opened": false,
     "journal_specific_word_limit_and_upload_limits_verified": false,
     "actual_submission_performed": false
+  },
+  "contribution_20261015": {
+    "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+    "focused_main_text_updated": true,
+    "complete_older_main_preserved": "submission_20261014/source/paper/engineering_optimization/archival/EO_full_evidence_20261014.tex",
+    "all_32_baseline_main_numeric_rows_retained_in_archive": true,
+    "all_251_supplement_numeric_rows_retained": true,
+    "strong_comparison_cases": 228,
+    "filter_speed_ratio": 2.706579841057465,
+    "three_component_speed_ratio": 1.3555146093499226,
+    "nonbaseline_scalar_requests_early_rejected": 142,
+    "nonbaseline_action_set_callback_calls": 0,
+    "new_numerical_test_groups_passed": 10,
+    "new_physical_evaluations": 0,
+    "new_bound_queries": 0,
+    "new_GP_hyperparameter_fits": 0,
+    "new_independent_optimization_samples": 0,
+    "remaining_witness_attempts": 0,
+    "H1_H5_or_independent_gate_changed": false,
+    "optimization_policy_performance_improvement_demonstrated": false,
+    "complete_physical_deployment_savings_demonstrated": false,
+    "journal_novelty_sufficiency_certified": false,
+    "PDF_or_ZIP_uploaded": false,
+    "PDF_or_ZIP_created_this_step": false,
+    "author_facts_and_venue_conditions_still_pending": true,
+    "final_submit_ready": false
   }
 }

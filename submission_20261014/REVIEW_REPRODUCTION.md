@@ -49,3 +49,24 @@ python3 -m src.finalize_contribution_20261014
 python3 -m unittest tests.test_h1_bound_bottlenecks -v
 ```
 This reads already recorded bounds only. It adds no physical evaluation and leaves the original efficacy gate false.
+
+## Current 15 October contribution
+
+The current manuscript evaluates the integer filter, independently optimized pairwise control and scalar-certificate router. The earlier full manuscript remains in archival/EO_full_evidence_20261014.tex. Do not run the older preparation builder alone, which restores the earlier presentation.
+
+With the existing GP attachment, the ten new numerical test groups and read-only routing check are:
+
+```sh
+python3 -m unittest tests.test_filtered_exact_action_sets tests.test_h1_certificate_routing -v
+python3 -m src.verify_h1_certificate_routing
+```
+
+Recorded comparison inputs/source hashes, 228 case results and certificate hashes are in results/gp_strong_comparison_20261015/. Optional retiming must use a different directory:
+
+```sh
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m src.benchmark_strong_action_sets --out results/gp_strong_retimed --repeats 3
+```
+
+This reconstructs fixed binary kernels without hyperparameter fitting, new bound queries, physical evaluations or independent optimization samples. The preserved 15 October record replaces unpreserved earlier timing claims. The router returns only its specified scalar Boolean certificate predicate. H1/H5/independent gates remain unchanged.
+
+Per the user's new instruction the private branch saves source text and derived results. PDFs/ZIPs are kept locally by the user and supplied again when needed. No PDF/ZIP upload is part of this increment.

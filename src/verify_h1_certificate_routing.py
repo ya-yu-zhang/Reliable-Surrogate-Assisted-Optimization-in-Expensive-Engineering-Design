@@ -36,6 +36,12 @@ def run(root):
                                   None if v[1] is None else Fraction(int(v[1][0]),int(v[1][1])))
                            for k,v in result['exact_intervals'].items()}
                 assert min(lo for lo,_ in intervals.values())==domain
+                covered_to=domain
+                for lo,hi in sorted(intervals.values(),key=lambda pair:pair[0]):
+                    if covered_to is None:break
+                    assert lo<=covered_to,'Gap in closed-domain coverage'
+                    covered_to=None if hi is None else max(covered_to,hi)
+                assert covered_to is None,'Missing unbounded domain tail'
                 next_values=[binary(prior['raw_pool_lowers'][rec['eligible_pool_indices'][i]]) for i in result['indices']]
                 original_joint=min(initial,*(min(max(pending,intervals[i][0]),value)
                                        for i,value in zip(result['indices'],next_values)))

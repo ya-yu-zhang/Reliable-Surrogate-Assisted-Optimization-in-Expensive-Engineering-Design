@@ -1,5 +1,12 @@
 # 当前贡献裁决和可恢复源码
 
+**2026-10-15 更新：**当前科学稿优先阅读
+`paper/engineering_optimization/contribution_closure_20261015/RESULT_AND_CONTRIBUTION.md`
+和 `submission_20261014/CONTRIBUTION_CHECK_20261015.json`。
+当前 TeX 已聚焦整数动作集、优化成对强对照和标量证书路由。下面的 31/37 页
+PDF 与旧计时属于早前版本，不能当作本次新稿或新计时结果。根据用户新指示，
+不再上传 PDF/ZIP；它们由用户本地保存。当前源码和派生结果保存在同一私有分支。
+
 科研基线保持58f539c2d0738b20c7d0d4889fe8d808a03a3019。本分支是研究与稿件增量，不表示已提交、已录用、已证明优化收益或整个仓库已可公开。
 
 优先阅读 submission_20261014/CONTRIBUTION_DECISION_20261014.md。

@@ -18,7 +18,7 @@
   "cost_interpretation": "Executed routing calls no action-set callback in rejected cases. Historical bound/physics cost is not refunded; no complete deployment or physical savings measured.",
   "source_hashes": {
     "src/h1_certificate_routing.py": "a57374159bbac4b0efa8a285b76286a5442b147c16b1808c1854eb22b102800c",
-    "src/verify_h1_certificate_routing.py": "d1246dd2de3cc80c580d6a6064ce04c391d5da3ee494938b8e9248751d05d348",
+    "src/verify_h1_certificate_routing.py": "cb1268d1c24dbe2539c0e1d63f35bcca2bc66bc9a3e325f1ca3f0302b2c4b938",
     "tests/test_h1_certificate_routing.py": "054175f893ea390960ace296bee12769f5af8be5c516692143e0cd000ec19e8c"
   },
   "input_hashes": {

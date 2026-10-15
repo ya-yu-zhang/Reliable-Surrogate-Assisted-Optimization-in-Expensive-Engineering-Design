@@ -35,172 +35,32 @@
 }
 \maketitle
 \begin{abstract}
-A useful surrogate must support a credible evaluation decision, not only accurate predictions. We develop a conditional audit that distinguishes action changes, finite-horizon consequences and information costs. For a fixed-kernel Gaussian process with one unknown nonnegative response, enclosed affine posterior means define a response-domain outer set of possible next actions. An exact rational envelope computes the complete relaxed-band set in $O(M\log M)$ arithmetic operations, retains isolated ties and supplies at most two rival indices per exclusion. On 114 archived engineering branches, both declared response domains retain 2--7 of 1024 actions and include every stored next action. All 232,564 original exclusion proofs and binary coefficient systems are reverified. The envelope produces identical action sets with 3.19-fold faster set construction, or 2.62-fold including separate certificate replay, relative to the frozen pairwise implementation. These are computational-stage improvements. The engineering bounds remain too weak to certify any of 71 nonbaseline H1 contrasts; H5 adaptive allocation also gives no independent diagnostic advantage. Full deployment savings and physical accuracy of the decision margin remain unestablished. The study contributes an executable, proof-producing action-set operator and an engineering evaluation separating computational efficiency from decision sufficiency.
+Surrogate-assisted engineering optimization can require decisions before a pending response is observed. We develop a proof-producing action filter and a scalar certificate router for this setting. Fixed-kernel Gaussian-process coefficient bands define closed response intervals for every possible next mean action. Exact integer envelope predicates preserve isolated ties and emit short exclusions checked by an independent rational reader. Against an optimized pairwise control with exact fallback, all 228 archived beam-design branch/domain outputs agree. Filtering is 2.71 times faster; charging coefficient reconstruction and independent checking gives a 1.36-fold improvement. A domain-cover identity then establishes when the relaxed H1 lower certificate cannot succeed. The router preserves its Boolean result in all cases and avoids the action-set callback in all 142 nonbaseline branch/domain requests. These dependent development cases support an engineering computation increment. They do not establish physical deployment savings or a better optimization policy. The unchanged negative H1/H5 findings identify the physical-information limits of otherwise correct and efficient surrogate reasoning.
 \end{abstract}
 \begin{keywords}
-expensive engineering optimization; Gaussian processes; numerical certificates; affine envelopes; decision auditing
+surrogate-assisted engineering optimization; Gaussian processes; certified action sets; exact arithmetic; certificate routing
 \end{keywords}
-\noindent{\small\textit{Preparation copy: author affiliations b and c remain to be supplied.}}
+\noindent{\small\textit{Preparation copy: affiliations b and c remain to be supplied.}}
 
-\hypertarget{introduction}{%
-\section{Introduction}\label{introduction}}
+\section{Introduction}
 
-Many engineering optimization problems depend on simulations, model training, or experiments whose evaluations dominate the available computational or physical budget. Surrogate-assisted evolutionary algorithms and Bayesian optimization reduce this burden by fitting an inexpensive predictive model and deciding which candidate should receive the next exact evaluation \citep{ref01,ref02,ref03,ref04,ref05}. Model management is therefore the operational core of surrogate assistance: surrogate prediction is converted into an acquisition or management decision, that decision allocates a paid evaluation, and the resulting label changes the subsequent optimization state. A reliable predictor is useful only when this chain improves the use of the available budget.
+Surrogate-assisted engineering optimization converts predictions into choices of expensive design evaluations \citep{ref01,ref02,ref03,ref35}. A useful computational question arises before a pending response is observed: which eligible designs can still be chosen by a declared posterior-mean continuation? A sound answer must keep every permitted minimizer, including actions that are optimal only at an isolated response. An engineering decision aid also needs to recognize when computing that answer cannot change its requested certificate.
 
-This distinction matters directly in simulation-based engineering design. A monitoring signal can redirect finite-element analyses without improving structural performance, even when its aggregate error diagnostic appears satisfactory. Reliable regional Kriging search has connected uncertainty to restricted search regions and infill decisions \citep{ref35}, while diagnostic benchmarking has exposed differences between standard-test and real-application algorithm performance \citep{ref34}. These studies motivate inspection of the route from surrogate information to paid engineering evaluations. The present beam application examines this route within a constrained design family; broader relevance to materials, manufacturing, robotics, and neural architecture search remains motivation rather than application validation in this study.
+We address these two computations within an existing finite design workflow. The first output is a complete relaxed-band action set with exact response intervals and independently verifiable exclusions. The second is a Boolean H1 lower-certificate test. Their output contracts differ: a scalar rejection does not supply an action set or establish actual design inferiority. Keeping those contracts explicit allows computational work to be removed without changing the requested result.
 
-Recent methods use Gaussian-process uncertainty, ensembles, local models, temporal information, or adaptive infill rules to balance exploitation and exploration \citep{ref06,ref07,ref08,ref09,ref10,ref11}. Online and conformal calibration research asks whether predictive distributions or bounds retain their intended reliability under sequential selection \citep{ref12,ref13,ref14,ref15}. Calibration alone, however, does not establish that a signal changes candidate ordering, selects a better candidate at the same state, or improves a closed-loop trajectory after the surrogate and candidate distribution adapt. These properties form a decision pathway and must be evaluated separately.
+The affine structure of fixed Gaussian-process (GP) updates and envelope computations is established \citep{ref40}. Reliable geometric predicates and exact arithmetic are also established \citep{ref41}. The proposed increment is their specialized integration into a binary-system coefficient-band contract, a faster exact implementation, and an executable certificate router with an algebraic sufficiency limit. We do not claim a new convex-geometric principle, a new acquisition policy or global convergence of an optimizer.
 
-The main computational object is a certified response-domain outer set of possible next actions for a fixed-kernel Gaussian process. Numerical coefficient bands account for the binary linear system; exact envelope queries produce closed feasible intervals and short exclusion witnesses. The engineering evaluation places this operator inside a conditional first-action audit: a learned state and objective context are fixed, the first action is varied, and each branch follows a declared continuation with the same external candidate stream and its own observed history. The horizon, comparison margin and reader-request budget specify the judgment. The audit differs from changing an entire policy throughout an optimization trajectory.
+The engineering evaluation uses all retained states of two previously observed structural-design datasets. We implement an independent, optimized pairwise control that returns the same complete intervals and checkable exclusions. We charge common coefficient reconstruction and independent proof checking. A separate domain-cover identity predicts why none of the nonbaseline H1 lower certificates can succeed with the available pending-point information; its routing implementation is verified on every retained branch/domain case. The original adverse optimization and horizon results remain in the supporting evidence.
 
-The evaluation separates computational correctness and cost from decision sufficiency. For the operator, we check complete action-set equality, closed ties and every exclusion witness, then compare construction times on identical coefficient bands. For downstream engineering use, we ask whether narrower action information changes a certifiable judgment and whether complete cost improves on the strongest simple same-target reader. Calibration, conditional intervention and whole-policy validation remain separate evidence objects. The implemented audit record, source-specific settings and frozen observation schedules are specified in Table~\ref{tab:conditional_algorithm}.
+\section{Related work and the computation being compared}
 
-The outputs are an executable conditional record, a same-target comparison with class-aware fixed depth, and explicit request/physical-attempt/execution ledgers. The independent primary record contains no better h5 alternatives and demonstrates no adaptive-allocation advantage. Exact caching, structural aliases and the immediate-query accounting proposition are implementation checks, rather than standalone optimization innovations. A descriptive opportunity analysis retains each dataset's original margin and every original seed group. Its supporting sources and the separate failed development stages appear in the supplement.
+Surrogate-assisted search and Bayesian optimization select evaluations through explicit model-management and acquisition rules \citep{ref01,ref02,ref03,ref18}. Rigorous surrogate-management frameworks require their own search assumptions \citep{ref38}; no such global convergence result follows from the present filter. Knowledge-gradient and lookahead policies evaluate future information to select observations \citep{ref39,ref40}. Our declared continuation instead takes a posterior-mean minimum on a finite eligible pool with fixed hyperparameters.
 
-The study combines a proof-producing action-set operator with a bounded method evaluation. It does not establish a new acquisition rule, a positive-case diagnostic advantage, a superior selector or performance-preserving savings over complete common continuation. The residual controller, immediate GP interventions and independent policy transfer provide complementary evidence within their stated targets; their reporting units are not pooled as independent samples. The computational contribution is an exact coefficient-band envelope with constant-size exclusion witnesses and a measured 3.19-fold construction improvement over the frozen pairwise reference. Its engineering evaluation supplies the boundary between sharper action information and a useful downstream judgment. The original learning-curve and audit failures remain part of the contribution's scope.
+For exact nominal lines, classical affine acceptance sets already describe which lines can be minimal. Coefficient bands change the output contract. For example, nominal means $1$, $33/32$, $z$ and $2-z$ never select the second constant. With that constant's intercept enclosed by $[31/32,35/32]$, its relaxed-band interval becomes $[31/32,33/32]$. A nominal reader that removes it is therefore insufficient. This is a synthetic numerical example, not a new engineering sample or a claim that coupled GP coefficient errors realize every independent box corner.
 
-Reliability here means the credibility and utility of a surrogate-management decision, rather than structural failure-probability design.
+Our strong control uses vectorized floating-point pairwise proposals, exact checks, and complete exact scans for unresolved candidates. It does not construct the shared envelope. It is an optimized same-output reference, not a claim to represent every library or the best possible implementation. Exact-predicate foundations are acknowledged \citep{ref41}; their use alone is not presented as an original discovery.
 
-\hypertarget{related-work}{%
-\section{Related Work}\label{related-work}}
-
-\hypertarget{surrogate-assisted-optimization-and-engineering-applications}{%
-\subsection{Surrogate-assisted optimization and engineering applications}\label{surrogate-assisted-optimization-and-engineering-applications}}
-
-Surrogate-assisted evolutionary computation has developed a broad range of models and management policies for expensive optimization \citep{ref01,ref02}. Early frameworks combined evolutionary search with approximate fitness functions or Gaussian-process surrogates \citep{ref03,ref16}. Later work introduced selective ensembles, local/global models, classification-assisted search, and adaptive infill rules \citep{ref04,ref05,ref17,ref18,ref19}. Differential evolution remains a common search engine in this area; the taxonomy and empirical evidence synthesized by Pan et al.~\citep{ref31} show that exponential-crossover behavior depends strongly on operator design and parameter control. A recent survey identifies model construction and model management as separate determinants of performance \citep{ref02}. Controlled experiments with adjustable surrogate accuracy likewise show that prediction accuracy affects preselection, individual-based, and generation-based management differently \citep{ref20}.
-
-Engineering applications show how these ideas enter expensive computational workflows. Hierarchical surrogate evaluation reduces neural-architecture search cost \citep{ref27}, deep surrogate models support multi-objective robotic linkage design \citep{ref28}, and physics-informed Gaussian-process regression with adaptive Bayesian optimization combines finite-element knowledge with welding-parameter selection \citep{ref29}. Surrogate-assisted PSO has also been applied to multi-UAV path planning \citep{ref33}. These studies motivate reliability checks at the decision layer because prediction accuracy and evaluation savings are valuable only when surrogate outputs lead to useful paid evaluations.
-
-Uncertainty-aware SAEAs typically make uncertainty candidate dependent. BGP-SAEA combines a boosting framework with Gaussian-process uncertainty \citep{ref06}, while recent large-scale methods use lower-confidence-bound Gaussian-process models and diversity search \citep{ref07}. For expensive multi-objective optimization, MLPSGP-SAEA combines multilayer-perceptron variable grouping, sparse Gaussian processes, and an adaptive sparse-and-diverse infill criterion \citep{ref32}. Other work adapts differential-evolution selection to errors in both decision and objective spaces \citep{ref08}, tightens the search space for high-dimensional expensive problems \citep{ref09}, or draws on multiple spatial, temporal, and performance information sources \citep{ref10}. These mechanisms can change candidate ranking, local search regions, or population updates.
-
-Competitive SAEAs also use evolutionary populations and learned relations rather than a scalar acquisition alone. DRSO retains unevaluated promising solutions in a relation-model-assisted evolutionary loop to preserve useful population information under expensive-evaluation budgets \citep{ref30}. Its public author implementation makes it suitable for a source-frozen engineering comparison, while its distinct population mechanism broadens the evidence beyond Gaussian-process acquisitions.
-
-\hypertarget{reliability-aware-surrogate-model-management}{%
-\subsection{Reliability-aware surrogate model management}\label{reliability-aware-surrogate-model-management}}
-
-Bayesian optimization has incorporated online calibration. Deshpande et al.~\citep{ref12} calibrate predictive distributions and update them online. Localized online conformal Bayesian optimization constructs spatially varying thresholds and a calibrated posterior \citep{ref13}. Selection-conditional methods such as JOMI use reference sets under explicit invariance and exchangeability conditions \citep{ref14}. Temporal conformal prediction has also been considered in surrogate-assisted evolutionary optimization \citep{ref15}. The cross-model residual journal examined here does not establish the assumptions required by those methods and is treated as an empirical monitor without transferred guarantees.
-
-\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
-\caption{Scope of representative reliability and model-management approaches.}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Approach
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Primary quantity assessed
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Direct decision question
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Closed-loop consequence required
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Approach
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Primary quantity assessed
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Direct decision question
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Closed-loop consequence required
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Gaussian-process uncertainty & Predictive confidence & Does uncertainty modify an acquisition value? & Usually evaluated by optimizer performance \\
-Conformal prediction & Marginal or localized coverage & Does a calibrated set or bound satisfy its stated guarantee? & Not implied by coverage alone \\
-Adaptive infill & Evaluation selection & Which candidate receives the next expensive label? & Evaluated through search performance \\
-Candidate-dependent SAEA management & Ranking, region, or population update & Does surrogate information change the search action? & Method-specific \\
-Relation-model DRSO & Pairwise fitness/category relations and unevaluated population & Does evolutionary surrogate management preserve promising search information? & Evaluated by paid-budget endpoint \\
-Decision-consequence audit & Calibration, decision influence, utility, and final outcome & Does the signal change a paid decision and make it more useful? & Required as the final audit level \\
-\end{longtable}
-
-\endgroup
-
-Several studies compare Bayesian, evolutionary, and hybrid surrogate strategies under constrained budgets \citep{ref21}, and others show that unevaluated but surrogate-predicted candidates can influence evolutionary diversity \citep{ref22}. These optimizers are complementary to the present audit. A change in a coupled trajectory does not, by itself, isolate what the mechanism would have selected at the same learned state. The additional GP intervention freezes that state and candidate pool before consulting alternative outcomes, then evaluates longer-horizon policies separately.
-
-\hypertarget{operational-distinction-from-existing-model-management-and-selection}{%
-\subsection{Operational distinction from existing model management and selection}\label{operational-distinction-from-existing-model-management-and-selection}}
-
-Reliable regional Kriging supplies a variance-guided search region and adaptive infill mechanism \citep{ref35}; surrogate-management frameworks can also provide convergence guarantees under their assumptions \citep{ref38}. The present method does not replace these search rules or inherit their convergence guarantees. It evaluates the route from an existing rule to a paid action and the evidence needed to justify that route. Hanawa et al.~\citep{ref20} vary the accuracy of a pseudo-surrogate to compare management strategies. Here the intervention instead holds an actually learned GP state fixed and varies its acquisition rule; posterior uncertainty and training labels are not replaced by synthetic accuracy levels.
-
-Diagnostic benchmarking \citep{ref34} studies effectiveness, efficiency, reliability, parameter controllability, and runtime dynamics on real applications. Our unit of intervention is the mechanism decision within a frozen optimization state, followed by a distinct policy-level validation. Algorithm selection and its data-acquisition cost are established topics \citep{ref36,ref37}. In particular, trajectory-based warm-starting reuses search information when switching algorithms \citep{ref37}. Our twenty-step selection workflow deliberately discards pilot labels from validation training to measure selection transfer under an intact information boundary. It is a diagnostic case, not a claimed advance over warm-starting selectors; a production workflow could reuse pilot information and would require its own validation.
-
-\begingroup\renewcommand\thetable{1a}
-
-\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
-\caption{Relation to representative prior work and the evidence object added here. The comparison concerns the stated studies, not the absence of these ideas throughout the literature.}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Representative work
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Reported focus
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Operational evidence in the present implementation
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Representative work
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Reported focus
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Operational evidence in the present implementation
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Reliable regional Kriging \citep{ref35} & Variance-guided reliable regions and sequential infill & Exact chosen-action equivalence and separate intervention labels at a frozen state \\
-Surrogate management \citep{ref38} & Managing approximation models with convergence analysis & An evidence audit without inheriting an optimizer's convergence guarantee \\
-Adjustable-accuracy management study \citep{ref20} & Search response to controlled pseudo-surrogate accuracy & Fixed learned posterior, identical candidate pool, and acquisition-only intervention \\
-Diagnostic benchmarking \citep{ref34} & Effectiveness, efficiency, reliability, parameter controllability, and runtime dynamics across real applications & Mechanism-level decision effects connected to separate closed-loop outcomes \\
-Two-step lookahead \citep{ref39} & Model-based expected future improvement for choosing evaluations & Recorded first actions followed by actual responses under a declared common continuation \\
-Frugal selection \citep{ref36} and trajectory warm-starting \citep{ref37} & Selection data cost and reuse of search information & Independent pilot-to-validation transfer, exact paid ledger, and explicit endpoint/cost boundaries \\
-\end{longtable}
-
-\endgroup
-
-\addtocounter{table}{-1}\endgroup
-
-The reusable technical object is the frozen decision record plus its equivalence classes, response ledger, and subsequent validation record. Neither logging, matched initialization, additive ranking invariance, nor counting diagnostic overhead is claimed as a standalone new idea. The combined record makes the signal-to-action claim and information boundary inspectable; the present results do not establish a diagnostic-quality increment over matched-state complete continuation. The evidence tests that method on a residual controller and four GP acquisition policies; it does not establish general superiority across all surrogate or selector families.
-
-\hypertarget{decision-consequence-auditing-framework-for-surrogate-assisted-model-management}{%
-\section{Decision-Consequence Auditing Framework for Surrogate-Assisted Model Management}\label{decision-consequence-auditing-framework-for-surrogate-assisted-model-management}}
-
-\subsection{Conditional first-action object}\label{conditional-audit-object}
-
-The record is $(s,c,a,r,H,\tau,B,\mathcal{P},\mathcal{E},q,\mathcal{L})$: frozen learned state, objective context, first action, continuation, additional-action horizon, margin, request allowance, observed prefix, exact action class, output reason and cost ledger. With baseline mean first action and positive initial incumbent, $d_j(H)=[m_0(H)-m_j(H)]/m_{\mathrm{init}}$. The independent primary target retains $H=5$, $\tau=0.001$ and $B=18$ per state. The archived common continuation retains $\tau=10^{-6}$. A complete branch has six response positions, h0 through h5. Equal endpoints do not define action equivalence. An immediate tie cannot certify a later tie, and an incomplete nonalias target abstains.
-
-\hypertarget{optimization-system-and-information-boundary}{%
-\subsection{Optimization system and information boundary}\label{optimization-system-and-information-boundary}}
-
-A deterministic objective f(x) is minimized over a bounded continuous domain under budget B. At evaluation t, the labeled history contains only observations acquired before t. A surrogate fitted to that history supplies predictions for a candidate set, while a monitoring signal and model-management rule determine which candidate, region, evaluation gate, restart, or stopping action is used. The audit treats the full chain from surrogate output to paid evaluation as its object of analysis.
-
-Before the objective is called, a prediction-before-label journal stores the candidate set or its reproducible identifier, selected point, surrogate outputs, monitoring signal, incumbent, decision mode, support indicators, and random-state identifiers. The record is flushed before the label is obtained. Labels acquired solely for frozen-state diagnostics remain separate and never return to the optimizer. This boundary prevents outcome information from leaking into the decision being audited.
-
-The role of the framework in a surrogate-assisted optimization loop is shown in Figure 1.
-
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/main_figure_1.pdf}
-\caption{Decision-consequence auditing framework for surrogate-assisted optimization.}
-\end{figure}
-
-Figure 1 locates the three audit levels along the operational chain from an expensive engineering problem to surrogate prediction, model-management choice, paid evaluation, and closed-loop outcome. Calibration assesses the signal encountered by the optimizer; decision analysis tests whether the signal changes a choice and improves common-state utility; closed-loop validation measures the final consequence after histories diverge.
+\section{Certified action-set computation}
 
 \subsection{Certified response-domain action sets}\label{sec:certified_sets}
 
@@ -223,7 +83,7 @@ This is an exact relaxed-band problem and an outer approximation for the coupled
 
 \textit{Proof.} An allowed minimizer has $L_i\leq\mu_i\leq\mu_j\leq U_j$ for every competitor, proving inclusion. Sort upper lines by decreasing slope and build their lower envelope $E(z)=\min_j U_j(z)$ with exact rational intersections. Parallel dominated lines can be removed from the envelope; a tied boundary value remains represented by its neighbors. Each line is inserted and removed at most once. For every original candidate, $E-L_i$ is a continuous concave piecewise-affine function with decreasing segment slopes. Binary search locates its maximum and the two possible zero crossings on $[\ell,\infty)$. A nonnegative maximum yields the closed feasible interval, including a singleton. A negative maximum lies at the domain boundary, on a parallel segment or between two adjacent envelope lines. Those one or two constraints already make the candidate infeasible and supply its witness. Sorting costs $O(M\log M)$, the envelope scan $O(M)$, and the searches $O(\log M)$ per candidate. Rational bit complexity is additional.\hfill$\square$
 
-\textbf{Algorithm 2. Exact band-envelope audit.} (1) Enclose coefficients using the verified inverse gate. (2) Build the shared lower envelope of upper lines. (3) Query every original lower line, retaining all closed-domain ties. (4) Emit exact feasible intervals or at most two rival indices. (5) Independently replay each exclusion as rational one-dimensional infeasibility. (6) Apply identical already available point bounds and account separately for GP construction, pruning, proof replay and physical work. The algorithm accepts no pending response. The synthetic unit checks compare complete intervals with an independent all-pairs rational oracle and include a boundary-only lowest-index minimizer.
+\textbf{Algorithm 1. Exact band-envelope audit.} (1) Enclose coefficients using the verified inverse gate. (2) Build the shared lower envelope of upper lines. (3) Query every original lower line, retaining all closed-domain ties. (4) Emit exact feasible intervals or at most two rival indices. (5) Independently replay each exclusion as rational one-dimensional infeasibility. (6) Apply identical already available point bounds and account separately for GP construction, pruning, proof replay and physical work. The algorithm accepts no pending response. The synthetic unit checks compare complete intervals with an independent all-pairs rational oracle and include a boundary-only lowest-index minimizer.
 
 For one continuation, the available pending-point bound $p$, next-point bound $\lambda_i$ and feasible response interval $R_i$ imply the joint incumbent lower bound
 \begin{equation}
@@ -231,524 +91,110 @@ J=\min\left(m_{\mathrm{init}},\min_{i:R_i\ne\varnothing}\min\{\max(p,\inf R_i),\
 \end{equation}
 The nonnegative-range reader additionally receives the same pending-point trial bound as the full-pool reader. A paid baseline endpoint and $[J,m_{\mathrm{init}}]$ can certify a category only when the complete effect interval lies in its declared category. This H1 calculation does not certify a five-step adaptive history.
 
-\hypertarget{decision-pathways-and-ranking-invariance}{%
-\subsection{Decision pathways and ranking invariance}\label{decision-pathways-and-ranking-invariance}}
 
-A monitoring mechanism can affect optimization through candidate-specific ranking, an evaluation gate, a restart or stopping rule, a change of search region or population, or a stochastic exploration controller. The first audit step identifies at least one such path before additional expensive experiments are authorized.
+\subsection{Exact meaning of the relaxed bands}
 
-\textbf{Lemma 1 (ranking invariance under a candidate-independent additive correction).} At evaluation t, suppose two rules receive an identical indexed candidate set, use deterministic and identical tie-breaking, and are evaluated in exact arithmetic. If every supported candidate shares the same additive correction \(c_t\), then minimizing \(H_t(x)=\mu_t(x)+c_t\) returns the same minimizer index as minimizing \(\mu_t(x)\).
+\textbf{Proposition 1 (independent-band realizability).} For a fixed $z\geq0$, $z\in R_i$ if and only if some selection of coefficients from the independent bands makes action $i$ a posterior-mean minimizer at $z$.
 
-\textbf{Proof.} For any indexed candidates \(x_i\) and \(x_j\), \(H_t(x_i)-H_t(x_j)=\mu_t(x_i)-\mu_t(x_j)\). Every strict comparison and exact tie is therefore preserved under the stated tie-breaking rule. The same indexed minimizer follows. $\square$
+\textit{Proof.} Necessity is the enclosure argument in Theorem 1. For sufficiency choose both lower endpoints for candidate $i$ and both upper endpoints for every other candidate. Nonnegative $z$ makes these choices attain $L_i(z)$ and $U_j(z)$ simultaneously. The defining inequalities then make $i$ minimal, with equality allowed. This statement concerns the independent-band relaxation, not realization by the coupled GP coefficients.\hfill$\square$
 
-\textbf{Corollary 1.} If two configurations also share initialization, candidate generation, exploration decisions, all random streams and stochastic operators, numerical precision, and optimizer-state updates, and differ only by replacing the common-correction minimizer with the mean minimizer, their trajectories are identical by induction over evaluations. Finite-precision agreement is an implementation property and is checked separately in the experiment audit.
+\subsection{Common-scale integer envelope}
 
-This result identifies a structural limitation of candidate-independent corrections; it does not invalidate uncertainty-aware surrogate management in general. Candidate-dependent posterior uncertainty, expected improvement, lower-confidence bounds, support-dependent rules, evaluation gates, restarts, and stopping policies may create decision paths that Lemma 1 does not remove.
+Every finite binary coefficient is a dyadic rational. Choose a common power-of-two denominator $D$ and write $A_i^\pm=Da_i^\pm$, $B_i^\pm=Db_i^\pm$. Each necessary inequality is
+\begin{equation}
+ (A_i^- - A_j^+)z\leq B_j^+-B_i^- .\label{eq:integer_band}
+\end{equation}
+Sorting and parallel-line tests are integer operations. Breakpoints are unreduced numerator/positive-denominator pairs and are compared by cross-products. At $z=p/q$, the envelope-gap sign is the sign of $(A_j^+-A_i^-)p+(B_j^+-B_i^-)q$. Reduced fractions are constructed for returned intervals and envelope breakpoints, rather than inside every predicate.
 
-\hypertarget{three-audit-levels-and-promotion-gate}{%
-\subsection{Three audit levels and promotion gate}\label{three-audit-levels-and-promotion-gate}}
+Every original lower line is queried even if its corresponding upper line disappears from the envelope. Closed equality is retained throughout. The integer representation preserves Theorem 1's exact output and arithmetic-operation count, with integer bit complexity additional. Extreme exponent differences can enlarge $D$; the operation count is not a machine-time guarantee. A separate checker reconstructs binary coefficients as rational values and checks only the candidate and its at most two rivals. It does not trust the hull or its intersections.
 
-Common-history calibration fits the same frozen model and candidate pool, then evaluates monitoring losses and failures without updating the search. Common-state decision analysis compares the action with and without the mechanism at the same state; when actions differ, separate diagnostic labels measure true one-step utility. Independent closed-loop experiments then allow each policy to update its own history and evaluate final optimization behavior. One-step improvement diagnoses immediate exploitation value but is not a necessary condition for useful exploration. A lower immediate gain therefore identifies a need for delayed-value assessment rather than, by itself, grounds for stopping an exploration mechanism. The following procedure clarifies the interpretation of audit stages; it does not retrospectively alter any frozen experimental protocol or statistical comparison.
+\subsection{Independent filtered pairwise control}
 
-\textbf{Evidence stages for a surrogate-assisted model-management audit.}
+For each block of 64 candidates, NumPy ratios propose extremal lower and upper constraints from all competitors. Every proposed exclusion is checked using Eq.~\eqref{eq:integer_band} in exact integers. Unresolved candidates receive a complete exact scan, returning their exact feasible interval or a one/two-rival infeasibility witness. Overflow or NaN in a proposal can cause fallback but cannot justify an unchecked exclusion. For fixed block size, proposal work is quadratic with linear workspace. Both algorithms include band validation and common-scale conversion in their filtering timer.
 
-\textbf{Step 1 --- Specify.} Freeze the surrogate, candidate generator, monitoring signal, management or acquisition rule, expensive objective context, optimizer budget, audit-request budget, target horizon and margin, and deterministic replay information. In the independent conditional implementation, h0 is the first action and H=5 denotes five further common-rule actions. Output: protocol and information boundary.
+\section{Domain-cover saturation and certificate routing}
 
-\textbf{Step 2 --- Trace.} Follow the signal through ranking, evaluation, region, population, restart, stopping, or stochastic-exploration decisions. Gate: at least one candidate-dependent or otherwise actionable path.
+Let $d\geq0$ be the declared domain endpoint, $p$ the already available pending-point lower bound, $m_0$ the initial incumbent, and $\mathcal R=\{i:R_i\ne\varnothing\}$. Write $l_i=\inf R_i$. A paid baseline endpoint $B$ and fixed relative margin $\epsilon$ define $T=B-\epsilon m_0$. The scalar lower-certificate request is whether $J\geq T$, with $J$ from Eq.~\eqref{eq:joint_lower}.
 
-\textbf{Step 3 --- Record and calibrate.} Persist every decision before its label. If the mechanism makes a calibrated-error claim, assess that claim on appropriately separated diagnostic data. Gate: an intact information boundary and evidence supporting the stated claim. Mechanisms that make no calibration claim are not required to pass a coverage test.
+\textbf{Proposition 2 (pending-bound saturation).} Finite ordered coefficient bands on $[d,\infty)$ give
+\begin{equation}
+ \min_{i\in\mathcal R}l_i=d,\qquad
+ J=\min\{m_0,\max(p,d),\min_{i\in\mathcal R}\lambda_i\}.
+ \label{eq:saturation}
+\end{equation}
 
-\textbf{Step 4 --- Test common-state utility.} Freeze optimization states and candidate pools, compare baseline and mechanism actions, and label only the prespecified diagnostic alternatives. Report decision-change frequency and immediate utility. For exploration, region, restart, or stopping mechanisms, prespecify a delayed-value assessment where needed. The implemented point-action intervention uses the same frozen training history, fitted kernel and first candidate pool, then the same declared continuation and candidate-seed stream with each branch updating its own history. For positive initial incumbent $m_{\mathrm{init}}$, the recorded conditional target is $d_j(H)=[m_0(H)-m_j(H)]/m_{\mathrm{init}}$, where $m_0$ is the baseline-branch incumbent. The primary implementation uses $H=5$ and margin $\tau=0.001$. Gate: an identifiable decision consequence and sufficient evidence to justify the next diagnostic expenditure; lower one-step improvement alone does not reject exploration.
+\textit{Proof.} At every $z\geq d$, choose an index $j$ minimizing the finite set of upper lines. Band ordering gives $L_j(z)\leq U_j(z)\leq U_k(z)$ for every $k$, so $z\in R_j$. The sets cover the domain, and at least one contains $d$. All lower endpoints are at least $d$, hence their minimum is $d$. Distributing the finite minima in Eq.~\eqref{eq:joint_lower} and using $\min_i\max(p,l_i)=\max(p,d)$ gives the identity.\hfill$\square$
 
-\textbf{Step 5 --- Validate the closed loop.} Run independent optimization on held-out instances or engineering conditions under matched optimizer budgets, including when exploration requires a delayed-value test. Record diagnostic calls separately and include them in any deployment-cost comparison. Output: final objective consequence and total cost boundary.
+\textbf{Corollary (sound early rejection).} If $\min\{m_0,\max(p,d)\}<T$, this particular lower certificate cannot pass, regardless of further next-point bounds. A lazy reader can return the same Boolean false without constructing an action set. Equality requires continuing to the next-bound test.
 
-\textbf{Step 6 --- Decide.} Promote, revise, stop, or retain an inconclusive decision using prespecified outcome tolerances and cost limits. Report the first unsupported claim and the evidence needed to resolve it. Promotion requires closed-loop evidence for the intended engineering use. Output: stage-wise audit record. The independent replay reports an exact branch alias, a measured target-horizon outcome, an h0 proxy, or an abstention because the target remains incomplete. For nonalias branches, better/tie/worse certification requires both baseline and alternative to reach h5; an immediate tie does not certify a later tie. Table~\ref{tab:review_contract} maps this implementation to its recorded inputs and outputs.
+\textbf{Algorithm 2. Output-aware routing.} If complete actions/intervals are requested, run Algorithm 1 with integer predicates. For a scalar no-better certificate, first evaluate the corollary. If it rejects, return certificate failure without invoking the action-set reader. Otherwise obtain the retained actions and their already available next-point bounds, and compare Eq.~\eqref{eq:saturation} with $T$.
 
-\input{integrated_evidence/review_method_records.tex}
-\textbf{Algorithm 1. Frozen conditional first-action audit.} Table~\ref{tab:conditional_algorithm} gives its exact observation schedules and outputs.
+The corollary does not establish that an alternative is actually better, tied or inferior. It does not replace a requested complete category interval, a selection rule, or an H5 reachable-history analysis. The pending bound must already be available or paid for. The minimum algebra and early-exit principle are elementary; the useful result is their exact consequence for this audit and an executable route that avoids an ineffective computation.
 
-\input{integrated_evidence/submission_algorithm.tex}
+For the two frozen domains, $d=0$ or $d=p$, so $\max(p,d)=p$. Consequently action-set refinement alone cannot lift this lower certificate above the pending bound. This is stronger than merely counting failed terms at the observed states: it identifies a structural limit of the declared computation.
 
-The framework can return a positive result. Classical GP expected improvement is a candidate-dependent positive control: both its predicted improvement and uncertainty vary across candidates, so its acquisition can change ranking and passes the structural decision-influence check. Passing that first check does not guarantee superior endpoints; it authorizes empirical utility and closed-loop evaluation.
+\section{Engineering setting and verification protocol}
 
-\hypertarget{diagnostic-cost-and-scope-of-deployment-claims}{%
-\subsection{Diagnostic cost and scope of deployment claims}\label{diagnostic-cost-and-scope-of-deployment-claims}}
+\subsection{Structural design problem and fixed information}
 
-The optimization budget and the audit budget are different quantities. The total physical-call cost includes new optimizer evaluations, additional diagnostic evaluations, and recovery or verification calls; previously paid deterministic labels reused from an archive are identified separately. A comparison of optimizer endpoints at equal budgets does not establish that the audit itself saves evaluations. In the independent replay, each branch-step request is charged, including a cache read; a completed branch needs $H+1=6$ requests. Its primary budget 18 is per state. For $K$ exact branch classes, full-baseline/full-alternative reporting can complete at most $\min(K-1,\max(0,\lfloor B/(H+1)\rfloor-1))$ nonbaseline comparisons under this request contract. This elementary capacity does not bound additional physical solves or audits with a justified early certificate.
+EngiBench Beams2D v1 models half a symmetric Messerschmitt--Bolkow--Boehm beam \citep{ref23}. The domain has $100\times50$ bilinear elements, left-boundary horizontal symmetry, a lower-right vertical support and a unit downward top-left nodal load. SIMP uses stiffness limits $10^{-9}$ and 1, exponent 3, and Poisson ratio 0.3; smaller compliance is preferred. Nineteen effective logits plus one anchor form a $4\times5$ coarse field, interpolated to $50\times100$; a logistic shift fixes mean density to 0.35. This is a smooth 19-dimensional engineering design family.
 
-The independent internal validation uses 907,200 optimization evaluations and 1,990,656 additional diagnostic labels. Those full-pool diagnostics support mechanism analysis on inexpensive benchmark functions, but are not proposed as the default screening cost for expensive engineering simulations. A bounded engineering audit should prespecify states, label the union of selected alternatives where possible, and stop or report inconclusive when its diagnostic limit is reached. Any claim of net savings must compare the audited workflow with a prespecified unaudited workflow, including diagnostic overhead. Section~\ref{longer-horizon-policies-load-position-transfer-and-total-cost} reports a complete paid-workflow comparison with endpoint losses; it does not establish performance-preserving net savings.
+Both complete ten-group datasets and all 60 metadata states are retained. Seventeen action-alias-only states need no bound construction. The remaining 43 contexts contain 114 first-action branches with eligible pools of 1024 actions. Two domains give 228 dependent branch/domain cases. These are already observed development data; the former holdout is not a new unseen validation set.
 
-\hypertarget{decision-equivalence-and-the-minimum-immediate-diagnostic-budget}{%
-\subsection{Decision equivalence and the minimum immediate diagnostic budget}\label{decision-equivalence-and-the-minimum-immediate-diagnostic-budget}}
+The frozen two-witness diagnosis has consumed both permitted attempts. The recorded true responses, approximately 14324.74 and 9639.92, are far above their trial lower bounds, approximately 232.53 and 200.60. This supports a weak-point-bound diagnosis at those witnesses. Equilibrium residuals do not establish mesh or physical accuracy at the decision margin. This study adds no physical evaluation, replacement, retry, bound query, hyperparameter fit or independent optimization sample.
 
-For a frozen state \(s\), let \(a_j(s)\) be the exact point selected by policy j and let \(c\) identify the deterministic objective context: simulator, physical condition, parameterization, and numerical configuration. Policies are immediately decision-equivalent when they select the same bitwise point under the same \(c\). This is a local relation. Equivalent first actions do not make later policies equivalent, and labels must not be reused across changed physical conditions or noisy objectives without an additional justification. Whole conditional branches share a record only when the frozen history, fitted kernel, first action, objective context, continuation and deterministic seed stream also coincide; across other states, exact point/context equality permits response reuse only. The reported implementations evaluate point-acquisition rules; conditional restart, region and stopping interventions are not independently validated here.
+\subsection{Same-output timing and separate routing verification}
 
-Let \(X\) be the union of distinct context-point pairs selected by all prespecified states and policies, and let \(A\) contain the exact responses that the auditor is permitted to reuse after decisions have been frozen. For incumbent \(m_s\) and fixed positive scale \(v_s\), the reported immediate utility is \(u_j(s)=\max(0,m_s-f_c(a_j(s)))/v_s\). The additional deterministic query requirement is
+The computational comparison uses the Fraction envelope, the filtered pairwise control and the integer envelope. All receive identical binary bands and domains. Each branch's fixed kernel and cross matrix are reconstructed three times; hashes and coefficient arrays must match the frozen records exactly. The comparison does not expose the pending or next response when constructing sets. Exact equality with the earlier intervals preserves the already recorded next-action inclusion without creating new label validation.
 
-\[N_{\mathrm{diag}}=|X\setminus A|.\]
+Three repetitions rotate method order. Reported totals sum casewise medians for coefficient reconstruction, filtering and independent rational proof replay. Coefficient work is timed once per branch and charged identically to both domains. Every method's complete proof set is checked in every repetition. Python 3.12, NumPy 2.3.5, SciPy 1.17.0 and scikit-learn 1.8.0 use one BLAS thread. Timings, branches and domains are dependent; no independent-sample significance claim is made.
 
-\textbf{Proposition 1 (minimum worst-case immediate diagnostic queries).} Suppose the objective is an unrestricted deterministic oracle, all selected points and incumbents are frozen, and each unqueried response can independently lie on either side of at least one associated incumbent while all other responses remain fixed. Querying each member of \(X\) outside \(A\) once suffices to report every immediate utility. In the worst case, fewer queries cannot determine all utilities exactly.
+The separate router verification reconstructs the historical scalar result from archived complete intervals as an oracle, verifies Eq.~\eqref{eq:saturation} exactly, then evaluates the lazy route. Its callback contains the actual integer action-set operation and next-bound reader. Reference verification work is outside the routing call; we report callback counts, not an end-to-end speed claim for this exercise. No historical physical/bound acquisition cost is removed.
 
-\textbf{Proof.} Sufficiency follows by assigning the same exact response to every context-point equivalence class and reusing only permitted responses. For necessity, consider an unqueried member \(x\) in a class with incumbent \(m\). Two objectives can agree on all available and queried responses while taking values \(m-\delta\) and \(m+\delta\) at \(x\) for \(\delta>0\) (\(\delta<m\) for a positive objective); the resulting utilities differ. No procedure using only those shared observations can distinguish them. For a finite set of distinct points, disjoint smooth local interpolants can realize these assignments, so smoothness alone does not remove the ambiguity. Querying each undetermined member resolves it. A certified response bound or a restricted physical objective class may reduce this worst-case requirement; no such additional exact inference is used here. $\square$
+\section{Results}
 
-The proposition is an allocation rule for a specified exact diagnostic report, not a lower bound on all possible optimization audits. It does not prove that the queries improve search. Section~\ref{frozen-state-intervention-on-gp-acquisition-policies} illustrates both the within-state equivalence reduction and the additional reduction from permitted source-response and diagnostic-cache reuse. The source label at a frozen original action is consulted only after the intervention choices are fixed; it never enters the predecision GP fit. All thresholds for a deployment decision must still be fixed for the intended engineering use before its validation outcomes are observed. The added transfer study supplies descriptive evidence, not a retrospectively chosen promotion threshold.
+\subsection{Correct outputs and same-output computational improvement}
 
-\hypertarget{experimental-design}{%
-\section{Experimental Design}\label{experimental-design}}
+All 228 exact action sets and feasible intervals agree across the three algorithms. Each complete pass has 232,564 exclusions, all accepted by the independent checker in every repetition. Retained sets contain 2--7 actions and inherit inclusion of every stored next action. The scaled coefficients have 84--103 bits on these inputs.
 
-\hypertarget{representative-monitored-optimizer-and-search-framework}{%
-\subsection{Representative monitored optimizer and search framework}\label{representative-monitored-optimizer-and-search-framework}}
+Six numerical test groups compare both implementations against an independent all-pairs Fraction oracle: closed singleton/domain ties, duplicate parallel candidates, floating-proposal overflow, subnormal and mixed exponents, randomized interval bands, and nominally dominated but band-feasible actions. Four router tests cover early rejection without callback use, closed-threshold equality, a stronger valid domain and a failing next-point bound. These are program tests, not new engineering samples.
 
-A temporal residual monitor is used as the representative audited mechanism. For a selected point x\_\allowbreak t, the standardized signed residual is r\_\allowbreak t={[}y\_\allowbreak t-mu\_\allowbreak t(x\_\allowbreak t){]}/s\_\allowbreak t, where s\_\allowbreak t is the standard deviation of the current training labels and is replaced by one if it is zero. Historical residuals retain their prediction-time models and scales. For candidate x, the monitor forms H\_\allowbreak t(x)=mu\_\allowbreak t(x)+s\_\allowbreak t q\_\allowbreak t(x), where q\_\allowbreak t(x) is the nonnegative weighted 0.9 quantile of at most the latest 100 residuals. Temporal weights have a half-life of 25 evaluations; spatial variants use a Gaussian kernel and an effective-sample-size support guard of 20.
+\begin{table}[htbp]\centering\small
+\caption{Sum of casewise component medians over all 228 dependent branch/domain cases. I/O, grading, physical evaluations and historical bound acquisition are excluded.}\label{tab:strong_comparison}
+\begin{tabular}{lrrrr}\toprule
+Method & Coefficients (s) & Filter (s) & Proof check (s) & Sum (s)\\\midrule
+Fraction envelope & 2.4143 & 5.5528 & 2.5663 & 10.5334 \\
+Filtered pairwise & 2.4143 & 3.3661 & 2.6404 & 8.4209 \\
+Integer envelope & 2.4143 & 1.2437 & 2.5543 & 6.2123 \\
+\bottomrule\end{tabular}\end{table}
 
-The temporal prototype PEM-T converts recent failures, normalized bound width, and evaluations without incumbent improvement into an exploration probability between 0.1 and 0.8. Exploration selects the candidate with the largest minimum distance to the archive. Otherwise, the smallest supported upper value is used when an improvement declaration is available and the monitor is not alarmed; the smallest predicted mean is used in the remaining cases. Fixed01 retains the same model and candidate process with exploration probability 0.1. Under the temporal bound, q\_\allowbreak t and s\_\allowbreak t are common to supported candidates, so Lemma 1 predicts that the upper-value and mean exploitation rankings coincide.
+Integer filtering is 2.71 times faster than the optimized pairwise control. Charging the same coefficient reconstruction and independent checks gives 1.36 times faster computation, or approximately 26.2\% less time for these three components. The integer sum is lower in all 228 cases. These observed gains concern a specified implementation and computational task, rather than universal library superiority or complete engineering deployment savings.
 
-The internal optimizer uses a randomized Latin hypercube with 2D+20 initialization points. The first D+10 points train the initial model; the remaining D+10 are predicted before labeling and create startup residuals. Inputs are scaled to the unit cube. A regularized Gaussian radial-basis-function surrogate uses distance divided by the square root of D, length scale 0.25, ridge 10\^{}-6, and standardized labels. At most 256 observations are retained through an elite-plus-farthest-point rule.
+\subsection{A structural limit that makes routing useful}
 
-Each iteration proposes 256 candidates: 128 reflected differential-evolution proposals and 128 scrambled Sobol points. Duplicates and candidates within 10\^{}-10 of evaluated points are replaced. Purpose-specific random streams depend on seed and evaluation index rather than the total budget.
+Equation~\eqref{eq:saturation} holds exactly in all 228 archived branch/domain cases and reproduces the recorded scalar lower bound. The router returns the same Boolean certificate result in every case. It invokes the action-set callback zero times, including all 142 nonbaseline branch/domain requests (71 distinct contrasts per domain). Thus the requested scalar rejection can be computed without action-set construction once its pending bound and comparator threshold are available.
 
-\hypertarget{development-and-independent-validation}{%
-\subsection{Development and independent validation}\label{development-and-independent-validation}}
+This does not make the independent study gate pass. All 71 nonbaseline H1 contrasts still abstain under the original complete category rule, and the 43 baseline-selection certificates remain unestablished. The H5 reachable-history extension is not implemented. The new router preserves a limited certificate predicate; it does not relabel these negative decisions as successful optimization.
 
-Development uses eight prespecified BBOB functions, dimensions 10 and 20, instances 1-3, and three repeats. Thirteen internal configurations separate exploration, residual weighting, and feedback components. The budget is 10D. The required gate compares PEM-T with a fixed exploration control selected only within the development protocol. Failure of the gate prevents any optimization-superiority claim.
+The earlier term decomposition remains informative: each domain has 281 retained action terms, 71 failing pending terms and 276 failing next-point terms. The median weakest next-bound/threshold ratio is 0.1622233735904155. Proposition 2 explains why increasing action-set precision alone cannot repair the pending-term obstruction for either frozen domain. Obtaining a useful judgment needs information that raises the applicable response lower endpoint or otherwise changes the declared certificate.
 
-After the gate fails, the unchanged mechanism is frozen on all 24 noiseless BBOB functions, dimensions 10, 20, and 40, instances 11-13, and three repeats. Six internal configurations produce 3,888 runs and 907,200 paid evaluations. Three history policies produce 7,776 frozen states and 1,990,656 diagnostic labels. Development and validation estimates are never pooled.
+\subsection{Engineering computation and complete cost boundaries}
 
-The endpoint is the base-10 logarithm of final error relative to common initialization error, with numerical flooring at 10\^{}-12. Repeats are summarized within function-instance cells, instances are averaged, and functions receive equal weight. Nine prespecified validation contrasts form one Holm family. Paired hierarchical bootstrap intervals resample functions, instances, and common repeat indices. These intervals summarize suite heterogeneity and are not presented as a population theorem for all black-box tasks.
+The practical use is conditional on the requested output. A full-set request receives exact intervals and replayable exclusion witnesses more efficiently on these structural-design states. A scalar no-better request can reject ineffective analysis before invoking that engine. Neither operation claims to improve the physical design objective.
 
-\hypertarget{external-and-application-evidence}{%
-\subsection{External and application evidence}\label{external-and-application-evidence}}
+The historical GP comparison acquired 44,146 distinct state/design bounds and took 176.433648 s for construction before grading. Its full-pool and subset readers have 116,850 versus 568 logical bound requests, or 44,146 versus 498 unique requests under their respective cache rules. Subset request counts are counterfactual because the complete library had already been acquired. The pending bound used by routing is not free in a cold deployment. The project ledger remains 55,309 physical attempts, including the two witnesses. No paid work is refunded by the new readers.
 
-Sobol, CMA-ES, classical GP expected improvement, and author-code TuRBO-1 provide budget-matched descriptive references \citep{ref25}. They retain their own initialization and search mechanisms, so these comparisons are not same-history causal effects. In the finite-element application, GP expected improvement (GP-EI), probability of improvement (GP-PI), and the lower-confidence-bound form of GP-UCB are additionally run from the same initial observations as the internal methods. All three acquisitions use the same Matérn-5/2 Gaussian process, candidate pool, and local-search budget; GP-PI uses a margin equal to 0.01 times the observed response standard deviation, and GP-UCB uses a fixed confidence multiplier of 2.0. DRSO uses the authors' public relation-model-assisted evolutionary implementation at commit 03c19d4 \citep{ref30}. The population size is set to 58 solely to accept the common initial archive; its relation models, unevaluated-population update, reproduction, training cap, and remaining defaults are unchanged. Three LassoBench tasks provide application transfer under fixed data and splits \citep{ref24}. The BBOB implementation and reporting follow the COCO comparison framework \citep{ref26}. Complete tables, the 300-dimensional extension, resource measurements, sensitivity studies, interruption accounting, and file-level audits appear in the Supplementary Materials.
+\section{Discussion and limitations}
 
-\hypertarget{mechanism-results}{%
-\section{Mechanism Results}\label{mechanism-results}}
+The contribution is a specialized proof-producing computation and its output-aware use in surrogate-assisted optimization. Classical envelope geometry, dyadic arithmetic and early rejection are acknowledged. The independent-band contract exposes numerical uncertainty, closed intervals retain isolated ties, independent checks separate construction from verification, and the domain-cover identity tells an engineering reader when constructing actions cannot repair its scalar certificate. These linked results are more specific than a general claim that calibrated models improve optimization.
 
-\hypertarget{development-gate-and-implementation-invariants}{%
-\subsection{Development gate and implementation invariants}\label{development-gate-and-implementation-invariants}}
+The engineering evidence is limited to archived states of one deterministic beam family. There is no new independent policy-performance experiment, no physical/PDE error certificate and no realized FE saving. Exact-band feasibility can overapproximate coupled GP coefficient realizability. Kernel evaluation error and native floating predictions at every unknown response are outside the binary-system guarantee. The inverse-residual enclosure assumptions remain conditional; a failed enclosure gate requires retaining the full pool. The scalar router assumes sound closed-domain coverage and available bounds and cannot replace other requested outputs.
 
-All 1,872 development optimization runs and 432 common-history runs complete without exceptions. PEM-T and the configuration that removes its upper-value mode have identical trajectories in all 144 matched pairs. Temporal monitoring with fixed 0.3 management likewise matches fixed 0.3 mixing in all 144 pairs. These are implementation confirmations of Lemma 1 and Corollary 1, rather than independent effective components.
+The complete preceding manuscript and all historical adverse tables are retained in the archive and supplement. Twenty-two of 25 supporting paired-grid raw records are available; three final recovery records remain missing. Derived tables do not replace their raw replay or establish mesh convergence. The current GP inputs, original certificates, new algorithms and complete recorded comparisons support scoped zero-solver reproduction.
 
-The development-selected control is fixed 01. PEM-T is worse on all eight development functions in both dimensions. Its function-weighted log-relative endpoint difference is +0.2831 in D=10 and +0.1810 in D=20, where positive values favor fixed 01. The required optimization-benefit gate is therefore unmet before the independent validation begins.
+\section{Conclusion}
 
-\hypertarget{independent-endpoint-and-immediate-decision-effects}{%
-\subsection{Independent endpoint and immediate decision effects}\label{independent-endpoint-and-immediate-decision-effects}}
-
-Table~\ref{tab:bbob_validation} reports the nine prespecified validation comparisons. PEM-T increases final relative error in all three dimensions. The base-10 differences correspond to geometric error ratios of 1.468, 1.258, and 1.159 for dimensions 10, 20, and 40. The effect decreases with dimension but remains in the unfavorable direction for 60 of 72 function-level comparisons. Common-state feedback decisions also have lower true immediate improvement than mean-greedy decisions in every dimension.
-
-\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
-
-\begin{longtable}[]{@{}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}@{}}
-\caption{Prespecified independent validation contrasts. Endpoint values above zero favor fixed 01; immediate values below zero favor mean-greedy selection.}\label{tab:bbob_validation}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedleft
-Dimension
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Contrast
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Estimate
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-95\% bootstrap interval
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Direction count
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Holm p
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedleft
-Dimension
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Contrast
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Estimate
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-95\% bootstrap interval
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Direction count
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Holm p
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-10 & PEM-T minus fixed01 endpoint & 0.1668 & {[}0.0749, 0.2391{]} & 22 positive, 2 negative & 5.36e-6 \\
-20 & PEM-T minus fixed01 endpoint & 0.0998 & {[}0.0467, 0.1905{]} & 19 positive, 5 negative & 0.00170 \\
-40 & PEM-T minus fixed01 endpoint & 0.0639 & {[}0.0130, 0.1123{]} & 19 positive, 5 negative & 0.00170 \\
-10 & Feedback minus mean immediate improvement & -0.0170 & {[}-0.0431, -0.0067{]} & 1 positive, 18 negative & 0.00078 \\
-20 & Feedback minus mean immediate improvement & -0.0158 & {[}-0.0352, -0.0079{]} & 0 positive, 21 negative & 0.00048 \\
-40 & Feedback minus mean immediate improvement & -0.0344 & {[}-0.0630, -0.0100{]} & 1 positive, 20 negative & 0.00048 \\
-\end{longtable}
-
-\endgroup
-
-The function-level distribution underlying the aggregate endpoint contrasts is shown in Figure 2.
-
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/main_figure_2.pdf}
-\caption{Function-level endpoint effects in the independent BBOB validation. Positive values indicate larger PEM-T errors.}
-\end{figure}
-
-Figure 2 displays all 24 function-level effects separately for each dimension rather than only the suite average. Most bars lie above the zero line: 22 of 24 in dimension 10 and 19 of 24 in both dimensions 20 and 40. The few negative bars show that the result is not pointwise uniform, while the shrinking bar heights across panels agree with the smaller aggregate effect at higher dimension. The conclusion is therefore based on a broad directional pattern with disclosed exceptions, not on one dominant benchmark function.
-
-\hypertarget{calibration-does-not-identify-optimization-utility}{%
-\subsection{Calibration does not identify optimization utility}\label{calibration-does-not-identify-optimization-utility}}
-
-PEM-T explores 39.7\%, 36.4\%, and 34.4\% of post-initialization evaluations in dimensions 10, 20, and 40, compared with approximately 10\% for fixed 01. Its observed selected-point upper-bound failure fractions are 0.1008, 0.0942, and 0.0964, close to the nominal monitoring level. Nevertheless, its endpoints and common-state decisions are worse. A near-target aggregate failure fraction therefore does not imply efficient budget allocation.
-
-Improvement declarations provide a second example. PEM-T makes 31, 34, and 155 declarations across the three dimensions; 20, 27, and 30 are false. The corresponding pooled false-declaration fractions are 0.645, 0.794, and 0.194. A one-sided failure rate near 0.1 cannot control the conditional error among the small subset declared to improve the incumbent.
-
-History also changes the object being monitored. Under fixed 0.3 mixing, selected-point failures exceed pool failures, whereas under greedy histories the relationship reverses. The prespecified interaction is positive in all three dimensions and passes Holm adjustment. Selection-induced differences should therefore be attributed to the coupled history and policy, not treated as a universal direction of undercoverage.
-
-The reversal of selected-point and pool failure differences across frozen history policies is shown in Figure 3.
-
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/main_figure_3.pdf}
-\caption{Selected-point minus pool failure differences under frozen history policies.}
-\end{figure}
-
-Figure 3 makes the history dependence visible. Fixed 0.3 histories place the selected-point failure fraction above the pool value in all three dimensions, whereas greedy histories place it below the pool value. Random-pool histories remain closer to zero and are negative in each panel. Because the sign changes with the policy that generated the frozen state, a single universal ``selection penalty'\,' would misrepresent the monitored process.
-
-Spatial-temporal weighting lowers selected-point quantile loss in the prespecified diagnostic comparisons, yet its closed-loop endpoint remains worse than fixed 01 in each dimension. This is the central empirical separation: a better residual estimate can still direct evaluations toward candidates with low optimization value.
-
-To isolate the evidential role of each audit stage, a stage-omission ablation is constructed from the frozen records. Unlike an optimizer-component ablation, omitting an audit stage does not alter the evaluated trajectory; it removes the corresponding basis for inference. Table~\ref{tab:stage_omission} states the strongest conclusion still supported at each stopping point and the evidence that would be lost.
-
-\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3333}}@{}}
-\caption{Stage-omission ablation and the resulting loss of evidence.}\label{tab:stage_omission}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Available audit evidence
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Apparent conclusion for the representative monitor
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Information lost if the audit stops here
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Available audit evidence
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Apparent conclusion for the representative monitor
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Information lost if the audit stops here
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Calibration only & Selected-point failure is close to 0.1 and may appear satisfactory. & No evidence that exploitation ranking changes or that selected actions are useful. \\
-Calibration plus ordering analysis & The temporal additive correction is exploitation-redundant; feedback can act through exploration. & The utility of the changed exploration decisions remains unknown. \\
-Ordering plus common-state utility & Feedback changes actions, but those actions have lower immediate improvement than mean-greedy choices. & Delayed effects after histories diverge remain untested. \\
-Full audit including closed loop & The controller does not pass the held-out optimization-benefit gate under the tested budgets. & No omitted audit stage is used to claim deployment value. \\
-\end{longtable}
-
-\endgroup
-
-This evidence ablation uses the same frozen results rather than rerunning a modified optimizer because the ablated objects are inferential stages rather than search operators. It shows why a calibration-only assessment would have produced an incomplete reliability conclusion, why algebraic pathway analysis can identify redundancy without new objective calls, and why common-state and closed-loop evidence answer distinct questions.
-
-\hypertarget{engineering-application-surrogate-assisted-structural-optimization}{%
-\section{Engineering Application: Surrogate-Assisted Structural Optimization}\label{engineering-application-surrogate-assisted-structural-optimization}}
-
-\hypertarget{problem-and-parameterization}{%
-\subsection{Problem and parameterization}\label{problem-and-parameterization}}
-
-EngiBench Beams2D v1 supplies a density-based finite-element model of the right half of a symmetric Messerschmitt-Bolkow-Blohm beam \citep{ref23}. Surrogate-assisted evolutionary optimization has previously been developed for expensive structural design \citep{ref18}, and uncertainty-guided reliable-region search has been studied for expensive engineering optimization \citep{ref35}. Here, the beam provides engineering application validation of the audit framework within an expensive structural optimization workflow. The domain uses 100 by 50 bilinear elements. Horizontal degrees of freedom along the left symmetry boundary are fixed, the lower-right vertical degree of freedom is supported, and a unit downward load is applied at the top-left of the modeled half-beam. The material interpolation uses minimum stiffness 10\^{}-9, unit maximum stiffness, penalization power 3, and Poisson ratio 0.3. The objective is structural compliance; lower values are better.
-
-Direct optimization of all 5,000 element densities is outside the studied surrogate's budget and initialization regime. A constrained engineering family is defined in which 19 effective logits plus one fixed anchor form a 4 by 5 coarse field. Cubic interpolation expands the field to 50 by 100 elements. A scalar logistic shift is solved by bisection so that every design has mean density 0.35. The study therefore evaluates model management within this smooth 19-dimensional design family rather than claiming general topology-optimization performance.
-
-\hypertarget{application-protocol-and-audit-results}{%
-\subsection{Application protocol and audit results}\label{application-protocol-and-audit-results}}
-
-Before formal labels, five methods, ten repeats, and 200 evaluations per run are frozen. The first batch keeps the native 38-point initialization of GP-EI and TuRBO-1 while Greedy, fixed 01, and PEM-T share a 58-point initialization. A prespecified sensitivity batch then reruns GP-EI and TuRBO-1 from exactly the same 58 points and deterministic labels as the internal methods. Two acquisition controls, GP-PI and GP-UCB, and the author-code DRSO SAEA are subsequently run from the same archive. Their subsequent searches retain their stated acquisition, trust-region, relation-model, evolutionary, and candidate-generation rules. The original 50 trajectories contain 10,000 paid finite-element evaluations. The five shared-initialization external controls add 10,000 algorithm-budget observations, reuse 2,900 initial labels, and make 7,100 additional finite-element calls. All 100 trajectories finish without failure or exact duplicate points. Independent endpoint diagnostics reproduce the original GP-EI and TuRBO-1 sensitivity endpoints within a maximum relative difference of 6.23e-12; event-level audits accept every GP-PI, GP-UCB, and DRSO trajectory.
-
-\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
-\caption{Finite-element endpoint compliance over ten optimization repeats.}\label{tab:beam_endpoints}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Method
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Median
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Q1
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Q3
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Median improvement after shared initialization
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Method
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Median
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Q1
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Q3
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Median improvement after shared initialization
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-Greedy & 1445.1 & 1300.8 & 1694.9 & 0.362 \\
-Fixed01 & 1435.6 & 1354.2 & 1580.7 & 0.383 \\
-PEM-T & 1972.8 & 1759.3 & 2168.9 & 0.251 \\
-GP-EI & 2308.5 & 1989.4 & 2464.5 & 0.000 \\
-GP-PI & 1233.1 & 921.2 & 1399.7 & 0.517 \\
-GP-UCB & 2308.7 & 2223.8 & 2827.3 & 0.000 \\
-DRSO & 647.4 & 580.4 & 780.0 & 0.747 \\
-TuRBO-1 & 574.0 & 534.7 & 665.3 & 0.751 \\
-\end{longtable}
-
-\endgroup
-
-PEM-T minus fixed 01 has median paired compliance difference +488.7, with interquartile range +134.7 to +814.7; PEM-T is better in two repeats and worse in eight. The corresponding comparison with greedy has median difference +575.2 and the same direction count. Under matched initialization, GP-EI minus PEM-T has median difference +242.8; GP-EI is better once, tied three times, and worse six times (paired Wilcoxon Holm-adjusted p=0.0469). Within the three added-control family, GP-PI minus PEM-T has median difference -876.1 and nine wins (Holm-adjusted p=0.0117), GP-UCB has median difference +574.6 with two wins, two ties, and six losses (p=0.0391), and DRSO has median difference -1334.6 with nine wins and one loss (p=0.0117). TuRBO-1 minus PEM-T has median difference -1372.3 and is better in all ten repeats (Holm-adjusted p=0.00391 in the original sensitivity family). Changing from native to shared initialization produces no supported endpoint shift for GP-EI (Holm-adjusted p=0.320) or TuRBO-1 (p=0.695). The application therefore distinguishes a weak acquisition setting from successful Bayesian, evolutionary-surrogate, and trust-region controls under the same starting evidence.
-
-The shared-initialization finite-element trajectories and their between-repeat dispersion are shown in Figure 4.
-
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/main_figure_4.pdf}
-\caption{Median and interquartile best-so-far finite-element compliance under a shared 58-point initialization; the dashed line marks the end of initialization.}
-\end{figure}
-
-Figure 4 separates the common initialization from method-specific search. All curves share the same values up to the dashed 58-evaluation boundary. TuRBO-1 and DRSO then improve rapidly and reach the lowest endpoint group. GP-PI also produces sustained improvement and finishes below the three internal methods, whereas GP-EI and GP-UCB show little median improvement after initialization. Greedy and fixed 01 improve more gradually and remain below PEM-T near the endpoint. The shaded interquartile bands preserve between-repeat variability and show that the endpoint ordering is not produced by a single trajectory.
-
-Representative endpoint density fields for all eight shared-initialization methods are shown on the common material-density scale in Figure 5.
-
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/main_figure_5.pdf}
-\caption{Representative median-run density fields for all eight methods under the shared-initialization comparison.}
-\end{figure}
-
-Figure 5 shows the median-endpoint design from every method on the common density scale. Because every field satisfies the same mean-density constraint, the contrast concerns material placement rather than material quantity. TuRBO-1 and DRSO form concentrated high-density load paths and reach the lowest compliance group. GP-PI produces a stronger structural path than GP-EI or GP-UCB, whose diffuse fields remain close to their initial designs. The visual differences are consistent with the convergence pathways and endpoint ordering in Table~\ref{tab:beam_endpoints}.
-
-\subsection{Conditional first-action records and budgeted replay}\label{conditional-first-action-records}
-
-The observed opportunity is $[m_0(5)-\min_jm_j(5)]/m_{\mathrm{init}}$, including the baseline in the minimum. This describes the recorded branches, not a global optimum. At its original margin, archived mean continuation has above-margin opportunities in only two of thirty states and two of ten seed groups. Its 46 distinct nonbaseline contrasts have 3 better, 34 tie and 9 worse labels. In the independently acquired mean and EI records, best-observed improvement is exactly zero in every state, including below-margin gains. All original groups and margins remain retained; positive-case diagnosis cannot be validated by those independent outcomes.
-
-The independent conditional record in Table~\ref{tab:review_primary} has 25 distinct nonbaseline-action contrasts per continuation: mean continuation gives 0 better, 24 tie and 1 worse; EI gives 0 better, 23 tie and 2 worse at its primary margin. These 30 source states share ten retained seed blocks, six of which contain nonbaseline-action contrasts. The immediate rule uses 42 requests and the completed-target rules 252 across those states; the immediate rule has 0/1 classification errors for mean/EI and zero reported state-selection loss for both. Completed-target zero errors follow from measuring the target. At budget 12, fixed depth completes 17/25 and adaptive 9/25 with 204 requests each; reversing alternative order preserves coverage but changes the evaluated class set in eight states and can leave one worse EI contrast unmeasured. Supplementary tables retain all existing budgets/margins, complete seed-block counts and the selected paired-grid ranges. The paired-grid ranges are preserved historical outputs; three final raw recovery files remain unavailable in the current preservation check. This limits complete independent raw-record replay for that supporting check, as detailed in the data-availability statement and supplement.
-
-\input{integrated_evidence/review_main_results.tex}
-
-The response-request totals above describe the audit reader. Executing the chosen branch in all 30 states additionally includes alias-only states: the original complete-target audit subtotal of 252 becomes 330, and the budget-12 subtotal of 204 becomes 282. These logical counts include previously acquired responses and do not measure additional physical solves. The subsequent monotone development schedules also require explicit chosen-branch completion and a separate selection-certification count; their 13-cell reconciliation appears in the supplementary checked-records section.
-
-\subsection{GP action-set certificates and computational comparison}\label{sec:gp_certificate_results}
-
-The separately frozen protocol selected two witnesses before either response and used its complete two-attempt allowance. Their true compliances were 14324.7435408532 and 9639.9247638608, versus stored two-vector lower bounds 232.5285149112 and 200.5953747176. Relative equilibrium residuals were below $1.1\times10^{-10}$. Both responses exceeded their root-tie thresholds. This identifies loose point bounds at those witnesses without disqualifying the full pool. No retry, replacement or optimization sample was acquired.
-
-The GP construction retained all sixty metadata states and both complete ten-group datasets; seventeen alias-only states needed no bounds. The 43 nontrivial mean contexts have 114 first-action branches. Each next pool contains 1024 eligible actions. Both predeclared domains, $[0,\infty)$ and $[\lambda_{\mathrm{pending}},\infty)$, retain 2--7 actions, with medians four and three in the two datasets. Every stored next action is included. The original construction preceded reading first/next responses. The subsequent envelope comparison is explicitly post hoc development on its stored coefficient bands.
-
-\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
-\begin{longtable}{@{}p{.24\linewidth}p{.13\linewidth}p{.13\linewidth}p{.13\linewidth}p{.13\linewidth}p{\dimexpr.24\linewidth-10\tabcolsep\relax}@{}}
-\caption{Both GP response domains give the same recorded summaries. Complete metadata groups remain retained; H1 counts exclude baseline contrasts.}\label{tab:gp_certified_summary}\\
-\toprule Dataset & Active states / branches & Retained min / median / max & Next-action inclusion & Joint lower / initial median & H1 category / selection increments \\
-\midrule\endfirsthead\toprule Dataset & Active states / branches & Retained min / median / max & Next-action inclusion & Joint lower / initial median & H1 category / selection increments \\
-\midrule\endhead\bottomrule\endlastfoot
-Archived mean & 26 / 72 & 2 / 4 / 7 & 72/72 & 5.9786\% to 11.3742\% & 0/46; 0/26 \\
-Previous holdout mean & 17 / 42 & 2 / 3 / 6 & 42/42 & 9.2066\% to 20.1462\% & 0/25; 0/17 \\
-\end{longtable}\endgroup
-
-All 204 frozen source hashes, 114 reconstructed binary kernel/cross systems and their coefficient enclosures match. The 232,564 original exclusions and an equal number of new exclusions pass exact rational replay. The envelope returns identical action sets for all 228 branch-domain cases, with exact feasible intervals contained in the previous outward intervals. Rechecking the tightened intervals leaves all 71 nonbaseline H1 contrasts per domain abstaining and no baseline selection certified.
-
-The computational comparison times coefficient-to-set construction on the same machine and inputs, alternating algorithm order over three repetitions per case. Summed casewise medians are 19.2578 seconds for the frozen pairwise implementation and 6.0409 seconds for the exact envelope: 3.19-fold stage acceleration. Separate complete proof-replay passes cost 3.5787 and 2.6687 seconds, respectively; including those passes gives 2.62-fold acceleration. The replay passes are single measurements, and repetitions, domains and branches are dependent. These times exclude the common coefficient systems, paid baseline and physical-bound library. They do not establish industrial or end-to-end deployment speedup, nor comparison with an optimized library or knowledge-gradient policy.
-
-\begin{figure}[htbp]
-\centering\includegraphics[width=\linewidth]{figures/gp_certified_envelope_comparison.pdf}
-\caption{Paired median construction times and same-set cardinalities. The time panel uses all 228 dependent branch-domain cases; the cardinality panel counts each of114 branches once because both domains have the same counts. No independent optimization sample is represented.}\label{fig:gp_envelope}
-\end{figure}
-
-The complete comparative development actually acquired 44,146 cached state/design bounds, plus the GP and proof work. Full-pool versus subset counts of116,850 and568 are logical requests; the subset figure is counterfactual because the complete library was already acquired. Narrower action sets and faster certificate construction therefore establish a computational increment but do not repair the decision-sufficiency gate. H5 reachability and a useful H1 judgment remain unestablished. The original independent-optimization gate stays closed.
-
-\paragraph{Which information blocks the engineering certificate?}
-Let $T=B-\epsilon$, where $B$ is the paid H1 baseline and $\epsilon$ the declared absolute margin. For the existing relaxed lower-bound certificate in Eq.~\eqref{eq:joint_lower}, $J\geq T$ holds if and only if $m_{\mathrm{init}}\geq T$ and, for every retained action, both $\max(p,\inf R_i)\geq T$ and $\lambda_i\geq T$. This is a decomposition of the supplied certificate, not a new optimization theorem. A post hoc exact-rational check finds both information sources blocking all71 nonbaseline contrasts in each response domain. Of281 retained action terms per domain,71 pending-response terms and276 next-point bounds lie below their branch's threshold. The median, across contrasts, of the weakest retained next-point bound divided by its threshold is0.1622. Thus the present certificate cannot be repaired by increasing only one class of lower bounds while holding the relaxed action sets fixed. Changing the sets, exploiting coupled coefficient information or acquiring different physical information is outside this comparison. Failure of this sufficient certificate does not imply that the true action is inferior.
-
-\hypertarget{frozen-state-intervention-on-gp-acquisition-policies}{%
-\subsection{Frozen-state intervention on GP acquisition policies}\label{frozen-state-intervention-on-gp-acquisition-policies}}
-
-To test the audit beyond the residual controller, thirty archived GP-EI, GP-PI and GP-UCB histories supply ten repeats per source policy. The states immediately before evaluations 59, 101, 151 and 200 are frozen, giving 120 interventions. Every fit uses only earlier labels. Logged ARD Matérn-5/2 parameters are replayed without refitting; all source-action means and standard deviations agree within the prespecified absolute and relative tolerance of 1e-8. Mean, EI, PI and LCB act on a shared 4,096-point Sobol pool augmented by the frozen source action. Here EI has zero improvement margin, PI uses 0.01 times training standard deviation, and LCB uses kappa=2. No intervention response is fed back into a source optimizer.
-
-The 480 policy-state choices contain 261 distinct within-state actions. After choices have been frozen, 120 original action responses are legitimately reused; three further responses come from identical context-point pairs already evaluated in the diagnostic ledger. The audit therefore acquires 138 new FE labels. A separate solver-compatibility check incurs 102 attempts, including an initial 42-call check whose numerical tolerance was found too strict. The final 60 retained comparisons pass the disclosed 1e-6 solver-relative tolerance, with maximum relative difference 4.929e-8. The 1e-8 GP replay tolerance is unchanged. Input hashes and choices were committed before new diagnostic acquisition; see S9 for the archive transfer and verification boundary.
-
-\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2000}}@{}}
-\caption{Acquisition-only intervention at frozen GP states. Results are means over ten repeat-level summaries, each averaging four checkpoints. U=max(0,training incumbent minus diagnostic compliance)/training standard deviation. Utility and paired differences are displayed in units of 1e-6; action-change percentages are relative to mean selection.}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Frozen source
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Control
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Changed (\%)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Mean U (1e-6)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Delta U vs mean (1e-6)
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Frozen source
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Control
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Changed (\%)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Mean U (1e-6)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Delta U vs mean (1e-6)
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-EI history & EI & 30.0 & 0.899669 & +0.000000 \\
-EI history & PI & 25.0 & 0.899669 & +0.000000 \\
-EI history & LCB & 52.5 & 0.000000 & -0.899669 \\
-PI history & EI & 95.0 & 0.000000 & -0.347088 \\
-PI history & PI & 7.5 & 0.347088 & +0.000000 \\
-PI history & LCB & 97.5 & 0.000000 & -0.347088 \\
-UCB history & EI & 30.0 & 0.887232 & +0.009475 \\
-UCB history & PI & 35.0 & 1.178882 & +0.301124 \\
-UCB history & LCB & 75.0 & 0.511893 & -0.365864 \\
-\end{longtable}
-
-\endgroup
-
-LCB often changes the selected point yet has negative mean immediate-utility differences in all three source-history groups. EI and PI effects depend on the state-generating history; a different choice does not automatically provide immediate gain. The small normalized effects must not be described as a large engineering improvement: training standard deviations range from 7.332e5 to 9.122e8, reflecting high-compliance designs. This is a bounded immediate diagnostic, not evidence for rejecting uncertainty-based exploration. The next experiment explicitly assesses longer horizons under different physical loads.
-
-\hypertarget{longer-horizon-policies-load-position-transfer-and-total-cost}{%
-\subsection{Longer-horizon policies, load-position transfer and total cost}\label{longer-horizon-policies-load-position-transfer-and-total-cost}}
-
-The separately frozen protocol at commit 7555d58b145a2c44b73bab5ec47d0f643a57dde1 changes the top-edge downward-force position from 0.0 to 0.25 and 0.75. Each condition has ten fresh, paired Sobol initializations of 58 designs. Material, supports, 100-by-50 FE mesh, dimension 19 and volume fraction 0.35 are unchanged. These are two new physical conditions within one beam family, not independent engineering application domains.
-
-All four transfer policies share an isotropic Matérn-5/2 GP and the same candidate seeds at a given phase and step. The GP is refitted with deterministic bounded L-BFGS-B, at most100 iterations and no restarts; alpha=1e-6, normalized targets, constant bounds{[}0.05,20{]}, length-scale bounds{[}0.005,2{]}, and initial length scale 0.2. A1,024-point Sobol pool excludes already observed points. EI and PI both use a 0.01-scaled improvement margin; LCB retains kappa=2. This controlled implementation differs from the frozen ARD posterior and larger augmented pool in Section~\ref{frozen-state-intervention-on-gp-acquisition-policies}, and from the historical GP optimizer. Consequently the new outcomes cannot be attributed solely to moving the force, or interpreted as exact reproductions of Table~\ref{tab:beam_endpoints}.
-
-For each repeat the audited-selection workflow actually pays for 58 initial responses, four 20-step pilots, and 142 further evaluations of the pilot-selected policy. Its total is 280 calls. Selection is written before validation; exact pilot-end ties use PI, mean, EI, LCB priority. The selected policy is validated from only the initial archive, with a candidate-seed namespace separate from the pilots. The comparison workflow separately pays for the same58 initial designs and all four 142-step continuations, totaling626 calls. Deterministic duplicates between workflows are queried again and counted. Each fixed member of the portfolio represents a 200-call alternative, not a free post hoc choice of its best member.
-
-Every condition/policy has zero median improvement at its first pilot action, whereas20-step median improvement is positive. For LCB it is 2.514\% and 3.649\% in the two conditions; four of ten repeats in each condition improve after a zero-gain first action. This provides a concrete reason to keep delayed policy assessment separate from immediate screening. It measures diverging policy histories, not the isolated causal effect of a first action under a fixed continuation.
-
-\FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.1667}}@{}}
-\caption{Independent selected-policy validation and complete-portfolio comparison. Compliance is lower-is-better. Each compliance column is a median across ten repeats; the gap is the median of paired percent ratios, not a ratio of medians. Selected-policy validation uses 200 algorithm observations but 280 paid workflow calls including pilots; the portfolio pays 626.}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Force position
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Initial compliance
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Selected-policy compliance
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Portfolio-best compliance
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Paired gap (\%)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Exact best matches
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Force position
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Initial compliance
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Selected-policy compliance
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Portfolio-best compliance
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Paired gap (\%)
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Exact best matches
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-0.25 & 1608.5 & 1172.5 & 943.2 & 9.014 & 4/10 \\
-0.75 & 700.7 & 406.4 & 320.6 & 27.217 & 3/10 \\
-\end{longtable}
-
-\endgroup
-
-The selected policy matches the independently executed portfolio-best endpoint in seven of twenty repeats. Its paired median gaps are 9.014\% and 27.217\%, and maxima83.067\% and 289.223\%. Pilot-end ties occur in seven and four repeats, so frequent PI selection is partly a consequence of the declared tie rule and must not be reported as strong empirical selection evidence. Compared with fixed PI, the selected workflow wins/ties/loses in 1/6/3 and 1/8/1 repeats; it makes 40\% more calls than every fixed 200-call policy. Against the explicitly executed full portfolio it makes 55.272\% fewer calls, accompanied by the disclosed endpoint losses. These counts do not establish universal savings, equivalence, or a performance-preserving deployment gate.
-
-\begin{figure}
-\centering
-\includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/transfer_cost_performance.pdf}
-\caption{Cost and performance of the independently executed beam transfer workflows.}\label{fig:transfer_cost}
-\end{figure}
-
-Figure~\ref{fig:transfer_cost} reports median initial-incumbent improvement and interquartile ranges together with the actual per-repeat call requirement. Selected-policy performance is the prespecified validation endpoint; pilot outcomes are excluded from its training. Portfolio performance is the best of all four paid members and is not a 200-call oracle baseline.
-
-For practical design use, an engineer could retain a better design found in a pilot. A secondary analysis therefore also reports the best among every design paid for by the audited workflow. Its paired median portfolio gaps are 9.014\% and 2.116\%, respectively, compared with 9.014\% and 27.217\% for the prespecified selected-policy endpoint. Both endpoints are disclosed in S10; the secondary result does not replace the selected-policy test or create a retrospectively chosen promotion threshold. The difference shows why an audit must define the performance object as carefully as its cost boundary.
-
-The retained transfer ledger contains 18,120 physical attempts and 20,000 full-trajectory algorithm observations across 100 budget 200 continuations, with shared initial observations counted inside each trajectory but paid only once per workflow. Loss of access to the previous complete local transfer journals required an explicit unchanged-protocol recovery; the earlier18,120 attempts are also counted. Together with the 138 immediate diagnostics and 102 solver checks, the earlier GP/transfer stages account for 36,480 new FE attempts. The reported optimizer and audit experiments account for 55,305 paid physics attempts. Subsequent auxiliary physical-bound development used 2 reference solves, bringing that earlier subtotal to 55,307. The separately frozen two-witness diagnosis adds two attempts, bringing the reported project total to 55,309; its GP construction and the new envelope verification add no physics. The opportunity, cost-reconciliation and assumption screens add no physical calls; their boundaries are reported in the supplement. Recovery responses enter each retained history once. Observed GP and FE component times from the retained execution are reported in S10 and are not exclusive resource measurements or demonstrated production wall-time savings. All new comparisons are descriptive and separate from the original prespecified inferential families.
-
-\input{integrated_evidence/main_records.tex}
-\hypertarget{discussion-and-design-guidance}{%
-\section{Discussion and Design Guidance}\label{discussion-and-design-guidance}}
-
-The deterministic and empirical findings answer different questions. Ordering redundancy follows from the stated decision rule and holds whenever the correction is common across supported candidates. The observed performance loss is specific to the tested feedback controller, surrogate, candidates, and budgets. It does not imply that candidate-dependent uncertainty, conformal Bayesian optimization, or all adaptive exploration is ineffective.
-
-The results support a staged design procedure for surrogate model management. First, identify the exact route from the monitoring statistic to the decision. If the signal adds a common constant before an argmin, it cannot alter ranking. Second, freeze common states and compare the true utility of the alternative choices. This exposes an unhelpful exploration response before histories diverge. Third, run closed-loop validation on instances not used to select controls or coefficients. Calibration statistics remain useful diagnostics, but they should not serve as substitutes for either decision utility or final objective value.
-
-The prototype illustrates why this sequence matters. Its failure fraction is close to 0.1, which could be read as successful monitoring. The same controller increases exploration from about 0.1 to 0.34-0.40, selects candidates with lower immediate improvement, and ends with larger errors. Localized weighting further improves some quantile-loss diagnostics without producing better trajectories. The missing link is not error measurement; it is a rule connecting error information to valuable evaluations.
-
-For engineering users, the practical implication is to evaluate the acquisition pathway before paying for large simulation batches. A useful monitor should produce candidate-specific or management-level distinctions whose value can be tested, including delayed value for exploration, search-region changes, restarts, or stopping decisions. Monitoring width or error merely to increase exploration can consume the same number of expensive evaluations in less productive regions.
-
-The added GP intervention tests the audit on actionable acquisition rules, while the two force-position conditions test finite-horizon policy and selection outcomes within the same beam family. The strongest reusable result is the evidence procedure: identify exact decision classes, pay only for undetermined immediate responses, preserve a label-free intervention boundary, and then disclose both closed-loop endpoints and total cost. The transfer selector illustrates a failure boundary rather than a new competitive optimizer. Its pilot ties, endpoint losses and extra cost relative to fixed policies delimit engineering deployment. The added thermal record uses a small authored heat-conduction model; industrial cross-domain validation and competitive warm-start selectors remain outside the evidence.
-
-The study has limitations. Residuals originate from changing surrogate models and scales; no exchangeability argument establishes pointwise coverage. Sparse declarations limit conditional reliability statements. The RBF surrogate truncates training data, and the candidate process is one implementation among many. The broad BBOB external-reference batches retain their native initialization, although the finite-element sensitivity analysis removes this difference. The beam study uses a smooth 19-dimensional design family, not unrestricted 5,000-variable topology optimization. The independent budget record is offline sequential replay; its primary 18-request budget completes all distinct action classes, and source/calibration GP times were not separately recorded. Three-grid checks reevaluate recorded designs without refitting fine-grid GPs or refining every training point. Absolute compliance remains mesh/mapping-sensitive and the strict original coarse-response check flags one high-compliance point; neither mesh convergence nor physical accuracy of the illustrative 0.1\% margin is certified. Full sensitivity, 300-dimensional, application, resource, and recovery evidence is supplied separately so that these limits remain auditable without dominating the main paper.
-
-\hypertarget{conclusion}{%
-\section{Conclusion}\label{conclusion}}
-
-The conditional audit separates action identity, target-horizon consequences and the cost of obtaining a judgment. Its fixed-kernel GP component produces response-domain action sets with explicit coefficient enclosures and rational exclusion witnesses. The exact band envelope retains closed ties and constructs the relaxed-band solution in $O(M\log M)$ arithmetic operations. On the complete retained development cases, it preserves every original action set and stored next action, with 3.19-fold faster set construction than the frozen pairwise reference.
-
-This computational result has a definite boundary. The original H1 point bounds remain too weak to produce a new category or baseline selection certificate, despite 2--7 retained actions from pools of1024. The primary independent H5 records contain no better alternative, and adaptive allocation does not improve on class-aware fixed depth. Complete baseline/alias execution and the acquired full-pool bound library must remain in the cost ledger. A smaller candidate set or a faster pruner is insufficient evidence of performance-preserving deployment savings.
-
-The contributions are an executable certificate-producing operator, its scoped computational improvement and an engineering evaluation that exposes the remaining information bottleneck. Claims beyond the binary fixed-kernel model, native floating predictions for every response, physical margin accuracy, H5 reachable histories and independent positive-case efficacy require evidence outside this study. These limits make the present completed method evaluation falsifiable without changing historical protocols or adverse findings.
+For a fixed-kernel GP continuation, the integer band-envelope implementation preserves complete closed action intervals and independently checkable exclusions while reducing the measured computational cost against an optimized same-output reference. A domain-cover identity yields a sound scalar certificate router and explains the unchanged H1 failure with weak pending-point information. The engineering contribution is more efficient and better-directed certified computation, with its physical decision limits explicit. Positive optimization-policy efficacy and complete deployment savings remain unestablished.
 
 \section*{Acknowledgements}
 
@@ -766,7 +212,7 @@ The following contribution assignment is proposed for author confirmation: conce
 
 The source repository is private: \url{https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design}. A repository URL alone does not provide reviewer access. The separately prepared data-and-code packet contains the immutable GP execution archive, the exact selected baseline and source snapshots needed for its reconstruction, coefficient bands, original and envelope exclusion certificates, recorded timings, and verification code. These materials support zero-solver reproduction of the current action-set contribution. The 114 kernel systems and 228 branch-domain outputs have been checked against the archived bytes; retiming can change machine-dependent times and does not acquire independent optimization evidence.
 
-The supporting paired-grid tables and historical release audits are preserved, but their complete raw reconstruction is currently unavailable. As of 14 October 2026, 22 of the 25 files listed in the paired-grid provenance audit have been recovered with matching SHA-256 hashes. The final recovery journal (\path{events.jsonl}), response collection (\path{responses.json}) and status (\path{run_status.json}) under \path{results/engineering_optimization_paired_mesh_recovery_v1/} have not been recovered. The earlier full review ZIP is not currently accessible. The retained analysis outputs cannot substitute for those raw records, and the historical release-validation result is not a claim of a complete current replay. Consequently, the paired-grid observations remain supporting historical results, with an explicit raw-evidence limitation; they do not establish mesh convergence or physical accuracy of the decision margin.
+The supporting paired-grid tables and historical release audits are preserved, but their complete raw reconstruction is currently unavailable. As of 15 October 2026, 22 of the 25 files listed in the paired-grid provenance audit have been recovered with matching SHA-256 hashes. The final recovery journal (\path{events.jsonl}), response collection (\path{responses.json}) and status (\path{run_status.json}) under \path{results/engineering_optimization_paired_mesh_recovery_v1/} have not been recovered. The earlier full review ZIP is not currently accessible. The retained analysis outputs cannot substitute for those raw records, and the historical release-validation result is not a claim of a complete current replay. Consequently, the paired-grid observations remain supporting historical results, with an explicit raw-evidence limitation; they do not establish mesh convergence or physical accuracy of the decision margin.
 
 The authors report preserving the historical raw-output archive of approximately 13.6 GB locally. That archive has not been fully inspected in the present preparation and is not included in the scoped reviewer packet. Availability of all historical records is therefore not guaranteed by this statement. Reviewer materials must be supplied through the journal's accepted attachment or access route before evaluation. No new physics, witness retry, replacement, or independent optimization sample was used to prepare these materials. Third-party implementations and publisher templates retain their own terms; private source access does not by itself grant an open-source license.
 
@@ -780,7 +226,7 @@ The authors declare no conflicts of interest to report regarding the present stu
 
 \section*{Supplementary Materials}
 
-The supplementary document contains the certified-envelope proof details and H1 cost boundaries as well as the historical function-level, LassoBench, dimensional, sensitivity and resource evidence, plus the new GP intervention, force-position transfer, per-repeat endpoints, fixed-policy comparisons, horizon diagnostics and complete recovery-aware cost ledger.
+The supplementary document contains the integer-filter and scalar-router proof details, recorded strong comparisons and H1 cost boundaries as well as the historical function-level, LassoBench, dimensional, sensitivity and resource evidence, plus the new GP intervention, force-position transfer, per-repeat endpoints, fixed-policy comparisons, horizon diagnostics and complete recovery-aware cost ledger.
 
 \bibliographystyle{tfcad}\bibliography{EO_references}
 \end{document}

@@ -1,349 +1,37 @@
 {
   "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
-  "historical_main_numeric_rows_preserved": true,
-  "historical_supplement_numeric_rows_preserved": true,
-  "original_bibliography_byte_preserved": true,
-  "abstract_words": 187,
-  "core_algorithm_or_empirical_results_changed": false,
+  "date": "2026-10-15",
+  "scope": "Current focused scientific source; no new PDF/ZIP export",
+  "all_historical_numeric_rows_preserved": true,
   "source_files": [
     {
       "path": "source/paper/engineering_optimization/EO_manuscript.tex",
+      "bytes": 31844,
+      "sha256": "b3f47e86955f00b288b8c49a86330b3f1cdefe9781f8eb10a9f613f2570691df"
+    },
+    {
+      "path": "source/paper/engineering_optimization/EO_supplementary.tex",
+      "bytes": 119808,
+      "sha256": "97ef8976097122bfc01be902b7a9ad3a2e164809e2f257012f8eea796a2b20bb"
+    },
+    {
+      "path": "source/paper/engineering_optimization/EO_references.bib",
+      "bytes": 13301,
+      "sha256": "28bccd2994a0f7a0b78ca79bd0b59b522e040f2ce47166c71e45ea1cef53e48b"
+    },
+    {
+      "path": "source/paper/engineering_optimization/archival/EO_full_evidence_20261014.tex",
       "bytes": 97942,
       "sha256": "9284d4bb48538d1d2cf31d02ebb26d328a5d14157016134861fb453169b4de0c"
     },
     {
-      "path": "source/paper/engineering_optimization/EO_references.bib",
-      "bytes": 12997,
-      "sha256": "4ecd5ae22b7dc574325c6f73b1872287db7933ca4732ecdf965545a46a00ea3a"
-    },
-    {
-      "path": "source/paper/engineering_optimization/EO_supplementary.tex",
-      "bytes": 119593,
-      "sha256": "5066af11c47198a1be980491bd425d205f630e72663f5a7c3c5a11a5adea8250"
-    },
-    {
-      "path": "source/paper/engineering_optimization/budget_audit/analysis.json",
-      "bytes": 65061,
-      "sha256": "7a3ee271accf045faa625fa30b1738fc5c99f5f1eebe59b23fca877af9aa44f5"
-    },
-    {
-      "path": "source/paper/engineering_optimization/budget_audit/classifications.csv",
-      "bytes": 132588,
-      "sha256": "bed8cdf82943252d984fe5352359a0307d9baffb561179ccb588ec0b98e56047"
-    },
-    {
-      "path": "source/paper/engineering_optimization/budget_audit/selections.csv",
-      "bytes": 37190,
-      "sha256": "11c888369ebd117d603f9bd5a3bf8bfdb73de40d4a0dfc2dd8dca587fa87d3f6"
-    },
-    {
-      "path": "source/paper/engineering_optimization/common_continuation/analysis.json",
-      "bytes": 6019,
-      "sha256": "09c052f1f49534fe8ea5a621e4b75d66f051c480b99d4d8d5741d61621518daa"
-    },
-    {
-      "path": "source/paper/engineering_optimization/common_continuation/distinct_action_contrasts.csv",
-      "bytes": 3899,
-      "sha256": "bff7d2f130d45079edf1b2ca35b0a4c8ac0d96aba6ed9988e8a7c275c9193d96"
-    },
-    {
-      "path": "source/paper/engineering_optimization/common_continuation/engineering_endpoints.csv",
-      "bytes": 71441,
-      "sha256": "430e7eb4f586bd54a39d0e25883690ababc0e170c6b95ba5051bfff0f39b0df4"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/gp_certified_envelope_comparison.pdf",
-      "bytes": 18385,
-      "sha256": "e67869e384502b767823c46ab10cc1109fc69ed1830a20aa322f99db22c0ed7e"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/main_figure_1.pdf",
-      "bytes": 22479,
-      "sha256": "5c344332f71ecd49b36e7d7e36a21995bf9131a1ba7d83ce6bb925195bbc8fe1"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/main_figure_2.pdf",
-      "bytes": 16971,
-      "sha256": "b6e4905565e90971e7caa8ce800100cb2f9f6838d8e09a69aa11fe9d9baa7d4e"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/main_figure_3.pdf",
-      "bytes": 13409,
-      "sha256": "06b888b7d5671c72856b98d55d9c8ee2b68e60914dd187af4c19818bf6a4b81d"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/main_figure_4.pdf",
-      "bytes": 28593,
-      "sha256": "64ec5995f67124e2bda544705640e0ca482cc47a706c9ced1dc7016ced2205d2"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/main_figure_5.pdf",
-      "bytes": 201333,
-      "sha256": "f34b4885f4053ecf352f0fc01780e02739a45687cc102ff804847616b82ca2d8"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_1.pdf",
-      "bytes": 16370,
-      "sha256": "218602c53898a91d0bc90f79d1167dc18ae318ee5c3ae48bacd4012e6e60cc82"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_10.pdf",
-      "bytes": 19701,
-      "sha256": "d095245fedb433fa39113c2d803a8404b3babd022b880c9664ec5af78ca1251d"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_11.pdf",
-      "bytes": 15312,
-      "sha256": "28137e253ad927b99d4a3dcdb6ca965a6e3c33870578f190519525efafe1c667"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_12.pdf",
-      "bytes": 24165,
-      "sha256": "002467fcda2f97c7a8f4633a07ffd5f8fd280fd9b0062f42350534a0e06e84ef"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_13.pdf",
-      "bytes": 53008,
-      "sha256": "6731d0ff015be264405b23ece017c19ce5a409d9c447b646e863090fcb83041d"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_2.pdf",
-      "bytes": 16166,
-      "sha256": "bab78cac86a65cf7715802529780a8d2e2983609093eb4c1bc237cb64682b97f"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_3.pdf",
-      "bytes": 13409,
-      "sha256": "06b888b7d5671c72856b98d55d9c8ee2b68e60914dd187af4c19818bf6a4b81d"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_4.pdf",
-      "bytes": 16312,
-      "sha256": "d8678f2e960d4dce3322b99c49ed2f5084245b57d19c99b7b3b525b9d5529bf1"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_5.pdf",
-      "bytes": 19157,
-      "sha256": "ba0b26a0fc1ccdb5e51413277b653b3df7e0dca2ec9c96eb5ac7f9b1cd0fe862"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_6.pdf",
-      "bytes": 30504,
-      "sha256": "c6739a48630c5606ebcdfa1e81ae5c6a54b7939b48f4b7ed99bba729e6d75b7b"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_7.pdf",
-      "bytes": 25288,
-      "sha256": "0c8392216fb5da9dba6d7f9c0d8c36c4b681f9c11cbcd43619dfb648d6f1c670"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_8.pdf",
-      "bytes": 51814,
-      "sha256": "d49387960a4c645aac25c09f9fdf4120e45e6390e9c64425c5160442a572e7a0"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/supp_figure_9.pdf",
-      "bytes": 15405,
-      "sha256": "de22c64f36b0a2dd636cd185e1f1709da1c6fbd60a866849e26c7c11dda7fa17"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/transfer_cost_performance.pdf",
-      "bytes": 58058,
-      "sha256": "76b52343baa89689664811a0aa53f8a5a3952281db8937743638a4dac6f94015"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/transfer_cost_performance.svg",
-      "bytes": 63882,
-      "sha256": "ed476f4a3ef5b97643b7726a295757088307bb525c7e5be919bf6cddfe6a7b3d"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/transfer_pilot_horizons.pdf",
-      "bytes": 41242,
-      "sha256": "3bc65a5bbbd6aab1d79f62e5b52899e6929a0f7a37bc97c3f11e4d2baea61b33"
-    },
-    {
-      "path": "source/paper/engineering_optimization/figures/transfer_pilot_horizons.svg",
-      "bytes": 58181,
-      "sha256": "839492ae79e1b350e37cbe241500dac0830cd8aab962556fa5c255fabe720c9e"
-    },
-    {
-      "path": "source/paper/engineering_optimization/gp_reachability_20261013/PROTOCOL.md",
-      "bytes": 3453,
-      "sha256": "b4f4b6cc20f0c40edef3a3b47cf165e37eb997285a0ad717e91a987780f7c6ce"
-    },
-    {
-      "path": "source/paper/engineering_optimization/gp_reachability_20261013/unit_tests.txt",
-      "bytes": 1856,
-      "sha256": "b719b6a7ae28d1eb82f0749cb13644f7667918cf7e8993ef9072188583c4ddf0"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/factual_edit_audit.json",
-      "bytes": 6326,
-      "sha256": "70483c225c1fdc6fbc4159b12c1dd6ec6983cb820163239aa226e62b1b213f49"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/gp_envelope_completion.tex",
-      "bytes": 5469,
-      "sha256": "2a58aa65b242f66346f10f1a48bad0bf3ca7f7153f28af00fd195bb97989a552"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/integrity_tests.txt",
-      "bytes": 123,
-      "sha256": "9b1ace0189f65faf09dd311eaf7ef6f512a2d5a3acf548443e92673592374e7d"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/main_records.tex",
-      "bytes": 1701,
-      "sha256": "ec8e4f617a579f9e756ffce77e7bcf74fc44a97bc067b24bae8645928c3db0f8"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/pdf_payload_review.json",
-      "bytes": 4868,
-      "sha256": "dbc0a20d41adbd2ec8518fd4ef91f1580ad9162b77417d5d63fd83f09a999c78"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/pdf_render_review.json",
-      "bytes": 7871,
-      "sha256": "83177688fb8a22461517ddd0a457660fe4e24dabbc04c1f65fd7b3b6f56f52d3"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/pre_submission_checked_records.tex",
-      "bytes": 5875,
-      "sha256": "ab174631af7b13ddbf41d402c8407004834bac0d1fc61912a5c2140336ea1a1e"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/publication_boundary.json",
-      "bytes": 495,
-      "sha256": "556563e1ed5508c03f66cb0bdae5c789bdf630dd452297e52b8e693910d9d1aa"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/release_validation.json",
-      "bytes": 1099,
-      "sha256": "3e9b36fefa09a3448c459861be9cc1e7a94715547f4e7e314f9e5001297ccdd6"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/review_main_results.tex",
-      "bytes": 1918,
-      "sha256": "184f36812e20f0949e0710582f434533b77d9d1c204bd21cf45343b8bdbb3aeb"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/review_method_records.tex",
-      "bytes": 1989,
-      "sha256": "800a331ce4cf8dea8555f06a922a959673b461f12c78fec6c17ffeff89c6b699"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/review_package_manifest.json",
-      "bytes": 98398,
-      "sha256": "efba80a27ad34b690acaf1f4480c6c4818962609a533b14d40631b7352554924"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/review_supp_records.tex",
-      "bytes": 9760,
-      "sha256": "7a4d25c80cfb3e0b73a46558db216221a9cb2a1e7d38007c10e0cd6518d781c1"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/submission_algorithm.tex",
-      "bytes": 4091,
-      "sha256": "f7afe3f60c63bf3705381b0fb09b87b2197a1a094b54b4dbc602bbf9917cbb08"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/submission_archival_status.tex",
-      "bytes": 2981,
-      "sha256": "ed3dbf1bb49e21577038f35e27105227d22cabe107a33ee16c4217d1483b84b3"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/submission_comparison.tex",
-      "bytes": 2268,
-      "sha256": "8e4bbd754e00984f0f17bbaa3a62895fc79a3a40b291d20085d5091bfed710e3"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/supp_records.tex",
-      "bytes": 11986,
-      "sha256": "12d5a19d23d72a6e93af44876c5248d815920c9759222ffefe8b051056b3553e"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/table_inputs.json",
-      "bytes": 1698,
-      "sha256": "01b8b441156e1e22a835551b9a45de591632d32f827db43ef0011db74e546e6f"
-    },
-    {
-      "path": "source/paper/engineering_optimization/manuscript_build.log",
-      "bytes": 383014,
-      "sha256": "551601024374d772298cce6c55c1af1fe3fb150dd4b7868953f06e4903146784"
-    },
-    {
-      "path": "source/paper/engineering_optimization/monotone_development_20261013/DEVELOPMENT_REPORT.md",
-      "bytes": 6106,
-      "sha256": "356c56c672d49af11031b72836942b0fd443d657f34b657f2e20c59dfe213bb8"
-    },
-    {
-      "path": "source/paper/engineering_optimization/monotone_development_20261013/METHOD_SPEC.md",
-      "bytes": 7244,
-      "sha256": "c1c8d6e93f2e19698faf563def72f92e094a668cebf2f850d9353d48be1db0cd"
-    },
-    {
-      "path": "source/paper/engineering_optimization/monotone_development_20261013/analysis.json",
-      "bytes": 154767,
-      "sha256": "12d2351fadab82f47ad63dbb5d7f5651167bb16734bc1eb32086a60381314777"
-    },
-    {
-      "path": "source/paper/engineering_optimization/monotone_development_20261013/summary.csv",
-      "bytes": 13349,
-      "sha256": "27d02501e0f9ed45842827fd5acb9e8a7f80888d9f734257d9ecd8510e8ccd67"
-    },
-    {
-      "path": "source/paper/engineering_optimization/physical_bound_screen_20261013/NEXT_RESEARCH_GATE.md",
-      "bytes": 4520,
-      "sha256": "a10d1b29e9b9d67294143ae604854edaffdff7a21e31231c69655c37696d9f66"
-    },
-    {
-      "path": "source/paper/engineering_optimization/physical_bound_screen_20261013/PROTOCOL.md",
-      "bytes": 6528,
-      "sha256": "d94bdaf090eeee05f25c94955642ec4842e78424dc6f048d57507cbc80ebbe1e"
-    },
-    {
-      "path": "source/paper/engineering_optimization/physical_bound_screen_20261013/RESULT_AND_REVIEW_DECISION.md",
-      "bytes": 4886,
-      "sha256": "647772d69afceddd0849c155da5393ddda8f7ede0175a07c420774961d989328"
-    },
-    {
-      "path": "source/paper/engineering_optimization/physical_bound_screen_20261013/analysis.json",
-      "bytes": 41251,
-      "sha256": "6450cb3953b1b9b520b139a68c01f39569f6bd44c45c3c05411547924122cdb6"
-    },
-    {
-      "path": "source/paper/engineering_optimization/submission_revision_20261013/CORE_OBJECT_AND_CLOSEST_WORK.md",
-      "bytes": 7229,
-      "sha256": "27231656d692604961c0085ea80e0ca0068cefe35cff8fd4599aeb15232aa404"
-    },
-    {
-      "path": "source/paper/engineering_optimization/submission_revision_20261013/RESPONSE_AND_SCOPE.md",
-      "bytes": 2134,
-      "sha256": "9c442af399293e8446ecd1c999164ed15c84fb2bdd77407c5223268f7c8efa96"
-    },
-    {
-      "path": "source/paper/engineering_optimization/supplement_build.log",
-      "bytes": 256025,
-      "sha256": "0cf9e170aa079d44b12adab6559d435c4d285acf1c6d63a665af624e8defe160"
-    },
-    {
-      "path": "source/paper/engineering_optimization/template_provenance.json",
-      "bytes": 751,
-      "sha256": "9db106aea90c98dc3d9d8f7e962fb166646331e74ea965067914e8bd0ba0e35f"
-    },
-    {
-      "path": "source/paper/engineering_optimization/work_status.json",
-      "bytes": 23917,
-      "sha256": "06cf5ae2aa61cbe5bb512340de0e7202dbd97b50437182c7872c0c7355867222"
-    },
-    {
-      "path": "source/paper/engineering_optimization/integrated_evidence/h1_bound_bottleneck_closure.tex",
-      "bytes": 2220,
-      "sha256": "fc5d7ee917874fe48334fd608dd5b14dfc3647f6678abeb93d379aa48ed13bfa"
+      "path": "source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex",
+      "bytes": 2401,
+      "sha256": "627e0944bc5f931048fd8e5b70b68804b21fbe4c4da91826bf6ae52c9e55a46b"
     }
   ],
+  "new_algorithm_and_computational_results_added": true,
+  "historical_empirical_results_replaced": false,
   "new_physical_evaluations": 0,
-  "final_submit_ready": false,
-  "new_readonly_H1_threshold_diagnosis": true,
-  "core_algorithm_or_historical_empirical_results_changed": false
+  "final_submit_ready": false
 }
