@@ -1,0 +1,34 @@
+{
+  "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "parent_commit": "d43ae048287da985addf324b0e83f1cea7b14daf",
+  "status": "ordinary numerical reference, no rigorous value/selection certificate",
+  "scope": "all seen development inputs; not independent policy validation",
+  "target": "E[m0-min(m0,Z,Y_pi(Z))] under fixed root joint Gaussian",
+  "selector": "saved binary nominal affine lower envelope; lowest eligible index at ties",
+  "first_action_tie": "lowest numeric branch identifier",
+  "band_overlap": "separate disjoint overlay and floating coupling-error diagnostic",
+  "root_support": "full Gaussian; no truncation or probability renormalization",
+  "numerical_window_standard_deviations": 12,
+  "tail": "linear growth bound reported separately",
+  "primary_quad": {
+    "epsabs_scaled": 1e-13,
+    "epsrel": 2e-12,
+    "limit": 200
+  },
+  "crosscheck_quad": {
+    "epsabs_scaled": 1e-14,
+    "epsrel": 2e-13,
+    "limit": 200
+  },
+  "clipped_diagnostic": "direct stable bounded integral, 16 vs 32 Gauss-Legendre nodes",
+  "delta_over_initial": 1e-06,
+  "metadata_states": 60,
+  "nontrivial_states": 43,
+  "branches": 114,
+  "future_response_journals_read": false,
+  "new_physical_evaluations": 0,
+  "new_bound_queries": 0,
+  "new_hyperparameter_fits": 0,
+  "new_independent_samples": 0,
+  "source_sha256": "222c23ce859f5684655e1e4888cde297f5e5b7458331126dd9fa32d5037f2294"
+}

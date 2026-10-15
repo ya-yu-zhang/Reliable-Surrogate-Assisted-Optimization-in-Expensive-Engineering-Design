@@ -1,13 +1,13 @@
 {
   "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
   "date": "2026-10-15",
-  "scope": "Current final bounded-plan scientific source; draft-mode TeX/reference check; no PDF/ZIP export",
+  "scope": "Current scientific source after direct-rollout no-go; source hashes and source-only syntax checks; current draft build blocked by missing article.cls; no PDF/ZIP export",
   "all_historical_numeric_rows_preserved": true,
   "source_files": [
     {
       "path": "source/paper/engineering_optimization/EO_manuscript.tex",
-      "bytes": 37825,
-      "sha256": "5b65b2b2272c80f94e2128cabf97bd003ced4a95ceb236d168382c5268c5a076"
+      "bytes": 38717,
+      "sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e"
     },
     {
       "path": "source/paper/engineering_optimization/EO_supplementary.tex",
@@ -26,8 +26,8 @@
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex",
-      "bytes": 6378,
-      "sha256": "1a7ff10ff9866c84c6c889f39127b992ea8268697339ea46040d9cec03d56735"
+      "bytes": 11344,
+      "sha256": "ad1551bb87477ab1a6bffea01256c0bcc201e53d1989e132adcb74c703d532ce"
     }
   ],
   "new_algorithm_and_computational_results_added": true,
@@ -36,5 +36,7 @@
   "final_submit_ready": false,
   "closest_method_review_and_frozen_nominal_diagnostic_complete": true,
   "scientific_positioning": "Specialized certified numerical implementation and verification study",
-  "source_level_originality_risk_explicit": true
+  "source_level_originality_risk_explicit": true,
+  "direct_rollout_reference_and_paid_replay_complete": true,
+  "current_source_compile_verified": false
 }

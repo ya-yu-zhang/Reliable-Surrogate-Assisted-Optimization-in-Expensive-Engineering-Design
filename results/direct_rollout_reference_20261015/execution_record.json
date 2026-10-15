@@ -1,0 +1,61 @@
+{
+  "status": "completed_direct_reference_and_paid_replay_no_go",
+  "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "parent_commit": "d43ae048287da985addf324b0e83f1cea7b14daf",
+  "states": 43,
+  "branches": 114,
+  "metadata_states": 60,
+  "aliases_retained": 17,
+  "negative_fraction_min": 0.9940045124993151,
+  "negative_fraction_median": 0.9996407106380414,
+  "negative_fraction_max": 0.9999970389357528,
+  "clipped_diagnostic_ranking_changes": 38,
+  "floating_unique_ranking_states": 43,
+  "numerical_or_selection_certificate": false,
+  "paid_two_step_comparison": {
+    "mean": {
+      "better": 1,
+      "tie": 39,
+      "worse": 3
+    },
+    "ei": {
+      "better": 0,
+      "tie": 41,
+      "worse": 2
+    }
+  },
+  "nominal_vs_native_next_action_matches": 114,
+  "further_certified_solver_development_started": false,
+  "new_optimization_method_originality_demonstrated": false,
+  "engineering_policy_superiority_demonstrated": false,
+  "decision": "Stop this candidate route; retain specialized implementation/verification positioning",
+  "new_root_kernel_constructions": 43,
+  "new_branch_conditional_systems": 114,
+  "development_GP_data_runs": 1,
+  "new_physical_evaluations": 0,
+  "new_bound_queries": 0,
+  "new_hyperparameter_fits": 0,
+  "new_independent_samples": 0,
+  "retries": 0,
+  "replacements": 0,
+  "prior_witness_attempts": 2,
+  "remaining_witness_attempts": 0,
+  "decision_stage_future_response_reads": false,
+  "paid_replay_stage_future_response_reads": true,
+  "all_data_previously_seen": true,
+  "source_sha256": {
+    "compute_direct_rollout.py": "222c23ce859f5684655e1e4888cde297f5e5b7458331126dd9fa32d5037f2294",
+    "verify_direct_rollout_reference.py": "c7349c32d4aeb193ed6332c5e423c2a2c4e893171d2f0fefc08decc6da2e492f",
+    "replay_direct_rollout_decisions.py": "955243e09f47adcc056072b33babf87b26bc5834f1ed5ff679103eeb418e6c8b"
+  },
+  "frozen_decisions_sha256": "ecbe6ab237ec43eb195f2f5e629e151c1fb71c8be2ac1ab3b418726fa32f7812",
+  "result_directory": "results/direct_rollout_reference_20261015",
+  "gate_record": "paper/engineering_optimization/contribution_closure_20261015/DIRECT_ROLLOUT_RESULT_AND_GATE.md",
+  "main_manuscript_changed": true,
+  "new_PDF_generated": false,
+  "new_ZIP_generated": false,
+  "final_submit_ready": false,
+  "unit_check_record_sha256": "f65ea57e93c5e023d00162e0dfc6d745c57fd7c66a8d67b4819ec54a3859454b",
+  "text_build_verified": false,
+  "text_build_limitation": "Default format missing; existing workspace format loads but article.cls unavailable; no package install or further repair attempted"
+}

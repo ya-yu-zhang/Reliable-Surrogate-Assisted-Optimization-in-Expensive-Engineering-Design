@@ -39,3 +39,34 @@ B & 945 & 202700114.0304 & $\infty$\\\bottomrule
 The nominal and band index sets are $\{156,223,991\}$ in A and $\{118,417,430,662,945\}$ in B. The unbounded response domain is a model contract; switches of order $10^7$--$10^8$ are not observed or typical beam responses. Warm scalar requests assume the pending bound and paid comparator are already available. Cold acquisition costs remain charged; no new deployment was run. The three-component difference of 2.208568264 seconds and historical bound-library construction of 176.433648 seconds concern different scopes and are not combined into a measured deployment speedup.
 
 Preselection, all 228 diagnostic rows, exact example intervals and input hashes are in \path{results/nominal_band_diagnostic_20261015/}. The closest-method review and engineering interpretation accompany the contribution record. They constrain the paper to implementation/verification evidence, with originality of an optimization method and positive engineering efficacy unestablished.
+
+\section{Direct two-step value and engineering diagnostic}
+
+This exploratory calculation retains all 60 metadata states, including 17 action-alias states, and computes the 114 available first-action branches in the 43 nontrivial states. All inputs are previously observed development material. The kernel parameters, initial observations, action menu and full root GP Gaussian distribution are unchanged. The declared numerical selector $\pi_a(z)$ minimizes the saved binary nominal affine coefficients, with the smallest eligible index resolving ties. Exact rational intersections define disjoint nominal cells on both half-lines. This selector is distinguished from the coupled exact GP coefficients and from native floating predictions. The root conditional law used for value integration is also distinguished from the continuation's internally renormalized mean rule.
+
+For initial incumbent $m_0$, first response $Z_a$ and subsequent response $Y_{\pi_a(Z_a)}$, define
+\[
+ V_a=\mathbb E[m_0-\min(m_0,Z_a,Y_{\pi_a(Z_a)})],\qquad
+ N_a=\mathbb E[-\min(0,Z_a,Y_{\pi_a(Z_a)})].
+\]
+Conditionally on $Z_a=z$, the second contribution is ordinary Gaussian EI with threshold $\min(m_0,z)$. It is integrated separately on each nominal action cell. The identity
+\[
+ V_a-N_a=\mathbb E[m_0-\max(0,\min(m_0,Z_a,Y_{\pi_a(Z_a)}))]
+\]
+is checked against a stable direct integral for the bounded clipped gain. This subtraction is diagnostic only: it does not define or select a replacement acquisition. The Gaussian probabilities are neither clipped nor renormalized.
+
+Ordinary SciPy quadrature uses standardized $[-12,12]$ with a separately recorded linear-growth tail bound, incumbent and mean-crossing splits, and two frozen tolerances. The maximum $V-N$ identity residual is $8.95\times10^{-8}$. Three synthetic independent-Gaussian cases agree with an independent survival-integral identity to $8.89\times10^{-16}$; additional exact partition checks cover sign crossings and positive-measure ties. Agreement between quadrature settings is not an independent error certificate. Band intervals are overlaid as disjoint cells before measuring ambiguity; their overlapping probabilities are never added as distinct action probabilities. The largest ambiguous probability is approximately $5.02\times10^{-6}$. The floating coupling sensitivity bound reaches 5.10 value units. Neither covariance nor special-function rounding has been rigorously enclosed, so none of these diagnostics is a value or selection certificate.
+
+The 114 branch values range from $1.6244\times10^5$ to $6.1980\times10^8$, whereas initial incumbents range from 749.36 to 3064.73. Negative terminal predictions account for 99.40045--99.99970\% of those modeled values (median 99.96407\%). All 43 nominal first-action rankings have positive margins after the floating numerical and band-sensitivity diagnostics. Ranking the bounded clipped-gain diagnostic instead changes the preferred branch in 38 states; those rankings are not deployed as a new policy. These results distinguish the earlier loose $G\pm\eta$ shortcut from an interpretable engineering optimization gain.
+
+The source, numerical settings, initial-input hashes, values and decisions were saved before this calculation read already paid two-step outcomes. The replay matches all 114 initial actions, next pools, training counts and nominal next actions to the recorded native mean choices. The physical context is the original default $100\times50$ beam, without a new solver call. Table~\ref{tab:direct_rollout_replay} compares the selected terminal incumbent after two total evaluations with first-action controls followed by the same mean continuation. A tie uses $10^{-6}m_0$, fixed in the numerical design. States and branches remain dependent development observations; no inferential significance or independent efficacy claim is made.
+
+\begin{table}[htbp]\centering\small
+\caption{Already paid, descriptive two-step replay over 43 nontrivial states. Lower compliance is better.}\label{tab:direct_rollout_replay}
+\begin{tabular}{lrrr}\toprule
+Comparator first action & Selected better & Tied & Selected worse\\\midrule
+Mean & 1 & 39 & 3\\
+EI & 0 & 41 & 2\\\bottomrule
+\end{tabular}\end{table}
+
+The mean relative terminal-compliance differences, normalized by each initial incumbent, are $+2.085\%$ versus mean-first and $+0.889\%$ versus EI-first; both medians are zero. These averages are descriptive and do not demonstrate superiority. The single development execution took 4.09 seconds, including recorded covariance, partition and quadrature work; it is not a paired computational benchmark. Further certified rollout-solver development was stopped at this gate. No positive-response model, changed threshold, new physical evaluation, refit or independent optimization sample was introduced. Original H1/H5 decisions remain unchanged. Reproduction sources and frozen outputs are in \path{results/direct_rollout_reference_20261015/}.

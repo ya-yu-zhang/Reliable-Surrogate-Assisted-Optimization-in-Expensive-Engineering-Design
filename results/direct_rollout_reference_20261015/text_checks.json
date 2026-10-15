@@ -1,0 +1,49 @@
+{
+  "mode": "pdflatex -draftmode plus BibTeX; no PDF output or visual QA",
+  "format_note": "Initial default format lookup failed; reused existing workspace pdflatex.fmt, without package installation or format rebuild",
+  "documents": {
+    "main": {
+      "source": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+      "source_sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
+      "command_return_codes": [
+        1
+      ],
+      "unresolved_or_overfull_log_lines": [
+        "! LaTeX Error: File `article.cls' not found.",
+        "! Emergency stop.",
+        "!  ==> Fatal error occurred, no output PDF file produced!"
+      ],
+      "bibtex_warning_or_error_lines": [],
+      "PDF_generated": false
+    },
+    "supplement": {
+      "source": "submission_20261014/source/paper/engineering_optimization/EO_supplementary.tex",
+      "source_sha256": "97ef8976097122bfc01be902b7a9ad3a2e164809e2f257012f8eea796a2b20bb",
+      "command_return_codes": [
+        1
+      ],
+      "unresolved_or_overfull_log_lines": [
+        "! LaTeX Error: File `article.cls' not found.",
+        "! Emergency stop.",
+        "!  ==> Fatal error occurred, no output PDF file produced!"
+      ],
+      "bibtex_warning_or_error_lines": [],
+      "PDF_generated": false
+    }
+  },
+  "status": "build_blocked_by_existing_environment; source-only checks passed",
+  "blocker": "Default format missing; existing workspace format loads but article.cls unavailable; no package install or further repair attempted",
+  "source_only_checks": [
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+      "sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex",
+      "sha256": "ad1551bb87477ab1a6bffea01256c0bcc201e53d1989e132adcb74c703d532ce",
+      "balanced_braces_and_named_environments": true
+    }
+  ],
+  "current_source_compile_verified": false
+}

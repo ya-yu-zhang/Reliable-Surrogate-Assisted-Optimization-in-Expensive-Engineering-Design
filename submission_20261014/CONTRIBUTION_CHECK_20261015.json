@@ -35,7 +35,7 @@
   "PDF_or_ZIP_created_this_step": false,
   "author_facts_and_venue_conditions_still_pending": true,
   "final_submit_ready": false,
-  "main_and_supplement_TeX_and_references_checked_in_draft_mode": true,
+  "main_and_supplement_TeX_and_references_checked_in_draft_mode": false,
   "new_PDF_generated": false,
   "new_ZIP_generated": false,
   "latex_unresolved_references_or_overfull_boxes": {
@@ -43,6 +43,144 @@
     "supplement": []
   },
   "draft_mode_checks": {
+    "mode": "pdflatex -draftmode plus BibTeX; no PDF output or visual QA",
+    "format_note": "Initial default format lookup failed; reused existing workspace pdflatex.fmt, without package installation or format rebuild",
+    "documents": {
+      "main": {
+        "source": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+        "source_sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
+        "command_return_codes": [
+          1
+        ],
+        "unresolved_or_overfull_log_lines": [
+          "! LaTeX Error: File `article.cls' not found.",
+          "! Emergency stop.",
+          "!  ==> Fatal error occurred, no output PDF file produced!"
+        ],
+        "bibtex_warning_or_error_lines": [],
+        "PDF_generated": false
+      },
+      "supplement": {
+        "source": "submission_20261014/source/paper/engineering_optimization/EO_supplementary.tex",
+        "source_sha256": "97ef8976097122bfc01be902b7a9ad3a2e164809e2f257012f8eea796a2b20bb",
+        "command_return_codes": [
+          1
+        ],
+        "unresolved_or_overfull_log_lines": [
+          "! LaTeX Error: File `article.cls' not found.",
+          "! Emergency stop.",
+          "!  ==> Fatal error occurred, no output PDF file produced!"
+        ],
+        "bibtex_warning_or_error_lines": [],
+        "PDF_generated": false
+      }
+    },
+    "status": "build_blocked_by_existing_environment; source-only checks passed",
+    "blocker": "Default format missing; existing workspace format loads but article.cls unavailable; no package install or further repair attempted",
+    "source_only_checks": [
+      {
+        "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+        "sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
+        "balanced_braces_and_named_environments": true
+      },
+      {
+        "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex",
+        "sha256": "ad1551bb87477ab1a6bffea01256c0bcc201e53d1989e132adcb74c703d532ce",
+        "balanced_braces_and_named_environments": true
+      }
+    ],
+    "current_source_compile_verified": false
+  },
+  "current_bounded_plan_completed": true,
+  "current_bounded_plan_new_GP_reconstructions": 0,
+  "existing_strong_comparison_or_full_proof_replay_rerun_this_plan": false,
+  "current_bounded_plan_new_physical_evaluations": 0,
+  "rollout_method_candidate_feasibility_20261015": {
+    "status": "completed_feasibility_gate_no_go",
+    "candidate_implemented": false,
+    "gate_reason": "Event shortcut is numerically uninformative at all 43 development states; root Gaussian support conflicts with nonnegative compliance; no rigorous numerical certificate produced.",
+    "source_sha256": "5beac3c3290337631d2eac1e10ccabf8e8097f91f5455119c6da67fb4ee5a895",
+    "preflight_design_sha256": "339d5535a23b1168d72c4e03a2cf85c81ed99bda1aea796d64edbae7e47c5f4a",
+    "future_responses_read": false,
+    "numerical_smoke_checks_passed": true,
+    "new_fixed_root_systems": 43,
+    "new_physical_evaluations": 0,
+    "new_physical_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "new_independent_optimization_samples": 0,
+    "remaining_witness_attempts": 0,
+    "new_PDF_generated": false,
+    "new_ZIP_generated": false,
+    "initial_serialization_error_fixed_before_publication": true,
+    "main_manuscript_changed": false,
+    "final_submit_ready": false,
+    "distinct_fixed_root_systems": 43,
+    "development_preflight_runs": 4,
+    "root_kernel_constructions_across_development_runs": 172,
+    "retained_run_new_fixed_root_systems": 43
+  },
+  "direct_rollout_reference_20261015": {
+    "status": "completed_direct_reference_and_paid_replay_no_go",
+    "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+    "parent_commit": "d43ae048287da985addf324b0e83f1cea7b14daf",
+    "states": 43,
+    "branches": 114,
+    "metadata_states": 60,
+    "aliases_retained": 17,
+    "negative_fraction_min": 0.9940045124993151,
+    "negative_fraction_median": 0.9996407106380414,
+    "negative_fraction_max": 0.9999970389357528,
+    "clipped_diagnostic_ranking_changes": 38,
+    "floating_unique_ranking_states": 43,
+    "numerical_or_selection_certificate": false,
+    "paid_two_step_comparison": {
+      "mean": {
+        "better": 1,
+        "tie": 39,
+        "worse": 3
+      },
+      "ei": {
+        "better": 0,
+        "tie": 41,
+        "worse": 2
+      }
+    },
+    "nominal_vs_native_next_action_matches": 114,
+    "further_certified_solver_development_started": false,
+    "new_optimization_method_originality_demonstrated": false,
+    "engineering_policy_superiority_demonstrated": false,
+    "decision": "Stop this candidate route; retain specialized implementation/verification positioning",
+    "new_root_kernel_constructions": 43,
+    "new_branch_conditional_systems": 114,
+    "development_GP_data_runs": 1,
+    "new_physical_evaluations": 0,
+    "new_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "new_independent_samples": 0,
+    "retries": 0,
+    "replacements": 0,
+    "prior_witness_attempts": 2,
+    "remaining_witness_attempts": 0,
+    "decision_stage_future_response_reads": false,
+    "paid_replay_stage_future_response_reads": true,
+    "all_data_previously_seen": true,
+    "source_sha256": {
+      "compute_direct_rollout.py": "222c23ce859f5684655e1e4888cde297f5e5b7458331126dd9fa32d5037f2294",
+      "verify_direct_rollout_reference.py": "c7349c32d4aeb193ed6332c5e423c2a2c4e893171d2f0fefc08decc6da2e492f",
+      "replay_direct_rollout_decisions.py": "955243e09f47adcc056072b33babf87b26bc5834f1ed5ff679103eeb418e6c8b"
+    },
+    "frozen_decisions_sha256": "ecbe6ab237ec43eb195f2f5e629e151c1fb71c8be2ac1ab3b418726fa32f7812",
+    "result_directory": "results/direct_rollout_reference_20261015",
+    "gate_record": "paper/engineering_optimization/contribution_closure_20261015/DIRECT_ROLLOUT_RESULT_AND_GATE.md",
+    "main_manuscript_changed": true,
+    "new_PDF_generated": false,
+    "new_ZIP_generated": false,
+    "final_submit_ready": false,
+    "unit_check_record_sha256": "f65ea57e93c5e023d00162e0dfc6d745c57fd7c66a8d67b4819ec54a3859454b",
+    "text_build_verified": false,
+    "text_build_limitation": "Default format missing; existing workspace format loads but article.cls unavailable; no package install or further repair attempted"
+  },
+  "previous_successful_draft_mode_checks": {
     "mode": "pdflatex -draftmode plus BibTeX; no PDF output or visual QA",
     "documents": {
       "main": {
@@ -72,33 +210,5 @@
         "PDF_generated": false
       }
     }
-  },
-  "current_bounded_plan_completed": true,
-  "current_bounded_plan_new_GP_reconstructions": 0,
-  "existing_strong_comparison_or_full_proof_replay_rerun_this_plan": false,
-  "current_bounded_plan_new_physical_evaluations": 0,
-  "rollout_method_candidate_feasibility_20261015": {
-    "status": "completed_feasibility_gate_no_go",
-    "candidate_implemented": false,
-    "gate_reason": "Event shortcut is numerically uninformative at all 43 development states; root Gaussian support conflicts with nonnegative compliance; no rigorous numerical certificate produced.",
-    "source_sha256": "5beac3c3290337631d2eac1e10ccabf8e8097f91f5455119c6da67fb4ee5a895",
-    "preflight_design_sha256": "339d5535a23b1168d72c4e03a2cf85c81ed99bda1aea796d64edbae7e47c5f4a",
-    "future_responses_read": false,
-    "numerical_smoke_checks_passed": true,
-    "new_fixed_root_systems": 43,
-    "new_physical_evaluations": 0,
-    "new_physical_bound_queries": 0,
-    "new_hyperparameter_fits": 0,
-    "new_independent_optimization_samples": 0,
-    "remaining_witness_attempts": 0,
-    "new_PDF_generated": false,
-    "new_ZIP_generated": false,
-    "initial_serialization_error_fixed_before_publication": true,
-    "main_manuscript_changed": false,
-    "final_submit_ready": false,
-    "distinct_fixed_root_systems": 43,
-    "development_preflight_runs": 4,
-    "root_kernel_constructions_across_development_runs": 172,
-    "retained_run_new_fixed_root_systems": 43
   }
 }

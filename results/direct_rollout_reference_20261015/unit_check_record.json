@@ -1,0 +1,12 @@
+{
+  "command": "python -m src.verify_direct_rollout_reference",
+  "return_code": 0,
+  "source_sha256": "c7349c32d4aeb193ed6332c5e423c2a2c4e893171d2f0fefc08decc6da2e492f",
+  "exact_partition_checks": 2,
+  "independent_gaussian_identity_cases": 3,
+  "max_value_identity_oracle_abs_error": 4.440892098500626e-16,
+  "max_clipped_oracle_abs_error": 1.1102230246251565e-16,
+  "max_decomposition_abs_error": 8.881784197001252e-16,
+  "new_root_systems": 0,
+  "new_physical_evaluations": 0
+}
