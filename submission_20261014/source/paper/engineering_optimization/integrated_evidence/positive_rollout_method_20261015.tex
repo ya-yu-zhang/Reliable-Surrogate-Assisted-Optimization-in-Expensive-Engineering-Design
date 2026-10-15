@@ -1,0 +1,89 @@
+\section{Local response stability for finite-menu rollout}\label{sec:positive_method}
+
+\subsection{Optimization problem and model contract}
+
+Let $m_0>0$ be the observed incumbent, $\mathcal A$ a finite first-action menu, and $\mathcal I_a$ the eligible second-action pool after first action $a$. The declared continuation is
+\begin{equation}
+\pi_a(z)=\mathop{\rm argmin}^{\rm first}_{i\in\mathcal I_a}
+       (u_{ai}z+v_{ai}),\quad z>0,                 \label{eq:positive_policy}
+\end{equation}
+with the smallest pool index resolving ties. These affine means belong to the original raw-response fixed-kernel policy.
+
+The planning probability model is separate. Positive observations $y$, fixed binary matrices $A,B,K$ and fixed binary normalization constants $c_0,s_0$ with $s_0>0$ specify
+\begin{equation}
+\bar g=c_0\mathbf1+BA^{-1}(\log y-c_0\mathbf1),\quad
+S=s_0^2(K-BA^{-1}B^{\mathsf T}).                   \label{eq:positive_model}
+\end{equation}
+$A$ is the training matrix, $B$ the cross matrix and $K$ the finite target covariance before conditioning. All diagonal/noise choices are explicit model inputs. The target vector covers the first action and all second actions used. Require a well-defined Gaussian vector $G$ with this mean and covariance and put $Y=\exp(G)$ componentwise. Inverse-residual, positive-definiteness and conditional-variance enclosures must establish the arithmetic assumptions; a failed gate returns unresolved.
+
+The optimization problem is
+\begin{equation}
+V_a=\mathbb E[m_0-\min(m_0,Y_a,Y_{\pi_a(Y_a)})],
+\qquad \max_{a\in\mathcal A}V_a.                  \label{eq:positive_objective}
+\end{equation}
+The reward is in $[0,m_0]$. The log-response model defines its expectation and does not replace the raw-response continuation. The optimization variable is the first action in the fixed menu, rather than all future policies or the continuous design domain. Log-objective EI is established \citep{ref45}.
+
+\subsection{Local stability and selective complete projection}
+
+Let valid affine bands satisfy $L_{ai}(z)\le u_{ai}z+v_{ai}\le U_{ai}(z)$ for every $z>0$. Choose a reference continuation $j$, for example at $\exp(\bar g_a)$, and define
+\begin{equation}
+D_{aj}=\{z>0: U_{aj}(z)<L_{ai}(z)\ (i<j),\
+                 U_{aj}(z)\le L_{ai}(z)\ (i>j)\}. \label{eq:positive_stability}
+\end{equation}
+One scan intersects the linear constraints. Strictness for lower-index rivals is essential: a flat tie on a positive-measure interval may select a rival throughout that interval. Closed or open endpoints remain explicit; isolated endpoints have zero probability only under the nondegenerate continuous model.
+
+For $G_{aj}=\mathbb E[m_0-\min(m_0,Y_a,Y_j)]$,
+\begin{equation}
+|V_a-G_{aj}|\le m_0\,\mathbb P(Y_a\notin D_{aj}).   \label{eq:positive_event}
+\end{equation}
+Under a common Gaussian coupling the rewards coincide inside $D_{aj}$ and differ by at most $m_0$ outside it. Taking expectations proves the bound, without independence of candidate responses. This elementary bounded-reward argument decides where complete response projection is needed.
+
+If $[G^-_{aj},G^+_{aj}]$ encloses $G_{aj}$ and $p^+_{aj}$ bounds the probability outside $D_{aj}$, then
+\begin{equation}
+[\underline V_a,\overline V_a]=
+[\max(0,G^-_{aj}-m_0p^+_{aj}),\
+ \min(m_0,G^+_{aj}+m_0p^+_{aj})].                 \label{eq:positive_local_value}
+\end{equation}
+An empty stability domain simply provides no useful reduction. For a competitive branch whose event-error floor blocks selection, use the complete relaxed-band domains
+\begin{equation}
+\mathcal R_{ai}=\{z>0:L_{ai}(z)\le
+                       \min_{k\ne i}U_{ak}(z)\}.  \label{eq:positive_projection}
+\end{equation}
+They cover every possible selected action and can overlap. The fallback is branch-specific; computing every complete projection at initialization is unnecessary.
+
+\subsection{Validated integration}
+
+Write $G_a=m+sX$, $s>0$, with $X$ standard normal. A fixed second log-response, conditional on $X=x$, has mean $\mu=c+dx$ and standard deviation $\sigma>0$. Split at the first-response incumbent crossing. On each piece $h=\min(m_0,\exp(m+sx))=\exp(\alpha+\beta x)$ with $\beta=s$ or $0$. Put $k=(\log h-\mu)/\sigma$ and $M=\exp(\mu+\sigma^2/2)$. The conditional reward is
+\begin{equation}
+q=m_0-h\Phi(-k)-M\Phi(k-\sigma).                  \label{eq:positive_conditional}
+\end{equation}
+This uses the classical truncated-lognormal expectation \citep{ref45}. The identity $h\phi(k)=M\phi(k-\sigma)$ gives
+\begin{equation}
+q''=-\beta^2h\Phi(-k)-d^2M\Phi(k-\sigma)
+            +(\beta-d)^2h\phi(k)/\sigma.          \label{eq:positive_curvature}
+\end{equation}
+Since $h\le m_0$ and $M\Phi(k-\sigma)\le h$,
+\begin{equation}
+|q''|\le C=m_0\{\beta^2+d^2+
+                  (\beta-d)^2/(\sigma\sqrt{2\pi})\}.
+                                                       \label{eq:positive_curvature_bound}
+\end{equation}
+On a cell $[r,t]$ within one smooth piece, normal-weighted linear interpolation has error at most
+\begin{equation}
+C(t-r)^2\{\Phi(t)-\Phi(r)\}/8.                    \label{eq:positive_cell_error}
+\end{equation}
+Endpoint values, interpolation weights, the error and all probabilities are enclosed outwards. Interval parameters require a uniform upper bound on $C$ and a positive lower bound on $\sigma$. Posterior linear-algebra error, uncertain boundaries and normal tails are also enclosed. A cell with unresolved action identity uses a sound reward hull, conservatively $[0,m_0]$, once for its probability mass. Overlapping action domains cannot be summed as disjoint events.
+
+\subsection{Selection and stopping}
+
+Accept $\hat a$ only when
+\begin{equation}
+\mathcal E(\hat a)=
+\max\{0,\max_{a\ne\hat a}\overline V_a-\underline V_{\hat a}\}
+\le\delta,\qquad \delta=m_0/10^6.                 \label{eq:positive_selection}
+\end{equation}
+With valid branch intervals, $\max_a V_a-V_{\hat a}\le\mathcal E(\hat a)$, by bounding each competitor's value above and the selected value below. If $\hat a$ is optimal, regret is zero. Its own interval width is not a competing regret term. A menu with one action needs no competitor.
+
+The algorithm establishes the model and coefficient enclosures, initializes local branch intervals, applies the selection rule, and refines competitive intervals. A limiting event-error floor triggers complete projection only for that branch. A separate reader checks exact dominance and flat ties, valid action domains, integration coverage, fresh interval summation and the final selection inequality. An invalid local proof is discarded before fallback. A producer flag alone is not accepted.
+
+Persistent parameter uncertainty or a resource limit may leave selection unresolved. This is an accepted-certificate guarantee, not unconditional termination. The historical limits were 32,768 refinements and 30 s per method/state, with 600 s per comparison. Sharing arithmetic and curvature code limits reader independence. The guarantee concerns the explicit finite binary model; kernel-function evaluation error, statistical calibration, physical/PDE error and real-design regret are outside it. The supplement provides the complete argument and distinguishes this current specification from unavailable historical execution files.

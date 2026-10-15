@@ -1,0 +1,78 @@
+\section{Positive-response rollout: proofs and execution boundary}\label{sec:supp_positive_proofs}
+
+This is a current mathematical specification derived from the retained method description. It is not a recovered positive-scope program or a new execution record. The historical checkpoint alone does not establish equivalence between this text and the unavailable executed code.
+
+\subsection{Stability and event error}
+
+Fix a positive incumbent, a finite first-action menu, a totally ordered eligible pool, a joint Gaussian log-response vector and an affine raw-response continuation. If $U_j<L_i$ for every earlier rival and $U_j\le L_i$ for every later rival, actual means satisfy the same ordering and the declared continuation selects $j$. Dependence among band parameters does not invalidate this sufficient condition.
+
+Non-strict dominance against a lower-index rival is insufficient on a positive-measure flat tie. An isolated endpoint can have zero model probability, but this fact cannot justify deleting an entire tied interval. Under the common Gaussian coupling the actual and fixed-$j$ terminal rewards agree in the stability domain; outside it, both belong to $[0,m_0]$. Their absolute difference is thus bounded by $m_0$ times the outside-domain indicator. Expectation proves the local event-error bound without marginal-independence assumptions.
+
+A positive response endpoint maps to $x=(\log z-m)/s$. With enclosed parameters this endpoint must be enclosed outwards. The stable-region probability used by the bound must be a lower bound valid for the model parameters; the complement is an upper bound. Uncertain boundaries need explicit probability coverage, not midpoint substitution.
+
+\subsection{Conditional expectation and curvature}
+
+Let the conditional second log-response be $\mu+\sigma W$, with $W$ standard normal and $\sigma>0$, and $h=\min(m_0,\exp(m+sx))$. Completing the square in the below-$h$ integral gives
+\[
+\mathbb E\min(h,\exp(\mu+\sigma W))
+=h\Phi(-k)+M\Phi(k-\sigma),
+\quad k=(\log h-\mu)/\sigma,\quad M=\exp(\mu+\sigma^2/2).
+\]
+On a fixed incumbent piece $h=\exp(\alpha+\beta x)$, $\mu=c+dx$ and $\sigma$ is constant. Substitution into the normal density gives $h\phi(k)=M\phi(k-\sigma)$. With $k'=(\beta-d)/\sigma$, boundary terms cancel:
+\[
+q'=-\beta h\Phi(-k)-dM\Phi(k-\sigma),
+\]
+\[
+q''=-\beta^2h\Phi(-k)-d^2M\Phi(k-\sigma)
+                         +(\beta-d)^2h\phi(k)/\sigma.
+\]
+Since the truncated expectation $M\Phi(k-\sigma)\le h$, $h\le m_0$ and $\phi\le1/\sqrt{2\pi}$, the triangle inequality proves the curvature bound in the main text. Interval parameters require its uniform upper bound and a strictly positive lower bound for $\sigma$. If the latter is unavailable, this smooth-cell argument cannot certify the cell.
+
+\subsection{Interpolation, tail and coverage}
+
+If $\ell$ linearly interpolates $q$ at cell endpoints $r,t$ within one smooth piece and $|q''|\le C$, the interpolation remainder gives
+\[
+|q(x)-\ell(x)|\le C(x-r)(t-x)/2\le C(t-r)^2/8.
+\]
+Multiply by the nonnegative normal density and integrate. For $P=\Phi(t)-\Phi(r)$, the exact endpoint weights are
+\[
+w_r=\frac{tP-\phi(r)+\phi(t)}{t-r},\qquad
+w_t=\frac{\phi(r)-\phi(t)-rP}{t-r}.
+\]
+They are nonnegative and sum to $P$. Directed enclosures of these weights and endpoint rewards, widened by $C(t-r)^2P/8$, enclose the cell integral. Correct rounding must cover the functions and all subsequent arithmetic.
+
+Outside $[-T,T]$ the contribution lies in $[0,2m_0\Phi(-T)]$ without renormalization; the historical specification uses $T=8$. Cells with uncertain action or incumbent boundaries use a reward hull valid for all assignments, conservatively $[0,m_0]$, times their probability. Cell interiors and tails must form a disjoint cover. Summing full conditional rewards over overlapping relaxed-band action domains double-counts mass; taking their valid hull does not.
+
+\subsection{Posterior residuals and positive definiteness}
+
+The contract starts from stored binary matrices, not exact real-valued kernel-function evaluations. If an approximate inverse $P$ satisfies an outward residual bound $\|I-AP\|_\infty\le r<1$, then
+\[
+\|A^{-1}\|_\infty\le\|P\|_\infty/(1-r),\qquad
+\|A^{-1}b-\hat x\|_\infty
+\le\frac{\|P\|_\infty}{1-r}\|b-A\hat x\|_\infty .
+\]
+Residual products, reductions and norms must themselves be enclosed. These bounds, outward logarithms and fixed normalization constants enclose the finite posterior quantities. Symmetry intersection is valid only for intervals enclosing the same exact entry.
+
+Cholesky success alone is insufficient. For exact symmetric $C$ and an invertible triangular $L$, a sufficient test is
+\[
+\|L^{-1}\|_\infty\|L^{-1}\|_1
+                    \|C-LL^{\mathsf T}\|_\infty<1
+\]
+with valid norm upper bounds. Indeed, symmetry implies
+$\|C-LL^{\mathsf T}\|_2\le\|C-LL^{\mathsf T}\|_\infty$,
+and $\|L^{-1}\|_2^2\le\|L^{-1}\|_\infty\|L^{-1}\|_1$.
+Thus $L^{-1}CL^{-\mathsf T}=I+E$ has $\|E\|_2<1$ and is positive definite. Invertibility and inverse-factor norms need valid checks. The same reasoning applies to the finite posterior covariance; conditional standard deviations additionally need positive enclosed Schur complements.
+
+The checkpoint reports MPFR 4.2.1 with 192-bit directed operations \citep{ref46}. Without its executed source, actual call modes and reduction assumptions cannot be checked here. Correctly rounded functions and residual identities do not establish calibration, physical accuracy or kernel-function error bounds.
+
+\subsection{Selection theorem and unresolved outcomes}
+
+Suppose every interval encloses its declared $V_a$. If
+\[
+\max\{0,\max_{a\ne\hat a}\overline V_a-\underline V_{\hat a}\}\le\delta,
+\]
+then $\max_aV_a-V_{\hat a}\le\delta$. Bound each competing value above and the selected value below; if the selected action is optimal the regret is zero. Its own upper endpoint is not a competitor.
+
+Local initialization, complete projection and refinement preserve this theorem only when their replacement intervals are valid. An invalid local proof must be discarded before fallback, rather than intersected with a sound wider interval. A persistent parameter floor, invalid variance gate or exhausted budget requires an unresolved outcome. The theorem does not guarantee an accepted action for every resource budget, a faster local route on every input, or improvement of real engineering responses.
+
+The reader must check dominance and tie order, action-domain validity, cell coverage, fresh summation and selection. Sharing arithmetic and curvature code with the producer limits its independence. Historical acceptance counts remain reports pending recovery of their original certificates and code.
