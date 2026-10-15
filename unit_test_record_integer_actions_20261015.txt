@@ -1,0 +1,11 @@
+test_duplicate_parallel_candidates (tests.test_filtered_exact_action_sets.ExactActionSetTests.test_duplicate_parallel_candidates) ... ok
+test_float_proposal_overflow_does_not_remove_actions (tests.test_filtered_exact_action_sets.ExactActionSetTests.test_float_proposal_overflow_does_not_remove_actions) ... ok
+test_isolated_tie_and_closed_domain (tests.test_filtered_exact_action_sets.ExactActionSetTests.test_isolated_tie_and_closed_domain) ... ok
+test_nominal_envelope_cannot_replace_band_contract (tests.test_filtered_exact_action_sets.ExactActionSetTests.test_nominal_envelope_cannot_replace_band_contract) ... ok
+test_random_interval_bands_against_fraction_oracle (tests.test_filtered_exact_action_sets.ExactActionSetTests.test_random_interval_bands_against_fraction_oracle) ... ok
+test_subnormal_and_mixed_exponents (tests.test_filtered_exact_action_sets.ExactActionSetTests.test_subnormal_and_mixed_exponents) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.063s
+
+OK
