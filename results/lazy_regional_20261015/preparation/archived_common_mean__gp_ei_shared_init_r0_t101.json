@@ -1,0 +1,44 @@
+{
+  "center": 11.36703009991746,
+  "scale": 2.2558693345270053,
+  "inverse_residual_upper": 5.199906109978364e-12,
+  "training_SPD_perturbation": 6.132028943750661e-11,
+  "posterior_SPD_perturbation": 7.525502430725226e-11,
+  "maximum_mean_width": 3.709725859835089e-10,
+  "maximum_covariance_width": 1.2772827240326023e-10,
+  "matrix_A_sha256": "ca3df90fca9532c3668880fa53d86f86129928de984bc4f5996e27bfddd066a0",
+  "selector_coefficient_sha256": {
+    "3696": "856fdb7c1427efe78d5ea1fea0900d75b01d53cc8cce447cac162bda8f87f0a9",
+    "0": "5e8cbb3d3ecad6053ada1fa0ca49533b7e12a198dcaadea168d880804857ca86"
+  },
+  "first_models": {
+    "3696": {
+      "initial": 2872.9477894342735,
+      "first_mean": [
+        9.448625455574403,
+        9.448625455945376
+      ],
+      "first_sd": [
+        1.1615736670986458,
+        1.1615736671536268
+      ],
+      "next": {}
+    },
+    "0": {
+      "initial": 2872.9477894342735,
+      "first_mean": [
+        9.802101215947962,
+        9.802101216167356
+      ],
+      "first_sd": [
+        1.8605546296553932,
+        1.8605546296680098
+      ],
+      "next": {}
+    }
+  },
+  "training_matrix_constructions": 1,
+  "raw_selector_augmented_constructions": 2,
+  "first_marginal_posterior_enclosures": 1,
+  "shared_preparation_seconds": 0.08941755399999352
+}

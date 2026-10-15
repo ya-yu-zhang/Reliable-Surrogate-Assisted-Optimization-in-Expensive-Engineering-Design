@@ -1,0 +1,70 @@
+{
+  "center": 12.077194571582503,
+  "scale": 2.9839866839049796,
+  "inverse_residual_upper": 2.0752919283594162e-10,
+  "training_SPD_perturbation": 1.7503379236398478e-09,
+  "posterior_SPD_perturbation": 2.5614719965281296e-08,
+  "maximum_mean_width": 8.344965607420818e-09,
+  "maximum_covariance_width": 1.7083210401835913e-08,
+  "matrix_A_sha256": "96749ba3d71d5ad9a8b48843be34a210a23e883aa3311b21a20883442dd5392f",
+  "selector_coefficient_sha256": {
+    "1209": "e77fcf779eca4972763c403eef694991f18b932c3e5b614355169149acfffe1c",
+    "1119": "5a05937ba9518618181dca3ec36cb6757329db41d273f699570b7846eaacd4e7",
+    "1145": "31f537f8a88a91f1ba27651f8a45366b1c07851b35803fa0860649a64d4189a1",
+    "4096": "45e827d05209ea869ed6a3fc978292e65dc9d27bce529bc40596a9c2882ee4cd"
+  },
+  "first_models": {
+    "1209": {
+      "initial": 2287.18968580406,
+      "first_mean": [
+        8.807719658024958,
+        8.807719666369923
+      ],
+      "first_sd": [
+        1.606478003796772,
+        1.6064780091137485
+      ],
+      "next": {}
+    },
+    "1119": {
+      "initial": 2287.18968580406,
+      "first_mean": [
+        10.075376074643128,
+        10.075376082533417
+      ],
+      "first_sd": [
+        1.6820828701828319,
+        1.6820828748667036
+      ],
+      "next": {}
+    },
+    "1145": {
+      "initial": 2287.18968580406,
+      "first_mean": [
+        11.37412404628848,
+        11.37412405398976
+      ],
+      "first_sd": [
+        1.3464839374928754,
+        1.3464839438163982
+      ],
+      "next": {}
+    },
+    "4096": {
+      "initial": 2287.18968580406,
+      "first_mean": [
+        12.260374596835504,
+        12.260374602998189
+      ],
+      "first_sd": [
+        2.8440620053773515,
+        2.844062006489993
+      ],
+      "next": {}
+    }
+  },
+  "training_matrix_constructions": 1,
+  "raw_selector_augmented_constructions": 4,
+  "first_marginal_posterior_enclosures": 1,
+  "shared_preparation_seconds": 0.07656995500002495
+}

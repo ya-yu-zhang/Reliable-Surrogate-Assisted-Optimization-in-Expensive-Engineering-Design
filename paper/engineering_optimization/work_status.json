@@ -392,7 +392,8 @@
     "empirical_reproducibility_complete_for_v2_numerical_scope": true,
     "v2_new_implementation_and_records_available": true,
     "regional_theory_and_certificate_transform_complete": true,
-    "empirical_reproducibility_scope": "Complete v2 finite-model numerical record plus post hoc regional certificate transform; old missing originals remain missing"
+    "empirical_reproducibility_scope": "Complete v2 finite-model numerical record plus post hoc regional certificate transform; old missing originals remain missing",
+    "lazy_regional_algorithm_complete": true
   },
   "positive_rollout_v2_20261015": {
     "status": "completed_single_frozen_pair_and_paid_replay; full_results_saved_in_this_commit",
@@ -485,6 +486,61 @@
     ],
     "new_PDF_created_or_uploaded": false,
     "new_ZIP_created_or_uploaded": false,
+    "final_submit_ready": false
+  },
+  "lazy_regional_20261015": {
+    "status": "completed_frozen_lazy_regional_algorithm_and_minimal_paired_development_evaluation",
+    "source_before_execution_commit": "8de86bbe1aeb1568bba754609cf10b8d093094c8",
+    "report": "paper/engineering_optimization/contribution_closure_20261015/LAZY_REGIONAL_RESULT_AND_CLOSURE.md",
+    "protocol": "paper/engineering_optimization/contribution_closure_20261015/LAZY_REGIONAL_PROTOCOL.md",
+    "result_directory": "results/lazy_regional_20261015",
+    "states": 43,
+    "branches": 114,
+    "methods": {
+      "uniform": {
+        "attempted": 43,
+        "accepted": 43,
+        "checked_seconds": 10.726626432000074,
+        "conditional_posterior_enclosure_calls": 161,
+        "reader_endpoint_evaluations": 1572
+      },
+      "regional": {
+        "attempted": 43,
+        "accepted": 43,
+        "checked_seconds": 12.226469100000088,
+        "conditional_posterior_enclosure_calls": 157,
+        "reader_endpoint_evaluations": 1508
+      }
+    },
+    "training_matrix_constructions": 43,
+    "raw_selector_augmented_constructions": 114,
+    "initial_positive_posterior_enclosures": 43,
+    "conditional_positive_posterior_enclosures": 318,
+    "total_validated_positive_posterior_builds": 361,
+    "historical_action_domain_reads_in_algorithm": false,
+    "old_posterior_or_leaf_reads_in_algorithm": false,
+    "complete_projections": 0,
+    "full_unqueried_joint_SPD_certified": false,
+    "positive_completion_selection_guarantee": true,
+    "new_physical_evaluations": 0,
+    "new_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "physical_retries": 0,
+    "physical_replacements": 0,
+    "new_independent_samples": 0,
+    "independent_validation": false,
+    "time_advantage_demonstrated": false,
+    "engineering_policy_superiority_demonstrated": false,
+    "specific_optimization_selection_algorithm_demonstrated": true,
+    "journal_acceptance_or_originality_sufficiency_certified": false,
+    "research_work_closed_under_current_scope": true,
+    "new_experiments_planned": 0,
+    "finalization_pending": [
+      "author_b_c_affiliations_and_required_factual_fields",
+      "private_reviewer_access",
+      "current_final_layout"
+    ],
+    "PDF_or_ZIP_created_or_uploaded": false,
     "final_submit_ready": false
   }
 }

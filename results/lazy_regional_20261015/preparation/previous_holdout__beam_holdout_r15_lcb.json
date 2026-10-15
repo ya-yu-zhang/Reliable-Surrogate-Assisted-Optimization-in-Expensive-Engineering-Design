@@ -1,0 +1,44 @@
+{
+  "center": 9.953416494082946,
+  "scale": 1.9592801027025395,
+  "inverse_residual_upper": 4.865432822617695e-13,
+  "training_SPD_perturbation": 2.5782930164904393e-12,
+  "posterior_SPD_perturbation": 8.122205589880808e-13,
+  "maximum_mean_width": 3.4786395985975105e-11,
+  "maximum_covariance_width": 3.5482727867020003e-12,
+  "matrix_A_sha256": "1313c38623e19470f14b8d7768db04e84097f07687a3ff638976911af17477e0",
+  "selector_coefficient_sha256": {
+    "b0": "b7b1e26f1e49c24ac092c0047e8eddce3d9d91d2bfa5963d11dd6e0ee5efe292",
+    "b1": "7eb0ff3c7c8630269dee922806686f074e0e57e05b1da2982b2a5eff91d7ae27"
+  },
+  "first_models": {
+    "b0": {
+      "initial": 1496.0239108418164,
+      "first_mean": [
+        8.47452575515607,
+        8.474525755190857
+      ],
+      "first_sd": [
+        1.7206928597906603,
+        1.7206928597916915
+      ],
+      "next": {}
+    },
+    "b1": {
+      "initial": 1496.0239108418164,
+      "first_mean": [
+        9.501051948046353,
+        9.501051948057828
+      ],
+      "first_sd": [
+        1.923611033574076,
+        1.9236110335742096
+      ],
+      "next": {}
+    }
+  },
+  "training_matrix_constructions": 1,
+  "raw_selector_augmented_constructions": 2,
+  "first_marginal_posterior_enclosures": 1,
+  "shared_preparation_seconds": 0.0455100869999967
+}

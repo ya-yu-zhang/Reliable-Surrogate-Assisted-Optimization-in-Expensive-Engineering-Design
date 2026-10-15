@@ -1,0 +1,563 @@
+{
+  "states": [
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r0_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "0"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "0"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r1_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "1937"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "1937"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r4_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "4096"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "4096"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r5_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "1946"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "1946"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r6_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "3647"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "3647"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r7_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "4037"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "4037"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r0_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "4061"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "4061"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r1_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "2841"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "2841"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r2_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "3835"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "3835"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r3_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "4049"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "4049"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r4_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "2741"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "2741"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r5_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "1799"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "1799"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r6_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "3962"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "3962"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r7_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "66"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "66"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r8_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "89"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "89"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r9_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "4008"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "4008"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r0_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "2053"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "2053"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r1_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "4096"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "4096"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r2_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "2603"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "2603"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r3_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "2718"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "2718"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r4_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "1866"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "1866"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r5_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "2645"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "2645"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r6_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "1973"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "1973"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r7_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "1821"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "1821"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r8_t101",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "2579"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "2579"
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r9_t101",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "1209"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "1209"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_ei",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "b1"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "b1"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_lcb",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "b1"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "b1"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_pi",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "b1"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "b1"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r12_ei",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "b1"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "b1"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r12_pi",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "b0"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "b0"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_ei",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "b0"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "b0"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_lcb",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "b2"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "b2"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_pi",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "b2"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "b2"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_ei",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "b0"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "b0"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_lcb",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "b0"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "b0"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_pi",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "b0"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "b0"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r17_ei",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "b0"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "b0"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r17_lcb",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "b2"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "b2"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r17_pi",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "b2"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "b2"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_ei",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "b1"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "b1"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_lcb",
+      "methods": {
+        "regional": {
+          "status": "accepted",
+          "selected": "b1"
+        },
+        "uniform": {
+          "status": "accepted",
+          "selected": "b1"
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_pi",
+      "methods": {
+        "uniform": {
+          "status": "accepted",
+          "selected": "b1"
+        },
+        "regional": {
+          "status": "accepted",
+          "selected": "b1"
+        }
+      }
+    }
+  ]
+}

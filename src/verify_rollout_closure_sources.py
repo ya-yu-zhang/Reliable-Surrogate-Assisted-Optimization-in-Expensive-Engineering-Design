@@ -101,7 +101,10 @@ def main():
     archive=PAPER/'archival/EO_action_sets_and_direct_rollout_20261015.tex'
     assert sha(archive)=='b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e'
     # Main supplementary table source is byte-identical; added proofs are inputs.
-    assert sha(PAPER/'EO_supplementary.tex')=='7c18c55e552d6ba368e415ef3fe7f267591e8578ee0c8c9fa48a1c2f6de914c5'
+    supp=(PAPER/'EO_supplementary.tex').read_text()
+    inserted='\\input{integrated_evidence/positive_rollout_results_20261015.tex}\n\n'
+    preserved=supp.replace(inserted,'')
+    assert hashlib.sha256(preserved.encode()).hexdigest()=='7c18c55e552d6ba368e415ef3fe7f267591e8578ee0c8c9fa48a1c2f6de914c5'
     tmp=ROOT/'tmp/regional_closure_bib_check';tmp.mkdir(exist_ok=True)
     (tmp/'references.aux').write_text('\\relax\n\\citation{*}\n\\bibstyle{tfcad}\n\\bibdata{EO_references}\n')
     env=dict(os.environ);env['BIBINPUTS']=str(PAPER)+os.pathsep;env['BSTINPUTS']=str(PAPER)+os.pathsep
@@ -115,7 +118,7 @@ def main():
         source_checks=checks,bibliography_entries=len(keys),bibtex_return_code=proc.returncode,
         bibtex_diagnostics=diagnostics,abstract_words=len(plain.split()),
         previous_main_byte_identical=True,historical_supp_numeric_rows_preserved=251,
-        historical_supp_main_file_byte_identical=True,v2_input_snapshots_verified=43,
+        historical_supp_body_preserved_with_additive_supporting_input=True,v2_input_snapshots_verified=43,
         v2_result_files_verified=224,core_source_hashes_match_pre_execution_freeze=True,
         regional_input_hashes_verified=len(freeze['input_sha256']),regional_mathematical_tests_passed=4,
         regional_transformed_branches=89,regional_gain_beyond_baseline_branches=86,
@@ -125,7 +128,25 @@ def main():
         new_PDF_generated=False,new_ZIP_generated=False,
         research_work_closed_under_current_scope=True,new_experiments_planned=0,final_submit_ready=False)
     save(SUB/'SOURCE_VERIFICATION.json',record)
-    save(REGION/'source_verification.json',record)
+    lazy=ROOT/'results/lazy_regional_20261015'
+    if lazy.exists():
+        run=json.loads((lazy/'analysis.json').read_text())
+        audit=json.loads((lazy/'postfreeze_consistency.json').read_text())
+        assert audit['all_checks_passed']
+        record['scope']='Source/BibTeX/hash checks after lazy regional algorithm development; no additional scientific execution or TeX build'
+        record['lazy_source_before_execution_commit']='8de86bbe1aeb1568bba754609cf10b8d093094c8'
+        record['lazy_accepted_states']={m:r['accepted'] for m,r in run['methods'].items()}
+        record['lazy_ordinary_reference_checks']=audit['ordinary_reference_checks']
+        record['lazy_model_parameter_overlap_checks']=audit['queried_conditional_parameter_overlap_checks']
+        record['lazy_workflow_training_matrix_constructions']=43
+        record['lazy_workflow_raw_selector_augmented_constructions']=114
+        record['lazy_workflow_validated_positive_posterior_builds']=361
+        record['new_GP_reconstructions_this_verification']=record.pop('new_GP_reconstructions')
+        record['new_conditional_reward_evaluations_this_verification']=record.pop('new_conditional_reward_evaluations')
+        save(lazy/'source_verification.json',record)
+        save(SUB/'SOURCE_VERIFICATION.json',record)
+    else:
+        save(REGION/'source_verification.json',record)
     print(json.dumps({k:v for k,v in record.items() if k not in ['source_files','source_checks']},indent=2))
 
 

@@ -1,12 +1,12 @@
 {
   "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
   "date": "2026-10-15",
-  "scope": "Regional method and saved-certificate integration; source/BibTeX/hash checks only, no LaTeX build",
+  "scope": "Source/BibTeX/hash checks after lazy regional algorithm development; no additional scientific execution or TeX build",
   "source_files": [
     {
       "path": "source/paper/engineering_optimization/EO_manuscript.tex",
-      "bytes": 18813,
-      "sha256": "6ae25ac52c90b9051fa1a7e84171486c84078cdfa9e237354a5a2e0500d92cbc",
+      "bytes": 19243,
+      "sha256": "e4bcc9796c8f43cf1c27ff2b1a258b7c5b22aa6026ba53209453c358a548830b",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -17,8 +17,8 @@
     },
     {
       "path": "source/paper/engineering_optimization/EO_supplementary.tex",
-      "bytes": 119943,
-      "sha256": "7c18c55e552d6ba368e415ef3fe7f267591e8578ee0c8c9fa48a1c2f6de914c5",
+      "bytes": 120010,
+      "sha256": "548545c45438e025d8b08d15770bcd3f354d65694de0b78f760464dba36b2565",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -40,21 +40,33 @@
       "balanced_braces_and_named_environments": true
     },
     {
+      "path": "source/paper/engineering_optimization/integrated_evidence/lazy_regional_method_20261015.tex",
+      "bytes": 4748,
+      "sha256": "9fbdcd05fce1d6d56b43c7528e6f24470d4411468077b3c00d9dd0cb4ebaef67",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/lazy_regional_results_20261015.tex",
+      "bytes": 4202,
+      "sha256": "a68a3e61954d18e999ac17b037109c73adf3c065ab206c03461e8777cc32ebd6",
+      "balanced_braces_and_named_environments": true
+    },
+    {
       "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_method_20261015.tex",
-      "bytes": 7226,
-      "sha256": "c284ca41ed249ace720e395bd4b102f915760e0501bd76c81042a95930430af7",
+      "bytes": 7840,
+      "sha256": "ae2e226adc1cce247b35f8e6f4dd7cfbf2b683c8a3a359ae4f3a19208b44d98d",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_results_20261015.tex",
-      "bytes": 10705,
-      "sha256": "a30b0d8afa2d9777255899f6633760a27d427ecd157fc584a20d5ec15b71a2dc",
+      "bytes": 10709,
+      "sha256": "bb3d4e7a39fb8ee6cd215866b29053533410dbc05a89f77cbcdcf05f7289f9eb",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_supplement_20261015.tex",
-      "bytes": 6911,
-      "sha256": "ccefdefb32c29ba5d6271ba0dc2cf52073a6f48ac006c412148b2b89fae4d826",
+      "bytes": 9311,
+      "sha256": "2f8700a3084c930ec3f1c00efda062f24e5bfe3b4ba8c1bd7935dd998e456ab9",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -117,10 +129,10 @@
   "bibliography_entries": 46,
   "bibtex_return_code": 0,
   "bibtex_diagnostics": [],
-  "abstract_words": 133,
+  "abstract_words": 146,
   "previous_main_byte_identical": true,
   "historical_supp_numeric_rows_preserved": 251,
-  "historical_supp_main_file_byte_identical": true,
+  "historical_supp_body_preserved_with_additive_supporting_input": true,
   "v2_input_snapshots_verified": 43,
   "v2_result_files_verified": 224,
   "core_source_hashes_match_pre_execution_freeze": true,
@@ -132,12 +144,22 @@
   "regional_numerical_records_complete": true,
   "current_source_compile_verified": false,
   "current_visual_layout_verified": false,
-  "new_GP_reconstructions": 0,
-  "new_conditional_reward_evaluations": 0,
   "new_physical_evaluations": 0,
   "new_PDF_generated": false,
   "new_ZIP_generated": false,
   "research_work_closed_under_current_scope": true,
   "new_experiments_planned": 0,
-  "final_submit_ready": false
+  "final_submit_ready": false,
+  "lazy_source_before_execution_commit": "8de86bbe1aeb1568bba754609cf10b8d093094c8",
+  "lazy_accepted_states": {
+    "uniform": 43,
+    "regional": 43
+  },
+  "lazy_ordinary_reference_checks": 228,
+  "lazy_model_parameter_overlap_checks": 954,
+  "lazy_workflow_training_matrix_constructions": 43,
+  "lazy_workflow_raw_selector_augmented_constructions": 114,
+  "lazy_workflow_validated_positive_posterior_builds": 361,
+  "new_GP_reconstructions_this_verification": 0,
+  "new_conditional_reward_evaluations_this_verification": 0
 }

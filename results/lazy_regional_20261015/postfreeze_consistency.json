@@ -1,0 +1,18 @@
+{
+  "source_before_execution_commit": "8de86bbe1aeb1568bba754609cf10b8d093094c8",
+  "audit_source_sha256": "d375e37552d178d9c886f46d83dce51d3e90d340b3d8daabb78553fa713bb27f",
+  "decisions_frozen_before_old_reference_read": true,
+  "paid_response_reads": false,
+  "all_43_training_matrices_match_v2": true,
+  "selections_matching_v2": {
+    "uniform": 43,
+    "regional": 43
+  },
+  "correct_declared_delta_checked_states_each_method": 43,
+  "ordinary_reference_checks": 228,
+  "ordinary_reference_failures": [],
+  "queried_conditional_parameter_overlap_checks": 954,
+  "overlap_is_consistency_check_not_independent_model_proof": true,
+  "new_physical_evaluations": 0,
+  "all_checks_passed": true
+}
