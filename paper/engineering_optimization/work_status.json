@@ -389,5 +389,21 @@
     "final_submit_ready": false,
     "source_and_BibTeX_checks_passed": true,
     "verification_record": "submission_20261014/SOURCE_VERIFICATION.json"
+  },
+  "positive_rollout_v2_20261015": {
+    "status": "source_and_inputs_frozen_before_scientific_execution",
+    "protocol": "paper/engineering_optimization/contribution_closure_20261015/POSITIVE_ROLLOUT_V2_PROTOCOL.md",
+    "config": "configs/positive_rollout_v2_20261015.json",
+    "unit_check_record": "results/positive_rollout_v2_20261015/unit_check_record.json",
+    "new_implementation_not_old_artifact_recovery": true,
+    "planned_positive_root_systems": 43,
+    "planned_raw_selector_fixed_kernel_reconstructions": 114,
+    "planned_method_state_runs": 86,
+    "repetitions": 1,
+    "new_physical_evaluations": 0,
+    "new_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "new_independent_optimization_samples": 0,
+    "final_submit_ready": false
   }
 }

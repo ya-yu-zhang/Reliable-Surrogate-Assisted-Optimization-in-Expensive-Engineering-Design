@@ -1,0 +1,19 @@
+{
+  "command": "python -m unittest discover -s tests -p test_rollout_v2.py -v",
+  "tests": 7,
+  "failures": 0,
+  "errors": 0,
+  "elapsed_seconds": 0.29,
+  "fixture_scope": "Synthetic arithmetic, lognormal integral, exact 2x2 posterior, tie and corrupted-certificate fixtures; no engineering GP or physical call",
+  "source_sha256": {
+    "src/rollout_v2_intervals.py": "b70b123cd5160fb3ef8d703c424563dc2eb6415f3d238b25cb2d84b10462b007",
+    "src/rollout_v2_posterior.py": "e3bad68b7bb07e78465737aec3480cf0f13a3835c43958933db94bb8a0f9c8fa",
+    "src/rollout_v2_solver.py": "bfd89d8e1d8b65d03c1561e41870cfc09e6f2198d025b4362e5251ec10c2d7a1",
+    "src/run_positive_rollout_v2.py": "c409f72230249b1a5be952f68aea853c2caff5542dcc23f49806f54bdd89344d",
+    "src/replay_positive_rollout_v2.py": "f5a63bcfa419ac190eaaff74eb6cd9f2a01b870dfb6a0516a216be329609267a",
+    "tests/test_rollout_v2.py": "893fbfe250558330dd0a50417fc4d28b0ea801ba2e51c5bbb6334ff4e61f9f12"
+  },
+  "MPFR": "4.2.1",
+  "new_engineering_states": 0,
+  "new_physical_evaluations": 0
+}
