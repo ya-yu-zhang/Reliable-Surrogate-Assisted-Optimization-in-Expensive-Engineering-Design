@@ -1,0 +1,49 @@
+{
+  "version": "new_v2_not_historical_recovery",
+  "scientific_baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "states": 43,
+  "metadata_states": 60,
+  "aliases": 17,
+  "branches": 114,
+  "data_already_seen": true,
+  "independent_validation": false,
+  "accepted_states": {
+    "direct": 43,
+    "local": 43
+  },
+  "both_accepted_same_choice": 43,
+  "complete_projections": {
+    "direct": 114,
+    "local": 25
+  },
+  "checked_seconds": {
+    "direct": 4.933305655999902,
+    "local": 5.469358004998412
+  },
+  "shared_preparation_seconds": 3.6214888720005547,
+  "reference_checks": 228,
+  "reference_containment_failures": 0,
+  "unresolved_or_failed_states": [],
+  "counters": {
+    "positive_root_kernel_systems": 43,
+    "raw_selector_kernel_systems": 114,
+    "conditional_systems": 114,
+    "method_runs": 86,
+    "new_physical_evaluations": 0,
+    "new_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "new_independent_samples": 0
+  },
+  "elapsed_seconds": 14.312024691999795,
+  "runtime": {
+    "MPFR": "4.2.1",
+    "MPFR_bits": 192,
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "scikit-learn": "1.8.0"
+  },
+  "timing_scope": "One alternating-order paired pass; numerical solver plus fresh reader; common preparation separate; not an inferential benchmark or deployment measurement",
+  "original_positive_files_recovered": false,
+  "new_PDF_or_ZIP": false,
+  "final_submit_ready": false
+}

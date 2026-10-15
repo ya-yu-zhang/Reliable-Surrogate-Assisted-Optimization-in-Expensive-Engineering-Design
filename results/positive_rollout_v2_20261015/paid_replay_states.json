@@ -1,0 +1,1335 @@
+[
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r0_t101",
+    "status": "graded",
+    "selected_branch": "0",
+    "initial": 2872.9477894342735,
+    "selected_terminal": 2872.9477894342735,
+    "comparators": {
+      "raw_mean": {
+        "branch": "3696",
+        "terminal": 2872.9477894342735,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "0",
+        "terminal": 2872.9477894342735,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "0",
+        "terminal": 2872.9477894342735,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r1_t101",
+    "status": "graded",
+    "selected_branch": "1937",
+    "initial": 3008.832185520961,
+    "selected_terminal": 2604.407559176276,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2188",
+        "terminal": 3008.832185520961,
+        "difference": -404.42462634468484,
+        "relative_difference": -0.1344124900985999,
+        "category": "better"
+      },
+      "raw_ei": {
+        "branch": "4096",
+        "terminal": 3008.832185520961,
+        "difference": -404.42462634468484,
+        "relative_difference": -0.1344124900985999,
+        "category": "better"
+      },
+      "positive_one_step_ei": {
+        "branch": "2188",
+        "terminal": 3008.832185520961,
+        "difference": -404.42462634468484,
+        "relative_difference": -0.1344124900985999,
+        "category": "better"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r4_t101",
+    "status": "graded",
+    "selected_branch": "4096",
+    "initial": 2329.7169244066754,
+    "selected_terminal": 2130.7664556037435,
+    "comparators": {
+      "raw_mean": {
+        "branch": "4096",
+        "terminal": 2130.7664556037435,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "4096",
+        "terminal": 2130.7664556037435,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "4096",
+        "terminal": 2130.7664556037435,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r5_t101",
+    "status": "graded",
+    "selected_branch": "1946",
+    "initial": 1618.4871381674466,
+    "selected_terminal": 1618.4871381674466,
+    "comparators": {
+      "raw_mean": {
+        "branch": "1946",
+        "terminal": 1618.4871381674466,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "1946",
+        "terminal": 1618.4871381674466,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "3941",
+        "terminal": 1618.4871381674466,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r6_t101",
+    "status": "graded",
+    "selected_branch": "3647",
+    "initial": 2405.8973408422116,
+    "selected_terminal": 2405.8973408422116,
+    "comparators": {
+      "raw_mean": {
+        "branch": "3647",
+        "terminal": 2405.8973408422116,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "3704",
+        "terminal": 2405.8973408422116,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "3647",
+        "terminal": 2405.8973408422116,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r7_t101",
+    "status": "graded",
+    "selected_branch": "4037",
+    "initial": 3064.7286535533594,
+    "selected_terminal": 3064.7286535533594,
+    "comparators": {
+      "raw_mean": {
+        "branch": "1624",
+        "terminal": 3064.7286535533594,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "1584",
+        "terminal": 3064.7286535533594,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "4037",
+        "terminal": 3064.7286535533594,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r0_t101",
+    "status": "graded",
+    "selected_branch": "4061",
+    "initial": 1214.5248099082075,
+    "selected_terminal": 1214.5248099082075,
+    "comparators": {
+      "raw_mean": {
+        "branch": "3685",
+        "terminal": 1214.5248099082075,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "4061",
+        "terminal": 1214.5248099082075,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "4061",
+        "terminal": 1214.5248099082075,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r1_t101",
+    "status": "graded",
+    "selected_branch": "2841",
+    "initial": 2133.691338349412,
+    "selected_terminal": 2133.691338349412,
+    "comparators": {
+      "raw_mean": {
+        "branch": "1381",
+        "terminal": 2133.691338349412,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "2841",
+        "terminal": 2133.691338349412,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "2841",
+        "terminal": 2133.691338349412,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r2_t101",
+    "status": "graded",
+    "selected_branch": "3835",
+    "initial": 983.3266260863705,
+    "selected_terminal": 983.3266260863705,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2232",
+        "terminal": 983.3266260863705,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "3591",
+        "terminal": 983.3266260863705,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "3591",
+        "terminal": 983.3266260863705,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r3_t101",
+    "status": "graded",
+    "selected_branch": "4049",
+    "initial": 1805.9430628453365,
+    "selected_terminal": 1805.9430628453365,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2990",
+        "terminal": 1805.9430628453365,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "4049",
+        "terminal": 1805.9430628453365,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "4049",
+        "terminal": 1805.9430628453365,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r4_t101",
+    "status": "graded",
+    "selected_branch": "2741",
+    "initial": 1251.7446531292505,
+    "selected_terminal": 1251.7446531292505,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2741",
+        "terminal": 1251.7446531292505,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "3800",
+        "terminal": 1251.7446531292505,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "2741",
+        "terminal": 1251.7446531292505,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r5_t101",
+    "status": "graded",
+    "selected_branch": "1799",
+    "initial": 857.334224957855,
+    "selected_terminal": 857.334224957855,
+    "comparators": {
+      "raw_mean": {
+        "branch": "1799",
+        "terminal": 857.334224957855,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "4042",
+        "terminal": 857.334224957855,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "4042",
+        "terminal": 857.334224957855,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r6_t101",
+    "status": "graded",
+    "selected_branch": "3962",
+    "initial": 1222.9021872978042,
+    "selected_terminal": 1222.9021872978042,
+    "comparators": {
+      "raw_mean": {
+        "branch": "1221",
+        "terminal": 1222.9021872978042,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "3962",
+        "terminal": 1222.9021872978042,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "3962",
+        "terminal": 1222.9021872978042,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r7_t101",
+    "status": "graded",
+    "selected_branch": "66",
+    "initial": 1739.3529565860995,
+    "selected_terminal": 1739.3529565860995,
+    "comparators": {
+      "raw_mean": {
+        "branch": "1726",
+        "terminal": 1739.3529565860995,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "66",
+        "terminal": 1739.3529565860995,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "66",
+        "terminal": 1739.3529565860995,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r8_t101",
+    "status": "graded",
+    "selected_branch": "89",
+    "initial": 1246.0835170367968,
+    "selected_terminal": 1246.0835170367968,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2794",
+        "terminal": 1246.0835170367968,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "3889",
+        "terminal": 1246.0835170367968,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "3889",
+        "terminal": 1246.0835170367968,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r9_t101",
+    "status": "graded",
+    "selected_branch": "4008",
+    "initial": 2217.2842870958016,
+    "selected_terminal": 2217.2842870958016,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2206",
+        "terminal": 2217.2842870958016,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "4008",
+        "terminal": 2217.2842870958016,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "4008",
+        "terminal": 2217.2842870958016,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r0_t101",
+    "status": "graded",
+    "selected_branch": "2053",
+    "initial": 2872.9477894342735,
+    "selected_terminal": 1793.5894821085926,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2053",
+        "terminal": 1793.5894821085926,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "836",
+        "terminal": 2872.9477894342735,
+        "difference": -1079.358307325681,
+        "relative_difference": -0.375697153737076,
+        "category": "better"
+      },
+      "positive_one_step_ei": {
+        "branch": "2053",
+        "terminal": 1793.5894821085926,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r1_t101",
+    "status": "graded",
+    "selected_branch": "4096",
+    "initial": 3041.091253278576,
+    "selected_terminal": 3041.091253278576,
+    "comparators": {
+      "raw_mean": {
+        "branch": "3842",
+        "terminal": 1659.8826938939872,
+        "difference": 1381.2085593845889,
+        "relative_difference": 0.4541818854976874,
+        "category": "worse"
+      },
+      "raw_ei": {
+        "branch": "3647",
+        "terminal": 3041.091253278576,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "3842",
+        "terminal": 1659.8826938939872,
+        "difference": 1381.2085593845889,
+        "relative_difference": 0.4541818854976874,
+        "category": "worse"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r2_t101",
+    "status": "graded",
+    "selected_branch": "2603",
+    "initial": 2202.6465328910544,
+    "selected_terminal": 2202.6465328910544,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2394",
+        "terminal": 2202.6465328910544,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "2394",
+        "terminal": 2202.6465328910544,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "2603",
+        "terminal": 2202.6465328910544,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r3_t101",
+    "status": "graded",
+    "selected_branch": "2718",
+    "initial": 1982.6478477698938,
+    "selected_terminal": 1982.6478477698938,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2718",
+        "terminal": 1982.6478477698938,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "2718",
+        "terminal": 1982.6478477698938,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "2718",
+        "terminal": 1982.6478477698938,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r4_t101",
+    "status": "graded",
+    "selected_branch": "1866",
+    "initial": 2329.7169244066754,
+    "selected_terminal": 2329.7169244066754,
+    "comparators": {
+      "raw_mean": {
+        "branch": "1952",
+        "terminal": 2329.7169244066754,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "1866",
+        "terminal": 2329.7169244066754,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "1952",
+        "terminal": 2329.7169244066754,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r5_t101",
+    "status": "graded",
+    "selected_branch": "2645",
+    "initial": 1618.4871381674466,
+    "selected_terminal": 1618.4871381674466,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2645",
+        "terminal": 1618.4871381674466,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "1583",
+        "terminal": 1618.4871381674466,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "4096",
+        "terminal": 1618.4871381674466,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r6_t101",
+    "status": "graded",
+    "selected_branch": "1973",
+    "initial": 2690.3775295556147,
+    "selected_terminal": 2690.3775295556147,
+    "comparators": {
+      "raw_mean": {
+        "branch": "1973",
+        "terminal": 2690.3775295556147,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "4096",
+        "terminal": 2690.3775295556147,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "2917",
+        "terminal": 2690.3775295556147,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r7_t101",
+    "status": "graded",
+    "selected_branch": "1821",
+    "initial": 3064.7286535533594,
+    "selected_terminal": 3064.7286535533594,
+    "comparators": {
+      "raw_mean": {
+        "branch": "3803",
+        "terminal": 3064.7286535533594,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "2147",
+        "terminal": 2097.2122585904995,
+        "difference": 967.51639496286,
+        "relative_difference": 0.31569398283958544,
+        "category": "worse"
+      },
+      "positive_one_step_ei": {
+        "branch": "4096",
+        "terminal": 2525.6269673109987,
+        "difference": 539.1016862423608,
+        "relative_difference": 0.17590519330881263,
+        "category": "worse"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r8_t101",
+    "status": "graded",
+    "selected_branch": "2579",
+    "initial": 2877.576342916249,
+    "selected_terminal": 2877.576342916249,
+    "comparators": {
+      "raw_mean": {
+        "branch": "2579",
+        "terminal": 2877.576342916249,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "2579",
+        "terminal": 2877.576342916249,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "2579",
+        "terminal": 2877.576342916249,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r9_t101",
+    "status": "graded",
+    "selected_branch": "1209",
+    "initial": 2287.18968580406,
+    "selected_terminal": 2287.18968580406,
+    "comparators": {
+      "raw_mean": {
+        "branch": "1209",
+        "terminal": 2287.18968580406,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "1119",
+        "terminal": 2287.18968580406,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "1209",
+        "terminal": 2287.18968580406,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_ei",
+    "status": "graded",
+    "selected_branch": "b1",
+    "initial": 1936.9825042567288,
+    "selected_terminal": 1936.9825042567288,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1936.9825042567288,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 1936.9825042567288,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b1",
+        "terminal": 1936.9825042567288,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_lcb",
+    "status": "graded",
+    "selected_branch": "b1",
+    "initial": 1969.5377212916592,
+    "selected_terminal": 1969.5377212916592,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1969.5377212916592,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b0",
+        "terminal": 1969.5377212916592,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b1",
+        "terminal": 1969.5377212916592,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_pi",
+    "status": "graded",
+    "selected_branch": "b1",
+    "initial": 1672.8339255774827,
+    "selected_terminal": 1672.8339255774827,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1672.8339255774827,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 1672.8339255774827,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b1",
+        "terminal": 1672.8339255774827,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r12_ei",
+    "status": "graded",
+    "selected_branch": "b1",
+    "initial": 2007.8048311301102,
+    "selected_terminal": 2007.8048311301102,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 2007.8048311301102,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b0",
+        "terminal": 2007.8048311301102,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b1",
+        "terminal": 2007.8048311301102,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r12_pi",
+    "status": "graded",
+    "selected_branch": "b0",
+    "initial": 1629.3290616578674,
+    "selected_terminal": 1629.3290616578674,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1629.3290616578674,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 1629.3290616578674,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b0",
+        "terminal": 1629.3290616578674,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_ei",
+    "status": "graded",
+    "selected_branch": "b0",
+    "initial": 1211.6075444861285,
+    "selected_terminal": 1211.6075444861285,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1211.6075444861285,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 1211.6075444861285,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b0",
+        "terminal": 1211.6075444861285,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_lcb",
+    "status": "graded",
+    "selected_branch": "b2",
+    "initial": 1415.6098866801967,
+    "selected_terminal": 1415.6098866801967,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1415.6098866801967,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b0",
+        "terminal": 1415.6098866801967,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b1",
+        "terminal": 1415.6098866801967,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_pi",
+    "status": "graded",
+    "selected_branch": "b2",
+    "initial": 1415.6098866801967,
+    "selected_terminal": 1415.6098866801967,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1415.6098866801967,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 1415.6098866801967,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b2",
+        "terminal": 1415.6098866801967,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_ei",
+    "status": "graded",
+    "selected_branch": "b0",
+    "initial": 1455.8830790264205,
+    "selected_terminal": 1455.8830790264205,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1455.8830790264205,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 1455.8830790264205,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b0",
+        "terminal": 1455.8830790264205,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_lcb",
+    "status": "graded",
+    "selected_branch": "b0",
+    "initial": 1496.0239108418164,
+    "selected_terminal": 1133.3405829569238,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1133.3405829569238,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b0",
+        "terminal": 1133.3405829569238,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b0",
+        "terminal": 1133.3405829569238,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_pi",
+    "status": "graded",
+    "selected_branch": "b0",
+    "initial": 1654.9794340930953,
+    "selected_terminal": 1654.9794340930953,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1654.9794340930953,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 1654.9794340930953,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b0",
+        "terminal": 1654.9794340930953,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_ei",
+    "status": "graded",
+    "selected_branch": "b0",
+    "initial": 749.3625680471899,
+    "selected_terminal": 749.3625680471899,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 749.3625680471899,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b0",
+        "terminal": 749.3625680471899,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b0",
+        "terminal": 749.3625680471899,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_lcb",
+    "status": "graded",
+    "selected_branch": "b2",
+    "initial": 749.3625680471899,
+    "selected_terminal": 749.3625680471899,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 749.3625680471899,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 749.3625680471899,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b0",
+        "terminal": 749.3625680471899,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_pi",
+    "status": "graded",
+    "selected_branch": "b2",
+    "initial": 749.3625680471899,
+    "selected_terminal": 749.3625680471899,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 749.3625680471899,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 749.3625680471899,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b2",
+        "terminal": 749.3625680471899,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_ei",
+    "status": "graded",
+    "selected_branch": "b1",
+    "initial": 1443.3465961246038,
+    "selected_terminal": 1443.3465961246038,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1443.3465961246038,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 1443.3465961246038,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b1",
+        "terminal": 1443.3465961246038,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_lcb",
+    "status": "graded",
+    "selected_branch": "b1",
+    "initial": 1763.4700592564468,
+    "selected_terminal": 1763.4700592564468,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 1763.4700592564468,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b0",
+        "terminal": 1763.4700592564468,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b1",
+        "terminal": 1763.4700592564468,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_pi",
+    "status": "graded",
+    "selected_branch": "b1",
+    "initial": 2503.6137195982046,
+    "selected_terminal": 2480.432230108322,
+    "comparators": {
+      "raw_mean": {
+        "branch": "b0",
+        "terminal": 2480.432230108322,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "raw_ei": {
+        "branch": "b1",
+        "terminal": 2480.432230108322,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      },
+      "positive_one_step_ei": {
+        "branch": "b1",
+        "terminal": 2480.432230108322,
+        "difference": 0.0,
+        "relative_difference": 0.0,
+        "category": "tie"
+      }
+    }
+  }
+]

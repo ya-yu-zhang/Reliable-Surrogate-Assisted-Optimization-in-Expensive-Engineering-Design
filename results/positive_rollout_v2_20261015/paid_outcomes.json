@@ -1,0 +1,1940 @@
+[
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r0_t101",
+    "branch": "3696",
+    "first_response": 5374.284669953091,
+    "second_response": 12862.286286197288,
+    "terminal": 2872.9477894342735,
+    "nominal_next_index": 991,
+    "native_next_index": 991,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r0_t101",
+    "branch": "0",
+    "first_response": 6704123.28646889,
+    "second_response": 12862.286286197288,
+    "terminal": 2872.9477894342735,
+    "nominal_next_index": 991,
+    "native_next_index": 991,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r1_t101",
+    "branch": "2188",
+    "first_response": 4699.3918982574005,
+    "second_response": 14079.829268607198,
+    "terminal": 3008.832185520961,
+    "nominal_next_index": 186,
+    "native_next_index": 186,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r1_t101",
+    "branch": "4096",
+    "first_response": 943698.5097777691,
+    "second_response": 14079.829268607198,
+    "terminal": 3008.832185520961,
+    "nominal_next_index": 186,
+    "native_next_index": 186,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r1_t101",
+    "branch": "1937",
+    "first_response": 8617.99622541796,
+    "second_response": 2604.407559176276,
+    "terminal": 2604.407559176276,
+    "nominal_next_index": 363,
+    "native_next_index": 363,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r4_t101",
+    "branch": "4096",
+    "first_response": 141648.23027848796,
+    "second_response": 2130.7664556037435,
+    "terminal": 2130.7664556037435,
+    "nominal_next_index": 339,
+    "native_next_index": 339,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r4_t101",
+    "branch": "2081",
+    "first_response": 2770.4562409406167,
+    "second_response": 6596.792942845704,
+    "terminal": 2329.7169244066754,
+    "nominal_next_index": 382,
+    "native_next_index": 382,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r5_t101",
+    "branch": "1946",
+    "first_response": 2698.104214862681,
+    "second_response": 10349.334848775263,
+    "terminal": 1618.4871381674466,
+    "nominal_next_index": 627,
+    "native_next_index": 627,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r5_t101",
+    "branch": "3941",
+    "first_response": 7194.5906022368345,
+    "second_response": 6907.956811852154,
+    "terminal": 1618.4871381674466,
+    "nominal_next_index": 312,
+    "native_next_index": 312,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r6_t101",
+    "branch": "3647",
+    "first_response": 32248.90082658451,
+    "second_response": 13511.79643040631,
+    "terminal": 2405.8973408422116,
+    "nominal_next_index": 378,
+    "native_next_index": 378,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r6_t101",
+    "branch": "3704",
+    "first_response": 102033.13237374701,
+    "second_response": 13511.79643040631,
+    "terminal": 2405.8973408422116,
+    "nominal_next_index": 378,
+    "native_next_index": 378,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r6_t101",
+    "branch": "1069",
+    "first_response": 167863.79104551443,
+    "second_response": 13511.79643040631,
+    "terminal": 2405.8973408422116,
+    "nominal_next_index": 378,
+    "native_next_index": 378,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r6_t101",
+    "branch": "4091",
+    "first_response": 322202.85074612556,
+    "second_response": 13511.79643040631,
+    "terminal": 2405.8973408422116,
+    "nominal_next_index": 378,
+    "native_next_index": 378,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r7_t101",
+    "branch": "1624",
+    "first_response": 22088.51476997624,
+    "second_response": 3631.9486146960608,
+    "terminal": 3064.7286535533594,
+    "nominal_next_index": 50,
+    "native_next_index": 50,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r7_t101",
+    "branch": "1584",
+    "first_response": 171929.99127281355,
+    "second_response": 3631.9486146960608,
+    "terminal": 3064.7286535533594,
+    "nominal_next_index": 50,
+    "native_next_index": 50,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r7_t101",
+    "branch": "1822",
+    "first_response": 5646.446749874487,
+    "second_response": 26711.856105832954,
+    "terminal": 3064.7286535533594,
+    "nominal_next_index": 856,
+    "native_next_index": 856,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r7_t101",
+    "branch": "4037",
+    "first_response": 15590.82396665713,
+    "second_response": 3631.9486146960608,
+    "terminal": 3064.7286535533594,
+    "nominal_next_index": 50,
+    "native_next_index": 50,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r0_t101",
+    "branch": "3685",
+    "first_response": 11270.964853500884,
+    "second_response": 2467.9281381811006,
+    "terminal": 1214.5248099082075,
+    "nominal_next_index": 899,
+    "native_next_index": 899,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r0_t101",
+    "branch": "4061",
+    "first_response": 9033.33665288743,
+    "second_response": 2467.9281381811006,
+    "terminal": 1214.5248099082075,
+    "nominal_next_index": 899,
+    "native_next_index": 899,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r1_t101",
+    "branch": "1381",
+    "first_response": 3822.819125235741,
+    "second_response": 13443.823306974355,
+    "terminal": 2133.691338349412,
+    "nominal_next_index": 673,
+    "native_next_index": 673,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r1_t101",
+    "branch": "2841",
+    "first_response": 78454.71021066957,
+    "second_response": 13443.823306974355,
+    "terminal": 2133.691338349412,
+    "nominal_next_index": 673,
+    "native_next_index": 673,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r2_t101",
+    "branch": "2232",
+    "first_response": 9135.298988057732,
+    "second_response": 3085.3033284127114,
+    "terminal": 983.3266260863705,
+    "nominal_next_index": 141,
+    "native_next_index": 141,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r2_t101",
+    "branch": "3591",
+    "first_response": 2327.003884509905,
+    "second_response": 6869.7787292877365,
+    "terminal": 983.3266260863705,
+    "nominal_next_index": 809,
+    "native_next_index": 809,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r2_t101",
+    "branch": "3835",
+    "first_response": 413160.7313025854,
+    "second_response": 3085.3033284127114,
+    "terminal": 983.3266260863705,
+    "nominal_next_index": 141,
+    "native_next_index": 141,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r3_t101",
+    "branch": "2990",
+    "first_response": 6724.899653311704,
+    "second_response": 9719.980015892575,
+    "terminal": 1805.9430628453365,
+    "nominal_next_index": 223,
+    "native_next_index": 223,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r3_t101",
+    "branch": "4049",
+    "first_response": 1072769.7967068872,
+    "second_response": 3899.259607859063,
+    "terminal": 1805.9430628453365,
+    "nominal_next_index": 679,
+    "native_next_index": 679,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r4_t101",
+    "branch": "2741",
+    "first_response": 1876.5825567117058,
+    "second_response": 4182.039422653578,
+    "terminal": 1251.7446531292505,
+    "nominal_next_index": 817,
+    "native_next_index": 817,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r4_t101",
+    "branch": "3800",
+    "first_response": 12279.55394874707,
+    "second_response": 1921.290413733643,
+    "terminal": 1251.7446531292505,
+    "nominal_next_index": 886,
+    "native_next_index": 886,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r4_t101",
+    "branch": "105",
+    "first_response": 92227904.05789173,
+    "second_response": 20937.234400488014,
+    "terminal": 1251.7446531292505,
+    "nominal_next_index": 864,
+    "native_next_index": 864,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r5_t101",
+    "branch": "1799",
+    "first_response": 3170.401673151401,
+    "second_response": 1496.4632020116514,
+    "terminal": 857.334224957855,
+    "nominal_next_index": 772,
+    "native_next_index": 772,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r5_t101",
+    "branch": "4042",
+    "first_response": 17702.48330344554,
+    "second_response": 3059.1909840449516,
+    "terminal": 857.334224957855,
+    "nominal_next_index": 3,
+    "native_next_index": 3,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r6_t101",
+    "branch": "1221",
+    "first_response": 38036.14078733393,
+    "second_response": 5433.533664418701,
+    "terminal": 1222.9021872978042,
+    "nominal_next_index": 785,
+    "native_next_index": 785,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r6_t101",
+    "branch": "3962",
+    "first_response": 81420.32684404435,
+    "second_response": 4497.174817677871,
+    "terminal": 1222.9021872978042,
+    "nominal_next_index": 777,
+    "native_next_index": 777,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r7_t101",
+    "branch": "1726",
+    "first_response": 18859.703873868606,
+    "second_response": 3585.260295766657,
+    "terminal": 1739.3529565860995,
+    "nominal_next_index": 214,
+    "native_next_index": 214,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r7_t101",
+    "branch": "66",
+    "first_response": 3514504.3911674973,
+    "second_response": 3585.260295766657,
+    "terminal": 1739.3529565860995,
+    "nominal_next_index": 214,
+    "native_next_index": 214,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r8_t101",
+    "branch": "2794",
+    "first_response": 7372.673404752984,
+    "second_response": 4266.361918396926,
+    "terminal": 1246.0835170367968,
+    "nominal_next_index": 425,
+    "native_next_index": 425,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r8_t101",
+    "branch": "3889",
+    "first_response": 17186.62947262785,
+    "second_response": 2461.233357379223,
+    "terminal": 1246.0835170367968,
+    "nominal_next_index": 394,
+    "native_next_index": 394,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r8_t101",
+    "branch": "89",
+    "first_response": 1008798.036577657,
+    "second_response": 1774.9123902987044,
+    "terminal": 1246.0835170367968,
+    "nominal_next_index": 661,
+    "native_next_index": 661,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r9_t101",
+    "branch": "2206",
+    "first_response": 16337.283379329565,
+    "second_response": 5127.326062200807,
+    "terminal": 2217.2842870958016,
+    "nominal_next_index": 840,
+    "native_next_index": 840,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r9_t101",
+    "branch": "4008",
+    "first_response": 334413.9617951267,
+    "second_response": 4723.832235948272,
+    "terminal": 2217.2842870958016,
+    "nominal_next_index": 408,
+    "native_next_index": 408,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r0_t101",
+    "branch": "2053",
+    "first_response": 1793.5894821085926,
+    "second_response": 3177.863733584737,
+    "terminal": 1793.5894821085926,
+    "nominal_next_index": 489,
+    "native_next_index": 489,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r0_t101",
+    "branch": "836",
+    "first_response": 88349.00383139456,
+    "second_response": 88638.39763334763,
+    "terminal": 2872.9477894342735,
+    "nominal_next_index": 543,
+    "native_next_index": 543,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r0_t101",
+    "branch": "1016",
+    "first_response": 69653.57918275078,
+    "second_response": 88638.39763334763,
+    "terminal": 2872.9477894342735,
+    "nominal_next_index": 543,
+    "native_next_index": 543,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r1_t101",
+    "branch": "3842",
+    "first_response": 1659.8826938939872,
+    "second_response": 6466.855309172039,
+    "terminal": 1659.8826938939872,
+    "nominal_next_index": 338,
+    "native_next_index": 338,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r1_t101",
+    "branch": "3647",
+    "first_response": 14293.117885151583,
+    "second_response": 4773.026219056752,
+    "terminal": 3041.091253278576,
+    "nominal_next_index": 406,
+    "native_next_index": 406,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r1_t101",
+    "branch": "3180",
+    "first_response": 4101.214678479618,
+    "second_response": 4773.026219056752,
+    "terminal": 3041.091253278576,
+    "nominal_next_index": 406,
+    "native_next_index": 406,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r1_t101",
+    "branch": "4096",
+    "first_response": 18011.38167143682,
+    "second_response": 4773.026219056752,
+    "terminal": 3041.091253278576,
+    "nominal_next_index": 406,
+    "native_next_index": 406,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r2_t101",
+    "branch": "2394",
+    "first_response": 7189.999603396844,
+    "second_response": 8107.99183371686,
+    "terminal": 2202.6465328910544,
+    "nominal_next_index": 621,
+    "native_next_index": 621,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r2_t101",
+    "branch": "2603",
+    "first_response": 72194.46222911347,
+    "second_response": 8107.99183371686,
+    "terminal": 2202.6465328910544,
+    "nominal_next_index": 621,
+    "native_next_index": 621,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r2_t101",
+    "branch": "4096",
+    "first_response": 68966.35022052172,
+    "second_response": 8107.99183371686,
+    "terminal": 2202.6465328910544,
+    "nominal_next_index": 621,
+    "native_next_index": 621,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r3_t101",
+    "branch": "2718",
+    "first_response": 94021.09494681588,
+    "second_response": 3658.589342827815,
+    "terminal": 1982.6478477698938,
+    "nominal_next_index": 434,
+    "native_next_index": 434,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r3_t101",
+    "branch": "1259",
+    "first_response": 3594.278599778318,
+    "second_response": 3560.380414110111,
+    "terminal": 1982.6478477698938,
+    "nominal_next_index": 1008,
+    "native_next_index": 1008,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r3_t101",
+    "branch": "4096",
+    "first_response": 93629.49334139843,
+    "second_response": 3070.823468436599,
+    "terminal": 1982.6478477698938,
+    "nominal_next_index": 742,
+    "native_next_index": 742,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r4_t101",
+    "branch": "1952",
+    "first_response": 5980.865031445346,
+    "second_response": 19014.017419124222,
+    "terminal": 2329.7169244066754,
+    "nominal_next_index": 620,
+    "native_next_index": 620,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r4_t101",
+    "branch": "1866",
+    "first_response": 6629.2075825442635,
+    "second_response": 6229.661498568443,
+    "terminal": 2329.7169244066754,
+    "nominal_next_index": 430,
+    "native_next_index": 430,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r4_t101",
+    "branch": "4096",
+    "first_response": 22415111.846633337,
+    "second_response": 6229.661498568443,
+    "terminal": 2329.7169244066754,
+    "nominal_next_index": 430,
+    "native_next_index": 430,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r5_t101",
+    "branch": "2645",
+    "first_response": 12154.600244745418,
+    "second_response": 6492.306818384285,
+    "terminal": 1618.4871381674466,
+    "nominal_next_index": 30,
+    "native_next_index": 30,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r5_t101",
+    "branch": "1583",
+    "first_response": 30160.61063910695,
+    "second_response": 16369.958385181939,
+    "terminal": 1618.4871381674466,
+    "nominal_next_index": 757,
+    "native_next_index": 757,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r5_t101",
+    "branch": "4096",
+    "first_response": 216666.869298557,
+    "second_response": 16369.958385181939,
+    "terminal": 1618.4871381674466,
+    "nominal_next_index": 757,
+    "native_next_index": 757,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r6_t101",
+    "branch": "1973",
+    "first_response": 7272.280678906489,
+    "second_response": 4948.001306285148,
+    "terminal": 2690.3775295556147,
+    "nominal_next_index": 518,
+    "native_next_index": 518,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r6_t101",
+    "branch": "4096",
+    "first_response": 540917720.6236969,
+    "second_response": 33809.95275666291,
+    "terminal": 2690.3775295556147,
+    "nominal_next_index": 318,
+    "native_next_index": 318,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r6_t101",
+    "branch": "2917",
+    "first_response": 5256.976978744396,
+    "second_response": 71817.29627356188,
+    "terminal": 2690.3775295556147,
+    "nominal_next_index": 1012,
+    "native_next_index": 1012,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r7_t101",
+    "branch": "3803",
+    "first_response": 10832.866100355996,
+    "second_response": 4477.534938066016,
+    "terminal": 3064.7286535533594,
+    "nominal_next_index": 854,
+    "native_next_index": 854,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r7_t101",
+    "branch": "2147",
+    "first_response": 2097.2122585904995,
+    "second_response": 4477.534938066016,
+    "terminal": 2097.2122585904995,
+    "nominal_next_index": 854,
+    "native_next_index": 854,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r7_t101",
+    "branch": "1821",
+    "first_response": 5646.446749874487,
+    "second_response": 4477.534938066016,
+    "terminal": 3064.7286535533594,
+    "nominal_next_index": 854,
+    "native_next_index": 854,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r7_t101",
+    "branch": "4096",
+    "first_response": 60220706.07686931,
+    "second_response": 2525.6269673109987,
+    "terminal": 2525.6269673109987,
+    "nominal_next_index": 747,
+    "native_next_index": 747,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r8_t101",
+    "branch": "2579",
+    "first_response": 10032.76317485672,
+    "second_response": 3696.224645929999,
+    "terminal": 2877.576342916249,
+    "nominal_next_index": 95,
+    "native_next_index": 95,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r8_t101",
+    "branch": "3888",
+    "first_response": 445098.97598349745,
+    "second_response": 3696.224645929999,
+    "terminal": 2877.576342916249,
+    "nominal_next_index": 95,
+    "native_next_index": 95,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r9_t101",
+    "branch": "1209",
+    "first_response": 6709.283959467308,
+    "second_response": 10022.219157003385,
+    "terminal": 2287.18968580406,
+    "nominal_next_index": 619,
+    "native_next_index": 619,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r9_t101",
+    "branch": "1119",
+    "first_response": 10912.632527688447,
+    "second_response": 4178.409100306274,
+    "terminal": 2287.18968580406,
+    "nominal_next_index": 203,
+    "native_next_index": 203,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r9_t101",
+    "branch": "1145",
+    "first_response": 113556.14016180072,
+    "second_response": 13523.438360030643,
+    "terminal": 2287.18968580406,
+    "nominal_next_index": 150,
+    "native_next_index": 150,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r9_t101",
+    "branch": "4096",
+    "first_response": 18337.623200556514,
+    "second_response": 4178.409100306274,
+    "terminal": 2287.18968580406,
+    "nominal_next_index": 203,
+    "native_next_index": 203,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_ei",
+    "branch": "b0",
+    "first_response": 391909.90309390053,
+    "second_response": 8726.70054366097,
+    "terminal": 1936.9825042567288,
+    "nominal_next_index": 662,
+    "native_next_index": 662,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_ei",
+    "branch": "b1",
+    "first_response": 183140.49775758863,
+    "second_response": 8726.70054366097,
+    "terminal": 1936.9825042567288,
+    "nominal_next_index": 662,
+    "native_next_index": 662,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_lcb",
+    "branch": "b0",
+    "first_response": 1714341.9467915497,
+    "second_response": 17345.494564769826,
+    "terminal": 1969.5377212916592,
+    "nominal_next_index": 485,
+    "native_next_index": 485,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_lcb",
+    "branch": "b1",
+    "first_response": 17890.50067385101,
+    "second_response": 17345.494564769826,
+    "terminal": 1969.5377212916592,
+    "nominal_next_index": 485,
+    "native_next_index": 485,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_pi",
+    "branch": "b0",
+    "first_response": 8505.57846627981,
+    "second_response": 5347.349400834616,
+    "terminal": 1672.8339255774827,
+    "nominal_next_index": 160,
+    "native_next_index": 160,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_pi",
+    "branch": "b1",
+    "first_response": 15795.547313630885,
+    "second_response": 5347.349400834616,
+    "terminal": 1672.8339255774827,
+    "nominal_next_index": 160,
+    "native_next_index": 160,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r12_ei",
+    "branch": "b0",
+    "first_response": 17503.15266978162,
+    "second_response": 13127.63654606552,
+    "terminal": 2007.8048311301102,
+    "nominal_next_index": 728,
+    "native_next_index": 728,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r12_ei",
+    "branch": "b1",
+    "first_response": 6022.553782855764,
+    "second_response": 13127.63654606552,
+    "terminal": 2007.8048311301102,
+    "nominal_next_index": 728,
+    "native_next_index": 728,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r12_pi",
+    "branch": "b0",
+    "first_response": 1767.8794695322836,
+    "second_response": 9548.387265524256,
+    "terminal": 1629.3290616578674,
+    "nominal_next_index": 779,
+    "native_next_index": 779,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r12_pi",
+    "branch": "b1",
+    "first_response": 50100.749916397246,
+    "second_response": 9548.387265524256,
+    "terminal": 1629.3290616578674,
+    "nominal_next_index": 779,
+    "native_next_index": 779,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_ei",
+    "branch": "b0",
+    "first_response": 7007.269167375668,
+    "second_response": 10096.971872170148,
+    "terminal": 1211.6075444861285,
+    "nominal_next_index": 475,
+    "native_next_index": 475,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_ei",
+    "branch": "b1",
+    "first_response": 2922418.172240927,
+    "second_response": 41859.71466018804,
+    "terminal": 1211.6075444861285,
+    "nominal_next_index": 827,
+    "native_next_index": 827,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_ei",
+    "branch": "b2",
+    "first_response": 5800.5235266250165,
+    "second_response": 10096.971872170148,
+    "terminal": 1211.6075444861285,
+    "nominal_next_index": 475,
+    "native_next_index": 475,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_lcb",
+    "branch": "b0",
+    "first_response": 6430.260226459966,
+    "second_response": 7549.874544769556,
+    "terminal": 1415.6098866801967,
+    "nominal_next_index": 878,
+    "native_next_index": 878,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_lcb",
+    "branch": "b1",
+    "first_response": 37425.58994303371,
+    "second_response": 7549.874544769556,
+    "terminal": 1415.6098866801967,
+    "nominal_next_index": 878,
+    "native_next_index": 878,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_lcb",
+    "branch": "b2",
+    "first_response": 5902.346126111899,
+    "second_response": 6007.360209894615,
+    "terminal": 1415.6098866801967,
+    "nominal_next_index": 246,
+    "native_next_index": 246,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_pi",
+    "branch": "b0",
+    "first_response": 24427.375869143987,
+    "second_response": 1714.8144877686616,
+    "terminal": 1415.6098866801967,
+    "nominal_next_index": 946,
+    "native_next_index": 946,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_pi",
+    "branch": "b1",
+    "first_response": 84741.57417995064,
+    "second_response": 1714.8144877686616,
+    "terminal": 1415.6098866801967,
+    "nominal_next_index": 946,
+    "native_next_index": 946,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_pi",
+    "branch": "b2",
+    "first_response": 9218.002579203805,
+    "second_response": 1714.8144877686616,
+    "terminal": 1415.6098866801967,
+    "nominal_next_index": 946,
+    "native_next_index": 946,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_ei",
+    "branch": "b0",
+    "first_response": 29020.42369130629,
+    "second_response": 3017.168154568077,
+    "terminal": 1455.8830790264205,
+    "nominal_next_index": 441,
+    "native_next_index": 441,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_ei",
+    "branch": "b1",
+    "first_response": 35084.0656158438,
+    "second_response": 3017.168154568077,
+    "terminal": 1455.8830790264205,
+    "nominal_next_index": 441,
+    "native_next_index": 441,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_ei",
+    "branch": "b2",
+    "first_response": 2651.7559301851325,
+    "second_response": 3017.168154568077,
+    "terminal": 1455.8830790264205,
+    "nominal_next_index": 441,
+    "native_next_index": 441,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_lcb",
+    "branch": "b0",
+    "first_response": 1133.3405829569238,
+    "second_response": 27375.23163876425,
+    "terminal": 1133.3405829569238,
+    "nominal_next_index": 486,
+    "native_next_index": 486,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_lcb",
+    "branch": "b1",
+    "first_response": 248010.42717136347,
+    "second_response": 27375.23163876425,
+    "terminal": 1496.0239108418164,
+    "nominal_next_index": 486,
+    "native_next_index": 486,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_pi",
+    "branch": "b0",
+    "first_response": 4947.377458610086,
+    "second_response": 230432.10894400097,
+    "terminal": 1654.9794340930953,
+    "nominal_next_index": 393,
+    "native_next_index": 393,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_pi",
+    "branch": "b1",
+    "first_response": 7022.178849898399,
+    "second_response": 230432.10894400097,
+    "terminal": 1654.9794340930953,
+    "nominal_next_index": 393,
+    "native_next_index": 393,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_ei",
+    "branch": "b0",
+    "first_response": 3214.2797380275288,
+    "second_response": 15462.869301444693,
+    "terminal": 749.3625680471899,
+    "nominal_next_index": 892,
+    "native_next_index": 892,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_ei",
+    "branch": "b1",
+    "first_response": 42925.10869051692,
+    "second_response": 15462.869301444693,
+    "terminal": 749.3625680471899,
+    "nominal_next_index": 892,
+    "native_next_index": 892,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_lcb",
+    "branch": "b0",
+    "first_response": 8507.225241594055,
+    "second_response": 7671.481298521347,
+    "terminal": 749.3625680471899,
+    "nominal_next_index": 404,
+    "native_next_index": 404,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_lcb",
+    "branch": "b1",
+    "first_response": 8942.417567660676,
+    "second_response": 12653.274231212492,
+    "terminal": 749.3625680471899,
+    "nominal_next_index": 831,
+    "native_next_index": 831,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_lcb",
+    "branch": "b2",
+    "first_response": 14590.249763307216,
+    "second_response": 12653.274231212492,
+    "terminal": 749.3625680471899,
+    "nominal_next_index": 831,
+    "native_next_index": 831,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_pi",
+    "branch": "b0",
+    "first_response": 4448.464732715787,
+    "second_response": 3333.6506534766686,
+    "terminal": 749.3625680471899,
+    "nominal_next_index": 662,
+    "native_next_index": 662,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_pi",
+    "branch": "b1",
+    "first_response": 25377.006380859395,
+    "second_response": 3333.6506534766686,
+    "terminal": 749.3625680471899,
+    "nominal_next_index": 662,
+    "native_next_index": 662,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_pi",
+    "branch": "b2",
+    "first_response": 66487.115221263,
+    "second_response": 3333.6506534766686,
+    "terminal": 749.3625680471899,
+    "nominal_next_index": 662,
+    "native_next_index": 662,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_ei",
+    "branch": "b0",
+    "first_response": 3307.9559005133005,
+    "second_response": 47319.508692110765,
+    "terminal": 1443.3465961246038,
+    "nominal_next_index": 904,
+    "native_next_index": 904,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_ei",
+    "branch": "b1",
+    "first_response": 100796.89385327572,
+    "second_response": 2756.249354703607,
+    "terminal": 1443.3465961246038,
+    "nominal_next_index": 796,
+    "native_next_index": 796,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_ei",
+    "branch": "b2",
+    "first_response": 3122.9506227707475,
+    "second_response": 2756.249354703607,
+    "terminal": 1443.3465961246038,
+    "nominal_next_index": 796,
+    "native_next_index": 796,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_lcb",
+    "branch": "b0",
+    "first_response": 24377.69268701515,
+    "second_response": 3322.72062281931,
+    "terminal": 1763.4700592564468,
+    "nominal_next_index": 334,
+    "native_next_index": 334,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_lcb",
+    "branch": "b1",
+    "first_response": 22760.83895470932,
+    "second_response": 3322.72062281931,
+    "terminal": 1763.4700592564468,
+    "nominal_next_index": 334,
+    "native_next_index": 334,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_pi",
+    "branch": "b0",
+    "first_response": 5108.331070757938,
+    "second_response": 2480.432230108322,
+    "terminal": 2480.432230108322,
+    "nominal_next_index": 4,
+    "native_next_index": 4,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_pi",
+    "branch": "b1",
+    "first_response": 7570.62882040157,
+    "second_response": 2480.432230108322,
+    "terminal": 2480.432230108322,
+    "nominal_next_index": 4,
+    "native_next_index": 4,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_pi",
+    "branch": "b2",
+    "first_response": 100226.4194530078,
+    "second_response": 2480.432230108322,
+    "terminal": 2480.432230108322,
+    "nominal_next_index": 4,
+    "native_next_index": 4,
+    "selector_matches": true,
+    "first_point_matches": true,
+    "next_pool_matches": true,
+    "training_counts": [
+      100,
+      101
+    ]
+  }
+]

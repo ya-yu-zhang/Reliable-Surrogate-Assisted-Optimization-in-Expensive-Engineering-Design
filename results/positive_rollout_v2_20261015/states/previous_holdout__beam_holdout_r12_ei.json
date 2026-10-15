@@ -1,0 +1,40 @@
+{
+  "dataset": "previous_holdout",
+  "state": "beam_holdout_r12_ei",
+  "initial": 2007.8048311301102,
+  "status": "completed",
+  "methods": {
+    "local": {
+      "status": "accepted",
+      "checked_status": "accepted",
+      "selected": "b1",
+      "full_projections": 0,
+      "refinements": 2,
+      "endpoint_evaluations": 16,
+      "checked_seconds": 0.07856751899998926,
+      "checked_regret_upper": 0.0
+    },
+    "direct": {
+      "status": "accepted",
+      "checked_status": "accepted",
+      "selected": "b1",
+      "full_projections": 2,
+      "refinements": 1,
+      "endpoint_evaluations": 21,
+      "checked_seconds": 0.06017665399986072,
+      "checked_regret_upper": 0.0
+    }
+  },
+  "positive_myopic_branch": "b1",
+  "shared_preparation_seconds": 0.052931336000256124,
+  "reference_containment": {
+    "local": {
+      "b0": true,
+      "b1": true
+    },
+    "direct": {
+      "b0": true,
+      "b1": true
+    }
+  }
+}

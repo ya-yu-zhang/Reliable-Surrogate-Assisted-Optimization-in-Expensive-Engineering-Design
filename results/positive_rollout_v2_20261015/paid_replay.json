@@ -1,0 +1,66 @@
+{
+  "version": "new_v2",
+  "scope": "Dependent already-paid two-evaluation replay; not independent policy validation",
+  "decision_freeze_sha256": "34f33927263d0cb004fb0584894859bc0cb61f58aad7e442b0b853193c893928",
+  "source_sha256": "f5a63bcfa419ac190eaaff74eb6cd9f2a01b870dfb6a0516a216be329609267a",
+  "inputs_sha256": {
+    "restored/results/engineering_optimization_common_continuation_v1/events.jsonl": "4650412e0dc21ba136179046b94310202a503b32ff5b5785bd53a2bc6a483573",
+    "restored/results/engineering_optimization_budget_audit_v1/block_11/beam_holdout_r11_ei_summary.json": "803a89ec8fd82bb9cfd3d8379a41284214accdbabff0e9bde87d9ed239338a18",
+    "restored/results/engineering_optimization_budget_audit_v1/block_11/beam_holdout_r11_lcb_summary.json": "6a1a2d450bbdd432c4ae345685b865518bd28772fcf2f23bbd60c67f562cd684",
+    "restored/results/engineering_optimization_budget_audit_v1/block_11/beam_holdout_r11_pi_summary.json": "bcc59d62eb3054dd2cf04cb759ef8d55e0d55eaa3a3d85cff5a956f1ae90735c",
+    "restored/results/engineering_optimization_budget_audit_v1/block_12/beam_holdout_r12_ei_summary.json": "027cbcc8c21e576fc0c072db0c4986e2a0a244e2b8f4578a7aa4f03932a85e16",
+    "restored/results/engineering_optimization_budget_audit_v1/block_12/beam_holdout_r12_pi_summary.json": "6231451ada3359a6cd0df5110ded29f049ef5f95b10ebc44d23439a70b3500a4",
+    "restored/results/engineering_optimization_budget_audit_v1/block_14/beam_holdout_r14_ei_summary.json": "c02903f09421a2d38066318c98ad14bd4ddee8d4ef59b0b8d57992c1008d9f88",
+    "restored/results/engineering_optimization_budget_audit_v1/block_14/beam_holdout_r14_lcb_summary.json": "a6abce34019b7b7a0b274f5526e1da03478f206b74c169f44d85fbae74d73791",
+    "restored/results/engineering_optimization_budget_audit_v1/block_14/beam_holdout_r14_pi_summary.json": "7dec7dcc7cc4e729f00129d64926afcd1d2b9d1f2c44a3f986e07997ca2e315a",
+    "restored/results/engineering_optimization_budget_audit_v1/block_15/beam_holdout_r15_ei_summary.json": "6068c4ad81ef49d4b589e512d7e34a3d42265176246912a37b9b55a90222b41f",
+    "restored/results/engineering_optimization_budget_audit_v1/block_15/beam_holdout_r15_lcb_summary.json": "cc840272737137491ddac46b365d9d732f1db222cbd5672deb42a58524c7ed53",
+    "restored/results/engineering_optimization_budget_audit_v1/block_15/beam_holdout_r15_pi_summary.json": "c7e88dcfe74d7216ae3ce862d0973805f465c686f5201e8f9050f5e664a547d4",
+    "restored/results/engineering_optimization_budget_audit_v1/block_17/beam_holdout_r17_ei_summary.json": "d48d410713523d03f8fb6b2fc3087a3e1c82dd674bb6fa2b857451ef94168908",
+    "restored/results/engineering_optimization_budget_audit_v1/block_17/beam_holdout_r17_lcb_summary.json": "390eff630dd2c15fd1e3ff00d701ce8fa2efccc5a271b74afa84ad3f68045782",
+    "restored/results/engineering_optimization_budget_audit_v1/block_17/beam_holdout_r17_pi_summary.json": "7171f01c9b85b0aa6aeb72f4b2a867cc8cf52a1c832f0f42717fd1a8a12f5cce",
+    "restored/results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_ei_summary.json": "82ca08362e7e3793d915395702fec8539d19140751c2d61a2fdea0616977fb2c",
+    "restored/results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_lcb_summary.json": "1a1b7455689e5df12f6bdebc0f31db5ccd3bc935234d401f787cf10cda0c15ef",
+    "restored/results/engineering_optimization_budget_audit_v1/block_18/beam_holdout_r18_pi_summary.json": "037113a17119e5afa8675196dee39328853e633aa921dbe65f2e3e9340027e3e"
+  },
+  "states": 43,
+  "graded_states": 43,
+  "unresolved_or_mismatched_states": [],
+  "all_branch_records": 114,
+  "all_first_points_and_next_pools_and_training_counts_match": true,
+  "nominal_native_selector_matches": 114,
+  "counts": {
+    "raw_mean": {
+      "better": 1,
+      "tie": 41,
+      "worse": 1
+    },
+    "raw_ei": {
+      "better": 2,
+      "tie": 40,
+      "worse": 1
+    },
+    "positive_one_step_ei": {
+      "better": 1,
+      "tie": 40,
+      "worse": 2
+    }
+  },
+  "mean_relative_changes": {
+    "raw_mean": 0.007436497567420639,
+    "raw_ei": -0.004521294441769546,
+    "positive_one_step_ei": 0.011527316016462794
+  },
+  "median_relative_changes": {
+    "raw_mean": 0.0,
+    "raw_ei": 0.0,
+    "positive_one_step_ei": 0.0
+  },
+  "inferential_statistics": false,
+  "independent_validation": false,
+  "new_physical_evaluations": 0,
+  "new_bound_queries": 0,
+  "new_GP_constructions": 0,
+  "new_hyperparameter_fits": 0,
+  "new_independent_samples": 0
+}

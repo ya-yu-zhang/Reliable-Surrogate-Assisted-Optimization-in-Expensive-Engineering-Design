@@ -1,0 +1,22 @@
+{
+  "1624": {
+    "point_parameter_value": 475.2508056460814,
+    "ordinary_error_estimate": 1.9133363520165424e-10,
+    "rigorous": false
+  },
+  "1584": {
+    "point_parameter_value": 581.5210987124769,
+    "ordinary_error_estimate": 2.5994264581585877e-08,
+    "rigorous": false
+  },
+  "1822": {
+    "point_parameter_value": 236.77854083810843,
+    "ordinary_error_estimate": 5.484743020484215e-10,
+    "rigorous": false
+  },
+  "4037": {
+    "point_parameter_value": 660.3409329139295,
+    "ordinary_error_estimate": 7.740858889435975e-12,
+    "rigorous": false
+  }
+}

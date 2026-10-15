@@ -1,0 +1,17 @@
+{
+  "b0": {
+    "point_parameter_value": 10.68047693282757,
+    "ordinary_error_estimate": 2.4241573222448934e-09,
+    "rigorous": false
+  },
+  "b1": {
+    "point_parameter_value": 34.822277632651456,
+    "ordinary_error_estimate": 1.4632333016762812e-09,
+    "rigorous": false
+  },
+  "b2": {
+    "point_parameter_value": 53.77094177579141,
+    "ordinary_error_estimate": 1.0403880853560279e-08,
+    "rigorous": false
+  }
+}

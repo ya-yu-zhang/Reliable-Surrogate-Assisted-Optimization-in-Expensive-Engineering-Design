@@ -1,0 +1,42 @@
+{
+  "dataset": "archived_common_mean",
+  "state": "gp_ucb_shared_init_r5_t101",
+  "initial": 1618.4871381674466,
+  "status": "completed",
+  "methods": {
+    "local": {
+      "status": "accepted",
+      "checked_status": "accepted",
+      "selected": "2645",
+      "full_projections": 0,
+      "refinements": 3,
+      "endpoint_evaluations": 24,
+      "checked_seconds": 0.10953922399994553,
+      "checked_regret_upper": 0.0
+    },
+    "direct": {
+      "status": "accepted",
+      "checked_status": "accepted",
+      "selected": "2645",
+      "full_projections": 3,
+      "refinements": 3,
+      "endpoint_evaluations": 38,
+      "checked_seconds": 0.11526551599990853,
+      "checked_regret_upper": 0.0
+    }
+  },
+  "positive_myopic_branch": "4096",
+  "shared_preparation_seconds": 0.09547294200001488,
+  "reference_containment": {
+    "local": {
+      "2645": true,
+      "1583": true,
+      "4096": true
+    },
+    "direct": {
+      "2645": true,
+      "1583": true,
+      "4096": true
+    }
+  }
+}

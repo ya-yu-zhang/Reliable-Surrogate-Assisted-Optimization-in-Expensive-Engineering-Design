@@ -1,0 +1,17 @@
+{
+  "2188": {
+    "point_parameter_value": 560.4724971309513,
+    "ordinary_error_estimate": 6.933644717186293e-09,
+    "rigorous": false
+  },
+  "4096": {
+    "point_parameter_value": 311.0969687292314,
+    "ordinary_error_estimate": 5.658386735711843e-10,
+    "rigorous": false
+  },
+  "1937": {
+    "point_parameter_value": 1011.1273173008216,
+    "ordinary_error_estimate": 5.594635913882073e-09,
+    "rigorous": false
+  }
+}

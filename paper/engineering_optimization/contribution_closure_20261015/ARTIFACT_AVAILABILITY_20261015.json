@@ -69,5 +69,14 @@
     "sha256": "7d491d48a3425366206dc5a0e2d50dbbba30be8ce3b6ad7dc9bc8b3d83a66349",
     "creation": "New mathematical/text integration; not restoration of the historical missing draft or executed code",
     "historical_positive_raw_files_restored": false
+  },
+  "new_v2_evidence": {
+    "source_before_execution_commit": "f4f352acdb5ccbc98ead05455d2083ccc72acca3",
+    "implementation_is_new": true,
+    "original_missing_files_recovered": false,
+    "case_input_snapshots": 43,
+    "all_43_both_methods_checked": true,
+    "complete_new_per_state_records_in_current_commit": true,
+    "old_checkpoint_not_independently_reverified": true
   }
 }
