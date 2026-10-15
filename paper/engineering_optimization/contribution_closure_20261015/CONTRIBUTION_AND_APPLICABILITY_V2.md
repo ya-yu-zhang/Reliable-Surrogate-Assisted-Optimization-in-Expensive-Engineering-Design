@@ -43,3 +43,25 @@
 ## 当前结论与停止
 
 具体算法、条件数学保证和当前工程状态的数值验证已有可审计证据。不得把这一结论升级为已证明足够的全领域原创性、优化策略优越或期刊必然接受。后续仅根据这些结果收敛主稿和投稿材料；不追加实验维护预设结论。final_submit_ready仍为false，待文本一致整合、作者事实字段和最终格式状态分别核实。
+
+## 最近方法的具体区别
+
+| 已有工作 | 已有能力 | 本文的范围与增量 |
+|---|---|---|
+| Lee等2020，Efficient Rollout Strategies | QMC、共同随机数、控制变量减少rollout估计方差；有限policy search也已存在 | 不把有限菜单或rollout本身作为新意。固定续跑的响应稳定域给出确定性事件误差，结合posterior/积分误差检查最终选择 |
+| Ling等2016，epsilon-GPP | 基于Lipschitz性质的确定性近似最优规划及anytime branch-and-bound | 不声称首个有误差保证的GP规划。利用仿射续跑的可计算稳定域，按竞争性决定完整投影；事件界不要求复合固定策略价值具有全局Lipschitz常数 |
+| 原行动集程序 | 给定响应域上的可能下一动作集合和排除证据 | 当前输出进一步是两次评价目标下的第一动作选择与数值regret界 |
+
+对照来源已查看原文：https://proceedings.mlr.press/v124/lee20a/lee20a.pdf ；https://ojs.aaai.org/index.php/AAAI/article/view/10210/10069 。这些差别限定具体方法贡献，不构成对所有先前工作的优先权证明。
+
+## 最短复现入口
+
+环境：Python3.12、64位Linux MPFR4.2.1；Python依赖见 requirements-positive-rollout-v2.txt。现有运行和输入已保存，不需要重跑来继续写稿。
+
+如以后需要复现，使用新目录：
+
+    python -m src.reproduce_positive_rollout_v2 --out results/positive_rollout_v2_reproduction
+
+该入口不覆盖本次记录。数值复现使用仓库内43份快照，不需要旧正响应原件或物理求解器。可选 --paid-replay 会再校验历史源日志，因而需要相应历史日志在原检索位置；当前发布的 paid_outcomes.json 已包含核对后的114条两步响应提取，可重算已报告的描述性比较。完整历史日志未伪称全部纳入新版本。
+
+results/positive_rollout_v2_20261015/RELEASE_MANIFEST.json 给出核心源码、配置、全部数值输入和全部本次结果的SHA-256。源码与输入运行前提交为f4f352ac，全部逐状态执行结果提交为79f2cfa0。

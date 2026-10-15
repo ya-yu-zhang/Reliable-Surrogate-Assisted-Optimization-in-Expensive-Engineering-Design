@@ -1,44 +1,47 @@
-\section{Engineering evidence and its availability}\label{sec:positive_results}
 
-\subsection{Setting and research questions}
+\section{Engineering evaluation of the frozen v2 implementation}\label{sec:positive_results}
+
+\subsection{Setting and minimum sufficient comparison}
 
 The existing EngiBench Beams2D v1 workflow \citep{ref23} uses a symmetric MBB beam with $100\times50$ bilinear elements, SIMP exponent 3, stiffness limits $10^{-9}$ and 1, and Poisson ratio 0.3. Nineteen effective logits and an anchor define a $4\times5$ coarse density field interpolated to the mesh; a logistic shift fixes mean density at 0.35. Smaller compliance is preferable. This is one deterministic structural-design family.
 
-Both ten-group datasets retain 60 metadata states: 17 alias-only states and 43 nontrivial states containing 114 first-action branches, with eligible pools of 1024 designs. All have already been observed in development. The former holdout name does not create an unseen validation set for this method.
+Both ten-group datasets retain 60 metadata states: 17 alias-only states and 43 nontrivial states containing 114 first-action branches, with eligible pools of 1024 designs. All have already been observed in development. The former holdout name does not create an unseen validation set for the present method. The incumbent equals the minimum of each state's stored training responses.
 
-The existing evidence addresses three questions: whether finite-menu selection can meet the declared numerical tolerance; whether local stability reduces complete projection under the same objective and guarantee; and what the already paid two-evaluation engineering outcomes show. The relevant evidence is, respectively, checked enclosures, the direct same-guarantee control, and common-continuation paid records. This integration adds no experimental run.
+The comparison asks whether the implemented solver meets its numerical selection guarantee and whether local stability avoids complete projections under the same objective and precision. The direct route uses the same posterior enclosures, conditional integrator, tolerance and fresh reader, while always constructing the complete projection. Paid two-step outcomes separately address engineering consequences under the same continuation. No extra dataset, parameter sweep or independent optimization run is added.
 
-\subsection{Availability before numerical interpretation}
+\subsection{Prospective source freeze and arithmetic scope}
 
-Private-branch commit \texttt{7b36e70d8fb4d81d47bdd00a579453645c6828d6} preserves the historical positive-response aggregate. It reports completed execution and checking. Its 13 executed source files, per-state certificates and posterior enclosures, frozen decisions and raw timing records were not uploaded before a storage failure. A subsequent read-only check found neither these files nor the new draft in the available workspace or saved branch tree. Their location and recoverability remain unknown.
+The new v2 code, protocol and all 43 training/parameter input snapshots were saved before execution in commit \texttt{f4f352acdb5ccbc98ead05455d2083ccc72acca3}. It is a new implementation, not recovery of the missing earlier positive-response program. Exactly one paired pass alternates method order by state. There are 86 method/state runs, without selecting a favorable repetition.
 
-Tables~\ref{tab:positive_summary} and \ref{tab:positive_paid} therefore reproduce historical reports, not results independently reverified from currently available raw files. No missing row, certificate or source is reconstructed from the aggregate. The current mathematical specification is available, but equivalence to the earlier executed code cannot be checked. This prevents a complete reproducibility or submission-ready claim.
+Fixed binary $A/B/K$, outward logarithms, inverse-residual and positive-definiteness gates, and MPFR 4.2.1 at 192 bits define the arithmetic scope. Exported interval endpoints are rounded outwards to binary64. The normal window is $[-8,8]$, with an explicit tail and no renormalization. Limits were fixed at 32,768 refinements and 30 s per method/state, and 600 s for the comparison. No limit or tolerance was adjusted after the results.
 
-\subsection{Reported comparison with the complete route}
+Seven necessary program-test groups cover directed rational arithmetic, normal identities, independent conditional integration, normal-weighted integration, exact ties, corrupt-certificate rejection, and a separate exact two-by-two posterior oracle. Engineering execution reconstructs every raw-response selector with matching frozen coefficients and kernel/cross hashes. Complete projections must match the previously verified exact nonnegative domains; this reuses those domains as frozen inputs and does not rerun the old full exclusion-proof suite.
 
-The checkpoint describes fixed binary $A/B/K$, outward logarithms of positive observations, posterior residual enclosures, MPFR 4.2.1 at 192 bits and a separate reader. It reports both methods accepted on all 43 states in three rotating-order repetitions: 258 dependent method runs. The direct route always constructs complete projections; the local route first uses the stability bound. Both use the same selection tolerance.
+The reader freshly checks local dominance, cell assignments, disjoint coverage, summation and selection. It shares the interval and curvature implementation with the producer. It is not a fully independent arithmetic implementation. Kernel-function evaluation, statistical calibration and physical/PDE error are outside the certificate.
+
+\subsection{Checked finite-menu selection}
+
+Both methods pass the reader on all 43 states, with identical selected first actions. All 228 branch/method intervals contain the separately computed ordinary point-parameter quadrature references. These references are numerical cross-checks, not a second rigorous proof. No state is omitted or replaced.
 
 \begin{table}[htbp]\centering\small
-\caption{Historical aggregate; original execution files are unavailable. Counts refer to the first repetition. Times sum casewise medians across three repetitions and include the separate reader.}\label{tab:positive_summary}
+\caption{Frozen v2 comparison: one alternating-order paired pass. Times include the solver and fresh reader. Common preparation is reported separately.}\label{tab:positive_summary}
 \begin{tabular}{lrr}\toprule
 Quantity & Direct route & Local route\\\midrule
-Accepted states per repetition & 43/43 & 43/43\\
-Complete projections, first repetition & 114 & 25\\
-Conditional endpoint evaluations & 1724 & 1372\\
-Integration refinements & 544 & 646\\
-Checked numerical stage (s) & 10.529803 & 10.229626\\
+Checked accepted states & 43/43 & 43/43\\
+Complete projections & 114 & 25\\
+Checked numerical stage (s) & 4.933306 & 5.469358\\
 \bottomrule\end{tabular}\end{table}
 
-The reported projection count falls by 78.1\%, but integration refinements increase. The checked-stage time ratio is only 1.029. A separately recorded posterior preparation took 15.76 s once; I/O, historical coefficient formation and legacy-domain acquisition are excluded from the table. This is a modest dependent-development observation, with no significance, universal speedup, cold-start or physical deployment claim. Earlier solver-only ratios have weaker accounting scopes and do not replace this result.
+Local stability avoids 89 of 114 complete projections, or 78.1\%. This does not translate into a measured time saving: the local route is slower in this pass. Dominance scans, integration and checking remain costs. There is no inferential timing claim or general acceleration conclusion from a single pass.
 
-The checkpoint also reports all 228 nominal branch/method reference values inside the computed intervals and no certificate override in these engineering states. These remain historical reports pending recovery of their underlying files. Repeated numerical calls do not add engineering samples.
+Common preparation takes 3.621489 s and includes 43 positive-response root systems and 114 reconstructions of the original raw-response selector systems. It also supplies 114 conditional systems. Charging this preparation identically gives 8.554795 s for the direct route and 9.090847 s for the local route, before I/O and historical engineering-data acquisition. Neither total measures physical deployment savings. The complete comparison, including ordinary references and bookkeeping, takes 14.312025 s.
 
-\subsection{Reported paid engineering replay}
+\subsection{Already paid engineering outcomes}
 
-Decisions were reported frozen before this calculation's paid-trajectory replay. Both checked methods reportedly matched them, allowing reuse of the already paid first and next responses under the original mean continuation. This is dependent descriptive replay, not a new closed-loop experiment. A tie is within $10^{-6}m_0$.
+All numerical decisions and file hashes were frozen before this execution's paid-response read. The replay verifies all 114 first-action locations, next pools and training counts; every exact nominal continuation index matches the recorded native next action. All 43 states can therefore be graded without a mismatch-based exclusion. This is descriptive replay of already observed two-evaluation outcomes, not independent closed-loop validation. A tie is within $m_0/10^6$.
 
 \begin{table}[htbp]\centering\small
-\caption{Historical two-evaluation outcome aggregate; original positive-scope decisions and replay files are unavailable. Positive normalized compliance change is worse.}\label{tab:positive_paid}
+\caption{Frozen v2 choices on already paid two-evaluation outcomes. Positive normalized compliance change is worse.}\label{tab:positive_paid}
 \begin{tabular}{lrrrr}\toprule
 Comparator & Better & Tie & Worse & Mean change/$m_0$\\\midrule
 Raw-response mean & 1 & 41 & 1 & $+0.0074365$\\
@@ -46,12 +49,14 @@ Raw-response EI & 2 & 40 & 1 & $-0.0045213$\\
 Positive-model one-step EI & 1 & 40 & 2 & $+0.0115273$\\
 \bottomrule\end{tabular}\end{table}
 
-All median changes are zero. These mixed outcomes do not establish engineering-policy superiority. Reliable solution of the declared model-based selection problem and improvement of the physical objective are distinct empirical questions.
+All median changes are zero. The same-model one-step comparator distinguishes rollout from merely changing the planning distribution. The mixed outcomes do not establish engineering-policy superiority. The demonstrated applicability is solving the stated numerical first-action problem on real engineering states with a checked bound.
 
-\subsection{Adverse results and fixed resource boundary}
+\subsection{Preserved adverse evidence and total accounting}
 
-The earlier raw-Gaussian direct calculation remains separate, with available source and recorded outputs. Negative terminal predictions account for 99.40--99.9997\% of branch values; removing that component changes rankings in 38 of 43 states. Its paid mean comparison gives 1 better, 39 tied and 3 worse; its EI comparison gives 0, 41 and 2. The positive planning model is a later development choice prompted by this support mismatch, not a held-out confirmation.
+The earlier raw-Gaussian calculation remains separate. Negative terminal predictions account for 99.40--99.9997\% of branch values; removing that component changes rankings in 38 of 43 states. Its paid mean comparison gives 1 better, 39 tied and 3 worse; its EI comparison gives 0, 41 and 2. The positive planning model was a subsequent development choice prompted by this support mismatch, not a held-out confirmation.
 
-The archived action-set study records identical nominal and band indices in all 228 branch/domain cases, although 908 intervals widen. Its coefficient/filter/check components give a recorded 1.36-fold integer-envelope improvement over the optimized pairwise control. This concerns a different output and cannot be combined with the rollout ratio. The H1 obstruction, failed independent gate and unimplemented H5 extension remain unchanged.
+The archived action-set study records identical nominal and band indices in all 228 branch/domain cases, despite 908 widened intervals. Its recorded 1.36-fold coefficient/filter/check improvement concerns another output and cannot be combined with the rollout result. The H1 obstruction, failed independent gate and unimplemented H5 extension remain unchanged.
 
-The two permitted witnesses are exhausted. Their true responses, approximately 14324.74 and 9639.92, greatly exceed trial bounds of approximately 232.53 and 200.60. The weak-bound diagnosis is retained without repeating the screen. The project ledger remains 55,309 physical attempts. The historical positive scope records 86 root-system constructions and 774 dependent numerical method runs across three accounting contracts, with zero new physical evaluations, bound queries, hyperparameter fits, retries, replacements or independent optimization samples. This manuscript integration performs none of those scientific runs.
+The two permitted witnesses are exhausted. Their true responses, approximately 14324.74 and 9639.92, greatly exceed trial bounds of approximately 232.53 and 200.60. The weak-bound diagnosis is retained without repeating the screen. The project ledger remains 55,309 physical attempts. The current v2 adds 43 root and 114 raw-selector fixed-kernel constructions, 114 conditional systems and 86 numerical method/state runs. New physical evaluations, bound queries, hyperparameter fits, retries, replacements and independent optimization samples are all zero.
+
+The unavailable earlier positive-response implementation reported a 1.029 checked-stage ratio. That historical aggregate is retained separately and is not used as the current timing evidence. The new code, input snapshots, posterior intervals, per-state certificates, references, frozen decisions and paid-outcome extracts are preserved for v2.

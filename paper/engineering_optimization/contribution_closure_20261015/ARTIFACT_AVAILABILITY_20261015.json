@@ -63,13 +63,6 @@
     "title": "Certified Action Sets and Decision Limits in Surrogate-Assisted Engineering Optimization",
     "positive_rollout_new_draft_available": false
   },
-  "new_manuscript_source": {
-    "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
-    "title": "Local Response Stability for Certified Two-Step Rollout in Engineering Optimization",
-    "sha256": "7d491d48a3425366206dc5a0e2d50dbbba30be8ce3b6ad7dc9bc8b3d83a66349",
-    "creation": "New mathematical/text integration; not restoration of the historical missing draft or executed code",
-    "historical_positive_raw_files_restored": false
-  },
   "new_v2_evidence": {
     "source_before_execution_commit": "f4f352acdb5ccbc98ead05455d2083ccc72acca3",
     "implementation_is_new": true,
@@ -78,5 +71,18 @@
     "all_43_both_methods_checked": true,
     "complete_new_per_state_records_in_current_commit": true,
     "old_checkpoint_not_independently_reverified": true
+  },
+  "previous_source_only_manuscript": {
+    "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+    "title": "Local Response Stability for Certified Two-Step Rollout in Engineering Optimization",
+    "sha256": "7d491d48a3425366206dc5a0e2d50dbbba30be8ce3b6ad7dc9bc8b3d83a66349",
+    "creation": "New mathematical/text integration; not restoration of the historical missing draft or executed code",
+    "historical_positive_raw_files_restored": false
+  },
+  "current_v2_manuscript": {
+    "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+    "sha256": "3370d8fcc2e4a20b9b88027f65635142441dfc776ca671f6d532597ad2860363",
+    "uses_complete_new_v2_results": true,
+    "old_execution_files_restored": false
   }
 }

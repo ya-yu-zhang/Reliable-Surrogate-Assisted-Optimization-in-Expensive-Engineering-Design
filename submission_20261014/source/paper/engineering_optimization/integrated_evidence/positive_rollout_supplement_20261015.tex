@@ -1,6 +1,6 @@
-\section{Positive-response rollout: proofs and execution boundary}\label{sec:supp_positive_proofs}
+\section{Positive-response rollout: proofs and v2 verification}\label{sec:supp_positive_proofs}
 
-This is a current mathematical specification derived from the retained method description. It is not a recovered positive-scope program or a new execution record. The historical checkpoint alone does not establish equivalence between this text and the unavailable executed code.
+The mathematical specification is implemented and checked by the separately frozen v2 code. Its 43 input snapshots and per-state records are available. V2 is not recovery of the older positive-scope program and does not establish equivalence to that unavailable execution. This section retains the conditional numerical scope of the proof.
 
 \subsection{Stability and event error}
 
@@ -63,7 +63,7 @@ $\|C-LL^{\mathsf T}\|_2\le\|C-LL^{\mathsf T}\|_\infty$,
 and $\|L^{-1}\|_2^2\le\|L^{-1}\|_\infty\|L^{-1}\|_1$.
 Thus $L^{-1}CL^{-\mathsf T}=I+E$ has $\|E\|_2<1$ and is positive definite. Invertibility and inverse-factor norms need valid checks. The same reasoning applies to the finite posterior covariance; conditional standard deviations additionally need positive enclosed Schur complements.
 
-The checkpoint reports MPFR 4.2.1 with 192-bit directed operations \citep{ref46}. Without its executed source, actual call modes and reduction assumptions cannot be checked here. Correctly rounded functions and residual identities do not establish calibration, physical accuracy or kernel-function error bounds.
+V2 uses MPFR 4.2.1 with 192-bit directed operations \citep{ref46} and outward binary64 endpoint export. Residual reduction bounds include an explicit underflow allowance; fixed kernel inputs and source hashes are recorded. Correctly rounded functions and residual identities do not establish calibration, physical accuracy or kernel-function error bounds.
 
 \subsection{Selection theorem and unresolved outcomes}
 
@@ -75,4 +75,4 @@ then $\max_aV_a-V_{\hat a}\le\delta$. Bound each competing value above and the s
 
 Local initialization, complete projection and refinement preserve this theorem only when their replacement intervals are valid. An invalid local proof must be discarded before fallback, rather than intersected with a sound wider interval. A persistent parameter floor, invalid variance gate or exhausted budget requires an unresolved outcome. The theorem does not guarantee an accepted action for every resource budget, a faster local route on every input, or improvement of real engineering responses.
 
-The reader must check dominance and tie order, action-domain validity, cell coverage, fresh summation and selection. Sharing arithmetic and curvature code with the producer limits its independence. Historical acceptance counts remain reports pending recovery of their original certificates and code.
+The reader must check dominance and tie order, action-domain validity, cell coverage, fresh summation and selection. Sharing arithmetic and curvature code with the producer limits its independence. The v2 reader accepts both methods on all 43 states; all per-state records are preserved. Older aggregate counts remain separate historical reports.

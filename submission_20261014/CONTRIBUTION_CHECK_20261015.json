@@ -23,7 +23,7 @@
   "shared_envelope_core_is_classical": true,
   "new_asymptotic_complexity_result_claimed": false,
   "scalar_guard_is_elementary_use_rule": true,
-  "positioning": "Candidate finite-menu rollout solver with conditional numerical selection guarantee; positive empirical record available only as historical aggregate",
+  "positioning": "Executable response-stability-guided finite-menu rollout solver with checked fixed-binary-model selection; mixed engineering outcomes and no observed timing advantage",
   "nominal_band_cases": 228,
   "additional_band_actions_observed": 0,
   "shared_nominal_band_intervals_widened": 908,
@@ -164,20 +164,6 @@
     }
   },
   "previous_action_set_main_preserved": "submission_20261014/source/paper/engineering_optimization/archival/EO_action_sets_and_direct_rollout_20261015.tex",
-  "positive_rollout_current_revision": {
-    "mathematical_specification_and_proofs_written": true,
-    "historical_execution_source_restored": false,
-    "historical_per_state_evidence_restored": false,
-    "new_scientific_runs": 0,
-    "new_GP_systems": 0,
-    "empirical_status": "historical_aggregate_only_not_reverified",
-    "engineering_superiority_demonstrated": false,
-    "all_prior_art_originality_proven": false,
-    "current_compile_or_visual_layout_verified": false,
-    "final_submit_ready": false,
-    "source_and_BibTeX_checks_passed": true,
-    "verification_record": "submission_20261014/SOURCE_VERIFICATION.json"
-  },
   "previous_draft_mode_attempt_before_positive_revision": {
     "mode": "pdflatex -draftmode plus BibTeX; no PDF output or visual QA",
     "format_note": "Initial default format lookup failed; reused existing workspace pdflatex.fmt, without package installation or format rebuild",
@@ -231,5 +217,41 @@
     "run_for_current_source": false,
     "scope": "source-only and independent BibTeX check; no LaTeX/PDF build",
     "current_source_compile_verified": false
+  },
+  "previous_positive_source_only_revision": {
+    "mathematical_specification_and_proofs_written": true,
+    "historical_execution_source_restored": false,
+    "historical_per_state_evidence_restored": false,
+    "new_scientific_runs": 0,
+    "new_GP_systems": 0,
+    "empirical_status": "historical_aggregate_only_not_reverified",
+    "engineering_superiority_demonstrated": false,
+    "all_prior_art_originality_proven": false,
+    "current_compile_or_visual_layout_verified": false,
+    "final_submit_ready": false,
+    "source_and_BibTeX_checks_passed": true,
+    "verification_record": "submission_20261014/SOURCE_VERIFICATION.json"
+  },
+  "positive_rollout_current_revision": {
+    "version": "v2",
+    "source_before_execution_commit": "f4f352acdb5ccbc98ead05455d2083ccc72acca3",
+    "result_commit": "79f2cfa07082c5cb6b94075d5220175b8fc4e2ab",
+    "accepted_states_each_method": 43,
+    "matching_choices": 43,
+    "reference_checks": 228,
+    "reference_failures": 0,
+    "unit_test_groups": 7,
+    "new_positive_root_systems": 43,
+    "new_raw_selector_fixed_kernel_systems": 114,
+    "new_method_state_runs": 86,
+    "new_physical_evaluations": 0,
+    "engineering_policy_superiority": false,
+    "time_advantage_demonstrated": false,
+    "original_missing_files_restored": false,
+    "v2_numerical_records_complete": true,
+    "prior_art_priority_proven": false,
+    "source_and_BibTeX_checks_passed": true,
+    "current_compile_or_visual_layout_verified": false,
+    "final_submit_ready": false
   }
 }

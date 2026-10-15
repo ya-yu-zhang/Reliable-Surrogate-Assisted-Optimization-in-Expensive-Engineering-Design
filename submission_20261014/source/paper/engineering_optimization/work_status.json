@@ -388,6 +388,60 @@
     "empirical_reproducibility_complete": false,
     "final_submit_ready": false,
     "source_and_BibTeX_checks_passed": true,
-    "verification_record": "submission_20261014/SOURCE_VERIFICATION.json"
+    "verification_record": "submission_20261014/SOURCE_VERIFICATION.json",
+    "empirical_reproducibility_complete_for_v2_numerical_scope": true,
+    "v2_new_implementation_and_records_available": true
+  },
+  "positive_rollout_v2_20261015": {
+    "status": "completed_single_frozen_pair_and_paid_replay; full_results_saved_in_this_commit",
+    "protocol": "paper/engineering_optimization/contribution_closure_20261015/POSITIVE_ROLLOUT_V2_PROTOCOL.md",
+    "config": "configs/positive_rollout_v2_20261015.json",
+    "unit_check_record": "results/positive_rollout_v2_20261015/unit_check_record.json",
+    "new_implementation_not_old_artifact_recovery": true,
+    "planned_positive_root_systems": 43,
+    "planned_raw_selector_fixed_kernel_reconstructions": 114,
+    "planned_method_state_runs": 86,
+    "repetitions": 1,
+    "new_physical_evaluations": 0,
+    "new_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "new_independent_optimization_samples": 0,
+    "final_submit_ready": false,
+    "source_before_execution_commit": "f4f352acdb5ccbc98ead05455d2083ccc72acca3",
+    "analysis": "results/positive_rollout_v2_20261015/analysis.json",
+    "paid_replay": "results/positive_rollout_v2_20261015/paid_replay.json",
+    "accepted_states": {
+      "direct": 43,
+      "local": 43
+    },
+    "both_accepted_same_choice": 43,
+    "complete_projections": {
+      "direct": 114,
+      "local": 25
+    },
+    "checked_seconds": {
+      "direct": 4.933305655999902,
+      "local": 5.469358004998412
+    },
+    "shared_preparation_seconds": 3.6214888720005547,
+    "actual_counters": {
+      "positive_root_kernel_systems": 43,
+      "raw_selector_kernel_systems": 114,
+      "conditional_systems": 114,
+      "method_runs": 86,
+      "new_physical_evaluations": 0,
+      "new_bound_queries": 0,
+      "new_hyperparameter_fits": 0,
+      "new_independent_samples": 0
+    },
+    "new_independent_validation": false,
+    "engineering_policy_superiority_demonstrated": false,
+    "time_advantage_demonstrated": false,
+    "old_missing_files_recovered": false,
+    "current_numerical_evidence_available": true,
+    "main_text_updated_to_v2_results": true,
+    "result_commit": "79f2cfa07082c5cb6b94075d5220175b8fc4e2ab",
+    "release_manifest": "results/positive_rollout_v2_20261015/RELEASE_MANIFEST.json",
+    "source_and_BibTeX_checks_passed": true
   }
 }

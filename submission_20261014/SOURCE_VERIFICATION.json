@@ -1,12 +1,12 @@
 {
   "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
   "date": "2026-10-15",
-  "scope": "Current mathematical/text integration; structure, input/citation/label checks, BibTeX and factual field consistency. No scientific solver or LaTeX/PDF build run.",
+  "scope": "Verified v2 manuscript integration; source/BibTeX/factual consistency and release hashes only; no additional scientific execution or LaTeX/PDF build",
   "source_files": [
     {
       "path": "source/paper/engineering_optimization/EO_manuscript.tex",
-      "bytes": 15797,
-      "sha256": "7d491d48a3425366206dc5a0e2d50dbbba30be8ce3b6ad7dc9bc8b3d83a66349",
+      "bytes": 16705,
+      "sha256": "3370d8fcc2e4a20b9b88027f65635142441dfc776ca671f6d532597ad2860363",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -41,26 +41,26 @@
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_results_20261015.tex",
-      "bytes": 6956,
-      "sha256": "a502b151c20effe36ef8cf36e35489a6d0d39c4d4d6bb9e4dfbc095c10ef6366",
+      "bytes": 7956,
+      "sha256": "127cf6351ee1aff69cd6e3f29914f09b9d232be0a1a83f60f3ba08507f4a4797",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_supplement_20261015.tex",
-      "bytes": 6698,
-      "sha256": "08fd0362b48fb3c7a737c1df166b3b78ad99e5f6ed19cf67151aa7827442a218",
+      "bytes": 6847,
+      "sha256": "c69550464e6fa3a7ddd3d539304d2003eaa9fd223166413bbd1fcfca2e0a679e",
       "balanced_braces_and_named_environments": true
     }
   ],
   "source_checks": {
     "EO_manuscript.tex": {
-      "all_inputs_exist": true,
+      "inputs_resolved": true,
       "missing_citations": [],
       "unresolved_labels": [],
       "duplicate_labels": []
     },
     "EO_supplementary.tex": {
-      "all_inputs_exist": true,
+      "inputs_resolved": true,
       "missing_citations": [],
       "unresolved_labels": [],
       "duplicate_labels": []
@@ -69,21 +69,18 @@
   "bibliography_entries": 46,
   "bibtex_return_code": 0,
   "bibtex_diagnostics": [],
-  "abstract_words": 144,
+  "abstract_words": 147,
   "previous_main_byte_identical": true,
   "historical_supp_numeric_rows_preserved": 251,
-  "historical_empirical_results_replaced": false,
-  "positive_empirical_original_files_recovered": false,
-  "positive_aggregate_independently_reverified": false,
+  "v2_input_snapshots_verified": 43,
+  "v2_result_files_verified": 224,
+  "core_source_hashes_match_pre_execution_freeze": true,
+  "v2_numerical_evidence_complete": true,
+  "old_positive_originals_recovered": false,
   "current_source_compile_verified": false,
   "current_visual_layout_verified": false,
-  "new_scientific_runs": 0,
-  "new_GP_constructions": 0,
+  "new_scientific_runs_this_text_integration": 0,
   "new_physical_evaluations": 0,
-  "new_bound_queries": 0,
-  "new_hyperparameter_fits": 0,
-  "new_independent_optimization_samples": 0,
-  "remaining_witness_attempts": 0,
   "new_PDF_generated": false,
   "new_ZIP_generated": false,
   "final_submit_ready": false

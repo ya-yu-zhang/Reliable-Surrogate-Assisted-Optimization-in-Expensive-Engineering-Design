@@ -388,7 +388,9 @@
     "empirical_reproducibility_complete": false,
     "final_submit_ready": false,
     "source_and_BibTeX_checks_passed": true,
-    "verification_record": "submission_20261014/SOURCE_VERIFICATION.json"
+    "verification_record": "submission_20261014/SOURCE_VERIFICATION.json",
+    "empirical_reproducibility_complete_for_v2_numerical_scope": true,
+    "v2_new_implementation_and_records_available": true
   },
   "positive_rollout_v2_20261015": {
     "status": "completed_single_frozen_pair_and_paid_replay; full_results_saved_in_this_commit",
@@ -437,6 +439,9 @@
     "time_advantage_demonstrated": false,
     "old_missing_files_recovered": false,
     "current_numerical_evidence_available": true,
-    "main_text_updated_to_v2_results": false
+    "main_text_updated_to_v2_results": true,
+    "result_commit": "79f2cfa07082c5cb6b94075d5220175b8fc4e2ab",
+    "release_manifest": "results/positive_rollout_v2_20261015/RELEASE_MANIFEST.json",
+    "source_and_BibTeX_checks_passed": true
   }
 }
