@@ -1,0 +1,24 @@
+15 October 2026
+Preparation draft: positive-scope execution files must be recovered before this can accompany a submission.
+
+Editors, Engineering Optimization
+
+Re: Local Response Stability for Certified Two-Step Rollout in Engineering Optimization
+
+Dear Editors,
+
+This research manuscript specifies a finite-menu two-step rollout solver for positive engineering responses. It uses a certified response region in which the existing continuation is fixed, bounds omitted adaptation by its outside probability, and invokes complete response projection only when the local value interval cannot resolve first-action selection. Posterior residual enclosures, directed integration and a checked acceptance rule define the numerical guarantee.
+
+The proposed methodological increment is the local-reduction and checked-selection mechanism for this declared subproblem. Rollout, epsilon-optimal GP planning, affine envelopes, log-objective EI and interval arithmetic are acknowledged as established foundations. No continuous-domain convergence or real-design regret guarantee is claimed.
+
+The preserved historical aggregate concerns 43 archived beam-design states. It reports complete projections reduced from 114 to 25 and only a 1.029-fold timing improvement for the checked numerical stage. Shared preparation and historical input costs are excluded. Paid engineering outcomes are mixed, and no policy-superiority claim is made.
+
+The original positive-scope executed source and per-state records are currently unavailable. The manuscript explicitly marks its numerical observations as historical aggregate reports awaiting verification; the current mathematical text is not a recovered program. This draft is not ready to accompany a submission until that empirical evidence gap is resolved. Earlier adverse results and the separate three-file paired-grid gap remain disclosed.
+
+Known AI assistance is disclosed in the manuscript. Affiliations for Zhenyu Meng and Jia Zhao, and required factual submission declarations, remain to be completed by the submitting author. This preparation copy does not assert originality clearance, exclusive submission or venue-policy compliance.
+
+Corresponding author listed in the manuscript:
+Shu-Chuan Chu
+School of Computer Science, Nanjing University of Information Science and Technology
+Nanjing 210044, Jiangsu, China
+100130@nuist.edu.cn

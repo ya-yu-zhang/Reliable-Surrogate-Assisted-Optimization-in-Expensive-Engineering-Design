@@ -1,0 +1,262 @@
+% Author-review preparation 20261014; sole baseline 58f539c2; no new physics.
+% Operational specification revision 20261013; frozen experiments unchanged.
+% Review response factual integration; independent author scientific review pending.
+% Factual evidence integration v1; scientific author review pending.
+% Built from the evidence-preserving draft using the official publisher class.
+% Author review draft: unresolved affiliations and AI-use review remain.
+\documentclass[]{interact}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{natbib}
+\bibpunct[, ]{(}{)}{;}{a}{}{,}
+\renewcommand\bibfont{\fontsize{10}{11.25}\selectfont}
+\setlength\bibsep{0pt}
+\usepackage{longtable,array,calc,etoolbox,placeins,float,needspace}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\urlstyle{same}
+\usepackage{microtype}
+\providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\newcommand{\pandocbounded}[1]{#1}
+\setlength\emergencystretch{2em}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\def\LT@makecaption#1#2#3{%
+  \LT@mcol\LT@cols c{\hbox to\z@{\hss\parbox[t]\LTcapwidth{%
+    \tablecaptionfont\noindent{\tablenumfont#2}\hskip7pt#3\par\vskip6pt}\hss}}}
+\makeatother
+\setlength\LTcapwidth{\textwidth}
+\begin{document}
+\articletype{Research article}
+\title{Certified Action Sets and Decision Limits in Surrogate-Assisted Engineering Optimization}
+\author{\name{Shu-Chuan Chu\textsuperscript{a,*}, Ya-Yu Zhang\textsuperscript{a}, Zhenyu Meng\textsuperscript{b} and Jia Zhao\textsuperscript{c}}
+\affil{\textsuperscript{a}School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China; \textsuperscript{b}Affiliation to be confirmed; \textsuperscript{c}Affiliation to be confirmed}
+\thanks{CONTACT Shu-Chuan Chu. Email: \href{mailto:100130@nuist.edu.cn}{100130@nuist.edu.cn}}
+}
+\maketitle
+\begin{abstract}
+We study certified numerical computation of possible next actions before a pending engineering response is observed. Classical affine-envelope geometry is adapted to fixed-kernel Gaussian-process coefficient bands, closed response intervals and independently checked exclusions. A common-scale integer implementation agrees exactly with an optimized pairwise control on all 228 archived beam-design branch/domain cases. Filtering is 2.71 times faster; including coefficient reconstruction and independent checking gives a 1.36-fold improvement. Against the same-complexity Fraction envelope, the corresponding ratios are 4.46 and 1.70. A frozen nominal-versus-band diagnostic finds identical retained indices in every case, although all 908 shared intervals widen. Thus these engineering data do not demonstrate rescue of additional actions. An elementary domain-cover identity explains the failed H1 lower certificates and permits their scalar rejection without action-set construction in all 142 nonbaseline requests. Two cases selected before diagnostic outputs illustrate the required information and cost boundaries. These dependent development results establish a specialized implementation and its decision limits, rather than a new optimization principle, improved physical designs or deployment savings.
+\end{abstract}
+\begin{keywords}
+surrogate-assisted engineering optimization; Gaussian processes; certified action sets; exact arithmetic; certificate routing
+\end{keywords}
+\noindent{\small\textit{Preparation copy: affiliations b and c remain to be supplied.}}
+
+\section{Introduction}
+
+Surrogate-assisted engineering optimization converts predictions into choices of expensive design evaluations \citep{ref01,ref02,ref03,ref35}. A useful computational question arises before a pending response is observed: which eligible designs can still be chosen by a declared posterior-mean continuation? A sound answer must keep every permitted minimizer, including actions that are optimal only at an isolated response. An engineering decision aid also needs to recognize when computing that answer cannot change its requested certificate.
+
+We address these two computations within an existing finite design workflow. The first output is a complete relaxed-band action set with exact response intervals and independently verifiable exclusions. The second is a Boolean H1 lower-certificate test. Their output contracts differ: a scalar rejection does not supply an action set or establish actual design inferiority. Keeping those contracts explicit allows computational work to be removed without changing the requested result.
+
+The affine structure of fixed Gaussian-process (GP) updates and envelope computations is established \citep{ref40,ref42}. The shared-envelope core here is isomorphic, after a sign change, to the classical affine-breakpoint construction. Reliable geometric predicates and exact arithmetic are also established \citep{ref41}. We therefore frame this work as a specialized certified numerical implementation and verification study. Its outputs combine binary-system coefficient bands, complete closed action intervals and independently replayable exclusions. The scalar router is an auxiliary use rule derived from the same contract. We do not claim a new geometric algorithm, a new acquisition policy or global convergence of an optimizer.
+
+The engineering evaluation uses all retained states of two previously observed structural-design datasets. We compare complete outputs with both an independent optimized pairwise control and a same-complexity Fraction envelope, charging common coefficient reconstruction and independent proof checking. A subsequent frozen-coefficient diagnostic finds no additional retained indices from bands on these data, and two cases chosen before its outputs make the engineering use conditions explicit. An elementary domain-cover identity explains why none of the nonbaseline H1 lower certificates can succeed with the available pending-point information. The original adverse optimization and horizon results remain in the supporting evidence.
+
+\section{Related work and the computation being compared}
+
+Surrogate-assisted search and Bayesian optimization select evaluations through explicit model-management and acquisition rules \citep{ref01,ref02,ref03,ref18}. Rigorous surrogate-management frameworks require their own search assumptions \citep{ref38}; no such global convergence result follows from the present filter. Knowledge-gradient and lookahead policies evaluate future information to select observations \citep{ref39,ref40}. Our declared continuation instead takes a posterior-mean minimum on a finite eligible pool with fixed hyperparameters.
+
+The author-maintained software snapshot accompanying \citet{ref40} provides the closest explicit affine construction \citep{ref42}. In its \texttt{AffineBreakpoints} routine, set the nominal intercept and slope to $a^{\rm KG}_j=-b_j^+$ and $b^{\rm KG}_j=-a_j^+$. Its increasing-slope maximum envelope becomes our decreasing-slope minimum envelope of upper lines. The intersection formula and stack-deletion ordering then agree. The original expected-maximum calculation can discard zero-measure support without error for its own functional. Our contract instead queries every original lower line and keeps singleton feasibility and candidate identities. Adapting the classical envelope this way retains $O(M\log M)$ arithmetic complexity; the present formulation is not an asymptotic breakthrough. Source identities and the inspected file hashes are recorded with the reproduction materials.
+
+Coefficient bands change the requested numerical output. For example, nominal means $1$, $33/32$, $z$ and $2-z$ never select the second constant. With that constant's intercept enclosed by $[31/32,35/32]$, its relaxed-band interval becomes $[31/32,33/32]$. This synthetic example motivates retaining a band-feasible action; it is not an engineering sample or a claim that coupled GP errors realize every independent box corner. Section~\ref{sec:nominal_diagnostic} reports that this additional-action effect is absent from the archived beam cases.
+
+Our strong control uses vectorized floating-point pairwise proposals, exact checks, and complete exact scans for unresolved candidates. It does not construct the shared envelope. It is an optimized same-output reference, not a claim to represent every library or the best possible implementation. Exact-predicate foundations are acknowledged \citep{ref41}; their use alone is not presented as an original discovery.
+
+\section{Certified action-set computation}
+
+\subsection{Certified response-domain action sets}\label{sec:certified_sets}
+
+Consider $n$ observed responses $y_1,\ldots,y_n$, a fixed first-action location with unknown response $z\geq\ell\geq0$, and a finite eligible next-action pool of size $M$. Kernel parameters and the normalized noise diagonal are fixed. Let $A$ be the augmented $(n+1)$-point binary kernel matrix and $w_i=A^{-1}k_i$. With target normalization, define $h_i=(1-\mathbf{1}^{\mathsf T}w_i)/(n+1)$. The exact mean for this binary system is
+\begin{equation}
+\mu_i(z)=a_i z+b_i,\quad a_i=w_{i,n+1}+h_i,\quad
+b_i=\sum_{t=1}^{n}(w_{i,t}+h_i)y_t.\label{eq:affine_binary}
+\end{equation}
+The target standard deviation cancels in the denormalized mean; this statement does not extend the operator to uncertainty-based acquisition rules. Linear posterior updates and affine-envelope geometry are established, including in knowledge-gradient computation \citep{ref40}. The present operator concerns numerical coefficient enclosures, a closed response domain and verifiable exclusions, rather than a new acquisition policy.
+
+The inverse-residual check bounds $\|I-A\widehat{P}\|_\infty\leq\rho<1$, giving $\|A^{-1}\|_\infty\leq\|\widehat{P}\|_\infty/(1-\rho)$. A weight residual then bounds its coefficient error; normalization, dot products and endpoint construction are enclosed outwards. The stored implementation uses a stricter $\rho<0.5$ gate. Failure retains the full eligible pool. This certificate is conditional on the supplied binary matrix and documented finite, normal arithmetic, with kernel evaluation error and native floating predictions at every unknown response outside its guarantee.
+
+Write coefficient bands as $a_i\in[a_i^-,a_i^+]$, $b_i\in[b_i^-,b_i^+]$. For $z\geq0$, let $L_i(z)=a_i^-z+b_i^-$ and $U_i(z)=a_i^+z+b_i^+$. A potentially minimal action must satisfy
+\begin{equation}
+R_i=\{z\geq\ell:L_i(z)\leq U_j(z)\ \text{for every }j\}\ne\varnothing.\label{eq:band_domain}
+\end{equation}
+This is an exact relaxed-band problem and an outer approximation for the coupled GP coefficients. A retained action need not be realizable by those coupled coefficients.
+
+\textbf{Theorem 1 (classical-envelope specialization to closed bands).} Given finite ordered binary bands and $\ell\geq0$, all nonempty $R_i$, their exact rational endpoints and exclusions can be constructed in $O(M\log M)$ arithmetic operations and $O(M)$ storage. Every excluded action has an infeasibility witness using at most two rival indices, together with the domain constraint. Every minimizer allowed by the coefficient enclosures is retained, including actions feasible only at one response.
+
+\textit{Proof.} An allowed minimizer has $L_i\leq\mu_i\leq\mu_j\leq U_j$ for every competitor, proving inclusion. Sort upper lines by decreasing slope and build their lower envelope $E(z)=\min_j U_j(z)$ with exact rational intersections. Parallel dominated lines can be removed from the envelope; a tied boundary value remains represented by its neighbors. Each line is inserted and removed at most once. For every original candidate, $E-L_i$ is a continuous concave piecewise-affine function with decreasing segment slopes. Binary search locates its maximum and the two possible zero crossings on $[\ell,\infty)$. A nonnegative maximum yields the closed feasible interval, including a singleton. A negative maximum lies at the domain boundary, on a parallel segment or between two adjacent envelope lines. Those one or two constraints already make the candidate infeasible and supply its witness. Sorting costs $O(M\log M)$, the envelope scan $O(M)$, and the searches $O(\log M)$ per candidate. Rational bit complexity is additional.\hfill$\square$
+
+\textbf{Algorithm 1. Exact band-envelope audit.} (1) Enclose coefficients using the verified inverse gate. (2) Build the shared lower envelope of upper lines. (3) Query every original lower line, retaining all closed-domain ties. (4) Emit exact feasible intervals or at most two rival indices. (5) Independently replay each exclusion as rational one-dimensional infeasibility. (6) Apply identical already available point bounds and account separately for GP construction, pruning, proof replay and physical work. The algorithm accepts no pending response. The synthetic unit checks compare complete intervals with an independent all-pairs rational oracle and include a boundary-only lowest-index minimizer.
+
+For one continuation, the available pending-point bound $p$, next-point bound $\lambda_i$ and feasible response interval $R_i$ imply the joint incumbent lower bound
+\begin{equation}
+J=\min\left(m_{\mathrm{init}},\min_{i:R_i\ne\varnothing}\min\{\max(p,\inf R_i),\lambda_i\}\right).\label{eq:joint_lower}
+\end{equation}
+The nonnegative-range reader additionally receives the same pending-point trial bound as the full-pool reader. A paid baseline endpoint and $[J,m_{\mathrm{init}}]$ can certify a category only when the complete effect interval lies in its declared category. This H1 calculation does not certify a five-step adaptive history.
+
+
+\subsection{Exact meaning of the relaxed bands}
+
+\textbf{Proposition 1 (independent-band realizability).} For a fixed $z\geq0$, $z\in R_i$ if and only if some selection of coefficients from the independent bands makes action $i$ a posterior-mean minimizer at $z$.
+
+\textit{Proof.} Necessity is the enclosure argument in Theorem 1. For sufficiency choose both lower endpoints for candidate $i$ and both upper endpoints for every other candidate. Nonnegative $z$ makes these choices attain $L_i(z)$ and $U_j(z)$ simultaneously. The defining inequalities then make $i$ minimal, with equality allowed. This statement concerns the independent-band relaxation, not realization by the coupled GP coefficients.\hfill$\square$
+
+\subsection{Common-scale integer envelope}
+
+Every finite binary coefficient is a dyadic rational. Choose a common power-of-two denominator $D$ and write $A_i^\pm=Da_i^\pm$, $B_i^\pm=Db_i^\pm$. Each necessary inequality is
+\begin{equation}
+ (A_i^- - A_j^+)z\leq B_j^+-B_i^- .\label{eq:integer_band}
+\end{equation}
+Sorting and parallel-line tests are integer operations. Breakpoints are unreduced numerator/positive-denominator pairs and are compared by cross-products. At $z=p/q$, the envelope-gap sign is the sign of $(A_j^+-A_i^-)p+(B_j^+-B_i^-)q$. Reduced fractions are constructed for returned intervals and envelope breakpoints, rather than inside every predicate.
+
+Every original lower line is queried even if its corresponding upper line disappears from the envelope. Closed equality is retained throughout. The integer representation preserves Theorem 1's exact output and arithmetic-operation count, with integer bit complexity additional. Extreme exponent differences can enlarge $D$; the operation count is not a machine-time guarantee. A separate checker reconstructs binary coefficients as rational values and checks only the candidate and its at most two rivals. It does not trust the hull or its intersections.
+
+\subsection{Independent filtered pairwise control}
+
+For each block of 64 candidates, NumPy ratios propose extremal lower and upper constraints from all competitors. Every proposed exclusion is checked using Eq.~\eqref{eq:integer_band} in exact integers. Unresolved candidates receive a complete exact scan, returning their exact feasible interval or a one/two-rival infeasibility witness. Overflow or NaN in a proposal can cause fallback but cannot justify an unchecked exclusion. For fixed block size, proposal work is quadratic with linear workspace. Both algorithms include band validation and common-scale conversion in their filtering timer.
+
+\section{Domain-cover saturation and certificate routing}
+
+Let $d\geq0$ be the declared domain endpoint, $p$ the already available pending-point lower bound, $m_0$ the initial incumbent, and $\mathcal R=\{i:R_i\ne\varnothing\}$. Write $l_i=\inf R_i$. A paid baseline endpoint $B$ and fixed relative margin $\epsilon$ define $T=B-\epsilon m_0$. The scalar lower-certificate request is whether $J\geq T$, with $J$ from Eq.~\eqref{eq:joint_lower}.
+
+\textbf{Proposition 2 (pending-bound saturation).} Finite ordered coefficient bands on $[d,\infty)$ give
+\begin{equation}
+ \min_{i\in\mathcal R}l_i=d,\qquad
+ J=\min\{m_0,\max(p,d),\min_{i\in\mathcal R}\lambda_i\}.
+ \label{eq:saturation}
+\end{equation}
+
+\textit{Proof.} At every $z\geq d$, choose an index $j$ minimizing the finite set of upper lines. Band ordering gives $L_j(z)\leq U_j(z)\leq U_k(z)$ for every $k$, so $z\in R_j$. The sets cover the domain, and at least one contains $d$. All lower endpoints are at least $d$, hence their minimum is $d$. Distributing the finite minima in Eq.~\eqref{eq:joint_lower} and using $\min_i\max(p,l_i)=\max(p,d)$ gives the identity.\hfill$\square$
+
+\textbf{Corollary (sound early rejection).} If $\min\{m_0,\max(p,d)\}<T$, this particular lower certificate cannot pass, regardless of further next-point bounds. A lazy reader can return the same Boolean false without constructing an action set. Equality requires continuing to the next-bound test.
+
+\textbf{Algorithm 2. Output-aware routing.} If complete actions/intervals are requested, run Algorithm 1 with integer predicates. For a scalar no-better certificate, first evaluate the corollary. If it rejects, return certificate failure without invoking the action-set reader. Otherwise obtain the retained actions and their already available next-point bounds, and compare Eq.~\eqref{eq:saturation} with $T$.
+
+The corollary does not establish that an alternative is actually better, tied or inferior. It does not replace a requested complete category interval, a selection rule, or an H5 reachable-history analysis. The pending bound must already be available or paid for. The minimum algebra and early-exit principle are elementary; the useful result is their exact consequence for this audit and an executable route that avoids an ineffective computation.
+
+For the two frozen domains, $d=0$ or $d=p$, so $\max(p,d)=p$. Consequently action-set refinement alone cannot lift this lower certificate above the pending bound. This is stronger than merely counting failed terms at the observed states: it identifies a structural limit of the declared computation.
+
+On these domains the rejection condition is simply $\min(m_0,p)<T$. Implementing that necessary threshold test does not require a new optimization algorithm. The domain-cover proof explains when it equals the earlier interval-based lower-certificate obstruction; the router records its use without claiming a separate principle of early rejection.
+
+\section{Engineering setting and verification protocol}
+
+\subsection{Structural design problem and fixed information}
+
+EngiBench Beams2D v1 models half a symmetric Messerschmitt--Bolkow--Boehm beam \citep{ref23}. The domain has $100\times50$ bilinear elements, left-boundary horizontal symmetry, a lower-right vertical support and a unit downward top-left nodal load. SIMP uses stiffness limits $10^{-9}$ and 1, exponent 3, and Poisson ratio 0.3; smaller compliance is preferred. Nineteen effective logits plus one anchor form a $4\times5$ coarse field, interpolated to $50\times100$; a logistic shift fixes mean density to 0.35. This is a smooth 19-dimensional engineering design family.
+
+Both complete ten-group datasets and all 60 metadata states are retained. Seventeen action-alias-only states need no bound construction. The remaining 43 contexts contain 114 first-action branches with eligible pools of 1024 actions. Two domains give 228 dependent branch/domain cases. These are already observed development data; the former holdout is not a new unseen validation set.
+
+The frozen two-witness diagnosis has consumed both permitted attempts. The recorded true responses, approximately 14324.74 and 9639.92, are far above their trial lower bounds, approximately 232.53 and 200.60. This supports a weak-point-bound diagnosis at those witnesses. Equilibrium residuals do not establish mesh or physical accuracy at the decision margin. This study adds no physical evaluation, replacement, retry, bound query, hyperparameter fit or independent optimization sample.
+
+\subsection{Same-output timing and separate routing verification}
+
+The computational comparison uses the Fraction envelope, the filtered pairwise control and the integer envelope. All receive identical binary bands and domains. Each branch's fixed kernel and cross matrix are reconstructed three times; hashes and coefficient arrays must match the frozen records exactly. The comparison does not expose the pending or next response when constructing sets. Exact equality with the earlier intervals preserves the already recorded next-action inclusion without creating new label validation.
+
+Three repetitions rotate method order. Reported totals sum casewise medians for coefficient reconstruction, filtering and independent rational proof replay. Coefficient work is timed once per branch and charged identically to both domains. Every method's complete proof set is checked in every repetition. Python 3.12, NumPy 2.3.5, SciPy 1.17.0 and scikit-learn 1.8.0 use one BLAS thread. Timings, branches and domains are dependent; no independent-sample significance claim is made.
+
+The separate router verification reconstructs the historical scalar result from archived complete intervals as an oracle, verifies Eq.~\eqref{eq:saturation} exactly, then evaluates the lazy route. Its callback contains the actual integer action-set operation and next-bound reader. Reference verification work is outside the routing call; we report callback counts, not an end-to-end speed claim for this exercise. No historical physical/bound acquisition cost is removed.
+
+\section{Results}
+
+\subsection{Correct outputs and same-output computational improvement}
+
+All 228 exact action sets and feasible intervals agree across the three algorithms. Each complete pass has 232,564 exclusions, all accepted by the independent checker in every repetition. Retained sets contain 2--7 actions and inherit inclusion of every stored next action. The scaled coefficients have 84--103 bits on these inputs.
+
+Six numerical test groups compare both implementations against an independent all-pairs Fraction oracle: closed singleton/domain ties, duplicate parallel candidates, floating-proposal overflow, subnormal and mixed exponents, randomized interval bands, and nominally dominated but band-feasible actions. Four router tests cover early rejection without callback use, closed-threshold equality, a stronger valid domain and a failing next-point bound. These are program tests, not new engineering samples.
+
+\begin{table}[htbp]\centering\small
+\caption{Sum of casewise component medians over all 228 dependent branch/domain cases. I/O, grading, physical evaluations and historical bound acquisition are excluded.}\label{tab:strong_comparison}
+\begin{tabular}{lrrrr}\toprule
+Method & Coefficients (s) & Filter (s) & Proof check (s) & Sum (s)\\\midrule
+Fraction envelope & 2.4143 & 5.5528 & 2.5663 & 10.5334 \\
+Filtered pairwise & 2.4143 & 3.3661 & 2.6404 & 8.4209 \\
+Integer envelope & 2.4143 & 1.2437 & 2.5543 & 6.2123 \\
+\bottomrule\end{tabular}\end{table}
+
+Integer filtering is 2.71 times faster than the optimized pairwise control. Charging the same coefficient reconstruction and independent checks gives 1.36 times faster computation, or approximately 26.2\% less time for these three components. The integer sum is lower in all 228 cases. These observed gains concern a specified implementation and computational task, rather than universal library superiority or complete engineering deployment savings.
+
+The same recorded comparison also separates representation cost from the quadratic control. Against the Fraction envelope, which has the same asymptotic operation count, integer filtering is 4.46 times faster and the three-component sum is 1.70 times faster. These are implementation-specific observations, not comparisons with every optimized classical-envelope library.
+
+\subsection{Frozen nominal-versus-band diagnostic}\label{sec:nominal_diagnostic}
+
+The diagnostic reads the frozen nominal slopes and intercepts as point coefficients, computes their exact closed intervals and compares them with the previously verified band intervals. It does not reconstruct a kernel, refit a GP or replay the full proof benchmark. All 228 nominal index sets equal their band counterparts: no additional action is retained by the bands in these engineering data. All 908 shared action intervals are wider in at least one endpoint, with 680 lower and 680 upper endpoints changed. Every nominal interval is contained in its band interval.
+
+For each finite changed endpoint, divide its outward displacement by $\max(1,|e_0|)$, where $e_0$ is the nominal endpoint. The median and maximum are $5.7389010\times10^{-9}$ and $5.8820973\times10^{-5}$. This measures displacement between numerical contracts, not physical error, statistical coverage or true-GP coefficient error. The synthetic example demonstrates a possible contract difference; the beam results do not establish that bands rescued an otherwise lost engineering action.
+
+\subsection{A structural limit that makes routing useful}
+
+Equation~\eqref{eq:saturation} holds exactly in all 228 archived branch/domain cases and reproduces the recorded scalar lower bound. The router returns the same Boolean certificate result in every case. It invokes the action-set callback zero times, including all 142 nonbaseline branch/domain requests (71 distinct contrasts per domain). Thus the requested scalar rejection can be computed without action-set construction once its pending bound and comparator threshold are available.
+
+This does not make the independent study gate pass. All 71 nonbaseline H1 contrasts still abstain under the original complete category rule, and the 43 baseline-selection certificates remain unestablished. The H5 reachable-history extension is not implemented. The new router preserves a limited certificate predicate; it does not relabel these negative decisions as successful optimization.
+
+The earlier term decomposition remains informative: each domain has 281 retained action terms, 71 failing pending terms and 276 failing next-point terms. The median weakest next-bound/threshold ratio is 0.1622233735904155. Proposition 2 explains why increasing action-set precision alone cannot repair the pending-term obstruction for either frozen domain. Obtaining a useful judgment needs information that raises the applicable response lower endpoint or otherwise changes the declared certificate.
+
+\subsection{Engineering computation and complete cost boundaries}
+
+The practical use is conditional on the requested output. A full-set request receives exact intervals and replayable exclusion witnesses more efficiently on these structural-design states. A scalar no-better request can reject ineffective analysis before invoking that engine. Neither operation claims to improve the physical design objective.
+
+Before computing the nominal diagnostic, we fixed one illustrative case per dataset: the first construction filename and its first branch in lexical order. Case A is archived state \texttt{gp\_ei\_shared\_init\_r0\_t101}, branch 0; case B is former-holdout state \texttt{beam\_holdout\_r11\_ei}, branch b0. Both domains are retained. Table~\ref{tab:engineering_examples} gives their required scalar information. In each case the paid comparator equals the initial incumbent. Both nominal and band readers retain the same three actions in A and the same five in B, from pools of 1024.
+
+\begin{table}[htbp]\centering\small
+\caption{Predetermined engineering examples; rounded displays, with exact interval endpoints in the recorded diagnostic.}\label{tab:engineering_examples}
+\begin{tabular}{lrrr}\toprule
+Case & Pending bound $p$ & Threshold $T$ & Retained actions\\\midrule
+A & 407.257488 & 2872.944916 & 3\\
+B & 684.825302 & 1935.045522 & 5\\\bottomrule
+\end{tabular}\end{table}
+
+Since $\min(m_0,p)<T$, both cases return the same scalar certificate failure without constructing actions. Case B is itself a baseline branch, as fixed by the selection rule; it supplies no independent policy win. Its known path identity can provide information beyond the weak bound-only certificate, so an abstention from that certificate is not a judgment against self-comparison. The complete response intervals extend without an upper bound and have switching responses of order $10^7$--$10^8$ in these examples. Such mathematical tails must not be described as observed or typical physical responses. Full interval tables and branch identities are recorded in the supplement.
+
+In a warm request, $p$, $m_0$ and $T$ are already available, so the scalar guard can precede action-set construction. In a cold request, acquiring a sound pending bound and the paid comparator remains a prerequisite and a cost. No cold deployment or physical saving is measured here.
+
+The historical GP comparison acquired 44,146 distinct state/design bounds and took 176.433648 s for construction before grading. Its full-pool and subset readers have 116,850 versus 568 logical bound requests, or 44,146 versus 498 unique requests under their respective cache rules. Subset request counts are counterfactual because the complete library had already been acquired. The pending bound used by routing is not free in a cold deployment. The project ledger remains 55,309 physical attempts, including the two witnesses. No paid work is refunded by the new readers.
+
+\section{Discussion and limitations}
+
+The supported contribution is a specialized certified numerical implementation and verification study within surrogate-assisted optimization. Its envelope core is classical, common-scale dyadic arithmetic is a representation choice, and the frozen-domain guard is an elementary necessary-condition test. The integrated contract and reproducible same-output comparisons document a concrete engineering computation. They do not, by themselves, establish an original optimization principle or priority over all related certified-envelope work.
+
+The engineering diagnostic limits the practical claim further: bands widen response intervals but retain no additional indices on the available states. There is no observed recovery of an extra engineering action or successful new H1 decision. The computational gains therefore support more efficient delivery of a specified numerical output, with an explicit account of when that output is unnecessary. Neither test counts nor timing ratios demonstrate optimization-policy efficacy.
+
+An additional development diagnostic directly integrates the two-step value of the frozen nominal mean continuation on all 43 nontrivial states and 114 branches, retaining the root GP's full Gaussian support. Negative terminal predictions account for 99.40--99.9997\% of branch values; removing that component for diagnosis changes the preferred first action in 38 states. Decisions were frozen before this calculation's paid-trajectory replay. Against mean-first continuation, the selected two-evaluation outcomes are better in one state, tied in 39 and worse in three; against EI-first continuation, the counts are zero, 41 and two. These descriptive, previously observed data do not demonstrate engineering superiority. The numerical values and coefficient-band sensitivity diagnostics are not rigorous value certificates; the supplementary material records their definitions and checks.
+
+The engineering evidence is limited to archived states of one deterministic beam family. There is no new independent policy-performance experiment, no physical/PDE error certificate and no realized FE saving. Exact-band feasibility can overapproximate coupled GP coefficient realizability. Kernel evaluation error and native floating predictions at every unknown response are outside the binary-system guarantee. The inverse-residual enclosure assumptions remain conditional; a failed enclosure gate requires retaining the full pool. The scalar router assumes sound closed-domain coverage and available bounds and cannot replace other requested outputs.
+
+The complete preceding manuscript and all historical adverse tables are retained in the archive and supplement. Twenty-two of 25 supporting paired-grid raw records are available; three final recovery records remain missing. Derived tables do not replace their raw replay or establish mesh convergence. The current GP inputs, original certificates, new algorithms and complete recorded comparisons support scoped zero-solver reproduction.
+
+\section{Conclusion}
+
+For a fixed-kernel GP continuation, a classical envelope adapted to binary coefficient bands can deliver complete closed action intervals and independently checkable exclusions. Common-scale integer predicates reduce the recorded computation time against both the optimized pairwise control and the same-complexity Fraction implementation. In the beam archives, bands widen intervals but rescue no additional action. The elementary domain-cover identity explains the unchanged H1 obstruction and allows the specified scalar failure to be returned before constructing action sets. The result is a bounded numerical implementation and decision-limit study. Positive optimization-policy efficacy, physical accuracy at the decision margin and complete deployment savings remain unestablished.
+
+\section*{Acknowledgements}
+
+OpenAI Codex assisted software development and verification, computational workflow execution and recovery, evidence integration, formal argument drafting, manuscript preparation and language revision. The authors remain responsible for the research, statements and interpretations. This disclosure retains the known assistance history. The present preparation uses a GPT-6-based Codex agent. Exact tool versions and full prompt histories for earlier assistance have not been independently certified. This statement does not certify compliance with a publication venue's manuscript-preparation policy.
+
+\section*{Funding Statement}
+
+The authors received no specific funding for this study.
+
+\section*{Author Contributions}
+
+The following contribution assignment is proposed for author confirmation: conceptualization, Ya-Yu Zhang and Shu-Chuan Chu; methodology, Ya-Yu Zhang, Shu-Chuan Chu, and Zhenyu Meng; software, Ya-Yu Zhang; validation, Ya-Yu Zhang, Zhenyu Meng, and Jia Zhao; formal analysis, Ya-Yu Zhang and Zhenyu Meng; investigation, Ya-Yu Zhang and Jia Zhao; data curation, Ya-Yu Zhang; visualization, Ya-Yu Zhang and Jia Zhao; writing---original draft preparation, Ya-Yu Zhang; writing---review and editing, Shu-Chuan Chu, Zhenyu Meng, Jia Zhao, and Ya-Yu Zhang; supervision, Shu-Chuan Chu; project administration, Shu-Chuan Chu.
+
+\section*{Availability of Data and Materials}
+
+The source repository is private: \url{https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design}. A repository URL alone does not provide reviewer access. The separately prepared data-and-code packet contains the immutable GP execution archive, the exact selected baseline and source snapshots needed for its reconstruction, coefficient bands, original and envelope exclusion certificates, recorded timings, and verification code. These frozen inputs support zero-solver reproduction when combined with the current sources. The 15 October implementation, same-output comparison and nominal-band diagnostic are preserved separately as text, code and results on the private research branch; the earlier packet alone does not include those updates. The 114 kernel systems and 228 branch-domain outputs have been checked against the archived bytes; retiming can change machine-dependent times and does not acquire independent optimization evidence.
+
+The supporting paired-grid tables and historical release audits are preserved, but their complete raw reconstruction is currently unavailable. As of 15 October 2026, 22 of the 25 files listed in the paired-grid provenance audit have been recovered with matching SHA-256 hashes. The final recovery journal (\path{events.jsonl}), response collection (\path{responses.json}) and status (\path{run_status.json}) under \path{results/engineering_optimization_paired_mesh_recovery_v1/} have not been recovered. The earlier full review ZIP is not currently accessible. The retained analysis outputs cannot substitute for those raw records, and the historical release-validation result is not a claim of a complete current replay. Consequently, the paired-grid observations remain supporting historical results, with an explicit raw-evidence limitation; they do not establish mesh convergence or physical accuracy of the decision margin.
+
+The authors report preserving the historical raw-output archive of approximately 13.6 GB locally. That archive has not been fully inspected in the present preparation and is not included in the scoped reviewer packet. Availability of all historical records is therefore not guaranteed by this statement. Reviewer materials must be supplied through the journal's accepted attachment or access route before evaluation. No new physics, witness retry, replacement, or independent optimization sample was used to prepare these materials. Third-party implementations and publisher templates retain their own terms; private source access does not by itself grant an open-source license.
+
+\section*{Ethics Approval}
+
+Not applicable. This study did not involve human participants or animals.
+
+\section*{Conflicts of Interest}
+
+The authors declare no conflicts of interest to report regarding the present study.
+
+\section*{Supplementary Materials}
+
+The supplementary document contains the integer-filter and scalar-router proof details, recorded strong comparisons and H1 cost boundaries as well as the historical function-level, LassoBench, dimensional, sensitivity and resource evidence, plus the new GP intervention, force-position transfer, per-repeat endpoints, fixed-policy comparisons, horizon diagnostics and complete recovery-aware cost ledger.
+
+\bibliographystyle{tfcad}\bibliography{EO_references}
+\end{document}

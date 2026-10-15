@@ -1,42 +1,90 @@
 {
   "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
   "date": "2026-10-15",
-  "scope": "Current scientific source after direct-rollout no-go; source hashes and source-only syntax checks; current draft build blocked by missing article.cls; no PDF/ZIP export",
-  "all_historical_numeric_rows_preserved": true,
+  "scope": "Current mathematical/text integration; structure, input/citation/label checks, BibTeX and factual field consistency. No scientific solver or LaTeX/PDF build run.",
   "source_files": [
     {
       "path": "source/paper/engineering_optimization/EO_manuscript.tex",
-      "bytes": 38717,
-      "sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e"
+      "bytes": 15797,
+      "sha256": "7d491d48a3425366206dc5a0e2d50dbbba30be8ce3b6ad7dc9bc8b3d83a66349",
+      "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/EO_supplementary.tex",
-      "bytes": 119808,
-      "sha256": "97ef8976097122bfc01be902b7a9ad3a2e164809e2f257012f8eea796a2b20bb"
+      "bytes": 119943,
+      "sha256": "7c18c55e552d6ba368e415ef3fe7f267591e8578ee0c8c9fa48a1c2f6de914c5",
+      "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/EO_references.bib",
-      "bytes": 13738,
-      "sha256": "ba2aa333b715899e2d195b1452da38ba05b8f7a9bab54f66d11bdf5cccaee3d9"
+      "bytes": 15423,
+      "sha256": "4e980ebb8c2a1337b47f1f24444e4d5482b3cf36ee0c7bbfb121d5285e747005",
+      "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/archival/EO_full_evidence_20261014.tex",
       "bytes": 97942,
-      "sha256": "9284d4bb48538d1d2cf31d02ebb26d328a5d14157016134861fb453169b4de0c"
+      "sha256": "9284d4bb48538d1d2cf31d02ebb26d328a5d14157016134861fb453169b4de0c",
+      "balanced_braces_and_named_environments": true
     },
     {
-      "path": "source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex",
-      "bytes": 11344,
-      "sha256": "ad1551bb87477ab1a6bffea01256c0bcc201e53d1989e132adcb74c703d532ce"
+      "path": "source/paper/engineering_optimization/archival/EO_action_sets_and_direct_rollout_20261015.tex",
+      "bytes": 38717,
+      "sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_method_20261015.tex",
+      "bytes": 7162,
+      "sha256": "aeba0107bc5b84954002dab2c84173367d7ab74c731418e7c99216daa6e218b7",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_results_20261015.tex",
+      "bytes": 6956,
+      "sha256": "a502b151c20effe36ef8cf36e35489a6d0d39c4d4d6bb9e4dfbc095c10ef6366",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_supplement_20261015.tex",
+      "bytes": 6698,
+      "sha256": "08fd0362b48fb3c7a737c1df166b3b78ad99e5f6ed19cf67151aa7827442a218",
+      "balanced_braces_and_named_environments": true
     }
   ],
-  "new_algorithm_and_computational_results_added": true,
+  "source_checks": {
+    "EO_manuscript.tex": {
+      "all_inputs_exist": true,
+      "missing_citations": [],
+      "unresolved_labels": [],
+      "duplicate_labels": []
+    },
+    "EO_supplementary.tex": {
+      "all_inputs_exist": true,
+      "missing_citations": [],
+      "unresolved_labels": [],
+      "duplicate_labels": []
+    }
+  },
+  "bibliography_entries": 46,
+  "bibtex_return_code": 0,
+  "bibtex_diagnostics": [],
+  "abstract_words": 144,
+  "previous_main_byte_identical": true,
+  "historical_supp_numeric_rows_preserved": 251,
   "historical_empirical_results_replaced": false,
+  "positive_empirical_original_files_recovered": false,
+  "positive_aggregate_independently_reverified": false,
+  "current_source_compile_verified": false,
+  "current_visual_layout_verified": false,
+  "new_scientific_runs": 0,
+  "new_GP_constructions": 0,
   "new_physical_evaluations": 0,
-  "final_submit_ready": false,
-  "closest_method_review_and_frozen_nominal_diagnostic_complete": true,
-  "scientific_positioning": "Specialized certified numerical implementation and verification study",
-  "source_level_originality_risk_explicit": true,
-  "direct_rollout_reference_and_paid_replay_complete": true,
-  "current_source_compile_verified": false
+  "new_bound_queries": 0,
+  "new_hyperparameter_fits": 0,
+  "new_independent_optimization_samples": 0,
+  "remaining_witness_attempts": 0,
+  "new_PDF_generated": false,
+  "new_ZIP_generated": false,
+  "final_submit_ready": false
 }

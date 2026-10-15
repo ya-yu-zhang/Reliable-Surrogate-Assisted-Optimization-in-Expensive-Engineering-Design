@@ -3,16 +3,16 @@
   "journal_homepage": "https://www.tandfonline.com/journals/geno20",
   "article_type_suggested": "Research article; confirm actual portal dropdown",
   "peer_review": "single blind, official journal search record checked on 14 October 2026",
-  "title": "Certified Action Sets and Decision Limits in Surrogate-Assisted Engineering Optimization",
-  "abstract_tex": "We study certified numerical computation of possible next actions before a pending engineering response is observed. Classical affine-envelope geometry is adapted to fixed-kernel Gaussian-process coefficient bands, closed response intervals and independently checked exclusions. A common-scale integer implementation agrees exactly with an optimized pairwise control on all 228 archived beam-design branch/domain cases. Filtering is 2.71 times faster; including coefficient reconstruction and independent checking gives a 1.36-fold improvement. Against the same-complexity Fraction envelope, the corresponding ratios are 4.46 and 1.70. A frozen nominal-versus-band diagnostic finds identical retained indices in every case, although all 908 shared intervals widen. Thus these engineering data do not demonstrate rescue of additional actions. An elementary domain-cover identity explains the failed H1 lower certificates and permits their scalar rejection without action-set construction in all 142 nonbaseline requests. Two cases selected before diagnostic outputs illustrate the required information and cost boundaries. These dependent development results establish a specialized implementation and its decision limits, rather than a new optimization principle, improved physical designs or deployment savings.",
-  "abstract_plaintext": "We study certified numerical computation of possible next actions before a pending engineering response is observed. Classical affine-envelope geometry is adapted to fixed-kernel Gaussian-process coefficient bands, closed response intervals and independently checked exclusions. A common-scale integer implementation agrees exactly with an optimized pairwise control on all 228 archived beam-design branch/domain cases. Filtering is 2.71 times faster; including coefficient reconstruction and independent checking gives a 1.36-fold improvement. Against the same-complexity Fraction envelope, the corresponding ratios are 4.46 and 1.70. A frozen nominal-versus-band diagnostic finds identical retained indices in every case, although all 908 shared intervals widen. Thus these engineering data do not demonstrate rescue of additional actions. An elementary domain-cover identity explains the failed H1 lower certificates and permits their scalar rejection without action-set construction in all 142 nonbaseline requests. Two cases selected before diagnostic outputs illustrate the required information and cost boundaries. These dependent development results establish a specialized implementation and its decision limits, rather than a new optimization principle, improved physical designs or deployment savings.",
-  "abstract_whitespace_word_count": 166,
+  "title": "Local Response Stability for Certified Two-Step Rollout in Engineering Optimization",
+  "abstract_tex": "Two-step rollout can require a complete response-dependent continuation partition for every first action. We formulate a finite-menu solver that first certifies a reference continuation on a local response domain and bounds the omitted adaptation by its complement probability. With a positive-response planning model, a bounded terminal reward links this domain certificate to first-action value intervals. Residual enclosures, conditional-reward curvature and directed integration support a checked selection rule at a declared tolerance, with complete-projection fallback and unresolved outcomes. A historical aggregate on 43 archived beam-design states reports complete projections reduced from 114 to 25, with only a 1.029-fold checked-stage timing improvement. Paid engineering replay has mixed outcomes. The executed positive-scope source and per-state records are currently unavailable, so these empirical reports await verification. The mathematical contribution is the local-reduction and acceptance mechanism for an explicit finite binary model; engineering-policy superiority and complete reproducibility remain unestablished.",
+  "abstract_plaintext": "Two-step rollout can require a complete response-dependent continuation partition for every first action. We formulate a finite-menu solver that first certifies a reference continuation on a local response domain and bounds the omitted adaptation by its complement probability. With a positive-response planning model, a bounded terminal reward links this domain certificate to first-action value intervals. Residual enclosures, conditional-reward curvature and directed integration support a checked selection rule at a declared tolerance, with complete-projection fallback and unresolved outcomes. A historical aggregate on 43 archived beam-design states reports complete projections reduced from 114 to 25, with only a 1.029-fold checked-stage timing improvement. Paid engineering replay has mixed outcomes. The executed positive-scope source and per-state records are currently unavailable, so these empirical reports await verification. The mathematical contribution is the local-reduction and acceptance mechanism for an explicit finite binary model; engineering-policy superiority and complete reproducibility remain unestablished.",
+  "abstract_whitespace_word_count": 144,
   "keywords": [
     "surrogate-assisted engineering optimization",
+    "two-step rollout",
     "Gaussian processes",
-    "certified action sets",
-    "exact arithmetic",
-    "certificate routing"
+    "response stability",
+    "validated numerical integration"
   ],
   "authors": [
     {
@@ -52,5 +52,6 @@
   "license": null,
   "actual_submission": false,
   "manuscript_id": null,
-  "ready_for_final_submit": false
+  "ready_for_final_submit": false,
+  "preparation_status": "source_integration_complete; positive_empirical_originals_unavailable; not_submit_ready"
 }

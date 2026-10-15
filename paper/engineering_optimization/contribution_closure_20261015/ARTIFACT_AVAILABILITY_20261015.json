@@ -38,13 +38,6 @@
     "paper/engineering_optimization/contribution_closure_20261015/POSITIVE_ROLLOUT_CONTRIBUTION_AND_REVIEW.md"
   ],
   "remote_work_status_contains_aggregate_entry": true,
-  "current_manuscript": {
-    "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
-    "exists": true,
-    "sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
-    "title": "Certified Action Sets and Decision Limits in Surrogate-Assisted Engineering Optimization",
-    "positive_rollout_new_draft_available": false
-  },
   "continuity_recovery": {
     "attempted": true,
     "result": "Personal context is disabled; no original source or raw file content returned."
@@ -62,5 +55,19 @@
   "new_independent_optimization_samples": 0,
   "remaining_witness_attempts": 0,
   "new_PDF_or_ZIP": false,
-  "final_submit_ready": false
+  "final_submit_ready": false,
+  "manuscript_at_availability_audit": {
+    "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+    "exists": true,
+    "sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
+    "title": "Certified Action Sets and Decision Limits in Surrogate-Assisted Engineering Optimization",
+    "positive_rollout_new_draft_available": false
+  },
+  "new_manuscript_source": {
+    "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+    "title": "Local Response Stability for Certified Two-Step Rollout in Engineering Optimization",
+    "sha256": "7d491d48a3425366206dc5a0e2d50dbbba30be8ce3b6ad7dc9bc8b3d83a66349",
+    "creation": "New mathematical/text integration; not restoration of the historical missing draft or executed code",
+    "historical_positive_raw_files_restored": false
+  }
 }

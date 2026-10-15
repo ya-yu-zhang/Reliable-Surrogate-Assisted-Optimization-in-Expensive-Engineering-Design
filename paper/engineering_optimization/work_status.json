@@ -355,11 +355,12 @@
     "new_hyperparameter_fits": 0,
     "new_independent_optimization_samples": 0,
     "complete_new_code_and_data_uploaded": false,
-    "remote_main_manuscript_integrated": false,
+    "remote_main_manuscript_integrated": true,
     "final_submit_ready": false,
     "original_artifacts_currently_available": false,
     "aggregate_independently_reverified_this_turn": false,
-    "artifact_availability_audit": "paper/engineering_optimization/contribution_closure_20261015/ARTIFACT_AVAILABILITY_20261015.json"
+    "artifact_availability_audit": "paper/engineering_optimization/contribution_closure_20261015/ARTIFACT_AVAILABILITY_20261015.json",
+    "integration_scope": "Current mathematical specification and qualified historical aggregate; not recovered execution files"
   },
   "experiment_design_policy": {
     "date": "2026-10-15",
@@ -375,5 +376,18 @@
     "preserve_necessary_verification": true,
     "preserve_negative_results": true
   },
-  "final_submit_ready": false
+  "final_submit_ready": false,
+  "current_manuscript_revision_20261015": {
+    "title": "Local Response Stability for Certified Two-Step Rollout in Engineering Optimization",
+    "source": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+    "previous_main_archive": "submission_20261014/source/paper/engineering_optimization/archival/EO_action_sets_and_direct_rollout_20261015.tex",
+    "scientific_execution_this_revision": false,
+    "positive_executed_source_and_raw_data_recovered": false,
+    "positive_aggregate_independently_reverified": false,
+    "new_method_math_integrated": true,
+    "empirical_reproducibility_complete": false,
+    "final_submit_ready": false,
+    "source_and_BibTeX_checks_passed": true,
+    "verification_record": "submission_20261014/SOURCE_VERIFICATION.json"
+  }
 }

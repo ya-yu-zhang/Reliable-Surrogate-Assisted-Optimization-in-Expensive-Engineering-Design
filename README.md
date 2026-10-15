@@ -6,6 +6,15 @@ auditing framework studied in the accompanying paper.
 
 ## Current manuscript revision
 
+
+The current private-branch working draft is **Local Response Stability for Certified Two-Step Rollout in Engineering Optimization**. Active sources are `submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex` and `EO_supplementary.tex`. The immediately preceding main is preserved byte for byte under that directory's `archival/EO_action_sets_and_direct_rollout_20261015.tex`.
+
+The revision supplies a current mathematical specification and proofs, and marks positive-response empirical observations as historical aggregate reports. The original 13 positive-scope execution sources and per-state result files are unavailable; the new text is not recovered program code. Engineering-policy superiority and complete reproducibility remain unestablished, and `final_submit_ready` remains false. `submission_20261014/SOURCE_VERIFICATION.json` records source/BibTeX checks only, without a current LaTeX build or visual review.
+
+The scientific baseline remains `58f539c2d0738b20c7d0d4889fe8d808a03a3019`; work is on `research/contribution-closure-20261014-c5d11c`. Canonical status is `paper/engineering_optimization/work_status.json`. The experiment rules and artifact-availability audit are under `paper/engineering_optimization/contribution_closure_20261015/`. This source integration adds no scientific runs, physical evaluations, retry, replacement or independent sample, and creates no PDF/ZIP.
+
+### Historical 13 October preparation record
+
 The active target is **Engineering Optimization**. Current manuscript sources are
 `paper/engineering_optimization/EO_manuscript.tex` and `EO_supplementary.tex` in
 that directory, with publisher-template provenance recorded alongside them.

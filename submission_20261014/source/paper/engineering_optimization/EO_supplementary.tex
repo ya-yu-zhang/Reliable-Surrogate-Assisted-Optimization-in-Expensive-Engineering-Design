@@ -16,6 +16,7 @@
 \usepackage[hidelinks,breaklinks]{hyperref}
 \urlstyle{same}
 \usepackage{microtype}
+\usepackage{amsmath,amssymb,booktabs}
 \providecommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \newcommand{\pandocbounded}[1]{#1}
 \setlength\emergencystretch{2em}
@@ -28,7 +29,7 @@
 \setlength\LTcapwidth{\textwidth}
 \begin{document}
 \articletype{Supplementary material}
-\title{Supplementary material: Certified Action Sets and Decision Limits in Surrogate-Assisted Engineering Optimization}
+\title{Supplementary material: Local Response Stability for Certified Two-Step Rollout in Engineering Optimization}
 \author{\name{Shu-Chuan Chu\textsuperscript{a,*}, Ya-Yu Zhang\textsuperscript{a}, Zhenyu Meng\textsuperscript{b} and Jia Zhao\textsuperscript{c}}
 \affil{\textsuperscript{a}School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China; \textsuperscript{b}Affiliation to be confirmed; \textsuperscript{c}Affiliation to be confirmed}
 \thanks{CONTACT Shu-Chuan Chu. Email: \href{mailto:100130@nuist.edu.cn}{100130@nuist.edu.cn}}
@@ -40,7 +41,7 @@
 \hypertarget{evidence-map-and-reproducibility-checklist}{%
 \section{Evidence Map and Reproducibility Checklist}\label{evidence-map-and-reproducibility-checklist}}
 
-The current article's action-set computation is documented in S12, with the stronger integer comparison and scalar-certificate routing in S15. Earlier sections preserve the full historical evidence associated with the archived manuscript. Scientific results, resource measurements and recovery records remain separate so that implementation checks and interrupted calls are not mistaken for optimization evidence.
+The current article's positive-response mathematical specification and execution boundary are given in Section~\ref{sec:supp_positive_proofs}. All earlier sections preserve the complete historical evidence associated with the archived manuscript, including the action-set and routing studies. Those historical sections are not independent positive-model validation. Scientific results, resource measurements and recovery records remain separate.
 
 \hypertarget{evidence-map}{%
 \subsection{Evidence map}\label{evidence-map}}
@@ -2214,6 +2215,8 @@ There are no added p-values, confidence guarantees, retrospective deployment tol
 \input{integrated_evidence/h1_bound_bottleneck_closure.tex}
 
 \input{integrated_evidence/contribution_20261015.tex}
+\input{integrated_evidence/positive_rollout_supplement_20261015.tex}
+
 \bibliographystyle{tfcad}\bibliography{EO_references}
 
 \end{document}

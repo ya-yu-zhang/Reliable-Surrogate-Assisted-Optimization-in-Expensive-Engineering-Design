@@ -23,7 +23,7 @@
   "shared_envelope_core_is_classical": true,
   "new_asymptotic_complexity_result_claimed": false,
   "scalar_guard_is_elementary_use_rule": true,
-  "positioning": "Specialized certified numerical implementation and verification study",
+  "positioning": "Candidate finite-menu rollout solver with conditional numerical selection guarantee; positive empirical record available only as historical aggregate",
   "nominal_band_cases": 228,
   "additional_band_actions_observed": 0,
   "shared_nominal_band_intervals_widened": 908,
@@ -39,57 +39,9 @@
   "new_PDF_generated": false,
   "new_ZIP_generated": false,
   "latex_unresolved_references_or_overfull_boxes": {
-    "main": [],
-    "supplement": []
-  },
-  "draft_mode_checks": {
-    "mode": "pdflatex -draftmode plus BibTeX; no PDF output or visual QA",
-    "format_note": "Initial default format lookup failed; reused existing workspace pdflatex.fmt, without package installation or format rebuild",
-    "documents": {
-      "main": {
-        "source": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
-        "source_sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
-        "command_return_codes": [
-          1
-        ],
-        "unresolved_or_overfull_log_lines": [
-          "! LaTeX Error: File `article.cls' not found.",
-          "! Emergency stop.",
-          "!  ==> Fatal error occurred, no output PDF file produced!"
-        ],
-        "bibtex_warning_or_error_lines": [],
-        "PDF_generated": false
-      },
-      "supplement": {
-        "source": "submission_20261014/source/paper/engineering_optimization/EO_supplementary.tex",
-        "source_sha256": "97ef8976097122bfc01be902b7a9ad3a2e164809e2f257012f8eea796a2b20bb",
-        "command_return_codes": [
-          1
-        ],
-        "unresolved_or_overfull_log_lines": [
-          "! LaTeX Error: File `article.cls' not found.",
-          "! Emergency stop.",
-          "!  ==> Fatal error occurred, no output PDF file produced!"
-        ],
-        "bibtex_warning_or_error_lines": [],
-        "PDF_generated": false
-      }
-    },
-    "status": "build_blocked_by_existing_environment; source-only checks passed",
-    "blocker": "Default format missing; existing workspace format loads but article.cls unavailable; no package install or further repair attempted",
-    "source_only_checks": [
-      {
-        "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
-        "sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
-        "balanced_braces_and_named_environments": true
-      },
-      {
-        "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex",
-        "sha256": "ad1551bb87477ab1a6bffea01256c0bcc201e53d1989e132adcb74c703d532ce",
-        "balanced_braces_and_named_environments": true
-      }
-    ],
-    "current_source_compile_verified": false
+    "main": null,
+    "supplement": null,
+    "reason": "No current LaTeX build or visual layout check"
   },
   "current_bounded_plan_completed": true,
   "current_bounded_plan_new_GP_reconstructions": 0,
@@ -210,5 +162,74 @@
         "PDF_generated": false
       }
     }
+  },
+  "previous_action_set_main_preserved": "submission_20261014/source/paper/engineering_optimization/archival/EO_action_sets_and_direct_rollout_20261015.tex",
+  "positive_rollout_current_revision": {
+    "mathematical_specification_and_proofs_written": true,
+    "historical_execution_source_restored": false,
+    "historical_per_state_evidence_restored": false,
+    "new_scientific_runs": 0,
+    "new_GP_systems": 0,
+    "empirical_status": "historical_aggregate_only_not_reverified",
+    "engineering_superiority_demonstrated": false,
+    "all_prior_art_originality_proven": false,
+    "current_compile_or_visual_layout_verified": false,
+    "final_submit_ready": false,
+    "source_and_BibTeX_checks_passed": true,
+    "verification_record": "submission_20261014/SOURCE_VERIFICATION.json"
+  },
+  "previous_draft_mode_attempt_before_positive_revision": {
+    "mode": "pdflatex -draftmode plus BibTeX; no PDF output or visual QA",
+    "format_note": "Initial default format lookup failed; reused existing workspace pdflatex.fmt, without package installation or format rebuild",
+    "documents": {
+      "main": {
+        "source": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+        "source_sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
+        "command_return_codes": [
+          1
+        ],
+        "unresolved_or_overfull_log_lines": [
+          "! LaTeX Error: File `article.cls' not found.",
+          "! Emergency stop.",
+          "!  ==> Fatal error occurred, no output PDF file produced!"
+        ],
+        "bibtex_warning_or_error_lines": [],
+        "PDF_generated": false
+      },
+      "supplement": {
+        "source": "submission_20261014/source/paper/engineering_optimization/EO_supplementary.tex",
+        "source_sha256": "97ef8976097122bfc01be902b7a9ad3a2e164809e2f257012f8eea796a2b20bb",
+        "command_return_codes": [
+          1
+        ],
+        "unresolved_or_overfull_log_lines": [
+          "! LaTeX Error: File `article.cls' not found.",
+          "! Emergency stop.",
+          "!  ==> Fatal error occurred, no output PDF file produced!"
+        ],
+        "bibtex_warning_or_error_lines": [],
+        "PDF_generated": false
+      }
+    },
+    "status": "build_blocked_by_existing_environment; source-only checks passed",
+    "blocker": "Default format missing; existing workspace format loads but article.cls unavailable; no package install or further repair attempted",
+    "source_only_checks": [
+      {
+        "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+        "sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
+        "balanced_braces_and_named_environments": true
+      },
+      {
+        "path": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex",
+        "sha256": "ad1551bb87477ab1a6bffea01256c0bcc201e53d1989e132adcb74c703d532ce",
+        "balanced_braces_and_named_environments": true
+      }
+    ],
+    "current_source_compile_verified": false
+  },
+  "draft_mode_checks": {
+    "run_for_current_source": false,
+    "scope": "source-only and independent BibTeX check; no LaTeX/PDF build",
+    "current_source_compile_verified": false
   }
 }
