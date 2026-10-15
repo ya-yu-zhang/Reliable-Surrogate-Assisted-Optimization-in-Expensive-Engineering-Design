@@ -1,0 +1,18 @@
+{
+  "command": "python -m unittest tests.test_lazy_regional_rollout -v",
+  "return_code": 0,
+  "groups_passed": 4,
+  "elapsed_seconds": 0.178,
+  "tests": [
+    "both_variants_select_without_complete_projection",
+    "positive_unknown_reward_range",
+    "unresolved_when_budget_exhausted",
+    "damaged_cover_and_domain_rejection"
+  ],
+  "new_physical_evaluations": 0,
+  "source_sha256": {
+    "src/lazy_regional_rollout.py": "cba9da5758c06e880922c3420e8fa186cf8293ac2b74f8216fcf4a66f8f15dc5",
+    "src/run_lazy_regional_rollout.py": "21b6c066676ea5255662d5a0f60cddaf8d5a9112fbe982c7aabcf6b6931bbf72",
+    "tests/test_lazy_regional_rollout.py": "ccc8736874c301724d2fd4ab00aaed9d950703f49d46a6c9cd4f39013349f219"
+  }
+}
