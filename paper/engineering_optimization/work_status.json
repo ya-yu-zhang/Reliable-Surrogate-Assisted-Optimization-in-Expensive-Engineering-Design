@@ -344,7 +344,7 @@
   },
   "active_manuscript_source": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
   "positive_rollout_20261015": {
-    "status": "computed_and_checked; aggregate_remote_checkpoint_only; full_artifact_export_blocked",
+    "status": "historical_reported_computation; aggregate_checkpoint_saved; executed_source_and_per_state_artifacts_unavailable_in_current_workspace",
     "checkpoint": "paper/engineering_optimization/contribution_closure_20261015/POSITIVE_ROLLOUT_REMOTE_CHECKPOINT.json",
     "review": "paper/engineering_optimization/contribution_closure_20261015/POSITIVE_ROLLOUT_CONTRIBUTION_AND_REVIEW.md",
     "accepted_states_each_method": 43,
@@ -356,6 +356,24 @@
     "new_independent_optimization_samples": 0,
     "complete_new_code_and_data_uploaded": false,
     "remote_main_manuscript_integrated": false,
-    "final_submit_ready": false
-  }
+    "final_submit_ready": false,
+    "original_artifacts_currently_available": false,
+    "aggregate_independently_reverified_this_turn": false,
+    "artifact_availability_audit": "paper/engineering_optimization/contribution_closure_20261015/ARTIFACT_AVAILABILITY_20261015.json"
+  },
+  "experiment_design_policy": {
+    "date": "2026-10-15",
+    "source": "Explicit user instructions: avoid defensive experiments; use minimum sufficient evidence",
+    "document": "paper/engineering_optimization/contribution_closure_20261015/EXPERIMENT_DESIGN_RULES.md",
+    "new_experiments_currently_planned": 0,
+    "required_preconditions": [
+      "specific_scientific_question",
+      "missing_key_evidence",
+      "material_impact_if_omitted",
+      "simpler_equally_effective_alternative"
+    ],
+    "preserve_necessary_verification": true,
+    "preserve_negative_results": true
+  },
+  "final_submit_ready": false
 }

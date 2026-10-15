@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-15",
+  "scientific_baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "inspected_remote_head": "7b36e70d8fb4d81d47bdd00a579453645c6828d6",
+  "inspection_scope": "Read-only current workspace file checks, recursive workspace name search and complete remote head tree (1327 entries); not a new scientific run.",
+  "local_commands_available": true,
+  "earlier_disk_block_currently_cleared": true,
+  "missing_executed_source_paths": [
+    "src/positive_rollout_development.py",
+    "src/verify_positive_rollout.py",
+    "src/mpfr_intervals.py",
+    "src/validated_positive_rollout.py",
+    "src/verify_validated_positive.py",
+    "src/benchmark_validated_positive_rollout.py",
+    "src/enclose_positive_posterior.py",
+    "src/benchmark_enclosed_positive_rollout.py",
+    "src/verify_positive_posterior_enclosures.py",
+    "src/check_positive_rollout_certificates.py",
+    "src/check_positive_rollout_certificates_fraction_reference.py",
+    "src/benchmark_checked_positive_rollout.py",
+    "src/verify_checked_positive_rollout.py"
+  ],
+  "missing_result_directories": [
+    "results/positive_rollout_development_20261015",
+    "results/positive_rollout_enclosed_20261015"
+  ],
+  "missing_key_outputs": [
+    "results/positive_rollout_enclosed_20261015/validated_certificates.json",
+    "results/positive_rollout_enclosed_20261015/posterior_enclosures.json",
+    "results/positive_rollout_development_20261015/models.json",
+    "results/positive_rollout_development_20261015/decisions_frozen.json",
+    "results/positive_rollout_enclosed_20261015/checked_pipeline_timing_progress.json"
+  ],
+  "expected_certificate_sha256_from_historical_checkpoint": "197149aae9ce71c54e0695898dee6ff784cb37b99f143e2d9c6af26302b9e52f",
+  "expected_certificate_hash_reverified": false,
+  "remote_positive_artifacts_found": [
+    "paper/engineering_optimization/contribution_closure_20261015/POSITIVE_ROLLOUT_REMOTE_CHECKPOINT.json",
+    "paper/engineering_optimization/contribution_closure_20261015/POSITIVE_ROLLOUT_CONTRIBUTION_AND_REVIEW.md"
+  ],
+  "remote_work_status_contains_aggregate_entry": true,
+  "current_manuscript": {
+    "path": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+    "exists": true,
+    "sha256": "b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e",
+    "title": "Certified Action Sets and Decision Limits in Surrogate-Assisted Engineering Optimization",
+    "positive_rollout_new_draft_available": false
+  },
+  "continuity_recovery": {
+    "attempted": true,
+    "result": "Personal context is disabled; no original source or raw file content returned."
+  },
+  "interpretation": "Historical aggregate remains available. Original execution files cannot currently be audited or reproduced from the saved positive-scope artifacts. The location or cause of disappearance is not established; permanent loss is not inferred.",
+  "claim_use": "Positive-scope aggregate is a historical reported result, not independently reverified raw evidence or a complete reproducibility release.",
+  "next_work": "Recover exact original files if accessible and verify recorded hashes, then save them and integrate only supportable claims. Do not reconstruct historical raw outputs from aggregate or run more experiments to conceal missing originals.",
+  "new_physical_evaluations": 0,
+  "new_experimental_runs": 0,
+  "new_GP_constructions": 0,
+  "new_hyperparameter_fits": 0,
+  "new_bound_queries": 0,
+  "retries": 0,
+  "replacements": 0,
+  "new_independent_optimization_samples": 0,
+  "remaining_witness_attempts": 0,
+  "new_PDF_or_ZIP": false,
+  "final_submit_ready": false
+}
