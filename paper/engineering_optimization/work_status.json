@@ -342,5 +342,20 @@
     "text_build_verified": false,
     "text_build_limitation": "Default format missing; existing workspace format loads but article.cls unavailable; no package install or further repair attempted"
   },
-  "active_manuscript_source": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex"
+  "active_manuscript_source": "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex",
+  "positive_rollout_20261015": {
+    "status": "computed_and_checked; aggregate_remote_checkpoint_only; full_artifact_export_blocked",
+    "checkpoint": "paper/engineering_optimization/contribution_closure_20261015/POSITIVE_ROLLOUT_REMOTE_CHECKPOINT.json",
+    "review": "paper/engineering_optimization/contribution_closure_20261015/POSITIVE_ROLLOUT_CONTRIBUTION_AND_REVIEW.md",
+    "accepted_states_each_method": 43,
+    "checked_runs": 258,
+    "new_root_systems": 86,
+    "new_physical_evaluations": 0,
+    "new_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "new_independent_optimization_samples": 0,
+    "complete_new_code_and_data_uploaded": false,
+    "remote_main_manuscript_integrated": false,
+    "final_submit_ready": false
+  }
 }

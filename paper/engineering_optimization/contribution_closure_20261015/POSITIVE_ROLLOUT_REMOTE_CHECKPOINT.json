@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-15",
+  "timezone": "Asia/Shanghai",
+  "scientific_baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "working_parent": "5fe178cc9d699670a7776e511cee5b123e146857",
+  "checkpoint_scope": "Aggregate results observed in completed tool outputs; original per-state files and executed source are still local and are NOT included in this remote checkpoint.",
+  "method": "Checked finite-menu positive-response two-step rollout using local strong dominance, bounded-reward event error, complete-projection fallback, posterior residual enclosures and directed MPFR integration.",
+  "data": {
+    "metadata_states": 60,
+    "nontrivial_states": 43,
+    "branches": 114,
+    "aliases": 17,
+    "all_previously_seen": true,
+    "independent_validation": false
+  },
+  "model_contract": {
+    "target": "E[m0-min(m0,Y_first,Y_next)]",
+    "positive_response": "Y=exp(G)",
+    "theta": "original fixed hyperparameters; no reoptimization",
+    "continuation": "original raw-response mean policy",
+    "delta": "m0/1000000",
+    "kernel_matrices": "fixed binary A/B/K",
+    "log_targets": "outward enclosure of log of positive binary observations",
+    "posterior_linear_algebra_error_included": true,
+    "kernel_function_error_certified": false,
+    "physical_or_statistical_accuracy_certified": false,
+    "MPFR_version": "4.2.1",
+    "MPFR_precision_bits": 192
+  },
+  "positive_reference": {
+    "root_systems": 43,
+    "event_shortcut_float_resolved_states": 28,
+    "branches_event_bound_below_delta": 32,
+    "positive_rollout_vs_positive_myopic_changed_states": 12,
+    "positive_rollout_vs_raw_mean_changed_states": 26,
+    "quad_crosscheck_abs_max": 1.1368683772161603e-13,
+    "elapsed_seconds": 1.7366096169999992,
+    "source_sha256": "39ba67bcc0f7e3d6d56dd259d6f3d9deac3e0202b4266649b0785bc250f76fc2"
+  },
+  "posterior_enclosure": {
+    "additional_root_systems": 43,
+    "states_passed": 43,
+    "branches": 114,
+    "max_parameter_width": 0.000005181516726793234,
+    "max_inverse_residual_upper": 5.443417711500498e-10,
+    "max_training_SPD_perturbation_upper": 2.7486602945172678e-8,
+    "max_posterior_SPD_perturbation_upper": 0.000021249333139445073,
+    "preparation_seconds_once": 15.760958476000042,
+    "source_sha256": "74a80bf3e0fbb0a5eb8b0c4a96be35e4aa9c8decc6e1a9708402f35d1ef8d7bd"
+  },
+  "final_checked_comparison": {
+    "states": 43,
+    "repeats": 3,
+    "method_runs": 258,
+    "accepted_runs": 258,
+    "accepted_states_each_method": 43,
+    "direct_casewise_median_sum_seconds": 10.529802732999087,
+    "local_casewise_median_sum_seconds": 10.229626370000915,
+    "checked_numerical_stage_speed_ratio": 1.0293438247049238,
+    "direct_full_projections": 114,
+    "local_full_projections": 25,
+    "direct_endpoint_evaluations": 1724,
+    "local_endpoint_evaluations": 1372,
+    "direct_refinements": 544,
+    "local_refinements": 646,
+    "local_proof_fallbacks_in_real_data": 0,
+    "certificate_overrides": 0,
+    "posterior_preparation_and_historical_input_costs_excluded": true,
+    "physical_deployment_speedup_claimed": false
+  },
+  "reader": {
+    "retained_certificates": 86,
+    "leaf_cells": 2822,
+    "exact_dominance_constraints": 91047,
+    "ordinary_reference_intervals_contained": 228,
+    "ordinary_reference_intervals_checked": 228,
+    "arithmetic_and_curvature_shared_with_producer": true,
+    "legacy_action_domains_reused_without_old_exclusion_suite_rerun": true,
+    "positive_measure_tie_and_invalid_dominance_rejected": true,
+    "corrupt_leaf_cover_rejected": true,
+    "adversarial_checked_fallback_returns_unresolved": true
+  },
+  "paid_replay": {
+    "scope": "Dependent, previously observed development outcomes; two total evaluations; original mean continuation; tie 1e-6*m0.",
+    "counts": {
+      "raw_mean": {
+        "better": 1,
+        "tie": 41,
+        "worse": 1
+      },
+      "raw_ei": {
+        "better": 2,
+        "tie": 40,
+        "worse": 1
+      },
+      "positive_one_step_ei": {
+        "better": 1,
+        "tie": 40,
+        "worse": 2
+      }
+    },
+    "mean_relative_compliance_changes": {
+      "raw_mean": 0.007436497567420639,
+      "raw_ei": -0.004521294441769546,
+      "positive_one_step_ei": 0.011527316016462794
+    },
+    "median_changes_all_zero": true,
+    "checked_choices_match_frozen_positive_reference": 43,
+    "physical_policy_superiority_demonstrated": false
+  },
+  "ledger": {
+    "new_root_systems_this_positive_scope": 86,
+    "new_GP_systems_during_numerical_comparisons": 0,
+    "three_numerical_contract_comparisons_method_runs": 774,
+    "new_physical_evaluations": 0,
+    "new_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "physical_retries": 0,
+    "physical_replacements": 0,
+    "new_independent_optimization_samples": 0,
+    "witness_attempts_remaining": 0,
+    "old_H1_H5_and_independent_gates_changed": false,
+    "new_PDF_or_ZIP_generated": false
+  },
+  "known_local_artifacts": {
+    "certificate": {
+      "path": "results/positive_rollout_enclosed_20261015/validated_certificates.json",
+      "bytes": 913079,
+      "sha256": "197149aae9ce71c54e0695898dee6ff784cb37b99f143e2d9c6af26302b9e52f"
+    },
+    "posterior_enclosures": {
+      "path": "results/positive_rollout_enclosed_20261015/posterior_enclosures.json",
+      "bytes": 223830
+    },
+    "positive_models": {
+      "path": "results/positive_rollout_development_20261015/models.json"
+    },
+    "positive_frozen_decisions": {
+      "path": "results/positive_rollout_development_20261015/decisions_frozen.json",
+      "sha256": "ab96509ea01f4ca3e8dbeadfee2ba35584f5d016d52b38d1d3f84229c774af2b"
+    },
+    "final_timing_records": {
+      "path": "results/positive_rollout_enclosed_20261015/checked_pipeline_timing_progress.json"
+    }
+  },
+  "storage_status": {
+    "aggregate_remote_checkpoint_only": true,
+    "all_executed_code_and_raw_tables_uploaded": false,
+    "filesystem_block": "No space left on device while creating sandbox mount marker",
+    "sandbox_escalation_automatic_review": "rejected: granular policy disallows escalation",
+    "Library_export": "failed with same filesystem helper error; no file saved",
+    "preserve_current_workspace": true,
+    "local_active_manuscript_reference_integration_incomplete": true,
+    "remote_active_manuscript_still_prior_version": true
+  },
+  "scientific_assessment": {
+    "candidate_optimization_solver_implemented_and_checked": true,
+    "main_claim": "numerical first-action optimization over finite menu under declared positive model",
+    "all_prior_art_originality_proven": false,
+    "engineering_policy_superiority_proven": false,
+    "journal_acceptability_guaranteed": false,
+    "final_submit_ready": false
+  }
+}
