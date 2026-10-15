@@ -1,0 +1,486 @@
+{
+  "scope": "initial observed responses only; no future journals",
+  "states": [
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r0_t101",
+      "n": 100,
+      "minimum_observed": 2872.9477894342735,
+      "maximum_observed": 43071743.893657,
+      "target_scale": 7136241.824035178
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_pi_shared_init_r0_t101",
+      "n": 100,
+      "minimum_observed": 1214.5248099082075,
+      "maximum_observed": 39946619.23718407,
+      "target_scale": 4139811.0302997767
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ucb_shared_init_r0_t101",
+      "n": 100,
+      "minimum_observed": 2872.9477894342735,
+      "maximum_observed": 2364369643.1959667,
+      "target_scale": 239501380.82925957
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r1_t101",
+      "n": 100,
+      "minimum_observed": 3008.832185520961,
+      "maximum_observed": 443945480.4937238,
+      "target_scale": 44895970.65461996
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_pi_shared_init_r1_t101",
+      "n": 100,
+      "minimum_observed": 2133.691338349412,
+      "maximum_observed": 68836714.89582156,
+      "target_scale": 6915491.171562258
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ucb_shared_init_r1_t101",
+      "n": 100,
+      "minimum_observed": 3041.091253278576,
+      "maximum_observed": 2451028901.671456,
+      "target_scale": 269482399.68520904
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r2_t101",
+      "n": 100,
+      "minimum_observed": 2202.6465328910544,
+      "maximum_observed": 462471540.4489137,
+      "target_scale": 50409361.807497196
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_pi_shared_init_r2_t101",
+      "n": 100,
+      "minimum_observed": 983.3266260863705,
+      "maximum_observed": 7335380.0612601405,
+      "target_scale": 1019198.0220939299
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ucb_shared_init_r2_t101",
+      "n": 100,
+      "minimum_observed": 2202.6465328910544,
+      "maximum_observed": 2489018036.1637163,
+      "target_scale": 253566134.71202907
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r3_t101",
+      "n": 100,
+      "minimum_observed": 1918.2615750687312,
+      "maximum_observed": 31738132.215905692,
+      "target_scale": 3537073.3528054496
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_pi_shared_init_r3_t101",
+      "n": 100,
+      "minimum_observed": 1805.9430628453365,
+      "maximum_observed": 31738132.215905692,
+      "target_scale": 3188713.227459944
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ucb_shared_init_r3_t101",
+      "n": 100,
+      "minimum_observed": 1982.6478477698938,
+      "maximum_observed": 8947447293.785866,
+      "target_scale": 912153965.8429337
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r4_t101",
+      "n": 100,
+      "minimum_observed": 2329.7169244066754,
+      "maximum_observed": 527075298.23718673,
+      "target_scale": 75161641.47847539
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_pi_shared_init_r4_t101",
+      "n": 100,
+      "minimum_observed": 1251.7446531292505,
+      "maximum_observed": 284098534.80756116,
+      "target_scale": 28435089.858100325
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ucb_shared_init_r4_t101",
+      "n": 100,
+      "minimum_observed": 2329.7169244066754,
+      "maximum_observed": 284098534.80756116,
+      "target_scale": 32528524.486547716
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r5_t101",
+      "n": 100,
+      "minimum_observed": 1618.4871381674466,
+      "maximum_observed": 14374488.368240694,
+      "target_scale": 2387260.73271644
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_pi_shared_init_r5_t101",
+      "n": 100,
+      "minimum_observed": 857.334224957855,
+      "maximum_observed": 14374488.368240694,
+      "target_scale": 1883706.3238090586
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ucb_shared_init_r5_t101",
+      "n": 100,
+      "minimum_observed": 1618.4871381674466,
+      "maximum_observed": 3027182476.913904,
+      "target_scale": 449966578.6712674
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r6_t101",
+      "n": 100,
+      "minimum_observed": 2405.8973408422116,
+      "maximum_observed": 132037387.06361535,
+      "target_scale": 15123392.364420416
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_pi_shared_init_r6_t101",
+      "n": 100,
+      "minimum_observed": 1222.9021872978042,
+      "maximum_observed": 132037387.06361535,
+      "target_scale": 13199798.047594422
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ucb_shared_init_r6_t101",
+      "n": 100,
+      "minimum_observed": 2690.3775295556147,
+      "maximum_observed": 1057327769.1577747,
+      "target_scale": 109275281.04665697
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r7_t101",
+      "n": 100,
+      "minimum_observed": 3064.7286535533594,
+      "maximum_observed": 108164126.5314332,
+      "target_scale": 12659356.720353229
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_pi_shared_init_r7_t101",
+      "n": 100,
+      "minimum_observed": 1739.3529565860995,
+      "maximum_observed": 58611343.346143015,
+      "target_scale": 6829876.13734855
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ucb_shared_init_r7_t101",
+      "n": 100,
+      "minimum_observed": 3064.7286535533594,
+      "maximum_observed": 689659666.8379406,
+      "target_scale": 96644519.84527226
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r8_t101",
+      "n": 100,
+      "minimum_observed": 2877.576342916249,
+      "maximum_observed": 116873835.12886108,
+      "target_scale": 21119381.181204043
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_pi_shared_init_r8_t101",
+      "n": 100,
+      "minimum_observed": 1246.0835170367968,
+      "maximum_observed": 89609900.36478087,
+      "target_scale": 9057940.760127582
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ucb_shared_init_r8_t101",
+      "n": 100,
+      "minimum_observed": 2877.576342916249,
+      "maximum_observed": 89609900.36478087,
+      "target_scale": 13988644.853865
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r9_t101",
+      "n": 100,
+      "minimum_observed": 2287.18968580406,
+      "maximum_observed": 156182748.99968535,
+      "target_scale": 26847429.878577884
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_pi_shared_init_r9_t101",
+      "n": 100,
+      "minimum_observed": 2217.2842870958016,
+      "maximum_observed": 156182748.99968535,
+      "target_scale": 15540457.587058816
+    },
+    {
+      "dataset": "archived_common_mean",
+      "state": "gp_ucb_shared_init_r9_t101",
+      "n": 100,
+      "minimum_observed": 2287.18968580406,
+      "maximum_observed": 2534664433.9429455,
+      "target_scale": 253741956.18412992
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r10_ei",
+      "n": 100,
+      "minimum_observed": 1694.4483282049118,
+      "maximum_observed": 23278918.905607242,
+      "target_scale": 2697568.359670621
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r10_lcb",
+      "n": 100,
+      "minimum_observed": 1694.4483282049118,
+      "maximum_observed": 23278918.905607242,
+      "target_scale": 2697568.359670621
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r10_pi",
+      "n": 100,
+      "minimum_observed": 1694.4483282049118,
+      "maximum_observed": 23278918.905607242,
+      "target_scale": 2697568.359670621
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r11_ei",
+      "n": 100,
+      "minimum_observed": 1936.9825042567288,
+      "maximum_observed": 32401083.437784065,
+      "target_scale": 4008712.1301574633
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r11_lcb",
+      "n": 100,
+      "minimum_observed": 1969.5377212916592,
+      "maximum_observed": 32401083.437784065,
+      "target_scale": 3996547.315525627
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r11_pi",
+      "n": 100,
+      "minimum_observed": 1672.8339255774827,
+      "maximum_observed": 32401083.437784065,
+      "target_scale": 4026765.1682964
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r12_ei",
+      "n": 100,
+      "minimum_observed": 2007.8048311301102,
+      "maximum_observed": 3479323.8260608744,
+      "target_scale": 677686.2129407427
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r12_lcb",
+      "n": 100,
+      "minimum_observed": 2007.8048311301102,
+      "maximum_observed": 12958442.085092787,
+      "target_scale": 1811201.9339389282
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r12_pi",
+      "n": 100,
+      "minimum_observed": 1629.3290616578674,
+      "maximum_observed": 3479323.8260608744,
+      "target_scale": 680078.4253719742
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r13_ei",
+      "n": 100,
+      "minimum_observed": 1799.1266789263673,
+      "maximum_observed": 21278535.610721424,
+      "target_scale": 2740439.285457145
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r13_lcb",
+      "n": 100,
+      "minimum_observed": 1799.1266789263673,
+      "maximum_observed": 21278535.610721424,
+      "target_scale": 2740439.285457145
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r13_pi",
+      "n": 100,
+      "minimum_observed": 1799.1266789263673,
+      "maximum_observed": 21278535.610721424,
+      "target_scale": 2740424.211772522
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r14_ei",
+      "n": 100,
+      "minimum_observed": 1211.6075444861285,
+      "maximum_observed": 16204945.132949797,
+      "target_scale": 1973610.6823765615
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r14_lcb",
+      "n": 100,
+      "minimum_observed": 1415.6098866801967,
+      "maximum_observed": 16204945.132949797,
+      "target_scale": 2278214.1993720625
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r14_pi",
+      "n": 100,
+      "minimum_observed": 1415.6098866801967,
+      "maximum_observed": 16204945.132949797,
+      "target_scale": 1975673.8395334906
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r15_ei",
+      "n": 100,
+      "minimum_observed": 1455.8830790264205,
+      "maximum_observed": 50636890.65229976,
+      "target_scale": 5071881.380435242
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r15_lcb",
+      "n": 100,
+      "minimum_observed": 1496.0239108418164,
+      "maximum_observed": 50636890.65229976,
+      "target_scale": 5071448.676519238
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r15_pi",
+      "n": 100,
+      "minimum_observed": 1654.9794340930953,
+      "maximum_observed": 50636890.65229976,
+      "target_scale": 5071826.364382146
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r16_ei",
+      "n": 100,
+      "minimum_observed": 960.5814011529924,
+      "maximum_observed": 18579709.493007775,
+      "target_scale": 2039501.0981197678
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r16_lcb",
+      "n": 100,
+      "minimum_observed": 960.5814011529924,
+      "maximum_observed": 18579709.493007775,
+      "target_scale": 2039501.0981197678
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r16_pi",
+      "n": 100,
+      "minimum_observed": 960.5814011529924,
+      "maximum_observed": 18579709.493007775,
+      "target_scale": 2039501.0981197678
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r17_ei",
+      "n": 100,
+      "minimum_observed": 749.3625680471899,
+      "maximum_observed": 3698962.285869877,
+      "target_scale": 468274.35604807315
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r17_lcb",
+      "n": 100,
+      "minimum_observed": 749.3625680471899,
+      "maximum_observed": 3698962.285869877,
+      "target_scale": 667781.1152229342
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r17_pi",
+      "n": 100,
+      "minimum_observed": 749.3625680471899,
+      "maximum_observed": 3698962.285869877,
+      "target_scale": 517693.60984417424
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r18_ei",
+      "n": 100,
+      "minimum_observed": 1443.3465961246038,
+      "maximum_observed": 13767492.41867286,
+      "target_scale": 1915372.6597198478
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r18_lcb",
+      "n": 100,
+      "minimum_observed": 1763.4700592564468,
+      "maximum_observed": 13767492.41867286,
+      "target_scale": 1912709.255384694
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r18_pi",
+      "n": 100,
+      "minimum_observed": 2503.6137195982046,
+      "maximum_observed": 13767492.41867286,
+      "target_scale": 1911753.20960733
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r19_ei",
+      "n": 100,
+      "minimum_observed": 1517.9360553566148,
+      "maximum_observed": 17098204.05188382,
+      "target_scale": 2057044.8138183237
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r19_lcb",
+      "n": 100,
+      "minimum_observed": 1517.9360553566148,
+      "maximum_observed": 17098204.05188382,
+      "target_scale": 2057044.8138183237
+    },
+    {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r19_pi",
+      "n": 100,
+      "minimum_observed": 1517.9360553566148,
+      "maximum_observed": 17098204.05188382,
+      "target_scale": 2057044.8138183237
+    }
+  ],
+  "negative_probability_float_crosscheck_abs_max": 1.1102230246251565e-16
+}

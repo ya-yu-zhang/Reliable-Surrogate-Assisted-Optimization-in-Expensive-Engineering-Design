@@ -1,0 +1,346 @@
+[
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r0_t101",
+    "branches": 2,
+    "provisional_gap": 1526786.107771607,
+    "delta": 0.0028729477894342734,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r1_t101",
+    "branches": 3,
+    "provisional_gap": 7602321.412463404,
+    "delta": 0.003008832185520961,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r4_t101",
+    "branches": 2,
+    "provisional_gap": 16040231.42292945,
+    "delta": 0.0023297169244066752,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r5_t101",
+    "branches": 2,
+    "provisional_gap": 702552.0284400247,
+    "delta": 0.0016184871381674465,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r6_t101",
+    "branches": 4,
+    "provisional_gap": 2502419.778426558,
+    "delta": 0.0024058973408422114,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ei_shared_init_r7_t101",
+    "branches": 4,
+    "provisional_gap": 2751854.5637976862,
+    "delta": 0.0030647286535533595,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r0_t101",
+    "branches": 2,
+    "provisional_gap": 2857419.360125931,
+    "delta": 0.0012145248099082076,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r1_t101",
+    "branches": 2,
+    "provisional_gap": 3590095.8338593272,
+    "delta": 0.002133691338349412,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r2_t101",
+    "branches": 3,
+    "provisional_gap": 578240.7200101048,
+    "delta": 0.0009833266260863705,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r3_t101",
+    "branches": 2,
+    "provisional_gap": 1824573.8167005023,
+    "delta": 0.0018059430628453363,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r4_t101",
+    "branches": 3,
+    "provisional_gap": 17421605.921344884,
+    "delta": 0.0012517446531292505,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r5_t101",
+    "branches": 2,
+    "provisional_gap": 1133018.2851211072,
+    "delta": 0.0008573342249578549,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r6_t101",
+    "branches": 2,
+    "provisional_gap": 10608538.898074731,
+    "delta": 0.001222902187297804,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r7_t101",
+    "branches": 2,
+    "provisional_gap": 3612344.8786688065,
+    "delta": 0.0017393529565860994,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r8_t101",
+    "branches": 3,
+    "provisional_gap": 4921428.574540656,
+    "delta": 0.0012460835170367967,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_pi_shared_init_r9_t101",
+    "branches": 2,
+    "provisional_gap": 8139938.582265607,
+    "delta": 0.0022172842870958015,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r0_t101",
+    "branches": 3,
+    "provisional_gap": 52427904.592439026,
+    "delta": 0.0028729477894342734,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r1_t101",
+    "branches": 4,
+    "provisional_gap": 28702148.503873914,
+    "delta": 0.0030410912532785757,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r2_t101",
+    "branches": 3,
+    "provisional_gap": 31314062.521075338,
+    "delta": 0.002202646532891054,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r3_t101",
+    "branches": 3,
+    "provisional_gap": 56282531.76321304,
+    "delta": 0.001982647847769894,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r4_t101",
+    "branches": 3,
+    "provisional_gap": 6382509.328641251,
+    "delta": 0.0023297169244066752,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r5_t101",
+    "branches": 3,
+    "provisional_gap": 19464183.24933839,
+    "delta": 0.0016184871381674465,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r6_t101",
+    "branches": 3,
+    "provisional_gap": 8626717.244546264,
+    "delta": 0.0026903775295556145,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r7_t101",
+    "branches": 4,
+    "provisional_gap": 7847228.633406736,
+    "delta": 0.0030647286535533595,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r8_t101",
+    "branches": 2,
+    "provisional_gap": 1559164.2117436156,
+    "delta": 0.002877576342916249,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "archived_common_mean",
+    "state": "gp_ucb_shared_init_r9_t101",
+    "branches": 4,
+    "provisional_gap": 20275093.27937603,
+    "delta": 0.00228718968580406,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_ei",
+    "branches": 2,
+    "provisional_gap": 682216.2764288813,
+    "delta": 0.0019369825042567287,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_lcb",
+    "branches": 2,
+    "provisional_gap": 355385.36632166314,
+    "delta": 0.001969537721291659,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r11_pi",
+    "branches": 2,
+    "provisional_gap": 1396171.002787851,
+    "delta": 0.0016728339255774826,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r12_ei",
+    "branches": 2,
+    "provisional_gap": 69565.99673586752,
+    "delta": 0.0020078048311301102,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r12_pi",
+    "branches": 2,
+    "provisional_gap": 208760.93066307402,
+    "delta": 0.0016293290616578673,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_ei",
+    "branches": 3,
+    "provisional_gap": 431334.4334936973,
+    "delta": 0.0012116075444861285,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_lcb",
+    "branches": 3,
+    "provisional_gap": 393007.50645620003,
+    "delta": 0.0014156098866801967,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r14_pi",
+    "branches": 3,
+    "provisional_gap": 667865.4217506469,
+    "delta": 0.0014156098866801967,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_ei",
+    "branches": 3,
+    "provisional_gap": 98892.97388168005,
+    "delta": 0.0014558830790264204,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_lcb",
+    "branches": 2,
+    "provisional_gap": 271381.4700539177,
+    "delta": 0.0014960239108418162,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r15_pi",
+    "branches": 2,
+    "provisional_gap": 276345.6623901678,
+    "delta": 0.0016549794340930952,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_ei",
+    "branches": 2,
+    "provisional_gap": 8660.699067173584,
+    "delta": 0.0007493625680471899,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_lcb",
+    "branches": 3,
+    "provisional_gap": 50132.1699198914,
+    "delta": 0.0007493625680471899,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r17_pi",
+    "branches": 3,
+    "provisional_gap": 129999.09942891327,
+    "delta": 0.0007493625680471899,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_ei",
+    "branches": 3,
+    "provisional_gap": 335024.0562105228,
+    "delta": 0.0014433465961246038,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_lcb",
+    "branches": 2,
+    "provisional_gap": 248157.96558702237,
+    "delta": 0.0017634700592564468,
+    "provisional_shortcut_resolves": false
+  },
+  {
+    "dataset": "previous_holdout",
+    "state": "beam_holdout_r18_pi",
+    "branches": 3,
+    "provisional_gap": 1128827.4282876072,
+    "delta": 0.0025036137195982044,
+    "provisional_shortcut_resolves": false
+  }
+]

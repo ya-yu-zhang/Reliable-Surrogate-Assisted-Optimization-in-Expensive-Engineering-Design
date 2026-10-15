@@ -138,3 +138,7 @@ R_ai 的重叠可能重复计费，但不破坏上界。被积函数是绝对仿
 - Yang et al. (2024), Accelerating Look-ahead in Bayesian Optimization: Multilevel Monte Carlo is All you Need：https://proceedings.mlr.press/v235/yang24aj.html 。已有降低 lookahead 数值计算代价的研究，本方案必须具体比较目标、误差保证与代价。
 
 上述核读支持研究方向的定位，不构成穷尽文献后的首次性结论。
+
+## 本轮执行结论（2026-10-15）
+
+阶段 A 已完成，决定不进入阶段 B。114 个分支的普通浮点事件界没有一个达到预定精度，G±eta 的限定检查没有解析任何一个非平凡状态（0/43）；根高斯分布还给负柔度显著概率。这些是可行性诊断，不是数值认证或普遍不可能性结论。详见 `ROLLOUT_METHOD_GATE_DECISION.md`、`ROLLOUT_EVENT_THEORY_AND_CLOSEST_WORK.md` 及 `results/rollout_event_preflight_20261015/`。没有执行完整实现、真实后果评估或改写主稿。

@@ -76,5 +76,29 @@
   "current_bounded_plan_completed": true,
   "current_bounded_plan_new_GP_reconstructions": 0,
   "existing_strong_comparison_or_full_proof_replay_rerun_this_plan": false,
-  "current_bounded_plan_new_physical_evaluations": 0
+  "current_bounded_plan_new_physical_evaluations": 0,
+  "rollout_method_candidate_feasibility_20261015": {
+    "status": "completed_feasibility_gate_no_go",
+    "candidate_implemented": false,
+    "gate_reason": "Event shortcut is numerically uninformative at all 43 development states; root Gaussian support conflicts with nonnegative compliance; no rigorous numerical certificate produced.",
+    "source_sha256": "5beac3c3290337631d2eac1e10ccabf8e8097f91f5455119c6da67fb4ee5a895",
+    "preflight_design_sha256": "339d5535a23b1168d72c4e03a2cf85c81ed99bda1aea796d64edbae7e47c5f4a",
+    "future_responses_read": false,
+    "numerical_smoke_checks_passed": true,
+    "new_fixed_root_systems": 43,
+    "new_physical_evaluations": 0,
+    "new_physical_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "new_independent_optimization_samples": 0,
+    "remaining_witness_attempts": 0,
+    "new_PDF_generated": false,
+    "new_ZIP_generated": false,
+    "initial_serialization_error_fixed_before_publication": true,
+    "main_manuscript_changed": false,
+    "final_submit_ready": false,
+    "distinct_fixed_root_systems": 43,
+    "development_preflight_runs": 4,
+    "root_kernel_constructions_across_development_runs": 172,
+    "retained_run_new_fixed_root_systems": 43
+  }
 }

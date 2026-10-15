@@ -1,0 +1,14 @@
+{
+  "status": "preflight-only; no rigorous numerical certificate",
+  "full_gaussian_root_posterior": true,
+  "all_114_branches": true,
+  "read_future_responses": false,
+  "target_delta_over_initial": 1e-06,
+  "fixed_pair_check": "analytic conditional EI, ordinary floating quad on standardized [-12,12], split at incumbent threshold",
+  "quad_epsabs": 1e-08,
+  "quad_epsrel": 1e-10,
+  "quad_limit": 200,
+  "new_physics": 0,
+  "new_hyperparameter_fits": 0,
+  "new_independent_samples": 0
+}
