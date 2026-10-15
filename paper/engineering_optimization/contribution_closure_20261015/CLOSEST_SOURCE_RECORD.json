@@ -1,0 +1,23 @@
+{
+  "read_date": "2026-10-15",
+  "repository": "INFORMSJoC/1080.0314",
+  "software_DOI": "10.1287/ijoc.1080.0314.cd",
+  "paper_DOI": "10.1287/ijoc.1080.0314",
+  "files": [
+    {
+      "path": "ckg/AffineBreakpoints.m",
+      "git_blob_sha": "247c7ccb477e3f9a37c91e8a1d0d9a293de0104c"
+    },
+    {
+      "path": "ckg/AffineBreakpointsPrep.m",
+      "git_blob_sha": "591156d70110d5d41f669f6b19ab45beb00f2d54"
+    },
+    {
+      "path": "ckg/LogEmaxAffine.m",
+      "git_blob_sha": "527e1dcb52090fac8ce07f306eb343baa69669ba"
+    }
+  ],
+  "mathematical_mapping": "a_KG=-up_b; b_KG=-up_a; identical intersection and stack ordering for upper-line lower envelope",
+  "third_party_source_redistributed": false,
+  "no_priority_or_exhaustive_novelty_claim": true
+}

@@ -1,0 +1,550 @@
+[
+  {
+    "file": "archived_common_mean__gp_ei_shared_init_r0_t101.json",
+    "state": "gp_ei_shared_init_r0_t101",
+    "branch": "0",
+    "range": "nonnegative",
+    "initial": 2872.9477894342735,
+    "pending_bound": 407.25748808571126,
+    "domain": 0.0,
+    "eligible": 1024,
+    "nominal_indices": [
+      156,
+      223,
+      991
+    ],
+    "band_indices": [
+      156,
+      223,
+      991
+    ],
+    "raw_pool_indices": [
+      156,
+      223,
+      991
+    ],
+    "nominal_exact_intervals": {
+      "156": [
+        [
+          "2554251753369585909235712",
+          "236408719731285955"
+        ],
+        [
+          "57223052390241675509760",
+          "877473320571833"
+        ]
+      ],
+      "223": [
+        [
+          "57223052390241675509760",
+          "877473320571833"
+        ],
+        null
+      ],
+      "991": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "2554251753369585909235712",
+          "236408719731285955"
+        ]
+      ]
+    },
+    "band_exact_intervals": {
+      "156": [
+        [
+          "1702834500841816790663168",
+          "157605813162119223"
+        ],
+        [
+          "57223052420410934296576",
+          "877473320401537"
+        ]
+      ],
+      "223": [
+        [
+          "57223052360072416722944",
+          "877473320742129"
+        ],
+        null
+      ],
+      "991": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "5108503510952893264953344",
+          "472817439438786151"
+        ]
+      ]
+    },
+    "summary": {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r0_t101",
+      "branch": "0",
+      "range": "nonnegative",
+      "eligible": 1024,
+      "nominal_kept": 3,
+      "band_kept": 3,
+      "same_indices": true,
+      "extra_band_actions": 0,
+      "shared_actions": 3,
+      "shared_intervals_changed": 3,
+      "lower_endpoints_changed": 2,
+      "upper_endpoints_changed": 2
+    },
+    "dataset": "archived_common_mean",
+    "baseline_branch": false,
+    "completed_H1_baseline": "2872.9477894342735",
+    "margin": "1e-06",
+    "threshold_exact": [
+      "14917182864616374165937204662302909289",
+      "5192296858534827628530496329220096"
+    ],
+    "threshold_float": 2872.944916486484,
+    "pending_cap_exact": [
+      "7164549498385365",
+      "17592186044416"
+    ],
+    "cap_below_threshold": true,
+    "original_category": "abstain",
+    "stored_next_action_included": true
+  },
+  {
+    "file": "archived_common_mean__gp_ei_shared_init_r0_t101.json",
+    "state": "gp_ei_shared_init_r0_t101",
+    "branch": "0",
+    "range": "trial_lower",
+    "initial": 2872.9477894342735,
+    "pending_bound": 407.25748808571126,
+    "domain": 407.25748808571126,
+    "eligible": 1024,
+    "nominal_indices": [
+      156,
+      223,
+      991
+    ],
+    "band_indices": [
+      156,
+      223,
+      991
+    ],
+    "raw_pool_indices": [
+      156,
+      223,
+      991
+    ],
+    "nominal_exact_intervals": {
+      "156": [
+        [
+          "2554251753369585909235712",
+          "236408719731285955"
+        ],
+        [
+          "57223052390241675509760",
+          "877473320571833"
+        ]
+      ],
+      "223": [
+        [
+          "57223052390241675509760",
+          "877473320571833"
+        ],
+        null
+      ],
+      "991": [
+        [
+          "7164549498385365",
+          "17592186044416"
+        ],
+        [
+          "2554251753369585909235712",
+          "236408719731285955"
+        ]
+      ]
+    },
+    "band_exact_intervals": {
+      "156": [
+        [
+          "1702834500841816790663168",
+          "157605813162119223"
+        ],
+        [
+          "57223052420410934296576",
+          "877473320401537"
+        ]
+      ],
+      "223": [
+        [
+          "57223052360072416722944",
+          "877473320742129"
+        ],
+        null
+      ],
+      "991": [
+        [
+          "7164549498385365",
+          "17592186044416"
+        ],
+        [
+          "5108503510952893264953344",
+          "472817439438786151"
+        ]
+      ]
+    },
+    "summary": {
+      "dataset": "archived_common_mean",
+      "state": "gp_ei_shared_init_r0_t101",
+      "branch": "0",
+      "range": "trial_lower",
+      "eligible": 1024,
+      "nominal_kept": 3,
+      "band_kept": 3,
+      "same_indices": true,
+      "extra_band_actions": 0,
+      "shared_actions": 3,
+      "shared_intervals_changed": 3,
+      "lower_endpoints_changed": 2,
+      "upper_endpoints_changed": 2
+    },
+    "dataset": "archived_common_mean",
+    "baseline_branch": false,
+    "completed_H1_baseline": "2872.9477894342735",
+    "margin": "1e-06",
+    "threshold_exact": [
+      "14917182864616374165937204662302909289",
+      "5192296858534827628530496329220096"
+    ],
+    "threshold_float": 2872.944916486484,
+    "pending_cap_exact": [
+      "7164549498385365",
+      "17592186044416"
+    ],
+    "cap_below_threshold": true,
+    "original_category": "abstain",
+    "stored_next_action_included": true
+  },
+  {
+    "file": "previous_holdout__beam_holdout_r11_ei.json",
+    "state": "beam_holdout_r11_ei",
+    "branch": "b0",
+    "range": "nonnegative",
+    "initial": 1936.9825042567288,
+    "pending_bound": 684.8253016863547,
+    "domain": 0.0,
+    "eligible": 1024,
+    "nominal_indices": [
+      118,
+      417,
+      430,
+      662,
+      945
+    ],
+    "band_indices": [
+      118,
+      417,
+      430,
+      662,
+      945
+    ],
+    "raw_pool_indices": [
+      118,
+      417,
+      430,
+      662,
+      945
+    ],
+    "nominal_exact_intervals": {
+      "118": [
+        [
+          "60782399008367848718336",
+          "1786653867412541"
+        ],
+        [
+          "450107677496899111223296",
+          "2220559566959495"
+        ]
+      ],
+      "417": [
+        [
+          "379386415638649197559808",
+          "35455910848523835"
+        ],
+        [
+          "2316043143984137109504",
+          "126826868411099"
+        ]
+      ],
+      "430": [
+        [
+          "2316043143984137109504",
+          "126826868411099"
+        ],
+        [
+          "60782399008367848718336",
+          "1786653867412541"
+        ]
+      ],
+      "662": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "379386415638649197559808",
+          "35455910848523835"
+        ]
+      ],
+      "945": [
+        [
+          "450107677496899111223296",
+          "2220559566959495"
+        ],
+        null
+      ]
+    },
+    "band_exact_intervals": {
+      "118": [
+        [
+          "60782398990434984525824",
+          "1786653867625951"
+        ],
+        [
+          "450107677515337422602240",
+          "2220559566740377"
+        ]
+      ],
+      "417": [
+        [
+          "1138159246579721580838912",
+          "106367732549574699"
+        ],
+        [
+          "4632086297452790939648",
+          "253653736709277"
+        ]
+      ],
+      "430": [
+        [
+          "4632086278483757498368",
+          "253653736935119"
+        ],
+        [
+          "60782399026300712910848",
+          "1786653867199131"
+        ]
+      ],
+      "662": [
+        [
+          "0",
+          "1"
+        ],
+        [
+          "1138159247252173604519936",
+          "106367732541568311"
+        ]
+      ],
+      "945": [
+        [
+          "150035892492820266614784",
+          "740186522392871"
+        ],
+        null
+      ]
+    },
+    "summary": {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r11_ei",
+      "branch": "b0",
+      "range": "nonnegative",
+      "eligible": 1024,
+      "nominal_kept": 5,
+      "band_kept": 5,
+      "same_indices": true,
+      "extra_band_actions": 0,
+      "shared_actions": 5,
+      "shared_intervals_changed": 5,
+      "lower_endpoints_changed": 4,
+      "upper_endpoints_changed": 4
+    },
+    "dataset": "previous_holdout",
+    "baseline_branch": true,
+    "completed_H1_baseline": "1936.9825042567288",
+    "margin": "0.001",
+    "threshold_exact": [
+      "9811846468473874298587825574937555",
+      "5070602400912917605986812821504"
+    ],
+    "threshold_float": 1935.045521752472,
+    "pending_cap_exact": [
+      "6023787057594833",
+      "8796093022208"
+    ],
+    "cap_below_threshold": true,
+    "original_category": "abstain",
+    "stored_next_action_included": true
+  },
+  {
+    "file": "previous_holdout__beam_holdout_r11_ei.json",
+    "state": "beam_holdout_r11_ei",
+    "branch": "b0",
+    "range": "trial_lower",
+    "initial": 1936.9825042567288,
+    "pending_bound": 684.8253016863547,
+    "domain": 684.8253016863547,
+    "eligible": 1024,
+    "nominal_indices": [
+      118,
+      417,
+      430,
+      662,
+      945
+    ],
+    "band_indices": [
+      118,
+      417,
+      430,
+      662,
+      945
+    ],
+    "raw_pool_indices": [
+      118,
+      417,
+      430,
+      662,
+      945
+    ],
+    "nominal_exact_intervals": {
+      "118": [
+        [
+          "60782399008367848718336",
+          "1786653867412541"
+        ],
+        [
+          "450107677496899111223296",
+          "2220559566959495"
+        ]
+      ],
+      "417": [
+        [
+          "379386415638649197559808",
+          "35455910848523835"
+        ],
+        [
+          "2316043143984137109504",
+          "126826868411099"
+        ]
+      ],
+      "430": [
+        [
+          "2316043143984137109504",
+          "126826868411099"
+        ],
+        [
+          "60782399008367848718336",
+          "1786653867412541"
+        ]
+      ],
+      "662": [
+        [
+          "6023787057594833",
+          "8796093022208"
+        ],
+        [
+          "379386415638649197559808",
+          "35455910848523835"
+        ]
+      ],
+      "945": [
+        [
+          "450107677496899111223296",
+          "2220559566959495"
+        ],
+        null
+      ]
+    },
+    "band_exact_intervals": {
+      "118": [
+        [
+          "60782398990434984525824",
+          "1786653867625951"
+        ],
+        [
+          "450107677515337422602240",
+          "2220559566740377"
+        ]
+      ],
+      "417": [
+        [
+          "1138159246579721580838912",
+          "106367732549574699"
+        ],
+        [
+          "4632086297452790939648",
+          "253653736709277"
+        ]
+      ],
+      "430": [
+        [
+          "4632086278483757498368",
+          "253653736935119"
+        ],
+        [
+          "60782399026300712910848",
+          "1786653867199131"
+        ]
+      ],
+      "662": [
+        [
+          "6023787057594833",
+          "8796093022208"
+        ],
+        [
+          "1138159247252173604519936",
+          "106367732541568311"
+        ]
+      ],
+      "945": [
+        [
+          "150035892492820266614784",
+          "740186522392871"
+        ],
+        null
+      ]
+    },
+    "summary": {
+      "dataset": "previous_holdout",
+      "state": "beam_holdout_r11_ei",
+      "branch": "b0",
+      "range": "trial_lower",
+      "eligible": 1024,
+      "nominal_kept": 5,
+      "band_kept": 5,
+      "same_indices": true,
+      "extra_band_actions": 0,
+      "shared_actions": 5,
+      "shared_intervals_changed": 5,
+      "lower_endpoints_changed": 4,
+      "upper_endpoints_changed": 4
+    },
+    "dataset": "previous_holdout",
+    "baseline_branch": true,
+    "completed_H1_baseline": "1936.9825042567288",
+    "margin": "0.001",
+    "threshold_exact": [
+      "9811846468473874298587825574937555",
+      "5070602400912917605986812821504"
+    ],
+    "threshold_float": 1935.045521752472,
+    "pending_cap_exact": [
+      "6023787057594833",
+      "8796093022208"
+    ],
+    "cap_below_threshold": true,
+    "original_category": "abstain",
+    "stored_next_action_included": true
+  }
+]

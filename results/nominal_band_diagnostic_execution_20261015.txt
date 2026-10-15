@@ -1,0 +1,36 @@
+{
+  "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "cases": 228,
+  "branches": 114,
+  "counts": {
+    "extra_band_actions": 0,
+    "shared_actions": 908,
+    "shared_intervals_changed": 908,
+    "lower_endpoints_changed": 680,
+    "upper_endpoints_changed": 680,
+    "same_index_cases": 228,
+    "changed_interval_cases": 228
+  },
+  "all_nominal_sets_and_intervals_contained_in_band_outputs": true,
+  "median_normalized_finite_endpoint_widening": 5.7389010043589134e-09,
+  "max_normalized_finite_endpoint_widening": 5.882097264235958e-05,
+  "normalization": "Endpoint widening divided by max(1, abs(nominal endpoint)); not a true-GP or physical error.",
+  "interpretation": "Different contracts, not a same-output speed comparison; zero extra indices means no observed action rescue may be claimed.",
+  "examples_selected_before_outputs": true,
+  "selected_case_count": 2,
+  "selected_domain_case_count": 4,
+  "new_physical_evaluations": 0,
+  "new_bound_queries": 0,
+  "new_GP_reconstruction": 0,
+  "new_GP_hyperparameter_fits": 0,
+  "new_independent_optimization_samples": 0,
+  "new_independent_samples": 0,
+  "remaining_witness_attempts": 0,
+  "original_gates_changed": false,
+  "existing_strong_comparison_or_proof_replay_rerun": false,
+  "source_sha256": "226c3529e1c03d1ae7bc602e4495864fdf0e35ec79d0761969acec4cba0370c6"
+}
+{"state": "gp_ei_shared_init_r0_t101", "branch": "0", "range": "nonnegative", "pending_bound": 407.25748808571126, "eligible": 1024, "nominal_indices": [156, 223, 991], "band_indices": [156, 223, 991], "dataset": "archived_common_mean", "baseline_branch": false, "completed_H1_baseline": "2872.9477894342735", "threshold_float": 2872.944916486484, "cap_below_threshold": true, "original_category": "abstain"}
+{"state": "gp_ei_shared_init_r0_t101", "branch": "0", "range": "trial_lower", "pending_bound": 407.25748808571126, "eligible": 1024, "nominal_indices": [156, 223, 991], "band_indices": [156, 223, 991], "dataset": "archived_common_mean", "baseline_branch": false, "completed_H1_baseline": "2872.9477894342735", "threshold_float": 2872.944916486484, "cap_below_threshold": true, "original_category": "abstain"}
+{"state": "beam_holdout_r11_ei", "branch": "b0", "range": "nonnegative", "pending_bound": 684.8253016863547, "eligible": 1024, "nominal_indices": [118, 417, 430, 662, 945], "band_indices": [118, 417, 430, 662, 945], "dataset": "previous_holdout", "baseline_branch": true, "completed_H1_baseline": "1936.9825042567288", "threshold_float": 1935.045521752472, "cap_below_threshold": true, "original_category": "abstain"}
+{"state": "beam_holdout_r11_ei", "branch": "b0", "range": "trial_lower", "pending_bound": 684.8253016863547, "eligible": 1024, "nominal_indices": [118, 417, 430, 662, 945], "band_indices": [118, 417, 430, 662, 945], "dataset": "previous_holdout", "baseline_branch": true, "completed_H1_baseline": "1936.9825042567288", "threshold_float": 1935.045521752472, "cap_below_threshold": true, "original_category": "abstain"}

@@ -1,0 +1,16 @@
+{
+  "rule": "First context in each dataset by archived filename order, then first branch by lexical order; frozen before nominal outputs are computed.",
+  "cases": {
+    "archived_common_mean": {
+      "file": "archived_common_mean__gp_ei_shared_init_r0_t101.json",
+      "branch": "0",
+      "state": "gp_ei_shared_init_r0_t101"
+    },
+    "previous_holdout": {
+      "file": "previous_holdout__beam_holdout_r11_ei.json",
+      "branch": "b0",
+      "state": "beam_holdout_r11_ei"
+    }
+  },
+  "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019"
+}
