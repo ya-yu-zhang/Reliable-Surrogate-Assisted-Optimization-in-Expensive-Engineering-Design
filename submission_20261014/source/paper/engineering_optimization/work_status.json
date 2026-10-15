@@ -390,7 +390,9 @@
     "source_and_BibTeX_checks_passed": true,
     "verification_record": "submission_20261014/SOURCE_VERIFICATION.json",
     "empirical_reproducibility_complete_for_v2_numerical_scope": true,
-    "v2_new_implementation_and_records_available": true
+    "v2_new_implementation_and_records_available": true,
+    "regional_theory_and_certificate_transform_complete": true,
+    "empirical_reproducibility_scope": "Complete v2 finite-model numerical record plus post hoc regional certificate transform; old missing originals remain missing"
   },
   "positive_rollout_v2_20261015": {
     "status": "completed_single_frozen_pair_and_paid_replay; full_results_saved_in_this_commit",
@@ -443,5 +445,46 @@
     "result_commit": "79f2cfa07082c5cb6b94075d5220175b8fc4e2ab",
     "release_manifest": "results/positive_rollout_v2_20261015/RELEASE_MANIFEST.json",
     "source_and_BibTeX_checks_passed": true
+  },
+  "regional_value_closure_20261015": {
+    "status": "research_scope_closed_after_regional_theory_and_certificate_transformation",
+    "scientific_baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+    "parent_commit": "762db8114da07e8fe84c02019f84ef153e6a4478",
+    "report": "paper/engineering_optimization/contribution_closure_20261015/REGIONAL_VALUE_CONTRIBUTION_AND_CLOSURE.md",
+    "result_directory": "results/regional_value_closure_20261015",
+    "unit_test_groups": 4,
+    "accepted_unchanged_selections": 43,
+    "source_branches": 114,
+    "converted_fixed_branches": 89,
+    "narrowed_branches": 89,
+    "median_width_reduction_fraction": 0.37101300928238995,
+    "regional_gain_beyond_baseline_branches": 86,
+    "median_additional_reduction_of_baseline_width": 0.2682243291817344,
+    "conditional_discontinuity_example_proved": true,
+    "new_GP_reconstructions": 0,
+    "new_conditional_reward_evaluations": 0,
+    "new_full_projections": 0,
+    "new_physical_evaluations": 0,
+    "new_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "physical_retries": 0,
+    "physical_replacements": 0,
+    "new_independent_samples": 0,
+    "independent_validation": false,
+    "original_v2_results_and_choices_unchanged": true,
+    "new_end_to_end_speed_or_projection_advantage": false,
+    "regional_error_bound_is_not_physical_error_bound": true,
+    "research_work_closed_under_current_scope": true,
+    "new_experiments_planned": 0,
+    "target_journal": "Engineering Optimization",
+    "journal_acceptance_or_originality_sufficiency_certified": false,
+    "finalization_pending": [
+      "author_b_c_affiliations_and_required_factual_fields",
+      "reviewer_access_to_private_materials",
+      "current_final_layout_check_deferred_by_user"
+    ],
+    "new_PDF_created_or_uploaded": false,
+    "new_ZIP_created_or_uploaded": false,
+    "final_submit_ready": false
   }
 }

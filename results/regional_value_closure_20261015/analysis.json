@@ -1,0 +1,4307 @@
+{
+  "scientific_baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "parent_commit": "762db8114da07e8fe84c02019f84ef153e6a4478",
+  "analysis_status": "complete",
+  "post_hoc": true,
+  "independent_validation": false,
+  "source_states": 43,
+  "source_branches": 114,
+  "transformed_fixed_branches": 89,
+  "unchanged_complete_projection_branches": 25,
+  "accepted_unchanged_selections": 43,
+  "ordinary_reference_checks": 114,
+  "ordinary_reference_containment_failures": 0,
+  "strict_width_reduction_branches": 89,
+  "width_reduction_fraction": {
+    "min": 1.2473249034703372e-05,
+    "median": 0.37101300928238995,
+    "max": 0.6582425778763449
+  },
+  "weighted_radius_reduction_fraction": {
+    "min": 0.0,
+    "median": 1.0388106829400008e-12,
+    "max": 0.9987502497866506
+  },
+  "elapsed_postprocessing_seconds": 1.6613795749999554,
+  "counters": {
+    "new_GP_reconstructions": 0,
+    "new_conditional_reward_evaluations": 0,
+    "new_full_projections": 0,
+    "new_physical_evaluations": 0,
+    "new_bound_queries": 0,
+    "new_hyperparameter_fits": 0,
+    "physical_retries": 0,
+    "physical_replacements": 0,
+    "new_independent_samples": 0
+  },
+  "prior_v2_projection_counts_and_timing_unchanged": true,
+  "fewer_projections_or_time_saving_demonstrated_by_postprocessing": false,
+  "original_v2_decisions_changed": false,
+  "engineering_policy_superiority_demonstrated": false,
+  "journal_acceptance_or_originality_sufficiency_certified": false,
+  "states": [
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r0_t101",
+      "selected": "0",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0028729477894342734,
+      "accepted": true,
+      "intervals": {
+        "3696": [
+          163.76600435444396,
+          253.87785370335564
+        ],
+        "0": [
+          293.3596812431032,
+          318.75977551021094
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "3696": {
+          "interval": [
+            163.76600435444396,
+            253.87785370335564
+          ],
+          "regional_interval": [
+            163.76600435444396,
+            253.87785400401242
+          ],
+          "baseline": [
+            105.90225985294546,
+            105.90226015242388
+          ],
+          "retained_additional_improvement": [
+            57.8637445014985,
+            147.97459013103364
+          ],
+          "unknown_capped_first_moment": [
+            0.0010037205548938167,
+            0.001003720554893827
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.9617137606418975
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            66.77562487378036,
+            253.87785370335564
+          ],
+          "old_event_radius": 0.0010037205550274444,
+          "weighted_event_radius": 0.0010037205548931896,
+          "width_reduction_fraction": 0.5183817428974011
+        },
+        "0": {
+          "interval": [
+            293.3596812431032,
+            318.75977551021094
+          ],
+          "regional_interval": [
+            293.3596812431032,
+            318.75977551021094
+          ],
+          "baseline": [
+            240.17116704759337,
+            240.17116719844444
+          ],
+          "retained_additional_improvement": [
+            53.18851419550984,
+            77.74139003207893
+          ],
+          "unknown_capped_first_moment": [
+            0.8472182796875555,
+            0.8472182796875597
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.4362666231616497
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            254.22644986456842,
+            318.7618152530601
+          ],
+          "old_event_radius": 0.8472182796876475,
+          "weighted_event_radius": 0.8472182796875596,
+          "width_reduction_fraction": 0.6064158912837385
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r1_t101",
+      "selected": "1937",
+      "regret_upper": 0.0,
+      "delta_lower": 0.003008832185520961,
+      "accepted": true,
+      "intervals": {
+        "2188": [
+          552.4886293173597,
+          688.4566789946276
+        ],
+        "4096": [
+          305.26716024431096,
+          490.2924347312753
+        ],
+        "1937": [
+          911.6935269662938,
+          1295.826001648161
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2188": {
+          "interval": [
+            552.4886293173597,
+            688.4566789946276
+          ],
+          "regional_interval": [
+            552.4886293173597,
+            688.4566887178391
+          ],
+          "baseline": [
+            500.0396281443982,
+            500.03963714123756
+          ],
+          "retained_additional_improvement": [
+            52.449001172961516,
+            188.4170513338117
+          ],
+          "unknown_capped_first_moment": [
+            2.427897903598118e-07,
+            2.4278979035981594e-07
+          ],
+          "stable_inner_window": [
+            -8.0,
+            6.394205056971076
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            336.59240781756864,
+            688.4566789946276
+          ],
+          "old_event_radius": 2.4279004887162685e-07,
+          "weighted_event_radius": 2.427897902380672e-07,
+          "width_reduction_fraction": 0.6135781299350839
+        },
+        "4096": {
+          "interval": [
+            305.26716024431096,
+            490.2924347312753
+          ],
+          "regional_interval": [
+            305.26716024431096,
+            490.2924347312753
+          ],
+          "baseline": [
+            237.45150577845197,
+            237.45150715734007
+          ],
+          "retained_additional_improvement": [
+            67.81565446585898,
+            251.92456780972802
+          ],
+          "unknown_capped_first_moment": [
+            0.9163597642071736,
+            0.9163597642071782
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.4275236509014806
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            67.81717189343355,
+            490.2957610132162
+          ],
+          "old_event_radius": 0.9163597642074425,
+          "weighted_event_radius": 0.9163597642071781,
+          "width_reduction_fraction": 0.562048162316445
+        },
+        "1937": {
+          "interval": [
+            911.6935269662938,
+            1295.826001648161
+          ],
+          "regional_interval": [
+            911.6935269662938,
+            1295.826009835562
+          ],
+          "baseline": [
+            179.26177211697996,
+            179.26178030431538
+          ],
+          "retained_additional_improvement": [
+            732.4317548493138,
+            1116.5642295311193
+          ],
+          "unknown_capped_first_moment": [
+            1.2729619809367449e-10,
+            1.2729619809371365e-10
+          ],
+          "stable_inner_window": [
+            -8.0,
+            7.462937916969408
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            732.5109021438477,
+            1295.826001648161
+          ],
+          "old_event_radius": 1.2760613619866658e-10,
+          "weighted_event_radius": 1.272949975693554e-10,
+          "width_reduction_fraction": 0.318085961090191
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r4_t101",
+      "selected": "4096",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0023297169244066752,
+      "accepted": true,
+      "intervals": {
+        "4096": [
+          873.9727679529069,
+          1148.343073076189
+        ],
+        "2081": [
+          81.16437078261895,
+          199.70465192248056
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "4096": {
+          "interval": [
+            873.9727679529069,
+            1148.343073076189
+          ],
+          "regional_interval": [
+            873.9727679529069,
+            1148.343073076189
+          ],
+          "baseline": [
+            453.4306844351727,
+            453.4306949258503
+          ],
+          "retained_additional_improvement": [
+            420.5420835177342,
+            694.4762598727834
+          ],
+          "unknown_capped_first_moment": [
+            0.4361182775553136,
+            0.4361182775553159
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.557503623244838
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            420.56128489690644,
+            1148.3626984604336
+          ],
+          "old_event_radius": 0.43611827755556354,
+          "weighted_event_radius": 0.43611827755531585,
+          "width_reduction_fraction": 0.6230148773964516
+        },
+        "2081": {
+          "interval": [
+            81.16437078261895,
+            199.70465192248056
+          ],
+          "regional_interval": [
+            81.16437078261895,
+            199.7046646618104
+          ],
+          "baseline": [
+            60.47322671291113,
+            60.473239452026064
+          ],
+          "retained_additional_improvement": [
+            20.69114406970782,
+            139.2260878630505
+          ],
+          "unknown_capped_first_moment": [
+            0.005337346733810482,
+            0.0053373467338105164
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.583070706901236
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            20.7439083586964,
+            199.70465192248056
+          ],
+          "old_event_radius": 0.00533734673404522,
+          "weighted_event_radius": 0.005337346733809929,
+          "width_reduction_fraction": 0.33761852583266583
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r5_t101",
+      "selected": "1946",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0016184871381674465,
+      "accepted": true,
+      "intervals": {
+        "1946": [
+          231.76440498024633,
+          250.4984642454956
+        ],
+        "3941": [
+          188.05395175849964,
+          205.62620843319547
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "1946": {
+          "interval": [
+            231.76440498024633,
+            250.4984642454956
+          ],
+          "regional_interval": [
+            231.76440498024633,
+            250.4984642454956
+          ],
+          "baseline": [
+            55.723977414781075,
+            55.723977516356854
+          ],
+          "retained_additional_improvement": [
+            176.04042756546525,
+            194.72020262131966
+          ],
+          "unknown_capped_first_moment": [
+            0.05428410781906529,
+            0.0542841078190656
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.9864117525991807
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            218.47249604486612,
+            250.5045483351931
+          ],
+          "old_event_radius": 0.05428410781922318,
+          "weighted_event_radius": 0.054284107819065536,
+          "width_reduction_fraction": 0.4151464571969818
+        },
+        "3941": {
+          "interval": [
+            188.05395175849964,
+            205.62620843319547
+          ],
+          "regional_interval": [
+            188.05395175849964,
+            205.62620843319547
+          ],
+          "baseline": [
+            112.71760898718094,
+            112.71760902989968
+          ],
+          "retained_additional_improvement": [
+            75.33634277131871,
+            90.96535678747007
+          ],
+          "unknown_capped_first_moment": [
+            1.943242615825697,
+            1.9432426158257017
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.0355081349039623
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            171.11676057796373,
+            205.6290204726117
+          ],
+          "old_event_radius": 1.9432426158257505,
+          "weighted_event_radius": 1.9432426158257015,
+          "width_reduction_fraction": 0.4908401614864729
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r6_t101",
+      "selected": "3647",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0024058973408422114,
+      "accepted": true,
+      "intervals": {
+        "3647": [
+          707.5041302869969,
+          759.7284140974025
+        ],
+        "3704": [
+          556.4481525197156,
+          647.7538032632599
+        ],
+        "1069": [
+          280.4656508346032,
+          286.2558528789862
+        ],
+        "4091": [
+          363.3235568656078,
+          498.95313167468106
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "3647": {
+          "interval": [
+            707.5041302869969,
+            759.7284140974025
+          ],
+          "regional_interval": [
+            707.5041302869969,
+            759.7284140974025
+          ],
+          "baseline": [
+            517.9108660453376,
+            517.910866364708
+          ],
+          "retained_additional_improvement": [
+            189.5932642416594,
+            241.55244478294708
+          ],
+          "unknown_capped_first_moment": [
+            0.2651029497473256,
+            0.2651029497473271
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.6944334421163423
+          ],
+          "reused_stable_leaf_cells": 9,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            670.3463561341604,
+            759.7391506307656
+          ],
+          "old_event_radius": 0.26510294974738924,
+          "weighted_event_radius": 0.26510294974732707,
+          "width_reduction_fraction": 0.4157886650205474
+        },
+        "3704": {
+          "interval": [
+            556.4481525197156,
+            647.7538032632599
+          ],
+          "regional_interval": [
+            556.4481525197156,
+            647.7538032632599
+          ],
+          "baseline": [
+            360.3505660181959,
+            360.3505661877018
+          ],
+          "retained_additional_improvement": [
+            196.09758650151977,
+            286.917805247371
+          ],
+          "unknown_capped_first_moment": [
+            0.4854318281869828,
+            0.4854318281869853
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.537761127910131
+          ],
+          "reused_stable_leaf_cells": 9,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            530.0608481640701,
+            647.7684247354393
+          ],
+          "old_event_radius": 0.4854318281872275,
+          "weighted_event_radius": 0.48543182818698527,
+          "width_reduction_fraction": 0.22430098891566874
+        },
+        "1069": {
+          "interval": [
+            280.4656508346032,
+            286.2558528789862
+          ],
+          "regional_interval": [
+            280.4656508346032,
+            286.2558528789862
+          ],
+          "baseline": [
+            0.5651606770179569,
+            0.5651606808796714
+          ],
+          "retained_additional_improvement": [
+            279.90049015758524,
+            282.9999099675066
+          ],
+          "unknown_capped_first_moment": [
+            2.6907822305999116,
+            2.6907822305999187
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.0568419089356915
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            279.9994192630552,
+            286.2648087178276
+          ],
+          "old_event_radius": 2.6907822305999183,
+          "weighted_event_radius": 2.690782230599916,
+          "width_reduction_fraction": 0.07584323589452424
+        },
+        "4091": {
+          "interval": [
+            363.3235568656078,
+            498.95313167468106
+          ],
+          "regional_interval": [
+            363.3235568656078,
+            498.95313167468106
+          ],
+          "baseline": [
+            126.28309277792687,
+            126.28309281526617
+          ],
+          "retained_additional_improvement": [
+            237.040464087681,
+            353.21557145798414
+          ],
+          "unknown_capped_first_moment": [
+            19.454467401430687,
+            19.454467401430747
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.4050033588774693
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            237.04887831702743,
+            498.9628873872027
+          ],
+          "old_event_radius": 19.45446740143093,
+          "weighted_event_radius": 19.454467401430744,
+          "width_reduction_fraction": 0.48215990702225614
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r7_t101",
+      "selected": "4037",
+      "regret_upper": 0.0,
+      "delta_lower": 0.003064728653553359,
+      "accepted": true,
+      "intervals": {
+        "1624": [
+          452.9059488779511,
+          551.2355763062974
+        ],
+        "1584": [
+          540.1967386387448,
+          615.3827650041898
+        ],
+        "1822": [
+          236.27955206896354,
+          586.8851907709052
+        ],
+        "4037": [
+          646.1011438557235,
+          683.3382835502379
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "1624": {
+          "interval": [
+            452.9059488779511,
+            551.2355763062974
+          ],
+          "regional_interval": [
+            452.9059488779511,
+            551.2355763062974
+          ],
+          "baseline": [
+            33.83070474829674,
+            33.83070498059442
+          ],
+          "retained_additional_improvement": [
+            419.0752441296544,
+            513.0637571867562
+          ],
+          "unknown_capped_first_moment": [
+            4.341114138946698,
+            4.341114138946709
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.9853055693213686
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            419.0531816990572,
+            551.2474285065364
+          ],
+          "old_event_radius": 4.3411141389467085,
+          "weighted_event_radius": 4.3411141389467085,
+          "width_reduction_fraction": 0.25617317089791053
+        },
+        "1584": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            540.1967386387448,
+            615.3827650041898
+          ]
+        },
+        "1822": {
+          "interval": [
+            236.27955206896354,
+            586.8851907709052
+          ],
+          "regional_interval": [
+            236.27955206896354,
+            586.8851917023902
+          ],
+          "baseline": [
+            229.3591776615208,
+            229.35917859300525
+          ],
+          "retained_additional_improvement": [
+            6.920374407442764,
+            357.5260117173694
+          ],
+          "unknown_capped_first_moment": [
+            1.3920154154838575e-06,
+            1.39201541548388e-06
+          ],
+          "stable_inner_window": [
+            -8.0,
+            6.124723844054699
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            7.004836615581627,
+            586.8851907709052
+          ],
+          "old_event_radius": 1.3920154396063875e-06,
+          "weighted_event_radius": 1.3920154148691166e-06,
+          "width_reduction_fraction": 0.3953827954515764
+        },
+        "4037": {
+          "interval": [
+            646.1011438557235,
+            683.3382835502379
+          ],
+          "regional_interval": [
+            646.1011438557235,
+            683.3382835502379
+          ],
+          "baseline": [
+            253.75246817316247,
+            253.75246837782151
+          ],
+          "retained_additional_improvement": [
+            392.3486756825611,
+            429.22900983170223
+          ],
+          "unknown_capped_first_moment": [
+            0.3568053407140344,
+            0.3568053407140363
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.6804241840759784
+          ],
+          "reused_stable_leaf_cells": 10,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            627.8867639279073,
+            683.3601286689242
+          ],
+          "old_event_radius": 0.3568053407140789,
+          "weighted_event_radius": 0.35680534071403625,
+          "width_reduction_fraction": 0.32873839781740766
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r0_t101",
+      "selected": "4061",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0012145248099082074,
+      "accepted": true,
+      "intervals": {
+        "3685": [
+          95.68474282869896,
+          112.25636478309131
+        ],
+        "4061": [
+          118.08848475062291,
+          141.33397065687913
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "3685": {
+          "interval": [
+            95.68474282869896,
+            112.25636478309131
+          ],
+          "regional_interval": [
+            95.68474282869896,
+            112.25637653813895
+          ],
+          "baseline": [
+            45.679216127205336,
+            45.67922719328158
+          ],
+          "retained_additional_improvement": [
+            50.00552670149362,
+            66.57714907681688
+          ],
+          "unknown_capped_first_moment": [
+            2.680404850856768e-07,
+            2.6804048508567926e-07
+          ],
+          "stable_inner_window": [
+            -8.0,
+            6.2386399829751
+          ],
+          "reused_stable_leaf_cells": 9,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            85.90983902190534,
+            112.25636478309131
+          ],
+          "old_event_radius": 2.680405184364121e-07,
+          "weighted_event_radius": 2.6804048352660077e-07,
+          "width_reduction_fraction": 0.37101300928238995
+        },
+        "4061": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            118.08848475062291,
+            141.33397065687913
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r1_t101",
+      "selected": "2841",
+      "regret_upper": 0.0,
+      "delta_lower": 0.002133691338349412,
+      "accepted": true,
+      "intervals": {
+        "1381": [
+          4.935676069553352,
+          5.2780304267113145
+        ],
+        "2841": [
+          6.770646591107777,
+          283.71416617698156
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "1381": {
+          "interval": [
+            4.935676069553352,
+            5.2780304267113145
+          ],
+          "regional_interval": [
+            4.935676069553352,
+            5.2780914487752595
+          ],
+          "baseline": [
+            0.4025196156403581,
+            0.4025805625428802
+          ],
+          "retained_additional_improvement": [
+            4.533156453912994,
+            4.875312347232382
+          ],
+          "unknown_capped_first_moment": [
+            0.00019853899999708663,
+            0.00019853899999708953
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.2127126154787655
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            4.802197095729394,
+            5.2780304267113145
+          ],
+          "old_event_radius": 0.00019853899982325682,
+          "weighted_event_radius": 0.00019853899972727473,
+          "width_reduction_fraction": 0.2805162335906858
+        },
+        "2841": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            6.770646591107777,
+            283.71416617698156
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r2_t101",
+      "selected": "3835",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0009833266260863703,
+      "accepted": true,
+      "intervals": {
+        "2232": [
+          87.90260711866837,
+          103.49282564727308
+        ],
+        "3591": [
+          102.06196015286847,
+          106.04898646503456
+        ],
+        "3835": [
+          106.61554390033716,
+          109.42989732077427
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2232": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            87.90260711866837,
+            103.49282564727308
+          ]
+        },
+        "3591": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            102.06196015286847,
+            106.04898646503456
+          ]
+        },
+        "3835": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            106.61554390033716,
+            109.42989732077427
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r3_t101",
+      "selected": "4049",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0018059430628453363,
+      "accepted": true,
+      "intervals": {
+        "2990": [
+          26.158224305665104,
+          29.016094404394515
+        ],
+        "4049": [
+          109.37672479607917,
+          231.34856625183497
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2990": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            26.158224305665104,
+            29.016094404394515
+          ]
+        },
+        "4049": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            109.37672479607917,
+            231.34856625183497
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r4_t101",
+      "selected": "2741",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0012517446531292505,
+      "accepted": true,
+      "intervals": {
+        "2741": [
+          206.39144570632507,
+          235.96361155608366
+        ],
+        "3800": [
+          156.73402257618957,
+          190.2262898512356
+        ],
+        "105": [
+          36.80859053585893,
+          158.17099248611208
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2741": {
+          "interval": [
+            206.39144570632507,
+            235.96361155608366
+          ],
+          "regional_interval": [
+            206.39144570632507,
+            235.96370719300356
+          ],
+          "baseline": [
+            80.61208200122769,
+            80.61217152376548
+          ],
+          "retained_additional_improvement": [
+            125.77936370509738,
+            155.34862751124126
+          ],
+          "unknown_capped_first_moment": [
+            0.00290815799681312,
+            0.002908157996813139
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.580143618059178
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            193.15702304454547,
+            235.96361155608366
+          ],
+          "old_event_radius": 0.002908157996817924,
+          "weighted_event_radius": 0.002908157996812678,
+          "width_reduction_fraction": 0.3091678903169862
+        },
+        "3800": {
+          "interval": [
+            156.73402257618957,
+            190.2262898512356
+          ],
+          "regional_interval": [
+            156.73402257618957,
+            190.2262898512356
+          ],
+          "baseline": [
+            76.51093977930441,
+            76.51095114114241
+          ],
+          "retained_additional_improvement": [
+            80.22308279688518,
+            102.56564759773198
+          ],
+          "unknown_capped_first_moment": [
+            11.14969111236118,
+            11.149691112361205
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.3694483842056506
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            144.7819621455018,
+            190.22950636299245
+          ],
+          "old_event_radius": 11.149691112361324,
+          "weighted_event_radius": 11.149691112361204,
+          "width_reduction_fraction": 0.26305661061095537
+        },
+        "105": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            36.80859053585893,
+            158.17099248611208
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r5_t101",
+      "selected": "1799",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0008573342249578549,
+      "accepted": true,
+      "intervals": {
+        "1799": [
+          134.31478363317174,
+          139.59643164459393
+        ],
+        "4042": [
+          32.138900973111134,
+          103.91410168891521
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "1799": {
+          "interval": [
+            134.31478363317174,
+            139.59643164459393
+          ],
+          "regional_interval": [
+            134.31478363317174,
+            139.59643164459393
+          ],
+          "baseline": [
+            3.0307109373064804,
+            3.0307139709360627
+          ],
+          "retained_additional_improvement": [
+            131.28407269586526,
+            136.51296737368602
+          ],
+          "unknown_capped_first_moment": [
+            0.05275029997184384,
+            0.05275029997184413
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.8399556085204787
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            131.27754836108295,
+            139.60068279187138
+          ],
+          "old_event_radius": 0.05275029997185363,
+          "weighted_event_radius": 0.05275029997183312,
+          "width_reduction_fraction": 0.365425603137606
+        },
+        "4042": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            32.138900973111134,
+            103.91410168891521
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r6_t101",
+      "selected": "3962",
+      "regret_upper": 0.0,
+      "delta_lower": 0.001222902187297804,
+      "accepted": true,
+      "intervals": {
+        "1221": [
+          159.29737160054455,
+          159.85152438535854
+        ],
+        "3962": [
+          173.94235931203897,
+          226.25430971514356
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "1221": {
+          "interval": [
+            159.29737160054455,
+            159.85152438535854
+          ],
+          "regional_interval": [
+            159.29737160054455,
+            159.85152438535854
+          ],
+          "baseline": [
+            0.49465607462570915,
+            0.4946566404353234
+          ],
+          "retained_additional_improvement": [
+            158.80271552591884,
+            159.31760916556595
+          ],
+          "unknown_capped_first_moment": [
+            0.03925857935725349,
+            0.03925857935725372
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.996795975539576
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            158.98530048295197,
+            159.8565634985104
+          ],
+          "old_event_radius": 0.03925857935726214,
+          "weighted_event_radius": 0.039258579357247116,
+          "width_reduction_fraction": 0.36396613316725446
+        },
+        "3962": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            173.94235931203897,
+            226.25430971514356
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r7_t101",
+      "selected": "66",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0017393529565860994,
+      "accepted": true,
+      "intervals": {
+        "1726": [
+          53.619398773845276,
+          54.4857517654044
+        ],
+        "66": [
+          74.67918878874801,
+          119.4752377356445
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "1726": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            53.619398773845276,
+            54.4857517654044
+          ]
+        },
+        "66": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            74.67918878874801,
+            119.4752377356445
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r8_t101",
+      "selected": "89",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0012460835170367967,
+      "accepted": true,
+      "intervals": {
+        "2794": [
+          62.266342677554796,
+          63.87441137044164
+        ],
+        "3889": [
+          187.6220746669087,
+          191.8173579753208
+        ],
+        "89": [
+          192.10657426649158,
+          196.194945744005
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2794": {
+          "interval": [
+            62.266342677554796,
+            63.87441137044164
+          ],
+          "regional_interval": [
+            62.266342677554796,
+            63.874414248612865
+          ],
+          "baseline": [
+            1.1152066115662365,
+            1.1152094876445062
+          ],
+          "retained_additional_improvement": [
+            61.15113606598856,
+            62.75903602127087
+          ],
+          "unknown_capped_first_moment": [
+            0.00016873969747951452,
+            0.00016873969747951633
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.14269015880663
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            61.15690550649597,
+            63.87441137044164
+          ],
+          "old_event_radius": 0.00016873969752130897,
+          "weighted_event_radius": 0.0001687396974686724,
+          "width_reduction_fraction": 0.4082556677349667
+        },
+        "3889": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            187.6220746669087,
+            191.8173579753208
+          ]
+        },
+        "89": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            192.10657426649158,
+            196.194945744005
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r9_t101",
+      "selected": "4008",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0022172842870958015,
+      "accepted": true,
+      "intervals": {
+        "2206": [
+          48.92325020623324,
+          48.96756626574868
+        ],
+        "4008": [
+          333.65154166792615,
+          525.3616542437032
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2206": {
+          "interval": [
+            48.92325020623324,
+            48.96756626574868
+          ],
+          "regional_interval": [
+            48.92325020623324,
+            48.967568391491284
+          ],
+          "baseline": [
+            0.022566455681499065,
+            0.022568530134321918
+          ],
+          "retained_additional_improvement": [
+            48.90068375055174,
+            48.94499986135533
+          ],
+          "unknown_capped_first_moment": [
+            1.6293987936256905e-12,
+            1.629399173342967e-12
+          ],
+          "stable_inner_window": [
+            -8.0,
+            8.0
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            48.91003029014663,
+            48.96756626574868
+          ],
+          "old_event_radius": 2.461680067673335e-13,
+          "weighted_event_radius": 3.0764851897726245e-16,
+          "width_reduction_fraction": 0.22976782696878623
+        },
+        "4008": {
+          "interval": [
+            333.65154166792615,
+            525.3616542437032
+          ],
+          "regional_interval": [
+            333.65154166792615,
+            525.3616542437032
+          ],
+          "baseline": [
+            303.81464938817226,
+            303.8147098924285
+          ],
+          "retained_additional_improvement": [
+            29.836892279753943,
+            204.31248592249435
+          ],
+          "unknown_capped_first_moment": [
+            17.23445842878028,
+            17.234458428780318
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.4194135378921215
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            142.90438307639528,
+            525.3638065586065
+          ],
+          "old_event_radius": 17.234458428780545,
+          "weighted_event_radius": 17.234458428780314,
+          "width_reduction_fraction": 0.49874391685712033
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r0_t101",
+      "selected": "2053",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0028729477894342734,
+      "accepted": true,
+      "intervals": {
+        "2053": [
+          852.9681170656625,
+          1119.145826535073
+        ],
+        "836": [
+          165.5439382176092,
+          209.81280704336197
+        ],
+        "1016": [
+          107.60966134766184,
+          371.05465911695643
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2053": {
+          "interval": [
+            852.9681170656625,
+            1119.145826535073
+          ],
+          "regional_interval": [
+            852.9681170656625,
+            1119.1458613575319
+          ],
+          "baseline": [
+            811.2700971373652,
+            811.270129514281
+          ],
+          "retained_additional_improvement": [
+            41.69801992829739,
+            307.87573182443754
+          ],
+          "unknown_capped_first_moment": [
+            1.8813120561850258e-08,
+            1.88131205618506e-08
+          ],
+          "stable_inner_window": [
+            -8.0,
+            6.7675654971913675
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            415.97593804548916,
+            1119.145826535073
+          ],
+          "old_event_radius": 1.8813293086084235e-08,
+          "weighted_event_radius": 1.8813120553022944e-08,
+          "width_reduction_fraction": 0.6214603130387694
+        },
+        "836": {
+          "interval": [
+            165.5439382176092,
+            209.81280704336197
+          ],
+          "regional_interval": [
+            165.5439382176092,
+            209.81280704336197
+          ],
+          "baseline": [
+            12.364354877799542,
+            12.36435634313466
+          ],
+          "retained_additional_improvement": [
+            153.17958333980965,
+            185.9172615297804
+          ],
+          "unknown_capped_first_moment": [
+            11.531189170446854,
+            11.531189170446883
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.650914040662713
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            153.15111604318022,
+            209.81781230458165
+          ],
+          "old_event_radius": 11.53118917044714,
+          "weighted_event_radius": 11.531189170446881,
+          "width_reduction_fraction": 0.21878507577815937
+        },
+        "1016": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            107.60966134766184,
+            371.05465911695643
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r1_t101",
+      "selected": "4096",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0030410912532785757,
+      "accepted": true,
+      "intervals": {
+        "3842": [
+          1463.3495001888618,
+          1680.289280095503
+        ],
+        "3647": [
+          1685.688514973178,
+          1718.5117968685204
+        ],
+        "3180": [
+          1666.5361783337746,
+          1715.379612648893
+        ],
+        "4096": [
+          1721.9029201940111,
+          1757.0448178646036
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "3842": {
+          "interval": [
+            1463.3495001888618,
+            1680.289280095503
+          ],
+          "regional_interval": [
+            1463.3495001888618,
+            1680.2893307040088
+          ],
+          "baseline": [
+            1433.0074849275209,
+            1433.0075221637626
+          ],
+          "retained_additional_improvement": [
+            30.34201526134114,
+            247.281808540216
+          ],
+          "unknown_capped_first_moment": [
+            2.98289980234237e-11,
+            2.9828998023424694e-11
+          ],
+          "stable_inner_window": [
+            -8.0,
+            7.65311196250493
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1172.1053859703486,
+            1680.289280095503
+          ],
+          "old_event_radius": 3.0048976811446835e-11,
+          "weighted_event_radius": 2.982899469475704e-11,
+          "width_reduction_fraction": 0.5731077225890717
+        },
+        "3647": {
+          "interval": [
+            1685.688514973178,
+            1718.5117968685204
+          ],
+          "regional_interval": [
+            1685.688514973178,
+            1718.5118309810382
+          ],
+          "baseline": [
+            310.0248703150969,
+            310.0248902469066
+          ],
+          "retained_additional_improvement": [
+            1375.663644658081,
+            1408.4446649564668
+          ],
+          "unknown_capped_first_moment": [
+            0.042275777664753794,
+            0.04227577766475405
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.190752908074068
+          ],
+          "reused_stable_leaf_cells": 16,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1683.926669884247,
+            1718.5117968685204
+          ],
+          "old_event_radius": 0.04227577766489627,
+          "weighted_event_radius": 0.042275777664754044,
+          "width_reduction_fraction": 0.05094227613309023
+        },
+        "3180": {
+          "interval": [
+            1666.5361783337746,
+            1715.379612648893
+          ],
+          "regional_interval": [
+            1666.5361783337746,
+            1715.3796598399538
+          ],
+          "baseline": [
+            273.6565478315474,
+            273.656576181957
+          ],
+          "retained_additional_improvement": [
+            1392.8796305022272,
+            1441.7230758382968
+          ],
+          "unknown_capped_first_moment": [
+            7.819699770138242e-06,
+            7.819699770138366e-06
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.842487868460784
+          ],
+          "reused_stable_leaf_cells": 12,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1664.7408006947082,
+            1715.379612648893
+          ],
+          "old_event_radius": 7.819699931533186e-06,
+          "weighted_event_radius": 7.81969976994496e-06,
+          "width_reduction_fraction": 0.0354545766336448
+        },
+        "4096": {
+          "interval": [
+            1721.9029201940111,
+            1757.0448178646036
+          ],
+          "regional_interval": [
+            1721.9029201940111,
+            1757.0448178646036
+          ],
+          "baseline": [
+            326.51964737129265,
+            326.51965359037695
+          ],
+          "retained_additional_improvement": [
+            1395.3832728227185,
+            1425.927884136286
+          ],
+          "unknown_capped_first_moment": [
+            4.5972801379406,
+            4.597280137940621
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.965344540935821
+          ],
+          "reused_stable_leaf_cells": 11,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1719.4699211524864,
+            1757.094958014059
+          ],
+          "old_event_radius": 4.597280137940872,
+          "weighted_event_radius": 4.59728013794062,
+          "width_reduction_fraction": 0.06599699025188921
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r2_t101",
+      "selected": "2603",
+      "regret_upper": 0.0,
+      "delta_lower": 0.002202646532891054,
+      "accepted": true,
+      "intervals": {
+        "2394": [
+          1036.4798284264887,
+          1086.0153016878673
+        ],
+        "2603": [
+          1090.4324370442698,
+          1142.7703866123254
+        ],
+        "4096": [
+          920.4159681725624,
+          1029.1704497911999
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2394": {
+          "interval": [
+            1036.4798284264887,
+            1086.0153016878673
+          ],
+          "regional_interval": [
+            1036.4798284264887,
+            1086.0153068666502
+          ],
+          "baseline": [
+            387.4257996941144,
+            387.4258028711099
+          ],
+          "retained_additional_improvement": [
+            649.0540287323744,
+            698.5894934307291
+          ],
+          "unknown_capped_first_moment": [
+            1.0564811006360973e-05,
+            1.0564811006361134e-05
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.737775179551753
+          ],
+          "reused_stable_leaf_cells": 12,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1033.5695633460975,
+            1086.0153016878673
+          ],
+          "old_event_radius": 1.0564811121819078e-05,
+          "weighted_event_radius": 1.0564811006359973e-05,
+          "width_reduction_fraction": 0.05549097357398208
+        },
+        "2603": {
+          "interval": [
+            1090.4324370442698,
+            1142.7703866123254
+          ],
+          "regional_interval": [
+            1090.4324370442698,
+            1142.7703937940898
+          ],
+          "baseline": [
+            555.3452382080009,
+            555.3452420857748
+          ],
+          "retained_additional_improvement": [
+            535.0871988362691,
+            587.4250864540361
+          ],
+          "unknown_capped_first_moment": [
+            6.525427894706054e-05,
+            6.525427894706126e-05
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.42104755271823
+          ],
+          "reused_stable_leaf_cells": 15,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1087.0362829472222,
+            1142.7703866123254
+          ],
+          "old_event_radius": 6.525427901958948e-05,
+          "weighted_event_radius": 6.525427894705896e-05,
+          "width_reduction_fraction": 0.0609349370262518
+        },
+        "4096": {
+          "interval": [
+            920.4159681725624,
+            1029.1704497911999
+          ],
+          "regional_interval": [
+            920.4159681725624,
+            1029.1704497911999
+          ],
+          "baseline": [
+            148.4268651078246,
+            148.4268655837268
+          ],
+          "retained_additional_improvement": [
+            771.9891030647378,
+            877.980982277318
+          ],
+          "unknown_capped_first_moment": [
+            2.762601930154684,
+            2.762601930154697
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.0223216237875143
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            772.0188949134737,
+            1029.201393221924
+          ],
+          "old_event_radius": 2.7626019301549096,
+          "weighted_event_radius": 2.7626019301546965,
+          "width_reduction_fraction": 0.5771310943242982
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r3_t101",
+      "selected": "2718",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0019826478477698935,
+      "accepted": true,
+      "intervals": {
+        "2718": [
+          424.86025126357674,
+          436.67121201592244
+        ],
+        "1259": [
+          1.0722045923437236,
+          64.00596641638454
+        ],
+        "4096": [
+          407.26941741135965,
+          420.357427121271
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2718": {
+          "interval": [
+            424.86025126357674,
+            436.67121201592244
+          ],
+          "regional_interval": [
+            424.86025126357674,
+            436.6712349476954
+          ],
+          "baseline": [
+            132.44867761517617,
+            132.4486915514235
+          ],
+          "retained_additional_improvement": [
+            292.4115736484006,
+            304.2222106488798
+          ],
+          "unknown_capped_first_moment": [
+            0.00033274739202014924,
+            0.00033274739202015163
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.102238369100971
+          ],
+          "reused_stable_leaf_cells": 14,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            422.98893782708086,
+            436.67121201592244
+          ],
+          "old_event_radius": 0.00033274739209549837,
+          "weighted_event_radius": 0.000332747392020151,
+          "width_reduction_fraction": 0.1367691811074807
+        },
+        "1259": {
+          "interval": [
+            1.0722045923437236,
+            64.00596641638454
+          ],
+          "regional_interval": [
+            1.0722045923437236,
+            64.00596703504797
+          ],
+          "baseline": [
+            1.0722045923437236,
+            1.0722052100240944
+          ],
+          "retained_additional_improvement": [
+            0.0,
+            62.933743478399016
+          ],
+          "unknown_capped_first_moment": [
+            1.8346624852081217e-05,
+            1.8346624852081427e-05
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.625406204463798
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            0.0,
+            64.00596641638454
+          ],
+          "old_event_radius": 1.8346625056196055e-05,
+          "weighted_event_radius": 1.8346624851811664e-05,
+          "width_reduction_fraction": 0.016751635079901798
+        },
+        "4096": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            407.26941741135965,
+            420.357427121271
+          ]
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r4_t101",
+      "selected": "1866",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0023297169244066752,
+      "accepted": true,
+      "intervals": {
+        "1952": [
+          288.3361863732485,
+          318.22499832372665
+        ],
+        "1866": [
+          321.34891689787537,
+          370.8409483273279
+        ],
+        "4096": [
+          284.0550605124778,
+          313.54480600033
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "1952": {
+          "interval": [
+            288.3361863732485,
+            318.22499832372665
+          ],
+          "regional_interval": [
+            288.3361863732485,
+            318.22499832372665
+          ],
+          "baseline": [
+            256.9947001012247,
+            256.9947020466757
+          ],
+          "retained_additional_improvement": [
+            31.34148627202385,
+            58.5064655308937
+          ],
+          "unknown_capped_first_moment": [
+            2.7238307461572324,
+            2.723830746157245
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.0435126329214155
+          ],
+          "reused_stable_leaf_cells": 9,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            265.72794403747963,
+            318.22715032587104
+          ],
+          "old_event_radius": 2.723830746157389,
+          "weighted_event_radius": 2.7238307461572444,
+          "width_reduction_fraction": 0.4306806890319187
+        },
+        "1866": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            321.34891689787537,
+            370.8409483273279
+          ]
+        },
+        "4096": {
+          "interval": [
+            284.0550605124778,
+            313.54480600033
+          ],
+          "regional_interval": [
+            284.0550605124778,
+            313.54480600033
+          ],
+          "baseline": [
+            111.11634210187867,
+            111.11634250482393
+          ],
+          "retained_additional_improvement": [
+            172.9387184105991,
+            195.828907843875
+          ],
+          "unknown_capped_first_moment": [
+            6.599555651631054,
+            6.59955565163107
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.7665354221816307
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            266.9716386668495,
+            313.5509443370358
+          ],
+          "old_event_radius": 6.599555651631277,
+          "weighted_event_radius": 6.599555651631069,
+          "width_reduction_fraction": 0.36689169012822864
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r5_t101",
+      "selected": "2645",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0016184871381674465,
+      "accepted": true,
+      "intervals": {
+        "2645": [
+          247.05855172834424,
+          292.24450272279853
+        ],
+        "1583": [
+          155.8942684995076,
+          192.74539040180102
+        ],
+        "4096": [
+          176.36900004466426,
+          209.69361722441425
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2645": {
+          "interval": [
+            247.05855172834424,
+            292.24450272279853
+          ],
+          "regional_interval": [
+            247.05855172834424,
+            292.2445039684043
+          ],
+          "baseline": [
+            29.122624261408646,
+            29.12262550699461
+          ],
+          "retained_additional_improvement": [
+            217.9359274669356,
+            263.1218784503349
+          ],
+          "unknown_capped_first_moment": [
+            1.1074741473539166e-08,
+            1.1074741473539364e-08
+          ],
+          "stable_inner_window": [
+            -8.0,
+            6.761200470883945
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            217.97687145211722,
+            292.24450272279853
+          ],
+          "old_event_radius": 1.1074900582587467e-08,
+          "weighted_event_radius": 1.1074741411157621e-08,
+          "width_reduction_fraction": 0.39157947787823977
+        },
+        "1583": {
+          "interval": [
+            155.8942684995076,
+            192.74539040180102
+          ],
+          "regional_interval": [
+            155.8942684995076,
+            192.74539096806606
+          ],
+          "baseline": [
+            17.80965087945924,
+            17.809651445713143
+          ],
+          "retained_additional_improvement": [
+            138.08461762004836,
+            174.93548181738208
+          ],
+          "unknown_capped_first_moment": [
+            0.00025770497082312327,
+            0.00025770497082312516
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.112186215267097
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            138.12476474356527,
+            192.74539040180102
+          ],
+          "old_event_radius": 0.00025770497098029696,
+          "weighted_event_radius": 0.00025770497082310977,
+          "width_reduction_fraction": 0.3253258918549761
+        },
+        "4096": {
+          "interval": [
+            176.36900004466426,
+            209.69361722441425
+          ],
+          "regional_interval": [
+            176.36900004466426,
+            209.69361722441425
+          ],
+          "baseline": [
+            48.86082185134978,
+            48.860822161635724
+          ],
+          "retained_additional_improvement": [
+            127.50817819331448,
+            150.26175610289667
+          ],
+          "unknown_capped_first_moment": [
+            10.57103895988182,
+            10.571038959881843
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.482050821009449
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            168.09631728302836,
+            209.6978574998909
+          ],
+          "old_event_radius": 10.571038959881882,
+          "weighted_event_radius": 10.571038959881841,
+          "width_reduction_fraction": 0.19895712980736271
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r6_t101",
+      "selected": "1973",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0026903775295556145,
+      "accepted": true,
+      "intervals": {
+        "1973": [
+          575.1088093601326,
+          676.7400211136899
+        ],
+        "4096": [
+          159.08841939610062,
+          276.6831834959485
+        ],
+        "2917": [
+          304.00771061080496,
+          365.33015958043165
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "1973": {
+          "interval": [
+            575.1088093601326,
+            676.7400211136899
+          ],
+          "regional_interval": [
+            575.1088093601326,
+            676.740022899871
+          ],
+          "baseline": [
+            68.60677797685003,
+            68.60677976301668
+          ],
+          "retained_additional_improvement": [
+            506.50203138328254,
+            608.1332302302699
+          ],
+          "unknown_capped_first_moment": [
+            1.2906584298812611e-05,
+            1.2906584298812713e-05
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.737743515288149
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            506.57389457783404,
+            676.7400211136899
+          ],
+          "old_event_radius": 1.2906584567499294e-05,
+          "weighted_event_radius": 1.2906584298749167e-05,
+          "width_reduction_fraction": 0.4027529813217996
+        },
+        "4096": {
+          "interval": [
+            159.08841939610062,
+            276.6831834959485
+          ],
+          "regional_interval": [
+            159.08841939610062,
+            276.6831834959485
+          ],
+          "baseline": [
+            141.0313256372615,
+            141.03132623631154
+          ],
+          "retained_additional_improvement": [
+            18.057093758839155,
+            125.05232904125194
+          ],
+          "unknown_capped_first_moment": [
+            10.599528218385005,
+            10.599528218385032
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.657186483980131
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            18.057212289934057,
+            276.68415310890447
+          ],
+          "old_event_radius": 10.599528218385203,
+          "weighted_event_radius": 10.59952821838503,
+          "width_reduction_fraction": 0.5453112358384967
+        },
+        "2917": {
+          "interval": [
+            304.00771061080496,
+            365.33015958043165
+          ],
+          "regional_interval": [
+            304.00771061080496,
+            365.33016571212244
+          ],
+          "baseline": [
+            281.8455670028202,
+            281.8455726875113
+          ],
+          "retained_additional_improvement": [
+            22.162143607984788,
+            83.48459302418287
+          ],
+          "unknown_capped_first_moment": [
+            4.2818608498714425e-10,
+            4.2818608498715686e-10
+          ],
+          "stable_inner_window": [
+            -8.0,
+            7.286415978822948
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            196.558472589991,
+            365.33015958043165
+          ],
+          "old_event_radius": 4.2832419582058984e-10,
+          "weighted_event_radius": 4.281858893467175e-10,
+          "width_reduction_fraction": 0.636654405349992
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r7_t101",
+      "selected": "1821",
+      "regret_upper": 0.0,
+      "delta_lower": 0.003064728653553359,
+      "accepted": true,
+      "intervals": {
+        "3803": [
+          1504.744640718619,
+          1537.4397021098655
+        ],
+        "2147": [
+          1490.23538778214,
+          1537.2027790507473
+        ],
+        "1821": [
+          1539.4363474511927,
+          1571.6697081532402
+        ],
+        "4096": [
+          324.96995207410737,
+          1171.054158715477
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "3803": {
+          "interval": [
+            1504.744640718619,
+            1537.4397021098655
+          ],
+          "regional_interval": [
+            1504.744640718619,
+            1537.4397021098655
+          ],
+          "baseline": [
+            143.19777492230332,
+            143.19777637492052
+          ],
+          "retained_additional_improvement": [
+            1361.5468657963156,
+            1394.1151038616965
+          ],
+          "unknown_capped_first_moment": [
+            0.1268218732484053,
+            0.12682187324840605
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.9362573518915887
+          ],
+          "reused_stable_leaf_cells": 11,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1501.5252547463315,
+            1537.4796444842625
+          ],
+          "old_event_radius": 0.12682187324861122,
+          "weighted_event_radius": 0.12682187324840602,
+          "width_reduction_fraction": 0.09065174990985748
+        },
+        "2147": {
+          "interval": [
+            1490.23538778214,
+            1537.2027790507473
+          ],
+          "regional_interval": [
+            1490.23538778214,
+            1537.2027790507473
+          ],
+          "baseline": [
+            124.21282870098366,
+            124.21282983546735
+          ],
+          "retained_additional_improvement": [
+            1366.0225590811563,
+            1412.2961275373434
+          ],
+          "unknown_capped_first_moment": [
+            0.6938216779364765,
+            0.6938216779364801
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.507241201172145
+          ],
+          "reused_stable_leaf_cells": 10,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1487.1581160954063,
+            1537.2426080988
+          ],
+          "old_event_radius": 0.6938216779365364,
+          "weighted_event_radius": 0.69382167793648,
+          "width_reduction_fraction": 0.06223684438239237
+        },
+        "1821": {
+          "interval": [
+            1539.4363474511927,
+            1571.6697081532402
+          ],
+          "regional_interval": [
+            1539.4363474511927,
+            1571.6697136146317
+          ],
+          "baseline": [
+            224.24041186637487,
+            224.2404152880872
+          ],
+          "retained_additional_improvement": [
+            1315.1959355848178,
+            1347.4292979402933
+          ],
+          "unknown_capped_first_moment": [
+            3.862512401995259e-07,
+            3.862512401995324e-07
+          ],
+          "stable_inner_window": [
+            -8.0,
+            6.325715241551732
+          ],
+          "reused_stable_leaf_cells": 10,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1537.6809404431935,
+            1571.6697081532402
+          ],
+          "old_event_radius": 3.8625138540581486e-07,
+          "weighted_event_radius": 3.8625124003976873e-07,
+          "width_reduction_fraction": 0.05164667995539697
+        },
+        "4096": {
+          "interval": [
+            324.96995207410737,
+            1171.054158715477
+          ],
+          "regional_interval": [
+            324.96995207410737,
+            1171.054158715477
+          ],
+          "baseline": [
+            262.3143429692759,
+            262.31434391639687
+          ],
+          "retained_additional_improvement": [
+            62.65560910483147,
+            843.3887164842463
+          ],
+          "unknown_capped_first_moment": [
+            65.35109831483359,
+            65.35109831483373
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.027148453385317
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            0.0,
+            1171.085535835227
+          ],
+          "old_event_radius": 65.3510983148339,
+          "weighted_event_radius": 65.35109831483372,
+          "width_reduction_fraction": 0.2775214271279203
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r8_t101",
+      "selected": "2579",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0028775763429162485,
+      "accepted": true,
+      "intervals": {
+        "2579": [
+          990.0545070754251,
+          1111.993946725872
+        ],
+        "3888": [
+          831.9412328525386,
+          922.2972324237146
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "2579": {
+          "interval": [
+            990.0545070754251,
+            1111.993946725872
+          ],
+          "regional_interval": [
+            990.0545070754251,
+            1111.9939500844855
+          ],
+          "baseline": [
+            678.380187835774,
+            678.380190491218
+          ],
+          "retained_additional_improvement": [
+            311.6743192396512,
+            433.6136454546492
+          ],
+          "unknown_capped_first_moment": [
+            0.00011413861813692784,
+            0.00011413861813692868
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.368646609219344
+          ],
+          "reused_stable_leaf_cells": 9,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            939.44073930769,
+            1111.993946725872
+          ],
+          "old_event_radius": 0.00011413861823621558,
+          "weighted_event_radius": 0.00011413861813692467,
+          "width_reduction_fraction": 0.29332267145329166
+        },
+        "3888": {
+          "interval": [
+            831.9412328525386,
+            922.2972324237146
+          ],
+          "regional_interval": [
+            831.9412328525386,
+            922.2972324237146
+          ],
+          "baseline": [
+            449.4216505035538,
+            449.4216512643188
+          ],
+          "retained_additional_improvement": [
+            382.5195823489849,
+            455.02010376095205
+          ],
+          "unknown_capped_first_moment": [
+            17.8554773984436,
+            17.855477398443643
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.5002639430986537
+          ],
+          "reused_stable_leaf_cells": 9,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            801.1988625429111,
+            922.3120957824801
+          ],
+          "old_event_radius": 17.855477398443718,
+          "weighted_event_radius": 17.85547739844364,
+          "width_reduction_fraction": 0.2539543602766631
+        }
+      }
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r9_t101",
+      "selected": "1209",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0022871896858040596,
+      "accepted": true,
+      "intervals": {
+        "1209": [
+          409.2303288812852,
+          430.7096508426733
+        ],
+        "1119": [
+          139.34224511014642,
+          242.77222315440147
+        ],
+        "1145": [
+          350.2272550996437,
+          383.9423286743887
+        ],
+        "4096": [
+          98.563345543023,
+          227.55637566706412
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "1209": {
+          "interval": [
+            409.2303288812852,
+            430.7096508426733
+          ],
+          "regional_interval": [
+            409.2303288812852,
+            430.7096735425704
+          ],
+          "baseline": [
+            297.8720538729417,
+            297.8720678570628
+          ],
+          "retained_additional_improvement": [
+            111.35827500834347,
+            132.83760543418617
+          ],
+          "unknown_capped_first_moment": [
+            2.5132136302773045e-07,
+            2.513213630277347e-07
+          ],
+          "stable_inner_window": [
+            -8.0,
+            6.3468527175424185
+          ],
+          "reused_stable_leaf_cells": 10,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            387.5905947109989,
+            430.7096508426733
+          ],
+          "old_event_radius": 2.513214675171114e-07,
+          "weighted_event_radius": 2.513213630186144e-07,
+          "width_reduction_fraction": 0.5018601080738907
+        },
+        "1119": {
+          "interval": [
+            139.34224511014642,
+            242.77222315440147
+          ],
+          "regional_interval": [
+            139.34224511014642,
+            242.7722293715762
+          ],
+          "baseline": [
+            84.27039920064726,
+            84.27040541779706
+          ],
+          "retained_additional_improvement": [
+            55.07184590949916,
+            158.50181211611465
+          ],
+          "unknown_capped_first_moment": [
+            1.1837664469927786e-05,
+            1.1837664469927879e-05
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.724870371319294
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            55.137054427868925,
+            242.77222315440147
+          ],
+          "old_event_radius": 1.1837664648343606e-05,
+          "weighted_event_radius": 1.1837664469910318e-05,
+          "width_reduction_fraction": 0.44877083146924185
+        },
+        "1145": {
+          "interval": [
+            350.2272550996437,
+            383.9423286743887
+          ],
+          "regional_interval": [
+            350.2272550996437,
+            383.94232935069414
+          ],
+          "baseline": [
+            2.3279878770604228,
+            2.3279885528736486
+          ],
+          "retained_additional_improvement": [
+            347.89926722258326,
+            381.61433064894516
+          ],
+          "unknown_capped_first_moment": [
+            1.0148875315393104e-05,
+            1.0148875315393262e-05
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.75094616191825
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            347.8997176023418,
+            383.9423286743887
+          ],
+          "old_event_radius": 1.0148875374491218e-05,
+          "weighted_event_radius": 1.0148875314417021e-05,
+          "width_reduction_fraction": 0.06457738293846901
+        },
+        "4096": {
+          "interval": [
+            98.563345543023,
+            227.55637566706412
+          ],
+          "regional_interval": [
+            98.563345543023,
+            227.55637566706412
+          ],
+          "baseline": [
+            72.1705807798312,
+            72.17058230283556
+          ],
+          "retained_additional_improvement": [
+            26.39276476319181,
+            112.45790925516654
+          ],
+          "unknown_capped_first_moment": [
+            42.927884109061914,
+            42.927884109062
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.0798677096163103
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            13.597888912715653,
+            227.55839699089555
+          ],
+          "old_event_radius": 42.92788410906213,
+          "weighted_event_radius": 42.92788410906199,
+          "width_reduction_fraction": 0.39711757425390004
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_ei",
+      "selected": "b1",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0019369825042567287,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          76.53785097236089,
+          79.64603499915184
+        ],
+        "b1": [
+          109.39694511809049,
+          119.70845657146293
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            76.53785097236089,
+            79.64603499915184
+          ],
+          "regional_interval": [
+            76.53785097236089,
+            79.64603499915184
+          ],
+          "baseline": [
+            0.0053140568804792565,
+            0.005314056947327117
+          ],
+          "retained_additional_improvement": [
+            76.5325369154804,
+            78.16184013001748
+          ],
+          "unknown_capped_first_moment": [
+            1.4788808121870216,
+            1.478880812187029
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.1695038224435774
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            76.47357981010404,
+            79.64843058380212
+          ],
+          "old_event_radius": 1.4788808121870665,
+          "weighted_event_radius": 1.4788808121870165,
+          "width_reduction_fraction": 0.020998387533495817
+        },
+        "b1": {
+          "interval": [
+            109.39694511809049,
+            119.70845657146293
+          ],
+          "regional_interval": [
+            109.39694511809049,
+            119.70845657146293
+          ],
+          "baseline": [
+            35.37922647916048,
+            35.379226525658396
+          ],
+          "retained_additional_improvement": [
+            74.01771863893,
+            83.71664206920349
+          ],
+          "unknown_capped_first_moment": [
+            0.6125879766010425,
+            0.6125879766010456
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.4172731532049405
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            96.67484860895286,
+            119.71093086381211
+          ],
+          "old_event_radius": 0.6125879766011462,
+          "weighted_event_radius": 0.6125879766010455,
+          "width_reduction_fraction": 0.5523756453336449
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_lcb",
+      "selected": "b1",
+      "regret_upper": 0.0,
+      "delta_lower": 0.001969537721291659,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          64.44538968313726,
+          65.85688140458706
+        ],
+        "b1": [
+          83.44615371857519,
+          89.06870713596363
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            64.44538968313726,
+            65.85688140458706
+          ],
+          "regional_interval": [
+            64.44538968313726,
+            65.85688140975513
+          ],
+          "baseline": [
+            1.0634855803903065,
+            1.06348558555419
+          ],
+          "retained_additional_improvement": [
+            63.381904102746965,
+            64.76221021923057
+          ],
+          "unknown_capped_first_moment": [
+            0.03118560497036789,
+            0.031185604970368076
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.161128057418833
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            63.35283141644031,
+            65.85688140458706
+          ],
+          "old_event_radius": 0.031185604970505175,
+          "weighted_event_radius": 0.031185604970365585,
+          "width_reduction_fraction": 0.43631647605627855
+        },
+        "b1": {
+          "interval": [
+            83.44615371857519,
+            89.06870713596363
+          ],
+          "regional_interval": [
+            83.44615371857519,
+            89.06870713596363
+          ],
+          "baseline": [
+            22.043367921574372,
+            22.04336794222445
+          ],
+          "retained_additional_improvement": [
+            61.402785797000824,
+            66.85199693674727
+          ],
+          "unknown_capped_first_moment": [
+            0.17334225699190753,
+            0.17334225699190847
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.7511529258136798
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            76.56817838655799,
+            89.07059834677322
+          ],
+          "old_event_radius": 0.17334225699210243,
+          "weighted_event_radius": 0.1733422569919084,
+          "width_reduction_fraction": 0.5502827904293458
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_pi",
+      "selected": "b1",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0016728339255774826,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          199.05472909374902,
+          205.60610137451266
+        ],
+        "b1": [
+          222.687782514659,
+          255.60401089485387
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            199.05472909374902,
+            205.60610137451266
+          ],
+          "regional_interval": [
+            199.05472909374902,
+            205.606101446567
+          ],
+          "baseline": [
+            2.9019665339817493,
+            2.9019666060137297
+          ],
+          "retained_additional_improvement": [
+            196.15276255976727,
+            202.660710422601
+          ],
+          "unknown_capped_first_moment": [
+            0.043424417952259736,
+            0.043424417952259986
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.046824257899255
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            196.12803397443378,
+            205.60610137451266
+          ],
+          "old_event_radius": 0.04342441795230009,
+          "weighted_event_radius": 0.04342441795225498,
+          "width_reduction_fraction": 0.30878606321061636
+        },
+        "b1": {
+          "interval": [
+            222.687782514659,
+            255.60401089485387
+          ],
+          "regional_interval": [
+            222.687782514659,
+            255.60401089485387
+          ],
+          "baseline": [
+            44.163972329469516,
+            44.16397239138041
+          ],
+          "retained_additional_improvement": [
+            178.5238101851895,
+            203.39139230284715
+          ],
+          "unknown_capped_first_moment": [
+            8.04864620062628,
+            8.0486462006263
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.5890980958051517
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            207.40953071461124,
+            255.61025719041103
+          ],
+          "old_event_radius": 8.048646200626427,
+          "weighted_event_radius": 8.048646200626298,
+          "width_reduction_fraction": 0.31710099023671023
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r12_ei",
+      "selected": "b1",
+      "regret_upper": 0.0,
+      "delta_lower": 0.00200780483113011,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          5.950383566737299,
+          6.993842609171515
+        ],
+        "b1": [
+          15.584841931310976,
+          18.38752422615617
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            5.950383566737299,
+            6.993842609171515
+          ],
+          "regional_interval": [
+            5.950383566737299,
+            6.993842609171515
+          ],
+          "baseline": [
+            0.6147399539365779,
+            0.6147399610165394
+          ],
+          "retained_additional_improvement": [
+            5.335643612800721,
+            6.037678228394962
+          ],
+          "unknown_capped_first_moment": [
+            0.34142441976001137,
+            0.3414244197600132
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.582672244913549
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            5.2722259562990965,
+            6.9940164868865855
+          ],
+          "old_event_radius": 0.34142441976015936,
+          "weighted_event_radius": 0.34142441976000165,
+          "width_reduction_fraction": 0.3939686483940768
+        },
+        "b1": {
+          "interval": [
+            15.584841931310976,
+            18.38752422615617
+          ],
+          "regional_interval": [
+            15.584841931310976,
+            18.38752422615617
+          ],
+          "baseline": [
+            10.612613028499936,
+            10.612613046670731
+          ],
+          "retained_additional_improvement": [
+            4.9722289028110405,
+            7.184553846215083
+          ],
+          "unknown_capped_first_moment": [
+            0.5903573332703513,
+            0.5903573332703543
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.4370613125711547
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            12.612958183621625,
+            18.387717037380195
+          ],
+          "old_event_radius": 0.5903573332704611,
+          "weighted_event_radius": 0.590357333270354,
+          "width_reduction_fraction": 0.5146667824889284
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r12_pi",
+      "selected": "b0",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0016293290616578673,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          129.7277251753366,
+          149.90785243287687
+        ],
+        "b1": [
+          37.539868200125454,
+          74.44299499383798
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            129.7277251753366,
+            149.90785243287687
+          ],
+          "regional_interval": [
+            129.7277251753366,
+            149.90785312649984
+          ],
+          "baseline": [
+            126.30480648863454,
+            126.30480714277815
+          ],
+          "retained_additional_improvement": [
+            3.422918686702064,
+            23.60237022568399
+          ],
+          "unknown_capped_first_moment": [
+            0.0006757580376861214,
+            0.0006757580376861282
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.92829751414011
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            91.37904800780116,
+            149.90785243287687
+          ],
+          "old_event_radius": 0.0006757580378586314,
+          "weighted_event_radius": 0.0006757580376846248,
+          "width_reduction_fraction": 0.6552103283884194
+        },
+        "b1": {
+          "interval": [
+            37.539868200125454,
+            74.44299499383798
+          ],
+          "regional_interval": [
+            37.539868200125454,
+            74.44299499383798
+          ],
+          "baseline": [
+            34.31721454720673,
+            34.31721461574375
+          ],
+          "retained_additional_improvement": [
+            3.222653652918727,
+            39.146291434893925
+          ],
+          "unknown_capped_first_moment": [
+            0.9794889432003032,
+            0.9794889432003078
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.238328739100833
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            6.315735032792341,
+            74.44313429788787
+          ],
+          "old_event_radius": 0.9794889432003725,
+          "weighted_event_radius": 0.9794889432003077,
+          "width_reduction_fraction": 0.4583218030954615
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_ei",
+      "selected": "b0",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0012116075444861285,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          20.571586202684315,
+          26.08098333871273
+        ],
+        "b1": [
+          0.059689788117973396,
+          7.097772716235919
+        ],
+        "b2": [
+          9.838185986291256,
+          11.33254447716373
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            20.571586202684315,
+            26.08098333871273
+          ],
+          "regional_interval": [
+            20.571586202684315,
+            26.08098333871273
+          ],
+          "baseline": [
+            20.35859912582032,
+            20.358599151044018
+          ],
+          "retained_additional_improvement": [
+            0.21298707686399673,
+            3.1800824706276765
+          ],
+          "unknown_capped_first_moment": [
+            2.542301717041028,
+            2.5423017170410347
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.862994668957266
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            12.927570679580557,
+            26.081006214211055
+          ],
+          "old_event_radius": 2.54230171704105,
+          "weighted_event_radius": 2.5423017170410334,
+          "width_reduction_fraction": 0.5811438675832471
+        },
+        "b1": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            0.059689788117973396,
+            7.097772716235919
+          ]
+        },
+        "b2": {
+          "interval": [
+            9.838185986291256,
+            11.33254447716373
+          ],
+          "regional_interval": [
+            9.838185986291256,
+            11.33254447716373
+          ],
+          "baseline": [
+            9.353406624951276,
+            9.353406627614504
+          ],
+          "retained_additional_improvement": [
+            0.48477936133998073,
+            1.9252154001541122
+          ],
+          "unknown_capped_first_moment": [
+            0.0539224493951112,
+            0.053922449395111496
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.918748957678859
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            6.999499226949682,
+            11.332560684441644
+          ],
+          "old_event_radius": 0.05392244939524227,
+          "weighted_event_radius": 0.053922449395111385,
+          "width_reduction_fraction": 0.6551264029988096
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_lcb",
+      "selected": "b2",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0014156098866801967,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          21.11906381682013,
+          64.26788614362603
+        ],
+        "b1": [
+          37.300728093318064,
+          56.13700278099038
+        ],
+        "b2": [
+          91.80619461779752,
+          122.50793440193893
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            21.11906381682013,
+            64.26788614362603
+          ],
+          "regional_interval": [
+            21.11906381682013,
+            64.26788614362603
+          ],
+          "baseline": [
+            19.204894009274085,
+            19.204894030164724
+          ],
+          "retained_additional_improvement": [
+            1.9141698075460467,
+            42.66788855422608
+          ],
+          "unknown_capped_first_moment": [
+            2.3951035592352183,
+            2.395103559235224
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.930529659383542
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1.6062826321025239,
+            64.26801518304661
+          ],
+          "old_event_radius": 2.395103559235269,
+          "weighted_event_radius": 2.3951035592352232,
+          "width_reduction_fraction": 0.31140074539551177
+        },
+        "b1": {
+          "interval": [
+            37.300728093318064,
+            56.13700278099038
+          ],
+          "regional_interval": [
+            37.300728093318064,
+            56.13700283384943
+          ],
+          "baseline": [
+            33.633175699312915,
+            33.63317575193605
+          ],
+          "retained_additional_improvement": [
+            3.667552394005151,
+            22.503827081850655
+          ],
+          "unknown_capped_first_moment": [
+            6.271297469454459e-11,
+            6.271297469454634e-11
+          ],
+          "stable_inner_window": [
+            -8.0,
+            7.456874270779562
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            6.905127138975184,
+            56.13700278099038
+          ],
+          "old_event_radius": 6.286570760317453e-11,
+          "weighted_event_radius": 6.271093363497911e-11,
+          "width_reduction_fraction": 0.6173967690234178
+        },
+        "b2": {
+          "interval": [
+            91.80619461779752,
+            122.50793440193893
+          ],
+          "regional_interval": [
+            91.80619461779752,
+            122.50793441581702
+          ],
+          "baseline": [
+            29.237508453708188,
+            29.23750846754001
+          ],
+          "retained_additional_improvement": [
+            62.568686164089335,
+            93.26542713835593
+          ],
+          "unknown_capped_first_moment": [
+            0.004998809921064146,
+            0.004998809921064177
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.491798832395461
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            65.29381953129352,
+            122.50793440193893
+          ],
+          "old_event_radius": 0.0049988099211064965,
+          "weighted_event_radius": 0.004998809921064043,
+          "width_reduction_fraction": 0.46338871354464634
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_pi",
+      "selected": "b2",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0014156098866801967,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          10.679331633209337,
+          10.710246363500953
+        ],
+        "b1": [
+          34.34958392513554,
+          39.78465079899996
+        ],
+        "b2": [
+          53.45340535390712,
+          57.0205870834569
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            10.679331633209337,
+            10.710246363500953
+          ],
+          "regional_interval": [
+            10.679331633209337,
+            10.71024636410662
+          ],
+          "baseline": [
+            0.033429993568461214,
+            0.03342999415758641
+          ],
+          "retained_additional_improvement": [
+            10.645901639640876,
+            10.676134614430271
+          ],
+          "unknown_capped_first_moment": [
+            0.0006817555187622904,
+            0.0006817555187622952
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.8990121500476755
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            10.659006586065614,
+            10.710246363500953
+          ],
+          "old_event_radius": 0.0006817555187548669,
+          "weighted_event_radius": 0.0006817555187437013,
+          "width_reduction_fraction": 0.39666540646808457
+        },
+        "b1": {
+          "interval": [
+            34.34958392513554,
+            39.78465079899996
+          ],
+          "regional_interval": [
+            34.34958392513554,
+            39.78465079899996
+          ],
+          "baseline": [
+            24.527453466672114,
+            24.527453490608423
+          ],
+          "retained_additional_improvement": [
+            9.822130458463432,
+            14.898414026458061
+          ],
+          "unknown_capped_first_moment": [
+            0.35878328193347214,
+            0.35878328193347403
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.477085736141645
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            25.928326458434164,
+            39.78498101543389
+          ],
+          "old_event_radius": 0.35878328193357545,
+          "weighted_event_radius": 0.35878328193347386,
+          "width_reduction_fraction": 0.6077648575630485
+        },
+        "b2": {
+          "interval": [
+            53.45340535390712,
+            57.0205870834569
+          ],
+          "regional_interval": [
+            53.45340535390712,
+            57.0205870834569
+          ],
+          "baseline": [
+            43.70924680947246,
+            43.709246828834466
+          ],
+          "retained_additional_improvement": [
+            9.744158544434667,
+            13.17011082095597
+          ],
+          "unknown_capped_first_moment": [
+            0.14122943366646257,
+            0.14122943366646337
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.7196088129118166
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            47.596751524634634,
+            57.02092090933974
+          ],
+          "old_event_radius": 0.1412294336665905,
+          "weighted_event_radius": 0.14122943366646332,
+          "width_reduction_fraction": 0.6214858218338994
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_ei",
+      "selected": "b0",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0014558830790264204,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          280.53198482720313,
+          283.8170935921341
+        ],
+        "b1": [
+          275.63825825856884,
+          278.98784578010617
+        ],
+        "b2": [
+          170.76921524113237,
+          251.0922873382205
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            280.53198482720313,
+            283.8170935921341
+          ],
+          "regional_interval": [
+            280.53198482720313,
+            283.8170936373403
+          ],
+          "baseline": [
+            204.84549721588292,
+            204.84549723911073
+          ],
+          "retained_additional_improvement": [
+            75.68648761132022,
+            78.96653906935731
+          ],
+          "unknown_capped_first_moment": [
+            0.005057328872202001,
+            0.005057328872202034
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.495292489061315
+          ],
+          "reused_stable_leaf_cells": 16,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            279.0905362188826,
+            283.8170935921341
+          ],
+          "old_event_radius": 0.00505732887228356,
+          "weighted_event_radius": 0.005057328872202033,
+          "width_reduction_fraction": 0.3049679702351566
+        },
+        "b1": {
+          "interval": [
+            275.63825825856884,
+            278.98784578010617
+          ],
+          "regional_interval": [
+            275.63825825856884,
+            278.98784578010617
+          ],
+          "baseline": [
+            199.86995188375954,
+            199.86995189816844
+          ],
+          "retained_additional_improvement": [
+            75.76830637480933,
+            78.91228486858668
+          ],
+          "unknown_capped_first_moment": [
+            0.20560901335100165,
+            0.20560901335100273
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.630883520833359
+          ],
+          "reused_stable_leaf_cells": 17,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            274.4749651135351,
+            278.9906619268759
+          ],
+          "old_event_radius": 0.20560901335114423,
+          "weighted_event_radius": 0.2056090133510027,
+          "width_reduction_fraction": 0.2582346291182301
+        },
+        "b2": {
+          "interval": [
+            170.76921524113237,
+            251.0922873382205
+          ],
+          "regional_interval": [
+            170.76921524113237,
+            251.0922873382205
+          ],
+          "baseline": [
+            108.38140314965085,
+            108.38140315239912
+          ],
+          "retained_additional_improvement": [
+            62.387812091481536,
+            136.06429404243102
+          ],
+          "unknown_capped_first_moment": [
+            6.646590143390346,
+            6.646590143390362
+          ],
+          "stable_inner_window": [
+            -8.0,
+            2.6071226533200638
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            109.14484952411286,
+            251.09512683730236
+          ],
+          "old_event_radius": 6.646590143390416,
+          "weighted_event_radius": 6.646590143390361,
+          "width_reduction_fraction": 0.4341464235404857
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_lcb",
+      "selected": "b0",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0014960239108418162,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          284.5528293644987,
+          335.36388113111747
+        ],
+        "b1": [
+          213.4476783884177,
+          252.84082409736135
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            284.5528293644987,
+            335.36388113111747
+          ],
+          "regional_interval": [
+            284.5528293644987,
+            335.36388113111747
+          ],
+          "baseline": [
+            199.1195125935701,
+            199.1195126102116
+          ],
+          "retained_additional_improvement": [
+            85.43331677092857,
+            134.54293052009592
+          ],
+          "unknown_capped_first_moment": [
+            1.7014380008099352,
+            1.7014380008099432
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.051816196007057
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            263.82710200984656,
+            335.367636885515
+          ],
+          "old_event_radius": 1.7014380008100143,
+          "weighted_event_radius": 1.701438000809943,
+          "width_reduction_fraction": 0.2897585703695927
+        },
+        "b1": {
+          "interval": [
+            213.4476783884177,
+            252.84082409736135
+          ],
+          "regional_interval": [
+            213.4476783884177,
+            252.84082410047267
+          ],
+          "baseline": [
+            97.19638357756571,
+            97.19638358059206
+          ],
+          "retained_additional_improvement": [
+            116.251294810852,
+            155.6223460469276
+          ],
+          "unknown_capped_first_moment": [
+            0.022094472953020288,
+            0.022094472953020423
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.177002382123957
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            163.71223815125626,
+            252.84082409736135
+          ],
+          "old_event_radius": 0.02209447295310532,
+          "weighted_event_radius": 0.02209447295302042,
+          "width_reduction_fraction": 0.5580189532821246
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_pi",
+      "selected": "b0",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0016549794340930952,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          226.79835818950303,
+          230.5832883332634
+        ],
+        "b1": [
+          220.6304442651878,
+          225.71864815665734
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            226.79835818950303,
+            230.5832883332634
+          ],
+          "regional_interval": [
+            226.79835818950303,
+            230.5832883332634
+          ],
+          "baseline": [
+            122.78231777485553,
+            122.78231779091016
+          ],
+          "retained_additional_improvement": [
+            104.0160404146475,
+            107.42408617937687
+          ],
+          "unknown_capped_first_moment": [
+            0.3768843629763495,
+            0.3768843629763514
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.505672627938682
+          ],
+          "reused_stable_leaf_cells": 14,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            226.15219403491108,
+            230.58705458512216
+          ],
+          "old_event_radius": 0.37688436297647254,
+          "weighted_event_radius": 0.37688436297635136,
+          "width_reduction_fraction": 0.14655035915837014
+        },
+        "b1": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            220.6304442651878,
+            225.71864815665734
+          ]
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r17_ei",
+      "selected": "b0",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0007493625680471899,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          11.527842948140961,
+          12.571966376362056
+        ],
+        "b1": [
+          10.300686723482235,
+          11.184777004584628
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            11.527842948140961,
+            12.571966376362056
+          ],
+          "regional_interval": [
+            11.527842948140961,
+            12.571966398449504
+          ],
+          "baseline": [
+            1.830149671510867,
+            1.8301496922240403
+          ],
+          "retained_additional_improvement": [
+            9.697693276630094,
+            10.741455183881262
+          ],
+          "unknown_capped_first_moment": [
+            0.0003615223442008665,
+            0.000361522344200869
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.898669129930912
+          ],
+          "reused_stable_leaf_cells": 9,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            11.305937508400898,
+            12.571966376362056
+          ],
+          "old_event_radius": 0.00036152234426030914,
+          "weighted_event_radius": 0.00036152234419862996,
+          "width_reduction_fraction": 0.17527676134069858
+        },
+        "b1": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            10.300686723482235,
+            11.184777004584628
+          ]
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r17_lcb",
+      "selected": "b2",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0007493625680471899,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          1.1298124752036074,
+          2.16320339221434
+        ],
+        "b1": [
+          1.439141815938668,
+          1.6318048737445376
+        ],
+        "b2": [
+          2.1879400385616936,
+          2.6469134844725835
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            1.1298124752036074,
+            2.16320339221434
+          ],
+          "regional_interval": [
+            1.1298124752036074,
+            2.1632034070276087
+          ],
+          "baseline": [
+            1.1298124752036074,
+            1.129812489004621
+          ],
+          "retained_additional_improvement": [
+            0.0,
+            1.0333908991872722
+          ],
+          "unknown_capped_first_moment": [
+            1.8835714776244126e-08,
+            1.8835714776244457e-08
+          ],
+          "stable_inner_window": [
+            -8.0,
+            6.570130179256493
+          ],
+          "reused_stable_leaf_cells": 16,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            0.9539136242807887,
+            2.16320339221434
+          ],
+          "old_event_radius": 1.8835731211532805e-08,
+          "weighted_event_radius": 1.883571220014383e-08,
+          "width_reduction_fraction": 0.14545632948122666
+        },
+        "b1": {
+          "interval": [
+            1.439141815938668,
+            1.6318048737445376
+          ],
+          "regional_interval": [
+            1.439141815938668,
+            1.6318048737445376
+          ],
+          "baseline": [
+            0.08114541787870166,
+            0.08114541912584627
+          ],
+          "retained_additional_improvement": [
+            1.3579963980599663,
+            1.4593526428761945
+          ],
+          "unknown_capped_first_moment": [
+            0.09130681174249632,
+            0.0913068117424968
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.6687996568432966
+          ],
+          "reused_stable_leaf_cells": 5,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            1.359817736873376,
+            1.6318496914287257
+          ],
+          "old_event_radius": 0.09130681174249883,
+          "weighted_event_radius": 0.0913068117424927,
+          "width_reduction_fraction": 0.2917631381916608
+        },
+        "b2": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            2.1879400385616936,
+            2.6469134844725835
+          ]
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r17_pi",
+      "selected": "b2",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0007493625680471899,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          0.059520952648055084,
+          1.640184365802484
+        ],
+        "b1": [
+          2.1961280378151016,
+          2.6990479250028367
+        ],
+        "b2": [
+          2.9399604397560246,
+          3.3398380338562506
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            0.059520952648055084,
+            1.640184365802484
+          ],
+          "regional_interval": [
+            0.059520952648055084,
+            1.6401843658075346
+          ],
+          "baseline": [
+            7.142642971302848e-06,
+            7.142648655644734e-06
+          ],
+          "retained_additional_improvement": [
+            0.05951381000508378,
+            1.6401530569917055
+          ],
+          "unknown_capped_first_moment": [
+            2.4166167173166307e-05,
+            2.4166167173166486e-05
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.405860646829032
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            0.059501236393737035,
+            1.640184365802484
+          ],
+          "old_event_radius": 2.4166167103291262e-05,
+          "weighted_event_radius": 2.4166167080591728e-05,
+          "width_reduction_fraction": 1.2473249034703372e-05
+        },
+        "b1": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            2.1961280378151016,
+            2.6990479250028367
+          ]
+        },
+        "b2": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            2.9399604397560246,
+            3.3398380338562506
+          ]
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_ei",
+      "selected": "b1",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0014433465961246038,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          2.639454258091291,
+          12.017225207043882
+        ],
+        "b1": [
+          21.27530849421578,
+          24.89597781876576
+        ],
+        "b2": [
+          7.173851346062616,
+          12.121667503785485
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            2.639454258091291,
+            12.017225207043882
+          ],
+          "regional_interval": [
+            2.639454258091291,
+            12.017225216598598
+          ],
+          "baseline": [
+            2.639454258091291,
+            2.639454267644851
+          ],
+          "retained_additional_improvement": [
+            0.0,
+            9.377746120403263
+          ],
+          "unknown_capped_first_moment": [
+            2.4828550484043125e-05,
+            2.4828550484043315e-05
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.517405273477447
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            0.00659662034081685,
+            12.017225207043882
+          ],
+          "old_event_radius": 2.4828550609529277e-05,
+          "weighted_event_radius": 2.4828550480083676e-05,
+          "width_reduction_fraction": 0.2192106448671059
+        },
+        "b1": {
+          "interval": [
+            21.27530849421578,
+            24.89597781876576
+          ],
+          "regional_interval": [
+            21.27530849421578,
+            24.895977835159922
+          ],
+          "baseline": [
+            21.09266420203039,
+            21.092664217759193
+          ],
+          "retained_additional_improvement": [
+            0.18264429218538739,
+            3.766798172826461
+          ],
+          "unknown_capped_first_moment": [
+            0.03651544457426614,
+            0.03651544457426636
+          ],
+          "stable_inner_window": [
+            -8.0,
+            4.052846036033286
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            14.301710978702966,
+            24.89597781876576
+          ],
+          "old_event_radius": 0.03651544457439065,
+          "weighted_event_radius": 0.03651544457426618,
+          "width_reduction_fraction": 0.6582425778763449
+        },
+        "b2": {
+          "interval": [
+            7.173851346062616,
+            12.121667503785485
+          ],
+          "regional_interval": [
+            7.173851346062616,
+            12.121667503785485
+          ],
+          "baseline": [
+            7.0817473906247415,
+            7.081747395195862
+          ],
+          "retained_additional_improvement": [
+            0.09210395543787513,
+            4.541942647918179
+          ],
+          "unknown_capped_first_moment": [
+            0.49797746067143994,
+            0.49797746067144244
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.393509476129728
+          ],
+          "reused_stable_leaf_cells": 6,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            0.67655088244366,
+            12.121673621636335
+          ],
+          "old_event_radius": 0.4979774606714754,
+          "weighted_event_radius": 0.4979774606714422,
+          "width_reduction_fraction": 0.5676921715501076
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_lcb",
+      "selected": "b1",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0017634700592564466,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          17.735994674751677,
+          22.549732304013006
+        ],
+        "b1": [
+          25.686535516523463,
+          27.239645490732713
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            17.735994674751677,
+            22.549732304013006
+          ],
+          "regional_interval": [
+            17.735994674751677,
+            22.549732325567213
+          ],
+          "baseline": [
+            14.278549585636256,
+            14.278549604161753
+          ],
+          "retained_additional_improvement": [
+            3.4574450891154207,
+            8.271104122484234
+          ],
+          "unknown_capped_first_moment": [
+            7.859892122307717e-05,
+            7.859892122307774e-05
+          ],
+          "stable_inner_window": [
+            -8.0,
+            5.347573527192596
+          ],
+          "reused_stable_leaf_cells": 10,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            16.46566339642485,
+            22.549732304013006
+          ],
+          "old_event_radius": 7.859892134384241e-05,
+          "weighted_event_radius": 7.8598921221906e-05,
+          "width_reduction_fraction": 0.20879633311556456
+        },
+        "b1": {
+          "interval": [
+            25.686535516523463,
+            27.239645490732713
+          ],
+          "regional_interval": [
+            25.686535516523463,
+            27.239645490732713
+          ],
+          "baseline": [
+            20.426778887666842,
+            20.42677890069035
+          ],
+          "retained_additional_improvement": [
+            5.259756628856622,
+            6.565848933102968
+          ],
+          "unknown_capped_first_moment": [
+            0.2470176569393873,
+            0.24701765693938862
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.632995843164605
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            23.457210892456093,
+            27.239824212801825
+          ],
+          "old_event_radius": 0.2470176569394921,
+          "weighted_event_radius": 0.2470176569393884,
+          "width_reduction_fraction": 0.5894082099654598
+        }
+      }
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_pi",
+      "selected": "b1",
+      "regret_upper": 0.0,
+      "delta_lower": 0.0025036137195982044,
+      "accepted": true,
+      "intervals": {
+        "b0": [
+          139.30236589757666,
+          154.18645353178482
+        ],
+        "b1": [
+          209.44517436758738,
+          228.16846376156371
+        ],
+        "b2": [
+          144.6691071026755,
+          172.18095549301077
+        ]
+      },
+      "ordinary_reference_failures": [],
+      "branches": {
+        "b0": {
+          "interval": [
+            139.30236589757666,
+            154.18645353178482
+          ],
+          "regional_interval": [
+            139.30236589757666,
+            154.18645353178482
+          ],
+          "baseline": [
+            90.50785013304767,
+            90.50785074149553
+          ],
+          "retained_additional_improvement": [
+            48.794515764528995,
+            63.56824709779979
+          ],
+          "unknown_capped_first_moment": [
+            0.11035569248947837,
+            0.11035569248947898
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.9210686973161173
+          ],
+          "reused_stable_leaf_cells": 7,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            121.92627300863313,
+            154.18821337750734
+          ],
+          "old_event_radius": 0.11035569248957512,
+          "weighted_event_radius": 0.11035569248946603,
+          "width_reduction_fraction": 0.5386487153584822
+        },
+        "b1": {
+          "interval": [
+            209.44517436758738,
+            228.16846376156371
+          ],
+          "regional_interval": [
+            209.44517436758738,
+            228.16846376156371
+          ],
+          "baseline": [
+            162.31263986084923,
+            162.31263999133125
+          ],
+          "retained_additional_improvement": [
+            47.132534506738175,
+            64.8256900004321
+          ],
+          "unknown_capped_first_moment": [
+            1.0301337698003514,
+            1.0301337698003568
+          ],
+          "stable_inner_window": [
+            -8.0,
+            3.3449690599529056
+          ],
+          "reused_stable_leaf_cells": 8,
+          "route": "regional_conversion_of_checked_fixed_leaves",
+          "original_interval": [
+            186.03459295683373,
+            228.17025686450532
+          ],
+          "old_event_radius": 1.030133769800473,
+          "weighted_event_radius": 1.0301337698003565,
+          "width_reduction_fraction": 0.5556427107686464
+        },
+        "b2": {
+          "route": "unchanged_complete_projection",
+          "interval": [
+            144.6691071026755,
+            172.18095549301077
+          ]
+        }
+      }
+    }
+  ],
+  "all_checks_passed": true
+}

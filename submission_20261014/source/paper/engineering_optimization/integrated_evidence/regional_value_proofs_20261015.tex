@@ -1,0 +1,22 @@
+\subsection{Regional reward enclosure and its information scope}\label{sec:supp_regional_proof}
+
+For every realization, let $h=\min(m_0,Y_a)$. Positivity gives
+\[
+m_0-\min(h,Y_i)=(m_0-h)+(h-Y_i)_+,
+\qquad 0\le(h-Y_i)_+\le h.
+\]
+Condition on the first standard-normal response. In a certified stability region the selected action is $j$, so its conditional remainder is exactly $w_{aj}$. Outside that region its identity need not be known to bound the remainder between zero and $h$. Taking expectations proves the main text's regional enclosure. This argument does not assume independent responses or continuity of the policy-selected conditional reward.
+
+For the fixed reference, $G_{aj}=B_a+W_{a,S}+\mathbb E[w_{aj}\mathbf1_{E_a}]$. The last term is in $[0,H_{a,E}]$. Consequently $G_{aj}-H_{a,E}\le L_a$ and $U_a\le G_{aj}+H_{a,E}$, proving the inclusion and weighted-error result. If $E_a$ implies $Y_a\le\eta m_0$, then $h\mathbf1_{E_a}\le\eta m_0\mathbf1_{E_a}$ pointwise. The resulting factor $\eta$ is unrelated to GP statistical calibration.
+
+In the closed reward relaxation, taking the unknown remainder to be identically zero or $h$ attains the respective endpoints; strictly positive finite response laws can approach these extremes. Extra restrictions from a fixed joint GP, coefficient bands, or known action identities can narrow the interval further. No tightness claim over that more restricted model class is made. Across independently retained branch intervals, setting a competitor at its upper endpoint and the selected branch at its lower endpoint also explains why the stated selection inequality is the appropriate robust certificate from those intervals alone. This does not assert simultaneous attainability under the full GP.
+
+Completing the square in $\exp(m+sx)\phi(x)$ proves the main text's shifted-normal marginal moment identity. Splitting at the exact incumbent crossing yields $H_C$; an outward crossing enclosure partitions the interval into a definitely below part, an uncertain strip and a definitely above part. Bounding the strip by $[0,m_0]$ preserves validity for all enclosed parameters. Mapping the stability endpoints outward and retaining their common inner interval similarly avoids treating uncertain boundaries as certified.
+
+For the stored-leaf conversion, let $W_C$ denote the exact remainder integral on $C$. The checked $Q_C$, the analytic $B_C$, and $0\le W_C\le H_C$ establish the leaf-remainder interval. Decompose $W_C=W_J+W_{C\setminus J}$. Since $0\le W_{C\setminus J}\le H_{C\setminus J}$ and $0\le W_J\le H_J$, subtraction and intersection give the partial-leaf restriction bound. No value of the conditional reward is recomputed. The leaves partition $[-8,8]$; outside-window probability is part of the unknown region and is not silently discarded.
+
+All inequalities are transported through directed arithmetic. Intersecting two valid enclosures preserves containment, and reusing the earlier accepted selection is therefore expected to preserve its certificate. This consequence is not an independent validation result. The posterior and original leaves are inputs verified by their release hashes, not newly constructed or independently recomputed proofs.
+
+Four additional mathematical checks cover marginal moments against an independent scalar integral, the whole-line identity and low-tail weighted bound, whole/partial stable-leaf conversion, and invalid-input rejection. The regional transformation was executed once on the saved records. The subsequent exact-rational width attribution uses those transformed endpoints only.
+
+For the discontinuity example, use the marginal coupling $Z_2=3Z_1$ where $Z_1$ is lognormal with log-mean $\log(1/4)$ and any positive log-standard deviation. For every $h>0$, $\min(h,3Z_1)\ge\min(h,Z_1)$, with strict inequality on a positive-probability interval. Their expectations are strictly ordered. The declared planning vector may have independent components with these marginal laws, so it is nondegenerate; the comparison coupling is used only to prove marginal expectation order. The raw mean rule switches at $z=1/2$ and the conditional rewards approach different limits there. A global Lipschitz bound for this fixed-policy composition is consequently unavailable.

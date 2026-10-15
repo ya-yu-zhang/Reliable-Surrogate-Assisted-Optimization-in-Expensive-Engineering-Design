@@ -1,0 +1,69 @@
+\subsection{Regional terminal-reward enclosure}\label{sec:regional_value}
+
+The uniform event bound discards a useful property of the two-evaluation objective. For $G_a=m+sX$, define
+\begin{equation}
+h_a(x)=\min\{m_0,\exp(m+sx)\},\quad
+b_a(x)=m_0-h_a(x),\quad
+w_{aj}(x)=\mathbb E[(h_a(x)-Y_j)_+\mid X=x].
+\label{eq:regional_decomposition}
+\end{equation}
+Thus $0\le w_{aj}(x)\le h_a(x)$ and the fixed-$j$ conditional reward is $b_a(x)+w_{aj}(x)$. The first-evaluation baseline is $B_a=\mathbb E[b_a(X)]$. This decomposition uses established expected-improvement identities; the question is how a stable response region restricts the unknown continuation remainder.
+
+Let $S_a$ be any measurable standard-normal response region on which the continuation is certified to be $j$, and let $E_a=S_a^c$. Set
+\begin{equation}
+W_{a,S}=\mathbb E[w_{aj}(X)\mathbf1_{S_a}],\qquad
+H_{a,E}=\mathbb E[h_a(X)\mathbf1_{E_a}].
+\label{eq:regional_quantities}
+\end{equation}
+\paragraph{Regional enclosure.}
+Without identifying the selected action on $E_a$,
+\begin{equation}
+L_a=B_a+W_{a,S}\ \le\ V_a\ \le\
+U_a=B_a+W_{a,S}+H_{a,E}.
+\label{eq:regional_enclosure}
+\end{equation}
+Indeed, the continuation remainder equals $w_{aj}$ on $S_a$ and lies in $[0,h_a]$ elsewhere. Its uncomputed contribution is therefore in $[0,H_{a,E}]$, regardless of response dependence or jumps in the continuation policy. With exact regional quantities the enclosure width is $H_{a,E}$, whereas a symmetric event enclosure can have width $2m_0\mathbb P(E_a)$ before clipping.
+
+The same argument yields the strengthened fixed-reference bound
+\begin{equation}
+|V_a-G_{aj}|\le H_{a,E}\le m_0\mathbb P(E_a),\qquad
+[L_a,U_a]\subseteq[G_{aj}-H_{a,E},G_{aj}+H_{a,E}].
+\label{eq:regional_weighted_event}
+\end{equation}
+For example, if instability occurs only when $Y_a\le\eta m_0$, with $0<\eta<1$, then $H_{a,E}\le\eta m_0\mathbb P(E_a)$. A small first response has already obtained most of the possible terminal improvement, so its remaining adaptation has limited value. This is a mathematical regime, not a claimed empirical property of every recorded branch.
+
+\paragraph{Selection without a complete response partition.}
+For each first action, construct a valid regional interval. If
+\begin{equation}
+\max_{a\ne\hat a}\{U_a-L_{\hat a}\}\le\delta,
+\label{eq:regional_no_projection}
+\end{equation}
+then $\hat a$ has model regret at most $\delta$, irrespective of the unresolved continuation identities outside the stable regions. A singleton menu is accepted trivially. With numerical enclosures, use outward lower bounds for $L_{\hat a}$ and upper bounds for $U_a$. Otherwise, refinement or complete projection can be confined to branches still preventing the selection inequality. The condition provides a decision-level reason to omit a partition; it does not guarantee that omission will be possible on every input.
+
+The endpoints in Equation~\eqref{eq:regional_enclosure} are the infimum and supremum in the reward relaxation that retains $B_a$, $W_{a,S}$ and only $0\le w_a\le h_a$ on $E_a$. This is a precise information-scope statement, not a claim of the tightest interval for the fixed joint Gaussian model. The range argument, by itself, is elementary. The proposed computational mechanism combines it with exact response-stability geometry and a checked finite-menu decision rule.
+
+\paragraph{Why continuity of the fixed-policy value cannot be assumed.}
+Consider $m_0=1$ and raw affine means $z-1/2$ and $0$, with action 1 winning a tie. Then $\pi(z)=1$ for $z\le1/2$ and $\pi(z)=2$ for $z>1/2$. Let the positive planning responses be independent lognormals with equal positive log-standard deviation and log-means $\log(1/4)$ and $\log(3/4)$, independently of the first response. The second response is strictly stochastically larger than the first, so at $h=1/2$ its expected capped minimum is strictly larger. The two one-sided conditional reward limits therefore differ at $z=1/2$. This is an admissible nondegenerate instance of the declared two-model contract with a discontinuous policy-composed reward. Regional enclosures remain valid without a global Lipschitz constant for that composition. The example does not rule out other partition-aware integration or planning methods.
+
+\paragraph{Closed marginal moments and stored-leaf conversion.}
+The additional range requires only a first-response marginal. Write $c=(\log m_0-m)/s$. On a standard-normal interval $[r,t]$, its part below $c$ is
+\begin{equation}
+\mathbb E[\exp(m+sX)\mathbf1_{r<X<t}]
+=\exp(m+s^2/2)\{\Phi(t-s)-\Phi(r-s)\},
+\label{eq:regional_moment}
+\end{equation}
+and its part above $c$ is $m_0\{\Phi(t)-\Phi(r)\}$. Split at $c$ before applying these formulas. For uncertain parameters, the implementation treats the uncertain crossing strip with $[0,m_0]$ and uses a stable region common to all enclosed parameters.
+
+Existing checked fixed-action leaf integrals can be reused. For a leaf $C$, let $Q_C$ enclose its conditional-reward integral, and enclose $B_C=\mathbb E[b_a(X)\mathbf1_C]$ and $H_C=\mathbb E[h_a(X)\mathbf1_C]$ analytically. Then
+\begin{equation}
+\mathcal W_C=(Q_C-B_C)\cap[0,H_C^+]
+\label{eq:regional_leaf_remainder}
+\end{equation}
+encloses the remainder integral. For the possibly partial stable intersection $J=C\cap S_a$,
+\begin{equation}
+\max\{0,\mathcal W_C^- - H_{C\setminus J}^+\}
+\ \le W_J\le\
+\min\{\mathcal W_C^+,H_J^+\}.
+\label{eq:regional_leaf_restriction}
+\end{equation}
+Summing these disjoint contributions and adding the unknown-region bound gives a regional value enclosure without new conditional-reward quadrature. Intersecting it with an already valid interval can only preserve or improve that interval. This conversion is implemented separately from the prospectively frozen v2 solver; its later results must not be assigned the v2 timing or projection counts.

@@ -1,0 +1,733 @@
+{
+  "analysis_sha256": "c52d7e0936b9c632f3cd256d69bd5f3841d673734a4f3cdeb9138be232372010",
+  "audit_source_sha256": "265d8da345fa55798ff771893ea4312db744e24fe28f37d166778964b91ff294",
+  "operation": "exact_rational_width_comparison_of_saved_binary_endpoints",
+  "rows": 89,
+  "baseline_alone_tightens": 25,
+  "regional_addition_tightens": 86,
+  "extra_fraction_of_original_width": {
+    "min": 0.0,
+    "median": 0.2582346291182301,
+    "max": 0.6214858218338994
+  },
+  "extra_fraction_of_baseline_width": {
+    "min": 0.0,
+    "median": 0.2682243291817344,
+    "max": 0.6214858218338994
+  },
+  "no_new_integrals_or_GP_or_physics": true,
+  "branches": [
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r0_t101",
+      "branch": "3696",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.3092627215798937,
+      "extra_fraction_of_baseline_width": 0.39103573093272037
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r0_t101",
+      "branch": "0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.6064158912837385,
+      "extra_fraction_of_baseline_width": 0.6064158912837385
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r1_t101",
+      "branch": "2188",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.14906032089449925,
+      "extra_fraction_of_baseline_width": 0.2783665328391783
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r1_t101",
+      "branch": "4096",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.160526432568093,
+      "extra_fraction_of_baseline_width": 0.2682243291817344
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r1_t101",
+      "branch": "1937",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.318085961090191,
+      "extra_fraction_of_baseline_width": 0.318085961090191
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r4_t101",
+      "branch": "4096",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.5778522836920397,
+      "extra_fraction_of_baseline_width": 0.6051839610409592
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r4_t101",
+      "branch": "2081",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.11561833985302591,
+      "extra_fraction_of_baseline_width": 0.14860972685271132
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r5_t101",
+      "branch": "1946",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.4151464571969818,
+      "extra_fraction_of_baseline_width": 0.4151464571969818
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r5_t101",
+      "branch": "3941",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.4908401614864729,
+      "extra_fraction_of_baseline_width": 0.4908401614864729
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r6_t101",
+      "branch": "3647",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.4157886650205474,
+      "extra_fraction_of_baseline_width": 0.4157886650205474
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r6_t101",
+      "branch": "3704",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.22430098891566874,
+      "extra_fraction_of_baseline_width": 0.22430098891566874
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r6_t101",
+      "branch": "1069",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.07584323589452424,
+      "extra_fraction_of_baseline_width": 0.07584323589452424
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r6_t101",
+      "branch": "4091",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.4821599070222561,
+      "extra_fraction_of_baseline_width": 0.4821599070222561
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r7_t101",
+      "branch": "1624",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.25617317089791053,
+      "extra_fraction_of_baseline_width": 0.25617317089791053
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r7_t101",
+      "branch": "1822",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.011934141858492928,
+      "extra_fraction_of_baseline_width": 0.019356282210786925
+    },
+    {
+      "state": "archived_common_mean__gp_ei_shared_init_r7_t101",
+      "branch": "4037",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.32873839781740766,
+      "extra_fraction_of_baseline_width": 0.32873839781740766
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r0_t101",
+      "branch": "3685",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.37101300928238995,
+      "extra_fraction_of_baseline_width": 0.37101300928238995
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r1_t101",
+      "branch": "1381",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.2805162335906858,
+      "extra_fraction_of_baseline_width": 0.2805162335906858
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r4_t101",
+      "branch": "2741",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.3091678903169862,
+      "extra_fraction_of_baseline_width": 0.3091678903169862
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r4_t101",
+      "branch": "3800",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.26305661061095537,
+      "extra_fraction_of_baseline_width": 0.26305661061095537
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r5_t101",
+      "branch": "1799",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.365425603137606,
+      "extra_fraction_of_baseline_width": 0.365425603137606
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r6_t101",
+      "branch": "1221",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.36396613316725446,
+      "extra_fraction_of_baseline_width": 0.36396613316725446
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r8_t101",
+      "branch": "2794",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.4082556677349667,
+      "extra_fraction_of_baseline_width": 0.4082556677349667
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r9_t101",
+      "branch": "2206",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.22976782696878623,
+      "extra_fraction_of_baseline_width": 0.22976782696878623
+    },
+    {
+      "state": "archived_common_mean__gp_pi_shared_init_r9_t101",
+      "branch": "4008",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.07801885053054523,
+      "extra_fraction_of_baseline_width": 0.13468362947416873
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r0_t101",
+      "branch": "2053",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.0593000647650955,
+      "extra_fraction_of_baseline_width": 0.1354378274957576
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r0_t101",
+      "branch": "836",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.21878507577815937,
+      "extra_fraction_of_baseline_width": 0.21878507577815937
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r1_t101",
+      "branch": "3842",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.05970676287089966,
+      "extra_fraction_of_baseline_width": 0.12270217967614315
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r1_t101",
+      "branch": "3647",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.05094227613309023,
+      "extra_fraction_of_baseline_width": 0.05094227613309023
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r1_t101",
+      "branch": "3180",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.0354545766336448,
+      "extra_fraction_of_baseline_width": 0.0354545766336448
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r1_t101",
+      "branch": "4096",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.06599699025188921,
+      "extra_fraction_of_baseline_width": 0.06599699025188921
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r2_t101",
+      "branch": "2394",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.05549097357398208,
+      "extra_fraction_of_baseline_width": 0.05549097357398208
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r2_t101",
+      "branch": "2603",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.0609349370262518,
+      "extra_fraction_of_baseline_width": 0.0609349370262518
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r2_t101",
+      "branch": "4096",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.5771310943242982,
+      "extra_fraction_of_baseline_width": 0.5771310943242982
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r3_t101",
+      "branch": "2718",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.1367691811074807,
+      "extra_fraction_of_baseline_width": 0.1367691811074807
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r3_t101",
+      "branch": "1259",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": false,
+      "extra_fraction_of_original_width": 0.0,
+      "extra_fraction_of_baseline_width": 0.0
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r4_t101",
+      "branch": "1952",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.4306806890319187,
+      "extra_fraction_of_baseline_width": 0.4306806890319187
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r4_t101",
+      "branch": "4096",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.36689169012822864,
+      "extra_fraction_of_baseline_width": 0.36689169012822864
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r5_t101",
+      "branch": "2645",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.39157947787823977,
+      "extra_fraction_of_baseline_width": 0.39157947787823977
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r5_t101",
+      "branch": "1583",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.3253258918549761,
+      "extra_fraction_of_baseline_width": 0.3253258918549761
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r5_t101",
+      "branch": "4096",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.19895712980736271,
+      "extra_fraction_of_baseline_width": 0.19895712980736271
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r6_t101",
+      "branch": "1973",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.4027529813217996,
+      "extra_fraction_of_baseline_width": 0.4027529813217996
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r6_t101",
+      "branch": "4096",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.0698228240051568,
+      "extra_fraction_of_baseline_width": 0.13311969760136366
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r6_t101",
+      "branch": "2917",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.13131434545203102,
+      "extra_fraction_of_baseline_width": 0.26546387691096096
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r7_t101",
+      "branch": "3803",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.09065174990985748,
+      "extra_fraction_of_baseline_width": 0.09065174990985748
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r7_t101",
+      "branch": "2147",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.06223684438239237,
+      "extra_fraction_of_baseline_width": 0.06223684438239237
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r7_t101",
+      "branch": "1821",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.05164667995539697,
+      "extra_fraction_of_baseline_width": 0.05164667995539697
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r7_t101",
+      "branch": "4096",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.05352895608933692,
+      "extra_fraction_of_baseline_width": 0.06897994425515219
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r8_t101",
+      "branch": "2579",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.29332267145329166,
+      "extra_fraction_of_baseline_width": 0.29332267145329166
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r8_t101",
+      "branch": "3888",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.2539543602766631,
+      "extra_fraction_of_baseline_width": 0.2539543602766631
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r9_t101",
+      "branch": "1209",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.5018601080738907,
+      "extra_fraction_of_baseline_width": 0.5018601080738907
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r9_t101",
+      "branch": "1119",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.2935049238544572,
+      "extra_fraction_of_baseline_width": 0.34745244272751946
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r9_t101",
+      "branch": "1145",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.06457738293846901,
+      "extra_fraction_of_baseline_width": 0.06457738293846901
+    },
+    {
+      "state": "archived_common_mean__gp_ucb_shared_init_r9_t101",
+      "branch": "4096",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.12336288749781216,
+      "extra_fraction_of_baseline_width": 0.16986393612206388
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_ei",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.020998387533495817,
+      "extra_fraction_of_baseline_width": 0.020998387533495817
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_ei",
+      "branch": "b1",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.5523756453336449,
+      "extra_fraction_of_baseline_width": 0.5523756453336449
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_lcb",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.43631647605627855,
+      "extra_fraction_of_baseline_width": 0.43631647605627855
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_lcb",
+      "branch": "b1",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.5502827904293458,
+      "extra_fraction_of_baseline_width": 0.5502827904293458
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_pi",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.30878606321061636,
+      "extra_fraction_of_baseline_width": 0.30878606321061636
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r11_pi",
+      "branch": "b1",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.31710099023671023,
+      "extra_fraction_of_baseline_width": 0.31710099023671023
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r12_ei",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.3939686483940768,
+      "extra_fraction_of_baseline_width": 0.3939686483940768
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r12_ei",
+      "branch": "b1",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.5146667824889284,
+      "extra_fraction_of_baseline_width": 0.5146667824889284
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r12_pi",
+      "branch": "b0",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.05848263466724009,
+      "extra_fraction_of_baseline_width": 0.14502021030624765
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r12_pi",
+      "branch": "b1",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.04730538655127811,
+      "extra_fraction_of_baseline_width": 0.08031698655116554
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_ei",
+      "branch": "b0",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.01619424459879743,
+      "extra_fraction_of_baseline_width": 0.03722383763896517
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_ei",
+      "branch": "b2",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.11188292004944256,
+      "extra_fraction_of_baseline_width": 0.244950900256208
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_lcb",
+      "branch": "b0",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.030549727386013508,
+      "extra_fraction_of_baseline_width": 0.042480387445527935
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_lcb",
+      "branch": "b1",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.07449548379333341,
+      "extra_fraction_of_baseline_width": 0.16297460786086723
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_lcb",
+      "branch": "b2",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.46338871354464634,
+      "extra_fraction_of_baseline_width": 0.46338871354464634
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_pi",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.39666540646808457,
+      "extra_fraction_of_baseline_width": 0.39666540646808457
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_pi",
+      "branch": "b1",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.6077648575630485,
+      "extra_fraction_of_baseline_width": 0.6077648575630485
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r14_pi",
+      "branch": "b2",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.6214858218338994,
+      "extra_fraction_of_baseline_width": 0.6214858218338994
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_ei",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.3049679702351566,
+      "extra_fraction_of_baseline_width": 0.3049679702351566
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_ei",
+      "branch": "b1",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.2582346291182301,
+      "extra_fraction_of_baseline_width": 0.2582346291182301
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_ei",
+      "branch": "b2",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.4341464235404857,
+      "extra_fraction_of_baseline_width": 0.4341464235404857
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_lcb",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.2897585703695927,
+      "extra_fraction_of_baseline_width": 0.2897585703695927
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_lcb",
+      "branch": "b1",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.5580189532821246,
+      "extra_fraction_of_baseline_width": 0.5580189532821246
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r15_pi",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.14655035915837014,
+      "extra_fraction_of_baseline_width": 0.14655035915837014
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r17_ei",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.17527676134069858,
+      "extra_fraction_of_baseline_width": 0.17527676134069858
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r17_lcb",
+      "branch": "b0",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": false,
+      "extra_fraction_of_original_width": 0.0,
+      "extra_fraction_of_baseline_width": 0.0
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r17_lcb",
+      "branch": "b1",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.2917631381916608,
+      "extra_fraction_of_baseline_width": 0.2917631381916608
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r17_pi",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 1.2473249034690204e-05,
+      "extra_fraction_of_baseline_width": 1.2473249034690204e-05
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_ei",
+      "branch": "b0",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": false,
+      "extra_fraction_of_original_width": 0.0,
+      "extra_fraction_of_baseline_width": 0.0
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_ei",
+      "branch": "b1",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.017239918055934507,
+      "extra_fraction_of_baseline_width": 0.0480224116627443
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_ei",
+      "branch": "b2",
+      "baseline_alone_tightens": true,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.008047976014560563,
+      "extra_fraction_of_baseline_width": 0.018276075693718315
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_lcb",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.20879633311556456,
+      "extra_fraction_of_baseline_width": 0.20879633311556456
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_lcb",
+      "branch": "b1",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.5894082099654598,
+      "extra_fraction_of_baseline_width": 0.5894082099654598
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_pi",
+      "branch": "b0",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.5386487153584822,
+      "extra_fraction_of_baseline_width": 0.5386487153584822
+    },
+    {
+      "state": "previous_holdout__beam_holdout_r18_pi",
+      "branch": "b1",
+      "baseline_alone_tightens": false,
+      "regional_addition_tightens": true,
+      "extra_fraction_of_original_width": 0.5556427107686464,
+      "extra_fraction_of_baseline_width": 0.5556427107686464
+    }
+  ]
+}

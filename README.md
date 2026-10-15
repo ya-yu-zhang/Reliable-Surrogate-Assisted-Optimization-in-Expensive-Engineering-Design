@@ -17,6 +17,12 @@ The scientific baseline remains `58f539c2d0738b20c7d0d4889fe8d808a03a3019`; work
 
 Numerical reproduction uses the released snapshots and `python -m src.reproduce_positive_rollout_v2 --out results/positive_rollout_v2_reproduction`. Historical-journal revalidation for paid outcomes needs the corresponding journals; the checked outcome extracts are included. Current source checks do not certify visual layout. Affiliations b/c, factual submission fields and reviewer access remain pending; `final_submit_ready` remains false.
 
+### Regional-value closure, 15 October
+
+The active manuscript now derives regional terminal-reward enclosures and a finite-menu selection condition. The subsequent post hoc conversion reuses 89 checked fixed-action certificates, narrows all their value intervals by a median 37.1%, and narrows 86 beyond a baseline-only constraint. It performs no GP reconstruction or new conditional-reward integration. Original v2 choices, 114/25 projection counts, unfavorable timing and mixed engineering outcomes remain unchanged. Shared preparation already uses archived domains; no from-scratch identification saving is claimed.
+
+See `paper/engineering_optimization/contribution_closure_20261015/REGIONAL_VALUE_CONTRIBUTION_AND_CLOSURE.md` and `results/regional_value_closure_20261015/`. Reproduction of this conversion uses `python -m src.postprocess_rollout_regional_enclosure --out results/regional_value_reproduction`; original source files must be present. Scientific work is closed at this scope; no further experiments are planned. Required author facts, private reviewer access and current layout remain unfinished; journal acceptance or sufficient originality is not certified.
+
 ### Historical 13 October preparation record
 
 The active target is **Engineering Optimization**. Current manuscript sources are

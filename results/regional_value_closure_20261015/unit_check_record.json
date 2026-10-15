@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-15",
+  "command": "python -m unittest tests.test_rollout_regional_enclosure -v",
+  "current_return_code": 0,
+  "test_groups_passed": 4,
+  "elapsed_seconds": 0.032,
+  "first_fixture_check": {
+    "return_code": 1,
+    "failing_test": "test_conversion_contains_known_fixed_value",
+    "reason": "Default scipy quad relative tolerance gave a wider oracle interval than the synthetic width assertion",
+    "correction": "Set oracle epsrel=1e-13 alongside epsabs=1e-13; no solver or acceptance-threshold change",
+    "occurred_before_engineering_record_processing": true
+  },
+  "checks": [
+    "capped_moment_against_independent_integral",
+    "analytic_whole_line_and_low_tail",
+    "whole_and_partial_stable_leaf_conversion",
+    "invalid_input_rejection"
+  ],
+  "source_sha256": {
+    "src/rollout_regional_enclosure.py": "f61ff0af9d05fd83cbe4a4623db6a56d5a9be93d7d66885016537313ce45bfba",
+    "tests/test_rollout_regional_enclosure.py": "10da7e0be7ab655acb481ddaf2f294b04fc8434acbb442c5da0ecc1c94857949"
+  },
+  "new_physical_evaluations": 0,
+  "new_GP_reconstructions": 0
+}
