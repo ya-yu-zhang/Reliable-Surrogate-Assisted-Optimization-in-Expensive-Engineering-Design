@@ -5,8 +5,8 @@
   "source_files": [
     {
       "path": "source/paper/engineering_optimization/EO_manuscript.tex",
-      "bytes": 13094,
-      "sha256": "ee1b20497a59f10bf8adc25607e929ffdf4944f9a12837bb2202055620c5af5b",
+      "bytes": 13488,
+      "sha256": "3ca314cba1eb4bdef6a25817d062bee62baec9d73058f8168f0c502a73126756",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -135,7 +135,7 @@
   "bibliography_entries": 46,
   "bibtex_return_code": 0,
   "bibtex_diagnostics": [],
-  "abstract_words": 142,
+  "abstract_words": 150,
   "previous_main_byte_identical": true,
   "historical_supp_numeric_rows_preserved": 251,
   "historical_supplement_prose_revised": true,
@@ -173,6 +173,12 @@
     "S5",
     "S6"
   ],
+  "author_instructions_reviewed_from_user_provided_copy": true,
+  "format_free_initial_submission_confirmed": true,
+  "contribution_statement_words": 78,
+  "manuscript_source_word_count_estimate": 3517,
+  "official_cover_template_body_retrieved": false,
+  "EO_exclusive_LaTeX_template_required_for_initial_submission": false,
   "lazy_source_before_execution_commit": "8de86bbe1aeb1568bba754609cf10b8d093094c8",
   "lazy_results_commit": "578e00482aff3d65bde4bd422b60c527803e6e22",
   "lazy_frozen_clean_inputs_verified": 43,

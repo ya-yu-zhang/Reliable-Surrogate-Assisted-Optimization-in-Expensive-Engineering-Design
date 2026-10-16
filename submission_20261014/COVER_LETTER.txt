@@ -1,5 +1,5 @@
 16 October 2026
-Preparation copy: affiliations b/c, reviewer access and final layout remain to be completed.
+Preparation copy: required author contact fields, affiliations b/c and final submission files remain to be completed. Transfer the content into the official journal cover-letter template before submission.
 
 Editors, Engineering Optimization
 
@@ -7,11 +7,23 @@ Re: Local Response Stability for Certified Two-Step Rollout in Engineering Optim
 
 Dear Editors,
 
-The manuscript presents a finite-menu rollout algorithm in which the first engineering design is optimized under a prescribed response-dependent continuation. Local response-stability certification, conditional-posterior construction and reward integration are scheduled through a common value-uncertainty calculation. Uncomputed contributions are enclosed by regional terminal-reward bounds, allowing the first-action maximization to stop at a checked model-value tolerance before the continuation partition is complete. The selection guarantee covers positive completions of uncomputed conditional laws, and policy-switch error is separated from smooth integration error.
+Please consider this manuscript as a Research Article.
 
-The engineering application uses a fixed-volume MBB beam workflow. Code and 43 clean training snapshots were frozen before one paired comparison. Both routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157; checked execution takes 12.23 s and 10.73 s, respectively, plus shared preparation. Previously paid two-evaluation outcomes provide the engineering comparison and remain mixed. The paper contributes a certified computational method for the specified engineering decision problem.
+Author institutional contacts
+Shu-Chuan Chu — institutional email: 100130@nuist.edu.cn; institutional profile: [required].
+Ya-Yu Zhang — institutional email: [required]; institutional profile: [required].
+Zhenyu Meng — institutional email: [required]; institutional profile: [required].
+Jia Zhao — institutional email: [required]; institutional profile: [required].
 
-The contribution addresses the journal's focus on numerical optimization and engineering decision support: a checked stopping rule and selective conditional computation are coupled to the next feasible structural design selected for compliance evaluation. The method is compared conceptually with established two-step optimization, rollout, affine-envelope and epsilon-GP planning. The supplement supplies proofs, numerical evidence, earlier engineering findings and source-availability information. The private preparation branch preserves code, inputs and complete current numerical records. Known AI assistance is disclosed.
+Relation to the journal's aims and scope
+The manuscript concerns numerical optimization of a first engineering design under a response-dependent continuation. Local action-identity certification, conditional-posterior queries and reward integration are coupled through a checked regret stopping rule. The optimization step is applied to fixed-volume MBB beam compliance, where the first action specifies the next feasible structural design for evaluation. This connects an algorithmic development in finite-menu optimization to engineering decision support.
+
+Statement of contribution (78 words)
+A finite-menu rollout algorithm is developed for engineering design decisions under a response-dependent continuation. Local action-identity certification, conditional-posterior queries and reward integration are jointly scheduled using regional terminal-reward bounds. First-action selection is certified to a prescribed model-value tolerance before the continuation partition is complete. The guarantee covers admissible positive completions, with policy-switch and smooth-integration errors treated separately. In fixed-volume beam compliance decisions, both evaluated routes certify all 43 archived states; regional bounds reduce cell operations and conditional-posterior requests.
+
+The paired calculation uses frozen code and 43 clean training snapshots. Regional and uniform-reward routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional-posterior constructions from 161 to 157. Checked execution takes 12.23 s and 10.73 s, respectively, plus shared preparation. Previously paid two-evaluation physical outcomes remain mixed.
+
+The supplement supplies proofs, numerical records and earlier engineering findings. The private preparation branch retains code, inputs and current numerical records. Generative AI assistance is disclosed in the manuscript.
 
 Corresponding author:
 Shu-Chuan Chu

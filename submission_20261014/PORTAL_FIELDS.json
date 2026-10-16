@@ -1,12 +1,12 @@
 {
   "journal": "Engineering Optimization",
   "journal_homepage": "https://www.tandfonline.com/journals/geno20",
-  "article_type_suggested": "Research article; confirm actual portal dropdown",
+  "article_type_suggested": "Research Article; accepted type confirmed from user-provided EO author instructions; actual portal dropdown not inspected",
   "peer_review": "single blind; confirmed from official EO aims and scope on 16 October 2026",
   "title": "Local Response Stability for Certified Two-Step Rollout in Engineering Optimization",
-  "abstract_tex": "Two-step rollout selects a first engineering design by anticipating a response-dependent continuation. A finite-menu algorithm is developed in which response-stability regions are certified and conditional posteriors are constructed for encountered actions. Regional terminal-reward bounds enclose the contribution of uncomputed regions and certify first-action selection to a prescribed model-value tolerance. The certificate covers positive completions of uncomputed conditional laws, and a piecewise error bound separates policy switches from smooth integration. Code and clean training inputs were frozen before one paired evaluation on 43 previously observed beam-design states. Both regional and uniform-reward routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. Checked execution takes 12.23 and 10.73 seconds, respectively, plus shared preparation. Certified decision computation is established for a finite structural-design problem; previously paid physical outcomes remain mixed.",
-  "abstract_plaintext": "Two-step rollout selects a first engineering design by anticipating a response-dependent continuation. A finite-menu algorithm is developed in which response-stability regions are certified and conditional posteriors are constructed for encountered actions. Regional terminal-reward bounds enclose the contribution of uncomputed regions and certify first-action selection to a prescribed model-value tolerance. The certificate covers positive completions of uncomputed conditional laws, and a piecewise error bound separates policy switches from smooth integration. Code and clean training inputs were frozen before one paired evaluation on 43 previously observed beam-design states. Both regional and uniform-reward routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. Checked execution takes 12.23 and 10.73 seconds, respectively, plus shared preparation. Certified decision computation is established for a finite structural-design problem; previously paid physical outcomes remain mixed.",
-  "abstract_whitespace_word_count": 142,
+  "abstract_tex": "Two-step rollout selects a first engineering design by anticipating a response-dependent continuation. A finite-menu algorithm is developed in which response-stability regions are certified and conditional posteriors are constructed for encountered actions. Regional terminal-reward bounds enclose the contribution of uncomputed regions and certify first-action selection to a prescribed model-value tolerance. The certificate covers positive completions of uncomputed conditional laws, and a piecewise error bound separates policy switches from smooth integration. Code and clean training inputs were frozen before one paired evaluation on 43 previously observed beam-design states. The designs satisfy a prescribed structural volume constraint. Both regional and uniform-reward routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. Checked execution takes 12.23 and 10.73 seconds, respectively, plus shared preparation. Certified decision computation is established for a finite structural-design problem; previously paid physical outcomes remain mixed.",
+  "abstract_plaintext": "Two-step rollout selects a first engineering design by anticipating a response-dependent continuation. A finite-menu algorithm is developed in which response-stability regions are certified and conditional posteriors are constructed for encountered actions. Regional terminal-reward bounds enclose the contribution of uncomputed regions and certify first-action selection to a prescribed model-value tolerance. The certificate covers positive completions of uncomputed conditional laws, and a piecewise error bound separates policy switches from smooth integration. Code and clean training inputs were frozen before one paired evaluation on 43 previously observed beam-design states. The designs satisfy a prescribed structural volume constraint. Both regional and uniform-reward routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. Checked execution takes 12.23 and 10.73 seconds, respectively, plus shared preparation. Certified decision computation is established for a finite structural-design problem; previously paid physical outcomes remain mixed.",
+  "abstract_whitespace_word_count": 150,
   "keywords": [
     "surrogate-assisted engineering optimization",
     "two-step rollout",
@@ -20,28 +20,32 @@
       "affiliation": "School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
       "corresponding": true,
       "email": "100130@nuist.edu.cn",
-      "ORCID": null
+      "ORCID": null,
+      "institutional_profile_url": null
     },
     {
       "name": "Ya-Yu Zhang",
       "affiliation": "School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
       "corresponding": false,
       "email": null,
-      "ORCID": null
+      "ORCID": null,
+      "institutional_profile_url": null
     },
     {
       "name": "Zhenyu Meng",
       "affiliation": null,
       "corresponding": false,
       "email": null,
-      "ORCID": null
+      "ORCID": null,
+      "institutional_profile_url": null
     },
     {
       "name": "Jia Zhao",
       "affiliation": null,
       "corresponding": false,
       "email": null,
-      "ORCID": null
+      "ORCID": null,
+      "institutional_profile_url": null
     }
   ],
   "funding": "No specific funding, inherited manuscript statement; factual confirmation required before submission",
@@ -53,15 +57,36 @@
   "actual_submission": false,
   "manuscript_id": null,
   "ready_for_final_submit": false,
-  "preparation_status": "six_point_prose_scope_figure_review_completed; official_publisher_template_hashes_verified; EO_specific_instructions_AI_score_and_current_layout_not_certified; affiliations_b_c_and_reviewer_access_pending",
+  "preparation_status": "150_word_abstract_78_word_contribution_and_format_free_author_instructions_applied; institutional_contacts_affiliations_official_cover_template_and_final_submission_files_pending",
   "required_author_facts_missing": [
     {
+      "author": "Shu-Chuan Chu",
+      "fields": [
+        "institutional profile URL"
+      ]
+    },
+    {
+      "author": "Ya-Yu Zhang",
+      "fields": [
+        "institutional email",
+        "institutional profile URL"
+      ]
+    },
+    {
       "author": "Zhenyu Meng",
-      "field": "full affiliation b"
+      "fields": [
+        "institutional email",
+        "institutional profile URL",
+        "full affiliation b"
+      ]
     },
     {
       "author": "Jia Zhao",
-      "field": "full affiliation c"
+      "fields": [
+        "institutional email",
+        "institutional profile URL",
+        "full affiliation c"
+      ]
     }
   ],
   "inherited_statement_provenance": {
@@ -80,5 +105,23 @@
   },
   "six_point_review": "submission_20261014/style_scope_figures_20261016/REVIEW_AND_CHANGES.md",
   "submission_portal": "https://rp.tandfonline.com/submission/create?journalCode=GENO",
-  "EO_scope_alignment_confirmed": true
+  "EO_scope_alignment_confirmed": true,
+  "author_instructions_provided_by_user": true,
+  "format_free_initial_submission": true,
+  "contribution_statement": "A finite-menu rollout algorithm is developed for engineering design decisions under a response-dependent continuation. Local action-identity certification, conditional-posterior queries and reward integration are jointly scheduled using regional terminal-reward bounds. First-action selection is certified to a prescribed model-value tolerance before the continuation partition is complete. The guarantee covers admissible positive completions, with policy-switch and smooth-integration errors treated separately. In fixed-volume beam compliance decisions, both evaluated routes certify all 43 archived states; regional bounds reduce cell operations and conditional-posterior requests.",
+  "contribution_statement_words": 78,
+  "main_word_count": {
+    "method": "Pandoc LaTeX reader and citeproc to JSON; count Str tokens in body and metadata; exclude Math and Raw nodes. Word-count annotation is excluded.",
+    "source_based_estimate": true,
+    "not_a_typeset_PDF_wordcount": true,
+    "body_including_tables_and_cited_references": 3352,
+    "metadata_including_abstract_and_title": 165,
+    "total_text_tokens": 3517,
+    "declared_rounded_count": 3520,
+    "journal_typical_limit_including_tables_references_captions": 7000,
+    "within_typical_limit": true,
+    "source_main_sha256_before_annotation": "41f6bf80bb81b6eab194b6d19cf1f1a39e3d863346dbd5ea4913082a584b5643",
+    "expanded_input_sha256": "8f215c88970d23bafb47f0e09dc72a72c467c2acb341078de887e7deb4d19a57",
+    "math_text_conversion_warnings_do_not_change_manuscript_equations": true
+  }
 }

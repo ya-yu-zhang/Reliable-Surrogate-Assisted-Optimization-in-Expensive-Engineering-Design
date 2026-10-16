@@ -113,9 +113,10 @@
   "submission_ready": false,
   "remaining": [
     "Full affiliation b for Zhenyu Meng and full affiliation c for Jia Zhao",
-    "Actual reviewer access to the private materials or release of the prepared numerical profile",
-    "Current-source compilation and final layout, including clipped axis labels in Figures S5/S6",
-    "EO-specific current author-instruction/template details remain unverified after HTTP 403"
+    "Institutional email addresses for Ya-Yu Zhang, Zhenyu Meng and Jia Zhao; institutional profile URLs for all four authors",
+    "Transfer prepared cover-letter content into the official journal template; online template body could not be retrieved",
+    "Arrange data access upon reasonable request or release the prepared numerical profile",
+    "Final source compilation and figure-label correction; LaTeX submission PDF and source ZIP remain deferred by user"
   ],
   "claim_limits": [
     "One deterministic beam model family with two added force conditions",
@@ -599,7 +600,7 @@
   },
   "writing_revision_20261016": {
     "pre_edit_commit": "3b2c841397373cc58f2a27bd47ad0ac078443738",
-    "abstract_words": 142,
+    "abstract_words": 150,
     "proofs_before_historical_supplement": true,
     "existing_numeric_table_rows_preserved": 460,
     "display_math_blocks_preserved": 45,
@@ -637,9 +638,10 @@
   },
   "publication_preparation_remaining_20261016": [
     "Full affiliation b for Zhenyu Meng and full affiliation c for Jia Zhao",
-    "Actual reviewer access to the private materials or release of the prepared numerical profile",
-    "Current-source compilation and final layout, including clipped axis labels in Figures S5/S6",
-    "EO-specific current author-instruction/template details remain unverified after HTTP 403"
+    "Institutional email addresses for Ya-Yu Zhang, Zhenyu Meng and Jia Zhao; institutional profile URLs for all four authors",
+    "Transfer prepared cover-letter content into the official journal template; online template body could not be retrieved",
+    "Arrange data access upon reasonable request or release the prepared numerical profile",
+    "Final source compilation and figure-label correction; LaTeX submission PDF and source ZIP remain deferred by user"
   ],
   "historical_remaining_before_final_method_20261016": [
     "Optimization increment remains unestablished: two-reference physical full-pool envelope fails root-tie sharpness on all43 nontrivial development states; distinguish point-bound quality from candidate-set pessimism before further experiments",
@@ -658,7 +660,7 @@
     "record": "submission_20261014/style_scope_figures_20261016/CHECK_RESULTS.json",
     "active_tex_files": 18,
     "first_person_prose_matches": 0,
-    "abstract_words": 142,
+    "abstract_words": 150,
     "figures_inspected": 14,
     "S10_trajectory_attribution_corrected": true,
     "official_publisher_template_hashes_match": true,
@@ -698,5 +700,83 @@
     "journal_acceptance_guaranteed": false,
     "additional_experiments_planned": 0,
     "author_instructions_or_template_requirements_verified_by_scope": false
+  },
+  "author_instructions_review_20261016": {
+    "source": "User-attached EO Instructions for authors; updated 19-06-2026",
+    "attached_filename": "粘贴的 Markdown (1).md",
+    "attached_sha256": "910369a0c88c5bc0bd9f4cd6df4018528f8dd2c1bb49970dc5a4f2d9c58bf082",
+    "official_instructions_url": "https://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=geno20",
+    "retrieval_route": "Read user-provided copy; live author-instructions endpoint remains HTTP 403.",
+    "official_cover_letter_template_url": "https://docs.google.com/document/d/1DuQVIiQCnJmWC0ojVbBC_KrR_3O0MlIbTZwsP_syW3k/edit?usp=sharing",
+    "official_cover_letter_template_body_accessible": false,
+    "cover_letter_prepared_to_three_required_content_categories": true,
+    "official_cover_letter_template_fully_applied": false,
+    "contribution_statement_words": 78,
+    "contribution_statement_limit": 100,
+    "abstract_words": 150,
+    "abstract_structure": "unstructured",
+    "keywords": 5,
+    "format_free_initial_submission": true,
+    "LaTeX_initial_submission_allowed": true,
+    "EO_exclusive_LaTeX_template_required_by_supplied_instructions": false,
+    "consistent_reference_style_allowed_at_initial_submission": true,
+    "bibliography_file_included": true,
+    "word_count": {
+      "method": "Pandoc LaTeX reader and citeproc to JSON; count Str tokens in body and metadata; exclude Math and Raw nodes. Word-count annotation is excluded.",
+      "source_based_estimate": true,
+      "not_a_typeset_PDF_wordcount": true,
+      "body_including_tables_and_cited_references": 3352,
+      "metadata_including_abstract_and_title": 165,
+      "total_text_tokens": 3517,
+      "declared_rounded_count": 3520,
+      "journal_typical_limit_including_tables_references_captions": 7000,
+      "within_typical_limit": true,
+      "source_main_sha256_before_annotation": "41f6bf80bb81b6eab194b6d19cf1f1a39e3d863346dbd5ea4913082a584b5643",
+      "expanded_input_sha256": "8f215c88970d23bafb47f0e09dc72a72c467c2acb341078de887e7deb4d19a57",
+      "math_text_conversion_warnings_do_not_change_manuscript_equations": true
+    },
+    "optional_alt_text_is_not_an_initial_submission_requirement": true,
+    "generative_AI_declaration_is_separate_section": true,
+    "disclosure_statement_present": true,
+    "data_request_contact_added": true,
+    "data_policy": "share upon reasonable request",
+    "entire_private_Git_history_publication_required": false,
+    "missing_author_contacts": [
+      {
+        "author": "Shu-Chuan Chu",
+        "fields": [
+          "institutional profile URL"
+        ]
+      },
+      {
+        "author": "Ya-Yu Zhang",
+        "fields": [
+          "institutional email",
+          "institutional profile URL"
+        ]
+      },
+      {
+        "author": "Zhenyu Meng",
+        "fields": [
+          "institutional email",
+          "institutional profile URL",
+          "full affiliation b"
+        ]
+      },
+      {
+        "author": "Jia Zhao",
+        "fields": [
+          "institutional email",
+          "institutional profile URL",
+          "full affiliation c"
+        ]
+      }
+    ],
+    "LaTeX_submission_PDF_and_source_ZIP_required_at_portal": true,
+    "PDF_or_ZIP_work_deferred_under_user_instruction": true,
+    "figure_S5_S6_label_clipping_remaining": true,
+    "no_additional_experiments_needed_for_these_preparation_changes": true,
+    "actual_submission": false,
+    "final_submit_ready": false
   }
 }

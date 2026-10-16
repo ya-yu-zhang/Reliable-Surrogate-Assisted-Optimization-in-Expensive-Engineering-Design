@@ -82,7 +82,10 @@ def main():
     assert abstract==portal['abstract_tex'] and plain==portal['abstract_plaintext']
     assert plain in (SUB/'ABSTRACT_AND_KEYWORDS.txt').read_text()
     assert len(plain.split())==portal['abstract_whitespace_word_count']
-    assert len(plain.split())<=150
+    assert len(plain.split())==150
+    contribution=(SUB/'CONTRIBUTION_STATEMENT.txt').read_text().strip()
+    assert len(contribution.split())<=100
+    assert contribution in (SUB/'COVER_LETTER.txt').read_text()
     six_review=SUB/'style_scope_figures_20261016'
     six=json.loads((six_review/'CHECK_RESULTS.json').read_text())
     for p,expected in six['active_tex_sha256'].items():
@@ -152,6 +155,12 @@ def main():
         below_10_percent_AI_detection_certified=False,official_publisher_template_hashes_match=True,
         EO_specific_current_template_requirements_fully_verified=False,
         figure_axis_label_clipping_pending=['S5','S6'])
+    record.update(author_instructions_reviewed_from_user_provided_copy=True,
+        format_free_initial_submission_confirmed=True,
+        contribution_statement_words=len(contribution.split()),
+        manuscript_source_word_count_estimate=3517,
+        official_cover_template_body_retrieved=False,
+        EO_exclusive_LaTeX_template_required_for_initial_submission=False)
     lazy=ROOT/'results/lazy_regional_20261015'
     if lazy.exists():
         config_path=ROOT/'configs/lazy_regional_20261015.json'
@@ -198,6 +207,7 @@ def main():
     current=set(paths)|{ROOT/'README.md',ROOT/'src/verify_rollout_closure_sources.py',
         ROOT/'paper/engineering_optimization/work_status.json',PAPER/'work_status.json',
         SUB/'PORTAL_FIELDS.json',SUB/'ABSTRACT_AND_KEYWORDS.txt',SUB/'COVER_LETTER.txt',
+        SUB/'CONTRIBUTION_STATEMENT.txt',
         SUB/'CONTRIBUTION_CHECK_20261015.json',SUB/'REVIEW_REPRODUCTION.md',
         SUB/'SOURCE_VERIFICATION.json',REVIEW/'SOURCE_VERIFICATION.json',
         REVIEW/'STYLE_BASELINE.json',REVIEW/'WRITING_REVISION.md'}

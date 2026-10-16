@@ -2,7 +2,7 @@
 
 Read the saved evidence before considering reproduction. This revision changes manuscript organization and scientific explanation; it performs no new algorithm run, posterior reconstruction, physical evaluation, bound query, fit, retry, replacement or independent optimization sample. Both witness attempts are exhausted. Do not invoke physical or optimization experiment entry points for this review.
 
-The 16 October prose revision places the current proofs in Supplement A1, retains historical S numbering and all recorded numerical rows, and synchronizes the current 142-word abstract. The six-point prose, figure and template review is recorded in `submission_20261014/style_scope_figures_20261016/REVIEW_AND_CHANGES.md`.
+The 16 October prose revision places the current proofs in Supplement A1, retains historical S numbering and all recorded numerical rows, and synchronizes the current 150-word abstract. The six-point prose, figure and template review is recorded in `submission_20261014/style_scope_figures_20261016/REVIEW_AND_CHANGES.md`.
 
 ## Read the current paper
 
@@ -62,3 +62,5 @@ The repository is private; its URL is provenance and does not grant reviewer acc
 Publisher class/style files and historical figure assets retain their own availability and rights. A source/BibTeX check is not compilation or visual-layout approval. The selected public numerical profile now has scoped MIT code and CC-BY-4.0 data grants in `LICENSE.md` and `public_release/MANIFEST.json`. No PDF/ZIP, template recovery, repository visibility change or journal submission was performed. Affiliations b/c and current layout remain unfinished. Existing funding/conflict wording is inherited from the supplied manuscript. No all-author approval task is reinstated.
 
 The final closeout record is `submission_20261014/finalization_20261016/PROJECT_CLOSEOUT.md`. The runtime lacks article.cls, so current layout verification remains outstanding.
+
+The user-provided EO author instructions confirm format-free initial submission, a 150-word unstructured abstract, 3–5 keywords and an official cover-letter template with institutional contacts and a contribution statement of at most 100 words. The prepared statement is 78 words. Current main text is approximately 3,520 source-counted words including tables and cited references. See the author-instructions section of the current six-point review for remaining author contacts and the deferred actual PDF/source-ZIP submission files.

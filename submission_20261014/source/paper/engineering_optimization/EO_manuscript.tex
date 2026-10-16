@@ -30,8 +30,9 @@
 \thanks{CONTACT Shu-Chuan Chu. Email: \href{mailto:100130@nuist.edu.cn}{100130@nuist.edu.cn}}
 }
 \maketitle
+\noindent\textbf{Word count:} approximately 3,520 words, including tables, captions and cited references (source-based count; mathematical notation excluded).\par
 \begin{abstract}
-Two-step rollout selects a first engineering design by anticipating a response-dependent continuation. A finite-menu algorithm is developed in which response-stability regions are certified and conditional posteriors are constructed for encountered actions. Regional terminal-reward bounds enclose the contribution of uncomputed regions and certify first-action selection to a prescribed model-value tolerance. The certificate covers positive completions of uncomputed conditional laws, and a piecewise error bound separates policy switches from smooth integration. Code and clean training inputs were frozen before one paired evaluation on 43 previously observed beam-design states. Both regional and uniform-reward routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. Checked execution takes 12.23 and 10.73 seconds, respectively, plus shared preparation. Certified decision computation is established for a finite structural-design problem; previously paid physical outcomes remain mixed.
+Two-step rollout selects a first engineering design by anticipating a response-dependent continuation. A finite-menu algorithm is developed in which response-stability regions are certified and conditional posteriors are constructed for encountered actions. Regional terminal-reward bounds enclose the contribution of uncomputed regions and certify first-action selection to a prescribed model-value tolerance. The certificate covers positive completions of uncomputed conditional laws, and a piecewise error bound separates policy switches from smooth integration. Code and clean training inputs were frozen before one paired evaluation on 43 previously observed beam-design states. The designs satisfy a prescribed structural volume constraint. Both regional and uniform-reward routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. Checked execution takes 12.23 and 10.73 seconds, respectively, plus shared preparation. Certified decision computation is established for a finite structural-design problem; previously paid physical outcomes remain mixed.
 \end{abstract}
 \begin{keywords}
 surrogate-assisted engineering optimization; two-step rollout; Gaussian processes; response stability; validated numerical integration
@@ -80,7 +81,7 @@ The supplement separates the earlier action-set, full-projection and certificate
 
 Response-stability-guided regional value enclosures yield a finite-menu rollout algorithm with on-demand conditional-posterior construction. The algorithm certifies first-action selection for every admissible positive completion of uncomputed conditional laws, and its error analysis treats policy switches separately from smooth integration. Both routes certify all 43 beam-design states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157; their checked stage takes 12.23 s compared with 10.73 s for the uniform control. These findings establish a certified computational method for the specified two-evaluation engineering decision.
 
-\section*{Acknowledgements}
+\section*{Declaration of Generative AI Use}
 
 OpenAI Codex assisted software development and verification, computational workflow execution and recovery, evidence integration, formal argument drafting, manuscript preparation and language revision. The authors remain responsible for the research, statements and interpretations. The current preparation uses a GPT-6-based Codex agent; exact versions and full prompt histories of earlier assistance were not retained. 
 
@@ -94,7 +95,7 @@ The following contribution assignment is proposed for author confirmation: conce
 
 \section*{Availability of Data and Materials}
 
-Code, clean inputs and numerical records are held at \url{https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design}, branch \texttt{research/contribution-closure-20261014-c5d11c}. The repository is currently private and reviewer access remains to be arranged. The scientific baseline is \texttt{58f539c2d0738b20c7d0d4889fe8d808a03a3019}. Final-algorithm code, protocol, tests and 43 training snapshots were committed before execution at \texttt{8de86bbe1aeb1568bba754609cf10b8d093094c8}; the complete paired record was saved at \texttt{578e00482aff3d65bde4bd422b60c527803e6e22}. Inputs, configuration and results are under \path{data/lazy_regional_20261015/}, \path{configs/lazy_regional_20261015.json} and \path{results/lazy_regional_20261015/}. The reproduction entry point checks source/input hashes and writes to a fresh directory using the recorded Python stack and 64-bit MPFR ABI.
+Code, clean inputs and numerical records are held at \url{https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design}, branch \texttt{research/contribution-closure-20261014-c5d11c}. The repository is currently held on a private preparation branch. Requests for access should be addressed to the corresponding author at \href{mailto:100130@nuist.edu.cn}{100130@nuist.edu.cn}; reviewer access remains to be arranged. The scientific baseline is \texttt{58f539c2d0738b20c7d0d4889fe8d808a03a3019}. Final-algorithm code, protocol, tests and 43 training snapshots were committed before execution at \texttt{8de86bbe1aeb1568bba754609cf10b8d093094c8}; the complete paired record was saved at \texttt{578e00482aff3d65bde4bd422b60c527803e6e22}. Inputs, configuration and results are under \path{data/lazy_regional_20261015/}, \path{configs/lazy_regional_20261015.json} and \path{results/lazy_regional_20261015/}. The reproduction entry point checks source/input hashes and writes to a fresh directory using the recorded Python stack and 64-bit MPFR ABI.
 
 Earlier studies retain separate manifests and availability records in the supplement. Their old positive-response execution program and three paired-grid recovery files (\path{events.jsonl}, \path{responses.json}, \path{run_status.json}) are unavailable. The current finite-menu numerical reproduction uses its own code and clean inputs. Repeating historical source-journal checks requires the full solver journals in addition to the included paid-outcome extracts. Third-party materials retain their stated licenses and distribution terms.
 
@@ -102,7 +103,7 @@ Earlier studies retain separate manifests and availability records in the supple
 
 Not applicable. This study did not involve human participants or animals.
 
-\section*{Conflicts of Interest}
+\section*{Disclosure Statement}
 
 The authors declare no conflicts of interest to report regarding the present study.
 
