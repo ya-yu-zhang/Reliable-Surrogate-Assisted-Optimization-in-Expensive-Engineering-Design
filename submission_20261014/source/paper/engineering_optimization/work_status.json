@@ -112,8 +112,7 @@
   "rendered_pdf_layout_verified": false,
   "submission_ready": false,
   "remaining": [
-    "Full affiliation b for Zhenyu Meng and full affiliation c for Jia Zhao",
-    "Institutional email addresses for Ya-Yu Zhang, Zhenyu Meng and Jia Zhao; institutional profile URLs for all four authors",
+    "Confirm the four author records filled from the referenced plan, including Zhenyu Meng's institutional email and all institutional profile URLs",
     "Transfer prepared cover-letter content into the official journal template; online template body could not be retrieved",
     "Arrange data access upon reasonable request or release the prepared numerical profile",
     "Final source compilation and figure-label correction; LaTeX submission PDF and source ZIP remain deferred by user"
@@ -778,5 +777,19 @@
     "no_additional_experiments_needed_for_these_preparation_changes": true,
     "actual_submission": false,
     "final_submit_ready": false
+  },
+  "author_information_update": {
+    "applied_on": "2026-10-16",
+    "source_task": "01a0aeb5-666b-7a92-b056-1d142c80e65e",
+    "current_author_list": [
+      "Shu-Chuan Chu",
+      "Ya-Yu Zhang",
+      "Zhenyu Meng",
+      "Jia Zhao"
+    ],
+    "affiliations_filled": true,
+    "available_emails_and_orcids_filled": true,
+    "institutional_profile_urls_filled": false,
+    "submission_ready_remains": false
   }
 }
