@@ -1,9 +1,4 @@
-% Author-review preparation 20261014; frozen evidence unchanged.
-% Operational specification revision 20261013; frozen experiments unchanged.
-% Review response factual integration; independent author scientific review pending.
-% Factual evidence integration v1; scientific author review pending.
-% Built from the evidence-preserving draft using the official publisher class.
-% Author review draft: unresolved affiliations and AI-use review remain.
+% Prose revision 20261016; frozen numerical results and mathematical expressions retained.
 \documentclass[suppldata]{interact}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -35,13 +30,17 @@
 \thanks{CONTACT Shu-Chuan Chu. Email: \href{mailto:100130@nuist.edu.cn}{100130@nuist.edu.cn}}
 }
 \maketitle
-\setcounter{section}{-1}\renewcommand\thesection{S\arabic{section}}\renewcommand\thetable{S\arabic{table}}\renewcommand\thefigure{S\arabic{figure}}
-\noindent{\small\textit{Working manuscript. Affiliations b and c remain to be supplied.}}
+\renewcommand\thesection{A\arabic{section}}
+\renewcommand\theHsection{A\arabic{section}}
+\setcounter{section}{0}
+\input{integrated_evidence/positive_rollout_supplement_20261015.tex}
+
+\setcounter{section}{-1}\renewcommand\thesection{S\arabic{section}}\renewcommand\theHsection{S\arabic{section}}\renewcommand\thetable{S\arabic{table}}\renewcommand\thefigure{S\arabic{figure}}
 
 \hypertarget{evidence-map-and-reproducibility-checklist}{%
 \section{Evidence Map and Reproducibility Checklist}\label{evidence-map-and-reproducibility-checklist}}
 
-The current article's positive-response mathematical specification and execution boundary are given in Section~\ref{sec:supp_positive_proofs}. All earlier sections preserve the complete historical evidence associated with the archived manuscript, including the action-set and routing studies. Those historical sections are not independent positive-model validation. Scientific results, resource measurements and recovery records remain separate.
+Section~\ref{sec:supp_positive_proofs} gives the proofs for the current response-stability method and identifies the retained v2 and certificate-transformation arguments. Sections S1--S10 preserve the earlier development, engineering and accounting studies. References there to the original main article concern the archived full-evidence manuscript. Subsequent sections retain action-set and routing computations and the earlier rollout implementations. These studies reuse development observations; their numerical and engineering outcomes are reported under their original protocols.
 
 \hypertarget{evidence-map}{%
 \subsection{Evidence map}\label{evidence-map}}
@@ -70,9 +69,9 @@ The current article's positive-response mathematical specification and execution
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  \textbf{Runtime:} Windows 11, Python 3.12.13, and dependency lock files for the main, application, GP, and reporting environments.
+  \textbf{Runtime:} The final algorithm uses Python 3.12, the pinned positive-rollout dependency file and MPFR 4.2.1 with a 64-bit ABI. The earlier studies use Windows 11, Python 3.12.13 and their recorded environment lock files.
 \item
-  \textbf{Hardware:} AMD Ryzen 7 9700X, 16 logical threads, and approximately 31.1 GiB physical memory; numerical-library threads are limited to one per worker.
+  \textbf{Historical hardware:} AMD Ryzen 7 9700X, 16 logical threads, and approximately 31.1 GiB physical memory. Numerical-library threads are limited to one per worker; the final CPU comparison also limits numerical threads to one.
 \item
   \textbf{Randomness:} Purpose-specific seed maps cover initialization, candidate generation, mode selection, optimization repeats, and bootstrap analyses.
 \item
@@ -87,7 +86,7 @@ The current article's positive-response mathematical specification and execution
   \textbf{Recovery:} Incomplete units, canonical-versus-physical call ledgers, rerun seeds, and exclusion rules are archived separately.
 \end{enumerate}
 
-The source repository is private, so its URL alone does not provide reviewer access. The scoped data-and-code attachment contains the complete inputs and certificates for the current GP action-set verification, plus selected frozen decision records. Complete raw reconstruction of the supporting paired-grid check is currently unavailable: 22 of 25 audit-listed files have been recovered, while the final recovery journal, response collection and status remain missing. The historical outputs are retained with this limitation; they cannot replace the absent raw records. The current preservation status is detailed in Section~\ref{supp:current_availability}. The authors report a local copy of approximately 13.6 GB of historical outputs, but it has not been fully inspected in this preparation and is not part of the scoped attachment. Full historical availability is not guaranteed. Third-party implementations and publisher templates retain their own terms. The detailed historical audit trail remains in S8; this map is a navigation layer rather than a substitute for those records.
+The private repository holds the final algorithm, clean inputs and per-state numerical records, together with the earlier GP action-set inputs and selected frozen decision records. Reviewer access remains to be arranged. Section~\ref{supp:current_availability} lists the 22 recovered paired-grid files and three missing raw files. The authors also retain approximately 13.6 GB of historical outputs locally; that archive was not fully inspected in this preparation. S8 records information order and recovery costs. Third-party implementations and publisher templates retain their stated distribution terms.
 
 \hypertarget{development-diagnostics-and-common-state-evidence}{%
 \section{Development diagnostics and common-state evidence}\label{development-diagnostics-and-common-state-evidence}}
@@ -352,7 +351,7 @@ Feedback
 
 \endgroup
 
-Immediate utility does not exclude a delayed benefit from exploration; however, the closed-loop development experiment supplies no evidence of that benefit for this prototype. It is therefore unsupported to state that additional distance exploration repaired the model.
+The closed-loop development experiment also shows no delayed benefit from the additional distance exploration.
 
 \hypertarget{independent-validation-diagnostics-and-external-references}{%
 \section{Independent validation diagnostics and external references}\label{independent-validation-diagnostics-and-external-references}}
@@ -414,7 +413,7 @@ The corresponding selected-minus-pool contrasts are shown in Figure S3.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_3.pdf}
-\caption{Selected-minus-pool failures by preselected history. A reversal is retained rather than interpreted as universal selection deterioration.}
+\caption{Selected-minus-pool failures by preselected history. Positive values indicate greater selected-point failure; negative values indicate lower selected-point failure.}
 \end{figure}
 
 Figure S3 expresses the same comparison as a signed difference (selected minus pool). Fixed03 bars are positive and greedy bars are negative in every dimension; random-pool bars stay nearer zero. The repeated sign reversal demonstrates that selected-point coverage cannot be summarized independently of the history-generating policy.
@@ -595,7 +594,7 @@ CMA-ES
 
 \endgroup
 
-GP-EI and author TuRBO use separate frozen protocols and strict pre-call budget guards. Their complete audited outcomes are now included in the main article. Author-code restart counterexamples are control-flow checks, not performance observations. Resource precheck instances are excluded from every benchmark table.
+GP-EI and author TuRBO use separate frozen protocols and strict pre-call budget guards. Their complete audited outcomes are retained in the archived main article. Author-code restart counterexamples are control-flow checks, not performance observations. Resource precheck instances are excluded from every benchmark table.
 
 \hypertarget{complete-bbob-references-and-exclusive-resource-evidence}{%
 \section{Complete BBOB references and exclusive resource evidence}\label{complete-bbob-references-and-exclusive-resource-evidence}}
@@ -663,7 +662,7 @@ The complete ten-method BBOB endpoint comparison is shown in Figure S5.
 \caption{Complete BBOB background reference endpoints; no partial runs or resource-precheck instances.}
 \end{figure}
 
-Figure S5 retains the full ten-method ordering in each dimension. TuRBO-1 and GP-EI occupy different positions across dimensions, while Sobol remains close to zero and the internal methods form a tighter negative-error group. The panel-wise variation supports use of these methods as descriptive context; it does not justify a cross-protocol causal ranking because their initialization and search mechanisms differ.
+Figure S5 retains the full ten-method ordering in each dimension. TuRBO-1 and GP-EI occupy different positions across dimensions, while Sobol remains close to zero and the internal methods form a tighter negative-error group. The methods use different initialization and search mechanisms, so the panel-wise rankings describe their recorded protocols.
 
 \hypertarget{exclusive-cost-evidence}{%
 \subsection{Exclusive cost evidence}\label{exclusive-cost-evidence}}
@@ -1070,7 +1069,7 @@ DNA & 0.0027 & 0.0005279 & 0.0044 & 0.0592 & 16 & 4 & 0 \\
 
 synt\_\allowbreak simple: higher, Holm p=0.0826; synt\_\allowbreak medium: higher, Holm p=0.0192; DNA: higher, Holm p=0.0592.
 
-The three comparisons form an application-only Holm family, separate from the nine BBOB mechanism tests. Twenty repeats describe optimization randomness on one fixed dataset and split per task, not twenty independent datasets. The Wilcoxon and paired bootstrap assumptions and limits are retained regardless of significance or direction.
+The three comparisons form an application-only Holm family, separate from the nine BBOB mechanism tests. Twenty repeats describe optimization randomness on one fixed dataset and split per task, not twenty independent datasets. The Wilcoxon and paired bootstrap analyses condition on the fixed task data and split.
 
 Original-scale validation endpoints for the three LassoBench tasks are shown in Figure S7.
 
@@ -1080,7 +1079,7 @@ Original-scale validation endpoints for the three LassoBench tasks are shown in 
 \caption{Application original validation endpoints with run-IQR bars; unknown-optimum error is never constructed.}
 \end{figure}
 
-Figure S7 reports the original validation loss on its native scale for each LassoBench task. The synt\_\allowbreak simple and synt\_\allowbreak medium panels separate the lower-loss internal and trust-region methods from Sobol and GP-EI, whereas the DNA panel compresses most methods into a narrow band. The run-interquartile bars reveal substantial dispersion for the weaker synthetic-task endpoints and discourage conclusions based only on median rank.
+Figure S7 reports the original validation loss on its native scale for each LassoBench task. The synt\_\allowbreak simple and synt\_\allowbreak medium panels separate the lower-loss internal and trust-region methods from Sobol and GP-EI, whereas the DNA panel compresses most methods into a narrow band. The run-interquartile bars show the endpoint dispersion alongside the median ordering.
 
 Their median and interquartile convergence histories are shown in Figure S8.
 
@@ -1090,7 +1089,7 @@ Their median and interquartile convergence histories are shown in Figure S8.
 \caption{Application original-loss median and IQR curves. The dotted line marks internal initialization; external designs differ. Zero fraction displays the first paid label.}
 \end{figure}
 
-Figure S8 shows how the endpoint differences arise. Most improvement on the two synthetic tasks occurs early, followed by long plateaus, while DNA retains smaller and more gradual changes. The dotted initialization boundary applies to the internal configurations only; external curves begin from their native designs. The figure is therefore used to describe timing and stability, not to claim identical starting conditions.
+Figure S8 shows how the endpoint differences arise. Most improvement on the two synthetic tasks occurs early, followed by long plateaus, while DNA retains smaller and more gradual changes. The dotted initialization boundary applies to the internal configurations only; external curves begin from their native designs. The figure describes timing and stability under those starting conditions.
 
 \FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
 
@@ -1638,7 +1637,7 @@ The budget-sensitivity interruption left 8 incomplete units with 1,791 physicall
 
 The completed GP-EI performance batch contains 151,200 canonical algorithm evaluations. During interruption recovery, one GP-EI point (evaluation 349 of gp\_\allowbreak ei\_\allowbreak f02\_\allowbreak d40\_\allowbreak i13\_\allowbreak r2\_\allowbreak b400) was physically queried a second time because the newer partial journal contained 348 labels while an earlier archive contained 349. The point and returned label matched exactly; the label entered the optimizer history once, so the canonical 400-step trajectory and endpoint are unchanged. The physical GP-EI ledger is therefore 151,201 calls: 151,200 canonical evaluations plus one disclosed recovery-validation call. The extra call is excluded from algorithm budgets, performance curves, and exclusive-cost analysis. The read-only recovery audit made zero objective calls and verified eight recovered trajectories (2,800 canonical evaluations), 2,014 saved second-generation labels, and 786 second-generation physical calls, one of which overlaps the earlier archive.
 
-This section does not reverse the failed development benefit gate. The paper is positioned as a decision-consequence auditing framework and makes no general optimizer-superiority claim. Full CEC confirmation is not required for that framework scope. A CEC batch started on 24 September 2026 was stopped after the scope decision; its 30 complete and 8 partial trajectories are retained as exploratory records and excluded from manuscript statistics. A verifiable author-code DRSO comparison is provided in S8.2; the three originally named but unavailable implementations continue to delimit method-specific claims.
+The original development-benefit gate failed. The archived study therefore reports decision-consequence auditing results. A CEC batch started on 24 September 2026 was stopped after the scope decision; its 30 complete and 8 partial trajectories are retained as exploratory records and excluded from manuscript statistics. A verifiable author-code DRSO comparison is provided in S8.2; the three originally named but unavailable implementations continue to delimit method-specific claims.
 
 \hypertarget{reproducibility-inventory}{%
 \section{Reproducibility inventory}\label{reproducibility-inventory}}
@@ -1786,14 +1785,14 @@ DRSO & 647.4 & 580.4 & 780.0 & 0.747 & -1334.6 & 9/0/1 & 0.0117 \\
 
 The different outcomes under a common surrogate and common starting archive isolate acquisition behavior. Candidate-dependent uncertainty is structurally capable of changing decisions, but its practical value depends on how uncertainty and predicted objective value are combined. GP-PI supplies a successful candidate-dependent control; the fixed-multiplier GP-UCB control does not improve the median initial incumbent under this budget. The three rows form one Holm family.
 
-DRSO provides the requested competitive surrogate-assisted evolutionary comparison. The public author repository is frozen at commit \texttt{03c19d4280b38230e0852054922072f5aa6dcdf5} under LGPL-3.0. Its relation models, unevaluated-population mechanism, reproduction, training cap of 100, and other algorithm settings remain unchanged. Population size is set from the author default of 50 to 58 only because the common archive contains 58 points. A Python 3.12 compatibility namespace supplies the removed \texttt{imp} name required by pyDOE2 and an unused optional callback import; neither compatibility file alters the DRSO search implementation.
+DRSO supplies a competitive surrogate-assisted evolutionary comparison. The public author repository is frozen at commit \texttt{03c19d4280b38230e0852054922072f5aa6dcdf5} under LGPL-3.0. Its relation models, unevaluated-population mechanism, reproduction, training cap of 100, and other algorithm settings remain unchanged. Population size is set from the author default of 50 to 58 only because the common archive contains 58 points. A Python 3.12 compatibility namespace supplies the removed \texttt{imp} name required by pyDOE2 and an unused optional callback import; neither compatibility file alters the DRSO search implementation.
 
 The DRSO batch contains ten complete trajectories and 2,000 algorithm-budget observations: 580 reused initial labels and 1,420 new finite-element calls. All 4,010 event records have sequential PRE/LABEL order, all ten source-archive and author-tree hashes match, and no trajectory contains an out-of-bounds, nonfinite, or exact duplicate point. The author-code result object, external paid-call journal, and endpoint minimum agree in every repeat. DRSO improves median compliance by 74.7\% after initialization and reaches 647.4, compared with 1972.8 for PEM-T.
 
 \hypertarget{evidence-boundary}{%
 \subsection{Evidence boundary}\label{evidence-boundary}}
 
-The empirical residual monitor has no claimed pointwise coverage theorem, false-discovery-rate guarantee, regret bound, or global convergence theorem. Broad BBOB comparisons with external methods retain native initialization and remain descriptive; the beam sensitivity alone supplies a matched initial archive. GP-PI and GP-UCB are transparent acquisition controls, while DRSO is an author-code published SAEA. The 19-dimensional beam family does not establish performance for unrestricted 5,000-variable topology optimization. Full CEC exploration was stopped after the decision-consequence auditing scope was selected; its exploratory trajectories are excluded from all article statistics. Temporal CP-SAEA, SADE-SS, and BGP-SAEA remain excluded because matching executable author implementations with frozen versions, parameters, and licenses were unavailable; similarly named public implementations are not substituted for them. DRSO closes the requested competitive-SAEA evidence category without claiming to reproduce those unavailable methods.
+The empirical residual monitor has no claimed pointwise coverage theorem, false-discovery-rate guarantee, regret bound, or global convergence theorem. Broad BBOB comparisons with external methods retain native initialization and remain descriptive; the beam sensitivity alone supplies a matched initial archive. GP-PI and GP-UCB are transparent acquisition controls, while DRSO is an author-code published SAEA. The 19-dimensional beam family does not establish performance for unrestricted 5,000-variable topology optimization. Full CEC exploration was stopped after the decision-consequence auditing scope was selected; its exploratory trajectories are excluded from all article statistics. Temporal CP-SAEA, SADE-SS, and BGP-SAEA remain excluded because matching executable author implementations with frozen versions, parameters, and licenses were unavailable; similarly named public implementations are not substituted for them. The DRSO comparison retains its author-code specification.
 
 \hypertarget{frozen-gp-intervention-and-immediate-diagnostic-accounting}{%
 \section{Frozen GP intervention and immediate diagnostic accounting}\label{frozen-gp-intervention-and-immediate-diagnostic-accounting}}
@@ -2199,7 +2198,7 @@ Portfolio GP/selection
 
 The analyzer validates complete PRE/LABEL pairing,906 physical calls per case,280/626 workflow counts,20 pilot steps and 142 canonical steps per policy, selection before validation, correct seed namespaces, identical initial history hashes, exclusion of pilot labels from every canonical history, exact selected/portfolio trajectory replay, and every endpoint and component-time sum. It makes zero new FE calls. The compact release regenerates deterministic Sobol points and reconstructs each retained source JSONL byte for byte, checked against its SHA256; no objective call is needed to restore or analyze the records. Original full journals remain the source of timing and information-boundary checks.
 
-There are no added p-values, confidence guarantees, retrospective deployment tolerances, claims of cross-domain transfer, or demonstrated production wall-time savings. The two loads strengthen within-family applicability. They do not establish optimizer superiority, a competitive selection advance over warm-starting, or validation of unrestricted5000-variable topology optimization.
+The two load conditions evaluate within-family transfer with the fixed engineering parameterization. Their descriptive outcomes and component timings are reported under the frozen selection and validation protocols.
 
 \input{integrated_evidence/supp_records.tex}
 \input{integrated_evidence/review_supp_records.tex}
@@ -2219,7 +2218,6 @@ There are no added p-values, confidence guarantees, retrospective deployment tol
 
 \input{integrated_evidence/positive_rollout_results_20261015.tex}
 
-\input{integrated_evidence/positive_rollout_supplement_20261015.tex}
 
 \bibliographystyle{tfcad}\bibliography{EO_references}
 

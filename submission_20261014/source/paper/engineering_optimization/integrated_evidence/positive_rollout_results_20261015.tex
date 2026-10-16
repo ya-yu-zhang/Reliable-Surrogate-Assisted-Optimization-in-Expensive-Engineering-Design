@@ -5,23 +5,23 @@
 
 The existing EngiBench Beams2D v1 workflow \citep{ref23} uses a symmetric MBB beam with $100\times50$ bilinear elements, SIMP exponent 3, stiffness limits $10^{-9}$ and 1, and Poisson ratio 0.3. Nineteen effective logits and an anchor define a $4\times5$ coarse density field interpolated to the mesh; a logistic shift fixes mean density at 0.35. Smaller compliance is preferable. This is one deterministic structural-design family.
 
-Both ten-group datasets retain 60 metadata states: 17 alias-only states and 43 nontrivial states containing 114 first-action branches, with eligible pools of 1024 designs. All have already been observed in development. The former holdout name does not create an unseen validation set for the present method. The incumbent equals the minimum of each state's stored training responses.
+Both ten-group datasets retain 60 metadata states: 17 alias-only states and 43 nontrivial states containing 114 first-action branches, with eligible pools of 1024 designs. All states, including those historically labelled holdout, were observed during development. The incumbent equals the minimum of each state's stored training responses.
 
-The comparison asks whether the implemented solver meets its numerical selection guarantee and whether local stability avoids complete projections under the same objective and precision. The direct route uses the same posterior enclosures, conditional integrator, tolerance and fresh reader, while always constructing the complete projection. Paid two-step outcomes separately address engineering consequences under the same continuation. No extra dataset, parameter sweep or independent optimization run is added.
+The comparison asks whether the implemented solver meets its numerical selection guarantee and whether local stability avoids complete projections under the same objective and precision. The direct route uses the same posterior enclosures, conditional integrator, tolerance and fresh reader, while always constructing the complete projection. Paid two-step outcomes separately address engineering consequences under the same continuation. The comparison uses the frozen existing states.
 
 \subsection{Prospective source freeze and arithmetic scope}
 
-The new v2 code, protocol and all 43 training/parameter input snapshots were saved before execution in commit \texttt{f4f352acdb5ccbc98ead05455d2083ccc72acca3}. It is a new implementation, not recovery of the missing earlier positive-response program. Exactly one paired pass alternates method order by state. There are 86 method/state runs, without selecting a favorable repetition.
+The new v2 code, protocol and all 43 training/parameter input snapshots were saved before execution in commit \texttt{f4f352acdb5ccbc98ead05455d2083ccc72acca3}. V2 is separately implemented and versioned from the unavailable earlier program. Exactly one paired pass alternates method order by state. The pass contains 86 method/state runs.
 
 Fixed binary $A/B/K$, outward logarithms, inverse-residual and positive-definiteness gates, and MPFR 4.2.1 at 192 bits define the arithmetic scope. Exported interval endpoints are rounded outwards to binary64. The normal window is $[-8,8]$, with an explicit tail and no renormalization. Limits were fixed at 32,768 refinements and 30 s per method/state, and 600 s for the comparison. No limit or tolerance was adjusted after the results.
 
 Seven necessary program-test groups cover directed rational arithmetic, normal identities, independent conditional integration, normal-weighted integration, exact ties, corrupt-certificate rejection, and a separate exact two-by-two posterior oracle. Engineering execution reconstructs every raw-response selector with matching frozen coefficients and kernel/cross hashes. Complete projections must match the previously verified exact nonnegative domains; this reuses those domains as frozen inputs and does not rerun the old full exclusion-proof suite.
 
-The reader freshly checks local dominance, cell assignments, disjoint coverage, summation and selection. It shares the interval and curvature implementation with the producer. It is not a fully independent arithmetic implementation. Kernel-function evaluation, statistical calibration and physical/PDE error are outside the certificate.
+The reader freshly checks local dominance, cell assignments, disjoint coverage, summation and selection. It shares the interval and curvature implementation with the producer. The certificate concerns the declared binary-system arithmetic.
 
 \subsection{Checked finite-menu selection}
 
-Both methods pass the reader on all 43 states, with identical selected first actions. All 228 branch/method intervals contain the separately computed ordinary point-parameter quadrature references. These references are numerical cross-checks, not a second rigorous proof. No state is omitted or replaced.
+Both methods pass the reader on all 43 states, with identical selected first actions. All 228 branch/method intervals contain the separately computed ordinary point-parameter quadrature references. The point-parameter references provide numerical consistency checks for all states.
 
 \begin{table}[htbp]\centering\small
 \caption{Frozen v2 comparison: one alternating-order paired pass. Times include the solver and fresh reader. Common preparation is reported separately.}\label{tab:positive_summary}
@@ -32,15 +32,15 @@ Complete projections & 114 & 25\\
 Checked numerical stage (s) & 4.933306 & 5.469358\\
 \bottomrule\end{tabular}\end{table}
 
-Local stability avoids 89 of 114 complete projections, or 78.1\%. This does not translate into a measured time saving: the local route is slower in this pass. Dominance scans, integration and checking remain costs. There is no inferential timing claim or general acceleration conclusion from a single pass.
+Local stability avoids 89 of 114 complete projections, or 78.1\%. The local route takes longer in this pass, with dominance scans, integration and checking included in the measured cost.
 
-Common preparation takes 3.621489 s and includes 43 positive-response root systems and 114 reconstructions of the original raw-response selector systems. It also supplies 114 conditional systems. Charging this preparation identically gives 8.554795 s for the direct route and 9.090847 s for the local route, before I/O and historical engineering-data acquisition. Neither total measures physical deployment savings. The complete comparison, including ordinary references and bookkeeping, takes 14.312025 s.
+Common preparation takes 3.621489 s and includes 43 positive-response root systems and 114 reconstructions of the original raw-response selector systems. It also supplies 114 conditional systems. Charging this preparation identically gives 8.554795 s for the direct route and 9.090847 s for the local route, before I/O and historical engineering-data acquisition. These totals measure CPU stages of the recorded comparison. The complete comparison, including ordinary references and bookkeeping, takes 14.312025 s.
 
 \subsection{Subsequent regional certificate transformation}\label{sec:regional_results}
 
 After the frozen v2 run, the regional method was derived and applied once to its saved certificates. This is post hoc analysis of the same development material. It reuses 89 fixed-continuation certificates; 25 complete-projection branches retain their original checked intervals. A hash-identified input freeze precedes conversion. No GP reconstruction, conditional-reward evaluation, full projection, physical call or new optimization sample is performed.
 
-Four additional mathematical checks cover the capped marginal moments, weighted low-tail bound, whole/partial leaf conversion and invalid-input rejection. Each original leaf remains an accepted v2 input, not an independently reconstructed proof. Across all 43 states, all 114 transformed-or-retained branch intervals contain the same ordinary point-parameter references. All original selections remain accepted, as expected from valid interval intersection; this is not independent confirmation.
+Four additional mathematical checks cover the capped marginal moments, weighted low-tail bound, whole/partial leaf conversion and invalid-input rejection. The transformation takes each accepted v2 leaf as an input. Across all 43 states, all 114 transformed-or-retained branch intervals contain the same ordinary point-parameter references. Valid interval intersection preserves acceptance of all original selections.
 
 \begin{table}[htbp]\centering\small
 \caption{Post hoc regional conversion of existing fixed-continuation certificates. Width changes are per branch, not time or engineering-performance improvements.}\label{tab:regional_conversion}
@@ -57,7 +57,7 @@ Unchanged choices still accepted & 43/43\\
 
 The attribution compares exact rational lengths of saved binary endpoints. Baseline-only truncation intersects the earlier interval with $[B_a^-,m_0]$; it is a necessary control for attributing the gain to regional remainder information. The additional regional effect occurs in 86 of 89 branches. Merely replacing the uniform event radius by its capped-response version has a relative reduction median near $1.04\times10^{-12}$, so the low-tail theoretical regime is not the main observed mechanism here.
 
-One conversion takes 1.661380 s of additional postprocessing. It is not assigned the v2 timing or used as a speed comparison. The original 25 complete projections are already in the record and are not retroactively avoided. In addition, shared v2 preparation used archived exact domains to choose the finite target list. The experiment therefore verifies conditional numerical selection and postprocessing on supplied inputs, rather than from-scratch elimination of all continuation-identification work.
+One conversion takes 1.661380 s of additional postprocessing. The earlier v2 execution retains its original timing and 25 complete projections. In addition, shared v2 preparation used archived exact domains to choose the finite target list. The experiment evaluates conditional numerical selection and postprocessing on that supplied target list.
 
 \subsection{Already paid engineering outcomes}
 
@@ -72,7 +72,7 @@ Raw-response EI & 2 & 40 & 1 & $-0.0045213$\\
 Positive-model one-step EI & 1 & 40 & 2 & $+0.0115273$\\
 \bottomrule\end{tabular}\end{table}
 
-All median changes are zero. The same-model one-step comparator distinguishes rollout from merely changing the planning distribution. The mixed outcomes do not establish engineering-policy superiority. The demonstrated applicability is solving the stated numerical first-action problem on real engineering states with a checked bound.
+All median changes are zero. The same-model one-step comparator distinguishes rollout from merely changing the planning distribution. The outcomes are mixed across the three comparators. The checked bound certifies the stated numerical first-action problem on these engineering states.
 
 \subsection{Preserved adverse evidence and total accounting}
 
@@ -82,4 +82,4 @@ The archived action-set study records identical nominal and band indices in all 
 
 The two permitted witnesses are exhausted. Their true responses, approximately 14324.74 and 9639.92, greatly exceed trial bounds of approximately 232.53 and 200.60. The weak-bound diagnosis is retained without repeating the screen. The project ledger remains 55,309 physical attempts. The current v2 adds 43 root and 114 raw-selector fixed-kernel constructions, 114 conditional systems and 86 numerical method/state runs. New physical evaluations, bound queries, hyperparameter fits, retries, replacements and independent optimization samples are all zero.
 
-The unavailable earlier positive-response implementation reported a 1.029 checked-stage ratio. That historical aggregate is retained separately and is not used as the current timing evidence. The new code, input snapshots, posterior intervals, per-state certificates, references, frozen decisions and paid-outcome extracts are preserved for v2.
+The unavailable earlier positive-response implementation reported a 1.029 checked-stage ratio, retained as a separate historical aggregate. The new code, input snapshots, posterior intervals, per-state certificates, references, frozen decisions and paid-outcome extracts are preserved for v2.

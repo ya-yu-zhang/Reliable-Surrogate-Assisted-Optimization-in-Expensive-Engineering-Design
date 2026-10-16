@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SUB=ROOT/'submission_20261014'
 PAPER=SUB/'source/paper/engineering_optimization'
 REGION=ROOT/'results/regional_value_closure_20261015'
-REVIEW=SUB/'review_20261016'
+REVIEW=SUB/'finalization_20261016'
 
 
 def sha(path):
@@ -102,14 +102,20 @@ def main():
     assert all(v==0 for v in data['counters'].values())
     archive=PAPER/'archival/EO_action_sets_and_direct_rollout_20261015.tex'
     assert sha(archive)=='b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e'
-    # Main supplementary table source is byte-identical; added proofs are inputs.
-    supp=(PAPER/'EO_supplementary.tex').read_text()
-    preserved=supp
-    for name in ['positive_rollout_method_20261015.tex','positive_rollout_results_20261015.tex']:
-        inserted='\\input{integrated_evidence/'+name+'}\n\n'
-        assert preserved.count(inserted)==1,name
-        preserved=preserved.replace(inserted,'')
-    assert hashlib.sha256(preserved.encode()).hexdigest()=='7c18c55e552d6ba368e415ef3fe7f267591e8578ee0c8c9fa48a1c2f6de914c5'
+    # Prose may change; pre-edit numerical rows, displays and labels remain.
+    style=json.loads((REVIEW/'STYLE_BASELINE.json').read_text())
+    rows_preserved=displays_preserved=0
+    for rel,before in style['files'].items():
+        source=(ROOT/rel).read_text()
+        rows=Counter(x.strip() for x in source.splitlines()
+                     if '&' in x and re.search(r'\d',x) and not x.lstrip().startswith('>'))
+        assert not Counter(before['numeric_table_rows'])-rows,rel
+        blocks=[hashlib.sha256(m.group(0).encode()).hexdigest() for m in re.finditer(
+            r'\\\[.*?\\\]|\\begin\{(?:equation\*?|align\*?|gather\*?)\}.*?\\end\{(?:equation\*?|align\*?|gather\*?)\}',source,re.S)]
+        assert blocks==before['display_math_sha256'],rel
+        assert not set(before['labels'])-set(re.findall(r'\\label\{([^}]+)\}',source)),rel
+        rows_preserved+=sum(before['numeric_table_rows'].values())
+        displays_preserved+=len(blocks)
     tmp=ROOT/'tmp/regional_closure_bib_check';tmp.mkdir(exist_ok=True)
     (tmp/'references.aux').write_text('\\relax\n\\citation{*}\n\\bibstyle{tfcad}\n\\bibdata{EO_references}\n')
     env=dict(os.environ);env['BIBINPUTS']=str(PAPER)+os.pathsep;env['BSTINPUTS']=str(PAPER)+os.pathsep
@@ -123,7 +129,9 @@ def main():
         source_checks=checks,bibliography_entries=len(keys),bibtex_return_code=proc.returncode,
         bibtex_diagnostics=diagnostics,abstract_words=len(plain.split()),
         previous_main_byte_identical=True,historical_supp_numeric_rows_preserved=251,
-        historical_supp_body_preserved_with_additive_supporting_input=True,v2_input_snapshots_verified=43,
+        historical_supplement_prose_revised=True,style_baseline_commit=style['baseline_commit'],
+        style_files_checked=len(style['files']),existing_numeric_table_rows_preserved=rows_preserved,
+        existing_display_math_blocks_preserved=displays_preserved,v2_input_snapshots_verified=43,
         v2_result_files_verified=224,core_source_hashes_match_pre_execution_freeze=True,
         regional_input_hashes_verified=len(freeze['input_sha256']),regional_mathematical_tests_passed=4,
         regional_transformed_branches=89,regional_gain_beyond_baseline_branches=86,
@@ -180,7 +188,7 @@ def main():
         SUB/'PORTAL_FIELDS.json',SUB/'ABSTRACT_AND_KEYWORDS.txt',SUB/'COVER_LETTER.txt',
         SUB/'CONTRIBUTION_CHECK_20261015.json',SUB/'REVIEW_REPRODUCTION.md',
         SUB/'SOURCE_VERIFICATION.json',REVIEW/'SOURCE_VERIFICATION.json',
-        REVIEW/'FINAL_SCIENTIFIC_REVIEW.md'}
+        REVIEW/'STYLE_BASELINE.json',REVIEW/'WRITING_REVISION.md'}
     frozen={}
     if lazy.exists():
         frozen.update(result_hashes)

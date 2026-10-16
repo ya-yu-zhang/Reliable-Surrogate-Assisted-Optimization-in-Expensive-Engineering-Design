@@ -2,6 +2,8 @@
 
 Read the saved evidence before considering reproduction. This revision changes manuscript organization and scientific explanation; it performs no new algorithm run, posterior reconstruction, physical evaluation, bound query, fit, retry, replacement or independent optimization sample. Both witness attempts are exhausted. Do not invoke physical or optimization experiment entry points for this review.
 
+The 16 October prose revision places the current proofs in Supplement A1, retains historical S numbering and all recorded numerical rows, and synchronizes the 141-word abstract. See `submission_20261014/finalization_20261016/WRITING_REVISION.md`.
+
 ## Read the current paper
 
 | Purpose | Repository path |
@@ -43,7 +45,7 @@ The current preparation check reads sources and saved records, runs BibTeX, veri
 python -m src.verify_rollout_closure_sources
 ```
 
-Its record is `submission_20261014/review_20261016/SOURCE_VERIFICATION.json`; its current-file manifest is `submission_20261014/review_20261016/REVIEW_MANIFEST.json`. Earlier release manifests describe their own commits. Their historical manuscript hashes are not hashes of this revised manuscript. Frozen source/input and numerical-result hashes remain independently checked.
+Its record is `submission_20261014/finalization_20261016/SOURCE_VERIFICATION.json`; its current-file manifest is `submission_20261014/finalization_20261016/REVIEW_MANIFEST.json`. Earlier release manifests describe their own commits. Their historical manuscript hashes are not hashes of this revised manuscript. Frozen source/input and numerical-result hashes remain independently checked.
 
 Optional algorithm reproduction is unnecessary for preparing this paper and was **not executed for this revision**. Use Python 3.12, the dependencies in `requirements-positive-rollout-v2.txt`, and MPFR 4.2.1 with a 64-bit ABI. The runner checks source/input hashes, uses one numerical thread and refuses an existing output directory. Run from the repository root with a fresh path below `results/`:
 

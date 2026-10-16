@@ -383,5 +383,23 @@
     "review_entry": "submission_20261014/REVIEW_REPRODUCTION.md",
     "current_source_and_bibliography_checks_passed": true,
     "current_PDF_compiled": false
+  },
+  "writing_revision_20261016": {
+    "pre_edit_commit": "3b2c841397373cc58f2a27bd47ad0ac078443738",
+    "abstract_words": 141,
+    "proofs_before_historical_supplement": true,
+    "existing_numeric_table_rows_preserved": 460,
+    "display_math_blocks_preserved": 45,
+    "no_new_experiments": true,
+    "PDF_or_ZIP_created_or_uploaded": false,
+    "source_checked": true,
+    "current_visual_layout_verified": false,
+    "remaining_author_affiliations": [
+      "Zhenyu Meng",
+      "Jia Zhao"
+    ],
+    "repository_publication_audit": "in_progress",
+    "actual_submission": false,
+    "final_submit_ready": false
   }
 }

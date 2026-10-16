@@ -5,8 +5,8 @@
   "source_files": [
     {
       "path": "source/paper/engineering_optimization/EO_manuscript.tex",
-      "bytes": 15330,
-      "sha256": "911dea71ce1cd50d60d81b2518e8cd1b50f9204b04269b0600da64c4b53c6c70",
+      "bytes": 12957,
+      "sha256": "ff278aaced9c59b925a1c281aab886d352da5b3222f8889aff2cd1618d38e495",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -17,32 +17,32 @@
     },
     {
       "path": "source/paper/engineering_optimization/EO_supplementary.tex",
-      "bytes": 120076,
-      "sha256": "a54d230d42f803d45b303b6a0716386266d1de677a60278352fcf66df2bacb01",
+      "bytes": 118939,
+      "sha256": "ad8cf1dcfb94b9cd7cfdece9114dd69dbbce7c6e53d7c27b173581c5911b2fe0",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex",
-      "bytes": 11344,
-      "sha256": "ad1551bb87477ab1a6bffea01256c0bcc201e53d1989e132adcb74c703d532ce",
+      "bytes": 11190,
+      "sha256": "2c45b9748c6ef3ea78ba99fa1aacd86c3df778011be112107aa31436eafd553b",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/final_method_20261016.tex",
-      "bytes": 10307,
-      "sha256": "165a5e4ca8d420e7eb4f0b630d7b2ec430dcae435154190918647cac5c90d5b6",
+      "bytes": 9701,
+      "sha256": "4475ec0ecc4727a8fcf5fb043d090c0a9a5f34eb9d7e4dbebc80c066668d2063",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/gp_envelope_completion.tex",
-      "bytes": 5469,
-      "sha256": "2a58aa65b242f66346f10f1a48bad0bf3ca7f7153f28af00fd195bb97989a552",
+      "bytes": 5027,
+      "sha256": "62a6fad59429f899bc3d4db30880dbf327dcab6c47af5fb9cd63bbd98d33866c",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/h1_bound_bottleneck_closure.tex",
-      "bytes": 2220,
-      "sha256": "fc5d7ee917874fe48334fd608dd5b14dfc3647f6678abeb93d379aa48ed13bfa",
+      "bytes": 1857,
+      "sha256": "2eadf55b2414fb9c64ca2d16be08b66639ab7691be86e01dcb74c2bcc0fb2822",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -53,32 +53,32 @@
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/lazy_regional_results_20261015.tex",
-      "bytes": 5807,
-      "sha256": "dc588e934a92d70c8db55540670bc2145ae52f616af62201dab08ab66418d79e",
+      "bytes": 5882,
+      "sha256": "836201cb941b1feb96463100456efc3ab448ddcc7f4fd43a11eae37b6230b93d",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_method_20261015.tex",
-      "bytes": 7840,
-      "sha256": "ae2e226adc1cce247b35f8e6f4dd7cfbf2b683c8a3a359ae4f3a19208b44d98d",
+      "bytes": 7474,
+      "sha256": "a78c87b51ae9d9ee91b6caa964555e05caeec253fde4b65a0c8d7557019bc16b",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_results_20261015.tex",
-      "bytes": 10709,
-      "sha256": "bb3d4e7a39fb8ee6cd215866b29053533410dbc05a89f77cbcdcf05f7289f9eb",
+      "bytes": 10025,
+      "sha256": "aa7e1cb6cdfaa24fce34dc938332a858f1d0fac753b1c763939dbfa97b2dc9ca",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_supplement_20261015.tex",
-      "bytes": 9311,
-      "sha256": "2f8700a3084c930ec3f1c00efda062f24e5bfe3b4ba8c1bd7935dd998e456ab9",
+      "bytes": 8643,
+      "sha256": "60a5c40bc37225c6beb96bc83b9042a336a4f402c3cc73be5afa6da87db0fb3b",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/pre_submission_checked_records.tex",
-      "bytes": 5875,
-      "sha256": "ab174631af7b13ddbf41d402c8407004834bac0d1fc61912a5c2140336ea1a1e",
+      "bytes": 5416,
+      "sha256": "c2ee7cf57e79406b3b1422233b0722d293652700b3c8ca30edf1f3a58de521a5",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -89,8 +89,8 @@
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/regional_value_proofs_20261015.tex",
-      "bytes": 4275,
-      "sha256": "e954b7ed5ee2f12ae0050d18142ce5f8e2451471cb8110dd5bb181cc1bd82d2e",
+      "bytes": 4124,
+      "sha256": "59d4481dca75244a14af0a6d24f72308d23c43352d7c771d86415cbb1da70e2a",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -101,8 +101,8 @@
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/submission_archival_status.tex",
-      "bytes": 2981,
-      "sha256": "ed3dbf1bb49e21577038f35e27105227d22cabe107a33ee16c4217d1483b84b3",
+      "bytes": 2882,
+      "sha256": "294cc7c0970e34c2ae60bc7f74f8a0dcaa361d868ce7344a65611e23f48a9454",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -135,10 +135,14 @@
   "bibliography_entries": 46,
   "bibtex_return_code": 0,
   "bibtex_diagnostics": [],
-  "abstract_words": 146,
+  "abstract_words": 141,
   "previous_main_byte_identical": true,
   "historical_supp_numeric_rows_preserved": 251,
-  "historical_supp_body_preserved_with_additive_supporting_input": true,
+  "historical_supplement_prose_revised": true,
+  "style_baseline_commit": "3b2c841397373cc58f2a27bd47ad0ac078443738",
+  "style_files_checked": 18,
+  "existing_numeric_table_rows_preserved": 460,
+  "existing_display_math_blocks_preserved": 45,
   "v2_input_snapshots_verified": 43,
   "v2_result_files_verified": 224,
   "core_source_hashes_match_pre_execution_freeze": true,

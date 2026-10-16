@@ -1,4 +1,4 @@
-\section{Local response stability for finite-menu rollout}\label{sec:positive_method}
+\section{Earlier v2 method and regional extensions}\label{sec:positive_method}
 
 \subsection{Optimization problem and model contract}
 
@@ -23,7 +23,7 @@ The optimization problem is
 V_a=\mathbb E[m_0-\min(m_0,Y_a,Y_{\pi_a(Y_a)})],
 \qquad \max_{a\in\mathcal A}V_a.                  \label{eq:positive_objective}
 \end{equation}
-The reward is in $[0,m_0]$. The log-response model defines its expectation and does not replace the raw-response continuation. The optimization variable is the first action in the fixed menu, rather than all future policies or the continuous design domain. Log-objective EI is established \citep{ref45}.
+The reward is in $[0,m_0]$. The log-response model defines its expectation under the fixed raw-response continuation. The optimization variable is the first action in the supplied menu. Log-objective EI is established \citep{ref45}.
 
 \subsection{Local stability and selective complete projection}
 
@@ -92,4 +92,4 @@ With valid branch intervals, $\max_a V_a-V_{\hat a}\le\mathcal E(\hat a)$, by bo
 
 The earlier v2 algorithm establishes the full model and coefficient enclosures, initializes local branch intervals, applies the selection rule, and refines competitive intervals. Its limiting event-error floor triggers complete projection only for that branch. The final lazy algorithm instead uses the local cell discovery and positive-completion contract described above, without complete-projection fallback. A reader checks exact dominance and flat ties, integration coverage, fresh interval summation and the final selection inequality. An invalid proof cannot support acceptance; the lazy implementation records an unresolved exception. A producer flag alone is not accepted.
 
-Persistent parameter uncertainty or a declared refinement/time budget may leave selection unresolved. This is an accepted-certificate guarantee, not unconditional termination. Sharing arithmetic and curvature code limits reader independence. The guarantee concerns the explicit finite binary model; kernel-function evaluation error, statistical calibration, physical/PDE error and real-design regret are outside it. The supplement provides the complete argument and distinguishes this current specification from unavailable historical execution files.
+Persistent parameter uncertainty or an exhausted refinement/time budget leaves selection unresolved. The certificate concerns the explicit finite binary model and uses shared producer/reader arithmetic. The proof section gives its assumptions and residual checks.

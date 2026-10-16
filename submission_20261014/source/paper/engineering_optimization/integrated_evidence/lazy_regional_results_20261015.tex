@@ -2,20 +2,20 @@
 
 \subsection{Engineering decision and existing states}
 
-The EngiBench Beams2D v1 workflow \citep{ref23} uses a symmetric MBB beam with $100\times50$ bilinear elements, SIMP exponent 3, stiffness limits $10^{-9}$ and 1, and Poisson ratio 0.3. Nineteen effective logits and an anchor define a $4\times5$ coarse density field interpolated to the mesh. A logistic shift fixes mean density at 0.35. Compliance is positive and smaller is preferable. This is one structural-design family.
+The EngiBench Beams2D v1 workflow \citep{ref23} uses a symmetric MBB beam with $100\times50$ bilinear elements, SIMP exponent 3, stiffness limits $10^{-9}$ and 1, and Poisson ratio 0.3. Nineteen effective logits and an anchor define a $4\times5$ coarse density field interpolated to the mesh. A logistic shift fixes mean density at 0.35. Compliance is positive and smaller is preferable.
 
-At an archived state, the engineering decision is which supplied design to evaluate first when a prescribed mean policy will choose the second evaluation after observing the response. The solver uses the stored training responses and fixed surrogate parameters to certify this finite-menu comparison. It does not generate a new design family, change the continuation policy or certify the physical accuracy of the compliance solver.
+At an archived state, the engineering decision is which supplied design to evaluate first when a prescribed mean policy will choose the second evaluation after observing the response. The solver uses stored training responses and fixed surrogate parameters to certify this finite-menu comparison.
 
-The 43 nontrivial states contain 20 menus with two first designs, 18 with three and five with four, giving 114 first-action branches. Every eligible continuation pool contains 1024 designs. Twenty-six states come from the archived-common-mean source and 17 from the source historically called previous holdout. Seventeen alias-only states remain in the 60-state metadata record. All have already been observed in development; the historical name does not create independent validation for this method.
+The 43 nontrivial states contain 20 menus with two first designs, 18 with three and five with four, giving 114 first-action branches. Every eligible continuation pool contains 1024 designs. Twenty-six states come from the archived-common-mean source and 17 from the source historically called previous holdout. Seventeen alias-only states remain in the 60-state metadata record. All states were observed during development, including those with the historical holdout label.
 
 \subsection{Frozen execution and minimum control}
 
-Each state supplies 100 stored training pairs. The kernel is a constant times an anisotropic Mat\'ern-$5/2$ kernel in 19 dimensions, with diagonal addition $10^{-6}$ and the recorded per-state hyperparameters held fixed. For the positive planning model, $c_0$ and $s_0$ are the binary64 mean and standard deviation of the stored log responses. Kernel evaluations define the binary matrices in Equation~\eqref{eq:final_pair_posterior}; the certificate targets these matrices rather than exact transcendental kernel values. MPFR 4.2.1 uses 192-bit directed operations with outward binary64 endpoint export.
+Each state supplies 100 stored training pairs. The kernel is a constant times an anisotropic Mat\'ern-$5/2$ kernel in 19 dimensions, with diagonal addition $10^{-6}$ and the recorded per-state hyperparameters held fixed. For the positive planning model, $c_0$ and $s_0$ are the binary64 mean and standard deviation of the stored log responses. Kernel evaluations define the binary matrices targeted by Equation~\eqref{eq:final_pair_posterior}. MPFR 4.2.1 uses 192-bit directed operations with outward binary64 endpoint export.
 
-The implementation, protocol, four passing mathematical/program checks and 43 cleaned training snapshots were saved before execution at commit \texttt{8de86bbe1aeb1568bba754609cf10b8d093094c8}. The snapshots omit earlier action domains, nominal partitions, posteriors, decisions and future responses. Exactly one paired pass alternates method order. Both variants use the same local discovery, posterior arithmetic and reader; only the unresolved-cell reward range differs. The producer cap is 2048 cell operations and 5 s per method/state, with reader time separately charged, and 240 s for the comparison. No cap or method was adjusted after execution.
+The implementation, protocol, four passing mathematical/program checks and 43 cleaned training snapshots were saved before execution at commit \texttt{8de86bbe1aeb1568bba754609cf10b8d093094c8}. The snapshots omit earlier action domains, nominal partitions, posteriors, decisions and future responses. One paired pass alternates method order. Both variants use the same local discovery, posterior arithmetic and reader, changing the unresolved-cell reward range. The producer cap is 2048 cell operations and 5 s per method/state, with reader time separately charged, and 240 s for the comparison. These settings remained fixed throughout execution.
 
 \begin{table}[htbp]\centering\small
-\caption{Single frozen lazy-region comparison. Checked time includes the producer and reader. Conditional posterior constructions are CPU calculations, not engineering-response evaluations.}\label{tab:lazy_summary}
+\caption{Frozen lazy-region comparison. Checked time includes the producer and reader; conditional posterior constructions are CPU calculations.}\label{tab:lazy_summary}
 \begin{tabular}{lrr}\toprule
 Quantity & Uniform reward & Regional reward\\\midrule
 Accepted states & 43/43 & 43/43\\
@@ -27,10 +27,23 @@ Reader conditional endpoint evaluations & 1572 & 1508\\
 Checked stage (s) & 10.726626 & 12.226469\\
 \bottomrule\end{tabular}\end{table}
 
-The regional bound reduces cell operations by 8.59\%, conditional posterior constructions by 2.48\%, and producer endpoint evaluations by 4.07\%. It is slower in this single pass. Therefore the evidence supports a reduction in computational requests, not a time advantage. Complete-projection avoidance is shared by both lazy routes and cannot be attributed solely to the regional reward bound.
+The regional bound reduces cell operations by 8.59\%, conditional posterior constructions by 2.48\%, and producer endpoint evaluations by 4.07\%. The checked stage takes longer. Both lazy routes avoid complete projection; the reward interval accounts for the additional reduction in operations and requests.
 
-Shared preparation costs 2.724387 s and reconstructs 43 training matrices, 114 augmented raw-selector systems and 43 initial first-marginal posterior enclosures. On-demand construction adds 318 bivariate posterior enclosures across both methods. There are therefore 361 validated positive-posterior construction calls, not merely 43. The current implementation repeats training solves and validation inside each call; the reported time includes that cost. Charging preparation to each method gives 13.451013 s and 14.950856 s, respectively, before input acquisition. The full paired workflow takes 25.840707 s. No timing inference is made from one pass.
+Shared preparation costs 2.724387 s and reconstructs 43 training matrices, 114 augmented raw-selector systems and 43 initial first-marginal posterior enclosures. On-demand construction adds 318 bivariate posterior enclosures across both methods. The paired workflow therefore makes 361 validated positive-posterior construction calls. The current implementation repeats training solves and validation inside each call; the reported time includes that cost. Charging preparation to each method gives 13.451013 s and 14.950856 s, respectively, before input acquisition. The full paired workflow takes 25.840707 s.
 
-Both methods certify all states without exceptions, omissions or replacements. The reader freshly checks the local domains, disjoint cell cover, conditional integrals and numerical selection. A subsequent record audit recomputes the declared tolerance and regret; the reader is not claimed to be an independent posterior-arithmetic implementation. New decisions and per-file hashes were frozen before reading the earlier v2 choices or reference values. All 43 choices in each method match v2, all 228 branch/method intervals contain the earlier ordinary point-parameter references, and all queried conditional-parameter intervals overlap their earlier enclosures. These are consistency checks, not new rigorous independent or physical validation.
+Both methods certify all 43 states. The reader freshly checks the local domains, disjoint cell cover, conditional integrals and numerical selection. A subsequent record audit recomputes the declared tolerance and regret from the saved inputs. New decisions and per-file hashes were frozen before reading the earlier v2 choices or reference values. All 43 choices in each method match v2, all 228 branch/method intervals contain the earlier ordinary point-parameter references, and all queried conditional-parameter intervals overlap their earlier enclosures. These checks establish consistency with the earlier numerical record.
 
-The matched first choices, unchanged raw continuation and identical pools retain the earlier mixed engineering outcomes. No new paid response was read or acquired in this final run. It establishes a functioning optimization-selection algorithm from clean training inputs, rather than only a transformation of completed certificates. It does not establish superior engineering designs, physical evaluation savings, statistical calibration, full unqueried joint-GP validity or continuous-domain convergence.
+\subsection{Engineering outcomes}
+
+The matched first choices, unchanged raw continuation and identical pools retain the previously paid two-evaluation outcomes. Each comparison uses the same archived state and continuation. A tie is a terminal-compliance difference within $m_0/10^6$; positive normalized change is worse.
+
+\begin{table}[htbp]\centering\small
+\caption{Already paid engineering outcomes for the selected first actions. Changes are normalized by the initial incumbent $m_0$.}\label{tab:final_paid}
+\begin{tabular}{lrrrr}\toprule
+Comparator & Better & Tie & Worse & Mean change/$m_0$\\\midrule
+Raw-response mean & 1 & 41 & 1 & $+0.0074365$\\
+Raw-response EI & 2 & 40 & 1 & $-0.0045213$\\
+Positive-model one-step EI & 1 & 40 & 2 & $+0.0115273$\\
+\bottomrule\end{tabular}\end{table}
+
+All median changes are zero. The same-model one-step EI comparison separates the rollout decision from the choice of planning distribution. The outcomes vary by comparator and state, while the numerical certificate answers the stated model-value selection problem. The final paired computation uses clean training inputs and acquires no new engineering responses.
