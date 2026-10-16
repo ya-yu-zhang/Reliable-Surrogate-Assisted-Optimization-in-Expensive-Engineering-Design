@@ -108,15 +108,14 @@
   },
   "new_scientific_result_claims": true,
   "new_inferential_families": false,
-  "revised_pdf_compiled": true,
-  "rendered_pdf_layout_verified": true,
+  "revised_pdf_compiled": false,
+  "rendered_pdf_layout_verified": false,
   "submission_ready": false,
   "remaining": [
-    "Optimization increment remains unestablished: two-reference physical full-pool envelope fails root-tie sharpness on all43 nontrivial development states; distinguish point-bound quality from candidate-set pessimism before further experiments",
-    "Affiliations b/c intentionally remain unfilled at user choice; author contribution/funding/conflict facts are not independently certified",
-    "Historical initial manuscript-section drafting assistance remains disclosed; complete early model/prompt history and publisher policy applicability not certified",
-    "Official journal-specific portal/length details could not be fully read (403)",
-    "Local27/32-page PDFs and scoped minimum package delivered; previous exact-public-disclosure blockers and full historical archive access remain outside this completed local delivery"
+    "Full affiliation b for Zhenyu Meng and full affiliation c for Jia Zhao",
+    "Actual reviewer access to the private materials or release of the prepared numerical profile",
+    "Current-source compilation and final layout, including clipped axis labels in Figures S5/S6",
+    "EO-specific current author-instruction/template details remain unverified after HTTP 403"
   ],
   "claim_limits": [
     "One deterministic beam model family with two added force conditions",
@@ -591,11 +590,16 @@
     "retain_material_assumptions_and_counterevidence": true,
     "concentrate_repeated_limits": true,
     "no_claim_strengthening_without_evidence": true,
-    "no_unnecessary_pdf_upload_or_packaging": true
+    "no_unnecessary_pdf_upload_or_packaging": true,
+    "no_first_person_prose": true,
+    "prefer_impersonal_and_passive_constructions": true,
+    "no_new_or_novel_method_self_praise": true,
+    "figure_details_in_captions_and_body": true,
+    "AI_detection_threshold_not_certified": true
   },
   "writing_revision_20261016": {
     "pre_edit_commit": "3b2c841397373cc58f2a27bd47ad0ac078443738",
-    "abstract_words": 141,
+    "abstract_words": 142,
     "proofs_before_historical_supplement": true,
     "existing_numeric_table_rows_preserved": 460,
     "display_math_blocks_preserved": 45,
@@ -632,9 +636,39 @@
     "new_experiments": 0
   },
   "publication_preparation_remaining_20261016": [
-    "Full affiliation b for Zhenyu Meng",
-    "Full affiliation c for Jia Zhao",
-    "Actual reviewer access or publication of the prepared code/data profile",
-    "Current typesetting verification; article.cls absent in runtime"
-  ]
+    "Full affiliation b for Zhenyu Meng and full affiliation c for Jia Zhao",
+    "Actual reviewer access to the private materials or release of the prepared numerical profile",
+    "Current-source compilation and final layout, including clipped axis labels in Figures S5/S6",
+    "EO-specific current author-instruction/template details remain unverified after HTTP 403"
+  ],
+  "historical_remaining_before_final_method_20261016": [
+    "Optimization increment remains unestablished: two-reference physical full-pool envelope fails root-tie sharpness on all43 nontrivial development states; distinguish point-bound quality from candidate-set pessimism before further experiments",
+    "Affiliations b/c intentionally remain unfilled at user choice; author contribution/funding/conflict facts are not independently certified",
+    "Historical initial manuscript-section drafting assistance remains disclosed; complete early model/prompt history and publisher policy applicability not certified",
+    "Official journal-specific portal/length details could not be fully read (403)",
+    "Local27/32-page PDFs and scoped minimum package delivered; previous exact-public-disclosure blockers and full historical archive access remain outside this completed local delivery"
+  ],
+  "historical_layout_flags_before_current_source_revision": {
+    "revised_pdf_compiled": true,
+    "rendered_pdf_layout_verified": true,
+    "applies_to": "Historical earlier manuscript, not the current manuscript source"
+  },
+  "six_point_manuscript_review_20261016": {
+    "report": "submission_20261014/style_scope_figures_20261016/REVIEW_AND_CHANGES.md",
+    "record": "submission_20261014/style_scope_figures_20261016/CHECK_RESULTS.json",
+    "active_tex_files": 18,
+    "first_person_prose_matches": 0,
+    "abstract_words": 142,
+    "figures_inspected": 14,
+    "S10_trajectory_attribution_corrected": true,
+    "official_publisher_template_hashes_match": true,
+    "EO_specific_template_requirements_fully_verified": false,
+    "AI_detection_run": false,
+    "AI_score": null,
+    "below_10_percent_certified": false,
+    "current_visual_layout_verified": false,
+    "new_scientific_execution": false,
+    "PDF_or_ZIP_created_or_uploaded": false,
+    "final_submit_ready": false
+  }
 }

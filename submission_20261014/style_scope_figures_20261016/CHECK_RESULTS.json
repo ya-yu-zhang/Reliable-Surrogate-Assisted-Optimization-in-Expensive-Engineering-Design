@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-16",
+  "pre_edit_commit": "b62366e13d4f71fb30b5b149c090bb717f3ee802",
+  "scientific_baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "active_tex_files": 18,
+  "abstract_words": 142,
+  "prose_checks": {
+    "EO_manuscript.tex": {
+      "first_person_prose_matches": 0,
+      "novel_or_novelty_prose_matches": 0,
+      "new_method_self_description_matches": 0,
+      "math_symbols_and_input_output_abbreviation_preserved": true
+    },
+    "EO_supplementary.tex": {
+      "first_person_prose_matches": 0,
+      "novel_or_novelty_prose_matches": 0,
+      "new_method_self_description_matches": 0,
+      "math_symbols_and_input_output_abbreviation_preserved": true
+    }
+  },
+  "active_tex_sha256": {
+    "submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex": "ee1b20497a59f10bf8adc25607e929ffdf4944f9a12837bb2202055620c5af5b",
+    "submission_20261014/source/paper/engineering_optimization/EO_supplementary.tex": "88128d6cbab5a263a9f241aa8a17a1f08d8e59fe0f8a7f58abb0bdf07b9ac8d7",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex": "2c45b9748c6ef3ea78ba99fa1aacd86c3df778011be112107aa31436eafd553b",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/final_method_20261016.tex": "4475ec0ecc4727a8fcf5fb043d090c0a9a5f34eb9d7e4dbebc80c066668d2063",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/gp_envelope_completion.tex": "7bc1dab9b51915cdc2f85accbc228729dce61dc50a4f8c5c7fb50259c558c93a",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/h1_bound_bottleneck_closure.tex": "2eadf55b2414fb9c64ca2d16be08b66639ab7691be86e01dcb74c2bcc0fb2822",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/lazy_regional_method_20261015.tex": "d2f9b038fba54d582481373699216502152d0204cb028546867bff96d6ae634b",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/lazy_regional_results_20261015.tex": "c560b1314bdc3a4a1ed9b2610a2d74f54bf9050330c767ff44a46b53e5432be4",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/positive_rollout_method_20261015.tex": "a78c87b51ae9d9ee91b6caa964555e05caeec253fde4b65a0c8d7557019bc16b",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/positive_rollout_results_20261015.tex": "1b55801ef7b1cee0f921681195f48afe2e7f9db9ee4bdd255a90c8c19170e354",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/positive_rollout_supplement_20261015.tex": "60a5c40bc37225c6beb96bc83b9042a336a4f402c3cc73be5afa6da87db0fb3b",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/pre_submission_checked_records.tex": "c2ee7cf57e79406b3b1422233b0722d293652700b3c8ca30edf1f3a58de521a5",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/regional_value_method_20261015.tex": "84b67dade324112f5251e1570ec4e4c819297b3e2c26ba5063a6833d17179bef",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/regional_value_proofs_20261015.tex": "59d4481dca75244a14af0a6d24f72308d23c43352d7c771d86415cbb1da70e2a",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/review_supp_records.tex": "a495a9ba8a13e83692819f0564c8eab487fec5abc5c2b1936fb9b41489baa662",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/submission_archival_status.tex": "b3601999998308c626d2ac79c01bc344c60ca86a67bc0911b366956a3ac1cf10",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/submission_comparison.tex": "0dc1eff9fd33c4a1b85694e5b6657251660b524f09ae160361ff1c3e29d351fc",
+    "submission_20261014/source/paper/engineering_optimization/integrated_evidence/supp_records.tex": "bf3d359e7ca5b1e738ac0c40bb58e5e41b6766b670e139d22443637ec0df1c17"
+  },
+  "AI_detection": {
+    "run": false,
+    "score": null,
+    "below_10_percent_certified": false,
+    "private_manuscript_uploaded_to_detector": false,
+    "actual_AI_assistance_disclosure_retained": true,
+    "work_performed": "Evidence-specific language revision, impersonal grammar, precise figure descriptions; no detector-score optimization."
+  },
+  "EO_scope": {
+    "official_url": "https://www.tandfonline.com/journals/geno20/about-this-journal",
+    "emphasis": "Optimization innovation and engineering applicability",
+    "supported_position": "Certified finite-menu first-action rollout using response-stability regions and unresolved-reward bounds, applied to fixed-volume beam compliance decisions.",
+    "request_reduction_reported": true,
+    "time_increase_and_mixed_physical_outcomes_retained": true,
+    "acceptance_or_sufficient_originality_guaranteed": false
+  },
+  "template": {
+    "guidance_url": "https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/formatting-and-templates/",
+    "official_publisher_bundle_url": "https://files.taylorandfrancis.com/InteractCADLaTeX.zip",
+    "class": "interact",
+    "reference_style": "tfcad / Chicago author-date",
+    "files": {
+      "interact.cls": {
+        "sha256": "f84355389329ecef75c6d0c826cd128fb0884012c33721b098d039a1910953bd",
+        "matches_official_bundle_record": true
+      },
+      "tfcad.bst": {
+        "sha256": "30ebc3a77316090922ff3f391b6292c48e24ba1a45e665df660edd5b9f047d73",
+        "matches_official_bundle_record": true
+      }
+    },
+    "EO_specific_current_instructions_fully_verified": false,
+    "verification_limit": "EO author-instructions endpoint returned HTTP 403. Publisher provenance is verified; EO-exclusive current-template suitability is not certified.",
+    "publisher_template_assets_uploaded": false,
+    "current_manuscript_compiled": false,
+    "runtime_article_class_available": false
+  },
+  "figures": {
+    "existing_PDFs_visually_inspected": 14,
+    "existing_PDF_hashes_unchanged": true,
+    "caption_or_body_detail_updates": [
+      {
+        "figure": "S1",
+        "details": "Stack colors, declaration totals, dimension panels and the meaning of a zero bar."
+      },
+      {
+        "figure": "S2",
+        "details": "Selected/pool/top-predicted colors and the horizontal 0.1 reference line."
+      },
+      {
+        "figure": "S3",
+        "details": "Signed selected-minus-pool differences and zero line; removed unsupported nearest-zero wording."
+      },
+      {
+        "figure": "S4",
+        "details": "T/ST colors, actual checkpoint order, support threshold 20 and plateau patterns."
+      },
+      {
+        "figure": "S5",
+        "details": "Full log-relative-error quantity, normalization, aggregation hierarchy and method colors."
+      },
+      {
+        "figure": "S6",
+        "details": "Seconds, modeled nonobjective time + Bc, linear/log horizontal sections and logarithmic vertical axis; removed unsupported intersection claim."
+      },
+      {
+        "figure": "S7",
+        "details": "Task-specific logarithmic raw-loss scales, median points and interquartile bars; distinguished dispersion from confidence intervals."
+      },
+      {
+        "figure": "S8",
+        "details": "Median curves, interquartile shading and internal initialization fractions 0.28/0.44/0.76; corrected description of the DNA timing."
+      },
+      {
+        "figure": "S9",
+        "details": "300 dimensions, 20 runs, logarithmic raw-loss axis and median/interquartile endpoints."
+      },
+      {
+        "figure": "S10",
+        "details": "Logarithmic median raw loss, 1,000 paid evaluations and the 62% internal initialization; corrected early CMA-ES versus later TuRBO-1 trajectory attribution."
+      },
+      {
+        "figure": "S11",
+        "details": "Interquartile boxes, median lines, 1.5-IQR whiskers, omitted outliers and variant settings."
+      },
+      {
+        "figure": "S12",
+        "details": "Budget/D values, dimension panels, hierarchical aggregation and interpretation of connecting segments."
+      },
+      {
+        "figure": "S13",
+        "details": "Rows, columns, panel-specific paid-budget fractions and absolute-order prefix comparisons. No initialization reference line is asserted."
+      },
+      {
+        "figure": "S14",
+        "details": "Force-position panels, postinitial pilot-step axis, percentage improvement, policy colors and different plateau timings."
+      }
+    ],
+    "remaining_asset_issues": [
+      {
+        "figures": [
+          "S5",
+          "S6"
+        ],
+        "issue": "Long vertical-axis labels are clipped in the existing PDFs. Complete quantities and units are now stated in the captions; graphic-label re-export remains part of final layout work."
+      }
+    ],
+    "new_PDF_created_or_uploaded": false
+  },
+  "counters_this_revision": {
+    "optimization_experiments": 0,
+    "GP_reconstructions": 0,
+    "physical_evaluations": 0,
+    "bound_queries": 0,
+    "hyperparameter_fits": 0,
+    "retries": 0,
+    "replacements": 0,
+    "independent_optimization_samples": 0,
+    "ZIPs_created_or_uploaded": 0
+  },
+  "final_submit_ready": false
+}

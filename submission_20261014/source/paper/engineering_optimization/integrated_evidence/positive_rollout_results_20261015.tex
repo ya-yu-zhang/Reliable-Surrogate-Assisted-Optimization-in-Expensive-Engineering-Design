@@ -11,7 +11,7 @@ The comparison asks whether the implemented solver meets its numerical selection
 
 \subsection{Prospective source freeze and arithmetic scope}
 
-The new v2 code, protocol and all 43 training/parameter input snapshots were saved before execution in commit \texttt{f4f352acdb5ccbc98ead05455d2083ccc72acca3}. V2 is separately implemented and versioned from the unavailable earlier program. Exactly one paired pass alternates method order by state. The pass contains 86 method/state runs.
+The v2 implementation, protocol and all 43 training/parameter input snapshots were saved before execution in commit \texttt{f4f352acdb5ccbc98ead05455d2083ccc72acca3}. V2 is separately implemented and versioned from the unavailable earlier program. Exactly one paired pass alternates method order by state. The pass contains 86 method/state runs.
 
 Fixed binary $A/B/K$, outward logarithms, inverse-residual and positive-definiteness gates, and MPFR 4.2.1 at 192 bits define the arithmetic scope. Exported interval endpoints are rounded outwards to binary64. The normal window is $[-8,8]$, with an explicit tail and no renormalization. Limits were fixed at 32,768 refinements and 30 s per method/state, and 600 s for the comparison. No limit or tolerance was adjusted after the results.
 
@@ -82,4 +82,4 @@ The archived action-set study records identical nominal and band indices in all 
 
 The two permitted witnesses are exhausted. Their true responses, approximately 14324.74 and 9639.92, greatly exceed trial bounds of approximately 232.53 and 200.60. The weak-bound diagnosis is retained without repeating the screen. The project ledger remains 55,309 physical attempts. The current v2 adds 43 root and 114 raw-selector fixed-kernel constructions, 114 conditional systems and 86 numerical method/state runs. New physical evaluations, bound queries, hyperparameter fits, retries, replacements and independent optimization samples are all zero.
 
-The unavailable earlier positive-response implementation reported a 1.029 checked-stage ratio, retained as a separate historical aggregate. The new code, input snapshots, posterior intervals, per-state certificates, references, frozen decisions and paid-outcome extracts are preserved for v2.
+The unavailable earlier positive-response implementation reported a 1.029 checked-stage ratio, retained as a separate historical aggregate. The v2 code, input snapshots, posterior intervals, per-state certificates, references, frozen decisions and paid-outcome extracts are preserved for v2.

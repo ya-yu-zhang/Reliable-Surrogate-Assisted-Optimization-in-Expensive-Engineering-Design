@@ -83,6 +83,12 @@ def main():
     assert plain in (SUB/'ABSTRACT_AND_KEYWORDS.txt').read_text()
     assert len(plain.split())==portal['abstract_whitespace_word_count']
     assert len(plain.split())<=150
+    six_review=SUB/'style_scope_figures_20261016'
+    six=json.loads((six_review/'CHECK_RESULTS.json').read_text())
+    for p,expected in six['active_tex_sha256'].items():
+        assert sha(ROOT/p)==expected,p
+    assert six['active_tex_files']==18
+    assert all(x['first_person_prose_matches']==0 for x in six['prose_checks'].values())
     assert portal['title'] in manuscript and portal['title'] in (SUB/'COVER_LETTER.txt').read_text()
     assert json.loads((PAPER/'work_status.json').read_text())==json.loads((ROOT/'paper/engineering_optimization/work_status.json').read_text())
     old=json.loads((ROOT/'results/positive_rollout_v2_20261015/RELEASE_MANIFEST.json').read_text())
@@ -140,6 +146,12 @@ def main():
         new_GP_reconstructions=0,new_conditional_reward_evaluations=0,new_physical_evaluations=0,
         new_PDF_generated=False,new_ZIP_generated=False,
         research_work_closed_under_current_scope=True,new_experiments_planned=0,final_submit_ready=False)
+    record.update(six_point_writing_review='submission_20261014/style_scope_figures_20261016/CHECK_RESULTS.json',
+        current_first_person_prose_matches=0,existing_figures_visually_inspected=14,
+        figure_S10_trajectory_attribution_corrected=True,AI_detection_run=False,AI_score=None,
+        below_10_percent_AI_detection_certified=False,official_publisher_template_hashes_match=True,
+        EO_specific_current_template_requirements_fully_verified=False,
+        figure_axis_label_clipping_pending=['S5','S6'])
     lazy=ROOT/'results/lazy_regional_20261015'
     if lazy.exists():
         config_path=ROOT/'configs/lazy_regional_20261015.json'
@@ -196,6 +208,7 @@ def main():
         'public_release/HISTORY_INVENTORY_20261016.json','public_release/PROFILE_VERIFICATION.json'])
     current.add(REVIEW/'PROJECT_CLOSEOUT.md')
     current.add(REVIEW/'MANUSCRIPT_ASSETS.json')
+    current.update(six_review/p for p in ['CHECK_RESULTS.json','REVIEW_AND_CHANGES.md'])
     frozen={}
     if lazy.exists():
         frozen.update(result_hashes)

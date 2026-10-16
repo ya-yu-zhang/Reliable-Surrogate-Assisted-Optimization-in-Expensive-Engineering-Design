@@ -166,7 +166,7 @@ The numbers of realized improvements and false claims within each declared subse
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_1.pdf}
-\caption{Counts of actual improvement and false claims on declared candidates. A zero column denotes no declarations, not an established reliability advantage.}
+\caption{Improvement declarations in dimensions 10 (left) and 20 (right), with 72 runs per method and dimension. Blue segments count realized improvements and orange segments count false claims; totals are printed above the bars. A zero column denotes no declarations.}
 \end{figure}
 
 Figure S1 exposes both the rarity and composition of improvement declarations. PEM-T makes only three declarations in dimension 10 and none in dimension 20, whereas PEM-ST and the fixed controls produce larger declared subsets. Blue and orange segments distinguish realized improvements from false claims. A missing bar therefore represents an empty conditional sample, while a tall orange segment identifies a declaration rule whose apparent candidates often fail to improve the incumbent.
@@ -232,7 +232,7 @@ Failure fractions for the selected candidate, full pool, and predicted top 10\% 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_2.pdf}
-\caption{State-averaged one-sided failure fractions under frozen common histories. The dashed target is .1. Pool labels are correlated and are not treated as independent problems.}
+\caption{State-averaged one-sided failure fractions under frozen common histories, shown separately for dimensions 10 and 20. Blue, orange and green bars denote the selected point, entire pool and top predicted 10\%, respectively. The dashed horizontal line is the target 0.1. Pool labels are correlated.}
 \end{figure}
 
 Figure S2 compares three monitored objects at identical frozen states: the actually selected candidate, the entire candidate pool, and the top 10\% by predicted value. Under fixed 03 histories, the selected-candidate bar is highest; under greedy histories, the pool and top-10\% bars become higher. The dashed 0.1 line is crossed in different directions across histories, which supports reporting the monitored object and its generating policy together.
@@ -416,7 +416,7 @@ The corresponding selected-minus-pool contrasts are shown in Figure S3.
 \caption{Selected-minus-pool failures by preselected history. Positive values indicate greater selected-point failure; negative values indicate lower selected-point failure.}
 \end{figure}
 
-Figure S3 expresses the same comparison as a signed difference (selected minus pool). Fixed03 bars are positive and greedy bars are negative in every dimension; random-pool bars stay nearer zero. The repeated sign reversal demonstrates that selected-point coverage cannot be summarized independently of the history-generating policy.
+Figure S3 expresses the comparison as selected-minus-pool failure fractions in dimensions 10, 20 and 40. The horizontal zero line separates excess selected-point failure from lower selected-point failure. Fixed .3 bars are positive and greedy bars are negative in every panel; the random-pool differences are also negative. The sign reversal between fixed .3 and greedy histories establishes the dependence of selected-point failure on the history-generating policy.
 
 \FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
 
@@ -531,10 +531,10 @@ Temporal and spatiotemporal effective support across checkpoint order is shown i
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_4.pdf}
-\caption{T/ST effective support at the four actual checkpoint orders. The threshold is an engineering guard and does not guarantee coverage.}
+\caption{Temporal (T, blue) and spatiotemporal (ST, green) effective support in dimensions 10, 20 and 40. The horizontal axis indexes the four actual checkpoints; it is not a common evaluation count across dimensions. The dashed horizontal threshold at 20 is the numerical support guard.}
 \end{figure}
 
-Figure S4 shows that effective support grows with checkpoint order for both temporal (T) and spatiotemporal (ST) weighting. T retains more effective observations than ST after localization, and the gap is largest in dimensions 20 and 40. Both curves remain above the support guard after the earliest checkpoint, but the plateaus emphasize that passing the guard is a numerical eligibility condition rather than evidence of calibrated coverage.
+Figure S4 shows increasing effective support followed by plateaus in dimensions 20 and 40. More effective observations are retained by T than by ST after spatial localization. In dimension 10, support continues to increase through the fourth checkpoint. Both curves exceed the guard after the earliest checkpoint. The threshold determines eligibility for the localized calculation; calibrated coverage is assessed by the failure diagnostics.
 
 The first diagnostic checkpoints are 41/100, 61/200, and 101/400. Sparse declared-pool subsets disclose nonempty states, candidate counts, and failures separately. Localized quantile-loss, margin, ESS, and fallback differences and the five fixed BBOB structure groups are available in full secondary tables; no favorable subgroup is promoted to a primary result.
 
@@ -659,10 +659,10 @@ The complete ten-method BBOB endpoint comparison is shown in Figure S5.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_5.pdf}
-\caption{Complete BBOB background reference endpoints; no partial runs or resource-precheck instances.}
+\caption{Complete BBOB background reference endpoints in dimensions 10, 20 and 40. The vertical quantity is function-mean final $\log_{10}$ relative error, normalized by the matched initial error; lower values indicate greater improvement. Partial runs and resource-precheck instances are excluded.}
 \end{figure}
 
-Figure S5 retains the full ten-method ordering in each dimension. TuRBO-1 and GP-EI occupy different positions across dimensions, while Sobol remains close to zero and the internal methods form a tighter negative-error group. The methods use different initialization and search mechanisms, so the panel-wise rankings describe their recorded protocols.
+Figure S5 shows four internal controls in grey, PEM-T in orange, PEM-ST in green and four external references in blue. Run-level log-relative endpoints are aggregated by repeat medians, instance means and an equal mean across functions. Negative values indicate reduction relative to the matched initial error. GP-EI and TuRBO-1 have lower aggregate endpoints than the internal configurations, while Sobol remains near zero. The rankings describe the recorded initialization and search protocols.
 
 \hypertarget{exclusive-cost-evidence}{%
 \subsection{Exclusive cost evidence}\label{exclusive-cost-evidence}}
@@ -821,10 +821,10 @@ The measured-overhead and assumed-objective-cost scenarios are shown in Figure S
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_6.pdf}
-\caption{Hypothetical objective-cost scenarios from serial measurements; all methods use the same B in a dimension.}
+\caption{Objective-cost scenarios from serial measurements for $D=10,20,40$, with $B=100,200,400$, respectively. Total modeled time is measured nonobjective time plus $Bc$, in seconds. The horizontal axis is linear for $0\leq c\leq0.01$ s and logarithmic above 0.01 s; the vertical axis is logarithmic. All methods use the same $B$ within a panel.}
 \end{figure}
 
-Figure S6 separates measured algorithm overhead from an assumed per-evaluation objective cost. The left side of each log-scale panel is dominated by method overhead, which is largest for GP-EI and TuRBO-1. As objective cost increases, all lines approach the common slope imposed by the identical evaluation budget. The intersections mark cost regimes in which overhead ceases to dominate; they are scenario calculations, not measured parallel speedups.
+Figure S6 separates measured algorithm overhead from an assumed per-evaluation objective cost. At $c=0$, each curve reports the measured nonobjective-time contribution; the largest overheads occur for GP-EI and TuRBO-1. The gaps narrow as the shared $Bc$ term dominates at higher objective cost. Curve convergence therefore reflects the equal paid-evaluation budget in each dimension. No parallel execution was measured in these scenarios.
 
 At an assumed objective cost c, total time is modeled as measured nonobjective time plus Bc. This scenario is not an observed application acceleration. Equal evaluation budgets have equal objective-cost slopes and cannot establish evaluation savings.
 
@@ -1076,20 +1076,20 @@ Original-scale validation endpoints for the three LassoBench tasks are shown in 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_7.pdf}
-\caption{Application original validation endpoints with run-IQR bars; unknown-optimum error is never constructed.}
+\caption{LassoBench validation-loss endpoints for synt\_simple ($D=60$), synt\_medium ($D=100$) and DNA ($D=180$). Points show run medians and vertical bars span the 25th--75th percentiles. Each vertical axis is logarithmic in original validation-loss units; lower is better.}
 \end{figure}
 
-Figure S7 reports the original validation loss on its native scale for each LassoBench task. The synt\_\allowbreak simple and synt\_\allowbreak medium panels separate the lower-loss internal and trust-region methods from Sobol and GP-EI, whereas the DNA panel compresses most methods into a narrow band. The run-interquartile bars show the endpoint dispersion alongside the median ordering.
+Figure S7 reports task-specific original validation losses, with a separate vertical range for each task. The synthetic-task panels separate the lower-loss internal and trust-region configurations from Sobol and GP-EI, whereas DNA endpoints occupy a narrower relative range. The bars describe dispersion across runs and are not confidence intervals for the median. Loss magnitudes are compared within each task.
 
 Their median and interquartile convergence histories are shown in Figure S8.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_8.pdf}
-\caption{Application original-loss median and IQR curves. The dotted line marks internal initialization; external designs differ. Zero fraction displays the first paid label.}
+\caption{Original validation-loss convergence under the charged 500-evaluation budget. Lines show run medians and shaded bands span the 25th--75th percentiles. The dotted vertical lines mark internal initialization at budget fractions 0.28, 0.44 and 0.76, respectively; external designs differ. Zero fraction displays the first paid label.}
 \end{figure}
 
-Figure S8 shows how the endpoint differences arise. Most improvement on the two synthetic tasks occurs early, followed by long plateaus, while DNA retains smaller and more gradual changes. The dotted initialization boundary applies to the internal configurations only; external curves begin from their native designs. The figure describes timing and stability under those starting conditions.
+Figure S8 uses a linear validation-loss axis, so the large early reductions on the synthetic tasks compress later differences. The internal initialization costs are 140, 220 and 380 paid evaluations for synt\_\allowbreak simple, synt\_\allowbreak medium and DNA, respectively. The long DNA initialization occupies most of the horizontal range; postinitial changes occur to the right of its dotted boundary. External curves retain their own initialization and search histories.
 
 \FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
 
@@ -1222,7 +1222,7 @@ The 300-dimensional endpoint distribution is shown in Figure S9.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_9.pdf}
-\caption{High-dimensional endpoints}
+\caption{Endpoints on 300-dimensional synt\_high, with 20 optimization runs per method. Points show median original validation loss and vertical bars span the 25th--75th percentiles. The vertical axis is logarithmic; lower is better.}
 \end{figure}
 
 Figure S9 separates the 300-dimensional methods into two endpoint groups. The four internal configurations, CMA-ES, and TuRBO-1 finish near the lower cluster, whereas Sobol and GP-EI remain more than an order of magnitude higher on the logarithmic axis. Interquartile bars are shown for all methods so that the apparent grouping can be assessed against between-run variability.
@@ -1232,10 +1232,10 @@ The associated paid-budget convergence histories are shown in Figure S10.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_10.pdf}
-\caption{High-dimensional convergence}
+\caption{Convergence on 300-dimensional synt\_high under 1,000 paid evaluations. Each line shows the median best original validation loss across 20 runs against paid-budget fraction. The vertical axis is logarithmic.}
 \end{figure}
 
-Figure S10 reveals distinct routes to the lower endpoint cluster. TuRBO-1 improves early and continuously; the internal methods change sharply only after their long initialization consumes about 62\% of the budget. CMA-ES improves later, while Sobol and GP-EI remain on the upper plateau. This timing difference is why the 1,000-evaluation protocol is reported separately from the primary 500-evaluation application study.
+Figure S10 reveals distinct routes to the lower endpoint cluster. The brown CMA-ES curve falls substantially during the early budget, followed by gradual reductions. The four internal curves fall sharply after initialization consumes about 62\% of the budget. The grey TuRBO-1 curve also declines substantially after this fraction and approaches CMA-ES near the endpoint. Sobol and GP-EI remain in the higher-loss group. The 1,000-evaluation protocol is reported separately from the primary 500-evaluation application study.
 
 The prespecified descriptive PEM\_\allowbreak T-minus-fixed 01 median raw-loss difference was -0.01788, with paired-run bootstrap interval {[}-0.06477, 0.05017{]} and 11/9/0 negative/positive/zero differences. No p-value was computed and this contrast was not added to the three-test primary application family. The interval conditions on one fixed data set and split.
 
@@ -1359,10 +1359,10 @@ Paired model and training-cap endpoint distributions are shown in Figure S11.
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_11.pdf}
-\caption{Model and training-cap sensitivity}
+\caption{Final $\log_{10}$ relative-error distributions for model and training-cap variants in dimensions 20 and 40. Boxes span the interquartile range and central lines show medians. Whiskers extend to the most extreme observations within 1.5 interquartile ranges of the box; outlier points are omitted. Lower is better.}
 \end{figure}
 
-Figure S11 displays paired endpoint distributions for the base model, two training caps, and two length-scale variants. Cap512 coincides with the base configuration in dimension 20 because the cap is never reached. Other variants shift the median and spread, especially in dimension 40, but none converts the sensitivity analysis into an unqualified favorable result for the feedback mechanism.
+Figure S11 compares the base model, training caps of 128 and 512, and length-scale variants 1.25 and 5.00 on the same sensitivity cases. Cap512 coincides with the base configuration in dimension 20 because the cap is never reached. The scale125 boxes have higher medians than the base boxes in both dimensions, indicating worse final error under that variant. Changes in medians and interquartile ranges are reported separately from the paired variant-minus-base differences below.
 
 Paired differences below are variant minus base in final log10 relative error. Negative values favor the variant descriptively.
 
@@ -1565,20 +1565,20 @@ Endpoint changes across the three prespecified total budgets are shown in Figure
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_12.pdf}
-\caption{Budget-sensitivity endpoints}
+\caption{Budget-sensitivity endpoints for dimensions 20 and 40. The horizontal axis is total paid budget divided by dimension, with values 5, 10 and 15. Markers show hierarchical mean final $\log_{10}$ relative error and lines connect the three recorded budgets for each method; lower is better.}
 \end{figure}
 
-Figure S12 connects endpoint quality to total budget. Most methods improve as the allowance rises from 5D to 15D, but the monitored internal variants remain above the strongest external curves. The slopes differ by dimension, which indicates that additional budget changes the magnitude of the gap without reversing the principal mechanism conclusion.
+Figure S12 connects endpoint quality to total budget in separate dimension-20 and dimension-40 panels. Hierarchical aggregation retains repeat medians within each function--instance cell before averaging across the problem set. Most curves descend as the allowance increases from $5D$ to $15D$; GP-EI and TuRBO-1 retain lower endpoints than the internal configurations. The connecting segments summarize the three tested budgets and do not interpolate unobserved runs.
 
-The corresponding independent-run convergence histories are shown in Figure S13.
+The corresponding separately executed convergence histories are shown in Figure S13.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/supp_figure_13.pdf}
-\caption{Budget-sensitivity convergence}
+\caption{Budget-sensitivity convergence, with $D=20$ in the upper row and $D=40$ in the lower row; columns use total budgets $5D$, $10D$ and $15D$. Each horizontal axis is the fraction of that panel's paid budget. Lines show hierarchical mean $\log_{10}$ relative error; lower is better.}
 \end{figure}
 
-Figure S13 plots each independent run against its own paid-budget fraction. The 5D, 10D, and 15D panels share early behavior where the information prefixes are equal, then separate as longer runs acquire additional labels. External methods do not share those internal prefixes. The six panels therefore expose both convergence shape and the information-order boundary used in the recovery audit.
+Figure S13 plots separately executed runs against their own paid-budget fractions. The same absolute evaluation count occurs farther left as total budget increases across the columns. Matched internal information prefixes therefore occupy different horizontal fractions in the three budgets; the prefix audit compares absolute label order. External methods retain their own initialization and search histories. The six panels display convergence within each budget and dimension.
 
 Each budget is a separate optimization run. A longer-budget endpoint therefore supplies robustness evidence under a larger total allowance; it is not a continuation selected after observing the shorter run. The restricted five-function, two-dimension design and descriptive aggregation do not establish a general ranking.
 
@@ -2103,10 +2103,10 @@ Zero first, positive20 /10
 \begin{figure}[H]
 \centering
 \includegraphics[width=\linewidth,height=.65\textheight,keepaspectratio]{figures/transfer_pilot_horizons.pdf}
-\caption{Pilot improvement across twenty steps under the two force positions.}
+\caption{Pilot incumbent improvement at force positions 0.25 (left) and 0.75 (right). The horizontal axis counts twenty postinitial pilot steps; the vertical axis is median percentage improvement from the initial incumbent. Blue, orange, green and red curves denote MEAN, EI, PI and LCB, respectively.}
 \end{figure}
 
-Figure S14 plots condition-specific median incumbent improvement over the pilot horizon. It illustrates why a first action without gain is not a sufficient rejection rule. These are whole-policy trajectories with diverging histories; the figure does not estimate a first-action treatment effect with an identical continuation. Pilot-to-canonical selection transfer is a further question because the canonical candidate stream is independent.
+Figure S14 shows different timing across the two force positions. The force-position-0.25 curves have a long initial plateau before gains appear, whereas PI gains emerge earlier at force position 0.75. Later pilot gains can therefore follow an unchanged incumbent at the first step. These are whole-policy trajectories with diverging histories, so their differences do not estimate a first-action effect under an identical continuation. The canonical workflow uses a separate candidate stream.
 
 \hypertarget{costs-recovery-and-evidence-integrity}{%
 \subsection{Costs, recovery and evidence integrity}\label{costs-recovery-and-evidence-integrity}}
