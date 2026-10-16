@@ -20,31 +20,31 @@
       "affiliation": "School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
       "corresponding": true,
       "email": "100130@nuist.edu.cn",
-      "ORCID": null,
+      "ORCID": "0000-0003-2117-0618",
       "institutional_profile_url": null
     },
     {
       "name": "Ya-Yu Zhang",
       "affiliation": "School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
       "corresponding": false,
-      "email": null,
-      "ORCID": null,
+      "email": "202412492223@nuist.edu.cn",
+      "ORCID": "0009-0001-2272-4654",
       "institutional_profile_url": null
     },
     {
       "name": "Zhenyu Meng",
-      "affiliation": null,
+      "affiliation": "School of Computer Science and Software, Zhaoqing University, Zhaoqing 526061, China",
       "corresponding": false,
-      "email": null,
-      "ORCID": null,
+      "email": "mzy1314@gmail.com",
+      "ORCID": "0000-0002-1466-8082",
       "institutional_profile_url": null
     },
     {
       "name": "Jia Zhao",
-      "affiliation": null,
+      "affiliation": "School of Information Engineering, Jiangxi University of Water Resources and Electric Power, Nanchang 330099, China",
       "corresponding": false,
-      "email": null,
-      "ORCID": null,
+      "email": "zhaojia@juwp.edu.cn",
+      "ORCID": "0000-0002-3652-1903",
       "institutional_profile_url": null
     }
   ],
@@ -57,7 +57,7 @@
   "actual_submission": false,
   "manuscript_id": null,
   "ready_for_final_submit": false,
-  "preparation_status": "150_word_abstract_78_word_contribution_and_format_free_author_instructions_applied; institutional_contacts_affiliations_official_cover_template_and_final_submission_files_pending",
+  "preparation_status": "Author affiliations, available contact emails and ORCID records filled from the referenced author-plan record; institutional profile URLs, Zhenyu Meng institutional email confirmation, official cover-letter template and final submission files remain pending",
   "required_author_facts_missing": [
     {
       "author": "Shu-Chuan Chu",
@@ -68,24 +68,20 @@
     {
       "author": "Ya-Yu Zhang",
       "fields": [
-        "institutional email",
         "institutional profile URL"
       ]
     },
     {
       "author": "Zhenyu Meng",
       "fields": [
-        "institutional email",
-        "institutional profile URL",
-        "full affiliation b"
+        "institutional email (only personal Gmail supplied)",
+        "institutional profile URL"
       ]
     },
     {
       "author": "Jia Zhao",
       "fields": [
-        "institutional email",
-        "institutional profile URL",
-        "full affiliation c"
+        "institutional profile URL"
       ]
     }
   ],
@@ -123,5 +119,16 @@
     "source_main_sha256_before_annotation": "41f6bf80bb81b6eab194b6d19cf1f1a39e3d863346dbd5ea4913082a584b5643",
     "expanded_input_sha256": "8f215c88970d23bafb47f0e09dc72a72c467c2acb341078de887e7deb4d19a57",
     "math_text_conversion_warnings_do_not_change_manuscript_equations": true
+  },
+  "author_information_provenance": {
+    "source": "Referenced Codex task 01a0aeb5-666b-7a92-b056-1d142c80e65e and existing project author records",
+    "applied_on": "2026-10-16",
+    "current_author_list": [
+      "Shu-Chuan Chu",
+      "Ya-Yu Zhang",
+      "Zhenyu Meng",
+      "Jia Zhao"
+    ],
+    "excluded_historical_author": "Jeng-Shyang Pan (present in an earlier CMC-specific author revision; not part of the current EO four-author source)"
   }
 }
