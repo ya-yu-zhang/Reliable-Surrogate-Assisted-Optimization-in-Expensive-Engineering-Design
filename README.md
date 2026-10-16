@@ -16,7 +16,7 @@ The numerical guarantee covers positive completions of uncomputed conditional la
 
 Earlier v2 and regional certificate-transformation records remain separate: sources/inputs were frozen at `f4f352ac`, v2 results at `79f2cfa0`, and the regional theory/transform at `3b3f8a5c`. Their projection, width and timing statistics must not be combined with the final algorithm's results. Missing historical originals and all unfavorable evidence remain disclosed.
 
-The scientific baseline remains `58f539c2d0738b20c7d0d4889fe8d808a03a3019`; the authorized branch is `research/contribution-closure-20261014-c5d11c`. Research is closed at this bounded scope, with no more experiments planned. Required author facts, private reviewer access and current layout remain unfinished; `final_submit_ready` is false. Journal acceptance or sufficient originality is not certified.
+The scientific baseline remains `58f539c2d0738b20c7d0d4889fe8d808a03a3019`; the authorized branch is `research/contribution-closure-20261014-c5d11c`. Research is closed at this bounded scope, with no more experiments planned. Author affiliations and available contact records have been filled from the referenced author plan; institutional profile URLs, one institutional email confirmation, private reviewer access and current layout remain unfinished; `final_submit_ready` is false. Journal acceptance or sufficient originality is not certified.
 
 The 16 October source integration presents one final algorithm contract and promotes the beam problem, menu sizes, fixed kernel and numerical assumptions into the main text. Start with [the current review entry](submission_20261014/REVIEW_REPRODUCTION.md) and [the final scientific review](submission_20261014/review_20261016/FINAL_SCIENTIFIC_REVIEW.md). The source/hash check writes a new dated review record and preserves all frozen numerical result files. Older manuscript builders restore older presentations; do not run them over this final source. No new algorithm, numerical replay, physical response or experiment is part of this revision.
 
@@ -36,8 +36,7 @@ paper directory for the core-object comparison, AI-use history audit, response
 record and delivery manifest. `work_status.json` records the active boundaries.
 
 The all-author approval task is excluded by the user's explicit instruction;
-this is not a claim that approval occurred. Affiliations b/c remain unfilled at
-the user's choice. Novelty sufficiency and historical AI-policy applicability
+this is not a claim that approval occurred. Affiliations b/c have been filled from the referenced author-plan record; final author confirmation remains required. Novelty sufficiency and historical AI-policy applicability
 are not certified, and `submission_ready` remains false. No new physics was
 acquired for this revision. Its active reproduction entry points are:
 
