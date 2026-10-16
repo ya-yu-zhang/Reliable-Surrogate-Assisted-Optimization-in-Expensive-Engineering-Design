@@ -1,6 +1,6 @@
 \FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.08}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.11}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.15}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.18}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.18}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.15}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.15}}@{}}
-\caption{Complete seed-block composition. Each block has three dependent source states. K=1/2/3 counts states by exact branch-class count. The B=12 completion counts coincide for mean/EI continuation; blocks with zero contrasts remain in the record. No extra independent samples are introduced.}\label{tab:review_seedblocks}\tabularnewline
+\caption{Complete seed-block composition. Each block has three dependent source states. K=1/2/3 counts states by exact branch-class count. The B=12 completion counts coincide for mean/EI continuation; blocks with zero contrasts remain in the record.}\label{tab:review_seedblocks}\tabularnewline
 \toprule
 Block & Contrasts & K=1/2/3 & Mean B/T/W & EI B/T/W & Depth B12 & Adaptive B12 \\
 \midrule
@@ -26,7 +26,7 @@ Block & Contrasts & K=1/2/3 & Mean B/T/W & EI B/T/W & Depth B12 & Adaptive B12 \
 
 \FloatBarrier\begingroup\fontsize{8.5}{10}\selectfont\setlength\tabcolsep{3pt}
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1}}>{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.06}}>{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1}}>{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.22}}>{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.12}}>{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1}}>{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.1}}>{\raggedright\arraybackslash}p{(\columnwidth - 14\tabcolsep) * \real{0.2}}@{}}
-\caption{Post-review descriptive sensitivity at all previously specified budgets and margins. Fixed-depth-reversed changes only the nonbaseline class order. All displayed cells have zero measured-target errors and zero reported state-selection loss; these are not predictive guarantees. New points sum statewise points absent from that state's training archive, not globally unique paid solves. Original fixed-depth/adaptive cells match the published values.}\label{tab:review_sensitivity}\tabularnewline
+\caption{Post-review descriptive sensitivity at all previously specified budgets and margins. Fixed-depth-reversed changes only the nonbaseline class order. All displayed cells have zero measured-target errors and zero reported state-selection loss; these are completed-target measurements. New points count statewise designs absent from each training archive; physical-call uniqueness is accounted for separately. Original fixed-depth/adaptive cells match the published values.}\label{tab:review_sensitivity}\tabularnewline
 \toprule
 Followup & B & Margin & Order / rule & Classified & Requests & New points & Worse abstained \\
 \midrule
@@ -96,7 +96,7 @@ MEAN & 24 & 0.01 & fixed depth reversed & 25/25 & 252 & 152 & 0 \\
 
 \FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.1}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.14}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.13}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.18}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.15}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.15}}>{\raggedright\arraybackslash}p{(\columnwidth - 12\tabcolsep) * \real{0.15}}@{}}
-\caption{B=12, margin 0.001: exhaustively permuting the alternatives within each state preserves completion coverage but can change which target remains unmeasured. Both continuations change the covered class set in eight states; none contains a better primary target. This is retrospective replay, not independent confirmation. The capacity of 17 completed nonbaseline comparisons follows from the declared six-request full-branch contract.}\label{tab:review_order}\tabularnewline
+\caption{B=12, margin 0.001: exhaustively permuting the alternatives within each state preserves completion coverage but can change which target remains unmeasured. Both continuations change the covered class set in eight states; none contains a better primary target. The calculation replays the existing records. The capacity of 17 completed nonbaseline comparisons follows from the declared six-request full-branch contract.}\label{tab:review_order}\tabularnewline
 \toprule
 Followup & States changed & Classified & Worse missed range & Forward new points & Reverse new points & Max loss (\%) \\
 \midrule
@@ -114,7 +114,7 @@ EI & 8 & 17/25 & 0--1 & 156 & 150 & 0.0000 \\
 
 \FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.08}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.33}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.12}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.13}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.17}}>{\raggedright\arraybackslash}p{(\columnwidth - 10\tabcolsep) * \real{0.17}}@{}}
-\caption{Ranges of h5 baseline-minus-alternative paired differences for the eight differing endpoint pairs across six mesh/mapping contexts. Percentages are normalized by each context's initial incumbent compliance, not its baseline final endpoint. Six identical-endpoint ties are omitted here and retained in the original case table. These selected records neither add independent optimization samples nor certify a physical error bound.}\label{tab:review_grid_ranges}\tabularnewline
+\caption{Ranges of h5 baseline-minus-alternative paired differences for the eight differing endpoint pairs across six mesh/mapping contexts. Percentages are normalized by each context's initial incumbent compliance, not its baseline final endpoint. Six identical-endpoint ties are omitted here and retained in the original case table. The rows describe the selected fixed-design comparisons.}\label{tab:review_grid_ranges}\tabularnewline
 \toprule
 Case & Existing state & Control & Class & Minimum (\%) & Maximum (\%) \\
 \midrule

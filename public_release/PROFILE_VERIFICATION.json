@@ -1,0 +1,14 @@
+{
+  "files_checked": 209,
+  "local_imports_resolved": 29,
+  "physical_evaluations": 0,
+  "posterior_reconstructions": 0,
+  "numerical_execution": false,
+  "public_visibility_changed": false,
+  "PDF_or_ZIP_created_or_uploaded": false,
+  "scoped_code_data_profile_prepared": true,
+  "archive_materialized": false,
+  "fresh_public_repository_created": false,
+  "private_machine_path_findings": [],
+  "manifest_sha256": "649dee723b2a6179b946e8d4dbfc533f346cb3de818ea2c4cc442c10e99c7078"
+}

@@ -30,7 +30,7 @@ The same argument yields the strengthened fixed-reference bound
 [L_a,U_a]\subseteq[G_{aj}-H_{a,E},G_{aj}+H_{a,E}].
 \label{eq:regional_weighted_event}
 \end{equation}
-For example, if instability occurs only when $Y_a\le\eta m_0$, with $0<\eta<1$, then $H_{a,E}\le\eta m_0\mathbb P(E_a)$. A small first response has already obtained most of the possible terminal improvement, so its remaining adaptation has limited value. This is a mathematical regime, not a claimed empirical property of every recorded branch.
+For example, if instability occurs only when $Y_a\le\eta m_0$, with $0<\eta<1$, then $H_{a,E}\le\eta m_0\mathbb P(E_a)$. A small first response has already obtained most of the possible terminal improvement, so its remaining adaptation has limited value. This condition identifies the low-response regime in which the weighted bound improves.
 
 \paragraph{Selection without a complete response partition.}
 For each first action, construct a valid regional interval. If
@@ -38,12 +38,12 @@ For each first action, construct a valid regional interval. If
 \max_{a\ne\hat a}\{U_a-L_{\hat a}\}\le\delta,
 \label{eq:regional_no_projection}
 \end{equation}
-then $\hat a$ has model regret at most $\delta$, irrespective of the unresolved continuation identities outside the stable regions. A singleton menu is accepted trivially. With numerical enclosures, use outward lower bounds for $L_{\hat a}$ and upper bounds for $U_a$. Otherwise, refinement or complete projection can be confined to branches still preventing the selection inequality. The condition provides a decision-level reason to omit a partition; it does not guarantee that omission will be possible on every input.
+then $\hat a$ has model regret at most $\delta$, irrespective of the unresolved continuation identities outside the stable regions. A singleton menu is accepted trivially. With numerical enclosures, use outward lower bounds for $L_{\hat a}$ and upper bounds for $U_a$. Otherwise, refinement or complete projection can be confined to branches still preventing the selection inequality. The selection inequality determines whether further partition work is required.
 
-The endpoints in Equation~\eqref{eq:regional_enclosure} are the infimum and supremum in the reward relaxation that retains $B_a$, $W_{a,S}$ and only $0\le w_a\le h_a$ on $E_a$. This is a precise information-scope statement, not a claim of the tightest interval for the fixed joint Gaussian model. The range argument, by itself, is elementary. The proposed computational mechanism combines it with exact response-stability geometry and a checked finite-menu decision rule.
+The endpoints in Equation~\eqref{eq:regional_enclosure} are the infimum and supremum in the reward relaxation that retains $B_a$, $W_{a,S}$ and only $0\le w_a\le h_a$ on $E_a$. A fixed joint Gaussian model can impose further restrictions. The computational mechanism combines this range relaxation with response-stability geometry and the finite-menu decision rule.
 
-\paragraph{Why continuity of the fixed-policy value cannot be assumed.}
-Consider $m_0=1$ and raw affine means $z-1/2$ and $0$, with action 1 winning a tie. Then $\pi(z)=1$ for $z\le1/2$ and $\pi(z)=2$ for $z>1/2$. Let the positive planning responses be independent lognormals with equal positive log-standard deviation and log-means $\log(1/4)$ and $\log(3/4)$, independently of the first response. The second response is strictly stochastically larger than the first, so at $h=1/2$ its expected capped minimum is strictly larger. The two one-sided conditional reward limits therefore differ at $z=1/2$. This is an admissible nondegenerate instance of the declared two-model contract with a discontinuous policy-composed reward. Regional enclosures remain valid without a global Lipschitz constant for that composition. The example does not rule out other partition-aware integration or planning methods.
+\paragraph{A discontinuous fixed-policy value.}
+Consider $m_0=1$ and raw affine means $z-1/2$ and $0$, with action 1 winning a tie. Then $\pi(z)=1$ for $z\le1/2$ and $\pi(z)=2$ for $z>1/2$. Let the positive planning responses be independent lognormals with equal positive log-standard deviation and log-means $\log(1/4)$ and $\log(3/4)$, independently of the first response. The second response is strictly stochastically larger than the first, so at $h=1/2$ its expected capped minimum is strictly larger. The two one-sided conditional reward limits therefore differ at $z=1/2$. This is an admissible nondegenerate instance of the declared two-model contract with a discontinuous policy-composed reward. Regional enclosures remain valid without a global Lipschitz constant for that composition.
 
 \paragraph{Closed marginal moments and stored-leaf conversion.}
 The additional range requires only a first-response marginal. Write $c=(\log m_0-m)/s$. On a standard-normal interval $[r,t]$, its part below $c$ is
@@ -66,4 +66,4 @@ encloses the remainder integral. For the possibly partial stable intersection $J
 \min\{\mathcal W_C^+,H_J^+\}.
 \label{eq:regional_leaf_restriction}
 \end{equation}
-Summing these disjoint contributions and adding the unknown-region bound gives a regional value enclosure without new conditional-reward quadrature. Intersecting it with an already valid interval can only preserve or improve that interval. This conversion is implemented separately from the prospectively frozen v2 solver; its later results must not be assigned the v2 timing or projection counts.
+Summing these disjoint contributions and adding the unknown-region bound gives a regional value enclosure without new conditional-reward quadrature. Intersecting it with an already valid interval can only preserve or improve that interval. The conversion has a separate implementation and execution record from the frozen v2 solver.

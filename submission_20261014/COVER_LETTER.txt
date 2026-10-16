@@ -1,5 +1,5 @@
 16 October 2026
-Preparation copy; required author facts, reviewer access and current layout remain unfinished.
+Preparation copy: affiliations b/c, reviewer access and final layout remain to be completed.
 
 Editors, Engineering Optimization
 
@@ -7,15 +7,13 @@ Re: Local Response Stability for Certified Two-Step Rollout in Engineering Optim
 
 Dear Editors,
 
-This manuscript proposes a finite-menu rollout selection algorithm that discovers certified response-stability regions and requests conditional posterior calculations only for encountered continuations. A positive terminal-reward remainder bounds uncomputed regions, and a checked inequality certifies the first action for every admissible positive completion of the uncomputed conditional laws. A discontinuity example and a local switching/integration error bound specify its mathematical scope. Existing rollout, EI decompositions, affine envelopes and epsilon-GP planning are acknowledged as established tools.
+This manuscript develops a finite-menu rollout algorithm for selecting the first engineering design under a prescribed response-dependent continuation. Certified response-stability regions identify which conditional responses to compute. Regional terminal-reward bounds enclose uncomputed contributions, and a checked inequality certifies the first action to a prescribed model-value tolerance. The analysis covers positive completions of uncomputed conditional laws and separates policy-switch error from smooth integration error.
 
-Code, protocol and 43 clean beam-training snapshots were committed before one paired development run. Both regional and uniform-reward routes certify all states without historical action domains, old posteriors or complete response projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. They take 12.23 seconds versus 10.73 seconds for the checked stage, with 2.72 seconds shared preparation charged separately. No time advantage is claimed. The engineering task selects the first of two compliance evaluations in a fixed-volume MBB beam workflow, using supplied design menus and an unchanged mean continuation. Existing engineering outcomes remain mixed.
+The engineering application uses a fixed-volume MBB beam workflow. Code and 43 clean training snapshots were frozen before one paired comparison. Both routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157; checked execution takes 12.23 s and 10.73 s, respectively, plus shared preparation. Previously paid two-evaluation outcomes provide the engineering comparison and remain mixed. The paper contributes a certified computational method for the specified engineering decision problem.
 
-The contribution is a certified computational method for the declared finite-menu engineering decision. The supplement supplies the proofs, earlier engineering results and source-availability record. The discussion specifies the model and experimental scope.
+The manuscript relates the method to established two-step optimization, rollout, affine-envelope and epsilon-GP planning methods. The supplement supplies proofs, numerical evidence, earlier engineering findings and source-availability information. The private preparation branch preserves code, inputs and complete current numerical records. Known AI assistance is disclosed. The present revision changes the scientific presentation and acquires no new engineering response.
 
-The recorded algorithm development acquired no physical evaluations, bound queries, parameter fits, physical retries, replacements or new independent samples. Source, clean inputs and complete per-state numerical records are preserved on the private preparation branch. The current revision unifies the final method and engineering setting without further numerical execution. Affiliations b/c, reviewer access and final typesetting remain to be completed. Funding and conflict statements retain the supplied manuscript wording; known AI assistance is disclosed. No actual submission has been made.
-
-Corresponding author listed in the manuscript:
+Corresponding author:
 Shu-Chuan Chu
 School of Computer Science, Nanjing University of Information Science and Technology
 Nanjing 210044, Jiangsu, China

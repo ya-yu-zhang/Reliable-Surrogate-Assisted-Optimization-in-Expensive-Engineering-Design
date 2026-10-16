@@ -22,6 +22,8 @@ The 16 October source integration presents one final algorithm contract and prom
 
 The current prose revision follows direct, evidence-led academic writing. Proofs precede the historical supplement, the abstract contains 141 words, and all 460 pre-edit numerical table rows and 45 display equations are retained. Current source verification and hashes are in `submission_20261014/finalization_20261016/`.
 
+A selected numerical code/data profile is prepared under `public_release/MANIFEST.json`: 209 files, approximately 3.55 MB, with scoped MIT software and CC-BY-4.0 original research-data terms. See `LICENSE.md` and `public_release/README.md`. The reviewed profile excludes historical PDFs, publisher assets and internal work records and is intended for fresh public repository history. The existing private repository has not been made public.
+
 ### Historical 13 October preparation record
 
 The active target is **Engineering Optimization**. Current manuscript sources are

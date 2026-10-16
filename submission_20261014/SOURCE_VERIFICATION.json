@@ -47,8 +47,8 @@
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/lazy_regional_method_20261015.tex",
-      "bytes": 4748,
-      "sha256": "9fbdcd05fce1d6d56b43c7528e6f24470d4411468077b3c00d9dd0cb4ebaef67",
+      "bytes": 4470,
+      "sha256": "d2f9b038fba54d582481373699216502152d0204cb028546867bff96d6ae634b",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -83,8 +83,8 @@
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/regional_value_method_20261015.tex",
-      "bytes": 5836,
-      "sha256": "b63c048fa1045668080d52c77e5e8d8e27c2769d1fa1326f8c88559cf3115690",
+      "bytes": 5497,
+      "sha256": "84b67dade324112f5251e1570ec4e4c819297b3e2c26ba5063a6833d17179bef",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -95,8 +95,8 @@
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/review_supp_records.tex",
-      "bytes": 9760,
-      "sha256": "7a4d25c80cfb3e0b73a46558db216221a9cb2a1e7d38007c10e0cd6518d781c1",
+      "bytes": 9674,
+      "sha256": "a495a9ba8a13e83692819f0564c8eab487fec5abc5c2b1936fb9b41489baa662",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -107,14 +107,14 @@
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/submission_comparison.tex",
-      "bytes": 2268,
-      "sha256": "8e4bbd754e00984f0f17bbaa3a62895fc79a3a40b291d20085d5091bfed710e3",
+      "bytes": 2157,
+      "sha256": "0dc1eff9fd33c4a1b85694e5b6657251660b524f09ae160361ff1c3e29d351fc",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/supp_records.tex",
-      "bytes": 11986,
-      "sha256": "12d5a19d23d72a6e93af44876c5248d815920c9759222ffefe8b051056b3553e",
+      "bytes": 11776,
+      "sha256": "bf3d359e7ca5b1e738ac0c40bb58e5e41b6766b670e139d22443637ec0df1c17",
       "balanced_braces_and_named_environments": true
     }
   ],

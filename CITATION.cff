@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Please cite this numerical implementation and the accompanying manuscript."
+type: software
+title: "Local Response Stability for Certified Two-Step Rollout in Engineering Optimization"
+version: "2026.10.16-prepublication"
+authors:
+  - family-names: Chu
+    given-names: Shu-Chuan
+  - family-names: Zhang
+    given-names: Ya-Yu
+  - family-names: Meng
+    given-names: Zhenyu
+  - family-names: Zhao
+    given-names: Jia
+repository-code: "https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design"
+license: MIT
+abstract: "Finite-menu rollout selection by local response-stability discovery, regional terminal-reward enclosures and on-demand conditional posteriors. The selected data and documentation carry CC-BY-4.0 as specified separately."

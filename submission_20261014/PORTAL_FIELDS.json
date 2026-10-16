@@ -53,7 +53,7 @@
   "actual_submission": false,
   "manuscript_id": null,
   "ready_for_final_submit": false,
-  "preparation_status": "final_algorithm_narrative_integrated; no_new_experiment; author_affiliations_private_access_and_layout_pending",
+  "preparation_status": "manuscript_and_supplement_revised_and_source_checked; scoped_public_code_data_profile_prepared; affiliations_b_c_access_and_layout_pending",
   "required_author_facts_missing": [
     {
       "author": "Zhenyu Meng",
@@ -69,5 +69,13 @@
     "conflict_of_interest": "Retained from the supplied manuscript; no new conflict fact invented",
     "author_contributions": "Existing proposed assignment retained; no all-author approval task reinstated"
   },
-  "publication_decision_not_certified": true
+  "publication_decision_not_certified": true,
+  "code_data_release_profile": {
+    "manifest": "public_release/MANIFEST.json",
+    "files": 209,
+    "software_license": "MIT for selected files",
+    "data_license": "CC-BY-4.0 for selected original records",
+    "currently_public": false,
+    "manuscript_license_unchanged": true
+  }
 }

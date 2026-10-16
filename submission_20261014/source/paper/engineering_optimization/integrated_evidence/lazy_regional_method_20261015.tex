@@ -1,6 +1,6 @@
 \subsection{Lazy regional selection from training inputs}\label{sec:lazy_regional}
 
-The regional bound can drive computation before a full continuation partition exists. The following implementation takes the training responses, fixed parameters, first-action menu and eligible design pools. It does not take a historical action domain, a previous posterior or an integration certificate.
+The regional bound can drive computation before a full continuation partition exists. The following implementation takes the training responses, fixed parameters, first-action menu and eligible design pools. The computation discovers its action domains and constructs its conditional posteriors from these inputs.
 
 After constructing the raw-mean coefficient bands and enclosing the first-response marginals, initialize a response-cell cover on $[-8,8]$, split at the enclosed incumbent crossing. Each unresolved cell uses $[B_C^-,m_0 P_C^+]$, where $B_C$ is its first-evaluation improvement and $P_C$ its probability. A uniform-reward control uses $[0,m_0P_C^+]$ instead. The explicit outside-window tail is retained.
 
@@ -14,9 +14,9 @@ For each first action, let $\mathcal P_a$ contain the positive conditional respo
 \inf_{P_a\in\mathcal P_a}V_a(P_a)\ge\underline V_a.
 \label{eq:lazy_completion}
 \end{equation}
-The selection rule therefore bounds first-action model regret for every admissible positive completion of the uncomputed laws. This is uncertainty about an unfinished planning computation, not a statistical calibration or physical robustness guarantee.
+The selection rule therefore bounds first-action model regret for every admissible positive completion of the uncomputed laws. The uncertainty class represents the uncomputed part of the planning expectation.
 
-Each queried bivariate posterior is constructed from the same fixed binary training matrix and normalization as the earlier GP specification, with residual and positive-variance checks. The lazy implementation does not assemble or certify the full unqueried joint covariance. If a joint GP with these conditional marginals exists, its rollout value is included. Positive conditional laws also define the branch expectations without requiring correlations between unrealized counterfactual second actions. This distinction avoids claiming an unperformed full-joint positive-definiteness check.
+Each queried bivariate posterior is constructed from the same fixed binary training matrix and normalization as the earlier GP specification, with residual and positive-variance checks. The lazy implementation does not assemble or certify the full unqueried joint covariance. If a joint GP with these conditional marginals exists, its rollout value is included. Positive conditional laws also define the branch expectations without requiring correlations between unrealized counterfactual second actions. 
 
 \paragraph{Local error and computational scope.}
 With exact affine coefficients and exact model parameters, let $J_a$ be the number of positive-length policy switches within $[-T,T]$, and let $C_a$ uniformly bound the smooth conditional-reward curvature. Consider a local cell cover of maximum width $h$ after one center probe per cell. Cells containing no switch have certified identities; the remaining cells have total length at most $J_a h$. The resulting value-interval width is at most
@@ -25,6 +25,6 @@ With exact affine coefficients and exact model parameters, let $J_a$ be the numb
 \frac{C_a h^2}{4}+2m_0\Phi(-T).
 \label{eq:lazy_local_error}
 \end{equation}
-The first term covers unresolved switch cells, the second the two-sided interpolation remainder, and the third the tail. An affine lower envelope has at most one positive-length region per distinct line, so $J_a$ is finite. This idealized bound explains how local refinement handles discontinuities without a global policy-value Lipschitz constant. It is not an unconditional convergence theorem for fixed nonzero parameter bands, directed arithmetic or the finite-budget priority schedule. Those can retain an uncertainty floor and return unresolved.
+The first term covers unresolved switch cells, the second the two-sided interpolation remainder, and the third the tail. An affine lower envelope has at most one positive-length region per distinct line, so $J_a$ is finite. This idealized bound explains how local refinement handles discontinuities without a global policy-value Lipschitz constant. Fixed parameter bands and finite precision can retain an uncertainty floor, and the finite-budget schedule can return unresolved.
 
-With $S$ local discovery scans over $N$ eligible continuations, dominance work is $O(SN)$ before exact-arithmetic bit costs; posterior and integration costs are additional. No better worst-case complexity than a complete envelope is claimed. The computational question is whether the decision can stop with limited regions and posterior requests. The minimal control changes only the unresolved reward range, so its comparison isolates the effect of the regional bound within the same lazy discovery algorithm.
+With $S$ local discovery scans over $N$ eligible continuations, dominance work is $O(SN)$ before exact-arithmetic bit costs; posterior and integration costs are additional. The decision inequality determines whether limited regions and posterior requests suffice. The minimal control changes only the unresolved reward range, so its comparison isolates the effect of the regional bound within the same lazy discovery algorithm.

@@ -1,0 +1,579 @@
+{
+  "date": "2026-10-16",
+  "history_head": "3b2c841397373cc58f2a27bd47ad0ac078443738",
+  "history_commits_checked": 103,
+  "unique_historical_blobs": 1908,
+  "hash_verified_text_versions_checked": 1840,
+  "text_blob_git_sha1_verified": true,
+  "credential_pattern_findings": [],
+  "patterns": [
+    "private keys",
+    "GitHub tokens",
+    "AWS access keys",
+    "service tokens",
+    "credential URLs",
+    "literal credential assignments"
+  ],
+  "binary_versions_not_content_cleared": [
+    {
+      "sha": "40a4a830094ee69ec5cdb6cb02268c3129a96c47",
+      "bytes": 1338684,
+      "paths": [
+        "paper/cmc_latex_submission/CMC_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "ef1be55aecefbd7ae7acdb5bf02d9c72da114325",
+      "bytes": 1223876,
+      "paths": [
+        "paper/cmc_latex_submission/CMC_supplementary.pdf"
+      ]
+    },
+    {
+      "sha": "932c144b94473780fa6e18838b6090abf86c63a0",
+      "bytes": 22479,
+      "paths": [
+        "paper/cmc_latex_submission/figures/main_figure_1.pdf",
+        "paper/engineering_optimization/figures/main_figure_1.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/main_figure_1.pdf"
+      ]
+    },
+    {
+      "sha": "899cf788c540cdd8030039e52bf9768b2645cd3b",
+      "bytes": 16971,
+      "paths": [
+        "paper/cmc_latex_submission/figures/main_figure_2.pdf",
+        "paper/engineering_optimization/figures/main_figure_2.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/main_figure_2.pdf"
+      ]
+    },
+    {
+      "sha": "9e931038fd1bccae8d4c71791a8a00ceb9de2224",
+      "bytes": 13409,
+      "paths": [
+        "paper/cmc_latex_submission/figures/main_figure_3.pdf",
+        "paper/cmc_latex_submission/figures/supp_figure_3.pdf",
+        "paper/engineering_optimization/figures/main_figure_3.pdf",
+        "paper/engineering_optimization/figures/supp_figure_3.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/main_figure_3.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_3.pdf"
+      ]
+    },
+    {
+      "sha": "bf378e2a9ce52aa92ca4fad3664dd47f17969447",
+      "bytes": 28593,
+      "paths": [
+        "paper/cmc_latex_submission/figures/main_figure_4.pdf",
+        "paper/engineering_optimization/figures/main_figure_4.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/main_figure_4.pdf"
+      ]
+    },
+    {
+      "sha": "79f8f3bba932ab56b8329ac82b899b9ca3559eb0",
+      "bytes": 201333,
+      "paths": [
+        "paper/cmc_latex_submission/figures/main_figure_5.pdf",
+        "paper/engineering_optimization/figures/main_figure_5.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/main_figure_5.pdf"
+      ]
+    },
+    {
+      "sha": "c43170dd26f18f4a68f1ec144316a609f5898df2",
+      "bytes": 16370,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_1.pdf",
+        "paper/engineering_optimization/figures/supp_figure_1.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_1.pdf"
+      ]
+    },
+    {
+      "sha": "11a45af213b75f1241c4887769af8daa88fe81b4",
+      "bytes": 19701,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_10.pdf",
+        "paper/engineering_optimization/figures/supp_figure_10.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_10.pdf"
+      ]
+    },
+    {
+      "sha": "5351c17dd3713162a8d3c002d7bb38fca97aed9b",
+      "bytes": 15312,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_11.pdf",
+        "paper/engineering_optimization/figures/supp_figure_11.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_11.pdf"
+      ]
+    },
+    {
+      "sha": "863eb7cc5f2041b4192f5ed6abb4f07222e74c92",
+      "bytes": 24165,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_12.pdf",
+        "paper/engineering_optimization/figures/supp_figure_12.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_12.pdf"
+      ]
+    },
+    {
+      "sha": "d2b88875fcd4679562151596b6d53efd8331a616",
+      "bytes": 53008,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_13.pdf",
+        "paper/engineering_optimization/figures/supp_figure_13.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_13.pdf"
+      ]
+    },
+    {
+      "sha": "84f83346a38f64c3e14fb58ab27edd0f5a738e06",
+      "bytes": 16166,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_2.pdf",
+        "paper/engineering_optimization/figures/supp_figure_2.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_2.pdf"
+      ]
+    },
+    {
+      "sha": "02ab837890c90294da26d8170215c4febf35642a",
+      "bytes": 16312,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_4.pdf",
+        "paper/engineering_optimization/figures/supp_figure_4.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_4.pdf"
+      ]
+    },
+    {
+      "sha": "a7dcc482ce825c34b7d179cb6ecd10605b399a97",
+      "bytes": 19157,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_5.pdf",
+        "paper/engineering_optimization/figures/supp_figure_5.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_5.pdf"
+      ]
+    },
+    {
+      "sha": "16e7e5c448811a2a71910285cd5580748d071fdc",
+      "bytes": 30504,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_6.pdf",
+        "paper/engineering_optimization/figures/supp_figure_6.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_6.pdf"
+      ]
+    },
+    {
+      "sha": "d7044588f956ff413b7b0bc8b8406862046b4480",
+      "bytes": 25288,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_7.pdf",
+        "paper/engineering_optimization/figures/supp_figure_7.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_7.pdf"
+      ]
+    },
+    {
+      "sha": "c959b5baa08ead06bbc7845fdc4f14ab8d875c38",
+      "bytes": 51814,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_8.pdf",
+        "paper/engineering_optimization/figures/supp_figure_8.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_8.pdf"
+      ]
+    },
+    {
+      "sha": "b4033b15baeb6eec7dbff741b199f4dea7d37efe",
+      "bytes": 15405,
+      "paths": [
+        "paper/cmc_latex_submission/figures/supp_figure_9.pdf",
+        "paper/engineering_optimization/figures/supp_figure_9.pdf",
+        "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_9.pdf"
+      ]
+    },
+    {
+      "sha": "483b99992a1597e624740221ae5d932ba6c565b3",
+      "bytes": 2619082,
+      "paths": [
+        "paper/pdf/english_budget_complete_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "d773efc42fc74cb1f47c19f00c9e2945f1b16702",
+      "bytes": 1751508,
+      "paths": [
+        "paper/pdf/english_complete_mechanism_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "8823aed7503462d2bb6ece5caf378ec2180e13f2",
+      "bytes": 412319,
+      "paths": [
+        "paper/pdf/english_development_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "3a915d140ce2050742f5dbe0f1f0f0f6f4eec712",
+      "bytes": 1678428,
+      "paths": [
+        "paper/pdf/english_high_extension_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "66fd21cac637341a783dd3bbbab24bf2399a3170",
+      "bytes": 1479989,
+      "paths": [
+        "paper/pdf/english_integrated_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "9a850b3018e695888102da2217ca31891700a067",
+      "bytes": 914033,
+      "paths": [
+        "paper/pdf/english_mechanism_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "d97075c194c2f3e8e0d78f9eaf21455674f8e639",
+      "bytes": 85800,
+      "paths": [
+        "paper/pdf/english_mechanism_supplement.pdf"
+      ]
+    },
+    {
+      "sha": "bb026f185f59c4656f8698477767c5516e563508",
+      "bytes": 297311,
+      "paths": [
+        "paper/pdf/独立机制验证报告.pdf"
+      ]
+    },
+    {
+      "sha": "b46115e5f35fc769496f8fe668df13108092d72c",
+      "bytes": 377327,
+      "paths": [
+        "paper/pdf/补充材料_开发阶段.pdf"
+      ]
+    },
+    {
+      "sha": "3045512a056d73ff141e1231ed5d5789a815ecd2",
+      "bytes": 1744238,
+      "paths": [
+        "paper/pdf/论文完整机制稿.pdf"
+      ]
+    },
+    {
+      "sha": "7b2e0ac26803e3bb6918789614faa45e82a3c81d",
+      "bytes": 905108,
+      "paths": [
+        "paper/pdf/论文机制研究稿.pdf"
+      ]
+    },
+    {
+      "sha": "a064edd31d77d39164065cd69ebd364810c6e8c2",
+      "bytes": 1471937,
+      "paths": [
+        "paper/pdf/论文综合机制稿.pdf"
+      ]
+    },
+    {
+      "sha": "71accc76c08fbb676840220bc3c3270729ef9910",
+      "bytes": 401517,
+      "paths": [
+        "paper/pdf/论文阶段稿.pdf"
+      ]
+    },
+    {
+      "sha": "14e7a1459c38dd61497967336b4f14d602709b9e",
+      "bytes": 2613752,
+      "paths": [
+        "paper/pdf/论文预算完整机制稿.pdf"
+      ]
+    },
+    {
+      "sha": "17c89a67a2760eb6f8f7318272bb0c07392860d0",
+      "bytes": 1670479,
+      "paths": [
+        "paper/pdf/论文高维扩展机制稿.pdf"
+      ]
+    },
+    {
+      "sha": "9e1bc0bddde1dd07e7214117391bd421f1dd9557",
+      "bytes": 967994,
+      "paths": [
+        "paper/render_engineering_check/contact.png"
+      ]
+    },
+    {
+      "sha": "ae048325a8983a439649baeb3e6844309ae9c22f",
+      "bytes": 305678,
+      "paths": [
+        "paper/render_engineering_check/en_end-30.png"
+      ]
+    },
+    {
+      "sha": "1c7e3f120b6d89cc33ed78b1ff59e10a0985ca4e",
+      "bytes": 36032,
+      "paths": [
+        "paper/render_engineering_check/en_end-31.png"
+      ]
+    },
+    {
+      "sha": "dfb5f985098d4f9f44c6df1f7fba229fcf877098",
+      "bytes": 208058,
+      "paths": [
+        "paper/render_engineering_check/en_mid-20.png"
+      ]
+    },
+    {
+      "sha": "b9c5c1a7a7a3575d73c5b9425fcd184641f18482",
+      "bytes": 169861,
+      "paths": [
+        "paper/render_engineering_check/en_mid-21.png"
+      ]
+    },
+    {
+      "sha": "d02a4320a69d95115e7382e71733112978e49434",
+      "bytes": 293120,
+      "paths": [
+        "paper/render_engineering_check/en_mid-22.png"
+      ]
+    },
+    {
+      "sha": "1b46547f6c0de092ea90e5791fe6a3d952cee4e5",
+      "bytes": 254906,
+      "paths": [
+        "paper/render_engineering_check/en_p1-01.png"
+      ]
+    },
+    {
+      "sha": "98e52f0956ad248bb880209d73feb932ad1610d9",
+      "bytes": 273916,
+      "paths": [
+        "paper/render_engineering_check/zh_end-29.png"
+      ]
+    },
+    {
+      "sha": "dc0fa5fe58eb2e0e5adc761d3b3a92eadf954016",
+      "bytes": 203276,
+      "paths": [
+        "paper/render_engineering_check/zh_end-30.png"
+      ]
+    },
+    {
+      "sha": "b0e31e092e7e9f975ff5c8c100c3d8b081801fa9",
+      "bytes": 221028,
+      "paths": [
+        "paper/render_engineering_check/zh_mid-20.png"
+      ]
+    },
+    {
+      "sha": "270d4f967406d4e0c63da72bd317f8deae1b5d4b",
+      "bytes": 176422,
+      "paths": [
+        "paper/render_engineering_check/zh_mid-21.png"
+      ]
+    },
+    {
+      "sha": "a218a4aea965ebe2ace9754285a9c11fa1136de1",
+      "bytes": 385239,
+      "paths": [
+        "paper/render_engineering_check/zh_mid-22.png"
+      ]
+    },
+    {
+      "sha": "13c55ec32be29cee7f2295b197e1f89f8cede05a",
+      "bytes": 311506,
+      "paths": [
+        "paper/render_engineering_check/zh_p1-01.png"
+      ]
+    },
+    {
+      "sha": "40f3ad2998f5ce5de4874d7028f1a918467d2b73",
+      "bytes": 1062001,
+      "paths": [
+        "paper/render_scope_check/contact.png"
+      ]
+    },
+    {
+      "sha": "6d1c9eb4e5605c4d1ba4b99633a6557db407d18b",
+      "bytes": 295337,
+      "paths": [
+        "paper/render_scope_check/en_end-28.png"
+      ]
+    },
+    {
+      "sha": "f68ff1df8d56cd83013a18f09afe5b6e3a181f75",
+      "bytes": 108953,
+      "paths": [
+        "paper/render_scope_check/en_end-29.png"
+      ]
+    },
+    {
+      "sha": "4426dfbcfe014066b0ff5bca53967795ead35eb3",
+      "bytes": 253152,
+      "paths": [
+        "paper/render_scope_check/en_p1-01.png"
+      ]
+    },
+    {
+      "sha": "625cef2c2f6a9497e927bd60288071dd6f9ceda2",
+      "bytes": 370805,
+      "paths": [
+        "paper/render_scope_check/zh_end-27.png"
+      ]
+    },
+    {
+      "sha": "ebc8f64be4a7d729882f691f4daf3d9a02468f5c",
+      "bytes": 305666,
+      "paths": [
+        "paper/render_scope_check/zh_end-28.png"
+      ]
+    },
+    {
+      "sha": "f6f053f12dea59c19c0a8774e6a22a9668e86fb2",
+      "bytes": 319503,
+      "paths": [
+        "paper/render_scope_check/zh_p1-01.png"
+      ]
+    },
+    {
+      "sha": "c3053c9500488a80df65d90b0a7f64cd3e1790ec",
+      "bytes": 924652,
+      "paths": [
+        "submission_20261014/pdf/Manuscript_20261014.pdf"
+      ]
+    },
+    {
+      "sha": "ce0f2b0a00172920f48f7660afb12f08624825db",
+      "bytes": 766173,
+      "paths": [
+        "submission_20261014/pdf/Supplement_20261014.pdf"
+      ]
+    },
+    {
+      "sha": "476fc29c4600ded5094b15ca1ccc9677d0831e74",
+      "bytes": 18385,
+      "paths": [
+        "submission_20261014/source/paper/engineering_optimization/figures/gp_certified_envelope_comparison.pdf"
+      ]
+    },
+    {
+      "sha": "33aeb7f5febbb2f46ae030b18e3adcaa60e4d58d",
+      "bytes": 58058,
+      "paths": [
+        "submission_20261014/source/paper/engineering_optimization/figures/transfer_cost_performance.pdf"
+      ]
+    },
+    {
+      "sha": "447cf3ddc5678f85135adfb38ce214909eaf964a",
+      "bytes": 41242,
+      "paths": [
+        "submission_20261014/source/paper/engineering_optimization/figures/transfer_pilot_horizons.pdf"
+      ]
+    },
+    {
+      "sha": "92126df71f221190e296ed1344d09e497a92df05",
+      "bytes": 786444,
+      "paths": [
+        "data/engineering_optimization_gp_audit_v1/source_records.zip"
+      ]
+    },
+    {
+      "sha": "d47cbc14ade2cc4155a01960b42fa9b77e075bd5",
+      "bytes": 1337284,
+      "paths": [
+        "paper/cmc_latex_submission/CMC_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "cd418882b669b8eb84c43c3d1630beeeb81a46f8",
+      "bytes": 1223340,
+      "paths": [
+        "paper/cmc_latex_submission/CMC_supplementary.pdf"
+      ]
+    },
+    {
+      "sha": "425a0f4bd011f0b39f8facebdb327b34ad56e663",
+      "bytes": 1337369,
+      "paths": [
+        "paper/cmc_latex_submission/CMC_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "4f21d8256a9014ac4d5f538ea8531b04752cd5ce",
+      "bytes": 1223410,
+      "paths": [
+        "paper/cmc_latex_submission/CMC_supplementary.pdf"
+      ]
+    },
+    {
+      "sha": "939589461f6650ced96d908e2ddad1a5260bf223",
+      "bytes": 1336633,
+      "paths": [
+        "paper/cmc_latex_submission/CMC_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "2c2c757ee089522fec6dffba17e4c88968cd9452",
+      "bytes": 1222621,
+      "paths": [
+        "paper/cmc_latex_submission/CMC_supplementary.pdf"
+      ]
+    },
+    {
+      "sha": "daa42e048ece0bc8d605e7c5ef2328f45fbbf89c",
+      "bytes": 1332633,
+      "paths": [
+        "paper/cmc_latex_submission/CMC_manuscript.pdf"
+      ]
+    },
+    {
+      "sha": "220597ac93b5f81e1bfb8953d6436ccc4c0a1aa8",
+      "bytes": 1217978,
+      "paths": [
+        "paper/cmc_latex_submission/CMC_supplementary.pdf"
+      ]
+    }
+  ],
+  "binary_extensions": {
+    ".pdf": 47,
+    ".png": 20,
+    ".zip": 1
+  },
+  "encoded_research_bundles": [
+    {
+      "folder": "data/engineering_optimization_gp_audit_v1",
+      "parts_verified": 110,
+      "records_or_cases": 60,
+      "decoded_payload_sha256": "9155875b1180a822e48f0001ce4693f750fa150220e45835f7d5898d36b38a23",
+      "credential_pattern_findings": [],
+      "restored_files": 0,
+      "regenerated_points": 0,
+      "physical_calls": 0
+    },
+    {
+      "folder": "data/engineering_optimization_transfer_v1",
+      "parts_verified": 172,
+      "records_or_cases": 20,
+      "decoded_payload_sha256": "6f86fffbbc39a020e898c6a6dc90e765a4090ebd066a84a409436d99702edac1",
+      "credential_pattern_findings": [],
+      "restored_files": 0,
+      "regenerated_points": 0,
+      "physical_calls": 0
+    }
+  ],
+  "github_actions_runs_found": 0,
+  "git_tags_found": 0,
+  "branches_found": 3,
+  "third_party_source_directories_in_selected_profile": 0,
+  "publisher_assets_in_selected_profile": 0,
+  "scoped_license_files_added": true,
+  "scoped_public_profile": "public_release/MANIFEST.json",
+  "selected_profile_files": 209,
+  "selected_profile_bytes": 3553633,
+  "whole_existing_history_cleared_for_public_visibility": false,
+  "whole_history_reason": "68 binary versions and remaining historical rights are outside the selected numerical code/data profile; use the reviewed allowlist with fresh history",
+  "public_visibility_changed": false,
+  "scientific_baseline_unchanged": true,
+  "physical_evaluations": 0,
+  "new_optimization_samples": 0,
+  "PDF_or_ZIP_created_or_uploaded": false,
+  "manuscript_revision_checkpoint": "a7f94484d5858e0730b86275c48c559d99fde8e0",
+  "current_profile_verified_files": 209,
+  "current_profile_imports_resolved": 29,
+  "scoped_code_data_profile_prepared": true
+}

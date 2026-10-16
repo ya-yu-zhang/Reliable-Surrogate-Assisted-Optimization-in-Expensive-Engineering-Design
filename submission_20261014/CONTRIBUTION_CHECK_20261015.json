@@ -398,8 +398,34 @@
       "Zhenyu Meng",
       "Jia Zhao"
     ],
-    "repository_publication_audit": "in_progress",
+    "repository_publication_audit": "completed_for_selected_numerical_profile; whole_private_history_not_content_cleared",
     "actual_submission": false,
-    "final_submit_ready": false
-  }
+    "final_submit_ready": false,
+    "additional_prose_refinement_completed": true
+  },
+  "public_release_preparation_20261016": {
+    "manifest": "public_release/MANIFEST.json",
+    "profile_files": 209,
+    "profile_bytes": 3553782,
+    "code_license": "MIT for the selected original implementation",
+    "data_license": "CC-BY-4.0 for the selected original research files",
+    "historical_commits_checked": 103,
+    "hash_verified_text_versions_checked": 1840,
+    "credential_pattern_findings": 0,
+    "private_machine_path_findings_in_selected_profile": 0,
+    "local_imports_resolved": 29,
+    "opaque_binary_versions_excluded": 68,
+    "scoped_public_profile_prepared": true,
+    "publication_requires_fresh_repository_history": true,
+    "whole_existing_repository_publication_cleared": false,
+    "visibility_changed": false,
+    "PDF_or_ZIP_created_or_uploaded": false,
+    "new_experiments": 0
+  },
+  "publication_preparation_remaining_20261016": [
+    "Full affiliation b for Zhenyu Meng",
+    "Full affiliation c for Jia Zhao",
+    "Actual reviewer access or publication of the prepared code/data profile",
+    "Current typesetting verification; article.cls absent in runtime"
+  ]
 }

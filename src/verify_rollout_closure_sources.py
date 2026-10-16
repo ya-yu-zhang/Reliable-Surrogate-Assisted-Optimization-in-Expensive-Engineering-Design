@@ -189,6 +189,13 @@ def main():
         SUB/'CONTRIBUTION_CHECK_20261015.json',SUB/'REVIEW_REPRODUCTION.md',
         SUB/'SOURCE_VERIFICATION.json',REVIEW/'SOURCE_VERIFICATION.json',
         REVIEW/'STYLE_BASELINE.json',REVIEW/'WRITING_REVISION.md'}
+    current.update(ROOT/p for p in ['.gitignore','LICENSE.md','LICENSES/MIT.txt',
+        'DATA_LICENSE.md','THIRD_PARTY_NOTICES.md','CITATION.cff',
+        'src/verify_public_numerical_manifest.py','public_release/README.md',
+        'public_release/MANIFEST.json','public_release/HISTORY_AUDIT_20261016.json',
+        'public_release/HISTORY_INVENTORY_20261016.json','public_release/PROFILE_VERIFICATION.json'])
+    current.add(REVIEW/'PROJECT_CLOSEOUT.md')
+    current.add(REVIEW/'MANUSCRIPT_ASSETS.json')
     frozen={}
     if lazy.exists():
         frozen.update(result_hashes)

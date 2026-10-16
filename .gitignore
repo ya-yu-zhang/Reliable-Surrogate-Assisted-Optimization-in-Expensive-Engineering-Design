@@ -53,3 +53,12 @@ tmp_git_add_dryrun.txt
 
 # Contains the private local attachment path from the planning conversation.
 docs/原始计划书.md
+
+# Local credentials and publication-preparation caches
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.pypirc
+.npmrc

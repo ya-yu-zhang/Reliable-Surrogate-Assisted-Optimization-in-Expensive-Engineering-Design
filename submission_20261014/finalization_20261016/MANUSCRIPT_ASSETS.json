@@ -1,0 +1,85 @@
+{
+  "source_commit": "a7f94484d5858e0730b86275c48c559d99fde8e0",
+  "source_tree": "464b151174701bbc324c19903f86ae43bba41e87",
+  "required_graphics": {
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_1.pdf": {
+      "bytes": 16370,
+      "sha256": "218602c53898a91d0bc90f79d1167dc18ae318ee5c3ae48bacd4012e6e60cc82",
+      "git_blob_sha": "c43170dd26f18f4a68f1ec144316a609f5898df2"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_2.pdf": {
+      "bytes": 16166,
+      "sha256": "bab78cac86a65cf7715802529780a8d2e2983609093eb4c1bc237cb64682b97f",
+      "git_blob_sha": "84f83346a38f64c3e14fb58ab27edd0f5a738e06"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_3.pdf": {
+      "bytes": 13409,
+      "sha256": "06b888b7d5671c72856b98d55d9c8ee2b68e60914dd187af4c19818bf6a4b81d",
+      "git_blob_sha": "9e931038fd1bccae8d4c71791a8a00ceb9de2224"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_4.pdf": {
+      "bytes": 16312,
+      "sha256": "d8678f2e960d4dce3322b99c49ed2f5084245b57d19c99b7b3b525b9d5529bf1",
+      "git_blob_sha": "02ab837890c90294da26d8170215c4febf35642a"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_5.pdf": {
+      "bytes": 19157,
+      "sha256": "ba0b26a0fc1ccdb5e51413277b653b3df7e0dca2ec9c96eb5ac7f9b1cd0fe862",
+      "git_blob_sha": "a7dcc482ce825c34b7d179cb6ecd10605b399a97"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_6.pdf": {
+      "bytes": 30504,
+      "sha256": "c6739a48630c5606ebcdfa1e81ae5c6a54b7939b48f4b7ed99bba729e6d75b7b",
+      "git_blob_sha": "16e7e5c448811a2a71910285cd5580748d071fdc"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_7.pdf": {
+      "bytes": 25288,
+      "sha256": "0c8392216fb5da9dba6d7f9c0d8c36c4b681f9c11cbcd43619dfb648d6f1c670",
+      "git_blob_sha": "d7044588f956ff413b7b0bc8b8406862046b4480"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_8.pdf": {
+      "bytes": 51814,
+      "sha256": "d49387960a4c645aac25c09f9fdf4120e45e6390e9c64425c5160442a572e7a0",
+      "git_blob_sha": "c959b5baa08ead06bbc7845fdc4f14ab8d875c38"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_9.pdf": {
+      "bytes": 15405,
+      "sha256": "de22c64f36b0a2dd636cd185e1f1709da1c6fbd60a866849e26c7c11dda7fa17",
+      "git_blob_sha": "b4033b15baeb6eec7dbff741b199f4dea7d37efe"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_10.pdf": {
+      "bytes": 19701,
+      "sha256": "d095245fedb433fa39113c2d803a8404b3babd022b880c9664ec5af78ca1251d",
+      "git_blob_sha": "11a45af213b75f1241c4887769af8daa88fe81b4"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_11.pdf": {
+      "bytes": 15312,
+      "sha256": "28137e253ad927b99d4a3dcdb6ca965a6e3c33870578f190519525efafe1c667",
+      "git_blob_sha": "5351c17dd3713162a8d3c002d7bb38fca97aed9b"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_12.pdf": {
+      "bytes": 24165,
+      "sha256": "002467fcda2f97c7a8f4633a07ffd5f8fd280fd9b0062f42350534a0e06e84ef",
+      "git_blob_sha": "863eb7cc5f2041b4192f5ed6abb4f07222e74c92"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/supp_figure_13.pdf": {
+      "bytes": 53008,
+      "sha256": "6731d0ff015be264405b23ece017c19ce5a409d9c447b646e863090fcb83041d",
+      "git_blob_sha": "d2b88875fcd4679562151596b6d53efd8331a616"
+    },
+    "submission_20261014/source/paper/engineering_optimization/figures/transfer_pilot_horizons.pdf": {
+      "bytes": 41242,
+      "sha256": "3bc65a5bbbd6aab1d79f62e5b52899e6929a0f7a37bc97c3f11e4d2baea61b33",
+      "git_blob_sha": "447cf3ddc5678f85135adfb38ce214909eaf964a"
+    }
+  },
+  "required_graphics_present_in_GitHub_and_local": 14,
+  "existing_graphics_uploaded_this_turn": false,
+  "local_publisher_class_present": true,
+  "local_publisher_bib_style_present": true,
+  "publisher_assets_in_GitHub": false,
+  "publisher_template_download": "https://files.taylorandfrancis.com/InteractCADLaTeX.zip",
+  "runtime_article_class_available": false,
+  "current_source_compile_verified": false,
+  "current_visual_layout_verified": false
+}
