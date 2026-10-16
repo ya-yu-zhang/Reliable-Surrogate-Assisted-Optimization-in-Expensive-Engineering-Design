@@ -2,7 +2,7 @@
 
 Read the saved evidence before considering reproduction. This revision changes manuscript organization and scientific explanation; it performs no new algorithm run, posterior reconstruction, physical evaluation, bound query, fit, retry, replacement or independent optimization sample. Both witness attempts are exhausted. Do not invoke physical or optimization experiment entry points for this review.
 
-The 16 October prose revision places the current proofs in Supplement A1, retains historical S numbering and all recorded numerical rows, and synchronizes the 141-word abstract. See `submission_20261014/finalization_20261016/WRITING_REVISION.md`.
+The 16 October prose revision places the current proofs in Supplement A1, retains historical S numbering and all recorded numerical rows, and synchronizes the current 142-word abstract. The six-point prose, figure and template review is recorded in `submission_20261014/style_scope_figures_20261016/REVIEW_AND_CHANGES.md`.
 
 ## Read the current paper
 

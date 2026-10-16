@@ -2,7 +2,7 @@
   "journal": "Engineering Optimization",
   "journal_homepage": "https://www.tandfonline.com/journals/geno20",
   "article_type_suggested": "Research article; confirm actual portal dropdown",
-  "peer_review": "single blind, official journal search record checked on 14 October 2026",
+  "peer_review": "single blind; confirmed from official EO aims and scope on 16 October 2026",
   "title": "Local Response Stability for Certified Two-Step Rollout in Engineering Optimization",
   "abstract_tex": "Two-step rollout selects a first engineering design by anticipating a response-dependent continuation. A finite-menu algorithm is developed in which response-stability regions are certified and conditional posteriors are constructed for encountered actions. Regional terminal-reward bounds enclose the contribution of uncomputed regions and certify first-action selection to a prescribed model-value tolerance. The certificate covers positive completions of uncomputed conditional laws, and a piecewise error bound separates policy switches from smooth integration. Code and clean training inputs were frozen before one paired evaluation on 43 previously observed beam-design states. Both regional and uniform-reward routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. Checked execution takes 12.23 and 10.73 seconds, respectively, plus shared preparation. Certified decision computation is established for a finite structural-design problem; previously paid physical outcomes remain mixed.",
   "abstract_plaintext": "Two-step rollout selects a first engineering design by anticipating a response-dependent continuation. A finite-menu algorithm is developed in which response-stability regions are certified and conditional posteriors are constructed for encountered actions. Regional terminal-reward bounds enclose the contribution of uncomputed regions and certify first-action selection to a prescribed model-value tolerance. The certificate covers positive completions of uncomputed conditional laws, and a piecewise error bound separates policy switches from smooth integration. Code and clean training inputs were frozen before one paired evaluation on 43 previously observed beam-design states. Both regional and uniform-reward routes certify all states without complete continuation projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. Checked execution takes 12.23 and 10.73 seconds, respectively, plus shared preparation. Certified decision computation is established for a finite structural-design problem; previously paid physical outcomes remain mixed.",
@@ -78,5 +78,7 @@
     "currently_public": false,
     "manuscript_license_unchanged": true
   },
-  "six_point_review": "submission_20261014/style_scope_figures_20261016/REVIEW_AND_CHANGES.md"
+  "six_point_review": "submission_20261014/style_scope_figures_20261016/REVIEW_AND_CHANGES.md",
+  "submission_portal": "https://rp.tandfonline.com/submission/create?journalCode=GENO",
+  "EO_scope_alignment_confirmed": true
 }

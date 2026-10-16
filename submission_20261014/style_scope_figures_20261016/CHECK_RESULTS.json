@@ -52,7 +52,32 @@
     "supported_position": "Certified finite-menu first-action rollout using response-stability regions and unresolved-reward bounds, applied to fixed-volume beam compliance decisions.",
     "request_reduction_reported": true,
     "time_increase_and_mixed_physical_outcomes_retained": true,
-    "acceptance_or_sufficient_originality_guaranteed": false
+    "acceptance_or_sufficient_originality_guaranteed": false,
+    "date": "2026-10-16",
+    "scope_confirmed_from_user_text_and_official_site": true,
+    "scope_fit_demonstrated_for_current_research_question": true,
+    "scope_includes": [
+      "numerical optimization algorithms",
+      "engineering decision support",
+      "statistical decision theory",
+      "theoretical research"
+    ],
+    "optimization_object": "First-action expected two-evaluation improvement over a finite design menu under a fixed response-dependent continuation",
+    "algorithmic_contribution": "Joint scheduling of local action-identity certification, conditional-posterior queries and reward integration through unresolved-value bounds and a checked regret stopping rule",
+    "theoretical_evidence": [
+      "selection guarantee for admissible positive completions",
+      "piecewise error bound separating policy switches and smooth integration"
+    ],
+    "engineering_mapping": "Volume-constrained MBB beam compliance; the certified first action specifies the next feasible structural design for evaluation",
+    "current_empirical_evidence": "43 previously observed states; frozen clean inputs and one paired computation; both routes accepted all states without complete continuation projection",
+    "runtime_speedup_is_explicit_scope_requirement": false,
+    "physical_policy_superiority_is_explicit_scope_requirement": false,
+    "runtime_speedup_demonstrated": false,
+    "physical_policy_superiority_demonstrated": false,
+    "scope_fit_alone_proves_sufficient_originality": false,
+    "journal_acceptance_guaranteed": false,
+    "additional_experiments_planned": 0,
+    "author_instructions_or_template_requirements_verified_by_scope": false
   },
   "template": {
     "guidance_url": "https://authorservices.taylorandfrancis.com/publishing-your-research/writing-your-paper/formatting-and-templates/",

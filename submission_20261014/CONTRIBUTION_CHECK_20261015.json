@@ -30,7 +30,7 @@
   "predetermined_engineering_cases": 2,
   "positive_engineering_action_rescue_demonstrated": false,
   "Engineering_Optimization_originality_threshold_demonstrated": false,
-  "target_fit_reviewer_inference": "A concrete algorithmic contribution and bounded engineering-state evidence now exist; originality strength remains limited by established ingredients, modest request reductions and no time/policy advantage. No journal acceptance inferred.",
+  "target_fit_reviewer_inference": "The current finite-menu optimization algorithm, formal selection guarantee and constrained beam-design decision are within the official EO scope. Scope does not explicitly require runtime speedup or physical-policy superiority for every paper. Originality is assessed through the joint discovery/query/integration mechanism and its distinction from cited prior methods; scope fit alone does not certify originality sufficiency or journal acceptance.",
   "PDF_or_ZIP_uploaded": false,
   "PDF_or_ZIP_created_this_step": false,
   "author_facts_and_venue_conditions_still_pending": true,
@@ -378,15 +378,15 @@
     "research_work_closed_under_current_scope": true,
     "new_experiments_planned": 0,
     "final_submit_ready": false,
-    "source_review": "submission_20261014/review_20261016/SOURCE_VERIFICATION.json",
-    "review_manifest": "submission_20261014/review_20261016/REVIEW_MANIFEST.json",
+    "source_review": "submission_20261014/finalization_20261016/SOURCE_VERIFICATION.json",
+    "review_manifest": "submission_20261014/finalization_20261016/REVIEW_MANIFEST.json",
     "review_entry": "submission_20261014/REVIEW_REPRODUCTION.md",
     "current_source_and_bibliography_checks_passed": true,
     "current_PDF_compiled": false
   },
   "writing_revision_20261016": {
     "pre_edit_commit": "3b2c841397373cc58f2a27bd47ad0ac078443738",
-    "abstract_words": 141,
+    "abstract_words": 142,
     "proofs_before_historical_supplement": true,
     "existing_numeric_table_rows_preserved": 460,
     "display_math_blocks_preserved": 45,
@@ -423,9 +423,56 @@
     "new_experiments": 0
   },
   "publication_preparation_remaining_20261016": [
-    "Full affiliation b for Zhenyu Meng",
-    "Full affiliation c for Jia Zhao",
-    "Actual reviewer access or publication of the prepared code/data profile",
-    "Current typesetting verification; article.cls absent in runtime"
-  ]
+    "Full affiliation b for Zhenyu Meng and full affiliation c for Jia Zhao",
+    "Actual reviewer access to the private materials or release of the prepared numerical profile",
+    "Current-source compilation and final layout, including clipped axis labels in Figures S5/S6",
+    "EO-specific current author-instruction/template details remain unverified after HTTP 403"
+  ],
+  "previous_target_fit_reviewer_inference_before_full_scope": "A concrete algorithmic contribution and bounded engineering-state evidence now exist; originality strength remains limited by established ingredients, modest request reductions and no time/policy advantage. No journal acceptance inferred.",
+  "EO_scope_alignment_20261016": {
+    "date": "2026-10-16",
+    "scope_confirmed_from_user_text_and_official_site": true,
+    "official_url": "https://www.tandfonline.com/journals/geno20/about-this-journal",
+    "scope_fit_demonstrated_for_current_research_question": true,
+    "scope_includes": [
+      "numerical optimization algorithms",
+      "engineering decision support",
+      "statistical decision theory",
+      "theoretical research"
+    ],
+    "optimization_object": "First-action expected two-evaluation improvement over a finite design menu under a fixed response-dependent continuation",
+    "algorithmic_contribution": "Joint scheduling of local action-identity certification, conditional-posterior queries and reward integration through unresolved-value bounds and a checked regret stopping rule",
+    "theoretical_evidence": [
+      "selection guarantee for admissible positive completions",
+      "piecewise error bound separating policy switches and smooth integration"
+    ],
+    "engineering_mapping": "Volume-constrained MBB beam compliance; the certified first action specifies the next feasible structural design for evaluation",
+    "current_empirical_evidence": "43 previously observed states; frozen clean inputs and one paired computation; both routes accepted all states without complete continuation projection",
+    "runtime_speedup_is_explicit_scope_requirement": false,
+    "physical_policy_superiority_is_explicit_scope_requirement": false,
+    "runtime_speedup_demonstrated": false,
+    "physical_policy_superiority_demonstrated": false,
+    "scope_fit_alone_proves_sufficient_originality": false,
+    "journal_acceptance_guaranteed": false,
+    "additional_experiments_planned": 0,
+    "author_instructions_or_template_requirements_verified_by_scope": false
+  },
+  "six_point_manuscript_review_20261016": {
+    "report": "submission_20261014/style_scope_figures_20261016/REVIEW_AND_CHANGES.md",
+    "record": "submission_20261014/style_scope_figures_20261016/CHECK_RESULTS.json",
+    "active_tex_files": 18,
+    "first_person_prose_matches": 0,
+    "abstract_words": 142,
+    "figures_inspected": 14,
+    "S10_trajectory_attribution_corrected": true,
+    "official_publisher_template_hashes_match": true,
+    "EO_specific_template_requirements_fully_verified": false,
+    "AI_detection_run": false,
+    "AI_score": null,
+    "below_10_percent_certified": false,
+    "current_visual_layout_verified": false,
+    "new_scientific_execution": false,
+    "PDF_or_ZIP_created_or_uploaded": false,
+    "final_submit_ready": false
+  }
 }
