@@ -10,10 +10,10 @@ Dear Editors,
 Please consider this manuscript as a Research Article.
 
 Author institutional contacts
-Shu-Chuan Chu — institutional email: 100130@nuist.edu.cn; institutional profile: [required].
-Ya-Yu Zhang — institutional email: [required]; institutional profile: [required].
-Zhenyu Meng — institutional email: [required]; institutional profile: [required].
-Jia Zhao — institutional email: [required]; institutional profile: [required].
+Shu-Chuan Chu — School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China; email: 100130@nuist.edu.cn; ORCID: 0000-0003-2117-0618; institutional profile: [required].
+Ya-Yu Zhang — School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China; institutional email: 202412492223@nuist.edu.cn; ORCID: 0009-0001-2272-4654; institutional profile: [required].
+Zhenyu Meng — School of Computer Science and Software, Zhaoqing University, Zhaoqing 526061, China; author email: mzy1314@gmail.com; ORCID: 0000-0002-1466-8082; institutional email and profile: [required].
+Jia Zhao — School of Information Engineering, Jiangxi University of Water Resources and Electric Power, Nanchang 330099, China; institutional email: zhaojia@juwp.edu.cn; ORCID: 0000-0002-3652-1903; institutional profile: [required].
 
 Relation to the journal's aims and scope
 The manuscript concerns numerical optimization of a first engineering design under a response-dependent continuation. Local action-identity certification, conditional-posterior queries and reward integration are coupled through a checked regret stopping rule. The optimization step is applied to fixed-volume MBB beam compliance, where the first action specifies the next feasible structural design for evaluation. This connects an algorithmic development in finite-menu optimization to engineering decision support.
