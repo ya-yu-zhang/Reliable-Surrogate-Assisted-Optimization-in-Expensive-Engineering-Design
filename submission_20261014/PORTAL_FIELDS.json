@@ -18,7 +18,7 @@
     {
       "name": "Shu-Chuan Chu",
       "affiliation": "School of Computer Science, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
-      "corresponding": true,
+      "corresponding": false,
       "email": "100130@nuist.edu.cn",
       "ORCID": "0000-0003-2117-0618",
       "institutional_profile_url": null
@@ -46,6 +46,14 @@
       "email": "zhaojia@juwp.edu.cn",
       "ORCID": "0000-0002-3652-1903",
       "institutional_profile_url": null
+    },
+    {
+      "name": "Jeng-Shyang Pan",
+      "affiliation": "School of Computer Science and School of Artificial Intelligence/School of Future Technology, Nanjing University of Information Science and Technology, Nanjing 210044, Jiangsu, China",
+      "corresponding": true,
+      "email": "100112@nuist.edu.cn",
+      "ORCID": "0000-0002-3128-9025",
+      "institutional_profile_url": null
     }
   ],
   "funding": "No specific funding, inherited manuscript statement; factual confirmation required before submission",
@@ -57,7 +65,7 @@
   "actual_submission": false,
   "manuscript_id": null,
   "ready_for_final_submit": false,
-  "preparation_status": "Author affiliations, available contact emails and ORCID records filled from the referenced author-plan record; institutional profile URLs, Zhenyu Meng institutional email confirmation, official cover-letter template and final submission files remain pending",
+  "preparation_status": "Five-author record restored from the referenced author-plan record, including Jeng-Shyang Pan as corresponding author; institutional profile URLs, Zhenyu Meng institutional email confirmation, official cover-letter template and final submission files remain pending",
   "required_author_facts_missing": [
     {
       "author": "Shu-Chuan Chu",
@@ -83,12 +91,18 @@
       "fields": [
         "institutional profile URL"
       ]
+    },
+    {
+      "author": "Jeng-Shyang Pan",
+      "fields": [
+        "institutional profile URL"
+      ]
     }
   ],
   "inherited_statement_provenance": {
     "funding": "Retained from the supplied manuscript; no new funding fact invented",
     "conflict_of_interest": "Retained from the supplied manuscript; no new conflict fact invented",
-    "author_contributions": "Existing proposed assignment retained; no all-author approval task reinstated"
+    "author_contributions": "Existing proposed assignment expanded to include Jeng-Shyang Pan in conceptualization, resources, supervision and writing review; final all-author confirmation remains required"
   },
   "publication_decision_not_certified": true,
   "code_data_release_profile": {
@@ -127,8 +141,9 @@
       "Shu-Chuan Chu",
       "Ya-Yu Zhang",
       "Zhenyu Meng",
-      "Jia Zhao"
+      "Jia Zhao",
+      "Jeng-Shyang Pan"
     ],
-    "excluded_historical_author": "Jeng-Shyang Pan (present in an earlier CMC-specific author revision; not part of the current EO four-author source)"
+    "restored_author": "Jeng-Shyang Pan restored from the referenced author-plan record as the fifth author and corresponding author"
   }
 }
