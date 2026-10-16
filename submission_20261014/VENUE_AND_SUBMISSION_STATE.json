@@ -6,7 +6,7 @@
   "private_repository_confirmed": true,
   "sole_current_scientific_baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
   "main_sha_confirmed_again_20261014": true,
-  "affiliations_b_c": "User selected continue leaving pending on 14 October 2026",
+  "affiliations_b_c": "Filled from the referenced author-plan record on 2026-10-16; final author confirmation remains required",
   "journal_specific_author_instructions_full_page": "Fetch blocked (403/disabled); word/page/attachment limits not certified",
   "publisher_ai_policy": "Current official page prohibits generated first manuscript/section drafts and AI creation or conclusion of article arguments. Known project assistance includes argument drafting; compliance unresolved, not reclassified as copyediting-only.",
   "source_urls": {
@@ -22,5 +22,14 @@
   "portal_submission": false,
   "manuscript_uploaded_to_journal": false,
   "final_submit_ready": false,
-  "acceptance_or_novelty_sufficiency_guaranteed": false
+  "acceptance_or_novelty_sufficiency_guaranteed": false,
+  "author_information_update": {
+    "applied_on": "2026-10-16",
+    "source_task": "01a0aeb5-666b-7a92-b056-1d142c80e65e",
+    "current_author_count": 4,
+    "remaining": [
+      "Zhenyu Meng institutional email confirmation",
+      "institutional profile URLs for all four authors"
+    ]
+  }
 }
