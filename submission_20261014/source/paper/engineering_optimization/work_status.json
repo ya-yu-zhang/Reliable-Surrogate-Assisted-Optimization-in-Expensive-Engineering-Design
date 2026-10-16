@@ -112,7 +112,7 @@
   "rendered_pdf_layout_verified": false,
   "submission_ready": false,
   "remaining": [
-    "Confirm the four author records filled from the referenced plan, including Zhenyu Meng's institutional email and all institutional profile URLs",
+    "Confirm the five author records filled from the referenced plan, including Jeng-Shyang Pan as corresponding author, Zhenyu Meng's institutional email and all institutional profile URLs",
     "Transfer prepared cover-letter content into the official journal template; online template body could not be retrieved",
     "Arrange data access upon reasonable request or release the prepared numerical profile",
     "Final source compilation and figure-label correction; LaTeX submission PDF and source ZIP remain deferred by user"
@@ -636,15 +636,15 @@
     "new_experiments": 0
   },
   "publication_preparation_remaining_20261016": [
-    "Full affiliation b for Zhenyu Meng and full affiliation c for Jia Zhao",
-    "Institutional email addresses for Ya-Yu Zhang, Zhenyu Meng and Jia Zhao; institutional profile URLs for all four authors",
-    "Transfer prepared cover-letter content into the official journal template; online template body could not be retrieved",
+    "Confirm the five author records and Jeng-Shyang Pan's corresponding-author role",
+    "Institutional email confirmation for Zhenyu Meng; institutional profile URLs for all five authors",
+    "Apply the official cover-letter template and complete final submission files",
     "Arrange data access upon reasonable request or release the prepared numerical profile",
-    "Final source compilation and figure-label correction; LaTeX submission PDF and source ZIP remain deferred by user"
+    "Perform final layout and source/PDF/ZIP verification"
   ],
   "historical_remaining_before_final_method_20261016": [
     "Optimization increment remains unestablished: two-reference physical full-pool envelope fails root-tie sharpness on all43 nontrivial development states; distinguish point-bound quality from candidate-set pessimism before further experiments",
-    "Affiliations b/c intentionally remain unfilled at user choice; author contribution/funding/conflict facts are not independently certified",
+    "Author contribution, funding and conflict facts are not independently certified; the current five-author record is restored from the referenced author plan",
     "Historical initial manuscript-section drafting assistance remains disclosed; complete early model/prompt history and publisher policy applicability not certified",
     "Official journal-specific portal/length details could not be fully read (403)",
     "Local27/32-page PDFs and scoped minimum package delivered; previous exact-public-disclosure blockers and full historical archive access remain outside this completed local delivery"
@@ -750,7 +750,6 @@
       {
         "author": "Ya-Yu Zhang",
         "fields": [
-          "institutional email",
           "institutional profile URL"
         ]
       },
@@ -758,16 +757,19 @@
         "author": "Zhenyu Meng",
         "fields": [
           "institutional email",
-          "institutional profile URL",
-          "full affiliation b"
+          "institutional profile URL"
         ]
       },
       {
         "author": "Jia Zhao",
         "fields": [
-          "institutional email",
-          "institutional profile URL",
-          "full affiliation c"
+          "institutional profile URL"
+        ]
+      },
+      {
+        "author": "Jeng-Shyang Pan",
+        "fields": [
+          "institutional profile URL"
         ]
       }
     ],
@@ -785,11 +787,14 @@
       "Shu-Chuan Chu",
       "Ya-Yu Zhang",
       "Zhenyu Meng",
-      "Jia Zhao"
+      "Jia Zhao",
+      "Jeng-Shyang Pan"
     ],
     "affiliations_filled": true,
     "available_emails_and_orcids_filled": true,
     "institutional_profile_urls_filled": false,
-    "submission_ready_remains": false
+    "submission_ready_remains": false,
+    "corresponding_author": "Jeng-Shyang Pan",
+    "five_author_record_restored": true
   }
 }
