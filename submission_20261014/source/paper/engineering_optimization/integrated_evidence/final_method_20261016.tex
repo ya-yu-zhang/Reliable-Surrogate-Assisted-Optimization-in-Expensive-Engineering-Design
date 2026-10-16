@@ -1,0 +1,117 @@
+\section{Certified selection by local response discovery}\label{sec:final_method}
+
+\subsection{Design-selection problem and computational contract}
+
+Let $m_0>0$ be the best observed objective, $\mathcal A$ a finite menu of first designs, and $\mathcal I_a$ the ordered continuation pool after first design $a$. The existing raw-response mean policy is
+\begin{equation}
+\pi_a(z)=\mathop{\rm argmin}^{\rm first}_{i\in\mathcal I_a}
+                   (u_{ai}z+v_{ai}),\qquad z>0,
+\label{eq:final_policy}
+\end{equation}
+where the smallest pool index resolves a tie. This policy is fixed during planning. The task is to select $a$ for the two-evaluation improvement
+\begin{equation}
+V_a=\mathbb E\left[m_0-\min\{m_0,Y_a,Y_{\pi_a(Y_a)}\}\right],
+\qquad \max_{a\in\mathcal A}V_a.
+\label{eq:final_objective}
+\end{equation}
+The optimization variable is the first design in the supplied menu. The problem does not optimize all continuation policies or the continuous design space.
+
+The planning responses are positive. Write $\log Y_a=m_a+s_aX$, with $s_a>0$ and $X\sim N(0,1)$. When a continuation $i$ is encountered, a numerical query supplies enclosures for
+\begin{equation}
+\log Y_{ai}\mid X=x\ \sim\
+N(\mu_{ai}+\gamma_{ai}x,\sigma_{ai}^2),\qquad \sigma_{ai}>0.
+\label{eq:final_conditional_model}
+\end{equation}
+The raw-response policy and this log-response planning distribution have different declared roles. Positivity does not establish that the planning model is statistically calibrated.
+
+Queries use the fixed training responses $y>0$, a fixed binary training matrix $A$, binary cross/target matrices $B,K$, and fixed binary normalization constants $c_0,s_0$. Their posterior arithmetic encloses
+\begin{equation}
+g=c_0\mathbf1+BA^{-1}(\log y-c_0\mathbf1),\qquad
+S=s_0^2(K-BA^{-1}B^{\mathsf T}).
+\label{eq:final_pair_posterior}
+\end{equation}
+For a queried first/second pair, $\mu_{ai}=g_2$, $\gamma_{ai}=S_{21}/s_a$ and $\sigma_{ai}^2=S_{22}-\gamma_{ai}^2$. The first marginal and pair use the same declared training inputs. Inverse residuals, positive-definiteness and positive conditional variance are checked before using a query. Parameters are not refitted during planning.
+
+Only queried conditional marginals are required computationally. Uncomputed positive conditional laws remain unspecified. Let $\mathcal P_a$ denote the positive completions agreeing with the queried laws on certified regions. The resulting certificate is valid for every member of this class. A compatible joint GP has the same branch expectation and is included; the algorithm does not certify the full unqueried joint covariance. This is a contract for unfinished planning computation, not a distributional robustness or physical error guarantee.
+
+\subsection{Certified local identity and regional value}
+
+Let affine bands enclose the continuation means: $L_{ai}(z)\le u_{ai}z+v_{ai}\le U_{ai}(z)$ for all positive $z$. For reference action $j$, one scan intersects the linear constraints defining
+\begin{equation}
+D_{aj}=\{z>0: U_{aj}(z)<L_{ai}(z)\ (i<j),\quad
+                  U_{aj}(z)\le L_{ai}(z)\ (i>j)\}.
+\label{eq:final_stability}
+\end{equation}
+On this domain, the declared policy must select $j$. A non-strict comparison with an earlier rival would be unsound for a flat tie on a positive-measure interval. Endpoint strictness remains explicit; isolated endpoints have zero probability under the nondegenerate first-response model. Exact predicates support the linear comparisons \citep{ref41}. Each transformed endpoint is enclosed; using the upper bound for the lower endpoint and the lower bound for the upper endpoint gives a common inner standard-normal region valid for all enclosed $m_a,s_a$.
+
+Define
+\begin{equation}
+h_a(x)=\min\{m_0,\exp(m_a+s_ax)\},\quad b_a(x)=m_0-h_a(x),
+\quad w_{ai}(x)=\mathbb E[(h_a(x)-Y_{ai})_+\mid X=x].
+\label{eq:final_remainder}
+\end{equation}
+The reward is $b_a+w_{a\pi_a}$, and $0\le w_{ai}\le h_a$. This expected-improvement decomposition is an established identity, not an independent novelty claim.
+
+\paragraph{Proposition 1: regional value enclosure.}
+Let $S_a$ be a union of certified response cells, with known policy identity on each cell, and $E_a=S_a^c$. Put $B_a=\mathbb E[b_a(X)]$, let $W_{a,S}$ be the integral of the appropriate known remainder over $S_a$, and put $H_{a,E}=\mathbb E[h_a(X)\mathbf1_{E_a}]$. Then
+\begin{equation}
+B_a+W_{a,S}\ \le V_a\le\ B_a+W_{a,S}+H_{a,E},
+\qquad H_{a,E}\le m_0\mathbb P(E_a).
+\label{eq:final_regional_enclosure}
+\end{equation}
+The unknown remainder lies between zero and $h_a$ pointwise, so integration proves the result for every admissible positive completion. No identity on $E_a$ or independence among candidate responses is needed. If $E_a$ implies $Y_a\le\eta m_0$, then $H_{a,E}\le\eta m_0\mathbb P(E_a)$: an already good first response limits the remaining adaptation value.
+
+For a standard-normal cell $C$, the implemented unknown-reward interval is $[B_C^-,m_0P_C^+]$, where $B_C=\int_C b_a\phi$ and $P_C=\int_C\phi$. A uniform-reward control uses $[0,m_0P_C^+]$. The capped-response moment is computed by splitting at $c=(\log m_0-m_a)/s_a$. Below $c$,
+\begin{equation}
+\int_r^t\exp(m_a+s_ax)\phi(x)\,dx
+=\exp(m_a+s_a^2/2)\{\Phi(t-s_a)-\Phi(r-s_a)\};
+\label{eq:final_moment}
+\end{equation}
+above it the capped moment is $m_0\{\Phi(t)-\Phi(r)\}$. An uncertain crossing strip receives a conservative reward hull. Boundary and tail hulls may widen the ideal enclosure; acceptance uses the actual outward endpoints.
+
+\subsection{Conditional integration and numerical acceptance}
+
+On an identified action/incumbent piece, write $h=\exp(\alpha+\beta x)$, with $\beta=s_a$ or $0$, $\mu=\mu_{ai}+\gamma_{ai}x$, $k=(\log h-\mu)/\sigma_{ai}$ and $M=\exp(\mu+\sigma_{ai}^2/2)$. The conditional reward is
+\begin{equation}
+q_i(x)=m_0-h\Phi(-k)-M\Phi(k-\sigma_{ai}).
+\label{eq:final_q}
+\end{equation}
+The truncated-lognormal expectation is established \citep{ref45}. Differentiation using $h\phi(k)=M\phi(k-\sigma_{ai})$ gives the uniform smooth-piece bound
+\begin{equation}
+|q_i''|\le C_i=m_0\left\{\beta^2+\gamma_{ai}^2+
+\frac{(\beta-\gamma_{ai})^2}{\sigma_{ai}\sqrt{2\pi}}\right\}.
+\label{eq:final_curvature}
+\end{equation}
+For a cell $[r,t]$, normal-weighted linear interpolation therefore has absolute error at most $C_i(t-r)^2\{\Phi(t)-\Phi(r)\}/8$. Parameter intervals require a uniform bound on $C_i$ and a positive lower bound on $\sigma_{ai}$. The supplement gives the derivative and interpolation arguments.
+
+The cells form a disjoint cover of $[-T,T]$, with $T=8$. Outside-window contribution is enclosed by $[0,2m_0\Phi(-T)]$, without renormalization. Directed logarithms, probabilities, interpolation, posterior residual bounds and final sums use MPFR arithmetic \citep{ref46}. Uncertain boundaries are not replaced by midpoint identities.
+
+\paragraph{Proposition 2: accepted selection.}
+For valid branch intervals, accept $\hat a$ only if
+\begin{equation}
+\max\{0,\max_{a\ne\hat a}\overline V_a-\underline V_{\hat a}\}
+\le\delta,\qquad\delta=m_0/10^6.
+\label{eq:final_acceptance}
+\end{equation}
+Every competitor is bounded above and the selected value below, so $\max_aV_a-V_{\hat a}\le\delta$ for every admissible positive completion. The selected action's own upper endpoint is not a competitor; a singleton menu is trivial. This is numerical model regret, not regret for the true engineering response. A failed arithmetic assumption or exhausted resource budget returns unresolved.
+
+\subsection{Algorithm and local error scope}
+
+The algorithm returns an accepted first action and cell record, or unresolved:
+\begin{enumerate}
+\item Construct the raw affine bands and first-response enclosures from training inputs. Initialize the normal cell cover and split at the enclosed incumbent crossing. No historical action domains are inputs.
+\item Assemble current branch intervals. Choose the branch with largest lower bound and its competitor with largest upper bound. Apply Equation~\eqref{eq:final_acceptance} before requesting further work.
+\item Select the widest value-uncertainty cell among these two branches. For an unknown cell, use a cached local domain if possible; otherwise select a reference at its center and perform the dominance scan in Equation~\eqref{eq:final_stability}. Split off the certified intersection, retaining unknown remainder cells.
+\item Request a bivariate conditional posterior only for an encountered action, cache it, and integrate its certified cells. For an already identified cell, subdivide to reduce integration error. Return to the interval comparison until acceptance or the declared limit.
+\end{enumerate}
+The reader checks local dominance, tie order, cell coverage, fresh conditional integrals and sums. A separate audit reconstructs the tolerance from the input incumbent and checks regret. Arithmetic and curvature code are shared; a fully independent posterior checker is not claimed.
+
+Policy-composed reward need not be continuous. With $m_0=1$, raw means $z-1/2$ and $0$ switch the action at $z=1/2$. Independent lognormal planning responses with equal positive log-standard deviation and log-means $\log(1/4)$ and $\log(3/4)$ have strictly different expected capped minima at that point. The conditional reward consequently has different one-sided limits. Regional reward bounds remain valid across this switch.
+
+For an idealized exact-parameter grid with maximum cell width $d$, let $J_a$ count policy switches and $C_a$ bound smooth-piece curvature. After a center probe per cell, unknown switch cells have total length at most $J_ad$. Their reward width, identified-cell interpolation width and normal tail give
+\begin{equation}
+\operatorname{width}([\underline V_a,\overline V_a])\le
+\frac{m_0J_ad}{\sqrt{2\pi}}+\frac{C_ad^2}{4}+2m_0\Phi(-T).
+\label{eq:final_local_error}
+\end{equation}
+This separates discontinuity and smooth-integration errors. Fixed nonzero parameter bands, finite precision and the resource-limited priority schedule can retain floors; Equation~\eqref{eq:final_local_error} is not their unconditional termination theorem. With $S$ local scans and $N$ eligible actions, dominance work is $O(SN)$ before exact-arithmetic bit costs, plus posterior and integration work. No improved worst-case complexity over a complete envelope is asserted.

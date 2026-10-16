@@ -1,0 +1,176 @@
+{
+  "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
+  "date": "2026-10-16",
+  "scope": "Final manuscript integration; source/BibTeX/hash checks only, no scientific execution or LaTeX build",
+  "source_files": [
+    {
+      "path": "source/paper/engineering_optimization/EO_manuscript.tex",
+      "bytes": 15330,
+      "sha256": "911dea71ce1cd50d60d81b2518e8cd1b50f9204b04269b0600da64c4b53c6c70",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/EO_references.bib",
+      "bytes": 15423,
+      "sha256": "4e980ebb8c2a1337b47f1f24444e4d5482b3cf36ee0c7bbfb121d5285e747005",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/EO_supplementary.tex",
+      "bytes": 120076,
+      "sha256": "a54d230d42f803d45b303b6a0716386266d1de677a60278352fcf66df2bacb01",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex",
+      "bytes": 11344,
+      "sha256": "ad1551bb87477ab1a6bffea01256c0bcc201e53d1989e132adcb74c703d532ce",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/final_method_20261016.tex",
+      "bytes": 10307,
+      "sha256": "165a5e4ca8d420e7eb4f0b630d7b2ec430dcae435154190918647cac5c90d5b6",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/gp_envelope_completion.tex",
+      "bytes": 5469,
+      "sha256": "2a58aa65b242f66346f10f1a48bad0bf3ca7f7153f28af00fd195bb97989a552",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/h1_bound_bottleneck_closure.tex",
+      "bytes": 2220,
+      "sha256": "fc5d7ee917874fe48334fd608dd5b14dfc3647f6678abeb93d379aa48ed13bfa",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/lazy_regional_method_20261015.tex",
+      "bytes": 4748,
+      "sha256": "9fbdcd05fce1d6d56b43c7528e6f24470d4411468077b3c00d9dd0cb4ebaef67",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/lazy_regional_results_20261015.tex",
+      "bytes": 5807,
+      "sha256": "dc588e934a92d70c8db55540670bc2145ae52f616af62201dab08ab66418d79e",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_method_20261015.tex",
+      "bytes": 7840,
+      "sha256": "ae2e226adc1cce247b35f8e6f4dd7cfbf2b683c8a3a359ae4f3a19208b44d98d",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_results_20261015.tex",
+      "bytes": 10709,
+      "sha256": "bb3d4e7a39fb8ee6cd215866b29053533410dbc05a89f77cbcdcf05f7289f9eb",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/positive_rollout_supplement_20261015.tex",
+      "bytes": 9311,
+      "sha256": "2f8700a3084c930ec3f1c00efda062f24e5bfe3b4ba8c1bd7935dd998e456ab9",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/pre_submission_checked_records.tex",
+      "bytes": 5875,
+      "sha256": "ab174631af7b13ddbf41d402c8407004834bac0d1fc61912a5c2140336ea1a1e",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/regional_value_method_20261015.tex",
+      "bytes": 5836,
+      "sha256": "b63c048fa1045668080d52c77e5e8d8e27c2769d1fa1326f8c88559cf3115690",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/regional_value_proofs_20261015.tex",
+      "bytes": 4275,
+      "sha256": "e954b7ed5ee2f12ae0050d18142ce5f8e2451471cb8110dd5bb181cc1bd82d2e",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/review_supp_records.tex",
+      "bytes": 9760,
+      "sha256": "7a4d25c80cfb3e0b73a46558db216221a9cb2a1e7d38007c10e0cd6518d781c1",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/submission_archival_status.tex",
+      "bytes": 2981,
+      "sha256": "ed3dbf1bb49e21577038f35e27105227d22cabe107a33ee16c4217d1483b84b3",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/submission_comparison.tex",
+      "bytes": 2268,
+      "sha256": "8e4bbd754e00984f0f17bbaa3a62895fc79a3a40b291d20085d5091bfed710e3",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/supp_records.tex",
+      "bytes": 11986,
+      "sha256": "12d5a19d23d72a6e93af44876c5248d815920c9759222ffefe8b051056b3553e",
+      "balanced_braces_and_named_environments": true
+    }
+  ],
+  "source_checks": {
+    "EO_manuscript.tex": {
+      "inputs_resolved": true,
+      "missing_citations": [],
+      "unresolved_labels": [],
+      "duplicate_labels": []
+    },
+    "EO_supplementary.tex": {
+      "inputs_resolved": true,
+      "missing_citations": [],
+      "unresolved_labels": [],
+      "duplicate_labels": []
+    }
+  },
+  "bibliography_entries": 46,
+  "bibtex_return_code": 0,
+  "bibtex_diagnostics": [],
+  "abstract_words": 146,
+  "previous_main_byte_identical": true,
+  "historical_supp_numeric_rows_preserved": 251,
+  "historical_supp_body_preserved_with_additive_supporting_input": true,
+  "v2_input_snapshots_verified": 43,
+  "v2_result_files_verified": 224,
+  "core_source_hashes_match_pre_execution_freeze": true,
+  "regional_input_hashes_verified": 130,
+  "regional_mathematical_tests_passed": 4,
+  "regional_transformed_branches": 89,
+  "regional_gain_beyond_baseline_branches": 86,
+  "regional_unchanged_selections_accepted": 43,
+  "regional_numerical_records_complete": true,
+  "current_source_compile_verified": false,
+  "current_visual_layout_verified": false,
+  "new_physical_evaluations": 0,
+  "new_PDF_generated": false,
+  "new_ZIP_generated": false,
+  "research_work_closed_under_current_scope": true,
+  "new_experiments_planned": 0,
+  "final_submit_ready": false,
+  "lazy_source_before_execution_commit": "8de86bbe1aeb1568bba754609cf10b8d093094c8",
+  "lazy_results_commit": "578e00482aff3d65bde4bd422b60c527803e6e22",
+  "lazy_frozen_clean_inputs_verified": 43,
+  "lazy_frozen_results_verified": 136,
+  "lazy_source_protocol_dependencies_and_decision_freeze_verified": true,
+  "original_result_records_overwritten": false,
+  "lazy_accepted_states": {
+    "uniform": 43,
+    "regional": 43
+  },
+  "lazy_ordinary_reference_checks": 228,
+  "lazy_model_parameter_overlap_checks": 954,
+  "lazy_workflow_training_matrix_constructions": 43,
+  "lazy_workflow_raw_selector_augmented_constructions": 114,
+  "lazy_workflow_validated_positive_posterior_builds": 361,
+  "new_GP_reconstructions_this_verification": 0,
+  "new_conditional_reward_evaluations_this_verification": 0
+}

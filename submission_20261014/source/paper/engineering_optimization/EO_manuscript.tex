@@ -1,10 +1,4 @@
-% V2 source integration 20261015; new fixed-state execution fully recorded; no new physics.
-% Author-review preparation 20261014; sole baseline 58f539c2; no new physics.
-% Operational specification revision 20261013; frozen experiments unchanged.
-% Review response factual integration; independent author scientific review pending.
-% Factual evidence integration v1; scientific author review pending.
-% Built from the evidence-preserving draft using the official publisher class.
-% Author review draft: unresolved affiliations and AI-use review remain.
+% Final scientific integration 20261016; baseline 58f539c2; frozen numerical records unchanged.
 \documentclass[]{interact}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
@@ -58,31 +52,34 @@ Code and clean inputs were frozen before a single paired run on all 43 nontrivia
 
 \section{Relationship to existing lookahead methods}
 
-Wu and Frazier develop practical two-step acquisition optimization, including one-dimensional Gauss--Hermite quadrature in the sequential setting \citep{ref39}. Two-step lookahead and one-dimensional conditioning are therefore established capabilities. Lee et al.\ reduce rollout computation through quasi-Monte Carlo, common random numbers and control variates, and also investigate policy search \citep{ref43}. Finite menus also appear in their policy-search formulation. Our additional computational object is a certified response-stability domain and its deterministic value-error bound for a fixed continuation, combined with posterior arithmetic and checked integration. The first-step baseline decomposition is also related to their use of EI as a known-mean control variate; the decomposition alone is not claimed as new. Here the stable-region remainder supplies a deterministic value range, rather than a variance-reduction result. No superiority over their acquisition optimizers is inferred.
+Two-step optimization, rollout and approximate-optimal GP planning are established. Wu and Frazier optimize a two-step acquisition using gradient estimation and variance reduction, including one-dimensional Gauss--Hermite integration in the sequential setting \citep{ref39}. Lee et al.\ combine quasi-Monte Carlo, common random numbers and control variates, and also investigate finite policy search \citep{ref43}. Ling et al.\ provide epsilon-optimal GP planning with Lipschitz rewards and an anytime branch-and-bound variant \citep{ref44}. These works already establish the broader motivation and several computational tools used here.
 
-Ling et al.\ develop an epsilon-optimal GP planning framework with Lipschitz rewards and an anytime branch-and-bound variant \citep{ref44}. Thus approximate-optimal GP planning itself is not the novelty claimed here. The present scope is a particular two-evaluation terminal objective, positive log-response model, affine raw-response continuation and finite binary-system error contract. A guarantee for this subproblem does not establish global or Bayes-optimal search. The event-error bound needs bounded rewards and certified policy identity on a response domain, rather than a global Lipschitz constant for the composed fixed-policy value. Curvature is used only on identified smooth action/incumbent pieces.
+\begin{table}[htbp]\centering\small
+\caption{Closest methodological context. The final column specifies this study's narrower computational object; no cross-method performance superiority is inferred.}\label{tab:closest_scope}
+\begin{tabular}{p{.17\textwidth}p{.32\textwidth}p{.40\textwidth}}\toprule
+Work & Published focus & Object addressed here\\\midrule
+Wu--Frazier & Two-step acquisition optimization with gradient and integration estimators & Certified choice within a fixed first menu and prescribed affine continuation\\
+Lee et al. & Rollout estimator variance reduction and policy search & Local identity proofs and deterministic ranges for uncomputed continuation value\\
+Ling et al. & Approximate-optimal GP planning with Lipschitz reward bounds & Positive-completion selection and smooth-piece error bounds across fixed-policy switches\\
+\bottomrule\end{tabular}\end{table}
 
-Affine posterior updates and breakpoint envelopes also occur in knowledge-gradient computation \citep{ref40,ref42}. Our earlier band-feasibility operator adapts that geometry to closed response intervals and independently replayable exclusions, using exact predicates \citep{ref41}. It serves as the complete-projection fallback. The local route does not require all those action domains initially.
+Affine mean updates and breakpoint envelopes occur in knowledge-gradient computation \citep{ref40,ref42}, and exact predicates are classical numerical tools \citep{ref41}. Expected-improvement decomposition and log-objective moments are also established \citep{ref45}. The proposed increment is the algorithm that combines a computable response-stability domain with a remaining-reward range to schedule region discovery and conditional-posterior requests, then certifies a first action before every continuation identity is known. The elementary range identity is not claimed as an independent optimization principle.
 
-Log-objective expected improvement is established \citep{ref45}; MPFR provides a correctly rounded arithmetic foundation \citep{ref46}. Neither positivity nor use of interval arithmetic alone constitutes the proposed increment. The concrete question is whether a response-stability certificate can guide a checked rollout solver to avoid unnecessary complete projections. The direct same-guarantee route is the relevant control for that question. Engineering-policy efficacy remains a separate outcome. The final lazy implementation removes historical action domains from its inputs and uses a minimal control that changes only the unknown-region reward range. Its specific computational object is a checked decision based on certified local identities and partial conditional-model information, rather than another claim of generic rollout priority.
+The numerical control uses the same local-discovery algorithm and conditional-model contract, changing only the unknown-cell reward interval. It tests the specific role of that interval rather than comparing different acquisition objectives or outputs. Prior works supply the novelty context; no claim of being the first two-step, finite-menu or epsilon-guaranteed GP method is made.
 
-\input{integrated_evidence/positive_rollout_method_20261015.tex}
+\input{integrated_evidence/final_method_20261016.tex}
 
 \input{integrated_evidence/lazy_regional_results_20261015.tex}
 
 \section{Discussion and limitations}
 
-The final algorithm uses regional value uncertainty to choose computational work. Local action identity, a positive remaining-reward range and on-demand conditional marginals are sufficient to certify the finite-menu choice; complete global continuation projection is not an input requirement. The positive-completion guarantee remains valid across discontinuous fixed-policy rewards. This is a numerical optimization-selection method for a specific two-evaluation problem, not a new general acquisition principle.
+The algorithm's contribution is a numerical solution method for the declared two-evaluation design-selection problem. It uses certified action identity and remaining-value uncertainty to decide which conditional computation is relevant to the current first choice. Its guarantee applies across policy switches and to positive completions of uncomputed conditional laws; complete global continuation projection is not an input requirement.
 
-The minimal paired comparison separates two effects. Avoiding complete projection is shared by both lazy routes. The regional reward range additionally reduces cell operations and conditional-posterior requests, but its extra marginal-moment work does not yield a time advantage in the recorded pass. The implementation repeats training solves and checks inside posterior requests; those costs are included. No further timing optimization or repeated measurement is used to change the conclusion.
+The paired control separates shared algorithm structure from the regional bound. Both routes avoid complete projection; the regional interval additionally reduces cell operations and conditional-posterior requests. The gain is modest and the regional route is slower in the recorded pass. Repeated training solves and validation inside posterior requests are included in that cost. Neither a universal complexity advantage nor numerical acceleration is established.
 
-The earlier v2 preparation used archived exact domains to select targets; its 114-to-25 projection count is therefore a reconstruction-stage result. The new run uses cleaned training snapshots and removes that dependency. Its separate 0-projection result is not assigned the earlier timing, full-joint covariance guarantee or 37.1\% certificate-width statistic. The three development stages answer different questions and their favorable numbers cannot be combined into a single performance claim.
+Applicability is demonstrated on one positive-compliance beam family, using fixed parameters, supplied first menus and an unchanged mean continuation. All states were previously observed. The corresponding paid outcomes remain mixed, so the evidence does not establish better engineering designs, physical evaluation savings or independent closed-loop efficacy. The certificate concerns finite binary-system model arithmetic; calibration, kernel-function approximation, physical/PDE accuracy and continuous-domain convergence are separate questions. The unqueried full joint covariance is not certified.
 
-The engineering scope remains one positive-compliance beam family with fixed parameters, a prescribed first menu and a raw-mean continuation. The finite numerical tolerance does not certify GP calibration, kernel-function error, PDE accuracy, continuous-domain convergence or real engineering regret. The lazy method validates used conditional marginals but not the entire unqueried covariance. A compatible full GP is included in the positive-law completion class, without asserting that every possible binary kernel construction admits one.
-
-All 43 states were previously observed. Matching older selections is a consistency result, and the corresponding paid engineering outcomes remain mixed. The new method establishes executable, checked first-action optimization from clean training inputs; it does not establish better engineering designs, reduced physical evaluations or independent closed-loop validation.
-
-The complete new records are saved. The missing older positive-response originals remain missing; the new implementations do not authenticate their timing or hashes. Three of 25 older paired-grid raw records remain unavailable. Their retained derived tables do not establish mesh convergence or physical accuracy at the decision margin. The preceding complete action-set manuscript, H1 obstruction, failed independent gate and all earlier unfavorable tables remain in the archive and supplement.
+Earlier action-set, full-projection and certificate-transformation studies are retained in the supplement. Their projection counts, timing ratios and width reductions concern other computations and are not combined with the final algorithm's results. Missing historical raw files are disclosed in the availability statement. Additional datasets or repeated timing are not used to turn these limited findings into a stronger efficacy claim.
 
 \section{Conclusion}
 
@@ -90,7 +87,7 @@ Response-stability-guided regional value enclosures support a lazy finite-menu r
 
 \section*{Acknowledgements}
 
-OpenAI Codex assisted software development and verification, computational workflow execution and recovery, evidence integration, formal argument drafting, manuscript preparation and language revision. The authors remain responsible for the research, statements and interpretations. This disclosure retains the known assistance history. The present preparation uses a GPT-6-based Codex agent. Exact tool versions and full prompt histories for earlier assistance have not been independently certified. This statement does not certify compliance with a publication venue's manuscript-preparation policy.
+OpenAI Codex assisted software development and verification, computational workflow execution and recovery, evidence integration, formal argument drafting, manuscript preparation and language revision. The authors remain responsible for the research, statements and interpretations. This disclosure retains the known assistance history. The present preparation uses a GPT-6-based Codex agent. Exact tool versions and full prompt histories for earlier assistance have not been independently certified. 
 
 \section*{Funding Statement}
 
@@ -102,21 +99,11 @@ The following contribution assignment is proposed for author confirmation: conce
 
 \section*{Availability of Data and Materials}
 
-The repository is private: \url{https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design}. A URL alone does not provide reviewer access or an open-source license. The preparation branch is \texttt{research/contribution-closure-20261014-c5d11c}; the scientific baseline remains \texttt{58f539c2d0738b20c7d0d4889fe8d808a03a3019}.
+The source and data repository is private: \url{https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design}, branch \texttt{research/contribution-closure-20261014-c5d11c}. The scientific baseline is \texttt{58f539c2d0738b20c7d0d4889fe8d808a03a3019}. Reviewer access remains to be arranged; no public-release or open-source-license status is asserted.
 
-V2 source and all 43 numerical input snapshots were frozen before execution at commit \texttt{f4f352acdb5ccbc98ead05455d2083ccc72acca3}. Complete new numerical and paid-replay records were saved at commit \texttt{79f2cfa07082c5cb6b94075d5220175b8fc4e2ab}. Inputs are under \path{data/positive_rollout_v2_20261015/}; configuration is \path{configs/positive_rollout_v2_20261015.json}; posterior intervals, per-state certificates, references, decisions, freeze hashes and paid-outcome extracts are under \path{results/positive_rollout_v2_20261015/}. Source hashes and arithmetic versions are recorded. A reproduction entry point writes to a fresh directory and preserves the original execution.
+Final-algorithm code, protocol, tests and 43 clean training snapshots were committed before execution at \texttt{8de86bbe1aeb1568bba754609cf10b8d093094c8}; the complete paired numerical record was saved at \texttt{578e00482aff3d65bde4bd422b60c527803e6e22}. Inputs are under \path{data/lazy_regional_20261015/}, configuration under \path{configs/lazy_regional_20261015.json}, and per-state preparation, queried marginals, cell certificates, frozen choices and consistency checks under \path{results/lazy_regional_20261015/}. The reproduction entry point writes to a fresh directory and verifies frozen source/input hashes. It uses the recorded Python numerical stack and 64-bit MPFR ABI, without a physical solver or new responses.
 
-Numerical reproduction uses the released snapshots and existing repository code without a physical solver or the missing historical positive-response program. It requires the recorded numerical stack and 64-bit MPFR ABI; binary-input mismatches fail rather than silently change the model. Paid-outcome extracts are provided with the original journal hashes and the performed point/pool/training-count checks. Repeating their source-journal validation requires the corresponding historical journals; it does not require new physical responses.
-
-The final lazy-region code and clean training snapshots were frozen at commit \texttt{8de86bbe1aeb1568bba754609cf10b8d093094c8}. Inputs are under \path{data/lazy_regional_20261015/}; configuration is \path{configs/lazy_regional_20261015.json}; per-state preparation, queried posterior records, local cells, certificates, decisions and consistency checks are under \path{results/lazy_regional_20261015/}. The separate reproduction wrapper writes to a fresh directory. All new CPU construction calls are counted; physical evaluations, bound queries, hyperparameter fits and new independent samples remain zero.
-
-The later regional transformation is under \path{results/regional_value_closure_20261015/}. Its source is \path{src/rollout_regional_enclosure.py}, with separate transformation and exact-endpoint attribution entry points. The input freeze identifies the accepted v2 posterior and leaf files; all original execution files remain unchanged. No new conditional-reward integral, model reconstruction or physical evaluation is used.
-
-The older positive-response aggregate remains at commit \texttt{7b36e70d8fb4d81d47bdd00a579453645c6828d6}; its original program and per-state files remain unavailable. V2 is a new execution and does not authenticate that aggregate. The earlier raw-Gaussian source/results and complete action-set manuscript remain separate.
-
-The paired-grid audit previously recovered 22 of 25 files. Recovery \path{events.jsonl}, \path{responses.json} and \path{run_status.json} under \path{results/engineering_optimization_paired_mesh_recovery_v1/} remain unavailable. Their derived tables are historical support and do not substitute for raw replay or establish mesh convergence. The authors report preserving a larger historical raw archive locally; it has not been fully inspected here.
-
-Reviewer access remains to be arranged. V2 adds CPU kernel algebra and numerical integration, fully charged in the record, with zero new physical evaluations, retries, replacements, bound queries, hyperparameter fits or independent optimization samples. Third-party code and publisher templates retain their own terms.
+Earlier evidence retains its separate source, input and result manifests. The old positive-response execution program remains unavailable and is not authenticated by the new implementations. Three older paired-grid recovery files---\path{events.jsonl}, \path{responses.json} and \path{run_status.json}---remain missing; derived historical tables do not replace them or establish mesh convergence. The complete current finite-menu numerical record does not rely on these missing originals. Full historical solver journals are required to repeat their source-journal checks, while checked paid-outcome extracts are included. Third-party code and publisher templates retain their own terms.
 
 \section*{Ethics Approval}
 

@@ -1,4 +1,4 @@
-15 October 2026
+16 October 2026
 Preparation copy; required author facts, reviewer access and current layout remain unfinished.
 
 Editors, Engineering Optimization
@@ -9,11 +9,11 @@ Dear Editors,
 
 This manuscript proposes a finite-menu rollout selection algorithm that discovers certified response-stability regions and requests conditional posterior calculations only for encountered continuations. A positive terminal-reward remainder bounds uncomputed regions, and a checked inequality certifies the first action for every admissible positive completion of the uncomputed conditional laws. A discontinuity example and a local switching/integration error bound specify its mathematical scope. Existing rollout, EI decompositions, affine envelopes and epsilon-GP planning are acknowledged as established tools.
 
-Code, protocol and 43 clean beam-training snapshots were committed before one paired development run. Both regional and uniform-reward routes certify all states without historical action domains, old posteriors or complete response projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. They take 12.23 seconds versus 10.73 seconds for the checked stage, with 2.72 seconds shared preparation charged separately. No time advantage is claimed. Existing engineering outcomes remain mixed.
+Code, protocol and 43 clean beam-training snapshots were committed before one paired development run. Both regional and uniform-reward routes certify all states without historical action domains, old posteriors or complete response projection. Regional bounds reduce cell operations from 640 to 585 and conditional posterior constructions from 161 to 157. They take 12.23 seconds versus 10.73 seconds for the checked stage, with 2.72 seconds shared preparation charged separately. No time advantage is claimed. The engineering task selects the first of two compliance evaluations in a fixed-volume MBB beam workflow, using supplied design menus and an unchanged mean continuation. Existing engineering outcomes remain mixed.
 
 The contribution is a computational method for a declared engineering optimization subproblem. It is not a claim of better engineering policies, physical evaluation savings, statistical calibration, full unqueried joint-GP validity or continuous-domain convergence. Previously observed states do not provide independent validation. Earlier adverse results and unavailable historical originals remain disclosed.
 
-All new CPU work is recorded; physical evaluations, bound queries, parameter fits, physical retries, replacements and new independent samples are zero. Source, clean inputs and complete per-state records are preserved on the private preparation branch. Reviewer access, affiliations b/c and required factual declarations must be finalized. Known AI assistance is disclosed. This copy does not certify venue-policy compliance, originality clearance or exclusive submission.
+The recorded algorithm development acquired no physical evaluations, bound queries, parameter fits, physical retries, replacements or new independent samples. Source, clean inputs and complete per-state numerical records are preserved on the private preparation branch. The current revision unifies the final method and engineering setting without further numerical execution. Affiliations b/c, reviewer access and final typesetting remain to be completed. Funding and conflict statements retain the supplied manuscript wording; known AI assistance is disclosed. No actual submission has been made.
 
 Corresponding author listed in the manuscript:
 Shu-Chuan Chu

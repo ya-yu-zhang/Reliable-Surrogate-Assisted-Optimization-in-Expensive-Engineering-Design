@@ -1,93 +1,60 @@
-# Scoped review reproduction
+# Current manuscript and numerical review entry — 16 October 2026
 
-The sole current scientific baseline is `58f539c2d0738b20c7d0d4889fe8d808a03a3019`. The data-and-code archive is supplied for review of the GP coefficient-band operator and the existing bounded decision evidence; it is not the full historical project.
+Read the saved evidence before considering reproduction. This revision changes manuscript organization and scientific explanation; it performs no new algorithm run, posterior reconstruction, physical evaluation, bound query, fit, retry, replacement or independent optimization sample. Both witness attempts are exhausted. Do not invoke physical or optimization experiment entry points for this review.
 
-Use the environment in `runtime_record.json`. The recorded verification used Python 3.12, NumPy 2.3.5, SciPy 1.17.0, scikit-learn 1.8.0 and Matplotlib. There is no need for the engineering solver for the current verification. From the extracted archive root:
+## Read the current paper
 
-```sh
-python3 -m src.prepare_gp_attachment
-python3 -m src.verify_project_closure
-python3 -m src.check_gp_envelope_downstream
-```
+| Purpose | Repository path |
+|---|---|
+| Main paper | `submission_20261014/source/paper/engineering_optimization/EO_manuscript.tex` |
+| Final problem, algorithm, propositions and assumptions | `submission_20261014/source/paper/engineering_optimization/integrated_evidence/final_method_20261016.tex` |
+| Engineering setting and final paired results | `submission_20261014/source/paper/engineering_optimization/integrated_evidence/lazy_regional_results_20261015.tex` |
+| Proofs and separate historical evidence | `submission_20261014/source/paper/engineering_optimization/EO_supplementary.tex` and its inputs |
+| Bibliography | `submission_20261014/source/paper/engineering_optimization/EO_references.bib` |
+| Scientific assessment and remaining preparation | `submission_20261014/review_20261016/FINAL_SCIENTIFIC_REVIEW.md` |
+| Title, abstract, authors and the two missing affiliations | `submission_20261014/PORTAL_FIELDS.json` |
 
-The included test record reports 31 scoped tests on the unchanged scientific implementation. Optional rerun:
+The main method is local response discovery with on-demand conditional posteriors and positive-completion selection. Earlier full-projection methods and saved-certificate transformations are supporting stages, not interchangeable implementations or independent validation. Older manuscript builders can overwrite the final narrative; do not run them to prepare this version.
 
-```sh
-python3 -m unittest discover -s tests -v
-```
+## Inspect the final numerical record
 
-The checked historical timing record is supplied. Optional retiming reads the same frozen bands and creates new machine-dependent stage timings:
+The immutable scientific baseline is `58f539c2d0738b20c7d0d4889fe8d808a03a3019`. The authorized private branch is `research/contribution-closure-20261014-c5d11c`. Code, protocol, tests and 43 clean snapshots were committed **before execution** at `8de86bbe1aeb1568bba754609cf10b8d093094c8`. The complete final numerical record was saved at `578e00482aff3d65bde4bd422b60c527803e6e22`.
 
-```sh
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m src.verify_and_benchmark_gp_envelope --out results/gp_envelope_retimed --repeats 3
-```
+| Purpose | Repository path |
+|---|---|
+| Core and original runner | `src/lazy_regional_rollout.py`, `src/run_lazy_regional_rollout.py` |
+| Pre-execution protocol, limits and hashes | `configs/lazy_regional_20261015.json`, `paper/engineering_optimization/contribution_closure_20261015/LAZY_REGIONAL_PROTOCOL.md` |
+| Necessary unit checks and saved execution record | `tests/test_lazy_regional_rollout.py`, `paper/engineering_optimization/contribution_closure_20261015/LAZY_UNIT_CHECK.json` |
+| Clean training inputs | `data/lazy_regional_20261015/` — 43 files |
+| Actual reconstructed preparation | `results/lazy_regional_20261015/preparation/` — 43 files |
+| Local domains, queried marginals, cell certificates and reader results | `results/lazy_regional_20261015/certificates/` — 86 files |
+| Summary and decision freeze | `results/lazy_regional_20261015/analysis.json`, `decisions.json`, `decisions_frozen.json` |
+| Subsequent consistency and tolerance audit | `results/lazy_regional_20261015/postfreeze_consistency.json`, `src/verify_lazy_regional_records.py` |
 
-Do not invoke a physical-bound, witness-execution, paired-grid solver or independent optimization entry point for this scoped reproduction. The two witness attempts are already consumed; no retry or replacement is performed.
+Both routes accept 43/43 previously seen states. Regional versus uniform reward uses 585 versus 640 cell operations and 157 versus 161 conditional posterior constructions, taking 12.226469 versus 10.726626 checked seconds. Shared preparation is 2.724387 seconds. Both avoid complete continuation projection. This establishes the finite-menu computation, not a time advantage, improved physical outcomes or independent validation.
 
-The private repository's URL is provenance, not reviewer access. The archive preserves the original GP ZIP bytes, its manifest and both witnesses. Selected exact sources resolve through baseline, restored, GP attachment and baseline_more. The 22 recovered paired-grid records and the three historical output tables are included as supporting material, with the three missing final raw files identified by hashes. Those paired-grid tables cannot currently undergo complete independent raw-log reconstruction; no synthetic replacement files are created.
+The frozen reader shares arithmetic and curvature code with the producer. The separate saved audit checks the input-derived tolerance and regret; ordinary references and parameter overlap are consistency evidence. Queried finite posterior arithmetic is certified under the stated assumptions; unqueried full-joint covariance, kernel-function error, statistical calibration and physical error are outside that certificate.
 
-`revision/` retains the earlier closure overlay to reproduce its existing verification. `submission_20261014/source/` is the active journal preparation copy, adding evidence-availability disclosure and front-matter adjustments while preserving numerical rows and the bibliography. To reconstruct those source edits:
+## Source-only check and optional numerical reproduction
 
-```sh
-python3 -m src.prepare_submission_20261014
-python3 -m src.focus_paper_contribution_20261015
-```
-
-The official publisher class and bibliography style are excluded. Obtain the official bundle `https://files.taylorandfrancis.com/InteractCADLaTeX.zip` identified in REPRODUCE_PROJECT_CLOSURE.md and place interact.cls and tfcad.bst beside the active TeX. A working TeX Live can compile:
-
-```sh
-cd submission_20261014/source/paper/engineering_optimization
-latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build/main EO_manuscript.tex
-latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build/supplement EO_supplementary.tex
-```
-
-Funding and conflict statements are inherited author facts, not established by code checks. The affiliations b/c and venue-specific writing-policy applicability remain pending. The packet is not a record of a journal submission or a public data release.
-
-After the preparation builder, apply the final read-only diagnosis and source addition:
+The current preparation check reads sources and saved records, runs BibTeX, verifies references and hashes, and writes only current source-review reports. It does not rebuild a posterior, run the algorithm or build a PDF:
 
 ```sh
-python3 -m src.finalize_contribution_20261014
-python3 -m unittest tests.test_h1_bound_bottlenecks -v
+python -m src.verify_rollout_closure_sources
 ```
-This reads already recorded bounds only. It adds no physical evaluation and leaves the original efficacy gate false.
 
-## Current 15 October contribution
+Its record is `submission_20261014/review_20261016/SOURCE_VERIFICATION.json`; its current-file manifest is `submission_20261014/review_20261016/REVIEW_MANIFEST.json`. Earlier release manifests describe their own commits. Their historical manuscript hashes are not hashes of this revised manuscript. Frozen source/input and numerical-result hashes remain independently checked.
 
-The current manuscript evaluates the integer filter, independently optimized pairwise control and scalar-certificate router. The earlier full manuscript remains in archival/EO_full_evidence_20261014.tex. Do not run the older preparation builder alone, which restores the earlier presentation.
-
-With the existing GP attachment, the ten new numerical test groups and read-only routing check are:
+Optional algorithm reproduction is unnecessary for preparing this paper and was **not executed for this revision**. Use Python 3.12, the dependencies in `requirements-positive-rollout-v2.txt`, and MPFR 4.2.1 with a 64-bit ABI. The runner checks source/input hashes, uses one numerical thread and refuses an existing output directory. Run from the repository root with a fresh path below `results/`:
 
 ```sh
-python3 -m unittest tests.test_filtered_exact_action_sets tests.test_h1_certificate_routing -v
-python3 -m src.verify_h1_certificate_routing
+python -m src.reproduce_lazy_regional_rollout --out results/lazy_regional_reproduction
 ```
 
-Recorded comparison inputs/source hashes, 228 case results and certificate hashes are in results/gp_strong_comparison_20261015/. Optional retiming must use a different directory:
+Do not point it at frozen results. Durations and resource-limit outcomes can vary by machine. Reproduction uses clean training data and no physical solver or future responses.
 
-```sh
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python3 -m src.benchmark_strong_action_sets --out results/gp_strong_retimed --repeats 3
-```
+## Availability and submission boundary
 
-This reconstructs fixed binary kernels without hyperparameter fitting, new bound queries, physical evaluations or independent optimization samples. The preserved 15 October record replaces unpreserved earlier timing claims. The router returns only its specified scalar Boolean certificate predicate. H1/H5/independent gates remain unchanged.
+The repository is private; its URL is provenance and does not grant reviewer access. Access has not been arranged. The current finite-menu numerical record is self-contained with its declared code dependencies and clean inputs; it does not require the lost old positive-response program or three missing paired-grid raw files. Full historical solver-journal checks still require those journals; paid-outcome extracts do not replace them. The manuscript retains these disclosures.
 
-Per the user's new instruction the private branch saves source text and derived results. PDFs/ZIPs are kept locally by the user and supplied again when needed. No PDF/ZIP upload is part of this increment.
-
-## Frozen nominal-band diagnosis and closest-method review (15 October 2026)
-
-The current scientific positioning is a specialized certified numerical implementation and verification study. The source-level review records the classical affine-envelope correspondence and the elementary threshold guard; no new geometric principle or optimization-policy improvement is claimed. See paper/engineering_optimization/contribution_closure_20261015/RESULT_AND_CONTRIBUTION.md and CLOSEST_METHOD_REVIEW.md.
-
-The nominal diagnostic reads the already available coefficient records and verified band intervals. It creates no GP/kernel system, bound query, physics, fit or independent sample and does not rerun the existing timing/proof comparison. Its selection rule and two branch identities were fixed before diagnostic outputs. All 228 index sets agree, no additional action is retained by bands, and all 908 shared intervals widen. The second selected branch is a baseline branch, not an independent policy win. Exact example endpoints and input hashes accompany the results.
-
-Optional zero-solver diagnostic, using the existing input layout:
-
-```sh
-python3 -m src.diagnose_nominal_band_contract
-```
-
-That entry point rewrites the diagnostic outputs. Preserve the recorded results before optional reproduction. To rebuild only the current manuscript text from saved results:
-
-```sh
-python3 -m src.focus_paper_contribution_20261015
-```
-
-The earlier ZIP provides frozen inputs; it does not contain the 15 October source/result updates. Combine it with the current private branch. The current source verification covers the latest TeX and references in draft mode, with no PDF export or visual-layout certification. No claim of final submission readiness follows from that check.
+Publisher class/style files and historical figure assets retain their own availability and rights. A source/BibTeX check is not compilation or visual-layout approval. No new PDF/ZIP, template recovery, public release, license change or journal submission is part of this revision. Affiliations b/c and current layout remain unfinished. Existing funding/conflict wording is inherited from the supplied manuscript. No all-author approval task is reinstated.

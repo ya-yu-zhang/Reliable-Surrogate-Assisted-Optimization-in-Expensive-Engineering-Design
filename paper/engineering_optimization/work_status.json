@@ -542,5 +542,47 @@
     ],
     "PDF_or_ZIP_created_or_uploaded": false,
     "final_submit_ready": false
-  }
+  },
+  "final_scientific_review_20261016": {
+    "date": "2026-10-16",
+    "evidence_commit": "578e00482aff3d65bde4bd422b60c527803e6e22",
+    "current_method_source": "submission_20261014/source/paper/engineering_optimization/integrated_evidence/final_method_20261016.tex",
+    "primary_engineering_setting_in_main": true,
+    "earlier_methods_preserved_in_supplement": true,
+    "new_optimization_runs": 0,
+    "new_GP_reconstructions": 0,
+    "new_physical_evaluations": 0,
+    "new_independent_samples": 0,
+    "new_bound_queries": 0,
+    "physical_retries": 0,
+    "physical_replacements": 0,
+    "author_affiliations_missing": [
+      "Zhenyu Meng",
+      "Jia Zhao"
+    ],
+    "private_reviewer_access_arranged": false,
+    "current_visual_layout_verified": false,
+    "PDF_or_ZIP_created_or_uploaded": false,
+    "actual_journal_submission": false,
+    "journal_originality_threshold_certified": false,
+    "research_work_closed_under_current_scope": true,
+    "new_experiments_planned": 0,
+    "final_submit_ready": false,
+    "source_review": "submission_20261014/review_20261016/SOURCE_VERIFICATION.json",
+    "review_manifest": "submission_20261014/review_20261016/REVIEW_MANIFEST.json",
+    "review_entry": "submission_20261014/REVIEW_REPRODUCTION.md",
+    "current_source_and_bibliography_checks_passed": true,
+    "current_PDF_compiled": false
+  },
+  "user_execution_preferences_20261016": {
+    "continue_on_authorized_private_branch_without_redundant_confirmation": true,
+    "focus_on_optimization_contribution_and_engineering_applicability": true,
+    "minimum_sufficient_experiments": true,
+    "no_PDF_or_ZIP_work": true,
+    "witness_budget_exhausted": true,
+    "no_physical_retry_or_replacement": true,
+    "do_not_claim_journal_acceptance_or_unobserved_advantages": true
+  },
+  "current_revision_scope": "2026-10-16 final manuscript integration; historical compilation/layout flags concern earlier manuscripts; current revision is source-checked only",
+  "current_scientific_baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019"
 }

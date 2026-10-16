@@ -1,12 +1,12 @@
 {
   "baseline": "58f539c2d0738b20c7d0d4889fe8d808a03a3019",
-  "date": "2026-10-15",
-  "scope": "Source/BibTeX/hash checks after lazy regional algorithm development; no additional scientific execution or TeX build",
+  "date": "2026-10-16",
+  "scope": "Final manuscript integration; source/BibTeX/hash checks only, no scientific execution or LaTeX build",
   "source_files": [
     {
       "path": "source/paper/engineering_optimization/EO_manuscript.tex",
-      "bytes": 19243,
-      "sha256": "e4bcc9796c8f43cf1c27ff2b1a258b7c5b22aa6026ba53209453c358a548830b",
+      "bytes": 15330,
+      "sha256": "911dea71ce1cd50d60d81b2518e8cd1b50f9204b04269b0600da64c4b53c6c70",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -17,14 +17,20 @@
     },
     {
       "path": "source/paper/engineering_optimization/EO_supplementary.tex",
-      "bytes": 120010,
-      "sha256": "548545c45438e025d8b08d15770bcd3f354d65694de0b78f760464dba36b2565",
+      "bytes": 120076,
+      "sha256": "a54d230d42f803d45b303b6a0716386266d1de677a60278352fcf66df2bacb01",
       "balanced_braces_and_named_environments": true
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/contribution_20261015.tex",
       "bytes": 11344,
       "sha256": "ad1551bb87477ab1a6bffea01256c0bcc201e53d1989e132adcb74c703d532ce",
+      "balanced_braces_and_named_environments": true
+    },
+    {
+      "path": "source/paper/engineering_optimization/integrated_evidence/final_method_20261016.tex",
+      "bytes": 10307,
+      "sha256": "165a5e4ca8d420e7eb4f0b630d7b2ec430dcae435154190918647cac5c90d5b6",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -47,8 +53,8 @@
     },
     {
       "path": "source/paper/engineering_optimization/integrated_evidence/lazy_regional_results_20261015.tex",
-      "bytes": 4202,
-      "sha256": "a68a3e61954d18e999ac17b037109c73adf3c065ab206c03461e8777cc32ebd6",
+      "bytes": 5807,
+      "sha256": "dc588e934a92d70c8db55540670bc2145ae52f616af62201dab08ab66418d79e",
       "balanced_braces_and_named_environments": true
     },
     {
@@ -151,6 +157,11 @@
   "new_experiments_planned": 0,
   "final_submit_ready": false,
   "lazy_source_before_execution_commit": "8de86bbe1aeb1568bba754609cf10b8d093094c8",
+  "lazy_results_commit": "578e00482aff3d65bde4bd422b60c527803e6e22",
+  "lazy_frozen_clean_inputs_verified": 43,
+  "lazy_frozen_results_verified": 136,
+  "lazy_source_protocol_dependencies_and_decision_freeze_verified": true,
+  "original_result_records_overwritten": false,
   "lazy_accepted_states": {
     "uniform": 43,
     "regional": 43

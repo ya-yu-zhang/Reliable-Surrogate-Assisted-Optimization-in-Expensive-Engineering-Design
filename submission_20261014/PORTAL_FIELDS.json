@@ -53,5 +53,21 @@
   "actual_submission": false,
   "manuscript_id": null,
   "ready_for_final_submit": false,
-  "preparation_status": "lazy_regional_algorithm_theory_and_frozen_evaluation_complete; author_facts_access_and_layout_pending"
+  "preparation_status": "final_algorithm_narrative_integrated; no_new_experiment; author_affiliations_private_access_and_layout_pending",
+  "required_author_facts_missing": [
+    {
+      "author": "Zhenyu Meng",
+      "field": "full affiliation b"
+    },
+    {
+      "author": "Jia Zhao",
+      "field": "full affiliation c"
+    }
+  ],
+  "inherited_statement_provenance": {
+    "funding": "Retained from the supplied manuscript; no new funding fact invented",
+    "conflict_of_interest": "Retained from the supplied manuscript; no new conflict fact invented",
+    "author_contributions": "Existing proposed assignment retained; no all-author approval task reinstated"
+  },
+  "publication_decision_not_certified": true
 }

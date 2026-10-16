@@ -11,6 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SUB=ROOT/'submission_20261014'
 PAPER=SUB/'source/paper/engineering_optimization'
 REGION=ROOT/'results/regional_value_closure_20261015'
+REVIEW=SUB/'review_20261016'
 
 
 def sha(path):
@@ -18,6 +19,7 @@ def sha(path):
 
 
 def save(path,data):
+    Path(path).parent.mkdir(parents=True,exist_ok=True)
     Path(path).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 
 
@@ -102,8 +104,11 @@ def main():
     assert sha(archive)=='b338b957b055dd1b9bcd9d15a81995e49a9ebef8e9c9cc515ad4286e83d9690e'
     # Main supplementary table source is byte-identical; added proofs are inputs.
     supp=(PAPER/'EO_supplementary.tex').read_text()
-    inserted='\\input{integrated_evidence/positive_rollout_results_20261015.tex}\n\n'
-    preserved=supp.replace(inserted,'')
+    preserved=supp
+    for name in ['positive_rollout_method_20261015.tex','positive_rollout_results_20261015.tex']:
+        inserted='\\input{integrated_evidence/'+name+'}\n\n'
+        assert preserved.count(inserted)==1,name
+        preserved=preserved.replace(inserted,'')
     assert hashlib.sha256(preserved.encode()).hexdigest()=='7c18c55e552d6ba368e415ef3fe7f267591e8578ee0c8c9fa48a1c2f6de914c5'
     tmp=ROOT/'tmp/regional_closure_bib_check';tmp.mkdir(exist_ok=True)
     (tmp/'references.aux').write_text('\\relax\n\\citation{*}\n\\bibstyle{tfcad}\n\\bibdata{EO_references}\n')
@@ -111,8 +116,8 @@ def main():
     proc=subprocess.run(['bibtex','references'],cwd=tmp,env=env,text=True,capture_output=True)
     diagnostics=[x for x in proc.stdout.splitlines() if re.search(r'Warning|error|not found|couldn.t',x,re.I)]
     assert proc.returncode==0 and not diagnostics,(proc.returncode,proc.stdout,proc.stderr)
-    record=dict(baseline=data['scientific_baseline'],date='2026-10-15',
-        scope='Regional method and saved-certificate integration; source/BibTeX/hash checks only, no LaTeX build',
+    record=dict(baseline=data['scientific_baseline'],date='2026-10-16',
+        scope='Final manuscript integration; source/BibTeX/hash checks only, no scientific execution or LaTeX build',
         source_files=[dict(path=str(p.relative_to(SUB)),bytes=p.stat().st_size,sha256=sha(p),
             balanced_braces_and_named_environments=True) for p in sorted(paths)],
         source_checks=checks,bibliography_entries=len(keys),bibtex_return_code=proc.returncode,
@@ -127,14 +132,38 @@ def main():
         new_GP_reconstructions=0,new_conditional_reward_evaluations=0,new_physical_evaluations=0,
         new_PDF_generated=False,new_ZIP_generated=False,
         research_work_closed_under_current_scope=True,new_experiments_planned=0,final_submit_ready=False)
-    save(SUB/'SOURCE_VERIFICATION.json',record)
     lazy=ROOT/'results/lazy_regional_20261015'
     if lazy.exists():
+        config_path=ROOT/'configs/lazy_regional_20261015.json'
+        config=json.loads(config_path.read_text())
+        started=json.loads((lazy/'RUN_STARTED.json').read_text())
+        assert sha(config_path)==started['config_sha256']
+        assert sha(ROOT/config['protocol'])==config['protocol_sha256']
+        for field in ['input_sha256','source_sha256','dependency_sha256']:
+            for p,expected in config[field].items():
+                assert sha(ROOT/p)==expected,p
+        decision_freeze=json.loads((lazy/'decisions_frozen.json').read_text())
+        assert sha(lazy/'decisions.json')==decision_freeze['decisions_sha256']
+        for p,expected in decision_freeze['files_sha256'].items():
+            assert sha(ROOT/p)==expected,p
+        release=json.loads((lazy/'RELEASE_MANIFEST.json').read_text())
+        result_hashes={p:h for p,h in release['files_sha256'].items()
+                       if p.startswith('results/lazy_regional_20261015/')}
+        for p,expected in result_hashes.items():
+            assert sha(ROOT/p)==expected,p
         run=json.loads((lazy/'analysis.json').read_text())
         audit=json.loads((lazy/'postfreeze_consistency.json').read_text())
         assert audit['all_checks_passed']
-        record['scope']='Source/BibTeX/hash checks after lazy regional algorithm development; no additional scientific execution or TeX build'
+        assert {m:r['accepted'] for m,r in run['methods'].items()}=={'uniform':43,'regional':43}
+        for counter in ['physical_evaluations','bound_queries','hyperparameter_fits',
+                        'physical_retries','physical_replacements','new_independent_samples']:
+            assert run[counter]==0,counter
         record['lazy_source_before_execution_commit']='8de86bbe1aeb1568bba754609cf10b8d093094c8'
+        record['lazy_results_commit']='578e00482aff3d65bde4bd422b60c527803e6e22'
+        record['lazy_frozen_clean_inputs_verified']=len(config['input_sha256'])
+        record['lazy_frozen_results_verified']=len(result_hashes)
+        record['lazy_source_protocol_dependencies_and_decision_freeze_verified']=True
+        record['original_result_records_overwritten']=False
         record['lazy_accepted_states']={m:r['accepted'] for m,r in run['methods'].items()}
         record['lazy_ordinary_reference_checks']=audit['ordinary_reference_checks']
         record['lazy_model_parameter_overlap_checks']=audit['queried_conditional_parameter_overlap_checks']
@@ -143,10 +172,37 @@ def main():
         record['lazy_workflow_validated_positive_posterior_builds']=361
         record['new_GP_reconstructions_this_verification']=record.pop('new_GP_reconstructions')
         record['new_conditional_reward_evaluations_this_verification']=record.pop('new_conditional_reward_evaluations')
-        save(lazy/'source_verification.json',record)
-        save(SUB/'SOURCE_VERIFICATION.json',record)
-    else:
-        save(REGION/'source_verification.json',record)
+    # A new manuscript check must never overwrite a frozen scientific release.
+    save(REVIEW/'SOURCE_VERIFICATION.json',record)
+    save(SUB/'SOURCE_VERIFICATION.json',record)
+    current=set(paths)|{ROOT/'README.md',ROOT/'src/verify_rollout_closure_sources.py',
+        ROOT/'paper/engineering_optimization/work_status.json',PAPER/'work_status.json',
+        SUB/'PORTAL_FIELDS.json',SUB/'ABSTRACT_AND_KEYWORDS.txt',SUB/'COVER_LETTER.txt',
+        SUB/'CONTRIBUTION_CHECK_20261015.json',SUB/'REVIEW_REPRODUCTION.md',
+        SUB/'SOURCE_VERIFICATION.json',REVIEW/'SOURCE_VERIFICATION.json',
+        REVIEW/'FINAL_SCIENTIFIC_REVIEW.md'}
+    frozen={}
+    if lazy.exists():
+        frozen.update(result_hashes)
+        for field in ['input_sha256','source_sha256','dependency_sha256']:
+            frozen.update(config[field])
+        for p in [config_path,ROOT/config['protocol'],lazy/'RELEASE_MANIFEST.json',
+                  ROOT/'requirements-positive-rollout-v2.txt',
+                  ROOT/'paper/engineering_optimization/contribution_closure_20261015/LAZY_UNIT_CHECK.json',
+                  ROOT/'src/reproduce_lazy_regional_rollout.py',ROOT/'src/verify_lazy_regional_records.py']:
+            frozen[str(p.relative_to(ROOT))]=sha(p)
+    for p,expected in frozen.items():
+        assert sha(ROOT/p)==expected,p
+    save(REVIEW/'REVIEW_MANIFEST.json',dict(date='2026-10-16',
+        scientific_baseline=record['baseline'],
+        parent_numerical_release_commit='578e00482aff3d65bde4bd422b60c527803e6e22',
+        source_before_execution_commit='8de86bbe1aeb1568bba754609cf10b8d093094c8',
+        current_source_and_review_sha256={str(p.relative_to(ROOT)):sha(p) for p in sorted(current)},
+        frozen_execution_files_sha256=dict(sorted(frozen.items())),
+        old_release_manuscript_hashes_apply_to_their_own_commits=True,
+        current_graphic_layout_or_publisher_asset_availability_certified=False,
+        numerical_execution_this_revision=False,PDF_or_ZIP_created_or_uploaded=False,
+        actual_submission=False,final_submit_ready=False))
     print(json.dumps({k:v for k,v in record.items() if k not in ['source_files','source_checks']},indent=2))
 
 

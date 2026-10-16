@@ -18,6 +18,8 @@ Earlier v2 and regional certificate-transformation records remain separate: sour
 
 The scientific baseline remains `58f539c2d0738b20c7d0d4889fe8d808a03a3019`; the authorized branch is `research/contribution-closure-20261014-c5d11c`. Research is closed at this bounded scope, with no more experiments planned. Required author facts, private reviewer access and current layout remain unfinished; `final_submit_ready` is false. Journal acceptance or sufficient originality is not certified.
 
+The 16 October source integration presents one final algorithm contract and promotes the beam problem, menu sizes, fixed kernel and numerical assumptions into the main text. Start with [the current review entry](submission_20261014/REVIEW_REPRODUCTION.md) and [the final scientific review](submission_20261014/review_20261016/FINAL_SCIENTIFIC_REVIEW.md). The source/hash check writes a new dated review record and preserves all frozen numerical result files. Older manuscript builders restore older presentations; do not run them over this final source. No new algorithm, numerical replay, physical response or experiment is part of this revision.
+
 ### Historical 13 October preparation record
 
 The active target is **Engineering Optimization**. Current manuscript sources are
