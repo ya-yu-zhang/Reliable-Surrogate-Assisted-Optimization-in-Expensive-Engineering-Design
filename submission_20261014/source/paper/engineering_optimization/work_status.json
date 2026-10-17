@@ -799,5 +799,24 @@
     "corresponding_author": "Jeng-Shyang Pan",
     "five_author_record_restored": true
   },
-  "final_layout_figure_labels_fixed": true
+  "final_layout_figure_labels_fixed": true,
+  "ai_use_policy_20261017": {
+    "status": "Pending author confirmation before submission; do not state that no AI was used.",
+    "publisher": "Taylor & Francis policy on using AI in research and manuscript preparation",
+    "recorded_assistance": [
+      "software development and verification",
+      "computational workflow execution and recovery",
+      "evidence integration",
+      "formal argument drafting and manuscript preparation in the historical work record",
+      "language revision"
+    ],
+    "required_author_confirmations": [
+      "Exact AI tool/model/version used and confirmation that its terms of use are suitable for publication",
+      "Authors have independently rewritten or re-authored any AI-generated first-draft or argument-concluding text retained in the submission",
+      "Authors have verified all data, numerical results, figures, references, interpretations and final text",
+      "No generative AI generated or manipulated research data, numerical results or figures"
+    ],
+    "submission_action": "Retain a truthful disclosure. Do not replace it with an AI-not-used statement. If prohibited first-draft or argument-concluding assistance was adopted and cannot be re-authored, consult the editor before submission.",
+    "final_submit_ready": false
+  }
 }
