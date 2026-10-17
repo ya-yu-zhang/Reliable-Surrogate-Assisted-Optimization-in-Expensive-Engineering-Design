@@ -41,7 +41,7 @@ EO的[官方scope](https://www.tandfonline.com/journals/geno20/about-this-journa
 | S13 | Rows, columns, panel-specific paid-budget fractions and absolute-order prefix comparisons. No initialization reference line is asserted. |
 | S14 | Force-position panels, postinitial pilot-step axis, percentage improvement, policy colors and different plateau timings. |
 
-实质性纠错包括：S10早期下降对应CMA-ES，TuRBO-1主要下降发生在较后预算；S3随机池并非每个维度都最接近零；S6没有用于划定成本区间的交点标记；S8的DNA变化应结合其长初始化解释。图S5、S6现有长纵轴标签有截断，完整量纲及单位已写进图注；图形标签的重新导出仍需在最终排版时处理，本轮未改动PDF。
+实质性纠错包括：S10早期下降对应CMA-ES，TuRBO-1主要下降发生在较后预算；S3随机池并非每个维度都最接近零；S6没有用于划定成本区间的交点标记；S8的DNA变化应结合其长初始化解释。图S5、S6原有长纵轴标签已截断；现已通过增加图形边距、分行标签并重新导出PDF修复。数值、图注和数据未改变。
 
 ## 6. 官方LaTeX模板
 
@@ -73,7 +73,7 @@ EO的[官方scope](https://www.tandfonline.com/journals/geno20/about-this-journa
 | 首次投稿format-free | 指南明确允许LaTeX及一致的参考文献格式，文内放表图亦可。保留官方出版方Interact-CAD；不再将EO专属模板核验列为首次投稿阻碍。 |
 | 生成式AI使用声明、利益冲突声明 | 已为现有真实AI协助披露使用独立节标题；利益冲突节改为Disclosure Statement，事实内容不变。 |
 | 数据声明和按合理请求共享 | 已在数据声明补充通讯作者的访问请求联系方式；该政策不要求直接公开整个私有Git历史。已准备的209文件公开数值清单保持不变。 |
-| 图像与可访问性 | 14图的图文细节已核对；作者自供alt text为可选项，不增加无必要任务。S5/S6图内轴标签截断仍需最终图形输出时修正。 |
+| 图像与可访问性 | 14图的图文细节已核对；作者自供alt text为可选项，不增加无必要任务。S5/S6已重新导出并完成PDF渲染核验。 |
 | LaTeX实际提交文件 | 指南要求生成的稿件PDF及源文件ZIP。按用户本轮约束未生成、打包或上传；这些是实际提交时所需文件，不能标为已完成。 |
 
 主贡献继续围绕可认证首动作优化算法展开，不因本次合规检查新增实验或加强结果。当前需要作者补充的事实为机构联系信息及两位作者单位；官方投稿信模板最终套用和实际提交文件准备仍未执行。论文并未因format-free而免除必要材料要求。无需加入视频摘要、图文摘要或新的敏感性实验。

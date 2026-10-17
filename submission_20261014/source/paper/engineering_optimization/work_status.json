@@ -115,7 +115,7 @@
     "Confirm the five author records filled from the referenced plan, including Jeng-Shyang Pan as corresponding author, Zhenyu Meng's institutional email and all institutional profile URLs",
     "Transfer prepared cover-letter content into the official journal template; online template body could not be retrieved",
     "Arrange data access upon reasonable request or release the prepared numerical profile",
-    "Final source compilation and figure-label correction; LaTeX submission PDF and source ZIP remain deferred by user"
+    "Final source compilation and visual verification; LaTeX submission PDF and source ZIP remain deferred by user"
   ],
   "claim_limits": [
     "One deterministic beam model family with two added force conditions",
@@ -775,10 +775,12 @@
     ],
     "LaTeX_submission_PDF_and_source_ZIP_required_at_portal": true,
     "PDF_or_ZIP_work_deferred_under_user_instruction": true,
-    "figure_S5_S6_label_clipping_remaining": true,
+    "figure_S5_S6_label_clipping_remaining": false,
     "no_additional_experiments_needed_for_these_preparation_changes": true,
     "actual_submission": false,
-    "final_submit_ready": false
+    "final_submit_ready": false,
+    "figure_S5_S6_label_reexported": true,
+    "figure_S5_S6_render_review": "Passed on 2026-10-17 using rendered PDFs"
   },
   "author_information_update": {
     "applied_on": "2026-10-16",
@@ -796,5 +798,6 @@
     "submission_ready_remains": false,
     "corresponding_author": "Jeng-Shyang Pan",
     "five_author_record_restored": true
-  }
+  },
+  "final_layout_figure_labels_fixed": true
 }

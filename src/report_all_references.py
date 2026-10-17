@@ -82,7 +82,7 @@ def main():
     import matplotlib
     matplotlib.use('Agg')
     import matplotlib.pyplot as plt
-    fig,axes = plt.subplots(1,3,figsize=(12,3.7),sharey=True)
+    fig,axes = plt.subplots(1,3,figsize=(13.6,4.2),sharey=True)
     names = {'greedy':'Greedy','fixed01':'Fixed .1','fixed03':'Fixed .3','pool_random':'Random pool',
         'PEM_T':'PEM-T','PEM_ST':'PEM-ST','sobol':'Sobol','cma_es':'CMA-ES','gp_ei':'GP-EI','turbo_1':'TuRBO'}
     for ax,dim in zip(axes,[10,20,40]):
@@ -90,9 +90,9 @@ def main():
         ax.bar(range(10),scores.values,color=['#999999']*4+['#e6550d','#31a354']+['#3182bd']*4)
         ax.set_xticks(range(10),[names[m] for m in METHODS],rotation=65,ha='right',fontsize=7)
         ax.set_title(f'D={dim}'); ax.grid(axis='y',alpha=.2)
-    axes[0].set_ylabel('Function-mean log-relative endpoint; lower is better')
-    fig.tight_layout(); fig.savefig(OUT/'reference_endpoints.png',dpi=240,bbox_inches='tight')
-    fig.savefig(OUT/'reference_endpoints.pdf',bbox_inches='tight'); plt.close(fig)
+    axes[0].set_ylabel('Function-mean log-relative\\nendpoint (lower is better)',labelpad=10,fontsize=9)
+    fig.subplots_adjust(left=.14,right=.995,bottom=.30,top=.88,wspace=.08)\n    fig.savefig(OUT/'reference_endpoints.png',dpi=240,bbox_inches='tight',pad_inches=.08)
+    fig.savefig(OUT/'reference_endpoints.pdf',bbox_inches='tight',pad_inches=.08); plt.close(fig)
     text = '# 全部外部参照描述性整合\n\n全部内部与四项基础/GP参照共6,480运行，1,512,000次计费算法评价。每次外部运行先用匹配内部初始化误差归一化，再按重复中位数、实例平均及函数等权汇总。已知最优只用于完成后的统计。\n\n'
     text += summary.round(5).to_markdown()+'\n\n平均排名是描述性辅助结果，未增加显著性家族。GP-EI是本文经典实现，TuRBO保留作者搜索机制；外部初始化与内部不同。相同预算不能解释为共同历史因果对照，四项参照也不替代Temporal CP-SAEA、SADE-SS或BGP-SAEA可靠复现。共享负载时间不能作为独占成本。\n'
     (ROOT/'docs/全部外部参照整合报告.md').write_text(text,encoding='utf-8')

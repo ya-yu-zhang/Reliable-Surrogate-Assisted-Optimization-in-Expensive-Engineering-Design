@@ -68,7 +68,7 @@ def cost_plot(costs):
     colors=['#777777','#aaaaaa','#e6550d','#31a354','#756bb1','#bcbddc']
     methods=['greedy','fixed01','PEM_T','PEM_ST','gp_ei','turbo_1']
     points=np.r_[0,np.geomspace(.001,60,100)]
-    fig,axes=plt.subplots(1,3,figsize=(11,3.2))
+    fig,axes=plt.subplots(1,3,figsize=(11.8,3.6))
     for ax,dim in zip(axes,[10,20,40]):
         for method,color in zip(methods,colors):
             group=costs[(costs.dim==dim)&(costs.method==method)]
@@ -77,9 +77,9 @@ def cost_plot(costs):
             ax.plot(points,modeled,label=method,color=color,lw=1.2)
         ax.set_xscale('symlog',linthresh=.01);ax.set_yscale('log')
         ax.set_title(f'D={dim}, B={10*dim}');ax.set_xlabel('Assumed objective cost c (seconds)')
-        ax.set_ylabel('Modeled nonobjective time + Bc (seconds)');ax.grid(alpha=.2)
-    axes[-1].legend(fontsize=6,ncol=2);fig.tight_layout()
-    for suffix in ['png','pdf']:fig.savefig(out/('objective_cost_scenarios.'+suffix),dpi=240,bbox_inches='tight')
+        ax.set_ylabel('Modeled nonobjective time\\n+ Bc (seconds)',labelpad=8,fontsize=9);ax.grid(alpha=.2)
+    axes[-1].legend(fontsize=6,ncol=2);fig.subplots_adjust(left=.13,right=.995,bottom=.24,top=.88,wspace=.08)
+    for suffix in ['png','pdf']:fig.savefig(out/('objective_cost_scenarios.'+suffix),dpi=240,bbox_inches='tight',pad_inches=.08)
     plt.close(fig)
 
 

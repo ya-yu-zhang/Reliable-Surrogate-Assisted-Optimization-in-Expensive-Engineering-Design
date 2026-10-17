@@ -260,9 +260,11 @@
     ],
     "LaTeX_submission_PDF_and_source_ZIP_required_at_portal": true,
     "PDF_or_ZIP_work_deferred_under_user_instruction": true,
-    "figure_S5_S6_label_clipping_remaining": true,
+    "figure_S5_S6_label_clipping_remaining": false,
     "no_additional_experiments_needed_for_these_preparation_changes": true,
     "actual_submission": false,
     "final_submit_ready": false
-  }
+  },
+  "figure_S5_S6_label_reexported": true,
+  "figure_S5_S6_render_review": "Passed on 2026-10-17 using rendered PDFs"
 }
