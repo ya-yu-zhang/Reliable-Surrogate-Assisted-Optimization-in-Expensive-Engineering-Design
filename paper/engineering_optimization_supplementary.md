@@ -1,8 +1,8 @@
 # Supplementary Materials for A Decision-Consequence Auditing Framework for Reliable Surrogate-Assisted Optimization in Expensive Engineering Design
 
-**Shu-Chuan Chu, Ya-Yu Zhang, Zhenyu Meng and Jia Zhao**
+**Shu-Chuan Chu, Ya-Yu Zhang, Zhenyu Meng, Jia Zhao and Jeng-Shyang Pan**
 
-This document preserves secondary analyses, complete denominators, resource measurements, application transfer, high-dimensional extensions, sensitivity studies, and recovery accounting supporting the main article. The main article contains the prespecified primary BBOB contrasts and finite-element engineering results. No supplementary analysis reverses the failed development optimization-benefit gate.
+This document preserves secondary analyses, complete denominators, resource measurements, application transfer, high-dimensional extensions, sensitivity studies, and recovery accounting supporting the main article. The main article contains the prespecified primary Black-Box Optimization Benchmarking (BBOB) contrasts and finite-element engineering results. Dimension is denoted by D. No supplementary analysis reverses the failed development optimization-benefit gate.
 
 # S0 Evidence Map and Reproducibility Checklist
 
@@ -15,17 +15,17 @@ The supplement is organized by the claims made in the main article. Scientific r
 3. **Transfer evidence:** S4-S5, Tables S13-S19, and Figures S7-S10 cover LassoBench and the 300-dimensional experiment.
 4. **Sensitivity:** S6-S7, Tables S20-S24, and Figures S11-S13 report model, training-cap, and total-budget sensitivity.
 5. **Information order and accounting:** S7.3-S8.3 and Table S25 preserve finite-element replay, source hashes, recovery ledgers, and matched-initialization evidence.
-6. **Additional mechanism and engineering evidence:** S9-S10, Tables S26-S32 and Figure S14 contain the frozen GP intervention, delayed policy outcomes, force-position transfer, fixed-policy comparisons and full revision cost boundary.
+6. **Additional mechanism and engineering evidence:** S9-S10, Tables S26-S32 and Figure S14 contain the frozen Gaussian-process (GP) intervention, delayed policy outcomes, force-position transfer, fixed-policy comparisons and full revision cost boundary.
 
 ## S0.2 Reproducibility checklist
 
 1. **Runtime:** Windows 11, Python 3.12.13, and dependency lock files for the main, application, GP, and reporting environments.
-2. **Hardware:** AMD Ryzen 7 9700X, 16 logical threads, and approximately 31.1 GiB physical memory; numerical-library threads are limited to one per worker.
+2. **Hardware:** AMD Ryzen 7 9700X, 16 logical threads, and approximately 31.1 gibibytes (GiB) of physical memory; numerical-library threads are limited to one per worker.
 3. **Randomness:** Purpose-specific seed maps cover initialization, candidate generation, mode selection, optimization repeats, and bootstrap analyses.
-4. **Protocols and parameters:** Frozen JSON configurations retain budgets, function and instance lists, model settings, and entry-point arguments.
-5. **Information order:** PRE/LABEL journals, prediction-time training indices, candidate arrays, and separate diagnostic-label archives are retained.
+4. **Protocols and parameters:** Frozen JavaScript Object Notation (JSON) configurations retain budgets, function and instance lists, model settings, and entry-point arguments.
+5. **Information order:** Prediction-before-evaluation (PRE) and post-label (LABEL) journals, prediction-time training indices, candidate arrays, and separate diagnostic-label archives are retained.
 6. **Integrity:** Source fingerprints, dependency hashes, raw-file hashes, endpoint replay, and expected aggregate tables are archived.
-7. **Data and applications:** BBOB/COCO identifiers, fixed LassoBench datasets and splits, and the deterministic EngiBench finite-element parameterization are recorded.
+7. **Data and applications:** BBOB and Comparing Continuous Optimizers (COCO) identifiers, fixed LassoBench datasets and splits, and the deterministic EngiBench finite-element parameterization are recorded.
 8. **Recovery:** Incomplete units, canonical-versus-physical call ledgers, rerun seeds, and exclusion rules are archived separately.
 
 The manuscript sources, implementation, frozen configurations, and dependency records are available in the public repository https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design. Approximately 13.6 GB of raw experiment outputs and the full execution archives are not committed to that repository. The reported experiments can be regenerated using the documented environments and configurations; archived raw data are available from the corresponding author upon reasonable request. Public visibility should not be interpreted as an open-source license; third-party implementations and publisher templates retain their own terms. The detailed audit trail remains in S8; this map is a navigation layer rather than a substitute for those records.
@@ -35,7 +35,7 @@ The manuscript sources, implementation, frozen configurations, and dependency re
 
 ### S1.1 Exploration, failure, and sparse declarations
 
-PEM-T explores approximately 36.6% and 33.4% of post-initialization evaluations, compared with approximately 10% for the fixed control. Its observed failure fractions are approximately 9.9% and 9.5%. Being near the nominal monitoring level does not correspond to better endpoints.
+The prediction-error-monitoring prototype with temporal weighting (PEM-T) explores approximately 36.6% and 33.4% of post-initialization evaluations, compared with approximately 10% for the fixed control. Its observed failure fractions are approximately 9.9% and 9.5%. The corresponding spatiotemporal configuration is denoted by PEM-ST. The pooled false-discovery proportion is denoted by FDP; an unavailable value is denoted by NA. Being near the nominal monitoring level does not correspond to better endpoints.
 
 Table: Joint closed-loop decision indicators, 72 runs per dimension/method
 
@@ -52,7 +52,7 @@ Table: Joint closed-loop decision indicators, 72 runs per dimension/method
 | 20 | fixed01 | 0.1017 | 0.0868 | 10 | 9 | 0.9000 |
 | 20 | stagnation_only | 0.2394 | 0.0951 | 1 | 1 | 1.0000 |
 
-PEM-T makes only three declarations in dimension 10, one false, and no declarations in dimension 20. The latter FDP is NA, not zero. PEM-ST makes 32 declarations with two false in dimension 20, but its endpoint remains worse. Table S1's pooled declaration ratio is distinct from a mean over runs with nonzero declarations. These sparse denominators do not establish stable conditional success probabilities.
+PEM-T makes only three declarations in dimension 10, one false, and no declarations in dimension 20. The latter FDP is NA, rather than zero. PEM-ST makes 32 declarations with two false in dimension 20, but its endpoint remains worse. Table S1's pooled declaration ratio is distinct from a mean over runs with nonzero declarations. These sparse denominators do not establish stable conditional success probabilities.
 
 The numbers of realized improvements and false claims within each declared subset are shown in Figure S1.
 
@@ -83,7 +83,7 @@ Failure fractions for the selected candidate, full pool, and predicted top 10% a
 
 Figure S2 compares three monitored objects at identical frozen states: the actually selected candidate, the entire candidate pool, and the top 10% by predicted value. Under fixed 03 histories, the selected-candidate bar is highest; under greedy histories, the pool and top-10% bars become higher. The dashed 0.1 line is crossed in different directions across histories, which supports reporting the monitored object and its generating policy together.
 
-Table S3 compares calibrators on the actually selected points, with the three histories equally weighted. Spatial localization lowers some diagnostic losses and margins; this is a common-history estimation result, not a closed-loop optimization gain or a coverage guarantee. Approximately one quarter of the dimension-10 checkpoint states fall back because of support, whereas these dimension-20 checkpoints do not.
+Table S3 compares calibrators on the actually selected points, with the three histories equally weighted. The calibrator labels denote global (G), spatial (S), temporal (T), and spatiotemporal (ST) weighting; effective sample size is denoted by ESS. Spatial localization lowers some diagnostic losses and margins; this is a common-history estimation result, not a closed-loop optimization gain or a coverage guarantee. Approximately one quarter of the dimension-10 checkpoint states fall back because of support, whereas these dimension-20 checkpoints do not.
 
 Table: Calibrators on actually selected points
 
@@ -184,7 +184,7 @@ The first diagnostic checkpoints are 41/100, 61/200, and 101/400. Sparse declare
 
 ## S2.2 External background references
 
-Sobol and pycma CMA-ES retain their own search mechanisms and initialization. Their 1,296 runs and 302,400 paid evaluations passed separate journal audits. For descriptive common-scale comparison only, each external run's final error is divided by the matching internal common-initialization error, and medians are taken after this run-level normalization. The external optimizers never receive those internal labels. This supports budget-matched background comparison, not a same-history causal comparison or reproduction of published SAEA competitors.
+Sobol and the pycma implementation of covariance matrix adaptation evolution strategy (CMA-ES) retain their own search mechanisms and initialization. Their 1,296 runs and 302,400 paid evaluations passed separate journal audits. For descriptive common-scale comparison only, each external run's final error is divided by the matching internal common-initialization error, and medians are taken after this run-level normalization. The external optimizers never receive those internal labels. This supports budget-matched background comparison, not a same-history causal comparison or reproduction of published SAEA competitors.
 
 Table: Descriptive background endpoint scores over all 24 functions. Lower is better; no additional test family is introduced.
 
@@ -194,7 +194,7 @@ Table: Descriptive background endpoint scores over all 24 functions. Lower is be
 | 20 | -0.8761 | -0.7763 | -0.7877 | -0.1066 | -0.4799 |
 | 40 | -0.7934 | -0.7295 | -0.7041 | -0.1029 | -0.4440 |
 
-GP-EI and author TuRBO use separate frozen protocols and strict pre-call budget guards. Their complete audited outcomes are now included in the main article. Author-code restart counterexamples are control-flow checks, not performance observations. Resource precheck instances are excluded from every benchmark table.
+Gaussian-process expected improvement (GP-EI) and author-code trust-region Bayesian optimization (TuRBO-1) use separate frozen protocols and strict pre-call budget guards. Their complete audited outcomes are included in the main article. Author-code restart counterexamples are control-flow checks, not performance observations. Resource precheck instances are excluded from every benchmark table.
 
 
 # S3 Complete BBOB references and exclusive resource evidence
@@ -229,7 +229,7 @@ Figure S5 retains the full ten-method ordering in each dimension. TuRBO-1 and GP
 
 ## S3.2 Exclusive cost evidence
 
-The frozen resource design contains 54 fresh, serial process measurements on f1/instance4 across D=10/20/40 and three repeats of six methods. Their 12,600 paid calls are reported as cost observations, excluded from benchmark effect estimation. Actual process and background-CPU guards precede measurements. Runtime includes journaling and each method retains its own initialization. Greedy/fixed controls still perform temporal monitoring, so these are implemented-system costs, not stripped-down ideal algorithm costs.
+The frozen resource design contains 54 fresh, serial process measurements on f1/instance4 across D=10/20/40 and three repeats of six methods. Their 12,600 paid calls are reported as cost observations, excluded from benchmark effect estimation. Actual process and background central-processing-unit (CPU) guards precede measurements. Runtime includes journaling and each method retains its own initialization. Greedy/fixed controls still perform temporal monitoring, so these are implemented-system costs, not stripped-down ideal algorithm costs.
 
 Table: D=10; three-run medians; full min/max and per-process observations remain in the supplement CSV.
 
@@ -279,9 +279,9 @@ At an assumed objective cost c, total time is modeled as measured nonobjective t
 
 ## S4.1 LassoBench mechanism transfer
 
-LassoBench [24] provides the application objectives. A separate protocol is frozen before formal seed42 labels. Three original tasks (D=60/100/180), eight methods, twenty optimization repeats, and 500 evaluations yield 480 runs and 240,000 full configuration evaluations (1,200,000 CV-fold solves). Internal initialization is 140/220/380 paid calls; external initialization remains native. The author five-fold full-fidelity objective, fixed data/splits, solver settings, bounds, and target definitions are unchanged.
+LassoBench [24] provides the application objectives. A separate protocol is frozen before formal seed42 labels. Three original tasks (D=60/100/180), eight methods, twenty optimization repeats, and 500 evaluations yield 480 runs and 240,000 full configuration evaluations (1,200,000 cross-validation (CV) fold solves). Internal initialization is 140/220/380 paid calls; external initialization remains native. The author five-fold full-fidelity objective, fixed data/splits, solver settings, bounds, and target definitions are unchanged.
 
-Unknown optimum is never imputed. The main endpoint is original validation loss. After all 500 labels are saved, the first lowest-validation configuration receives exactly one author test call, adding 480 single fits separately. Synthetic test MSPE uses the author fixed oracle normalizer, while DNA uses absolute test MSE; these scales are not pooled. The synthetic constructor computes its fixed test normalizer, but no test-performance result enters any optimization feedback.
+Unknown optimum is never imputed. The main endpoint is original validation loss. After all 500 labels are saved, the first lowest-validation configuration receives exactly one author test call, adding 480 single fits separately. Synthetic test mean squared prediction error (MSPE) uses the author fixed oracle normalizer, while the deoxyribonucleic-acid (DNA) task uses absolute test mean squared error (MSE); these scales are not pooled. The first and third quartiles are denoted by Q1 and Q3, respectively. The synthetic constructor computes its fixed test normalizer, but no test-performance result enters any optimization feedback.
 
 Table: synt_simple; twenty optimization-run dispersion and post-completion test medians.
 
@@ -322,7 +322,7 @@ Table: DNA; twenty optimization-run dispersion and post-completion test medians.
 | sobol    |      0.3348 | 0.332  | 0.3375 |             0.3439 | NA               |
 | turbo_1  |      0.3028 | 0.3005 | 0.3052 |             0.3278 | NA               |
 
-Table: Prespecified application family, PEM-T minus fixed .1 raw final validation loss. Positive favors the fixed control. Intervals are unadjusted paired-run bootstrap.
+Table: Prespecified application family, PEM-T minus fixed .1 raw final validation loss. Positive favors the fixed control. Intervals are unadjusted paired-run bootstrap confidence intervals (CIs).
 
 | Task        |   Median difference |    CI low |   CI high |   Holm p |   Loss |   Win |   Tie |
 |:------------|--------------------:|----------:|----------:|---------:|-------:|------:|------:|
@@ -334,7 +334,7 @@ synt_simple: higher, Holm p=0.0826; synt_medium: higher, Holm p=0.0192; DNA: hig
 
 The three comparisons form an application-only Holm family, separate from the nine BBOB mechanism tests. Twenty repeats describe optimization randomness on one fixed dataset and split per task, not twenty independent datasets. The Wilcoxon and paired bootstrap assumptions and limits are retained regardless of significance or direction.
 
-Original-scale validation endpoints for the three LassoBench tasks are shown in Figure S7.
+Original-scale validation endpoints for the three LassoBench tasks are shown in Figure S7. Interquartile range is denoted by IQR in Figures S7 and S8.
 
 ![Application original validation endpoints with run-IQR bars; unknown-optimum error is never constructed.](../results/application_report_v1/application_endpoints.png)
 
@@ -416,7 +416,7 @@ Feedback summaries cover the 380 post-initialization selections per internal run
 
 
 
-Five preselected BBOB structure representatives (f1, f6, f10, f15, f20), dimensions 20/40, instances 14–16, and three optimization repeats evaluated PEM_T under the base setting and four one-factor perturbations. All 450 runs and 135,000 paid evaluations completed; no hidden diagnostic labels or inferential tests were added. This local sensitivity study does not select a replacement default.
+Five preselected BBOB structure representatives (f1, f6, f10, f15, f20), dimensions 20/40, instances 14-16, and three optimization repeats evaluated PEM_T under the base setting and four one-factor perturbations. All 450 runs and 135,000 paid evaluations completed; no hidden diagnostic labels or inferential tests were added. This local sensitivity study does not select a replacement default. Area under the convergence curve is denoted by AUC.
 
 |   D | Variant   | Endpoint median [Q1, Q3]   | AUC median [Q1, Q3]        |
 |----:|:----------|:---------------------------|:---------------------------|
@@ -531,7 +531,7 @@ The budget-sensitivity interruption left 8 incomplete units with 1,791 physicall
 
 The completed GP-EI performance batch contains 151,200 canonical algorithm evaluations. During interruption recovery, one GP-EI point (evaluation 349 of gp_ei_f02_d40_i13_r2_b400) was physically queried a second time because the newer partial journal contained 348 labels while an earlier archive contained 349. The point and returned label matched exactly; the label entered the optimizer history once, so the canonical 400-step trajectory and endpoint are unchanged. The physical GP-EI ledger is therefore 151,201 calls: 151,200 canonical evaluations plus one disclosed recovery-validation call. The extra call is excluded from algorithm budgets, performance curves, and exclusive-cost analysis. The read-only recovery audit made zero objective calls and verified eight recovered trajectories (2,800 canonical evaluations), 2,014 saved second-generation labels, and 786 second-generation physical calls, one of which overlaps the earlier archive.
 
-This section does not reverse the failed development benefit gate. The paper is positioned as a decision-consequence auditing framework and makes no general optimizer-superiority claim. Full CEC confirmation is not required for that framework scope. A CEC batch started on 24 September 2026 was stopped after the scope decision; its 30 complete and 8 partial trajectories are retained as exploratory records and excluded from manuscript statistics. A verifiable author-code DRSO comparison is provided in S8.2; the three originally named but unavailable implementations continue to delimit method-specific claims.
+This section does not reverse the failed development benefit gate. The paper is positioned as a decision-consequence auditing framework and makes no general optimizer-superiority claim. Full IEEE Congress on Evolutionary Computation (CEC) confirmation is not required for that framework scope. A CEC batch started on 24 September 2026 was stopped after the scope decision; its 30 complete and 8 partial trajectories are retained as exploratory records and excluded from manuscript statistics. A verifiable author-code DRSO comparison is provided in S8.2; the three originally named but unavailable implementations continue to delimit method-specific claims.
 
 
 # S8 Reproducibility inventory
@@ -553,9 +553,9 @@ The supplemental beam experiment gives GP-EI and TuRBO-1 exactly the same 58-poi
 
 The initial launch stopped after a missing fixed-seed argument prevented two GP-EI workers from entering GP search; those logs contain only reused initial labels and zero subsequent objective calls. Six already-running TuRBO-1 units completed through an unaffected branch. The complete launch state was archived, the one-argument wiring error was corrected, and the remaining units resumed. The terminal audit accepts six original and fourteen corrected code hashes after verifying that the change lies outside the completed TuRBO branch. No failed or interrupted GP label enters the 20 canonical trajectories.
 
-Two further Gaussian-process acquisition controls use the same ten 58-point archives, 200-evaluation budget, Matérn-5/2 model, 4,096-point Sobol candidate pool, and eight local optimization starts. GP-PI uses an improvement margin equal to 0.01 times the current response standard deviation. GP-UCB is implemented for minimization by selecting the lowest value of mean minus 2.0 standard deviations. These 20 trajectories contain 4,000 algorithm-budget observations, including 1,160 reused labels and 2,840 new finite-element calls. The audit verifies sequential prediction-before-label records, bounds, finite outputs, exact source-archive hashes, complete budgets, and zero exact duplicate points.
+Two further Gaussian-process acquisition controls use the same ten 58-point archives, 200-evaluation budget, Matérn-5/2 model, 4,096-point Sobol candidate pool, and eight local optimization starts. Gaussian-process probability of improvement (GP-PI) uses an improvement margin equal to 0.01 times the current response standard deviation. Gaussian-process upper confidence bound (GP-UCB) is implemented for minimization by selecting the lowest value of mean minus 2.0 standard deviations. These 20 trajectories contain 4,000 algorithm-budget observations, including 1,160 reused labels and 2,840 additional finite-element calls. The audit verifies sequential prediction-before-label records, bounds, finite outputs, exact source-archive hashes, complete budgets, and zero exact duplicate points.
 
-**Table S25a. Additional shared-initialization acquisition and relation-model controls.**
+**Additional shared-initialization acquisition and relation-model controls.**
 
 | Method | Shared-init median | Q1 | Q3 | Median improvement after initialization | Median difference vs PEM-T | Wins/ties/losses vs PEM-T | Holm p |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -565,21 +565,21 @@ Two further Gaussian-process acquisition controls use the same ten 58-point arch
 
 The different outcomes under a common surrogate and common starting archive isolate acquisition behavior. Candidate-dependent uncertainty is structurally capable of changing decisions, but its practical value depends on how uncertainty and predicted objective value are combined. GP-PI supplies a successful candidate-dependent control; the fixed-multiplier GP-UCB control does not improve the median initial incumbent under this budget. The three rows form one Holm family.
 
-DRSO provides the requested competitive surrogate-assisted evolutionary comparison. The public author repository is frozen at commit `03c19d4280b38230e0852054922072f5aa6dcdf5` under LGPL-3.0. Its relation models, unevaluated-population mechanism, reproduction, training cap of 100, and other algorithm settings remain unchanged. Population size is set from the author default of 50 to 58 only because the common archive contains 58 points. A Python 3.12 compatibility namespace supplies the removed `imp` name required by pyDOE2 and an unused optional callback import; neither compatibility file alters the DRSO search implementation.
+DRSO provides the requested competitive surrogate-assisted evolutionary comparison. The public author repository is frozen at commit `03c19d4280b38230e0852054922072f5aa6dcdf5` under the GNU Lesser General Public License version 3.0 (LGPL-3.0). Its relation models, unevaluated-population mechanism, reproduction, training cap of 100, and other algorithm settings remain unchanged. Population size is set from the author default of 50 to 58 only because the common archive contains 58 points. A Python 3.12 compatibility namespace supplies the removed `imp` name required by pyDOE2 and an unused optional callback import; neither compatibility file alters the DRSO search implementation.
 
-The DRSO batch contains ten complete trajectories and 2,000 algorithm-budget observations: 580 reused initial labels and 1,420 new finite-element calls. All 4,010 event records have sequential PRE/LABEL order, all ten source-archive and author-tree hashes match, and no trajectory contains an out-of-bounds, nonfinite, or exact duplicate point. The author-code result object, external paid-call journal, and endpoint minimum agree in every repeat. DRSO improves median compliance by 74.7% after initialization and reaches 647.4, compared with 1972.8 for PEM-T.
+The relation-model DRSO batch contains ten complete trajectories and 2,000 algorithm-budget observations: 580 reused initial labels and 1,420 additional finite-element calls. All 4,010 event records have sequential PRE/LABEL order, all ten source-archive and author-tree hashes match, and no trajectory contains an out-of-bounds, nonfinite, or exact duplicate point. The author-code result object, external paid-call journal, and endpoint minimum agree in every repeat. DRSO improves median compliance by 74.7% after initialization and reaches 647.4, compared with 1972.8 for PEM-T.
 
 ## S8.3 Evidence boundary
 
-The empirical residual monitor has no claimed pointwise coverage theorem, false-discovery-rate guarantee, regret bound, or global convergence theorem. Broad BBOB comparisons with external methods retain native initialization and remain descriptive; the beam sensitivity alone supplies a matched initial archive. GP-PI and GP-UCB are transparent acquisition controls, while DRSO is an author-code published SAEA. The 19-dimensional beam family does not establish performance for unrestricted 5,000-variable topology optimization. Full CEC exploration was stopped after the decision-consequence auditing scope was selected; its exploratory trajectories are excluded from all article statistics. Temporal CP-SAEA, SADE-SS, and BGP-SAEA remain excluded because matching executable author implementations with frozen versions, parameters, and licenses were unavailable; similarly named public implementations are not substituted for them. DRSO closes the requested competitive-SAEA evidence category without claiming to reproduce those unavailable methods.
+The empirical residual monitor has no claimed pointwise coverage theorem, false-discovery-rate guarantee, regret bound, or global convergence theorem. Broad BBOB comparisons with external methods retain native initialization and remain descriptive; the beam sensitivity alone supplies a matched initial archive. GP-PI and GP-UCB are transparent acquisition controls, while DRSO is an author-code published SAEA. The 19-dimensional beam family does not establish performance for unrestricted 5,000-variable topology optimization. Full CEC exploration was stopped after the decision-consequence auditing scope was selected; its exploratory trajectories are excluded from all article statistics. Temporal conformal-prediction SAEA (CP-SAEA), sample-selection surrogate-assisted differential evolution (SADE-SS), and boosting Gaussian-process SAEA (BGP-SAEA) remain excluded because matching executable author implementations with frozen versions, parameters, and licenses were unavailable; similarly named public implementations are not substituted for them. DRSO closes the requested competitive-SAEA evidence category without claiming to reproduce those unavailable methods.
 
 # S9 Frozen GP intervention and immediate diagnostic accounting
 
-This additional study is separately frozen, descriptive, and not part of the original Holm families. Input hashes and 120 decisions were committed at f1c9bbdebc35071bd935d0b11c92857f5e07201e before new intervention labels. The initially transmitted binary ZIP was incomplete, despite an intact local author-supplied archive. Local scientific input hashes and frozen choices did not change. The public input release now uses a byte-preserving text bundle at commit 71e074945262e1dbfc223726c7216e5415385ddc, replacing the incomplete repository binary. Its restoration checks every original file hash, all segment hashes and the decoded payload hash before writing any file. It preserves all 60 original file bytes, including line endings; it does not claim to reconstruct the original ZIP container bytes. The original supplied archive remains identified by SHA256 c59079aaf34f560ee2f3e93a55bd60e13b2fa4c53097285842580df4d3b8098b. Public distribution integrity and scientific execution integrity are separate checks.
+This additional study is separately frozen, descriptive, and not part of the original Holm families. Input hashes and 120 decisions were committed at f1c9bbdebc35071bd935d0b11c92857f5e07201e before additional intervention labels. The initially transmitted binary ZIP was incomplete, despite an intact local author-supplied archive. Local scientific input hashes and frozen choices did not change. The public input release now uses a byte-preserving text bundle at commit 71e074945262e1dbfc223726c7216e5415385ddc, replacing the incomplete repository binary. Its restoration checks every original file hash, all segment hashes and the decoded payload hash before writing any file. It preserves all 60 original file bytes, including line endings; it does not claim to reconstruct the original ZIP container bytes. The original supplied archive remains identified by SHA-256 c59079aaf34f560ee2f3e93a55bd60e13b2fa4c53097285842580df4d3b8098b. Public distribution integrity and scientific execution integrity are separate checks.
 
-Thirty source histories contain 6,000 budgeted algorithm observations and 580 distinct common initial labels across ten repeats. Frozen states stop at PRE(t), exclude LABEL(t), and contain only observations before 59,101,151 or 200. The same recorded ARD Matérn-5/2 posterior scores mean, EI, PI and LCB on 4,096 scrambled Sobol points plus the original action. EI uses zero margin, PI uses 0.01 times the training standard deviation, and LCB uses kappa 2. Logged hyperparameters are not refitted. All120 source-action mean/standard-deviation comparisons satisfy rtol=atol=1e-8. Decisions and candidate records are hashed before source action labels are looked up. No new diagnostic label enters a source optimizer history.
+Thirty source histories contain 6,000 budgeted algorithm observations and 580 distinct common initial labels across ten repeats. Frozen states stop at PRE(t), exclude LABEL(t), and contain only observations before 59, 101, 151, or 200. The same recorded automatic-relevance-determination (ARD) Matérn-5/2 posterior scores mean prediction, expected improvement (EI), probability of improvement (PI), and lower confidence bound (LCB) on 4,096 scrambled Sobol points plus the original action. EI uses zero margin, PI uses 0.01 times the training standard deviation, and LCB uses kappa 2. Logged hyperparameters are not refitted. All 120 source-action mean/standard-deviation comparisons satisfy rtol=atol=1e-8. Decisions and candidate records are hashed before source action labels are looked up. No additional diagnostic label enters a source optimizer history.
 
-**Table S26. All controls and source-history groups. Four checkpoint estimates are averaged within each repeat before averaging ten repeats. U and DeltaU are in units of 1e-6.**
+**All controls and source-history groups. Four checkpoint estimates are averaged within each repeat before averaging ten repeats. U and DeltaU are in units of 1e-6.**
 
 | Source history | Control | Changed (%) | Mean U (1e-6) | DeltaU vs mean (1e-6) |
 | --- | --- | --- | --- | --- |
@@ -596,34 +596,34 @@ Thirty source histories contain 6,000 budgeted algorithm observations and 580 di
 | UCB history | PI | 35.0 | 1.178882 | +0.301124 |
 | UCB history | LCB | 75.0 | 0.511893 | -0.365864 |
 
-The training scale ranges from 733152 to 9.12154e+08. This can make normalized gains small even when raw compliance changes. The metric is retained as frozen; no post hoc replacement or new p-value is used. These comparisons neither test delayed exploration nor authorize promotion.
+The training scale ranges from 733,152 to 9.12154e+08. This can make normalized gains small even when raw compliance changes. The metric is retained as frozen; no post hoc replacement or additional p-value is used. These comparisons neither test delayed exploration nor authorize promotion.
 
-The 480 control-state choices reduce to 261 distinct within-state actions. Source-action reuse accounts for 120 responses; exact diagnostic reuse across states accounts for 3;138 are new FE calls. New diagnostic FE time is 4.437432s and GP state preparation time13.435883s. The initial solver compatibility check made42 calls before detecting a 4.929e-8 relative discrepancy at a large-compliance point. That discrepancy was numerical, not a failed FE response. The complete retained60-call check uses the disclosed1e-6 relative tolerance and passes every comparison. The original prediction replay tolerance remains1e-8. The first42 outputs and timings were not retained but their attempts are included. The retained solver check takes 2.327726s. Total additional attempts for this GP revision are 240. These observed times do not establish exclusive wall-time savings.
+The 480 control-state choices reduce to 261 distinct within-state actions. Source-action reuse accounts for 120 responses; exact diagnostic reuse across states accounts for 3; 138 are additional finite-element (FE) calls. Diagnostic FE time is 4.437432 s and GP state preparation time is 13.435883 s. The initial solver compatibility check made 42 calls before detecting a 4.929e-8 relative discrepancy at a large-compliance point. That discrepancy was numerical, not a failed FE response. The complete retained 60-call check uses the disclosed 1e-6 relative tolerance and passes every comparison. The original prediction replay tolerance remains 1e-8. The first 42 outputs and timings were not retained but their attempts are included. The retained solver check takes 2.327726 s. Total additional attempts for this GP revision are 240. These observed times do not establish exclusive wall-time savings.
 
 # S10 Independent load-position transfer, horizon effects and paid workflows
 
-The protocol and executable implementation were committed at 7555d58b145a2c44b73bab5ec47d0f643a57dde1 before acquiring new transfer labels. Conditions forcedist0.25 and 0.75 each have ten independently seeded58-point Sobol initializations. Fixed seed namespaces distinguish initialization, pilots and validation. The same case/step candidate namespace is shared across policies inside a phase. All policies use one shared specification; tie ordering, fit limits and budgets were not tuned using outcomes. This is within-family physical-condition transfer, not cross-domain validation.
+The protocol and executable implementation were committed at 7555d58b145a2c44b73bab5ec47d0f643a57dde1 before acquiring additional transfer labels. Conditions forcedist 0.25 and 0.75 each have ten independently seeded 58-point Sobol initializations. Fixed seed namespaces distinguish initialization, pilots and validation. The same case/step candidate namespace is shared across policies inside a phase. All policies use one shared specification; tie ordering, fit limits and budgets were not tuned using outcomes. This is within-family physical-condition transfer, not cross-domain validation.
 
-**Table S27. Differences between the two additional GP experiments. The original beam wrapper, material, supports, volume 0.35 and dimension 19 are retained.**
+**Differences between the two additional GP experiments. The original beam wrapper, material, supports, volume 0.35 and dimension 19 are retained.**
 
 | Setting | Frozen intervention (S9) | Independent transfer (S10) |
 | --- | --- | --- |
 | Source state | Archived EI/PI/UCB histories | Fresh initialization in each force condition |
 | Kernel | Logged ARD Matérn-5/2 | Isotropic Matérn-5/2 |
-| Hyperparameters | Frozen, optimizer disabled | L-BFGS-B, max100 iterations, no restarts |
+| Hyperparameters | Frozen, optimizer disabled | L-BFGS-B, maximum 100 iterations, no restarts |
 | Candidate pool | 4096 Sobol + original action | 1024 Sobol; observed points excluded |
 | EI margin | 0 | 0.01 times training standard deviation |
 | PI margin / LCB kappa | 0.01 scaled / 2 | 0.01 scaled / 2 |
 | GP alpha / normalization | 1e-6 / normalized targets | 1e-6 / normalized targets |
 | Physical force position | 0.0 | 0.25 and 0.75 |
 
-The transfer constant bounds are[0.05,20] and length-scale bounds[0.005,2], with initial length scale 0.2. Fit convergence warnings are recorded and do not trigger restarts. Beams2D caches force-dependent matrices; each case creates a fresh problem object configured once with its actual force position. This prevents cross-condition state reuse. The environment pins NumPy 2.2.6, SciPy 1.15.3, scikit-learn1.7.2, EngiBench 0.2.0 and cvxopt1.3.2. These settings define a separate controlled study and do not rerun the historical ARD/continuous-refinement GP optimizer.
+The transfer constant bounds are [0.05, 20] and length-scale bounds are [0.005, 2], with initial length scale 0.2. Fit convergence warnings are recorded and do not trigger restarts. Beams2D caches force-dependent matrices; each case creates a fresh problem object configured once with its actual force position. This prevents cross-condition state reuse. The environment pins NumPy 2.2.6, SciPy 1.15.3, scikit-learn 1.7.2, EngiBench 0.2.0, and cvxopt 1.3.2. These settings define a separate controlled study and do not rerun the historical ARD/continuous-refinement GP optimizer.
 
 ## S10.1 Paid selection and independent validation
 
-Each audited workflow pays 58 initial labels,4x20 pilot labels and 142 selected-policy validation labels:280. Each complete portfolio independently pays 58 initial labels and 4x142 continuation labels:626. A fixed single policy needs200. The pilot winner is the lowest final pilot compliance, with exact ties broken in PI, mean, EI, LCB order. Selection is persisted after 138 calls and before any canonical validation label. Canonical histories start again from the initial58 labels and never include pilot responses. Validation candidates use a different namespace; no warm-starting selector is claimed. The selected canonical trajectory and its separately paid portfolio counterpart agree exactly in every repeat. All duplicate designs across workflows are physically evaluated and counted, rather than credited as free labels.
+Each audited workflow pays 58 initial labels, 4 x 20 pilot labels, and 142 selected-policy validation labels: 280. Each complete portfolio independently pays 58 initial labels and 4 x 142 continuation labels: 626. A fixed single policy needs 200. The pilot winner is the lowest final pilot compliance, with exact ties broken in PI, mean, EI, LCB order. Selection is persisted after 138 calls and before any canonical validation label. Canonical histories start again from the initial 58 labels and never include pilot responses. Validation candidates use a different namespace; no warm-starting selector is claimed. The selected canonical trajectory and its separately paid portfolio counterpart agree exactly in every repeat. All duplicate designs across workflows are physically evaluated and counted, rather than credited as free labels.
 
-**Table S28. All twenty paired endpoints. The selected-policy column is the prespecified independent canonical endpoint. All-paid best is a secondary descriptive endpoint including every pilot design; it does not replace the validation criterion. Gap is 100x(selected/portfolio-best-1).**
+**All twenty paired endpoints. The selected-policy column is the prespecified independent canonical endpoint. All-paid best is a secondary descriptive endpoint including every pilot design; it does not replace the validation criterion. Gap is 100x(selected/portfolio-best-1).**
 
 | Force | Rep | Selected | Initial | Selected-policy | Portfolio-best | Gap (%) | All-paid best |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -648,9 +648,9 @@ Each audited workflow pays 58 initial labels,4x20 pilot labels and 142 selected-
 | 0.75 | 8 | PI | 583.133 | 429.673 | 274.350 | 56.615 | 285.959 |
 | 0.75 | 9 | PI | 720.317 | 303.082 | 211.908 | 43.025 | 253.360 |
 
-The primary median paired gaps are 9.013698% and 27.217435%. Exact portfolio-best matches are 4/10 and 3/10. The selected counts are PI6, EI2, mean2 at force 0.25, and PI8, LCB1, mean1 at force 0.75. Exact pilot-end ties occur in 7 and 4 repeats; counts should not be interpreted independently of the tie rule. The secondary all-paid gaps have medians9.013698% and 2.115716%. The discrepancy between primary and secondary endpoints is disclosed because the practical availability of a pilot design differs from evidence that the chosen policy transfers well.
+The primary median paired gaps are 9.013698% and 27.217435%. Exact portfolio-best matches are 4/10 and 3/10. The selected counts are PI 6, EI 2, and mean 2 at force 0.25, and PI 8, LCB 1, and mean 1 at force 0.75. Exact pilot-end ties occur in 7 and 4 repeats; counts should not be interpreted independently of the tie rule. The secondary all-paid gaps have medians of 9.013698% and 2.115716%. The discrepancy between primary and secondary endpoints is disclosed because the practical availability of a pilot design differs from evidence that the chosen policy transfers well.
 
-**Table S29. Each200-call fixed policy compared with the280-call selected workflow. Median effects are paired100x(selected/fixed-1); negative favors selection. Wins/ties/losses are descriptive, not tests of superiority or equivalence.**
+**Each 200-call fixed policy compared with the 280-call selected workflow. Median effects are paired 100 x (selected/fixed - 1); negative favors selection. Wins/ties/losses are descriptive, not tests of superiority or equivalence.**
 
 | Force | Fixed policy | Median fixed compliance | Paired effect (%) | Selection wins/ties/losses |
 | --- | --- | --- | --- | --- |
@@ -667,7 +667,7 @@ Selecting the best fixed policy retrospectively from these validation outcomes w
 
 ## S10.2 Horizon separation
 
-**Table S30. Pilot improvement from the common initial incumbent. First and 20-step columns are medians of per-repeat percentages. The final count concerns the same pilot trajectory.**
+**Pilot improvement from the common initial incumbent. First and 20-step columns are medians of per-repeat percentages. The final count concerns the same pilot trajectory.**
 
 | Force | Policy | First step (%) | 20 steps (%) | Zero first, positive20 /10 |
 | --- | --- | --- | --- | --- |
@@ -680,17 +680,17 @@ Selecting the best fixed policy retrospectively from these validation outcomes w
 | 0.75 | PI | 0.000 | 46.765 | 7 |
 | 0.75 | LCB | 0.000 | 3.649 | 4 |
 
-![Pilot improvement across twenty steps under the two force positions.](engineering_optimization/figures/transfer_pilot_horizons.svg)
+![Pilot improvement across twenty steps under the two force positions.](engineering_optimization/figures/transfer_pilot_horizons.png)
 
 Figure S14 plots condition-specific median incumbent improvement over the pilot horizon. It illustrates why a first action without gain is not a sufficient rejection rule. These are whole-policy trajectories with diverging histories; the figure does not estimate a first-action treatment effect with an identical continuation. Pilot-to-canonical selection transfer is a further question because the canonical candidate stream is independent.
 
 ## S10.3 Costs, recovery and evidence integrity
 
-**Table S31. Complete additional FE-attempt boundary for this revision. Historical experiments before the revision are not included.**
+**Complete additional FE-attempt boundary for this revision. Historical experiments before the revision are not included.**
 
 | Component | Physical attempts | Use in reported endpoints |
 | --- | --- | --- |
-| New frozen GP intervention | 138 | Separate diagnostics only |
+| Added frozen GP intervention | 138 | Separate diagnostics only |
 | Solver compatibility verification | 102 | Never optimizer training |
 | Earlier complete transfer execution | 18120 | Prior checked endpoints; raw journals unavailable in current workspace |
 | Retained unchanged-protocol transfer recovery | 18120 | Retained canonical and pilot records, labels used once |
@@ -698,14 +698,14 @@ Figure S14 plots condition-specific median incumbent improvement over the pilot 
 
 The prior transfer journals became unavailable in the working environment before their raw release. An explicit recovery record at 62560a245a8b804dcff3ce00aa45aae0af9f3884 preserves the unchanged scientific configuration and caps additional recovery calls at 18,120. All twenty previously recorded selected-policy and portfolio-best endpoints are reproduced. Recovery contributes additional physical cost, not additional independent repeats or a changed inferential family. The initial zero-call bootstrap failure from the earlier launch adds no FE cost. The retained20 cases comprise2,320 physical initialization calls,1,600 pilot calls and 14,200 canonical postinitial calls. Their 100 full-budget trajectories contain 20,000 algorithm observations because initialization is shared among forks inside each workflow.
 
-**Table S32. Retained observed component times summed across ten repeats per condition, in seconds. Four workers run concurrently; sums are not exclusive elapsed-time benchmarks.**
+**Retained observed component times summed across ten repeats per condition, in seconds. Four workers run concurrently; sums are not exclusive elapsed-time benchmarks.**
 
 | Force | Audited FE | Portfolio FE | Audited GP/selection | Portfolio GP/selection |
 | --- | --- | --- | --- | --- |
 | 0.25 | 90.395 | 194.651 | 57.242 | 175.964 |
 | 0.75 | 87.050 | 190.999 | 53.674 | 171.385 |
 
-The analyzer validates complete PRE/LABEL pairing,906 physical calls per case,280/626 workflow counts,20 pilot steps and 142 canonical steps per policy, selection before validation, correct seed namespaces, identical initial history hashes, exclusion of pilot labels from every canonical history, exact selected/portfolio trajectory replay, and every endpoint and component-time sum. It makes zero new FE calls. The compact release regenerates deterministic Sobol points and reconstructs each retained source JSONL byte for byte, checked against its SHA256; no objective call is needed to restore or analyze the records. Original full journals remain the source of timing and information-boundary checks.
+The analyzer validates complete PRE/LABEL pairing, 906 physical calls per case, 280/626 workflow counts, 20 pilot steps and 142 canonical steps per policy, selection before validation, correct seed namespaces, identical initial history hashes, exclusion of pilot labels from every canonical history, exact selected/portfolio trajectory replay, and every endpoint and component-time sum. It makes zero additional FE calls. The compact release regenerates deterministic Sobol points and reconstructs each retained source JavaScript Object Notation Lines (JSONL) file byte for byte, checked against its SHA-256; no objective call is needed to restore or analyze the records. Original full journals remain the source of timing and information-boundary checks.
 
-There are no added p-values, confidence guarantees, retrospective deployment tolerances, claims of cross-domain transfer, or demonstrated production wall-time savings. The two loads strengthen within-family applicability. They do not establish optimizer superiority, a competitive selection advance over warm-starting, or validation of unrestricted5000-variable topology optimization.
+There are no added p-values, confidence guarantees, retrospective deployment tolerances, claims of cross-domain transfer, or demonstrated production wall-time savings. The two loads strengthen within-family applicability. They do not establish optimizer superiority, a competitive selection advance over warm-starting, or validation of unrestricted 5,000-variable topology optimization.
 
