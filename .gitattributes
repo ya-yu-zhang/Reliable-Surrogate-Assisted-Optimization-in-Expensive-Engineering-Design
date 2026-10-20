@@ -21,6 +21,8 @@
 *.cfg     text eol=lf
 *.toml    text eol=lf
 *.ini     text eol=lf
+.gitattributes text eol=lf
+.gitignore  text eol=lf
 
 # Base85 payload segments keep whatever byte layout their manifests were built on;
 # they are left to git's own binary detection. Documents and images are binary.
