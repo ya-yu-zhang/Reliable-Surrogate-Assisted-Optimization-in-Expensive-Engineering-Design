@@ -472,7 +472,7 @@
       "the availability canonicaliser now rewrites legacy public/private variants to the current statement"
     ],
     "tracked_size": "58.1 MB in 1114 files; no caches, virtual environments or scratch directories tracked",
-    "line_endings": "core.autocrlf=true is active and the index stores LF. No renormalisation was applied, because the recorded sha256 values are taken from the working tree and a checkout would change them. A .gitattributes pinning LF is recommended before the release is frozen.",
+    "line_endings": "resolved on 2026-10-20: .gitattributes pins text files to LF (652 tracked files now agree between index and work tree) and documents/images to binary. Payload segments (.b85) are left to git binary detection because their manifests were built on mixed byte layouts. Two self-generated hash records were recomputed after the conversion; the remaining stale records are historical stage audits whose files were edited after they were written.",
     "current_pages": {
       "word_main": 23,
       "word_review_copy": 43,

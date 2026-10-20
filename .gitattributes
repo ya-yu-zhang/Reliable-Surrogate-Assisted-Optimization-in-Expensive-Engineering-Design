@@ -1,0 +1,33 @@
+# Line-ending policy
+#
+# The evidence records in this repository hash the working-tree bytes of source and
+# data files, so a clone on any platform must reproduce those bytes exactly. Text files
+# are therefore stored and checked out with LF endings, and payload files are declared
+# binary so that git never rewrites them.
+
+*.md      text eol=lf
+*.py      text eol=lf
+*.json    text eol=lf
+*.jsonl   text eol=lf
+*.csv     text eol=lf
+*.tex     text eol=lf
+*.bib     text eol=lf
+*.bbl     text eol=lf
+*.txt     text eol=lf
+*.yml     text eol=lf
+*.yaml    text eol=lf
+*.svg     text eol=lf
+*.lua     text eol=lf
+*.cfg     text eol=lf
+*.toml    text eol=lf
+*.ini     text eol=lf
+
+# Base85 payload segments keep whatever byte layout their manifests were built on;
+# they are left to git's own binary detection. Documents and images are binary.
+*.docx  binary
+*.doc   binary
+*.png   binary
+*.jpg   binary
+*.pdf   binary
+*.zip   binary
+*.pt    binary
