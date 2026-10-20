@@ -5,9 +5,9 @@
   "layout_verified": false,
   "sources": {
     "paper/engineering_optimization_manuscript.md": "b89efe7db7cebb1858398978fc053c88623c8e70996501ab48a4cb04f9a1b89e",
-    "paper/engineering_optimization_supplementary.md": "840201041239fcf0c083926983244e6fd4f16a4c44f82dec5f0f680ae744bb83",
-    "paper/engineering_optimization/EO_manuscript.tex": "3862a95c25ce359e8380e07ecc3c24a74eb94034a714c7c685ed64b028c04617",
-    "paper/engineering_optimization/EO_supplementary.tex": "a3ad8b73aa77d336845d530aa495fa9ba02af524bded8be0c6ddebcbe3a6d381"
+    "paper/engineering_optimization_supplementary.md": "7e39b9cd1e7277d38aa6861a10f13426e7f7d7e83dc2c3f0f776c358c80eb666",
+    "paper/engineering_optimization/EO_manuscript.tex": "39d1b86726d3577d3f554df0684b634f7f6592cba2b2d40ca50c05f2e59ce126",
+    "paper/engineering_optimization/EO_supplementary.tex": "6378f5494d6ab69093d86f705ea80ed1516fe09f1bf8d7e0031489f474dfcada"
   },
   "figures": {
     "manuscript": [
@@ -68,7 +68,8 @@
       "class": "interact.cls v1.03 (2016/10/17), rebuilt from the official archive sha256 5aeb0952b0021ad98653fe8ca6a1ea8edf35fbd639af5ee5443e6662dff90e25",
       "pdf_location": "tmp/eo_render/EO_manuscript_latex_27p.pdf (not committed; publisher class is not redistributed)",
       "table_numbering": "sequential via \\label/\\ref; the prose now prints Table 5 for the validation contrasts, matching the rendered table",
-      "front_matter": "five authors, Pan corresponding, ORCID and e-mails; aligned with the submission track"
+      "front_matter": "five authors, Pan corresponding, ORCID and e-mails; aligned with the submission track",
+      "supplementary_pages": 32
     }
   },
   "released_records": [

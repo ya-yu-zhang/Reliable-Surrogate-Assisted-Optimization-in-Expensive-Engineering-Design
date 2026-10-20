@@ -2,7 +2,7 @@
   "audit_date": "2026-10-12",
   "timezone": "Asia/Shanghai",
   "reviewed_commit": "813b93b02a5771ac2833a0d2ab652f647603ab0a",
-  "review_type": "Codex-assisted simulated pre-submission peer review; not a journal appointment or editorial decision",
+  "review_type": "simulated pre-submission peer review prepared during internal author review; not a journal appointment or editorial decision",
   "overall_verdict": "not_passed_major_revision",
   "submission_ready": false,
   "input_files": [

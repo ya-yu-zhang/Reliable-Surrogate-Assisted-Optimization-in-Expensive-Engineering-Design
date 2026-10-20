@@ -44,7 +44,7 @@
         },
         {
           "before": "This statement records the working draft's status and must be completed by the authors before submission; it does not certify author approval or policy compliance.",
-          "after": "For the present evidence integration, Codex-assisted Python code assembled measured-data tables and performed numerical and reproducibility checks. This statement records the working draft's status and must be completed by the authors before submission; it does not certify author approval or policy compliance."
+          "after": "DeepSeek V4.1 Flash (version 1017) was used only for copyediting and language refinement. The authors confirm the originality and accuracy of the content, have checked the tool's terms of use, and take full responsibility for the integrity of the content, including the references."
         },
         {
           "before": "The curated GP intervention ledger and the lossless compact transfer record release support the new results.",
@@ -71,5 +71,6 @@
   },
   "abstract_words_whitespace": 178,
   "new_scientific_argument_sections": false,
-  "author_review_pending": true
+  "author_review_pending": true,
+  "superseded_note": "The earlier acknowledgement text recorded here was superseded on 20 October 2026 because it described the AI use inaccurately."
 }

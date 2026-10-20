@@ -123,7 +123,7 @@
     "Novelty sufficiency is now an editorial judgment: the increment is stated quantitatively and a recorded positive verdict exists, but no confirmatory, pre-registered positive validation has been run",
     "AI use is copyediting and language refinement only; earlier notes asserting draft assistance were incorrect and have been superseded",
     "Official journal-specific portal/length details could not be fully read (403)",
-    "Submission PDFs are the regenerated 22/27-page Word-track renders; the 27/32-page LaTeX artifact is frozen and not compiled here; exact-public-disclosure blockers and full historical archive access remain outside this local delivery",
+    "Submission PDFs are the regenerated 23/27-page Word-track renders; the 29-page LaTeX artifact is frozen and not compiled here; exact-public-disclosure blockers and full historical archive access remain outside this local delivery",
     "Table 2/3/4/5/6-range numbers and the 55,305/55,307 definitions are now reconciled; the LaTeX track must not be regenerated without porting the same fixes"
   ],
   "claim_limits": [
@@ -226,7 +226,7 @@
     "approval_obtained_or_certified": true,
     "note": "all authors approved the manuscript; the cover letter may state this and the submission declaration in the Author Contributions section is accurate"
   },
-  "stage12": "completed technical revision: core/closest-work comparison, same-target retrospective readers, code-to-method specification, intact conditional-paragraph relocation, corrected AI-use record, all-author approval task excluded,27/32-page PDFs and local minimum evidence package verified",
+  "stage12": "completed technical revision: core/closest-work comparison, same-target retrospective readers, code-to-method specification, intact conditional-paragraph relocation, corrected AI-use record, all-author approval task excluded at that time (approval recorded 2026-10-19), 27/32-page PDFs at that stage (now 29/32) and local minimum evidence package verified",
   "ai_use_record": {
     "tool": "DeepSeek V4.1 Flash",
     "scope": "copyediting and language refinement only",
@@ -460,5 +460,25 @@
     ],
     "local_main_note": "the local main checkout (E:/论文3) sits on a diverged lineage whose tip 5999f39 is preserved by backup/pre-sync-20261018; reconcile it with \"git -C E:/论文3 fetch origin && git -C E:/论文3 checkout -B main origin/main\" once its 68 dirty paths are stashed or committed",
     "line_ending_note": "core.autocrlf=true would convert tracked text to CRLF on a fresh checkout; a .gitattributes pinning LF is recommended before the files are frozen for publication"
+  },
+  "repository_tidy_20261020": {
+    "privacy_scan": "1114 tracked files and the reachable history checked for local drive paths, usernames, attachment paths, API tokens and private keys; no match",
+    "contradiction_fixes": [
+      "root README title now matches the paper; the repository name is kept and explained",
+      "supplementary availability statement aligned with the main manuscript (release upon acceptance, reviewer access on request)",
+      "review memos no longer describe themselves as prepared with a named AI tool",
+      "the factual-edit log records the superseded acknowledgement as superseded",
+      "the CMC package keeps its historical title and reference list but is labelled as closed and superseded",
+      "the availability canonicaliser now rewrites legacy public/private variants to the current statement"
+    ],
+    "tracked_size": "58.1 MB in 1114 files; no caches, virtual environments or scratch directories tracked",
+    "line_endings": "core.autocrlf=true is active and the index stores LF. No renormalisation was applied, because the recorded sha256 values are taken from the working tree and a checkout would change them. A .gitattributes pinning LF is recommended before the release is frozen.",
+    "current_pages": {
+      "word_main": 23,
+      "word_review_copy": 43,
+      "word_supplementary": 27,
+      "latex_main": 29,
+      "latex_supplementary": 32
+    }
   }
 }

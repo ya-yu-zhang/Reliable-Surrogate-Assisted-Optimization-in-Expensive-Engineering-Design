@@ -1,4 +1,6 @@
-# Reliable Surrogate-Assisted Optimization in Expensive Engineering Design
+# Decision-consequence auditing for surrogate-assisted optimization in expensive engineering design
+
+The repository keeps its original name; the paper title was narrowed on 20 October 2026.
 
 This repository contains the manuscript sources, experiment implementation,
 configurations, analysis utilities, and tests for the decision-consequence

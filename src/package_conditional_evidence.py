@@ -43,7 +43,7 @@ def main():
 
 This version contains 30 dependent states in ten complete budget-validation
 seed blocks, frozen v1 code/configuration, the published paired-contrast CSV,
-current manuscript sources/figures and 27/32-page working PDFs. All-author
+current manuscript sources/figures and working PDFs. All-author
 approval is excluded from the project task list; affiliations b/c remain blank.
 This is not the full historical experiment archive, physical convergence
 certification, independent new validation or a publisher-policy certificate.

@@ -17,29 +17,25 @@ drafted in this integration. Earlier notes recording AI-assisted drafting of
 working-draft sections were incorrect; the AI disclosure now records copyediting
 and language refinement only.
 
-## Publication boundary
+## Submission state
 
-The updated source and analysis results are published separately from their
-compressed artifacts. The full local review package contains the complete
-26-page main/31-page supplement and selected grid records. Publication of the
-paired-grid raw archive is incomplete: segments-003.b85 and segments-004.b85
-were rejected by automatic approval review despite complete decoding and
-provenance checks. No broken partial archive is published. The first new PDF segment was also rejected by automatic approval review;
-no new PDF segments are committed. Until this specific public disclosure is
-approved and all parts verified, the public pdf_release manifest remains the
-earlier 23/27-page release. See work_status.json.
+The submission package is built from the Markdown track and lives in
+`paper/eo_submission/`: the main manuscript (23 pages), a double-spaced and
+line-numbered review copy, the supplement (27 pages), the cover letter, the
+highlights, and six separate figure files. The repository is private at submission
+time; the records named in the data-availability statement are committed on `main`
+and are released publicly upon acceptance.
 
-## Review the compiled documents
+`EO_manuscript.tex` and `EO_supplementary.tex` in this directory are a frozen
+review artifact that carries the later evidence tables (budget audit, thermal
+record, paired grid, common continuation). They compile to 29 pages and are not the
+submission source. Do not regenerate them from the Markdown without porting the
+reference and table-label fixes recorded in `source_build_check.json`.
 
-```bash
-python -m src.restore_engineering_optimization_pdfs --output ./review_pdfs
-```
-
-The public pdf_release/manifest.json still points to the earlier 23-page main
-and 27-page supplement. The complete updated PDFs are in the local review
-package; see the publication boundary above. The restoration script verifies exact PDF bytes before
-writing and refuses to replace a different file. Older segment files are retained
-as historical release bytes, not selected by the current manifest.
+Older releases remain as history. `pdf_release/` holds the previous
+segment-encoded PDFs (23-page main, 27-page supplement), and the paired-grid raw
+archive is partial because two segments were withheld from public release. See
+`work_status.json` for the current boundary.
 
 To compile from LaTeX, work in paper/engineering_optimization and run pdfLaTeX,
 BibTeX and two more pdfLaTeX passes for each EO_manuscript/EO_supplementary source.

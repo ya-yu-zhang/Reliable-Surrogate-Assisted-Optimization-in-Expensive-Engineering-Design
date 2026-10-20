@@ -13,4 +13,8 @@ Compile from this directory with:
   pdflatex CMC_manuscript.tex (run at least twice)
   pdflatex CMC_supplementary.tex (run at least twice)
 
+The title and the reference list in this package are the ones used at that submission.
+The current manuscript has a different title and a corrected reference list; see
+paper/engineering_optimization_manuscript.md.
+
 The supplied PDFs were compiled successfully with MiKTeX/pdfLaTeX and visually audited.
