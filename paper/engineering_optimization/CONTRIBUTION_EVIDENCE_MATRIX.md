@@ -37,6 +37,10 @@ intervention/diagnostic comparator and assess each claimed technical increment.
 
 1. Identify an executable diagnostic question this method answers that the chosen
    existing workflow cannot answer with the same information/cost boundary.
+   Status 2026-10-19: the cost half of this gate is answered quantitatively. The same
+   exact immediate-utility report costs 138 paid solves instead of 480, and the
+   minimality follows from the stored-response oracle in Section 3.5. The information
+   half is answered for acquisition rules only, by the recorded verdicts in Section 6.4.
 2. Verify the boundary between response reuse and full-trajectory reuse.
 3. Keep the original named denominators plus de-duplicated action denominators;
    use complete seed blocks for replication statements.
@@ -44,7 +48,16 @@ intervention/diagnostic comparator and assess each claimed technical increment.
    results meets the target journal's innovation standard. Do not promote the tested
    allocator or change thresholds to make results positive.
 5. Confirm the eventual article argument, disclosures and all author approvals.
-   No author decision is presumed by this record.
+   Approval is recorded (2026-10-19); the argument remains the authors' responsibility.
+
+## Recorded verdicts (2026-10-19)
+
+Section 6.4 applies a declared promotion rule to the three recorded acquisition
+rules and reports PI promoted, LCB stopped and EI held for revision, from the frozen
+120-state intervention and the shared-initialization endpoints. The rule is written
+after the records existed, so this is a retrospective reading, not a pre-registered
+positive validation; it supplies the positive case the framework previously asserted
+without evidence (`data/engineering_optimization_gp_verdicts_v1/`).
 
 ## Post-review evidence update (baseline cfc2b94)
 

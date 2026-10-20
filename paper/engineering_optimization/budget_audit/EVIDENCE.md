@@ -29,7 +29,7 @@ All30 states and10 seed blocks are retained. Seed-block_results.csv is the repli
 
 ## Numerical and cost record
 
-New paid physics attempts: 2134; ordered response requests2912; exact cache reuses778. Breakdown: warm500, source1047, calibration240, oracle335, repeatability6, finer mesh6. No failed/recovery attempts or replacement seeds. Full revision cumulative physics attempts54784. FE timings and continuation GP timings are retained; warm-kernel/source/calibration GP times were not separately recorded, so no complete original end-to-end runtime or speedup claim is made.
+New paid physics attempts: 2134; ordered response requests2912; exact cache reuses778. Breakdown: warm500, source1047, calibration240, oracle335, repeatability6, finer mesh6. No failed/recovery attempts or replacement seeds. Cumulative attempts through this stage are 54784; the project ledger total is 55305 before the two auxiliary physical-bound reference solves and 55307 after them. See `../COST_LEDGER_DEFINITIONS.md` for the three definitions. FE timings and continuation GP timings are retained; warm-kernel/source/calibration GP times were not separately recorded, so no complete original end-to-end runtime or speedup claim is made.
 
 Six repeated solves have maximum relative difference 0. Maximum two-resolution difference is 24.6298%. This exceeds the illustrative0.1% decision margin. Reproducibility of the fixed discretization does not establish physical accuracy; two meshes do not prove mesh convergence.
 

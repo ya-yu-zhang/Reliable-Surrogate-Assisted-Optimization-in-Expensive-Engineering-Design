@@ -18,6 +18,7 @@
   "mesh_analysis_outputs_byte_identical": 3,
   "validation_new_physics_calls": 0,
   "cumulative_paid_physics_attempts": 55305,
+  "cumulative_paid_physics_attempts_note": "Snapshot taken before the two auxiliary physical-bound reference solves. The current cumulative total is 55307 = 55305 + 2; see paper/engineering_optimization/COST_LEDGER_DEFINITIONS.md.",
   "submission_ready": false,
   "author_review_pending": true,
   "lossless_pdf_restoration_byte_identical": true,

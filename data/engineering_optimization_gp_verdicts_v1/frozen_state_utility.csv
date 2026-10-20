@@ -1,0 +1,13 @@
+source_history,control,states,action_change_fraction,mean_utility_1e6,delta_vs_mean_1e6,closed_loop_endpoint
+EI history,ei,40,0.3,0.899669,0.0,2308.453305
+PI history,ei,40,0.95,0.0,-0.347088,2308.453305
+UCB history,ei,40,0.3,0.887232,0.009475,2308.453305
+EI history,lcb,40,0.525,0.0,-0.899669,2308.675419
+PI history,lcb,40,0.975,0.0,-0.347088,2308.675419
+UCB history,lcb,40,0.75,0.511893,-0.365864,2308.675419
+EI history,mean,40,0.0,0.899669,0.0,
+PI history,mean,40,0.0,0.347088,0.0,
+UCB history,mean,40,0.0,0.877758,0.0,
+EI history,pi,40,0.25,0.899669,0.0,1233.134732
+PI history,pi,40,0.075,0.347088,0.0,1233.134732
+UCB history,pi,40,0.35,1.178882,0.301124,1233.134732

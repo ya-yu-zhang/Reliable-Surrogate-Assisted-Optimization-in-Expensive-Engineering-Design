@@ -1,0 +1,3 @@
+method,initialization,median,q1,q3,median_improvement_fraction,n,source
+turbo_1,native 38-point,578.208248,565.056302,726.908903,0.725258,10,engineering_beam_formal_v1
+gp_ei,native 38-point,2117.470502,1427.973481,2383.271659,0.208219,10,engineering_beam_formal_v1

@@ -1,0 +1,9 @@
+method,initialization,median,q1,q3,median_improvement_fraction,n,source
+turbo_1_shared_init,shared 58-point re-run,574.030502,534.658898,665.266353,0.750826,10,shared-init / acquisition / DRSO archives
+drso_shared_init,shared 58-point re-run,647.378857,580.394043,780.022769,0.74701,10,shared-init / acquisition / DRSO archives
+gp_pi_shared_init,shared 58-point re-run,1233.134732,921.181071,1399.69019,0.516731,10,shared-init / acquisition / DRSO archives
+fixed01,shared 58-point,1435.621662,1354.177723,1580.688499,0.383107,10,engineering_beam_formal_v1
+greedy,shared 58-point,1445.051536,1300.761482,1694.880522,0.361917,10,engineering_beam_formal_v1
+PEM_T,shared 58-point,1972.791394,1759.260792,2168.895561,0.251309,10,engineering_beam_formal_v1
+gp_ei_shared_init,shared 58-point re-run,2308.453305,1989.357815,2464.54763,0.0,10,shared-init / acquisition / DRSO archives
+gp_ucb_shared_init,shared 58-point re-run,2308.675419,2223.782321,2827.305224,0.0,10,shared-init / acquisition / DRSO archives

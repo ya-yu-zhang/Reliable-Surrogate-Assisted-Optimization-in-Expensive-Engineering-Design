@@ -1,0 +1,4 @@
+control,min_action_change,max_action_change,immediate_utility_nonnegative_all,immediate_utility_negative_all,closed_loop_endpoint,mean_selection_endpoint,endpoint_below_mean_selection,changes_in_at_least_two_histories,verdict
+ei,0.3,0.95,False,False,2308.453305,1445.051536,False,True,hold for revision
+pi,0.075,0.35,True,False,1233.134732,1445.051536,True,True,promote
+lcb,0.525,0.975,False,True,2308.675419,1445.051536,False,True,stop
