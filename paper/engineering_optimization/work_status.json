@@ -448,5 +448,17 @@
     "highlights": "paper/eo_submission/Highlights.doc",
     "figures": "paper/eo_submission/figures/Fig1-Fig6.png with effective dpi recorded in its README",
     "builder": "python src/build_eo_docx.py; python src/build_eo_submission_extras.py; python src/build_eo_review_copy.py"
+  },
+  "release_reference_20261020": {
+    "submission_commit": "064c00426853b8f79c81ef26a475c21f72476db9",
+    "submission_tag": "eo-submission-20261020",
+    "main_branch": "origin/main fast-forwarded to the submission commit; the repository is still private",
+    "released_records_on_main": [
+      "data/engineering_optimization_bbob_validation_v1",
+      "data/engineering_optimization_beam_endpoints_v1",
+      "data/engineering_optimization_gp_verdicts_v1"
+    ],
+    "local_main_note": "the local main checkout (E:/论文3) sits on a diverged lineage whose tip 5999f39 is preserved by backup/pre-sync-20261018; reconcile it with \"git -C E:/论文3 fetch origin && git -C E:/论文3 checkout -B main origin/main\" once its 68 dirty paths are stashed or committed",
+    "line_ending_note": "core.autocrlf=true would convert tracked text to CRLF on a fresh checkout; a .gitattributes pinning LF is recommended before the files are frozen for publication"
   }
 }
