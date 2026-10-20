@@ -53,3 +53,11 @@ tmp_git_add_dryrun.txt
 
 # Contains the private local attachment path from the planning conversation.
 docs/原始计划书.md
+
+# Publisher template assets fetched for local compilation only; not redistributed.
+paper/engineering_optimization/interact.cls
+paper/engineering_optimization/tfcad.bst
+
+# Harness state
+.dsh/
+.dsh-acl-recovery/

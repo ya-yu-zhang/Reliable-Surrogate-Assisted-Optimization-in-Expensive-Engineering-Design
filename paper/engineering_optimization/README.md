@@ -13,8 +13,9 @@ checks and the cumulative 55,305 paid physics-attempt ledger. Historical inline
 numeric table rows and the 38-entry bibliography are preserved. Existing
 abstract, contribution summary, limitations, conclusion and disclosure statements
 received narrowly scoped factual edits; no new scientific argument sections were
-drafted in this integration. Earlier AI-assisted working-draft history is retained
-in the disclosure and still needs substantive independent author assessment.
+drafted in this integration. Earlier notes recording AI-assisted drafting of
+working-draft sections were incorrect; the AI disclosure now records copyediting
+and language refinement only.
 
 ## Publication boundary
 
@@ -65,11 +66,15 @@ an adaptive-allocation advantage and net deployment savings are not established.
 ## Remaining author work
 
 * Independently assess the closest prior art, the technical increment and the
-  article's scientific argument using the contribution--evidence matrix.
-* Confirm affiliations b/c, all contribution/funding/conflict statements,
-  historical assistance disclosures and every author's final approval.
+  article's scientific argument using the contribution--evidence matrix. This is the
+  blocking scientific item.
 * Verify current journal-specific submission instructions and exact data/release
   citation wording, including the separately held large historical source archive.
+
+Affiliations, contribution/funding/conflict statements and all-author approval are
+settled for the Markdown/Word submission track (approval recorded 2026-10-19), and the
+AI-use record is copyediting and language refinement only. The LaTeX files in this
+directory are a frozen review artifact and are not the submission source.
 
 submission_ready remains false. Neither a journal acceptance guarantee nor an
 AI-detector score is supplied.

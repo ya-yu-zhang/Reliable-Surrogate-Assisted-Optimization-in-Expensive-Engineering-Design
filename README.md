@@ -6,20 +6,39 @@ auditing framework studied in the accompanying paper.
 
 ## Current manuscript revision
 
-The active target is **Engineering Optimization**. Current manuscript sources are
-`paper/engineering_optimization/EO_manuscript.tex` and `EO_supplementary.tex` in
-that directory, with publisher-template provenance recorded alongside them.
+The active target is **Engineering Optimization**. The paper title is
+*Decision-consequence auditing for surrogate-assisted optimization in expensive
+engineering design* (repositioned on 2026-10-19 from the earlier "Reliable ..." title;
+see `paper/engineering_optimization/CONTRIBUTION_POSITIONING_20261019.md`). The
+submission source of record is the Markdown/Word track:
+
+- `paper/engineering_optimization_manuscript.md` and
+  `paper/engineering_optimization_supplementary.md`
+- built artifacts `paper/eo_submission/EO_submission_manuscript.docx`,
+  `EO_supplementary_materials.docx` and `EO_cover_letter.docx`
+  (`python src/build_eo_docx.py`, `python src/build_eo_submission_extras.py`)
+
+That track carries seven numbered main tables, 33 supplementary tables and a
+23/27-page render. `paper/engineering_optimization/EO_manuscript.tex` and
+`EO_supplementary.tex` are a frozen author-review artifact, not the submission
+source: they retain the later evidence tables (budget audit, thermal record,
+paired grid, common continuation) that the submission track does not report. Do not
+regenerate the LaTeX source from the Markdown without porting the reference and
+evidence fixes listed in `source_build_check.json`.
+
 The 2026-10-13 revision supplies the frozen conditional-audit algorithm,
 same-target operational comparisons, intact adverse results, and a separate
-conditional-results subsection. See `submission_revision_20261013/` within that
-paper directory for the core-object comparison, AI-use history audit, response
-record and delivery manifest. `work_status.json` records the active boundaries.
+conditional-results subsection. See `submission_revision_20261013/` within the
+paper directory for the core-object comparison, response record and delivery
+manifest. `work_status.json` records the active boundaries.
 
-The all-author approval task is excluded by the user's explicit instruction;
-this is not a claim that approval occurred. Affiliations b/c remain unfilled at
-the user's choice. Novelty sufficiency and historical AI-policy applicability
-are not certified, and `submission_ready` remains false. No new physics was
-acquired for this revision. Its active reproduction entry points are:
+All authors have approved the manuscript (recorded 2026-10-19). An earlier version was
+submitted to Computers, Materials & Continua and rejected there as out of scope, so no
+version is under consideration elsewhere. Novelty sufficiency is not certified, and
+`submission_ready` remains false pending the scientific decisions. The AI-use record is
+copyediting and language refinement only; earlier notes asserting draft assistance were
+incorrect. No new physics was acquired for this revision. Its active reproduction entry
+points are:
 
 ```sh
 python -m src.compact_budget_audit_records --target .
@@ -28,8 +47,7 @@ python -m src.analyze_operational_comparison
 python -m src.integrate_submission_revision
 ```
 
-Earlier Markdown and build scripts record prior stages. The active TeX sources
-and versioned delivery manifest identify the current manuscript.
+Earlier Markdown and build scripts record prior stages.
 
 The subsequent P0/P1 development release is
 `paper/engineering_optimization/monotone_development_20261013/`. It implements

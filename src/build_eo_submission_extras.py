@@ -55,25 +55,25 @@ def build_cover_letter() -> Path:
         [("", False, False)],
         [
             ("Please consider the manuscript entitled ", False, False),
-            ("“A Decision-Consequence Auditing Framework for Reliable Surrogate-Assisted Optimization in Expensive Engineering Design”", True, False),
+            ("“Decision-consequence auditing for surrogate-assisted optimization in expensive engineering design”", True, False),
             (" for publication in ", False, False),
             ("Engineering Optimization", False, True),
             (".", False, False),
         ],
         [("Surrogate-assisted optimization can report credible uncertainty or residual diagnostics without changing candidate ranking or improving a paid engineering decision. The submitted study addresses this gap by auditing the complete path from surrogate information to evaluation allocation, finite-horizon policy performance, and physical-call cost.", False, False)],
         [("Core Scientific Contributions", True, False)],
-        [("The manuscript makes three contributions to reliable numerical optimization:", False, False)],
+        [("The manuscript's contributions are:", False, False)],
         [("Decision-path audit: ", True, False), ("Calibration, structural decision influence, frozen-state utility, closed-loop performance, and total cost are evaluated as distinct evidence levels.", False, False)],
-        [("Query allocation by decision equivalence: ", True, False), ("Identical context-point decisions share deterministic responses, reducing 480 policy-state choices to 261 distinct actions and requiring 138 additional finite-element labels.", False, False)],
-        [("Engineering validation: ", True, False), ("The framework is tested on 24 BBOB functions, a finite-element beam family, frozen Gaussian-process acquisition states, and twenty transfer cases at two load positions.", False, False)],
+        [("Query allocation by decision equivalence: ", True, False), ("Identical context-point decisions share deterministic responses, so the same exact immediate-utility report costs 138 paid finite-element solves instead of 480, with a minimality argument for the declared oracle.", False, False)],
+        [("Recorded verdicts and engineering validation: ", True, False), ("One declared promotion rule applied to three frozen acquisition rules returns one promotion, one stop and one held-for-revision verdict; the procedure is applied to 24 BBOB functions, a finite-element beam family, frozen acquisition states and twenty transfer cases at two load positions.", False, False)],
         [("Engineering Optimization Scope Alignment", True, False)],
-        [("The study concerns numerical optimization when function evaluations are expensive and surrogate model management determines which simulations are paid for. Its emphasis is the reliability of optimization decisions, not prediction accuracy in isolation.", False, False)],
+        [("The study concerns numerical optimization when function evaluations are expensive and surrogate model management determines which simulations are paid for. Its object is the reliability of the decision, not prediction accuracy in isolation, and it claims no optimizer superiority.", False, False)],
         [("The manuscript contributes directly to two areas within the journal's scope:", False, False)],
         [("Surrogate model management for expensive optimization: ", True, False), ("The audit determines whether model-derived information changes ranking, selects a more useful action at a common state, and improves a validated trajectory.", False, False)],
         [("Optimization in engineering design: ", True, False), ("A density-based finite-element beam problem compares residual control, Gaussian-process acquisition, relation-model evolutionary search, and trust-region optimization under explicit evaluation budgets.", False, False)],
         [("Reproducibility and Publication Ethics", True, False)],
-        [("Frozen protocols, deterministic seed maps, prediction-before-label journals, source hashes, integrity checks, and recovery-aware cost ledgers support the reported evidence. The manuscript sources and curated records are available in the project repository, with larger historical archives available from the corresponding author upon reasonable request.", False, False)],
-        [("The manuscript is original, is not under consideration elsewhere, and has been approved by all authors. No conflicts of interest or specific funding are reported. OpenAI Codex was used only for copyediting and language refinement; all affected text was reviewed by the authors.", False, False)],
+        [("Frozen protocols, deterministic seed maps, prediction-before-label journals, source hashes and recovery-aware cost ledgers support the reported evidence. The sources and curated records will be released in the project repository upon acceptance and are available to reviewers on request.", False, False)],
+        [("The manuscript is original, is not under consideration elsewhere (an earlier version was submitted to Computers, Materials & Continua and rejected there as out of scope), and has been approved by all authors. No conflicts of interest or specific funding are reported. DeepSeek V4.1 Flash (version 1017) was used only for copyediting and language refinement. The authors confirm the originality and accuracy of the content, have checked the tool's terms of use and confirm that this use is suitable for publication, and take full responsibility for the integrity of the whole content, including the accuracy of the references.", False, False)],
         [("Thank you for considering this work. The manuscript is intended to provide Engineering Optimization readers with a reproducible way to test whether surrogate information produces valuable engineering decisions before large simulation budgets are committed.", False, False)],
         [("", False, False)],
         [("Sincerely,", False, False)],
@@ -115,11 +115,11 @@ def build_highlights_docx() -> Path:
     set_font(run, size=14, bold=True)
 
     highlights = [
-        "Tests whether surrogate signals alter paid candidate selection.",
+        "Audits whether surrogate signals change a paid engineering decision.",
         "Screens ranking-invariant corrections before expensive evaluations.",
-        "Separates calibration evidence from optimization utility.",
-        "Validates mechanisms on benchmarks and finite-element design.",
-        "Reports delayed policy value with complete evaluation costs.",
+        "Recorded verdicts: one acquisition rule promoted, one stopped, one held.",
+        "Exact immediate-utility reporting costs 138 solves instead of 480.",
+        "Separates calibration evidence from optimization utility and reports full costs.",
     ]
     for item in highlights:
         paragraph = doc.add_paragraph(style="List Bullet")

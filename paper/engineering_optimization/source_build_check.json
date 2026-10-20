@@ -2,12 +2,12 @@
   "format": "Official Taylor & Francis Interact-CAD class and bibliography style",
   "journal_specific_instructions_fully_verified": false,
   "pdf_compiled": true,
-  "layout_verified": true,
+  "layout_verified": false,
   "sources": {
-    "paper/engineering_optimization_manuscript.md": "f6f20a98049bd5fa6e02e9aece7a1181d83fe4fc3f89dd22293064beca8f7239",
-    "paper/engineering_optimization/EO_manuscript.tex": "172130f379835db304185e83a824d4aebcd47c0a96ef6c4389894180c9a1b7d4",
-    "paper/engineering_optimization_supplementary.md": "cdbaa9df721305a265f7d81703b073c201cf951bae92c77709861444ca8ced8f",
-    "paper/engineering_optimization/EO_supplementary.tex": "c5548aa248fbfb5910f0f7c7b179f3be2f523d57b2996e5aee3f4f9d5e11f3ac"
+    "paper/engineering_optimization_manuscript.md": "b89efe7db7cebb1858398978fc053c88623c8e70996501ab48a4cb04f9a1b89e",
+    "paper/engineering_optimization_supplementary.md": "840201041239fcf0c083926983244e6fd4f16a4c44f82dec5f0f680ae744bb83",
+    "paper/engineering_optimization/EO_manuscript.tex": "3862a95c25ce359e8380e07ecc3c24a74eb94034a714c7c685ed64b028c04617",
+    "paper/engineering_optimization/EO_supplementary.tex": "a3ad8b73aa77d336845d530aa495fa9ba02af524bded8be0c6ddebcbe3a6d381"
   },
   "figures": {
     "manuscript": [
@@ -45,6 +45,45 @@
       "figures": 14
     }
   },
-  "abstract_word_count": 141,
-  "rendered_pages": 50
+  "abstract_word_count": 264,
+  "rendered_pages": {
+    "manuscript": 23,
+    "supplementary": 27,
+    "review_copy": 43
+  },
+  "pdf_source": "Word DOCX export (paper/eo_submission/*.docx); the LaTeX track is not compiled because the publisher class is not in this tree",
+  "layout_review_note": "Page-level visual review of the rebuilt 23/27-page PDFs is pending; reference and caption checks pass.",
+  "latex_track": {
+    "status": "frozen author-review artifact, not the submission source",
+    "changes_applied": "sequential table numbering via \\label/\\ref, three history-interaction rows, paired-difference provenance, corrected AI acknowledgement, new Section 6.4 recorded-verdict subsection, quantified paid-call saving in the contribution list",
+    "note": "regenerating the LaTeX source from Markdown would overwrite these hand-applied changes",
+    "compile_verified_20261019": {
+      "engine": "MiKTeX 26.5 pdfLaTeX, bibtex, two further passes, --disable-installer",
+      "pages": 29,
+      "undefined_references_or_citations": 0,
+      "tables": 11,
+      "figures": 6,
+      "bibliography_entries": 39,
+      "bibliography_note": "the previously committed .bbl had 38 entries and omitted ref39, which the text cites; the rebuild adds it",
+      "class": "interact.cls v1.03 (2016/10/17), rebuilt from the official archive sha256 5aeb0952b0021ad98653fe8ca6a1ea8edf35fbd639af5ee5443e6662dff90e25",
+      "pdf_location": "tmp/eo_render/EO_manuscript_latex_27p.pdf (not committed; publisher class is not redistributed)",
+      "table_numbering": "sequential via \\label/\\ref; the prose now prints Table 5 for the validation contrasts, matching the rendered table",
+      "front_matter": "five authors, Pan corresponding, ORCID and e-mails; aligned with the submission track"
+    }
+  },
+  "released_records": [
+    "data/engineering_optimization_bbob_validation_v1",
+    "data/engineering_optimization_beam_endpoints_v1",
+    "data/engineering_optimization_gp_verdicts_v1"
+  ],
+  "rendered_on": "2026-10-19",
+  "deliverables": {
+    "main_word": "paper/eo_submission/EO_submission_manuscript.docx",
+    "review_copy": "paper/eo_submission/EO_submission_manuscript_review.docx (double-spaced, continuous line numbers, page numbers)",
+    "supplementary_word": "paper/eo_submission/EO_supplementary_materials.docx",
+    "cover_letter": "paper/eo_submission/EO_cover_letter.docx",
+    "highlights": "paper/eo_submission/Highlights.doc",
+    "figures": "paper/eo_submission/figures/Fig1-Fig6.png with effective dpi recorded in its README",
+    "builder": "python src/build_eo_docx.py; python src/build_eo_submission_extras.py; python src/build_eo_review_copy.py"
+  }
 }

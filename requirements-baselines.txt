@@ -7,3 +7,7 @@ scikit-learn==1.7.2
 pandas==3.0.2
 matplotlib==3.10.3
 pytest==8.3.5
+# CMA-ES baseline. The 4.x bounds interface is required: cma 3.2.2 (the version pymoo
+# pins, and pymoo is imported only to record version metadata) raises inside
+# BoxConstraintsLinQuadTransformation and makes the CMA-ES reference look broken.
+cma==4.5.0
