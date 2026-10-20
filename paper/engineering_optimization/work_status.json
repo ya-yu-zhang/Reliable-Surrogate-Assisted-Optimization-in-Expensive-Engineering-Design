@@ -479,6 +479,7 @@
       "word_supplementary": 27,
       "latex_main": 29,
       "latex_supplementary": 32
-    }
+    },
+    "hash_scope": "Current-state validators: paper/engineering_optimization/source_build_check.json and the data/*/source_hashes.json releases. Historical stage records (delivery_manifest.json, release_validation.json, source_build_status.json, revision_audit.json and the per-generation manuscript source-hash files) describe the files at their own commit; later revisions changed those files, so those hashes are not validators of the current working tree."
   }
 }
