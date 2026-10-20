@@ -1,328 +1,610 @@
 {
-  "checked_on": "2026-10-11",
+  "checked_on": "2026-10-19",
+  "method": "Crossref REST API for DOI-bearing entries (DataCite for LIPIcs), PMLR and NeurIPS proceedings pages for the four proceedings items lacking a Crossref DOI",
+  "scope": "DOI and metadata cross-check of the 39 numbered references in paper/engineering_optimization_manuscript.md; not a literature review",
+  "result": "39/39 citations match the primary record on title",
   "records": [
     {
-      "source_id": 1,
-      "source_url": "https://api.crossref.org/works/10.1016/j.swevo.2011.05.001",
+      "id": 1,
+      "doi": "10.1016/j.swevo.2011.05.001",
+      "source_verified": "Crossref",
       "title": "Surrogate-assisted evolutionary computation: Recent advances and future challenges",
-      "authors": [
-        "Yaochu Jin"
-      ],
-      "journal": "Swarm and Evolutionary Computation"
+      "first_author": "Y. Jin",
+      "year": "2011",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Jin",
+      "source_year": "2011",
+      "source_volume": "1",
+      "source_pages": "61-70"
     },
     {
-      "source_id": 2,
-      "source_url": "https://api.crossref.org/works/10.1007/s41965-024-00165-w",
+      "id": 2,
+      "doi": "10.1007/s41965-024-00165-w",
+      "source_verified": "Crossref",
       "title": "A survey of surrogate-assisted evolutionary algorithms for expensive optimization",
-      "authors": [
-        "Jing Liang",
-        "Yahang Lou",
-        "Mingyuan Yu",
-        "Ying Bi",
-        "Kunjie Yu"
-      ],
-      "journal": "Journal of Membrane Computing"
+      "first_author": "J. Liang",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Liang",
+      "source_year": "2024",
+      "source_volume": "7",
+      "source_pages": "108-127"
     },
     {
-      "source_id": 3,
-      "source_url": "https://api.crossref.org/works/10.1023/a:1008306431147",
-      "title": "Efficient Global Optimization of Expensive Black-Box Functions",
-      "authors": [
-        "Donald R. Jones",
-        "Matthias Schonlau",
-        "William J. Welch"
-      ],
-      "journal": "Journal of Global Optimization"
+      "id": 3,
+      "doi": "10.1023/a:1008306431147",
+      "source_verified": "Crossref",
+      "title": "Efficient global optimization of expensive black-box functions",
+      "first_author": "D. R. Jones",
+      "year": "1998",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Jones",
+      "source_year": "1998",
+      "source_volume": "13",
+      "source_pages": "455-492"
     },
     {
-      "source_id": 6,
-      "source_url": "https://api.crossref.org/works/10.1016/j.asoc.2025.113320",
+      "id": 4,
+      "doi": "10.1109/tevc.2018.2869001",
+      "source_verified": "Crossref",
+      "title": "Data-driven evolutionary optimization: An overview and case studies",
+      "first_author": "Y. Jin",
+      "year": "2018",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Jin",
+      "source_year": "2019",
+      "source_volume": "23",
+      "source_pages": "442-458"
+    },
+    {
+      "id": 5,
+      "doi": "10.1007/s11633-022-1317-4",
+      "source_verified": "Crossref",
+      "title": "Evolutionary computation for expensive optimization: A survey",
+      "first_author": "J.-Y. Li",
+      "year": "2022",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Li",
+      "source_year": "2022",
+      "source_volume": "19",
+      "source_pages": "3-23"
+    },
+    {
+      "id": 6,
+      "doi": "10.1016/j.asoc.2025.113320",
+      "source_verified": "Crossref",
       "title": "Uncertainty estimation by boosting with Gaussian process for expensive optimization problems",
-      "authors": [
-        "Hanhua Zou",
-        "Sanyou Zeng",
-        "Changhe Li",
-        "Ruwang Jiao",
-        "Fei Zhao"
-      ],
-      "journal": "Applied Soft Computing"
+      "first_author": "H. Zou",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Zou",
+      "source_year": "2025",
+      "source_volume": "180",
+      "source_pages": "113320"
     },
     {
-      "source_id": 7,
-      "source_url": "https://api.crossref.org/works/10.1016/j.asoc.2025.113440",
+      "id": 7,
+      "doi": "10.1016/j.asoc.2025.113440",
+      "source_verified": "Crossref",
       "title": "A surrogate-assisted evolutionary algorithm with Gaussian process regression and diversity search for large-scale expensive optimization",
-      "authors": [
-        "Xiaoliang Ma",
-        "Yueyue Li",
-        "Yongqi Zhuang",
-        "Yanhui Li",
-        "Jihua Fan",
-        "Lei Wang",
-        "Yutao Qi",
-        "Jian Xiong"
-      ],
-      "journal": "Applied Soft Computing"
+      "first_author": "X. Ma",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Ma",
+      "source_year": "2025",
+      "source_volume": "182",
+      "source_pages": "113440"
     },
     {
-      "source_id": 8,
-      "source_url": "https://api.crossref.org/works/10.1007/s40747-025-01812-0",
+      "id": 8,
+      "doi": "10.1007/s40747-025-01812-0",
+      "source_verified": "Crossref",
       "title": "A surrogate-assisted differential evolution algorithm with a dual-space-driven selection strategy for expensive optimization problems",
-      "authors": [
-        "Hanqing Liu",
-        "Zhigang Ren",
-        "Chenlong He",
-        "Wenhao Du"
-      ],
-      "journal": "Complex &amp; Intelligent Systems"
+      "first_author": "H. Liu",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Liu",
+      "source_year": "2025",
+      "source_volume": "11",
+      "source_pages": ""
     },
     {
-      "source_id": 9,
-      "source_url": "https://api.crossref.org/works/10.1109/tsmc.2025.3582897",
-      "title": "Surrogate-Assisted Differential Evolution With Search Space Tightening for High-Dimensional Expensive Optimization Problems",
-      "authors": [
-        "Rongfeng Zhou",
-        "Chongle Ren",
-        "Zhenyu Meng",
-        "Haibin Zhu"
-      ],
-      "journal": "IEEE Transactions on Systems, Man, and Cybernetics: Systems"
+      "id": 9,
+      "doi": "10.1109/tsmc.2025.3582897",
+      "source_verified": "Crossref",
+      "title": "Surrogate-assisted differential evolution with search space tightening for high-dimensional expensive optimization problems",
+      "first_author": "R. Zhou",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Zhou",
+      "source_year": "2025",
+      "source_volume": "55",
+      "source_pages": "7356-7368"
     },
     {
-      "source_id": 10,
-      "source_url": "https://api.crossref.org/works/10.1016/j.swevo.2026.102491",
+      "id": 10,
+      "doi": "10.1016/j.swevo.2026.102491",
+      "source_verified": "Crossref",
       "title": "A multi-source surrogate-assisted evolutionary algorithm for expensive optimization: An optinformatics perspective",
-      "authors": [
-        "Laiqi Yu",
-        "Yinan Guo",
-        "Liang Feng",
-        "Zexuan Zhu",
-        "Ziqi Wei",
-        "Yaqing Hou"
-      ],
-      "journal": "Swarm and Evolutionary Computation"
+      "first_author": "L. Yu",
+      "year": "2026",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Yu",
+      "source_year": "2026",
+      "source_volume": "107",
+      "source_pages": "102491"
     },
     {
-      "source_id": 15,
-      "source_url": "https://api.crossref.org/works/10.1007/978-3-032-23604-3_24",
-      "title": "Toward Reliable Uncertainty Quantification in Surrogate-Assisted Evolutionary Algorithms via Temporal Conformal Prediction",
-      "authors": [
-        "Emanuele Nardone",
-        "Claudio De Stefano",
-        "Alessandra Scotto di Freca",
-        "Francesco Fontanella",
-        "Tiziana D’Alessandro"
-      ],
-      "journal": "Lecture Notes in Computer Science"
+      "id": 11,
+      "doi": "10.1016/j.swevo.2020.100787",
+      "source_verified": "Crossref",
+      "title": "A novel surrogate-assisted evolutionary algorithm with an uncertainty grouping based infill criterion",
+      "first_author": "Q. Liu",
+      "year": "2020",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Liu",
+      "source_year": "2021",
+      "source_volume": "60",
+      "source_pages": "100787"
     },
     {
-      "source_id": 20,
-      "source_url": "https://api.crossref.org/works/10.1016/j.array.2025.100461",
+      "id": 12,
+      "doi": "",
+      "source_verified": "PMLR v238",
+      "title": "Online calibrated and conformal prediction improves Bayesian optimization",
+      "first_author": "S. Deshpande",
+      "year": "2024",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Deshpande",
+      "source_year": "2024",
+      "source_volume": "238",
+      "source_pages": "1450-1458"
+    },
+    {
+      "id": 13,
+      "doi": "10.1109/tsp.2025.3559568",
+      "source_verified": "Crossref",
+      "title": "Robust Bayesian optimization via localized online conformal prediction",
+      "first_author": "D. Kim",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Kim",
+      "source_year": "2025",
+      "source_volume": "73",
+      "source_pages": "2039-2052"
+    },
+    {
+      "id": 14,
+      "doi": "10.1093/jrsssb/qkaf016",
+      "source_verified": "Crossref",
+      "title": "Confidence on the focal: Conformal prediction with selection-conditional coverage",
+      "first_author": "Y. Jin and Z. Ren",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Jin",
+      "source_year": "2025",
+      "source_volume": "87",
+      "source_pages": "1239-1259"
+    },
+    {
+      "id": 15,
+      "doi": "10.1007/978-3-032-23604-3_24",
+      "source_verified": "Crossref",
+      "title": "Toward reliable uncertainty quantification in surrogate-assisted evolutionary algorithms via temporal conformal prediction",
+      "first_author": "E. Nardone",
+      "year": "2026",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Nardone",
+      "source_year": "2026",
+      "source_volume": "",
+      "source_pages": "384-401"
+    },
+    {
+      "id": 16,
+      "doi": "10.2514/2.1999",
+      "source_verified": "Crossref",
+      "title": "Evolutionary optimization of computationally expensive problems via surrogate modeling",
+      "first_author": "Y. S. Ong",
+      "year": "1999",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Ong",
+      "source_year": "2003",
+      "source_volume": "41",
+      "source_pages": "687-696"
+    },
+    {
+      "id": 17,
+      "doi": "10.1109/tcyb.2017.2710978",
+      "source_verified": "Crossref",
+      "title": "Committee-based active learning for surrogate-assisted particle swarm optimization of expensive problems",
+      "first_author": "H. Wang",
+      "year": "2017",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Wang",
+      "source_year": "2017",
+      "source_volume": "47",
+      "source_pages": "2664-2677"
+    },
+    {
+      "id": 18,
+      "doi": "10.1007/s00158-019-02391-8",
+      "source_verified": "Crossref",
+      "title": "A dynamic surrogate-assisted evolutionary algorithm framework for expensive structural optimization",
+      "first_author": "M. Yu",
+      "year": "2020",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Yu",
+      "source_year": "2019",
+      "source_volume": "61",
+      "source_pages": "711-729"
+    },
+    {
+      "id": 19,
+      "doi": "10.1109/tevc.2017.2675628",
+      "source_verified": "Crossref",
+      "title": "Surrogate-assisted cooperative swarm optimization of high-dimensional expensive problems",
+      "first_author": "C. Sun",
+      "year": "2017",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Sun",
+      "source_year": "2017",
+      "source_volume": "21",
+      "source_pages": "644-660"
+    },
+    {
+      "id": 20,
+      "doi": "10.1016/j.array.2025.100461",
+      "source_verified": "Crossref",
       "title": "Impact of surrogate model accuracy on performance and model management strategy in surrogate-assisted evolutionary algorithms",
-      "authors": [
-        "Yuki Hanawa",
-        "Tomohiro Harada",
-        "Yukiya Miura"
-      ],
-      "journal": "Array"
+      "first_author": "Y. Hanawa",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Hanawa",
+      "source_year": "2025",
+      "source_volume": "27",
+      "source_pages": "100461"
     },
     {
-      "source_id": 21,
-      "source_url": "https://api.crossref.org/works/10.1016/j.engappai.2024.109075",
+      "id": 21,
+      "doi": "10.1016/j.engappai.2024.109075",
+      "source_verified": "Crossref",
       "title": "Observations in applying Bayesian versus evolutionary approaches and their hybrids in parallel time-constrained optimization",
-      "authors": [
-        "Maxime Gobert",
-        "Guillaume Briffoteaux",
-        "Jan Gmys",
-        "Nouredine Melab",
-        "Daniel Tuyttens"
-      ],
-      "journal": "Engineering Applications of Artificial Intelligence"
+      "first_author": "M. Gobert",
+      "year": "2024",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Gobert",
+      "source_year": "2024",
+      "source_volume": "137",
+      "source_pages": "109075"
     },
     {
-      "source_id": 22,
-      "source_url": "https://api.crossref.org/works/10.1016/j.swevo.2025.101905",
+      "id": 22,
+      "doi": "10.1016/j.swevo.2025.101905",
+      "source_verified": "Crossref",
       "title": "Un-evaluated solutions may be valuable in expensive optimization",
-      "authors": [
-        "Hao Hao",
-        "Xiaoqun Zhang",
-        "Aimin Zhou"
-      ],
-      "journal": "Swarm and Evolutionary Computation"
+      "first_author": "H. Hao",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Hao",
+      "source_year": "2025",
+      "source_volume": "94",
+      "source_pages": "101905"
     },
     {
-      "source_id": 26,
-      "source_url": "https://api.crossref.org/works/10.1080/10556788.2020.1808977",
-      "title": "COCO: a platform for comparing continuous optimizers in a black-box setting",
-      "authors": [
-        "Nikolaus Hansen",
-        "Anne Auger",
-        "Raymond Ros",
-        "Olaf Mersmann",
-        "Tea Tušar",
-        "Dimo Brockhoff"
-      ],
-      "journal": "Optimization Methods and Software"
+      "id": 23,
+      "doi": "10.52202/085713-0003",
+      "source_verified": "Crossref",
+      "title": "EngiBench: A framework for data-driven engineering design research",
+      "first_author": "F. Felten",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Felten",
+      "source_year": "2025",
+      "source_volume": "",
+      "source_pages": "70-113"
     },
     {
-      "source_id": 27,
-      "source_url": "https://api.crossref.org/works/10.32604/cmc.2025.064544",
-      "title": "Neural Architecture Search via Hierarchical Evaluation of Surrogate Models",
-      "authors": [
-        "Xiaofeng Liu",
-        "Yubin Bao",
-        "Fangling Leng"
-      ],
-      "journal": "Computers, Materials &amp; Continua"
+      "id": 24,
+      "doi": "",
+      "source_verified": "PMLR v188",
+      "title": "LassoBench: A high-dimensional hyperparameter optimization benchmark suite for Lasso",
+      "first_author": "K. Sehic",
+      "year": "2022",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Šehić",
+      "source_year": "2022",
+      "source_volume": "188",
+      "source_pages": "2/1-24"
     },
     {
-      "source_id": 28,
-      "source_url": "https://api.crossref.org/works/10.32604/cmc.2024.053075",
-      "title": "DeepSurNet-NSGA II: Deep Surrogate Model-Assisted Multi-Objective Evolutionary Algorithm for Enhancing Leg Linkage in Walking Robots",
-      "authors": [
-        "Sayat Ibrayev",
-        "Batyrkhan Omarov",
-        "Arman Ibrayeva",
-        "Zeinel Momynkulov"
-      ],
-      "journal": "Computers, Materials &amp; Continua"
+      "id": 25,
+      "doi": "",
+      "source_verified": "arXiv 1910.01739 (NeurIPS 32)",
+      "title": "Scalable global optimization via local Bayesian optimization",
+      "first_author": "D. Eriksson",
+      "year": "1910",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Eriksson",
+      "source_year": "2019",
+      "source_volume": "32",
+      "source_pages": ""
     },
     {
-      "source_id": 29,
-      "source_url": "https://api.crossref.org/works/10.32604/cmc.2025.065648",
-      "title": "Physics-Informed Gaussian Process Regression with Bayesian Optimization for Laser Welding Quality Control in Coaxial Laser Diodes",
-      "authors": [
-        "Ziyang Wang",
-        "Lian Duan",
-        "Lei Kuang",
-        "Haibo Zhou",
-        "Ji’an Duan"
-      ],
-      "journal": "Computers, Materials &amp; Continua"
+      "id": 26,
+      "doi": "10.1080/10556788.2020.1808977",
+      "source_verified": "Crossref",
+      "title": "COCO: A platform for comparing continuous optimizers in a black-box setting",
+      "first_author": "N. Hansen",
+      "year": "2020",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Hansen",
+      "source_year": "2020",
+      "source_volume": "36",
+      "source_pages": "114-144"
     },
     {
-      "source_id": 30,
-      "source_url": "https://api.crossref.org/works/10.1007/s11432-023-3909-x",
-      "title": "Enhancing SAEAs with unevaluated solutions: a case study of relation model for expensive optimization",
-      "authors": [
-        "Hao Hao",
-        "Xiaoqun Zhang",
-        "Aimin Zhou"
-      ],
-      "journal": "Science China Information Sciences"
+      "id": 27,
+      "doi": "10.32604/cmc.2025.064544",
+      "source_verified": "Crossref",
+      "title": "Neural architecture search via hierarchical evaluation of surrogate models",
+      "first_author": "X. Liu",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Liu",
+      "source_year": "2025",
+      "source_volume": "84",
+      "source_pages": "3503-3517"
     },
     {
-      "source_id": 31,
-      "source_url": "https://api.crossref.org/works/10.1016/j.cosrev.2026.100990",
+      "id": 28,
+      "doi": "10.32604/cmc.2024.053075",
+      "source_verified": "Crossref",
+      "title": "DeepSurNet-NSGA II: Deep surrogate model-assisted multi-objective evolutionary algorithm for enhancing leg linkage in walking robots",
+      "first_author": "S. Ibrayev",
+      "year": "2024",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Ibrayev",
+      "source_year": "2024",
+      "source_volume": "81",
+      "source_pages": "229-249"
+    },
+    {
+      "id": 29,
+      "doi": "10.32604/cmc.2025.065648",
+      "source_verified": "Crossref",
+      "title": "Physics-informed Gaussian process regression with Bayesian optimization for laser welding quality control in coaxial laser diodes",
+      "first_author": "Z. Wang",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Wang",
+      "source_year": "2025",
+      "source_volume": "84",
+      "source_pages": "2587-2604"
+    },
+    {
+      "id": 30,
+      "doi": "10.1007/s11432-023-3909-x",
+      "source_verified": "Crossref",
+      "title": "Enhancing SAEAs with unevaluated solutions: A case study of relation model for expensive optimization",
+      "first_author": "H. Hao",
+      "year": "2024",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Hao",
+      "source_year": "2024",
+      "source_volume": "67",
+      "source_pages": ""
+    },
+    {
+      "id": 31,
+      "doi": "10.1016/j.cosrev.2026.100990",
+      "source_verified": "Crossref",
       "title": "Differential evolution with exponential crossover: A survey",
-      "authors": [
-        "Jeng-Shyang Pan",
-        "Junpeng Chen",
-        "Juncan Li",
-        "Zhenyu Meng"
-      ],
-      "journal": "Computer Science Review"
+      "first_author": "J.-S. Pan",
+      "year": "2026",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Pan",
+      "source_year": "2026",
+      "source_volume": "62",
+      "source_pages": "100990"
     },
     {
-      "source_id": 32,
-      "source_url": "https://api.crossref.org/works/10.1109/tcyb.2025.3634364",
-      "title": "Multilayer Perceptron Grouping and Sparse Gaussian Process-Based Surrogate-Assisted Evolutionary Algorithm for Expensive Multiobjective Optimization",
-      "authors": [
-        "Jeng-Shyang Pan",
-        "Yunfeng Peng",
-        "Jianpo Li",
-        "Jia Zhao",
-        "Lingping Kong",
-        "Shu-Chuan Chu"
-      ],
-      "journal": "IEEE Transactions on Cybernetics"
+      "id": 32,
+      "doi": "10.1109/tcyb.2025.3634364",
+      "source_verified": "Crossref",
+      "title": "Multilayer perceptron grouping and sparse Gaussian process-based surrogate-assisted evolutionary algorithm for expensive multiobjective optimization",
+      "first_author": "J.-S. Pan",
+      "year": "2025",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Pan",
+      "source_year": "2026",
+      "source_volume": "56",
+      "source_pages": "2148-2161"
     },
     {
-      "source_id": 33,
-      "source_url": "https://api.crossref.org/works/10.1016/j.eswa.2026.133075",
+      "id": 33,
+      "doi": "10.1016/j.eswa.2026.133075",
+      "source_verified": "Crossref",
       "title": "A bimodal surrogate-assisted PSO algorithm with wide coverage and dynamic space refinement for expensive multi-UAV path planning",
-      "authors": [
-        "Ru-Yu Wang",
-        "Jeng-Shyang Pan",
-        "Shu-Chuan Chu",
-        "Václav Snášel",
-        "Jia Zhao",
-        "Hong-Mei Yang"
-      ],
-      "journal": "Expert Systems with Applications"
+      "first_author": "R.-Y. Wang",
+      "year": "2026",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Wang",
+      "source_year": "2026",
+      "source_volume": "331",
+      "source_pages": "133075"
     },
     {
-      "source_id": 34,
-      "source_url": "https://api.crossref.org/works/10.1080/0305215x.2024.2381818",
+      "id": 34,
+      "doi": "10.1080/0305215x.2024.2381818",
+      "source_verified": "Crossref",
       "title": "Diagnostic benchmarking of many-objective evolutionary algorithms for real-world problems",
-      "authors": [
-        "Jazmin Zatarain Salazar",
-        "David Hadka",
-        "Patrick Reed",
-        "Haitham Seada",
-        "Kalyanmoy Deb"
-      ],
-      "journal": "Engineering Optimization"
+      "first_author": "J. Zatarain Salazar",
+      "year": "2024",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Zatarain Salazar",
+      "source_year": "2024",
+      "source_volume": "57",
+      "source_pages": "287-308"
     },
     {
-      "source_id": 35,
-      "source_url": "https://api.crossref.org/works/10.1080/0305215x.2018.1446084",
+      "id": 35,
+      "doi": "10.1080/0305215x.2018.1446084",
+      "source_verified": "Crossref",
       "title": "Evolutionary reliable regional Kriging surrogate for expensive optimization",
-      "authors": [
-        " Suprayitno",
-        "Jyh-Cheng Yu"
-      ],
-      "journal": "Engineering Optimization"
+      "first_author": "Suprayitno and J.-C. Yu",
+      "year": "2018",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Suprayitno",
+      "source_year": "2018",
+      "source_volume": "51",
+      "source_pages": "247-264"
     },
     {
-      "source_id": 37,
-      "source_url": "https://api.crossref.org/works/10.1007/978-3-031-14714-2_4",
-      "title": "Per-run Algorithm Selection with Warm-Starting Using Trajectory-Based Features",
-      "authors": [
-        "Ana Kostovska",
-        "Anja Jankovic",
-        "Diederick Vermetten",
-        "Jacob de Nobel",
-        "Hao Wang",
-        "Tome Eftimov",
-        "Carola Doerr"
-      ],
-      "journal": "Lecture Notes in Computer Science"
+      "id": 36,
+      "doi": "10.4230/lipics.cp.2024.38",
+      "source_verified": "DataCite",
+      "title": "Frugal algorithm selection (short paper)",
+      "first_author": "E. Kuş",
+      "year": "2024",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Kuş",
+      "source_year": "2024",
+      "source_volume": "",
+      "source_pages": ""
     },
     {
-      "source_id": 38,
-      "source_url": "https://api.crossref.org/works/10.1007/bf01197708",
+      "id": 37,
+      "doi": "10.1007/978-3-031-14714-2_4",
+      "source_verified": "Crossref",
+      "title": "Per-run algorithm selection with warm-starting using trajectory-based features",
+      "first_author": "A. Kostovska",
+      "year": "2022",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Kostovska",
+      "source_year": "2022",
+      "source_volume": "",
+      "source_pages": "46-60"
+    },
+    {
+      "id": 38,
+      "doi": "10.1007/bf01197708",
+      "source_verified": "Crossref",
       "title": "A rigorous framework for optimization of expensive functions by surrogates",
-      "authors": [
-        "A. J. Booker",
-        "J. E. Dennis",
-        "P. D. Frank",
-        "D. B. Serafini",
-        "V. Torczon",
-        "M. W. Trosset"
-      ],
-      "journal": "Structural Optimization"
+      "first_author": "A. J. Booker",
+      "year": "1999",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Booker",
+      "source_year": "1999",
+      "source_volume": "17",
+      "source_pages": "1-13"
+    },
+    {
+      "id": 39,
+      "doi": "",
+      "source_verified": "NeurIPS 32 proceedings page",
+      "title": "Practical two-step lookahead Bayesian optimization",
+      "first_author": "J. Wu and P. I. Frazier",
+      "year": "2019",
+      "venue": "",
+      "title_matches_source": true,
+      "source_first_author": "Wu",
+      "source_year": "2019",
+      "source_volume": "32",
+      "source_pages": ""
     }
   ],
   "corrections": [
     {
+      "id": 5,
+      "change": "journal, volume, pages and year corrected: Int. J. Autom. Comput. 18:1-21 (2021) -> Machine Intelligence Research 19(1):3-23 (2022); DOI added"
+    },
+    {
       "id": 7,
-      "change": "Correct author order: Xiaomin Ma is first author."
+      "change": "author order corrected so that X. Ma is first author; Crossref first author is Ma Xiaoliang, and the superseded repository note naming a different given name for this author was wrong"
     },
     {
       "id": 8,
-      "change": "Replace incorrect X. Yang attribution with H. Liu, Z. Ren, C. He and W. Du.",
-      "publisher_url": "https://link.springer.com/article/10.1007/s40747-025-01812-0"
+      "change": "first author corrected from X. Yang to H. Liu; Crossref lists Liu, Ren, He, Du"
+    },
+    {
+      "id": 13,
+      "change": "arXiv preprint replaced by the published version: IEEE Trans. Signal Process. 73:2039-2052 (2025)"
+    },
+    {
+      "id": 14,
+      "change": "arXiv preprint replaced by the published version: J. R. Stat. Soc. Ser. B 87:1239-1259 (2025)"
     },
     {
       "id": 23,
-      "change": "Expand author list from the project citation.",
-      "source_url": "https://engibench.ethz.ch/"
+      "change": "author list completed (12 authors); Crossref DOI added"
+    },
+    {
+      "id": 25,
+      "change": "author names aligned to Crossref/arXiv (J. A. Gardner, R. Turner); arXiv identifier added"
     },
     {
       "id": 26,
-      "change": "Correct DOI to 10.1080/10556788.2020.1808977 and expand author list.",
-      "source_url": "https://coco-platform.org/index.html"
+      "change": "DOI corrected from 10.1080/10556788.2018.1502028 (resolves to HTTP 404) to 10.1080/10556788.2020.1808977; author list completed"
+    },
+    {
+      "id": 36,
+      "change": "venue refined to short paper; author diacritics corrected (Kus -> Kus with s-cedilla, Akgun -> Akgun with u-umlaut)"
+    },
+    {
+      "id": 39,
+      "change": "added: Wu and Frazier, Practical Two-Step Lookahead Bayesian Optimization, NeurIPS 32 (2019), verified on the NeurIPS proceedings page"
     }
   ],
-  "scope": "DOI metadata cross-check; not a complete new literature review."
+  "uncertainty": [
+    {
+      "id": 30,
+      "note": "article number 120103 is not carried by the Crossref record; journal and DOI verified"
+    },
+    {
+      "id": 36,
+      "note": "LIPIcs page range 38:1-38:16 not carried by DataCite; volume and DOI verified"
+    },
+    {
+      "id": 6,
+      "note": "Crossref lists more authors than the five cited here; the full author list may need adding"
+    }
+  ]
 }

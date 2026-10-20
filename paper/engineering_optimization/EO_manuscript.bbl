@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{39}
 \newcommand{\enquote}[1]{``#1''}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\normalfont{#1}}
@@ -67,15 +67,15 @@ Jin, Y. 2011. ``{Surrogate-assisted evolutionary computation: Recent advances
   and future challenges}.'' \emph{Swarm Evol. Comput.} 1 (2): 61--70.
   https://doi.org/{10.1016/j.swevo.2011.05.001}.
 
-\bibitem[Jin and Ren(2024)]{ref14}
-Jin, Y., and Z.~Ren. 2024. ``{Confidence on the focal: Conformal prediction
-  with selection-conditional coverage}.'' arXiv:2403.03868v3.
-  \urlprefix\url{https://arxiv.org/abs/2403.03868v3}.
+\bibitem[Jin and Ren(2025)]{ref14}
+Jin, Y., and Z.~Ren. 2025. ``{Confidence on the focal: Conformal prediction
+  with selection-conditional coverage}.'' \emph{J. R. Stat. Soc. Ser. B} 87:
+  1239--1259. https://doi.org/{10.1093/jrsssb/qkaf016}.
 
 \bibitem[Jin et~al.(2019)]{ref04}
 Jin, Y., H.~Wang, T.~Chugh, D.~Guo, and K.~Miettinen. 2019. ``{Data-driven
   evolutionary optimization: An overview and case studies}.'' \emph{IEEE Trans.
-  Evol. Comput.} 23 (3): 442--458.
+  Evol. Comput.} 23 (3): 442--458. https://doi.org/{10.1109/TEVC.2018.2869001}.
 
 \bibitem[Jones, Schonlau, and Welch(1998)]{ref03}
 Jones, D.~R., M.~Schonlau, and W.~J. Welch. 1998. ``{Efficient global
@@ -84,8 +84,8 @@ Jones, D.~R., M.~Schonlau, and W.~J. Welch. 1998. ``{Efficient global
 
 \bibitem[Kim et~al.(2025)]{ref13}
 Kim, D., M.~Zecchin, S.~Park, J.~Kang, and O.~Simeone. 2025. ``{Robust Bayesian
-  optimization via localized online conformal prediction}.''
-  arXiv:2411.17387v2.  \urlprefix\url{https://arxiv.org/abs/2411.17387v2}.
+  optimization via localized online conformal prediction}.'' \emph{IEEE Trans.
+  Signal Process.} 73: 2039--2052. https://doi.org/{10.1109/TSP.2025.3559568}.
 
 \bibitem[Kostovska et~al.(2022)]{ref37}
 Kostovska, A., A.~Jankovic, D.~Vermetten, J.~de~Nobel, H.~Wang, T.~Eftimov, and
@@ -93,13 +93,14 @@ Kostovska, A., A.~Jankovic, D.~Vermetten, J.~de~Nobel, H.~Wang, T.~Eftimov, and
   trajectory-based features}.'' In \emph{Parallel Problem Solving from Nature -
   PPSN XVII}, Vol. 13398, 46--60.
 
-\bibitem[Kus et~al.(2024)]{ref36}
-Kus, E., O.~Akgun, N.~Dang, and I.~Miguel. 2024. ``{Frugal algorithm
-  selection}.'' In \emph{Proc. CP 2024}, Vol. 307, 38:1--38:16.
+\bibitem[Ku{\c s} et~al.(2024)]{ref36}
+Ku{\c s}, E., {\"O}.~Akg{\"u}n, N.~Dang, and I.~Miguel. 2024. ``{Frugal
+  algorithm selection (short paper)}.'' In \emph{Proc. CP 2024}, Vol. 307.
 
-\bibitem[Li, Zhan, and Zhang(2021)]{ref05}
-Li, J.-Y., Z.-H. Zhan, and J.~Zhang. 2021. ``{Evolutionary computation for
-  expensive optimization: A survey}.'' \emph{Int. J. Autom. Comput.} 18: 1--21.
+\bibitem[Li, Zhan, and Zhang(2022)]{ref05}
+Li, J.-Y., Z.-H. Zhan, and J.~Zhang. 2022. ``{Evolutionary computation for
+  expensive optimization: A survey}.'' \emph{Mach. Intell. Res.} 19 (1): 3--23.
+  https://doi.org/{10.1007/s11633-022-1317-4}.
 
 \bibitem[Liang et~al.(2025)]{ref02}
 Liang, J., Y.~Lou, M.~Yu, Y.~Bi, and K.~Yu. 2025. ``{A survey of
@@ -117,6 +118,7 @@ Liu, H., Z.~Ren, C.~He, and W.~Du. 2025. ``{A surrogate-assisted differential
 Liu, Q., X.~Wu, Q.~Lin, J.~Ji, and K.-C. Wong. 2021. ``{A novel
   surrogate-assisted evolutionary algorithm with an uncertainty grouping based
   infill criterion}.'' \emph{Swarm Evol. Comput.} 60: 100787.
+  https://doi.org/{10.1016/j.swevo.2020.100787}.
 
 \bibitem[Liu, Bao, and Leng(2025)]{ref27}
 Liu, X., Y.~Bao, and F.~Leng. 2025. ``{Neural architecture search via
@@ -140,7 +142,7 @@ Nardone, E., C.~De Stefano, A.~Scotto di~Freca, F.~Fontanella, and
 \bibitem[Ong, Nair, and Keane(2003)]{ref16}
 Ong, Y.~S., P.~B. Nair, and A.~J. Keane. 2003. ``{Evolutionary optimization of
   computationally expensive problems via surrogate modeling}.'' \emph{AIAA J.}
-  41 (4): 687--696.
+  41 (4): 687--696. https://doi.org/{10.2514/2.1999}.
 
 \bibitem[Pan et~al.(2026{\natexlab{a}})]{ref31}
 Pan, J.-S., J.~Chen, J.~Li, and Z.~Meng. 2026{\natexlab{a}}. ``{Differential
@@ -158,11 +160,13 @@ Pan, J.-S., Y.~Peng, J.~Li, J.~Zhao, L.~Kong, and S.-C. Chu.
 Sehic, K., A.~Gramfort, J.~Salmon, and L.~Nardi. 2022. ``{LassoBench: A
   high-dimensional hyperparameter optimization benchmark suite for Lasso}.'' In
   \emph{Proc. 1st Int. Conf. Automated Machine Learning}, Vol. 188, 2/1--2/24.
+  \urlprefix\url{https://proceedings.mlr.press/v188/sehic22a.html}.
 
 \bibitem[Sun et~al.(2017)]{ref19}
 Sun, C., Y.~Jin, R.~Cheng, J.~Ding, and J.~Zeng. 2017. ``{Surrogate-assisted
   cooperative swarm optimization of high-dimensional expensive problems}.''
   \emph{IEEE Trans. Evol. Comput.} 21 (4): 644--660.
+  https://doi.org/{10.1109/TEVC.2017.2675628}.
 
 \bibitem[Suprayitno and Yu(2019)]{ref35}
 Suprayitno, and J.-C. Yu. 2019. ``{Evolutionary reliable regional Kriging
@@ -173,6 +177,7 @@ Suprayitno, and J.-C. Yu. 2019. ``{Evolutionary reliable regional Kriging
 Wang, H., Y.~Jin, and J.~Doherty. 2017. ``{Committee-based active learning for
   surrogate-assisted particle swarm optimization of expensive problems}.''
   \emph{IEEE Trans. Cybern.} 47 (9): 2664--2677.
+  https://doi.org/{10.1109/TCYB.2017.2710978}.
 
 \bibitem[Wang et~al.(2026)]{ref33}
 Wang, R.-Y., J.-S. Pan, S.-C. Chu, V.~Snášel, J.~Zhao, and H.-M. Yang. 2026.
@@ -186,6 +191,12 @@ Wang, Z., L.~Duan, L.~Kuang, H.~Zhou, and J.~Duan. 2025. ``{Physics-informed
   quality control in coaxial laser diodes}.'' \emph{Comput. Mater. Contin.} 84
   (2): 2587--2604. https://doi.org/{10.32604/cmc.2025.065648}.
 
+\bibitem[Wu and Frazier(2019)]{ref39}
+Wu, Jian, and Peter Frazier. 2019. ``{Practical Two-Step Lookahead Bayesian
+  Optimization}.'' In \emph{Advances in Neural Information Processing Systems},
+  Vol.~32.
+  \urlprefix\url{https://papers.neurips.cc/paper_files/paper/2019/hash/2e6d9c6052e99fcdfa61d9b9da273ca2-Abstract.html}.
+
 \bibitem[Yu et~al.(2026)]{ref10}
 Yu, L., Y.~Guo, L.~Feng, Z.~Zhu, Z.~Wei, and Y.~Hou. 2026. ``{A multi-source
   surrogate-assisted evolutionary algorithm for expensive optimization: An
@@ -196,6 +207,7 @@ Yu, L., Y.~Guo, L.~Feng, Z.~Zhu, Z.~Wei, and Y.~Hou. 2026. ``{A multi-source
 Yu, M., X.~Li, and J.~Liang. 2020. ``{A dynamic surrogate-assisted evolutionary
   algorithm framework for expensive structural optimization}.'' \emph{Struct.
   Multidiscip. Optim.} 61 (2): 711--729.
+  https://doi.org/{10.1007/s00158-019-02391-8}.
 
 \bibitem[Zatarain~Salazar et~al.(2025)]{ref34}
 Zatarain~Salazar, J., D.~Hadka, P.~Reed, H.~Seada, and K.~Deb. 2025.

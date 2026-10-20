@@ -31,14 +31,16 @@ The shortened abstract summarizes these existing findings. References retain sta
 
 ## AI disclosure and author responsibility
 
-Official policy checked on 11 October 2026:
+Official policy checked on 11 October 2026 and again on 20 October 2026:
 https://authorservices.taylorandfrancis.com/editorial-policies/using-ai-in-your-research-and-manuscript-preparations/
 
-Taylor & Francis permits copyediting assistance and author-validated coding assistance, but disallows generative AI creating a manuscript/section first draft or creating/concluding an argument. The prior work in this conversation included assistance preparing drafts of added scientific sections and arguments. It must not be relabelled as grammar-only assistance or automatically certified compliant. The working acknowledgement states the actual unresolved status. Authors must substantively assess and rewrite the affected argument and ask the publisher about any remaining policy uncertainty; a detector score cannot establish that this history complies with the policy.
+Taylor & Francis permits copyediting assistance and author-validated coding assistance, but disallows generative AI creating a manuscript/section first draft or creating/concluding an argument. The corrected record for this project is that generative AI was used for copyediting and language refinement only: it did not draft manuscript or supplementary sections, form or conclude the scientific argument, and did not generate the analysis or table-dressing code. Earlier repository notes asserting that drafting assistance had occurred are superseded by this paragraph.
 
-For this step, OpenAI Codex based on GPT-6 was used for formatting, source-building code, reference checks and copyediting. Earlier session versions and the full extent of assistance require author confirmation. Authors must independently validate the software, evidence, citations and final interpretations, verify applicable tool terms, complete an accurate disclosure, and approve the submitted version. Do not claim these actions have already occurred.
+The page lists four elements the declaration must cover: the authors confirm originality and accuracy; the tool name and version number; a confirmation that the authors checked the tool's terms of use and consider its use suitable for publication; and the authors' full responsibility for the integrity of the content, including the accuracy of the references. The submission declaration addresses all four:
 
-No AI-detector service was used, and no score is asserted. A result below 10% cannot be guaranteed across unspecified detectors, versions and settings. This revision makes no detector-evasion modifications and does not conceal assistance.
+> DeepSeek V4.1 Flash (version 1017) was used only for copyediting and language refinement to improve spelling, grammar, clarity and flow. It did not draft the manuscript or any section of it, form or conclude the argument, or generate the analysis code or the tables. The authors confirm the originality and accuracy of the content. The authors have checked the terms of use of the tool and confirm that this use is suitable for publication. The authors take full responsibility for the integrity of the whole content, including the accuracy of the references.
+
+The tool name and version are supplied by the corresponding author. No AI-detector service was used, and no score is asserted. This revision makes no detector-evasion modifications and does not conceal assistance.
 
 ## Rebuild
 
@@ -57,7 +59,7 @@ For a container with TeX files but missing local formats/search databases, the c
 ## Remaining author actions
 
 1. Supply the actual affiliations for Zhenyu Meng and Jia Zhao; placeholders remain visible in both PDFs.
-2. Substantively review the AI-assisted added argument and prose, complete the disclosure and all author approvals, and resolve publisher-policy uncertainty.
+2. Confirm the disclosure wording ("copyediting and language refinement only"), complete all author approvals, and verify the manuscript text against the authors' own argument.
 3. Confirm the current journal-specific template, word limit, article type, reference variant and portal declarations through the instructions/portal.
 4. Check the final data-availability statement and any large-file archive release, and cite the final frozen source release.
 

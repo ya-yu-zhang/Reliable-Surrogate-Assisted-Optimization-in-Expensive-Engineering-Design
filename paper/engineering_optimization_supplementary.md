@@ -1,4 +1,4 @@
-# Supplementary Materials for A Decision-Consequence Auditing Framework for Reliable Surrogate-Assisted Optimization in Expensive Engineering Design
+# Supplementary Materials for Decision-consequence auditing for surrogate-assisted optimization in expensive engineering design
 
 **Shu-Chuan Chu, Ya-Yu Zhang, Zhenyu Meng, Jia Zhao and Jeng-Shyang Pan**
 
@@ -35,7 +35,7 @@ The manuscript sources, implementation, frozen configurations, and dependency re
 
 ### S1.1 Exploration, failure, and sparse declarations
 
-The prediction-error-monitoring prototype with temporal weighting (PEM-T) explores approximately 36.6% and 33.4% of post-initialization evaluations, compared with approximately 10% for the fixed control. Its observed failure fractions are approximately 9.9% and 9.5%. The corresponding spatiotemporal configuration is denoted by PEM-ST. The pooled false-discovery proportion is denoted by FDP; an unavailable value is denoted by NA. Being near the nominal monitoring level does not correspond to better endpoints.
+The prediction-error-monitoring prototype with temporal weighting (PEM-T) explores approximately 36.6% and 33.4% of post-initialization evaluations, compared with approximately 10% for the fixed control. Its observed failure fractions are approximately 9.9% and 9.5%. The corresponding prediction-error-monitoring configuration with spatiotemporal weighting is denoted by PEM-ST. The pooled false-discovery proportion is denoted by FDP; an unavailable value is denoted by NA. Being near the nominal monitoring level does not correspond to better endpoints.
 
 Table: Joint closed-loop decision indicators, 72 runs per dimension/method
 
@@ -184,7 +184,7 @@ The first diagnostic checkpoints are 41/100, 61/200, and 101/400. Sparse declare
 
 ## S2.2 External background references
 
-Sobol and the pycma implementation of covariance matrix adaptation evolution strategy (CMA-ES) retain their own search mechanisms and initialization. Their 1,296 runs and 302,400 paid evaluations passed separate journal audits. For descriptive common-scale comparison only, each external run's final error is divided by the matching internal common-initialization error, and medians are taken after this run-level normalization. The external optimizers never receive those internal labels. This supports budget-matched background comparison, not a same-history causal comparison or reproduction of published SAEA competitors.
+Sobol and the pycma implementation of covariance matrix adaptation evolution strategy (CMA-ES) retain their own search mechanisms and initialization. Their 1,296 runs and 302,400 paid evaluations passed separate journal audits. For descriptive common-scale comparison only, each external run's final error is divided by the matching internal common-initialization error, and medians are taken after this run-level normalization. The external optimizers never receive those internal labels. This supports budget-matched background comparison, not a same-history causal comparison or reproduction of published surrogate-assisted evolutionary algorithm (SAEA) competitors.
 
 Table: Descriptive background endpoint scores over all 24 functions. Lower is better; no additional test family is introduced.
 

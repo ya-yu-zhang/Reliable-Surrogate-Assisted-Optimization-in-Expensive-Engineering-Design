@@ -16,6 +16,17 @@ directory. Paths in the implementation are repository-relative. External
 programs such as Pandoc, Poppler, and a TeX distribution must be available on
 `PATH` when document builders are used.
 
+### CMA-ES version
+
+`cma` must be 4.x. The CMA-ES reference passes a two-element `bounds` option, which
+the 3.x series rejects inside `BoxConstraintsLinQuadTransformation`; the resulting
+traceback does not mention the version and is easily mistaken for a code defect.
+`pymoo` pins `cma==3.2.2`, but this project imports pymoo only to record its version
+in the environment metadata, so the pin does not apply: install
+`requirements-baselines.txt`, which pins `cma==4.5.0`, and ignore the pip resolver
+warning about pymoo. `tests/conftest.py` skips the CMA-ES case with an explicit
+reason if a 3.x build is present.
+
 ## Reproducing experiments
 
 Create an isolated Python 3.12 environment and install the dependency set for

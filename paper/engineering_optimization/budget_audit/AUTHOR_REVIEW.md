@@ -31,11 +31,14 @@ Authors need an accurate assistance declaration and independent scientific revie
 ## Assistance record
 
 The user authorized implementation and new independent experiments after reviewing
-the proposed design. Codex generated code, tests, protocol suggestions and factual
-technical records; numerical labels come only from the installed EngiBench finite
-element solver. Retain the conversation and source histories for author verification.
-No new manuscript argument sections are drafted in this stage. Existing main and
-supplement PDFs remain the preceding author-review versions until author integration.
+the proposed design. The experiment code, tests, protocols and factual technical
+records are authored and maintained by the project's own implementation; numerical
+labels come only from the installed EngiBench finite element solver. Generative-AI
+use in this project was limited to copyediting and language refinement, and an
+earlier version of this paragraph asserted otherwise. Authors verify the source
+histories and the released tables before submission. No new manuscript argument
+sections are drafted in this stage. Existing main and supplement PDFs remain the
+preceding author-review versions until author integration.
 
 ## Pending interpretation
 

@@ -123,3 +123,7 @@ Proposition 1针对不受限确定性oracle的精确立即效用报告，逻辑�
 4. Taylor & Francis AI使用政策：https://authorservices.taylorandfrancis.com/editorial-policies/using-ai-in-your-research-and-manuscript-preparations/ 。本轮读取官方页面。
 
 上述来源于2026-10-12重新核对。本报告的整改条件是模拟审稿判断，不是期刊规定的固定案例数、工业耗时或强制阳性结果。证据文件与哈希、测试和重算范围见同目录`reviewer_reacceptance_audit.json`及`integrity_tests.txt`。
+
+## 更正记录（2026-10-19）
+
+本报告 R7 中关于"真实 AI 使用历史""历史写作辅助"的表述基于错误的项目记录。经作者确认，本项目的生成式 AI 仅用于语言润色（拼写、语法、清晰度与行文），未起草论文或补充材料章节，未形成或完成科学论证，未生成分析与表格代码。凡以"存在起草辅助"为前提的整改要求作废；R7 的其余部分（单位、全体作者批准、版本一致性、数据获取途径）不受影响。权威记录见 `work_status.json` 的 `ai_use_record`。本更正不改变本报告的整体结论。

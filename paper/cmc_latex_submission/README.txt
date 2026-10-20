@@ -1,5 +1,9 @@
 Official CMC/TSP LaTeX template submission package
 ==================================================
+STATUS: submitted to Computers, Materials & Continua and rejected there as out of
+scope. This package is a closed historical record. It is not the current manuscript,
+and no version of this work is under consideration at any journal.
+
 CMC_manuscript.tex: main article source
 CMC_supplementary.tex: supplementary-material source
 Definitions/: unmodified official template class and assets
@@ -10,4 +14,3 @@ Compile from this directory with:
   pdflatex CMC_supplementary.tex (run at least twice)
 
 The supplied PDFs were compiled successfully with MiKTeX/pdfLaTeX and visually audited.
-Before submission, confirm affiliations 2-3.

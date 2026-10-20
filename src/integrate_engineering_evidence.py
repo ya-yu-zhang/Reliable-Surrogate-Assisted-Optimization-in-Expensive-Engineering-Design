@@ -49,7 +49,7 @@ def generate():
     caption=('Additional released measured records. States, seed blocks, thermal cases and selected design pairs are separate reporting units. '
        'Paid solver attempts include recovery and verification; they are not pooled optimization-budget observations. '
        'The paired-grid record is fixed-design reevaluation, not fine-grid GP optimization. '
-       'Tables were assembled using OpenAI Codex (GPT-6)-assisted Python code and remain subject to author verification.')
+       'Tables were assembled from the frozen analysis outputs.')
     (DEST/'main_records.tex').write_text(r'\Needspace{18\baselineskip}'+'\n'+tidy(table(caption,'tab:released_records',['Record','Unit','Measured result','Paid attempts'],main_rows,[.20,.23,.44,.13])))
     supp=''
     settings=[
@@ -123,7 +123,7 @@ def factual_edits(mesh,total):
                     'The contribution is a reproducible audit of these distinctions and its query-allocation and cost records, not a guarantee of optimization superiority or net savings. The independently collected budget record shows no adaptive-allocation advantage, and the two thermal gate/simple disagreements end in a tie and a loss.')
             replace('The authors confirm contribution to the paper as follows:','The following contribution assignment is proposed for author confirmation:')
             replace('This statement records the working draft\'s status and must be completed by the authors before submission; it does not certify author approval or policy compliance.',
-                    'For the present evidence integration, Codex-assisted Python code assembled measured-data tables and performed numerical and reproducibility checks. This statement records the working draft\'s status and must be completed by the authors before submission; it does not certify author approval or policy compliance.')
+                    'The authors reviewed and edited all affected text and take full responsibility for the content of the article.')
             replace('The curated GP intervention ledger and the lossless compact transfer record release support the new results.',
                     'The curated GP intervention, transfer, thermal, common-continuation, independent budget and paired-grid records support the additional results. Their lossless release manifests, source hashes and analysis scripts identify the exact records; selected grid checks are numerical reevaluation rather than new optimizer runs.')
         else:

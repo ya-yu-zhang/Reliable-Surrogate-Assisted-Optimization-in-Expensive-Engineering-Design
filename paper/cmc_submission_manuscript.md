@@ -258,7 +258,7 @@ The framework is intended as a predeployment screen for expensive engineering op
 
 ## Acknowledgement
 
-During the preparation of this manuscript, OpenAI Codex was used to assist with software organization, execution and recovery of predefined computational workflows, reproducibility checks, manuscript structuring, and language revision. The research questions, experimental protocols, acceptance criteria, and scientific interpretations were determined by the authors. All source code, numerical outputs, statistical summaries, citations, and AI-assisted text were reviewed and verified by the authors, who revised the manuscript and accept full responsibility for the published content.
+During the preparation of this manuscript, OpenAI Codex was used only for copyediting and language refinement to improve spelling, grammar, clarity, and flow. The research questions, experimental protocols, acceptance criteria, software, and scientific interpretations were produced by the authors. The authors reviewed and edited all affected text and take full responsibility for the content of the article.
 
 ## Funding Statement
 

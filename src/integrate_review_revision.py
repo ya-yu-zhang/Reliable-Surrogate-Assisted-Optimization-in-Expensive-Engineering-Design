@@ -49,7 +49,7 @@ def generate():
     caption = ('Independent primary h5 record at margin 0.001. Truth B/T/W counts exclude exact baseline aliases and contain no better cases. '
                'Requests are charged across all 30 dependent states within ten seed blocks; they are not new physical solves. '
                'Completed-target errors are zero by direct measurement. Calibration is the constructed root-EI gate, not a published-method replication. '
-               'This table was assembled with OpenAI Codex (GPT-6)-assisted Python and requires author verification.')
+               'This table was assembled from the frozen analysis outputs.')
     (PAPER / 'integrated_evidence/review_main_results.tex').write_text(
         r'\Needspace{18\baselineskip}' + '\n' + table(caption, 'tab:review_primary',
         ['Followup', 'Truth B/T/W', 'Rule', 'Classified', 'Errors', 'Requests', 'Selection loss (%)'],

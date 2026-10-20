@@ -1,6 +1,6 @@
 # 2026-10-13条件期限审计整改与交付
 
-当前源码：同目录上级的`EO_manuscript.tex`、`EO_supplementary.tex`和`EO_references.bib`。正文27页、补充32页，编译无overfull/undefined警告；全部59页已渲染检查。全作者批准任务按用户指令排除，两处作者单位按用户选择待补。
+当前源码：本目录记录的 LaTeX 稿件 `EO_manuscript.tex`、`EO_supplementary.tex` 与 `EO_references.bib` 已冻结为审阅产物，投稿源改为 `paper/engineering_optimization_manuscript.md`（Word 轨）。当时该 LaTeX 版本正文27页、补充32页，编译无 overfull/undefined 警告。全体作者已于 2026-10-19 批准；两处作者单位在 Word 轨中已填写。
 
 本轮完成：核心对象及最接近工作比较、可执行同目标读取对照、冻结算法操作说明、已有结果段落重新组织、真实AI历史核对及一致的本地最小证据交付。没有新增物理求解，也没有修改冻结v1协议/原标签或删除不利结果。
 
@@ -16,7 +16,7 @@
 
 `CORE_OBJECT_AND_CLOSEST_WORK.md`：研究对象、文献事实、最强简单流程与可执行比较。
 
-`AI_USE_HISTORY_AUDIT.md`：已知初稿/代码/排版辅助与未知的早期版本/提示记录，保留真实披露。
+`AI_USE_HISTORY_AUDIT.md`（**已作废**）：该文件曾把 AI 使用范围写成包含初稿与代码辅助，属错误记录。经作者确认，生成式 AI 仅用于语言润色，未起草章节、未形成论证、未生成分析与表格代码；权威记录见 `../work_status.json` 的 `ai_use_record`，该文件不得继续引用或发布。
 
 `RESPONSE_AND_SCOPE.md`及`submission_status.json`：审稿项对应、已完成事项与剩余科学/信息限制。
 

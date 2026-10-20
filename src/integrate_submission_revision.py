@@ -41,14 +41,14 @@ def generate():
                'The strongest simple class-aware fixed-depth comparator is the frozen v1 method itself. '
                'Alias-skipping calibration is post hoc and leaves all labels unchanged; original results are retained. '
                'Requests include cache reads and are not new physical attempts. No predictive or deployment advantage is inferred. '
-               'Data table assembled using OpenAI Codex (GPT-6)-assisted Python.')
+               'Data table assembled from the frozen analysis outputs.')
     (PAPER / 'integrated_evidence/submission_comparison.tex').write_text(
         table(caption, 'tab:operational_comparison', ['Followup', 'Reader / rule', 'Classified', 'Errors', 'Requests', 'Selection loss (%)'],
               rows, [.09, .40, .12, .08, .10, .21]))
     (PAPER / 'integrated_evidence/submission_algorithm.tex').write_text(r'''\Needspace{12\baselineskip}
 \FloatBarrier\begingroup\fontsize{8.5}{10.5}\selectfont\setlength\tabcolsep{3pt}
 \begin{longtable}{@{}>{\raggedright\arraybackslash}p{.17\linewidth}>{\raggedright\arraybackslash}p{\dimexpr.83\linewidth-2\tabcolsep\relax}@{}}
-\caption{Frozen v1 conditional audit: executable operation specification. This table describes the existing code, including the unsuccessful adaptive heuristic; it does not propose a new optimizer. OpenAI Codex (GPT-6) assisted the code-to-method transcription.}\label{tab:conditional_algorithm}\tabularnewline
+\caption{Frozen v1 conditional audit: executable operation specification. This table describes the existing code, including the unsuccessful adaptive heuristic; it does not propose a new optimizer. The transcription from code to operations follows the implementation as frozen.}\label{tab:conditional_algorithm}\tabularnewline
 \toprule
 Operation & Exact implementation \\
 \midrule

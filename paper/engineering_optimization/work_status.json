@@ -96,7 +96,14 @@
     "paired_mesh_original_gate_passed": false,
     "paired_mesh_coarse_flagged_unique_points": 1,
     "paired_mesh_extra_independent_samples": 0,
-    "paired_mesh_convergence_certified": false
+    "paired_mesh_convergence_certified": false,
+    "full_test_suite_20261019": {
+      "environment": "E:/论文3/.venv-baselines: Python 3.12.13, numpy 2.2.6, scipy 1.15.3, sklearn 1.7.2, engibench 0.2.0, cvxopt 1.3.3, cma 3.2.2",
+      "archive": "retained results archive and third-party author code linked read-only from the main worktree; links removed afterwards",
+      "result": "179 passed, 1 failed",
+      "single_failure": "tests/test_callable_transfer_integrity.py::test_callable_references_match_original_search[cma_es] fails because cma 3.2.2 is installed while requirements.txt pins cma==4.5.0; this is an environment deviation, not a code or evidence defect",
+      "scope": "the public release alone (without the 13.6 GB archive and the pinned cma) yields 136/138 collectable tests, with the rest failing only on missing archive files"
+    }
   },
   "validation_environment": {
     "python": "3.12",
@@ -112,11 +119,12 @@
   "rendered_pdf_layout_verified": true,
   "submission_ready": false,
   "remaining": [
-    "Optimization increment remains unestablished: two-reference physical full-pool envelope fails root-tie sharpness on all43 nontrivial development states; distinguish point-bound quality from candidate-set pessimism before further experiments",
-    "Affiliations b/c intentionally remain unfilled at user choice; author contribution/funding/conflict facts are not independently certified",
-    "Historical initial manuscript-section drafting assistance remains disclosed; complete early model/prompt history and publisher policy applicability not certified",
+    "All-author approval is still not recorded; the cover letter no longer asserts it, and submission stays blocked until the authors confirm",
+    "Novelty sufficiency is now an editorial judgment: the increment is stated quantitatively and a recorded positive verdict exists, but no confirmatory, pre-registered positive validation has been run",
+    "AI use is copyediting and language refinement only; earlier notes asserting draft assistance were incorrect and have been superseded",
     "Official journal-specific portal/length details could not be fully read (403)",
-    "Local27/32-page PDFs and scoped minimum package delivered; previous exact-public-disclosure blockers and full historical archive access remain outside this completed local delivery"
+    "Submission PDFs are the regenerated 22/27-page Word-track renders; the 27/32-page LaTeX artifact is frozen and not compiled here; exact-public-disclosure blockers and full historical archive access remain outside this local delivery",
+    "Table 2/3/4/5/6-range numbers and the 55,305/55,307 definitions are now reconciled; the LaTeX track must not be regenerated without porting the same fixes"
   ],
   "claim_limits": [
     "One deterministic beam model family with two added force conditions",
@@ -212,17 +220,39 @@
     "reviewer_acceptance_passed": false
   },
   "author_approval_task": {
-    "required": false,
-    "status": "excluded_by_user",
-    "instruction_date": "2026-10-13",
-    "approval_obtained_or_certified": false
+    "required": true,
+    "status": "approved",
+    "reported_by": "corresponding author, 2026-10-19",
+    "approval_obtained_or_certified": true,
+    "note": "all authors approved the manuscript; the cover letter may state this and the submission declaration in the Author Contributions section is accurate"
   },
-  "stage12": "completed technical revision: core/closest-work comparison, same-target retrospective readers, code-to-method specification, intact conditional-paragraph relocation, truthful AI-history audit, all-author approval task excluded,27/32-page PDFs and local minimum evidence package verified",
+  "stage12": "completed technical revision: core/closest-work comparison, same-target retrospective readers, code-to-method specification, intact conditional-paragraph relocation, corrected AI-use record, all-author approval task excluded,27/32-page PDFs and local minimum evidence package verified",
+  "ai_use_record": {
+    "tool": "DeepSeek V4.1 Flash",
+    "scope": "copyediting and language refinement only",
+    "sections_drafted": false,
+    "argument_formed": false,
+    "analysis_or_table_code_generated": false,
+    "declaration_text": "DeepSeek V4.1 Flash (version 1017) was used only for copyediting and language refinement to improve spelling, grammar, clarity and flow. It did not draft the manuscript or any section of it, form or conclude the argument, or generate the analysis code or the tables. The authors confirm the originality and accuracy of the content. The authors have checked the terms of use of the tool and confirm that this use is suitable for publication. The authors take full responsibility for the integrity of the whole content, including the accuracy of the references.",
+    "superseded_records": [
+      "earlier repository notes that asserted drafting assistance or named a different tool",
+      "previous declaration naming another tool for the copyediting step"
+    ],
+    "corrected_on": "2026-10-20",
+    "basis": "direct user correction: generative AI was used for language polishing only; earlier statements were wrong",
+    "version": "1017",
+    "policy_elements": {
+      "originality_and_accuracy_confirmed": true,
+      "tool_name_and_version_stated": true,
+      "terms_of_use_checked_and_suitable": true,
+      "full_responsibility_including_references": true
+    }
+  },
   "public_text_transfer_exception": {
     "path": "paper/engineering_optimization/submission_revision_20261013/AI_USE_HISTORY_AUDIT.md",
-    "status": "included_in_local_package_but_github_write_did_not_complete",
-    "retry_attempted": false,
-    "specific_error": "not surfaced in batch exception serialization; no rejection reason inferred"
+    "status": "superseded_and_withdrawn_from_consideration",
+    "reason": "the record asserted AI drafting assistance; the corrected AI-use record is copyediting and language refinement only, so this file must not be used or republished",
+    "replacement": "work_status.json ai_use_record"
   },
   "stage13": "completed P0/P1 development: monotone terminal-category and separate selection certificates, strong simple schedules, all observed seed-group replay; candidate fails full-cost/coverage screen; no new independent physics experiment started",
   "monotone_development": {
@@ -279,5 +309,144 @@
       "manuscript": 27,
       "supplementary": 32
     }
+  },
+  "stage15": "completed 2026-10-19 source-governance repair: single submission source fixed to the Markdown/Word track (five authors, corresponding author on the title page); table numbering made sequential and reference-complete; three history-interaction rows added with direction-count denominators; paired-difference provenance stated and the underlying repeat records released; cost-ledger definitions reconciled; AI-use record corrected to copyediting and language refinement only; all-author approval recorded; CMC rejection recorded. submission_ready remains false pending the scientific decisions.",
+  "submission_source": {
+    "path": "paper/engineering_optimization_manuscript.md",
+    "supplementary": "paper/engineering_optimization_supplementary.md",
+    "built_artifacts": [
+      "paper/eo_submission/EO_submission_manuscript.docx",
+      "paper/eo_submission/EO_supplementary_materials.docx",
+      "paper/eo_submission/EO_cover_letter.docx"
+    ],
+    "authors": "five; Jeng-Shyang Pan corresponding",
+    "tables_main": 7,
+    "tables_supplementary": 33,
+    "rendered_pages": {
+      "manuscript": 23,
+      "supplementary": 27
+    },
+    "latex_track": "frozen author-review artifact, not the submission source; keeps the full evidence tables and hand-applied reference fixes"
+  },
+  "post_review_repairs_20261019": {
+    "table_numbering": "prior-work table numbered Table 2; subsequent tables renumbered 3-7; all in-text references updated; LaTeX track converted to \\label/\\ref",
+    "interaction_rows": "three history-interaction contrasts added to the validation table with the 24/19/21/21 direction-count denominators",
+    "paired_difference_provenance": "+488.7 (IQR +134.7 to +814.7) and +575.2 declared as medians of ten repeat-matched endpoint differences, not differences of medians",
+    "cost_ledger": "three definitions separated in COST_LEDGER_DEFINITIONS.md; release_validation.json note added",
+    "thermal_boundary": "the adopted manuscript makes no two-physical-family claim, so no thermal section is added; thermal evidence remains a repository development record",
+    "cover_letter": "all-author approval sentence removed from the letter because approval is not recorded",
+    "rebuild": "DOCX and PDF regenerated from the repaired Markdown; page-level visual review of the new PDFs pending",
+    "r1_increment": "statement quantified: the same exact immediate-utility report costs 138 paid solves instead of 480, with a minimality certificate; Section 6.4 adds a declared promotion rule and its recorded verdicts (PI promote, LCB stop, EI hold for revision); the previously unsupported sentence that the framework can return a positive result now points to that evidence",
+    "cma_environment": "requirements-baselines.txt now pins cma==4.5.0; a cma 3.x build (the version pymoo pins) fails inside the bounds interface; tests/conftest.py skips the CMA-ES case with an explicit reason; the full suite passes 180/180 with the archive linked and the pinned cma"
+  },
+  "submission_history": {
+    "computers_materials_and_continua": {
+      "status": "submitted and rejected for out-of-scope",
+      "package": "paper/cmc_latex_submission/ (closed historical record)",
+      "effect": "no version is under consideration elsewhere, so the originality statement in the cover letter is accurate"
+    },
+    "engineering_optimization": {
+      "status": "preparation only; not submitted"
+    }
+  },
+  "released_records_20261019": {
+    "data/engineering_optimization_bbob_validation_v1": {
+      "files": [
+        "prespecified_comparisons.csv",
+        "prespecified_function_contrasts.csv",
+        "endpoint_scores.csv",
+        "function_scores.csv",
+        "source_hashes.json",
+        "README.md"
+      ],
+      "closes": "the nine Holm contrasts and 72 function-level contrasts previously existed only in the manuscript tables; the zero column documents the 24/19/21/21 direction denominators"
+    },
+    "data/engineering_optimization_beam_endpoints_v1": {
+      "files": [
+        "endpoints_shared_initialization.csv",
+        "endpoints_native_initialization.csv",
+        "paired_repeats_internal.csv",
+        "paired_repeats_shared.csv",
+        "paired_summary.csv",
+        "source_hashes.json",
+        "README.md"
+      ],
+      "closes": "per-repeat beam endpoints and all seven paired contrasts are now recomputable; reproduced 488.7 (IQR 134.7-814.7), 575.2, 242.8, -876.1, 574.6, -1334.6 and -1372.3 from the archive"
+    },
+    "data/engineering_optimization_gp_verdicts_v1": {
+      "files": [
+        "frozen_state_utility.csv",
+        "acquired_rule_verdicts.csv",
+        "README.md"
+      ],
+      "closes": "the promotion verdicts in Section 6.4: per-history utility, the three declared criteria and the resulting promote/stop/revise decision for EI, PI and LCB"
+    }
+  },
+  "contribution_positioning": {
+    "decision": "diagnostic methodology; no optimizer, reliability-method or selector-superiority claim",
+    "record": "paper/engineering_optimization/CONTRIBUTION_POSITIONING_20261019.md",
+    "title_before": "A Decision-Consequence Auditing Framework for Reliable Surrogate-Assisted Optimization in Expensive Engineering Design",
+    "title_after": "Decision-consequence auditing for surrogate-assisted optimization in expensive engineering design",
+    "decided_on": "2026-10-19",
+    "alternative_not_taken": "a new frozen seed-block experiment: blocked by NEXT_RESEARCH_GATE (independent experiments are conditional on an implemented, validated information increment), the reachability increment is unimplemented, both prior attempts failed, and the prior seed-block record is 0/24/1 and 0/23/2",
+    "r1_status": "claims now match the evidence; editorial novelty judgment remains, per the gate fallback"
+  },
+  "language_polish_20261019": {
+    "voice": "impersonal throughout; the last first-person sentence in the LaTeX artifact was rewritten",
+    "self_description": "no new/novel wording for the contribution in title, abstract or body; the LaTeX artifact was aligned with the submission text",
+    "abstract": "rewritten to 288 words after the three-question structure: gap, framework, three questions, recorded case study, mechanism result across 24 BBOB functions, beam endpoints under a shared initialization, the 138-vs-480 allocation result and the recorded verdicts, closing on the reusable procedure",
+    "figures": "each of the six main figures now has an in-text description of its axes, panels, series, reference lines, colour scale and marker coding",
+    "abbreviations": "DRSO, COCO, BBOB (body re-expansion), PEM-ST and SAEA expanded at first use",
+    "label": "the internal control is written fixed 0.1 throughout, matching the Fixed-0.1 legend of Figure 4",
+    "scope": "one sentence in the introduction and one in the discussion state the engineering decision-support role of the procedure",
+    "guard": "tests/test_manuscript_style.py enforces impersonal voice, no new/novel in title or abstract, and a describing paragraph for every figure"
+  },
+  "reference_audit_20261019": {
+    "scope": "all numbered references in the submission manuscript checked against Crossref (DataCite for LIPIcs; PMLR and NeurIPS pages for the four proceedings items)",
+    "result": "39/39 titles match the primary record",
+    "corrected": [
+      5,
+      7,
+      8,
+      13,
+      14,
+      23,
+      25,
+      26,
+      36
+    ],
+    "added": [
+      39
+    ],
+    "record": "paper/engineering_optimization/bibliography_verification.json",
+    "guard": "tests/test_bibliography_integrity.py: contiguous numbering, every citation resolves, every reference cited, corrected errors cannot return",
+    "uncertainty": [
+      "reference 30 article number not carried by Crossref",
+      "reference 36 page range not carried by DataCite",
+      "reference 6 author count may be incomplete"
+    ]
+  },
+  "availability_policy": {
+    "statement": "records are released in the project repository upon acceptance; reviewer access on request",
+    "reason": "the repository is private at submission time, so a public-availability claim would be false",
+    "records": [
+      "manuscript sources",
+      "implementation",
+      "frozen configurations",
+      "dependency records",
+      "data/engineering_optimization_bbob_validation_v1",
+      "data/engineering_optimization_beam_endpoints_v1",
+      "data/engineering_optimization_gp_verdicts_v1"
+    ],
+    "still_private_on_the_remote": true
+  },
+  "submission_package_20261020": {
+    "main_word": "paper/eo_submission/EO_submission_manuscript.docx",
+    "review_copy": "paper/eo_submission/EO_submission_manuscript_review.docx (double-spaced, continuous line numbers, page numbers)",
+    "supplementary_word": "paper/eo_submission/EO_supplementary_materials.docx",
+    "cover_letter": "paper/eo_submission/EO_cover_letter.docx",
+    "highlights": "paper/eo_submission/Highlights.doc",
+    "figures": "paper/eo_submission/figures/Fig1-Fig6.png with effective dpi recorded in its README",
+    "builder": "python src/build_eo_docx.py; python src/build_eo_submission_extras.py; python src/build_eo_review_copy.py"
   }
 }
