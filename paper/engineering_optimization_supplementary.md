@@ -30,6 +30,21 @@ The supplement is organized by the claims made in the main article. Scientific r
 
 The manuscript sources, the implementation, the frozen configurations, the dependency records and the released records supporting the added results will be made publicly available in the project repository https://github.com/ya-yu-zhang/Reliable-Surrogate-Assisted-Optimization-in-Expensive-Engineering-Design upon acceptance, and the same materials are available to reviewers during peer review on request. Approximately 13.6 GB of raw experiment outputs and the full execution archives are not committed to that repository. The reported experiments can be regenerated using the documented environments and configurations; archived raw data are available from the corresponding author upon reasonable request. Public visibility should not be interpreted as an open-source license; third-party implementations and publisher templates retain their own terms. The detailed audit trail remains in S8; this map is a navigation layer rather than a substitute for those records.
 
+### S0.2.1 Mechanism and search settings relocated from the main text
+
+These details support Section 4 and are retained here for reproduction rather than narrative emphasis.
+
+1. **Residual definition and temporal monitor.** For selected point $x_t$, the standardized signed residual is $r_t=[y_t-\mu_t(x_t)]/s_t$, where $s_t$ is the standard deviation of the current training labels and is replaced by one if it is zero. Historical residuals retain their prediction-time models and scales. Temporal weights have a half-life of 25 evaluations; spatial variants use a Gaussian kernel and an effective-sample-size support guard of 20. At most the latest 100 residuals enter $q_t(x)$.
+
+2. **Initialization and surrogate.** A randomized Latin hypercube uses $2D+20$ initialization points. The first $D+10$ points train the initial model; the remaining $D+10$ are predicted before labeling and create startup residuals. Inputs are scaled to the unit cube. The regularized Gaussian RBF surrogate uses distance divided by $\sqrt{D}$, length scale 0.25, ridge $10^{-6}$, and standardized labels. At most 256 observations are retained through an elite-plus-farthest-point rule.
+
+3. **Candidate generation.** Each iteration proposes 256 candidates: 128 reflected differential-evolution proposals and 128 scrambled Sobol points. Duplicates and candidates within $10^{-10}$ of evaluated points are replaced. Purpose-specific random streams depend on seed and evaluation index rather than the total budget.
+
+4. **Development and validation protocols.** Development uses eight prespecified BBOB functions, dimensions 10 and 20, instances 1-3, and three repeats, with thirteen internal configurations that separate exploration, residual weighting, and feedback components. After the gate fails, validation freezes the unchanged mechanism on all 24 noiseless BBOB functions, dimensions 10, 20, and 40, instances 11-13, and three repeats. Six internal configurations produce 3,888 runs; three history policies produce 7,776 frozen states and 1,990,656 diagnostic labels. Development and validation estimates are never pooled.
+
+5. **Finite-element application baselines.** In the beam study, GP-EI, GP-PI, and the lower-confidence-bound form of GP-UCB share the same Matérn-5/2 Gaussian process, candidate pool, and local-search budget; GP-PI uses a margin equal to 0.01 times the observed response standard deviation, and GP-UCB uses a fixed confidence multiplier of 2.0. DRSO uses the authors' public relation-model-assisted evolutionary implementation at commit 03c19d4, with population size 58 solely to accept the common initial archive. The BBOB implementation and reporting follow the Comparing Continuous Optimizers (COCO) framework.
+
+
 # S1 Development diagnostics and common-state evidence
 
 
@@ -204,7 +219,7 @@ Gaussian-process expected improvement (GP-EI) and author-code trust-region Bayes
 
 Both frozen GP-EI and author TuRBO-1 batches complete 648 runs and 151,200 paid evaluations each, without reducing functions, repeats, GP training, or acquisition candidates. Together with the six internal and two basic references, all ten methods include 6,480 runs and 1,512,000 paid evaluations. External methods retain their own search and initialization. The matching internal initial-error denominator enters analysis only; normalization precedes within-instance medians. The 24 function scores are equally weighted. These descriptive comparisons add no significance family and do not reproduce the unavailable SAEA competitors.
 
-GP-EI implements classical expected improvement [3] using the explicitly frozen kernel and search; it is not an exact reproduction of original EGO software. TuRBO-1 uses the author local trust-region implementation [25] with an external paid-call guard.
+GP-EI implements classical expected improvement (Jones, Schonlau, and Welch 1998) using the explicitly frozen kernel and search; it is not an exact reproduction of original EGO software. TuRBO-1 uses the author local trust-region implementation (Eriksson et al. 2019) with an external paid-call guard.
 
 Table: Full ten-method function-mean log-relative endpoint scores. Lower is better.
 
@@ -279,7 +294,7 @@ At an assumed objective cost c, total time is modeled as measured nonobjective t
 
 ## S4.1 LassoBench mechanism transfer
 
-LassoBench [24] provides the application objectives. A separate protocol is frozen before formal seed42 labels. Three original tasks (D=60/100/180), eight methods, twenty optimization repeats, and 500 evaluations yield 480 runs and 240,000 full configuration evaluations (1,200,000 cross-validation (CV) fold solves). Internal initialization is 140/220/380 paid calls; external initialization remains native. The author five-fold full-fidelity objective, fixed data/splits, solver settings, bounds, and target definitions are unchanged.
+LassoBench (Sehic et al. 2022) provides the application objectives. A separate protocol is frozen before formal seed42 labels. Three original tasks (D=60/100/180), eight methods, twenty optimization repeats, and 500 evaluations yield 480 runs and 240,000 full configuration evaluations (1,200,000 cross-validation (CV) fold solves). Internal initialization is 140/220/380 paid calls; external initialization remains native. The author five-fold full-fidelity objective, fixed data/splits, solver settings, bounds, and target definitions are unchanged.
 
 Unknown optimum is never imputed. The main endpoint is original validation loss. After all 500 labels are saved, the first lowest-validation configuration receives exactly one author test call, adding 480 single fits separately. Synthetic test mean squared prediction error (MSPE) uses the author fixed oracle normalizer, while the deoxyribonucleic-acid (DNA) task uses absolute test mean squared error (MSE); these scales are not pooled. The first and third quartiles are denoted by Q1 and Q3, respectively. The synthetic constructor computes its fixed test normalizer, but no test-performance result enters any optimization feedback.
 

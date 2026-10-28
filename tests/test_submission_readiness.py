@@ -58,6 +58,7 @@ def test_package_contains_the_portal_artefacts():
         SUBMISSION / "EO_submission_manuscript_review.docx",
         SUBMISSION / "EO_supplementary_materials.docx",
         SUBMISSION / "EO_cover_letter.docx",
+        SUBMISSION / "EO_length_explanation.docx",
     ]
     for path in required:
         assert path.exists(), f"missing {path.name}"
@@ -72,8 +73,8 @@ def test_review_copy_is_double_spaced_and_line_numbered():
     assert "lnNumType" in document, "review copy has no continuous line numbering"
 
 
-def test_abstract_stays_within_a_conference_kind_limit():
+def test_abstract_meets_the_journal_length():
     text = _text()
     abstract = text[text.index("## Abstract") + len("## Abstract"): text.index("**Keywords:**")]
     words = len(abstract.split())
-    assert 200 <= words <= 300, f"abstract is {words} words"
+    assert 140 <= words <= 160, f"abstract is {words} words; the journal asks for about 150"

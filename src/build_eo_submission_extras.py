@@ -16,9 +16,73 @@ from docx.shared import Inches, Pt
 ROOT = Path(__file__).resolve().parents[1]
 OUTDIR = ROOT / "paper" / "eo_submission"
 TMPDIR = ROOT / "tmp" / "eo_cover_highlights"
-REFERENCE = Path(
-    r"E:\新建文件夹\xwechat_files\wxid_gatb8ol0b1zd21_b04b\msg\file\2026-07\Cover letter-reference.docx"
+COVER_TEMPLATE = Path(r"D:\google\GENO Cover Letter Template.docx")
+
+SCOPE_FIT = (
+    "The manuscript, \"Decision-consequence auditing for surrogate-assisted "
+    "optimization in expensive engineering design,\" concerns numerical optimization "
+    "when each evaluation is an expensive engineering simulation and a surrogate "
+    "decides which design is evaluated next. This matches the journal's scope in "
+    "optimization methods and in optimization applied to engineering design. The "
+    "paper specifies the evidence required before a surrogate-management rule can "
+    "be treated as an improvement in a finite-element design workflow, and it "
+    "applies that test to a density-based beam problem under an explicit evaluation "
+    "budget. The object is the paid design decision, covering calibration, candidate "
+    "selection, closed-loop performance, and the full cost of the physical calls."
 )
+
+CONTRIBUTION = (
+    "The manuscript contributes a decision-consequence audit for surrogate-assisted "
+    "optimization in expensive engineering design. Exact decision equivalence sets "
+    "the minimum query count for reporting every immediate utility, so a frozen "
+    "120-state intervention is reported from 138 finite-element solves instead of "
+    "480. The procedure separates calibration, structural decision influence, "
+    "common-state utility, closed-loop performance and total physical-call cost. "
+    "Applied to three recorded acquisition rules, it returns one promotion, one "
+    "stop and one held-for-revision verdict. A finite-element beam study and twenty "
+    "transfer cases at two load positions show where a calibrated signal fails to "
+    "improve the design and where cheaper selection loses endpoint performance."
+)
+
+# Affiliation and email follow the manuscript. Homepage and position are filled
+# only where a public institutional page states them. Unknown cells stay empty.
+AUTHORS = [
+    (
+        "Shu-Chuan Chu",
+        "School of Computer Science; School of Artificial Intelligence/School of Future Technology, Nanjing University of Information Science and Technology",
+        "",
+        "https://faculty.nuist.edu.cn/zhushujuan/en/index.htm",
+        "Professor",
+    ),
+    (
+        "Ya-Yu Zhang",
+        "School of Computer Science, Nanjing University of Information Science and Technology",
+        "202412492223@nuist.edu.cn",
+        "",
+        "",
+    ),
+    (
+        "Zhenyu Meng",
+        "School of Computer Science and Software, Zhaoqing University",
+        "",
+        "",
+        "Professor",
+    ),
+    (
+        "Jia Zhao",
+        "School of Information Engineering, Jiangxi University of Water Resources and Electric Power",
+        "zhaojia@juwp.edu.cn",
+        "",
+        "Professor",
+    ),
+    (
+        "Jeng-Shyang Pan",
+        "School of Computer Science; School of Artificial Intelligence/School of Future Technology, Nanjing University of Information Science and Technology",
+        "100112@nuist.edu.cn",
+        "https://faculty.nuist.edu.cn/panzhengxiang/en/index.htm",
+        "Professor; corresponding author",
+    ),
+]
 
 
 def set_font(run, size: float = 12, *, bold: bool = False, italic: bool = False) -> None:
@@ -31,62 +95,70 @@ def set_font(run, size: float = 12, *, bold: bool = False, italic: bool = False)
         rfonts.set(qn(f"w:{name}"), "Times New Roman")
 
 
-def replace_paragraph(paragraph, segments: list[tuple[str, bool, bool]]) -> None:
-    paragraph.clear()
-    for text, bold, italic in segments:
-        run = paragraph.add_run(text)
-        set_font(run, bold=bold, italic=italic)
+def set_paragraph_text(paragraph, text: str) -> None:
+    if paragraph.runs:
+        paragraph.runs[0].text = text
+        paragraph.runs[0].italic = False
+        paragraph.runs[0].bold = False
+        for run in paragraph.runs[1:]:
+            run._element.getparent().remove(run._element)
+        return
+    paragraph.add_run(text)
 
 
 def build_cover_letter() -> Path:
+    if not COVER_TEMPLATE.is_file():
+        raise FileNotFoundError(COVER_TEMPLATE)
+    words = CONTRIBUTION.split()
+    if len(words) > 100:
+        raise RuntimeError(f"Contribution statement is {len(words)} words; the template allows 100")
     OUTDIR.mkdir(parents=True, exist_ok=True)
     target = OUTDIR / "EO_cover_letter.docx"
     if target.exists():
         target.chmod(stat.S_IWRITE | stat.S_IREAD)
-    shutil.copy2(REFERENCE, target)
+    shutil.copy2(COVER_TEMPLATE, target)
     target.chmod(stat.S_IWRITE | stat.S_IREAD)
     doc = Document(target)
-    paragraphs = doc.paragraphs
-    if len(paragraphs) != 24:
-        raise RuntimeError(f"Expected 24 template paragraphs, found {len(paragraphs)}")
+    if len(doc.tables) != 3:
+        raise RuntimeError(f"Expected 3 template tables, found {len(doc.tables)}")
+    set_paragraph_text(doc.tables[0].rows[1].cells[0].paragraphs[0], SCOPE_FIT)
+    set_paragraph_text(doc.tables[1].rows[1].cells[0].paragraphs[0], CONTRIBUTION)
+    author_table = doc.tables[2]
+    if len(author_table.rows) != 7:
+        raise RuntimeError(f"Expected a header and six author rows, found {len(author_table.rows)}")
+    for row, values in zip(author_table.rows[1:6], AUTHORS, strict=True):
+        for cell, value in zip(row.cells, values, strict=True):
+            set_paragraph_text(cell.paragraphs[0], value)
+    unused = author_table.rows[6]._tr
+    unused.getparent().remove(unused)
+    # All-author approval (recorded 2026-10-21); kept outside the 100-word contribution cell.
+    from docx.oxml import OxmlElement
+    from docx.text.paragraph import Paragraph
+    approval = (
+        "All authors reviewed the results and approved the final version of the "
+        "manuscript for submission (2026-10-21)."
+    )
+    av = None
+    for para in doc.paragraphs:
+        if para.text.strip() == "Author verification":
+            av = para
+            break
+    if av is not None and approval not in "\n".join(x.text for x in doc.paragraphs):
+        new_el = OxmlElement("w:p")
+        av._p.addprevious(new_el)
+        new_para = Paragraph(new_el, av._parent)
+        run = new_para.add_run(approval)
+        set_font(run, size=12)
+        spacer = OxmlElement("w:p")
+        new_el.addnext(spacer)
 
-    content: list[list[tuple[str, bool, bool]]] = [
-        [("Dear Editor-in-Chief,", False, False)],
-        [("", False, False)],
-        [
-            ("Please consider the manuscript entitled ", False, False),
-            ("“Decision-consequence auditing for surrogate-assisted optimization in expensive engineering design”", True, False),
-            (" for publication in ", False, False),
-            ("Engineering Optimization", False, True),
-            (".", False, False),
-        ],
-        [("Surrogate-assisted optimization can report credible uncertainty or residual diagnostics without changing candidate ranking or improving a paid engineering decision. The submitted study addresses this gap by auditing the complete path from surrogate information to evaluation allocation, finite-horizon policy performance, and physical-call cost.", False, False)],
-        [("Core Scientific Contributions", True, False)],
-        [("The manuscript's contributions are:", False, False)],
-        [("Decision-path audit: ", True, False), ("Calibration, structural decision influence, frozen-state utility, closed-loop performance, and total cost are evaluated as distinct evidence levels.", False, False)],
-        [("Query allocation by decision equivalence: ", True, False), ("Identical context-point decisions share deterministic responses, so the same exact immediate-utility report costs 138 paid finite-element solves instead of 480, with a minimality argument for the declared oracle.", False, False)],
-        [("Recorded verdicts and engineering validation: ", True, False), ("One declared promotion rule applied to three frozen acquisition rules returns one promotion, one stop and one held-for-revision verdict; the procedure is applied to 24 BBOB functions, a finite-element beam family, frozen acquisition states and twenty transfer cases at two load positions.", False, False)],
-        [("Engineering Optimization Scope Alignment", True, False)],
-        [("The study concerns numerical optimization when function evaluations are expensive and surrogate model management determines which simulations are paid for. Its object is the reliability of the decision, not prediction accuracy in isolation, and it claims no optimizer superiority.", False, False)],
-        [("The manuscript contributes directly to two areas within the journal's scope:", False, False)],
-        [("Surrogate model management for expensive optimization: ", True, False), ("The audit determines whether model-derived information changes ranking, selects a more useful action at a common state, and improves a validated trajectory.", False, False)],
-        [("Optimization in engineering design: ", True, False), ("A density-based finite-element beam problem compares residual control, Gaussian-process acquisition, relation-model evolutionary search, and trust-region optimization under explicit evaluation budgets.", False, False)],
-        [("Reproducibility and Publication Ethics", True, False)],
-        [("Frozen protocols, deterministic seed maps, prediction-before-label journals, source hashes and recovery-aware cost ledgers support the reported evidence. The sources and curated records will be released in the project repository upon acceptance and are available to reviewers on request.", False, False)],
-        [("The manuscript is original, is not under consideration elsewhere (an earlier version was submitted to Computers, Materials & Continua and rejected there as out of scope), and has been approved by all authors. No conflicts of interest or specific funding are reported. DeepSeek V4.1 Flash (version 1017) was used only for copyediting and language refinement. The authors confirm the originality and accuracy of the content, have checked the tool's terms of use and confirm that this use is suitable for publication, and take full responsibility for the integrity of the whole content, including the accuracy of the references.", False, False)],
-        [("Thank you for considering this work. The manuscript is intended to provide Engineering Optimization readers with a reproducible way to test whether surrogate information produces valuable engineering decisions before large simulation budgets are committed.", False, False)],
-        [("", False, False)],
-        [("Sincerely,", False, False)],
-        [("", False, False)],
-        [("Jeng-Shyang Pan, Ph.D.\nCorresponding author, on behalf of all authors", False, False)],
-        [("School of Computer Science\nSchool of Artificial Intelligence/School of Future Technology\nNanjing University of Information Science and Technology", False, False)],
-        [("Email: 100112@nuist.edu.cn", False, False)],
-    ]
-    for paragraph, segments in zip(paragraphs, content, strict=True):
-        replace_paragraph(paragraph, segments)
     doc.core_properties.title = "Cover Letter for Engineering Optimization"
     doc.core_properties.author = "Jeng-Shyang Pan"
     doc.core_properties.last_modified_by = "Jeng-Shyang Pan"
+    doc.core_properties.subject = (
+        "Decision-consequence auditing for surrogate-assisted optimization "
+        "in expensive engineering design"
+    )
     doc.save(target)
     return target
 
@@ -115,11 +187,11 @@ def build_highlights_docx() -> Path:
     set_font(run, size=14, bold=True)
 
     highlights = [
-        "Audits whether surrogate signals change a paid engineering decision.",
-        "Screens ranking-invariant corrections before expensive evaluations.",
-        "Recorded verdicts: one acquisition rule promoted, one stopped, one held.",
-        "Exact immediate-utility reporting costs 138 solves instead of 480.",
-        "Separates calibration evidence from optimization utility and reports full costs.",
+        "Common additive correction leaves exploitation ranks unchanged.",
+        "Prediction-before-label records keep a label outside the optimizer.",
+        "A shared start separates the search rule from its origin.",
+        "Later improvement follows an action with zero immediate gain.",
+        "Recovery and verification calls stay inside the paid ledger.",
     ]
     for item in highlights:
         paragraph = doc.add_paragraph(style="List Bullet")

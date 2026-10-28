@@ -7,15 +7,14 @@ Revision opened: 2026-10-10. Baseline: `4161c59f65771e889699c4596dd89b7b8496dc26
 The active sources are `paper/engineering_optimization_manuscript.md` and
 `paper/engineering_optimization_supplementary.md`. The CMC sources, compiled
 PDFs, original experiment implementations, and their historical hashes remain
-the prior submission record. They are not the current revision.
+in the repository. They are not the current revision.
 
 - Corrected Figure 3 and Figure S3 direction prose. The definition is
   **selected-point failure minus candidate-pool failure**. Fixed03 is positive
   and greedy is negative in all three validation dimensions. For D=10,
   0.1215 - 0.0479 = +0.0736 and 0.0903 - 0.1018 = -0.0115.
-- Replaced CMC-specific venue positioning with engineering model-management
-  and diagnostic-benchmarking context. Added relevant Engineering Optimization
-  references 34–35; retained scientific references regardless of venue.
+- The related-work context is engineering model-management and diagnostic
+  benchmarking. Added references 34–35; retained the scientific references.
 - Distinguished decision reliability from probabilistic structural reliability.
 - Clarified that immediate improvement cannot universally reject exploration.
   Calibration testing applies to mechanisms making a calibration claim.

@@ -34,9 +34,7 @@ conditional-results subsection. See `submission_revision_20261013/` within the
 paper directory for the core-object comparison, response record and delivery
 manifest. `work_status.json` records the active boundaries.
 
-All authors have approved the manuscript (recorded 2026-10-19). An earlier version was
-submitted to Computers, Materials & Continua and rejected there as out of scope, so no
-version is under consideration elsewhere. Novelty sufficiency is not certified, and
+All authors have approved the manuscript (recorded 2026-10-19). Novelty sufficiency is not certified, and
 `submission_ready` remains false pending the scientific decisions. The AI-use record is
 copyediting and language refinement only; earlier notes asserting draft assistance were
 incorrect. No new physics was acquired for this revision. Its active reproduction entry
@@ -102,7 +100,7 @@ immediate utilities. It does not independently replay the full candidate pools
 or posterior; the original full-snapshot check and preparation implementation
 remain available separately. Neither restoration command reruns a simulator.
 
-The `cmc_*` sources and compiled PDFs preserve the previous submission state.
+The `cmc_*` sources and compiled PDFs keep an earlier manuscript formatting.
 They contain the documented Figure 3/S3 direction-text error and are not the
 current working manuscript. The new sources correct that error without changing
 reported experimental values. Historical hashes and frozen experiment code

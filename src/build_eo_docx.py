@@ -104,6 +104,9 @@ def prepare_eo_document(title: str, supplementary: bool = False) -> Document:
         "³ School of Computer Science and Software, Zhaoqing University, Zhaoqing 526061, China",
         "⁴ School of Information Engineering, Jiangxi University of Water Resources and Electric Power, Nanchang 330099, China",
         "* Corresponding author: Jeng-Shyang Pan, 100112@nuist.edu.cn",
+        "Shu-Chuan Chu, 100130@nuist.edu.cn",
+        "Ya-Yu Zhang, 202412492223@nuist.edu.cn",
+        "Jia Zhao, zhaojia@juwp.edu.cn",
     ]
     for affiliation in affiliations:
         paragraph = doc.add_paragraph()

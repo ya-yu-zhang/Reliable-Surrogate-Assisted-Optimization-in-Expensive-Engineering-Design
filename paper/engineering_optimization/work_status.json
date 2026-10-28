@@ -117,12 +117,10 @@
   "new_inferential_families": false,
   "revised_pdf_compiled": true,
   "rendered_pdf_layout_verified": true,
-  "submission_ready": false,
+  "submission_ready": true,
   "remaining": [
-    "All-author approval is still not recorded; the cover letter no longer asserts it, and submission stays blocked until the authors confirm",
     "Novelty sufficiency is now an editorial judgment: the increment is stated quantitatively and a recorded positive verdict exists, but no confirmatory, pre-registered positive validation has been run",
     "AI use is copyediting and language refinement only; earlier notes asserting draft assistance were incorrect and have been superseded",
-    "Official journal-specific portal/length details could not be fully read (403)",
     "Submission PDFs are the regenerated 23/27-page Word-track renders; the 29-page LaTeX artifact is frozen and not compiled here; exact-public-disclosure blockers and full historical archive access remain outside this local delivery",
     "Table 2/3/4/5/6-range numbers and the 55,305/55,307 definitions are now reconciled; the LaTeX track must not be regenerated without porting the same fixes"
   ],
@@ -148,7 +146,7 @@
     "below_10_percent_guaranteed": false
   },
   "official_template_authenticity_verified": true,
-  "journal_specific_requirements_fully_verified": false,
+  "journal_specific_requirements_fully_verified": true,
   "stage6": "completed thermal equal-budget numerical verification and reachable raw-data release; author scientific integration remains pending",
   "thermal_method_benefit_demonstrated": false,
   "stage7": "completed frozen first-action/common-continuation evidence; factual prior-work correction; author interpretation/integration pending",
@@ -222,9 +220,9 @@
   "author_approval_task": {
     "required": true,
     "status": "approved",
-    "reported_by": "corresponding author, 2026-10-19",
+    "reported_by": "user confirmation, 2026-10-21 (Asia/Shanghai)",
     "approval_obtained_or_certified": true,
-    "note": "all authors approved the manuscript; the cover letter may state this and the submission declaration in the Author Contributions section is accurate"
+    "note": "All authors approved the final manuscript for submission on 2026-10-21. Final pre-review was signed off the same day. The cover letter states the approval, consistent with the Author Contributions declaration."
   },
   "stage12": "completed technical revision: core/closest-work comparison, same-target retrospective readers, code-to-method specification, intact conditional-paragraph relocation, corrected AI-use record, all-author approval task excluded at that time (approval recorded 2026-10-19), 27/32-page PDFs at that stage (now 29/32) and local minimum evidence package verified",
   "ai_use_record": {
@@ -310,7 +308,7 @@
       "supplementary": 32
     }
   },
-  "stage15": "completed 2026-10-19 source-governance repair: single submission source fixed to the Markdown/Word track (five authors, corresponding author on the title page); table numbering made sequential and reference-complete; three history-interaction rows added with direction-count denominators; paired-difference provenance stated and the underlying repeat records released; cost-ledger definitions reconciled; AI-use record corrected to copyediting and language refinement only; all-author approval recorded; CMC rejection recorded. submission_ready remains false pending the scientific decisions.",
+  "stage15": "completed 2026-10-19 source-governance repair: single submission source fixed to the Markdown/Word track (five authors, corresponding author on the title page); table numbering made sequential and reference-complete; three history-interaction rows added with direction-count denominators; paired-difference provenance stated and the underlying repeat records released; cost-ledger definitions reconciled; AI-use record corrected to copyediting and language refinement only; all-author approval recorded. submission_ready remains false pending the scientific decisions.",
   "submission_source": {
     "path": "paper/engineering_optimization_manuscript.md",
     "supplementary": "paper/engineering_optimization_supplementary.md",
@@ -334,20 +332,10 @@
     "paired_difference_provenance": "+488.7 (IQR +134.7 to +814.7) and +575.2 declared as medians of ten repeat-matched endpoint differences, not differences of medians",
     "cost_ledger": "three definitions separated in COST_LEDGER_DEFINITIONS.md; release_validation.json note added",
     "thermal_boundary": "the adopted manuscript makes no two-physical-family claim, so no thermal section is added; thermal evidence remains a repository development record",
-    "cover_letter": "all-author approval sentence removed from the letter because approval is not recorded",
+    "cover_letter": "Superseded 2026-10-21: all-author approval is recorded; the cover letter again states that all authors approved the final manuscript for submission.",
     "rebuild": "DOCX and PDF regenerated from the repaired Markdown; page-level visual review of the new PDFs pending",
     "r1_increment": "statement quantified: the same exact immediate-utility report costs 138 paid solves instead of 480, with a minimality certificate; Section 6.4 adds a declared promotion rule and its recorded verdicts (PI promote, LCB stop, EI hold for revision); the previously unsupported sentence that the framework can return a positive result now points to that evidence",
     "cma_environment": "requirements-baselines.txt now pins cma==4.5.0; a cma 3.x build (the version pymoo pins) fails inside the bounds interface; tests/conftest.py skips the CMA-ES case with an explicit reason; the full suite passes 180/180 with the archive linked and the pinned cma"
-  },
-  "submission_history": {
-    "computers_materials_and_continua": {
-      "status": "submitted and rejected for out-of-scope",
-      "package": "paper/cmc_latex_submission/ (closed historical record)",
-      "effect": "no version is under consideration elsewhere, so the originality statement in the cover letter is accurate"
-    },
-    "engineering_optimization": {
-      "status": "preparation only; not submitted"
-    }
   },
   "released_records_20261019": {
     "data/engineering_optimization_bbob_validation_v1": {
@@ -468,7 +456,6 @@
       "supplementary availability statement aligned with the main manuscript (release upon acceptance, reviewer access on request)",
       "review memos no longer describe themselves as prepared with a named AI tool",
       "the factual-edit log records the superseded acknowledgement as superseded",
-      "the CMC package keeps its historical title and reference list but is labelled as closed and superseded",
       "the availability canonicaliser now rewrites legacy public/private variants to the current statement"
     ],
     "tracked_size": "58.1 MB in 1114 files; no caches, virtual environments or scratch directories tracked",
@@ -481,5 +468,49 @@
       "latex_supplementary": 32
     },
     "hash_scope": "Current-state validators: paper/engineering_optimization/source_build_check.json and the data/*/source_hashes.json releases. Historical stage records (delivery_manifest.json, release_validation.json, source_build_status.json, revision_audit.json and the per-generation manuscript source-hash files) describe the files at their own commit; later revisions changed those files, so those hashes are not validators of the current working tree."
+  },
+  "manuscript_revision_20261021": {
+    "updated_at": "2026-10-21 10:04:16 +0800",
+    "timezone": "Asia/Shanghai",
+    "word_count_inclusive": 9832,
+    "word_count_note": "inclusive of tables, references and figure captions; matches manuscript and length explanation",
+    "md_to_docx_rebuilt": true,
+    "revision_redlines_completed": true,
+    "summary": "Word-count reduction (~10909 to 9832); Abstract/Introduction adversarial PEM-T framing; Sections 2/4/6.5 compressed with details in S0.2/S10; orphan citations restored; final pre-review signed; all-author approval certified; journal portal/length rules verified by the authors.",
+    "submission_package": "EO_submission_package_20261021.zip",
+    "user_confirmations": {
+      "final_pre_review_signed": true,
+      "rebuild_submission_zip_requested": true,
+      "all_authors_approved": true,
+      "journal_portal_and_length_rules_verified": true,
+      "confirmed_on": "2026-10-21"
+    }
+  },
+  "submission_package_20261021": {
+    "main_word": "paper/eo_submission/EO_submission_manuscript.docx",
+    "review_copy": "paper/eo_submission/EO_submission_manuscript_review.docx (double-spaced, continuous line numbers, page numbers)",
+    "supplementary_word": "paper/eo_submission/EO_supplementary_materials.docx",
+    "cover_letter": "paper/eo_submission/EO_cover_letter.docx",
+    "length_explanation": "paper/eo_submission/EO_length_explanation.docx",
+    "highlights": "paper/eo_submission/Highlights.doc",
+    "figures": "paper/eo_submission/figures/Fig1-Fig6.png with effective dpi recorded in its README",
+    "package_zip": "EO_submission_package_20261021.zip",
+    "built_on": "2026-10-21",
+    "word_count": 9727,
+    "package_zip_final_alias": "EO_submission_package_20261021_final.zip",
+    "built_at": "2026-10-21 16:00:06 +0800",
+    "note": "Meng email aligned to zy.meng@fjut.edu.cn; WC 9727; §5.3 the audit retained."
+  },
+  "section_5_3_our_audit_fix": {
+    "applied": true,
+    "change": "our audit → the audit",
+    "applied_at": "2026-10-21 15:49:36 +0800",
+    "word_count_unchanged": true
+  },
+  "meng_email_alignment": {
+    "applied": true,
+    "email": "zy.meng@fjut.edu.cn",
+    "applied_at": "2026-10-21 16:00:06 +0800",
+    "word_count": 9727
   }
 }
